@@ -1,6 +1,6 @@
 Settings DUAL FEED ENIGMA DUE by CYRUS® SETTINGS TEAM
 
-<Vers. 000148 del 15/07/2012>>     DTT NA
+<Vers. 000149 del 22/07/2012>>     DTT NA
 
 
 
