@@ -1,6 +1,6 @@
-Settings Motor ENIGMA DUE (75°E/58°W) by CYRUS® SETTINGS TEAM
+Settings Motor ENIGMA DUE (85°E/58°W) by CYRUS® SETTINGS TEAM
 
- <Vers. 000148 del 15/07/2012>>  
+ <Vers. 000149 del 22/07/2012>>  
 
 
 
