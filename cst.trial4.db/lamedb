@@ -702,11 +702,11 @@ transponders
 0e080000:0064:0046
 	s 12341000:28000000:1:5:-8:2:0
 /
-0e080000:0001:00a4
-	s 11881000:30000000:1:3:-8:2:0:1:2:0:2
-/
 0e080000:0002:00a4
 	s 11958000:30000000:1:3:-8:2:0:1:2:0:2
+/
+0e080000:0001:00b8
+	s 11881000:30000000:1:3:-8:2:0:1:2:0:2
 /
 0e080000:001b:02c0
 	s 12226000:27500000:1:4:-8:2:0
@@ -5386,13 +5386,13 @@ popolare
 p:M-Three satcom
 0001:00820000:03de:0110:1:0
 Italia 1
-p:Mediaset
+p:Mediaset,c:000654,c:010655,c:020653,c:030654
 0002:00820000:03de:0110:1:0
 Canale 5
 p:Mediaset,c:00064a,c:01064b,c:020653,c:03064a
 0003:00820000:03de:0110:1:0
 Rete 4
-p:Mediaset
+p:Mediaset,c:00065e,c:01065f,c:020653,c:03065e
 0004:00820000:03de:0110:1:0
 Iris
 p:Mediaset
@@ -6058,7 +6058,7 @@ RSI LA 1 HD
 p:Radiotelevisione svizzera,c:000228,c:010229,c:02022d,c:030228,c:050001
 000a:00820000:1388:013e:1:0
 SCT HD
-p:Harmonic,c:000039,c:01003b,c:030039,c:050001
+p:Harmonic
 358e:00820000:1388:013e:1:0
 TVE Internacional
 p:Telefonica Spain
@@ -6088,25 +6088,25 @@ TELESUR
 p:Telefonica Spain
 35c0:00820000:1388:013e:1:0
 Redlight
-p:Telefonica Spain,c:001216,c:011217,c:031216
+p:Telefonica Spain
 35c1:00820000:1388:013e:1:0
 D-XTV2
-p:Telefonica Spain,c:00131e,c:01131f,c:03131e
+p:Telefonica Spain
 35c3:00820000:1388:013e:1:0
 SCT 5
-p:Telefonica Spain,c:001255,c:011256,c:031255,c:050001
+p:Telefonica Spain
 35c4:00820000:1388:013e:1:0
 SCT 4
-p:Harmonic,c:001120,c:011121,c:031120,c:050001
+p:Harmonic
 35c6:00820000:1388:013e:1:0
 SCT 6
-p:Telefonica Spain,c:00124b,c:01124c,c:03124b
+p:Telefonica Spain
 35c7:00820000:1388:013e:1:0
 SCT 7
-p:Telefonica Spain,c:00125c,c:01125d,c:03125c
+p:Telefonica Spain
 35c8:00820000:1388:013e:1:0
 SCT HQ
-p:Telefonica Spain,c:001266,c:011267,c:031266
+p:Telefonica Spain
 35d4:00820000:1388:013e:1:0
 Ifilm English
 p:tsa
@@ -7475,9 +7475,6 @@ p:Arqiva
 11fc:00820000:2b5c:013e:1:0
 MTA INTL
 p:Arqiva
-11fe:00820000:2b5c:013e:1:0
-Deepam TV
-p:Arqiva
 1206:00820000:2b5c:013e:1:0
 NPR
 p:Arqiva
@@ -7716,8 +7713,8 @@ p:RRSat
 KURDsat
 p:RRSat
 43a7:00820000:2cec:013e:1:0
-
-p:
+MKTV sat
+p:RRSat
 43a8:00820000:2cec:013e:1:0
 Thai Global Network
 p:RRSat
@@ -7823,8 +7820,8 @@ p:TVN
 0dc5:00820000:2d50:013e:1:0
 TVP HISTORIA
 p:ITI
-0dc9:00820000:2d50:013e:1:0
-nSport 109
+0dc6:00820000:2d50:013e:1:0
+test TR
 p:ITI
 0e06:00820000:2d50:013e:1:0
 BBC HD
@@ -7843,6 +7840,9 @@ CANAL+
 p:CYFRA +
 12c2:00820000:2e7c:013e:1:0
 CANAL+ FILM
+p:CYFRA +
+12c3:00820000:2e7c:013e:1:0
+CANAL+ FILM2
 p:CYFRA +
 12c4:00820000:2e7c:013e:1:0
 KUCHNIA+
@@ -7880,6 +7880,9 @@ p:CYFRA +
 12e1:00820000:2e7c:013e:1:0
   CANAL+ FILM
 p:CYFRA +
+12e2:00820000:2e7c:013e:1:0
+  CANAL+ FILM2
+p:CYFRA +
 12e3:00820000:2e7c:013e:1:0
  CANAL+
 p:CYFRA +
@@ -7903,7 +7906,7 @@ JASNA GORA
 p:CYFRA +
 12f5:00820000:2e7c:013e:1:0
 CANAL+ SPORT
-p:CYFRA +,f:0040
+p:CYFRA +
 12f6:00820000:2e7c:013e:1:0
 KUCHNIA+
 p:CYFRA +
@@ -7921,7 +7924,7 @@ tech 2
 p:CYFRA +
 1300:00820000:2e7c:013e:1:0
 KUCHNIA+
-p:CYFRA +,f:0040
+p:CYFRA +
 1307:00820000:2e7c:013e:1:0
 CANAL+
 p:CYFRA +
@@ -7935,13 +7938,19 @@ p:CYFRA +
 DTV CABLE AL
 p:CYFRA +
 130c:00820000:2e7c:013e:1:0
-DTV CABLE ZI
+DTV CABLE TT
 p:CYFRA +
 130d:00820000:2e7c:013e:1:0
 ALE KINO+
 p:CYFRA +
 130e:00820000:2e7c:013e:1:0
 ALE KINO+
+p:CYFRA +
+1311:00820000:2e7c:013e:2:0
+PR1
+p:CYFRA +
+1313:00820000:2e7c:013e:2:0
+PR3
 p:CYFRA +
 3e1d:00820000:2ee0:013e:1:0
 Sundance HD
@@ -8702,9 +8711,6 @@ p:RRSAT
 34bd:00820000:3c28:013e:1:0
 Loveworld TV
 p:GlobeCast
-34be:00820000:3c28:013e:1:0
-Fashion One
-p:GlobeCast Asia
 34c0:00820000:3c28:013e:1:0
 DAYSTAR TV
 p:GlobeCast
@@ -8717,9 +8723,6 @@ p:GlobeCast
 34c7:00820000:3c28:013e:1:0
 RBL.TV
 p:TandbergTV
-34c8:00820000:3c28:013e:1:0
-INSPIRATIONNAL
-p:GlobeCast
 34ca:00820000:3c28:013e:1:0
 EWTN UK
 p:GlobeCast
@@ -9176,6 +9179,15 @@ p:Telespazio,f:0040
 4243:00820000:3db8:013e:1:0
 Teleitalia Promo 3
 p:Telespazio,f:0040
+4246:00820000:3db8:013e:1:0
+Sirio Tv
+p:Harmonic,f:0040
+4247:00820000:3db8:013e:1:0
+Sirio Tv
+p:Harmonic,f:0040
+4248:00820000:3db8:013e:1:0
+Sirio Tv
+p:Harmonic,f:0040
 2461:00820000:23f0:013f:1:0
 Pharaohs 2
 p:Telespazio
@@ -9190,9 +9202,6 @@ THAQALLYN  TV
 p:Telespazio
 246b:00820000:23f0:013f:1:0
 HODHOD Arabic
-p:Telespazio
-247f:00820000:23f0:013f:1:0
-CNC-001
 p:Telespazio
 2481:00820000:23f0:013f:1:0
 HADI TV1
@@ -9212,9 +9221,6 @@ p:Telespazio
 2488:00820000:23f0:013f:1:0
 BARAEM EUROPE
 p:Harmonic
-248c:00820000:23f0:013f:1:0
-Coptic Sat
-p:Telespazio
 2490:00820000:23f0:013f:1:0
 HODHOD FARSI
 p:Harmonic
@@ -11001,7 +11007,7 @@ p:Harmonic
 Napoli Mia
 p:Harmonic
 0001:0082afc2:ffff:ffff:1:0
-*  E2 Vers. 187 del 08.04.13*
+*  E2 Vers. 188 del 15.04.13*
 p:,f:0001
 0008:0082afc2:ffff:ffff:1:0
 IBB OS Download 8 (DCP)
@@ -11965,7 +11971,7 @@ Karma TV
 p:Telenor
 24c2:0e080000:0028:0046:2:0
 BEST FM
-p:
+p:Telenor
 1005:0e080000:0029:0046:25:0
 Eurosport HD
 p:Telenor
@@ -12265,10 +12271,10 @@ TV2 / Lorry
 p:Telenor
 03ec:0e080000:0040:0046:25:0
 Test 2
-p:
+p:Telenor
 03f3:0e080000:0040:0046:25:0
 Test 1
-p:
+p:Telenor
 0b5d:0e080000:0040:0046:1:0
 Toto-TV
 p:Telenor,c:000202,c:010288,c:031ffe
@@ -12539,96 +12545,6 @@ p:Telenor
 1bbd:0e080000:0064:0046:1:0
 TVNorge
 p:Telenor
-0001:0e080000:0001:00a4:1:0
-BNT Sat
-p:Neterra,f:0040,c:0003e9,c:0107d1,c:021b59,c:0303e9
-0002:0e080000:0001:00a4:1:0
-BTV Bulgaria
-p:Neterra,f:0040,c:0003ea,c:0107d2,c:0303ea
-0003:0e080000:0001:00a4:1:0
-Nova TV
-p:Neterra,f:0040,c:0003eb,c:0107d3,c:0303eb
-0004:0e080000:0001:00a4:1:0
-TV 7 Bulgaria
-p:Neterra,f:0040,c:0003ec,c:0107d4,c:0303ec
-0005:0e080000:0001:00a4:1:0
-Kino Nova
-p:Neterra,f:0040,c:0003ed,c:0107d5,c:0303ed
-0006:0e080000:0001:00a4:1:0
-BTV Cinema
-p:Neterra,f:0040,c:0003ee,c:0107d6,c:0303ee
-0007:0e080000:0001:00a4:1:0
-Diema
-p:Neterra,f:0040,c:0003ef,c:0107d7,c:0303ef
-0008:0e080000:0001:00a4:1:0
-Cartoon Network Eastern Europe
-p:Neterra,f:0040,c:0003f0,c:0107d8,c:0303f0
-0009:0e080000:0001:00a4:1:0
-Disney Channel Romania, Bulgaria & Ukraine
-p:Neterra,f:0040,c:0003f1,c:0107d9,c:0303f1
-000a:0e080000:0001:00a4:1:0
-Boomerang
-p:Neterra,f:0040,c:0003f2,c:0107da,c:0303f2
-000b:0e080000:0001:00a4:1:0
-Super 7
-p:Neterra,f:0040,c:0003f3,c:0107db,c:0303f3
-000c:0e080000:0001:00a4:1:0
-Nova Sport Bulgaria
-p:Neterra,f:0040,c:0003f4,c:0107dc,c:0303f4
-000d:0e080000:0001:00a4:1:0
-Ring BG
-p:Neterra,f:0040,c:0003f5,c:0107dd,c:0303f5
-000e:0e080000:0001:00a4:1:0
-Eurosport
-p:Neterra,f:0040,c:0003f6,c:0107de,c:0303f6
-000f:0e080000:0001:00a4:1:0
-EKids
-p:Neterra,f:0040,c:0003f7,c:0107df,c:0303f7
-0010:0e080000:0001:00a4:1:0
-VH-1 (Video Hits One)
-p:Neterra,f:0040,c:0003f8,c:0107e0,c:0303f8
-0011:0e080000:0001:00a4:1:0
-MTV Europe
-p:Neterra,f:0040,c:0003f9,c:0107e1,c:0303f9
-0012:0e080000:0001:00a4:1:0
-The Voice Bulgaria
-p:Neterra,f:0040,c:0003fa,c:0107e2,c:0303fa
-0013:0e080000:0001:00a4:1:0
-Planeta TV
-p:Neterra,f:0040,c:0003fb,c:0107e3,c:0303fb
-0014:0e080000:0001:00a4:1:0
-TV 1000 Balkan
-p:Neterra,f:0040,c:0003fc,c:0107e4,c:0303fc
-0015:0e080000:0001:00a4:1:0
-National Geographic Bulgaria
-p:Neterra,f:0040,c:0003fd,c:0107e5,c:0303fd
-0016:0e080000:0001:00a4:1:0
-AXN Bulgaria
-p:Neterra,f:0040,c:0003fe,c:0107e6,c:0303fe
-0017:0e080000:0001:00a4:1:0
-Fox Life Bulgaria
-p:Neterra,f:0040,c:0003ff,c:0107e7,c:0303ff
-0018:0e080000:0001:00a4:1:0
-bTV Comedy
-p:Neterra,f:0040,c:000400,c:0107e8,c:030400
-0019:0e080000:0001:00a4:1:0
-bTV Action
-p:Neterra,f:0040,c:000401,c:0107e9,c:030401
-001a:0e080000:0001:00a4:1:0
-Fox Crime Bulgaria
-p:Neterra,f:0040,c:000402,c:0107ea,c:030402
-001b:0e080000:0001:00a4:1:0
-AXN Crime
-p:Neterra,f:0040,c:000403,c:0107eb,c:030403
-001c:0e080000:0001:00a4:1:0
-AXN Sci Fi
-p:Neterra,f:0040,c:000404,c:0107ec,c:030404
-001d:0e080000:0001:00a4:1:0
-Diema Family
-p:Neterra,f:0040,c:000405,c:0107ed,c:030405
-001e:0e080000:0001:00a4:1:0
-bTV Lady
-p:Neterra,f:0040,c:000406,c:0107ee,c:030406
 001f:0e080000:0002:00a4:25:0
 BNT 2
 p:W1 WL DTH,f:0040,c:000407,c:0107ef,c:030407
@@ -12719,6 +12635,96 @@ p:W1 WL DTH,f:0040,c:000423,c:01080b,c:030423
 003c:0e080000:0002:00a4:25:0
 SCT
 p:W1 WL DTH,f:0040,c:000424,c:01080c,c:030424
+0001:0e080000:0001:00b8:1:0
+BNT Sat
+p:Neterra,f:0040,c:0003e9,c:0107d1,c:021b59,c:0303e9
+0002:0e080000:0001:00b8:1:0
+BTV Bulgaria
+p:Neterra,f:0040,c:0003ea,c:0107d2,c:0303ea
+0003:0e080000:0001:00b8:1:0
+Nova TV
+p:Neterra,f:0040,c:0003eb,c:0107d3,c:0303eb
+0004:0e080000:0001:00b8:1:0
+TV 7 Bulgaria
+p:Neterra,f:0040,c:0003ec,c:0107d4,c:0303ec
+0005:0e080000:0001:00b8:1:0
+Kino Nova
+p:Neterra,f:0040,c:0003ed,c:0107d5,c:0303ed
+0006:0e080000:0001:00b8:1:0
+BTV Cinema
+p:Neterra,f:0040,c:0003ee,c:0107d6,c:0303ee
+0007:0e080000:0001:00b8:1:0
+Diema
+p:Neterra,f:0040,c:0003ef,c:0107d7,c:0303ef
+0008:0e080000:0001:00b8:1:0
+Cartoon Network Eastern Europe
+p:Neterra,f:0040,c:0003f0,c:0107d8,c:0303f0
+0009:0e080000:0001:00b8:1:0
+Disney Channel Romania, Bulgaria & Ukraine
+p:Neterra,f:0040,c:0003f1,c:0107d9,c:0303f1
+000a:0e080000:0001:00b8:1:0
+Boomerang
+p:Neterra,f:0040,c:0003f2,c:0107da,c:0303f2
+000b:0e080000:0001:00b8:1:0
+Super 7
+p:Neterra,f:0040,c:0003f3,c:0107db,c:0303f3
+000c:0e080000:0001:00b8:1:0
+Nova Sport Bulgaria
+p:Neterra,f:0040,c:0003f4,c:0107dc,c:0303f4
+000d:0e080000:0001:00b8:1:0
+Ring BG
+p:Neterra,f:0040,c:0003f5,c:0107dd,c:0303f5
+000e:0e080000:0001:00b8:1:0
+Eurosport
+p:Neterra,f:0040,c:0003f6,c:0107de,c:0303f6
+000f:0e080000:0001:00b8:1:0
+EKids
+p:Neterra,f:0040,c:0003f7,c:0107df,c:0303f7
+0010:0e080000:0001:00b8:1:0
+VH-1 (Video Hits One)
+p:Neterra,f:0040,c:0003f8,c:0107e0,c:0303f8
+0011:0e080000:0001:00b8:1:0
+MTV Europe
+p:Neterra,f:0040,c:0003f9,c:0107e1,c:0303f9
+0012:0e080000:0001:00b8:1:0
+The Voice Bulgaria
+p:Neterra,f:0040,c:0003fa,c:0107e2,c:0303fa
+0013:0e080000:0001:00b8:1:0
+Planeta TV
+p:Neterra,f:0040,c:0003fb,c:0107e3,c:0303fb
+0014:0e080000:0001:00b8:1:0
+TV 1000 Balkan
+p:Neterra,f:0040,c:0003fc,c:0107e4,c:0303fc
+0015:0e080000:0001:00b8:1:0
+National Geographic Bulgaria
+p:Neterra,f:0040,c:0003fd,c:0107e5,c:0303fd
+0016:0e080000:0001:00b8:1:0
+AXN Bulgaria
+p:Neterra,f:0040,c:0003fe,c:0107e6,c:0303fe
+0017:0e080000:0001:00b8:1:0
+Fox Life Bulgaria
+p:Neterra,f:0040,c:0003ff,c:0107e7,c:0303ff
+0018:0e080000:0001:00b8:1:0
+bTV Comedy
+p:Neterra,f:0040,c:000400,c:0107e8,c:030400
+0019:0e080000:0001:00b8:1:0
+bTV Action
+p:Neterra,f:0040,c:000401,c:0107e9,c:030401
+001a:0e080000:0001:00b8:1:0
+Fox Crime Bulgaria
+p:Neterra,f:0040,c:000402,c:0107ea,c:030402
+001b:0e080000:0001:00b8:1:0
+AXN Crime
+p:Neterra,f:0040,c:000403,c:0107eb,c:030403
+001c:0e080000:0001:00b8:1:0
+AXN Sci Fi
+p:Neterra,f:0040,c:000404,c:0107ec,c:030404
+001d:0e080000:0001:00b8:1:0
+Diema Family
+p:Neterra,f:0040,c:000405,c:0107ed,c:030405
+001e:0e080000:0001:00b8:1:0
+bTV Lady
+p:Neterra,f:0040,c:000406,c:0107ee,c:030406
 01f5:0e080000:001b:02c0:1:0
 MTV Hungary
 p:MTV Networks Europe
@@ -14178,4 +14184,4 @@ p:AlbanicaSat
 KlanKosova
 p:AlbanicaSat
 end
-Editor:DreamSet 2.38 - http://www.dreamset-editor.com
+Edited on 14.04.2013 by : SplitThisList! - http://www.krkadoni.com
