@@ -213,9 +213,6 @@ transponders
 0dca0000:002d:0800
 	s 11372000:27500000:0:2:-70:2:0:1:2:2:2
 /
-0dca0000:0023:0800
-	s 10930000:27500000:0:4:-70:2:0
-/
 end
 services
 0900:0dca300f:0017:0800:1:10917
@@ -297,13 +294,13 @@ p:JMC,c:000114,c:01031a,c:030114
 MBC 3
 p:MBC,c:000065,c:010066,c:030065
 0002:0dcab022:0042:0800:1:10943
-MBC MASR
+MBC Masr
 p:MBC,c:0000c9,c:0100ca,c:0300c9
 0003:0dcab022:0042:0800:1:10944
-MBC Drama
+MBC Masr +2
 p:MBC,c:00012d,c:01012e,c:03012d
 0004:0dcab022:0042:0800:1:10945
-MBC 4
+MBC Masr Drama
 p:MBC,c:000191,c:010192,c:030191
 0005:0dcab022:0042:0800:1:10946
 MBC 2
@@ -315,8 +312,8 @@ p:MBC,c:000259,c:01025a,c:030259
 MBC Action
 p:MBC,c:0002bd,c:0102be,c:0302bd
 0008:0dcab022:0042:0800:1:10949
-MBC GROUP 1
-p:MBC,f:0002,c:000321,c:010322,c:030321
+MBC 4 Masr
+p:MBC,c:000321,c:010322,c:030321
 0009:0dcab022:0042:0800:1:10950
 MBC GROUP 2
 p:MBC,f:0002,c:000385,c:010386,c:030385
@@ -363,7 +360,7 @@ p:Nilesat,c:0003fa,c:0103fb,c:0303fa
 Oman TV HD
 p:Nilesat,c:0003fc,c:0103fd,c:0303fc
 1714:0dcaabdb:003b:0800:1:10964
-TEST
+KNN
 p:Nilesat,c:0003f8,c:0103f9,c:0303f8
 1719:0dcaabdb:003b:0800:1:10965
 TEST
@@ -431,6 +428,9 @@ p:NOORSAT,c:00028b,c:01028c,c:03028b
 0194:0dca0000:0010:006e:1:0
 CRT Drama TV
 p:NOORSAT,c:000281,c:010282,c:030281
+01a5:0dca0000:0010:006e:1:0
+Almoein
+p:NOORSAT,c:00032b,c:01032c,c:03032b
 12c1:0dca0000:0030:0800:25:10986
 Discovery HD Showcase
 p:Orbit Showtime Network,c:0000c9,c:01012d,c:0300c9
@@ -580,7 +580,7 @@ Al Jazeera Satellite Channel
 p:NOORSAT,c:00023b,c:01023c,c:03023b
 070f:0dca0000:0011:006e:1:11038
 Al Ittihad
-p:NOORSAT,c:00083b,c:01089f,c:03083b
+p:NOORSAT,c:00083b,c:0108a0,c:03083b
 07f7:0dca0000:0011:006e:1:11039
 Sama TV
 p:NOORSAT,c:0002fa,c:0102fb,c:0302fa
@@ -822,7 +822,7 @@ p:Nilesat,c:0007f6,c:0107f7,c:0307f6
 Moga Comedy TV
 p:Nilesat,c:0007e2,c:0107e3,c:0307e2
 0b66:0dca0000:001d:0800:1:11119
-Télé Liban
+TEST
 p:Nilesat,c:0007e6,c:0107e7,c:0307e6
 0b68:0dca0000:001d:0800:1:11120
 On TV
@@ -845,9 +845,6 @@ p:Nilesat,c:0007fe,c:0107ff,c:0307fe
 0b65:0dca0000:001d:0800:1:11126
 TEST
 p:Nilesat,c:0007e4,c:0107e5,c:0307e4
-0b59:0dca0000:001d:0800:1:11127
-Oromia TV
-p:Nilesat,c:0007d7,c:0107d8,c:031ffe
 0b63:0dca0000:001d:0800:1:11128
 Al Diyaa
 p:Nilesat,c:0007e0,c:0107e1,c:0307e0
@@ -866,6 +863,9 @@ p:Nilesat,c:000803,c:010804,c:030803
 0b5d:0dca0000:001d:0800:1:11133
 Libya al Shababiyah
 p:Nilesat,c:0007db,c:0107dc,c:0307db
+0b59:0dca0000:001d:0800:1:0
+Oromia TV
+p:Nilesat,c:0007d7,c:0107d8,c:031ffe
 070a:0dca0000:0012:0800:1:11134
 One TV
 p:du,c:0003ed,c:0103ee,c:0303ed
@@ -945,7 +945,7 @@ p:Nilesat,c:01080b,c:03080b
 NEWROZ Radio
 p:Nilesat,c:010e40,c:031fff
 0e17:0dca0000:0024:0800:1:11163
-TEST
+Al Adwaa
 p:Nilesat,c:000e1c,c:010e1d,c:030e1c
 0e16:0dca0000:0024:0800:1:11164
 Nessma el Khadhra
@@ -960,11 +960,14 @@ p:Nilesat,c:000e2b,c:010e2c,c:030e2b
 Tunisia Nat 1
 p:Nilesat,c:000e11,c:010e12,c:030e11
 0e12:0dca0000:0024:0800:1:1
-Vista TV
+My Vista TV
 p:Nilesat,c:000e14,c:010e15,c:030e14
 0e1b:0dca0000:0024:0800:1:0
 Melody
 p:Nilesat,c:000e24,c:010e25,c:030e24
+0e18:0dca0000:0024:0800:1:0
+TEST
+p:Nilesat,c:000e1e,c:010e1f,c:030e1e
 0515:0dcaaeef:000d:0800:1:11166
 Medi 1 TV
 p:Nilesat,c:0008ca,c:0108cb,c:0308ca
@@ -1020,13 +1023,13 @@ p:Nilesat,c:000525,c:010526,c:030525
 TEST
 p:Nilesat,c:000516,c:010517,c:030516
 1901:0dca0000:0040:0800:1:11184
-Mawal Drama TV
+TEST
 p:Nilesat,c:00031f,c:010320,c:03031f
 1903:0dca0000:0040:0800:1:11185
-Al Nahar Movies
+Al Nahar Drama +2
 p:Nilesat,c:000323,c:010324,c:030323
 1902:0dca0000:0040:0800:1:11186
-Al Nahar +2
+Al Nahar 2
 p:Nilesat,c:000321,c:010322,c:030321
 1904:0dca0000:0040:0800:1:11187
 666666 TV Movies
@@ -1110,8 +1113,8 @@ p:Nilesat,c:01019d,c:03019d
 Al Mergab 2
 p:Nilesat,c:0017d5,c:0117d6,c:0317d5
 17db:0dca0000:003d:0800:1:11214
-Kareem
-p:Nilesat,f:0002,c:0017e1,c:0117e2,c:0317e1
+Sada El Balad
+p:Nilesat,c:0017e1,c:0117e2,c:0317e1
 17dc:0dca0000:003d:0800:1:11215
 Al Teeb
 p:Nilesat,c:0017e3,c:0117e4,c:0317e3
@@ -1149,7 +1152,7 @@ p:Nilesat,c:0017d9,c:0117da,c:0317d9
 Al Rayyan TV HD
 p:Nilesat,c:0017d7,c:0117d8,c:0317d7
 17da:0dca0000:003d:0800:1:0
-TEST
+Nagah
 p:Nilesat,c:0017df,c:0117e0,c:0317df
 0001:0dca0000:003a:0800:25:11227
 MBC 1 HD
@@ -1181,9 +1184,6 @@ p:Gulfsat,c:0013c6,c:0113c7,c:0313c6
 1771:0dca0000:01f4:5000:1:11236
 Al Masirah TV
 p:STN Ltd,c:00177b,c:01177c,c:031ffe
-1773:0dca0000:01f4:5000:1:11237
-Logos TV
-p:STN Ltd,c:00178f,c:011790,c:031ffe
 1774:0dca0000:01f4:5000:1:11238
 Al-Eshragh TV
 p:STN Ltd,c:001799,c:01179a,c:031ffe
@@ -1199,9 +1199,6 @@ p:STN Ltd,c:0017cb,c:0117cc,c:031ffe
 1776:0dca0000:01f4:5000:1:11242
 Al Karma
 p:STN Ltd,c:0017ad,c:0117ae,c:031ffe
-177c:0dca0000:01f4:5000:1:11243
-Al Sirat TV
-p:STN Ltd,c:0017e9,c:0117ea,c:031ffe
 177d:0dca0000:01f4:5000:1:11244
 Annajaf Channel
 p:STN Ltd,c:0017f3,c:0117f4,c:031ffe
@@ -1217,6 +1214,9 @@ p:STN Ltd,c:001785,c:011786,c:031ffe
 177a:0dca0000:01f4:5000:1:11248
 Hadi 2
 p:STN Ltd,c:0017d5,c:0117d6,c:031ffe
+177c:0dca0000:01f4:5000:1:0
+Darbaka
+p:STN Ltd,c:0017e9,c:0117ea,c:031ffe
 13e2:0dca0000:01f4:5000:1:11249
 Karawan Kids
 p:Gulfsat,c:0013e4,c:0113e5,c:0313e4
@@ -1243,7 +1243,10 @@ Tounes Alikhbaria
 p:Gulfsat,c:0018d0,c:0118d1,c:0318d0
 1781:0dca0000:01f4:5000:1:0
 Om Eldonia
-p:Gulfsat,c:00181b,c:031ffe
+p:Gulfsat,c:00181b,c:01181c,c:031ffe
+1773:0dca0000:01f4:5000:1:0
+Logos TV
+p:STN Ltd,c:00178f,c:011790,c:031ffe
 0130:0dca0000:0003:0800:25:11258
 OSN First HD
 p:Orbit Showtime Network,c:0000cc,c:010130,c:0300cc
@@ -1301,9 +1304,6 @@ p:du,c:00012d,c:01012e,c:03012d
 083e:0dca2fc2:ffff:ffff:1:11276
 Decision Maker TV
 p:du,c:00008d,c:01008e,c:03008d
-0843:0dca2fc2:ffff:ffff:1:11277
-Alsharqiya Drama
-p:du,c:0000fa,c:0100fb,c:0300fa
 0855:0dca2fc2:ffff:ffff:1:11278
 AD Al-Oula
 p:du,c:00014b,c:01014c,c:03014b
@@ -1344,7 +1344,7 @@ p:Nilesat,c:0003f3,c:0103f4,c:0303f3
 TV5 Monde Maghreb Orient
 p:Nilesat,c:0003e8,c:0104b0,c:0303e8
 0643:0dca0000:0010:0800:1:11291
-TEST
+Arrabiaa
 p:Nilesat,c:000519,c:01051a,c:030519
 0644:0dca0000:0010:0800:1:11292
 DW-TV Arabic (Deutsche Welle)
@@ -1383,7 +1383,7 @@ p:Nilesat,c:010bc9,c:030bc9
 Nogoum FM
 p:Nilesat,c:0103f5,c:0303f5
 0642:0dca0000:0010:0800:1:11304
-TEST
+Alfath Quran
 p:Nilesat,c:0003eb,c:0103ec,c:0303eb
 0001:0dca0000:0001:0001:25:11305
 Qatar TV
@@ -1455,11 +1455,8 @@ p:NOORSAT,c:000652,c:010a3a,c:030652
 Libya Al Hurra
 p:NOORSAT,c:000642,c:010a2a,c:030642
 1f41:0dca0000:0012:006e:1:11329
-iFilm
+Al Rahma TV
 p:NOORSAT,c:000641,c:010a29,c:030641
-1f47:0dca0000:0012:006e:1:11330
-Arabian Gulf
-p:NOORSAT,c:000647,c:010a2f,c:030647
 1f54:0dca0000:0012:006e:1:11331
 All TV (Egypt)
 p:NOORSAT,c:000654,c:010a3c,c:030654
@@ -1472,9 +1469,18 @@ p:NOORSAT,c:00064d,c:010a35,c:03064d
 07f8:0dca0000:0012:006e:1:11335
 Al Arrab
 p:NOORSAT,c:000058,c:010059,c:030058
+1f47:0dca0000:0012:006e:1:0
+Ahrar 25
+p:NOORSAT,c:000647,c:010a2f,c:030647
 1f57:0dca0000:0012:006e:1:1
 Thaqalayn TV
 p:NOORSAT,c:000657,c:010a3f,c:030657
+1f56:0dca0000:0012:006e:1:0
+CBC Abu Dhabi
+p:NOORSAT,c:000656,c:010a3e,c:030656
+1f43:0dca0000:0012:006e:1:0
+Asia TV
+p:NOORSAT,c:000643,c:010a2b,c:030643
 0489:0dca0000:0074:0800:25:11336
 OSN Ya Hala! HD
 p:Orbit Showtime Network,c:0000c9,c:01012d,c:0300c9
@@ -1524,7 +1530,7 @@ p:Nilesat,c:0007ea,c:0107ec,c:0307ea
 Miracle Channel
 p:ViewSat,c:000101,c:010201,c:030101
 0028:0dca2a3f:0001:ffff:1:0
-Nessma el Khadhra
+The Green Channel
 p:Viewsat,c:000140,c:010240,c:030140
 000a:0dca2a3f:0001:ffff:1:11352
 Mas
@@ -1541,18 +1547,6 @@ p:ViewSat,c:000106,c:010206,c:030106
 000c:0dca2a3f:0001:ffff:1:11358
 Al Magharibia
 p:ViewSat,c:000112,c:010212,c:030112
-000f:0dca2a3f:0001:ffff:1:11360
-Yemanyian
-p:ViewSat,c:000115,c:010215,c:030115
-0010:0dca2a3f:0001:ffff:1:11361
-October TV
-p:ViewSat,c:000116,c:010216,c:030116
-0012:0dca2a3f:0001:ffff:1:11362
-Sheba TV
-p:ViewSat,c:000118,c:010218,c:030118
-0013:0dca2a3f:0001:ffff:1:11363
-Al Eyman
-p:ViewSat,c:000119,c:010219,c:030119
 001f:0dca2a3f:0001:ffff:1:11364
 Zein
 p:ViewSat,c:000131,c:010231,c:030131
@@ -1616,12 +1610,36 @@ p:ViewSat,c:000135,c:010235,c:030135
 0029:0dca2a3f:0001:ffff:1:11386
 Nahj
 p:ViewSat,c:000141,c:010241,c:030141
-001b:0dca2a3f:0001:ffff:1:11387
-Saltana
-p:ViewSat,c:000127,c:010227,c:030127
 0009:0dca2a3f:0001:ffff:1:11388
 Al Gharbiya
 p:ViewSat,c:000109,c:010209,c:030109
+0007:0dca2a3f:0001:ffff:1:0
+Al Omma TV
+p:ViewSat,c:000107,c:010207,c:030107
+0010:0dca2a3f:0001:ffff:1:0
+October TV
+p:ViewSat,c:000116,c:010216,c:030116
+001a:0dca2a3f:0001:ffff:1:0
+Honest TV
+p:ViewSat,c:000126,c:010226,c:030126
+002b:0dca2a3f:0001:ffff:1:0
+Al Farah TV
+p:ViewSat,c:000143,c:010243,c:030143
+0012:0dca2a3f:0001:ffff:1:0
+Al Saharya
+p:ViewSat,c:000118,c:010218,c:030118
+0013:0dca2a3f:0001:ffff:1:1
+Bon Saire TV
+p:ViewSat,c:000119,c:010219,c:030119
+000f:0dca2a3f:0001:ffff:1:0
+Yosr TV
+p:ViewSat,c:000115,c:010215,c:030115
+000e:0dca2a3f:0001:ffff:1:0
+YMC
+p:Viewsat,c:000114,c:010214,c:030114
+000d:0dca2a3f:0001:ffff:1:0
+Mix
+p:ViewSat,c:000113,c:010213,c:030113
 0d49:0dca0000:0022:0800:1:11389
 Bin Othaimeen
 p:Nilesat,c:000064,c:01006e,c:030064
@@ -1650,7 +1668,7 @@ p:Nilesat,c:0103fe,c:031fff
 TEST
 p:Nilesat,c:01040b,c:031fff
 0d52:0dca0000:0022:0800:1:11398
-Pin TV
+Rawabi TV
 p:Nilesat,c:0003f6,c:0103f7,c:0303f6
 0d58:0dca0000:0022:0800:1:11399
 TEST
@@ -1667,9 +1685,6 @@ p:Nilesat,c:000404,c:010405,c:030404
 0d4b:0dca0000:0022:0800:1:11403
 ETV Ethiopia
 p:Nilesat,c:0003ed,c:0103ee,c:0303ed
-0d5e:0dca0000:0022:0800:2:11404
-ETV 1 Radio
-p:Nilesat,c:0103e8,c:031fff
 0d4c:0dca0000:0022:0800:1:11405
 Al Soyoof
 p:Nilesat,c:0003ef,c:0103f0,c:0303ef
@@ -1829,9 +1844,6 @@ p:JMC,c:00100d,c:011071,c:03100d
 1007:0dca0000:0029:0800:1:11458
 Echorouk TV
 p:JMC,c:001007,c:01106b,c:031007
-1020:0dca0000:0029:0800:1:11459
-A1 Jordan
-p:JMC,c:001021,c:011085,c:031021
 1025:0dca0000:0029:0800:1:11460
 Man and Woman
 p:JMC,c:001026,c:011090,c:031ffe
@@ -1841,9 +1853,6 @@ p:JMC,c:001027,c:011091,c:031ffe
 1027:0dca0000:0029:0800:1:11464
 Al Daleel TV
 p:JMC,c:001028,c:011092,c:031028
-1041:0dca0000:0029:0800:1:0
-Joory TV
-p:JMC,c:000022,c:01012d,c:030022
 1012:0dca0000:0029:0800:1:0
 Al Waseet
 p:JMC,c:001013,c:011077,c:031ffe
@@ -1991,9 +2000,6 @@ p:NOORSAT,c:000021,c:01096f,c:030021
 1b6a:0dca0000:0017:006e:1:11509
 Dzair Shop
 p:NOORSAT,c:00058a,c:010972,c:03058a
-1b68:0dca0000:0017:006e:1:11510
-Diyala TV
-p:NOORSAT,c:000022,c:010024,c:030588
 1b61:0dca0000:0017:006e:1:11511
 Numidia News TV
 p:NOORSAT,c:000581,c:010969,c:030581
@@ -2015,6 +2021,9 @@ p:NOORSAT,c:000585,c:01096d,c:030585
 1b6c:0dca0000:0017:006e:1:0
 Libya Sama
 p:NOORSAT,c:00058c,c:010974,c:03058c
+1b6d:0dca0000:0017:006e:1:0
+Djurdura TV
+p:NOORSAT,c:00058d,c:010975,c:03058d
 11f9:0dca0000:002e:0800:25:11516
 NatGeo Wild HD
 p:Orbit Showtime Network,c:0000c9,c:01012d,c:0300c9
@@ -2036,6 +2045,9 @@ p:Orbit Showtime Network,c:0000ce,c:010132,c:0300ce
 0ed9:0dca0000:0026:0800:1:11522
 ANN - Arab News Network
 p:Nilesat,c:000ed9,c:010eda,c:030ed9
+0ee8:0dca0000:0026:0800:1:0
+Türkmeneli TV
+p:Nilesat,c:000efd,c:010efe,c:030efd
 0eda:0dca0000:0026:0800:1:11523
 Dewan Al Arab
 p:Nilesat,c:000edc,c:010edd,c:030edc
@@ -2133,7 +2145,7 @@ p:Nilesat,c:001599,c:01159a,c:031599
 Primary education channel
 p:ERTU,c:0003e9,c:0104b1,c:0303e9
 0066:0dca0000:0001:0800:1:11556
-TEST
+Azaal TV
 p:ERTU,c:0003ea,c:0104b2,c:0303ea
 0067:0dca0000:0001:0800:1:11557
 TEST
@@ -2250,7 +2262,7 @@ p:NOORSAT,c:0001ff,c:010200,c:0301ff
 GSC
 p:NOORSAT,c:0007e9,c:010bd1,c:0307e9
 00ce:0dca0000:0c21:006e:1:0
-Kurdmax TV
+Suroyo TV
 p:NOORSAT,c:0001cd,c:0101ce,c:0301cd
 00c9:0dca0000:0c21:006e:1:0
 AUC
@@ -2300,9 +2312,6 @@ p:CTN,c:0002d1,c:0102d2,c:0302d1
 0203:0dca0000:0008:000a:1:11611
 Syria Satellite Channel
 p:CTN,c:000353,c:010354,c:030353
-0204:0dca0000:0008:000a:1:11612
-Majestic Cinema
-p:CTN,c:00035d,c:01035e,c:03035d
 0205:0dca0000:0008:000a:1:11613
 Al Mutawasit TV
 p:CTN,c:000367,c:010368,c:030367
@@ -2330,21 +2339,24 @@ p:CTN,c:000317,c:010318,c:030317
 01fc:0dca0000:0008:000a:1:11622
 Syria 18th March
 p:CTN,c:00030d,c:01030e,c:03030d
-0206:0dca0000:0008:000a:1:11623
-iFilm English
-p:CTN,c:000371,c:010372,c:030371
 01f7:0dca0000:0008:000a:1:11624
 Baghdad Hona
 p:CTN,c:0002db,c:0102dc,c:0302db
 0202:0dca0000:0008:000a:1:11625
 Iraq TV
 p:CTN,c:000349,c:01034a,c:030349
-0262:0dca0000:0008:000a:1:0
-Al Kawthar
-p:CTN,c:000321,c:010322,c:030321
 01f5:0dca0000:0008:000a:1:0
-Djurdura TV
+Ennahar TV Algérie
 p:CTN,c:0002c7,c:0102c8,c:0302c7
+0204:0dca0000:0008:000a:1:0
+Majestic Cinema
+p:CTN,c:00035d,c:01035e,c:03035d
+0262:0dca0000:0008:000a:1:0
+WNN
+p:CTN,c:000321,c:010322,c:030321
+0208:0dca0000:0008:000a:1:0
+IQT
+p:CTN,c:000385,c:010386,c:030385
 0001:0dca0000:2a94:055e:1:11626
 TEST
 p:TDA,c:00006e,c:010078,c:03006e
@@ -2393,9 +2405,6 @@ p:Nilesat,c:000462,c:010463,c:030462
 13f7:0dca0000:0033:0800:1:11643
 AlHayah Alaan
 p:Nilesat,c:000466,c:010467,c:030466
-13f8:0dca0000:0033:0800:1:11644
-Misr 25
-p:Nilesat,c:000468,c:010469,c:030468
 1400:0dca0000:0033:0800:2:11645
 Nagham
 p:Nilesat,c:0104e9,c:031fff
@@ -2462,9 +2471,27 @@ p:NOORSAT,c:0004be,c:0108a6,c:0304be
 1775:0dca0000:0018:006e:1:11664
 KTO
 p:KTO,c:0004b5,c:01089d,c:030029
-183b:0dca0000:003e:0800:1:11665
-TEST
-p:Nilesat,c:0003f9,c:0103fa,c:0303f9
+1839:0dca0000:003e:0800:1:0
+Jeem
+p:Nilesat,c:001839,c:01183a,c:031839
+183a:0dca0000:003e:0800:1:1
+Baraem
+p:Nilesat,c:00183c,c:01183d,c:03183c
+183b:0dca0000:003e:0800:1:2
+ERI TV
+p:Nilesat,c:00183f,c:011840,c:03183f
+183c:0dca0000:003e:0800:1:3
+Jeem HD
+p:Nilesat,c:001842,c:011843,c:031842
+1844:0dca0000:003e:0800:2:4
+Radio ERI
+p:Nilesat,c:01185a,c:031fff
+1846:0dca0000:003e:0800:2:0
+QF radio English
+p:Nilesat,c:01185c,c:03185c
+1845:0dca0000:003e:0800:2:0
+QF radio Arabic
+p:Nilesat,c:01185b,c:03185b
 1069:0dca0000:002a:0800:1:11666
 Al Burhan TV
 p:JASCO,c:001069,c:01106a,c:031069
@@ -2522,15 +2549,15 @@ p:JASCO,c:00109a,c:01109b,c:03109a
 1074:0dca0000:002a:0800:1:11683
 Alqalam
 p:JASCO,c:00108a,c:01108b,c:03108a
-106e:0dca0000:002a:0800:1:11684
-Almehaja AlBaida
-p:JASCO,c:001078,c:011079,c:031078
 106f:0dca0000:002a:0800:1:0
 Al Danah TV
 p:JASCO,c:000100,c:010102,c:030100
 1071:0dca0000:002a:0800:1:0
 Qassim TV
 p:JASCO,c:001081,c:011082,c:031081
+106e:0dca0000:002a:0800:1:0
+Qatar Today
+p:JASCO,c:001078,c:011079,c:031078
 1131:0dca0000:002c:0800:1:11686
 Al Jazeera Sports +9
 p:Al Jazeera Sport,c:00015f,c:010160,c:03015f
@@ -2540,18 +2567,18 @@ p:Al Jazeera Sport,c:000169,c:01016a,c:030169
 1133:0dca0000:002c:0800:1:11688
 NBA TV
 p:Al Jazeera Sport,c:0000e7,c:0100e8,c:0300e7
-1134:0dca0000:002c:0800:1:11689
-ESPN
-p:Al Jazeera Sport,c:0000f1,c:0100f2,c:0300f1
-1135:0dca0000:002c:0800:1:11690
-ESPN Classic Sport Europe
-p:Al Jazeera Sport,c:0000fb,c:0100fc,c:0300fb
-1136:0dca0000:002c:0800:1:11691
-ESPN America
-p:Al Jazeera Sport,c:000105,c:010106,c:030105
 1137:0dca0000:002c:0800:1:11692
 Fox Sports Middle East
 p:Al Jazeera Sport,c:00010f,c:010110,c:03010f
+1134:0dca0000:002c:0800:1:0
+JSC 1
+p:Al Jazeera Sport,f:0002,c:0000f1,c:0100f2,c:0300f1
+1135:0dca0000:002c:0800:1:1
+JSC 2
+p:Al Jazeera Sport,f:0002,c:0000fb,c:0100fc,c:0300fb
+1136:0dca0000:002c:0800:1:2
+JSC 3
+p:Al Jazeera Sport,f:0002,c:000105,c:010106,c:030105
 1389:0dca0000:0032:0064:25:11693
 Abu Dhabi Sports HD
 p:Harmonic,c:0000c9,c:01012d,c:0300c9
@@ -2616,11 +2643,11 @@ p:Nilesat,c:010424,c:030424
 France 24 (in Arabic)
 p:Nilesat,c:000401,c:010402,c:030401
 0c8a:0dcaafaf:ffff:ffff:1:0
-Test
-p:NILESAT,c:000406,c:010407,c:030406
+Al Aoula Inter
+p:Nilesat,c:000406,c:010407,c:030406
 0c9f:0dcaafaf:ffff:ffff:2:0
-Test
-p:NILESAT,c:010411,c:031fff
+TEST
+p:Nilesat,c:010411,c:031fff
 0a8d:0dcaaffc:001b:0800:1:11715
 Al Jazeera Sports +1
 p:ADD,c:000202,c:01029e,c:030202
@@ -2688,14 +2715,11 @@ p:Radio Tchad (RNT),c:0107d6,c:031fff
 Assaa
 p:Nilesat,c:000835,c:01083f,c:030835
 08a9:0dcaaf16:ffff:ffff:1:0
-TEST
-p:NILESAT,c:0007d0,c:0107d1,c:0307d0
+Dream 3
+p:Nilesat,c:0007d0,c:0107d1,c:0307d0
 0fa1:0dca0000:0028:0800:1:11738
 Alghadeer
 p:Nilesat,c:0003e9,c:0103eb,c:0303e9
-0fac:0dca0000:0028:0800:1:11739
-Iraqi Education
-p:Nilesat,c:000401,c:010402,c:0303ed
 0fa3:0dca0000:0028:0800:1:11741
 Alkass One
 p:Nilesat,c:0003ff,c:010400,c:0300c8
@@ -2715,7 +2739,7 @@ p:Nilesat,c:0003f7,c:0103f8,c:0303f7
 Cairo Drama
 p:Nilesat,c:0003e8,c:0103fe,c:0303e8
 0fad:0dca0000:0028:0800:1:11748
-Tunisie 21
+Tunisia Nat 2
 p:Nilesat,c:000403,c:010404,c:030403
 0fae:0dca0000:0028:0800:1:11749
 Alkass Two
@@ -2732,6 +2756,15 @@ p:Nilesat,c:0003f6,c:0103fb,c:0303f6
 0fab:0dca0000:0028:0800:1:0
 Cairo Cinema
 p:Nilesat,c:0003fc,c:0103fd,c:0303fc
+0fb4:0dca0000:0028:0800:2:0
+TEST
+p:Nilesat,c:010408,c:031fff
+0fb5:0dca0000:0028:0800:1:1
+TEST
+p:Nilesat,c:000023,c:01040a,c:031fff
+0fac:0dca0000:0028:0800:1:0
+Iraqi Education
+p:Nilesat,c:000401,c:010402,c:0303ed
 01a5:0dca0000:0004:0800:25:11754
 Cartoon Network
 p:Orbit Showtime Network,c:000bba,c:010bbb,c:020c0d,c:030080
@@ -2925,7 +2958,7 @@ p:ADD,c:001f72,c:011f73,c:031f72
 TV Coran
 p:ADD,c:001f7c,c:011f7d,c:031f7c
 0db1:0dca0000:0023:5000:1:11819
-Al Qarra
+Ennahar TV Algérie
 p:JMC,c:001388,c:011389,c:031388
 0dbe:0dca0000:0023:5000:1:11820
 Libya TV Shop
@@ -2964,7 +2997,7 @@ p:JMC,c:0007d0,c:0107d1,c:0307d0
 Royal Secrets
 p:ADD,c:001f5e,c:011f5f,c:031f5e
 0ddf:0dca0000:0023:5000:1:0
-A1 Jordan
+TEST
 p:JMC,c:0001f8,c:010104,c:0301f8
 0dbc:0dca0000:0023:5000:2:0
 Quran Kareem Radio
@@ -3012,7 +3045,7 @@ p:Nilesat Libanon,c:010bc1,c:030bc1
 Leb Radio 6
 p:Nilesat Libanon,c:010bc7,c:030bc7
 04b6:0dcaaf62:ffff:ffff:1:11846
-TEST
+Lebanon TV
 p:Nilesat Libanon,c:0007d6,c:010bcb,c:0307d6
 04b7:0dcaaf62:ffff:ffff:1:11847
 TEST
@@ -3071,6 +3104,15 @@ p:du,c:000d5d,c:010d5e,c:030d5d
 0cff:0dca0000:0021:0800:1:0
 Al Mutawasit TV
 p:du,c:000d03,c:010d04,c:030d03
+0d02:0dca0000:0021:0800:1:0
+Aden
+p:du,c:00012d,c:01012e,c:03012d
+0d03:0dca0000:0021:0800:1:1
+Al Eyman
+p:du,c:000191,c:010192,c:030191
+0d04:0dca0000:0021:0800:1:2
+Sheba TV
+p:du,c:0001f5,c:0101f6,c:0301f5
 02bc:0dca0000:0007:0800:1:11864
 Iqraa TV
 p:ADD,c:000208,c:0102da,c:030088
@@ -3105,7 +3147,7 @@ p:ADD,c:000206,c:0102c6,c:030086
 Jordan Satellite Channel
 p:ADD,c:000209,c:0102e4,c:030089
 02cb:0dca0000:0007:0800:1:11875
-Blue Nile Channe
+Blue Nile Channel
 p:ADD,c:00020c,c:011602,c:03008c
 02d1:0dca0000:0007:0800:2:11876
 ARZKR
@@ -3137,9 +3179,6 @@ p:JMC,c:000221,c:011629,c:030221
 02e0:0dca0000:0007:0800:1:11885
 Arzaq Basrah
 p:JMC,c:000222,c:011630,c:030222
-02e2:0dca0000:0007:0800:1:11886
-Arzaq Diwaniya
-p:JMC,c:000224,c:011632,c:030224
 02e1:0dca0000:0007:0800:1:11887
 Arzaq Karbala
 p:JMC,c:000223,c:011631,c:030223
@@ -3156,7 +3195,7 @@ p:JMC,c:000226,c:011635,c:030226
 Dzair 24
 p:JMC,c:000227,c:011636,c:030227
 02d5:0dca0000:0007:0800:1:11892
-Art Media 2
+Libya Alme3ad
 p:JMC,c:000211,c:011619,c:030211
 02db:0dca0000:0007:0800:1:11894
 Aqaba TV
@@ -3164,6 +3203,9 @@ p:JMC,c:000217,c:011625,c:030217
 02fe:0dca0000:0007:0800:1:0
 Hekayat Kaman
 p:JMC,c:00019b,c:010567,c:03019b
+02e2:0dca0000:0007:0800:1:0
+Palestine Voice
+p:JMC,c:000224,c:011632,c:030224
 09c4:0dca0000:0019:0800:1:11895
 TEST
 p:Nilesat,c:0003e8,c:0103e9,c:0303e8
@@ -3191,12 +3233,6 @@ p:Nilesat,c:0003f3,c:0103f4,c:030203
 09cd:0dca0000:0019:0800:1:11903
 Al Baghdadia
 p:Nilesat,c:0003f6,c:0103f7,c:0303f6
-09ce:0dca0000:0019:0800:1:11904
-Alnas
-p:Nilesat,c:000410,c:010411,c:030410
-09d0:0dca0000:0019:0800:1:11905
-High Education Channel 2
-p:Nilesat,c:0003f8,c:0103f9,c:0303f8
 09d1:0dca0000:0019:0800:1:11906
 Al Aoula Inter
 p:Nilesat,c:000459,c:01045a,c:030459
@@ -3230,6 +3266,12 @@ p:Nilesat,c:0003ef,c:0103f0,c:0303ef
 09d3:0dca0000:0019:0800:1:11916
 TEST
 p:Nilesat,c:0007d0,c:0107d1,c:0307d0
+09d0:0dca0000:0019:0800:1:0
+Test
+p:Nilesat,c:0003f8,c:0103f9,c:0303f8
+09ce:0dca0000:0019:0800:1:0
+Alnas
+p:Nilesat,c:000410,c:010411,c:030410
 0af1:0dca0000:001c:0800:1:11917
 TEST
 p:du,c:000fab,c:010fac,c:030fab
@@ -3398,6 +3440,9 @@ p:Nilesat,c:0010e6,c:0110e7,c:0310e6
 10d7:0dca0000:002b:0800:1:0
 MCP
 p:Nilesat,c:0010e2,c:0110e3,c:0310e2
+10d3:0dca0000:002b:0800:1:0
+Faraeen
+p:Nilesat,c:0010da,c:0110db,c:0310da
 07d5:0dca0000:0014:0800:1:11974
 Sky News Arabia
 p:Orbit Showtime Network,c:0000cd,c:010131,c:0300cd
@@ -3479,6 +3524,12 @@ p:du,c:001267,c:011268,c:031267
 1272:0dca0000:002f:0800:1:0
 Speda TV
 p:du,c:0012d5,c:0112d6,c:0312d5
+1273:0dca0000:002f:0800:1:0
+Samira TV
+p:du,c:0012a3,c:0112a4,c:0312a3
+1274:0dca0000:002f:0800:1:0
+Holy Quran
+p:du,c:0012df,c:0112e0,c:0312df
 0bb9:0dca0000:001e:0800:1:12001
 Al Hadath
 p:Nilesat,c:0007d1,c:0107d2,c:0307d1
@@ -3489,7 +3540,7 @@ p:Nilesat,c:0007d4,c:0107d5,c:0307d3
 Libya Alwatnya
 p:Nilesat,c:0007d6,c:0107da,c:0307d6
 0bbf:0dca0000:001e:0800:1:12004
-TEST
+Al Jazeera Satellite Channel
 p:Nilesat,c:0007df,c:0107e0,c:0307df
 0bc0:0dca0000:001e:0800:1:12005
 Panorama drama
@@ -3522,10 +3573,10 @@ p:Nilesat,c:01080b,c:031fff
 Al Salam
 p:Nilesat,c:0007dd,c:0107de,c:0307dd
 0bbd:0dca0000:001e:0800:1:0
-TEST
+Dream 2+
 p:Nilesat,c:0007db,c:0107dc,c:0307db
 0bbb:0dca0000:001e:0800:1:0
-TEST
+Dream 1+
 p:Nilesat,c:0007d7,c:0107d8,c:0307d7
 03e9:0dca0000:000a:0800:25:12015
 Nat Geo Wild
@@ -3638,9 +3689,6 @@ p:STN Ltd,c:000a2a,c:010a2b,c:031ffe
 03f6:0dca0000:0320:0800:1:12052
 Aden Live
 p:STN Ltd,c:00057a,c:01057b,c:031ffe
-0405:0dca0000:0320:0800:1:12054
-Fashion One
-p:STN Ltd,c:000b56,c:010b57,c:031ffe
 0408:0dca0000:0320:0800:2:12055
 Radio Mesopotamya
 p:STN Ltd,c:010c82,c:031ffe
@@ -3662,9 +3710,6 @@ p:STN Ltd,c:000322,c:010323,c:031ffe
 03f2:0dca0000:0320:0800:1:12061
 Al Hayat
 p:STN Ltd,c:0003ea,c:0103eb,c:031ffe
-040a:0dca0000:0320:0800:1:12063
-Algamar Hshimi
-p:STN Ltd,c:000d4a,c:010d4b,c:031ffe
 03ec:0dca0000:0320:0800:1:12064
 Al Thabat TV
 p:STN Ltd,c:000192,c:010193,c:031ffe
@@ -3677,6 +3722,9 @@ p:STN Ltd,c:000bba,c:010bbb,c:031ffe
 040b:0dca0000:0320:0800:1:0
 Al Horreya TV
 p:STN Ltd,c:000dae,c:010daf,c:031ffe
+03fc:0dca0000:0320:0800:1:0
+Al Masirah TV
+p:STN Ltd,c:0007d2,c:0107d3,c:031ffe
 1196:0dca0000:002d:0800:25:12066
 Al Safwa
 p:Orbit Showtime Network,c:0000ca,c:01012e,c:0300ca
@@ -3755,80 +3803,5 @@ p:Orbit Showtime Network,f:0002,c:0000e0,c:010144,c:0300e0
 11a7:0dca0000:002d:0800:25:12091
 Spare 4519
 p:Orbit Showtime Network,f:0002,c:0000db,c:01013f,c:0300db
-0dad:0dca0000:0023:0800:1:0
-Babel TV
-p:JMC,c:0003e8,c:0103e9,c:0303e8
-0dae:0dca0000:0023:0800:1:1
-Al Naeem
-p:JMC,c:0007d0,c:0107d1,c:0307d0
-0daf:0dca0000:0023:0800:1:2
-Jordan Sport
-p:JMC,c:000bb8,c:010bb9,c:030bb8
-0db0:0dca0000:0023:0800:1:3
-Royal Edhak
-p:JMC,c:000fa0,c:010fa1,c:030fa0
-0db1:0dca0000:0023:0800:1:4
-Al Qarra
-p:JMC,c:001388,c:011389,c:031388
-0db2:0dca0000:0023:0800:1:5
-Royal Albadawyah
-p:JMC,c:001770,c:011771,c:031770
-0db3:0dca0000:0023:0800:1:6
-Aghanina
-p:JMC,c:001b58,c:011b59,c:031b58
-0db5:0dca0000:0023:0800:1:7
-Al Etejah TV
-p:JMC,c:001f4a,c:011f4b,c:031f4a
-0db6:0dca0000:0023:0800:1:8
-TV Tamazight
-p:JMC,c:001f54,c:011f55,c:031f54
-0db7:0dca0000:0023:0800:1:9
-Royal Secrets
-p:JMC,c:001f5e,c:011f5f,c:031f5e
-0db8:0dca0000:0023:0800:1:10
-Kanal 4 (Kurdish)
-p:JMC,c:001f68,c:011f69,c:031f68
-0db9:0dca0000:0023:0800:1:11
-Al Janoubia
-p:JMC,c:001f72,c:011f73,c:031f72
-0dba:0dca0000:0023:0800:1:12
-TV Coran
-p:JMC,c:001f7c,c:011f7d,c:031f7c
-0dbc:0dca0000:0023:0800:2:13
-Quran Kareem Radio
-p:JMC,c:011f87,c:031f87
-0dbd:0dca0000:0023:0800:1:14
-A Konoz Altb TV
-p:JMC,c:001f90,c:011f91,c:031f90
-0dbe:0dca0000:0023:0800:1:15
-Magic TV (Arabic)
-p:JMC,c:001f9a,c:011f9b,c:031f9a
-0dbf:0dca0000:0023:0800:1:16
-Al Dawaeia
-p:JMC,c:001fa4,c:011fae,c:031fa4
-0dc0:0dca0000:0023:0800:1:17
-Asari TV
-p:JMC,c:001fb8,c:011fb9,c:031fb8
-0dc1:0dca0000:0023:0800:1:18
-Iraqi Medical
-p:JMC,c:001fc2,c:011fc3,c:031fc2
-0dc2:0dca0000:0023:0800:1:19
-Libya WTR
-p:JMC,c:001fcc,c:011fcd,c:031fcc
-0dc3:0dca0000:0023:0800:1:20
-Karim TV
-p:JMC,c:001fd6,c:011fd7,c:031fd6
-0dc4:0dca0000:0023:0800:1:21
-Lamasat Jamal
-p:JMC,c:001fe0,c:011fe1,c:031fe0
-0dc5:0dca0000:0023:0800:1:22
-Karawan Al-Ealanyia
-p:JMC,c:001fea,c:011feb,c:031fea
-0dc6:0dca0000:0023:0800:2:23
-Alamel Radio
-p:JMC,c:011fec,c:031fec
-0dde:0dca0000:0023:0800:2:24
-jbc Radio
-p:JMC,c:010ddf,c:030ddf
 end
 Editor:DreamSet 2.39 - http://www.dreamset-editor.com
