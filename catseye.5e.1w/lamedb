@@ -31,7 +31,7 @@ transponders
 	s 12703000:2963000:1:3:48:2:0
 /
 00300000:0001:0104
-	s 12697000:9630000:0:4:48:2:0:1:2:0:2
+	s 12697000:9630000:0:3:48:2:0:1:2:0:2
 /
 0030b1ae:0001:ffff
 	s 12718000:2960000:1:5:48:2:0
@@ -180,6 +180,9 @@ transponders
 0e08aa39:ffff:ffff
 	s 10809000:24500000:1:5:-8:2:0
 /
+0e080000:0041:0046
+	s 10809000:24500000:0:5:-8:2:0
+/
 0e080000:0048:0046
 	s 10872000:25000000:0:3:-8:2:0:1:2:0:2
 /
@@ -223,7 +226,7 @@ transponders
 	s 12188000:28000000:1:5:-8:2:0
 /
 0e082f62:000b:1111
-	s 12092000:30000000:0:3:-8:2:0:1:2:0:2
+	s 12092000:28000000:0:5:-8:2:0
 /
 0e080000:02bd:0600
 	s 11727000:28000000:1:5:-8:2:0
@@ -605,6 +608,9 @@ p:VisionTV,c:000a33,c:010a34,c:030a33
 0a3c:00300000:0018:0044:25:8637
 National Geographic Russia
 p:VisionTV,c:000a3d,c:010a3e,c:030a3d
+0bc2:00300000:0018:0044:25:0
+Football HD
+p:VisionTV,c:000bc3,c:010bc4,c:030bc3
 0a46:00300000:0018:0044:25:8638
 Detski
 p:VisionTV,c:000a47,c:010a48,c:030a47
@@ -830,12 +836,18 @@ p:VisionTV,c:001cd5,c:011cd6,c:031cd5
 1c8e:00300000:0013:0055:1:8696
 Pro VSE
 p:ProBCE,c:001c8f,c:011c90,c:031c8f
+1ca2:00300000:0013:0055:1:0
+Planeta Ukraine
+p:Unika-TV,c:001ca3,c:011ca4,c:031ca3
 1c9d:00300000:0013:0055:1:8697
 Moya Dytyna
 p:Manezh TV,c:001c9e,c:011c9e,c:031c9e
 1cde:00300000:0013:0055:1:8698
 English Club HD
 p:VisionTV,c:001cdf,c:011ce0,c:031cdf
+1c93:00300000:0013:0055:1:0
+TEST
+p:TEST,c:001c94,c:011c95,c:031c94
 0a00:00300000:0100:0804:1:8699
 Jurnal TV Moldova
 p:JurnalTV,c:000134,c:010100,c:030104
@@ -881,9 +893,6 @@ p:2+2,c:0017e9,c:0117ea,c:0317e9
 17ed:00300000:000c:0055:1:8713
 1+1 International
 p:Studio 1+1,c:0017ee,c:0117ef,c:0317ee
-17dc:00300000:000c:0055:2:8714
-RADIO ERA
-p:TRK ERA,c:0117dd,c:0317dd
 1834:00300000:000c:0055:2:8715
 Love Radio
 p:Love Radio,c:011835,c:031835
@@ -905,6 +914,12 @@ p:TET,c:0017df,c:0117e0,c:0317e6
 1806:00300000:000c:0055:1:8721
 Malyatko TV
 p:Malyatko TV,c:001807,c:011808,c:031807
+182e:00300000:000c:0055:1:0
+TEST
+p:TEST,c:00182f,c:011830,c:03182f
+182a:00300000:000c:0055:2:0
+RADIO ERA
+p:TRK ERA,c:01182b,c:03182b
 0578:00300000:0020:0056:25:8722
 NRK 1 HD
 p:Viasat,c:000200,c:010281,c:020240,c:030200
@@ -1037,6 +1052,9 @@ p:Viasat,c:000727,c:010728,c:02072c,c:030727
 0708:00300000:001e:0056:1:8767
 DR Ultra
 p:Viasat,c:000709,c:01070a,c:02070e,c:030709
+073a:00300000:001e:0056:1:0
+TV 2 Fri
+p:Viasat,c:00073b,c:01073c,c:020736,c:03073b
 06ae:00300000:0019:0056:25:8768
 National Geographic Scandinavia
 p:Viasat,c:0006af,c:0106b0,c:0306af
@@ -1268,9 +1286,6 @@ p:Viasat,c:010e95,c:030e95
 0e6a:00300000:0016:0056:25:8847
 National Geographic Scandinavia
 p:Viasat,c:000e6b,c:010e6c,c:020e3e,c:030e6b
-0e4c:00300000:0016:0056:1:8848
-TV4 News
-p:Viasat,c:000e4d,c:010e4e,c:030e4d
 0e56:00300000:0016:0056:1:0
 TV 4 Sweden
 p:Viasat,c:000e57,c:010e58,c:030e57
@@ -1326,7 +1341,7 @@ p:,c:000190,c:010191,c:030190
 Discovery Science Polska
 p:,c:0001f4,c:0101f5,c:0301f4
 0258:0030b022:0001:0001:1:8867
-Discovery World Polska
+Discovery Turbo Xtra
 p:,c:000258,c:010259,c:030258
 02bc:0030b022:0001:0001:1:8868
 Discovery Channel Bulgaria
@@ -1416,7 +1431,7 @@ p:Viasat,c:00184d,c:01184e,c:03184d
 Perviy Baltijskyi Muzykalnyi Kanal
 p:Viasat,c:001857,c:011858,c:031857
 1860:00300000:000d:0055:1:8897
-REN TV Baltic
+REN TV Lietuvia
 p:Viasat,c:001861,c:011862,c:031861
 187e:00300000:000d:0055:1:8898
 NTV Mir Lithuania
@@ -1430,15 +1445,15 @@ p:Viasat,c:001898,c:011899,c:031898
 1874:00300000:000d:0055:1:8901
 NTV Mir Baltic
 p:Viasat,c:001875,c:011876,c:031875
+186a:00300000:000d:0055:1:0
+REN TV Baltic
+p:Viasat,c:00186b,c:01186c,c:03186b
 1162:00300000:0018:0056:1:8902
 TV 2 Nyhetskanalen
 p:Viasat,c:001163,c:011164,c:021168,c:031163
 1144:00300000:0018:0056:1:8903
 RTR Planeta
 p:,c:001145,c:011146,c:031145
-116c:00300000:0018:0056:1:8904
-TV 1000 Premium
-p:Viasat,c:00116d,c:01116e,c:021172,c:03116d
 1176:00300000:0018:0056:1:8905
 Nelonen Pro 2
 p:Viasat,c:001177,c:011178,c:031177
@@ -1449,7 +1464,7 @@ p:Viasat,c:00114f,c:011150,c:021155,c:03114f
 Disney Channel Denmark
 p:Viasat,c:001159,c:01115a,c:02115f,c:031159
 1130:00300000:0018:0056:1:8908
-TV 2 Sport Xtra 1
+Viasat Hockey Finland
 p:Viasat,c:001131,c:011132,c:031131
 1180:00300000:0018:0056:1:8909
 Disney XD Denmark/Norway
@@ -1619,12 +1634,6 @@ p:Viasat,c:001f69,c:011f6a,c:031f69
 1f90:00300000:000a:0056:1:8960
 Viasat Xtra 6
 p:Viasat,c:001f91,c:011f92,c:031f91
-1f9a:00300000:000a:0056:1:8961
-TV4 Sweden
-p:Viasat,c:001f9b,c:011f9c,c:021fa0,c:031f9b
-1fa4:00300000:000a:0056:1:8962
-TV 2 Sport Xtra 2
-p:Viasat,c:001fa5,c:011fa6,c:031fa5
 1fae:00300000:000a:0056:1:8963
 Viasat Xtra 8
 p:Viasat,c:001faf,c:011fb0,c:031faf
@@ -1680,23 +1689,23 @@ p:Viasat,f:0002,c:001feb,c:011fec,c:031feb
 Viasat Xtra NHL7
 p:Viasat,f:0002,c:001ff5,c:011ff6,c:031ff5
 1e78:00300000:000a:0056:1:0
-Viasat Xtra FNHL 1
-p:Viasat,f:0002,c:001e79,c:011e7a,c:031e79
+Nelonen Pro 3
+p:Viasat,c:001e79,c:011e7a,c:031e79
 1e82:00300000:000a:0056:1:1
-Viasat Xtra FNHL 2
-p:Viasat,f:0002,c:001e83,c:011e84,c:031e83
+Nelonen Pro 4
+p:Viasat,c:001e83,c:011e84,c:031e83
 1e8c:00300000:000a:0056:1:2
-Viasat Xtra FNHL 3
-p:Viasat,f:0002,c:001e8d,c:011e8e,c:031e8d
+Nelonen Pro 5
+p:Viasat,c:001e8d,c:011e8e,c:031e8d
 1e96:00300000:000a:0056:1:3
-Viasat Xtra FNHL 4
-p:Viasat,f:0002,c:001e97,c:011e98,c:031e97
+Nelonen Pro 6
+p:Viasat,c:001e97,c:011e98,c:031e97
 1ea0:00300000:000a:0056:1:4
-Viasat Xtra FNHL 5
-p:Viasat,f:0002,c:001ea1,c:011ea2,c:031ea1
+Nelonen Pro 7
+p:Viasat,c:001ea1,c:011ea2,c:031ea1
 1eaa:00300000:000a:0056:1:5
-Viasat Xtra FNHL 6
-p:Viasat,f:0002,c:001eb5,c:011eb6,c:031eab
+Nelonen Pro 8
+p:Viasat,c:001eb5,c:011eb6,c:031eab
 0d48:00300000:0015:0056:1:8982
 FEM
 p:Viasat,c:000d49,c:010d4a,c:030d49
@@ -1847,6 +1856,9 @@ p:Svitle Radio,c:011965,c:031965
 19b4:00300000:000f:0055:1:9031
 UBC
 p:TV-100,c:0019b5,c:0119b6,c:0319b5
+19b9:00300000:000f:0055:1:0
+TEST
+p:TEST,c:0019ba,c:0119bb,c:0319ba
 177a:00300000:0008:0056:1:9032
 TV 2 Film
 p:Viasat,c:00177b,c:01177c,c:021780,c:03177b
@@ -1943,9 +1955,6 @@ p:Viasat,c:0018cf,c:0118d0,c:0318cf
 18d8:00300000:000e:0055:1:9060
 LNT
 p:Viasat,c:0018d9,c:0118da,c:0318d9
-18e2:00300000:000e:0055:1:9061
-LTV - Lietuvos TV
-p:Viasat,c:0018e3,c:0118e4,c:0318e3
 18ec:00300000:000e:0055:1:9062
 ETV Estonia
 p:Viasat,c:0018ed,c:0118ee,c:0218ef,c:0318ed
@@ -2075,6 +2084,9 @@ p:Viasat,f:0002,c:000209,c:0102a4,c:020240,c:031ff4
 4269:00300000:001c:0056:1:0
 
 p:Viasat,f:0002,c:000200,c:010280,c:020240,c:031ff4
+0db8:00300000:001c:0056:1:0
+NRK Ekstra
+p:Viasat,c:000200,c:010280,c:020240,c:031ff4
 0b54:00300000:0034:0055:1:9103
 TV 1 Lithuania
 p:Viasat,c:000b55,c:010b56,c:030b55
@@ -2130,7 +2142,7 @@ p:TRK Astra,c:001b1d,c:011b1e,c:031b1d
 TEST-M
 p:,c:011b29,c:031b29
 1b17:00300000:0011:0055:1:0
-ATV (Ukraine)
+cATV (Ukraine)
 p:,c:001b18,c:011b19,c:031b18
 1b3a:00300000:0011:0055:1:0
 Lale
@@ -2138,6 +2150,9 @@ p:,c:001b3b,c:011b3c,c:031b3b
 1b30:00300000:0011:0055:1:0
 Pro VSE
 p:ProBCE,c:001b31,c:011b32,c:031b31
+1afe:00300000:0011:0055:1:0
+TEST
+p:TEST,c:001aff,c:011b00,c:031aff
 19e6:00300000:0010:0055:1:9122
 Football (Ukraine)
 p:TRK Ukraine,c:0019e7,c:0119e8,c:0319e7
@@ -2181,7 +2196,7 @@ p:VisionTV,c:000ae7,c:010ae8,c:030ae7
 CBS Reality
 p:VisionTV,c:000afb,c:010afc,c:030afb
 0bc2:00300000:001a:0044:25:9149
-Football HD
+
 p:VisionTV,c:000bc3,c:010bc4,c:030bc3
 0adc:00300000:001a:0044:25:9150
 TEST
@@ -2201,6 +2216,12 @@ p:VisionTV,c:00100f,c:011010,c:03100f
 1018:00300000:001a:0044:25:9155
 TV 1000 Comedy
 p:VisionTV,c:001019,c:01101a,c:031019
+1022:00300000:001a:0044:25:0
+TEST SD
+p:VisionTV,c:001023,c:011024,c:031023
+1086:00300000:001a:0044:25:0
+Viasat Sport HD
+p:VisionTV,c:001087,c:011088,c:031087
 1068:00300000:001a:0044:25:9156
 TV 1000 Premium HD
 p:VisionTV,c:001069,c:01106a,c:031069
@@ -2213,39 +2234,39 @@ p:VisionTV,c:00107d,c:01107e,c:03107d
 0be0:00300000:001a:0044:25:9159
 Discovery HD Showcase
 p:VisionTV,c:000be1,c:010be2,c:030be1
-0b00:0e080000:001c:0046:1:9218
-DR K
-p:Canal Digital Nordic,c:000206,c:010294,c:030206
-0259:0e080000:001c:0046:1:9219
+0259:0e080000:001c:0046:1:0
 DR 1
-p:Canal Digital Nordic,c:000200,c:010280,c:020240,c:030200
-0263:0e080000:001c:0046:1:9220
-TV 2 Zulu
-p:Canal Digital Nordic,c:000204,c:01028c,c:030204
-096c:0e080000:001c:0046:1:9221
-TV 2 News
-p:Canal Digital Nordic,c:000208,c:010298,c:030208
-025a:0e080000:001c:0046:1:9222
+p:Canal Digital Nordic,c:00044c,c:010c17,c:0217f5,c:03044c
+025a:0e080000:001c:0046:1:1
 DR 2
-p:Canal Digital Nordic,c:000201,c:010281,c:020241,c:030201
-0af1:0e080000:001c:0046:1:9223
+p:Canal Digital Nordic,c:000511,c:010cdd,c:0217b9,c:030511
+0263:0e080000:001c:0046:1:2
+TV 2 Zulu
+p:Canal Digital Nordic,c:0004bf,c:010cd1,c:0217e8,c:0304bf
+096c:0e080000:001c:0046:1:3
+TV 2 News
+p:Canal Digital Nordic,c:000518,c:010ce4,c:0218e1,c:030518
+0af1:0e080000:001c:0046:1:4
 TV2 Charlie
-p:Canal Digital Nordic,c:000203,c:010288,c:020242,c:030203
-0af9:0e080000:001c:0046:1:9224
+p:Canal Digital Nordic,c:000515,c:010ce1,c:0218de,c:030515
+0af9:0e080000:001c:0046:1:5
 TV 2 Film
-p:Canal Digital Nordic,c:000207,c:0102b0,c:020243,c:030207
-0afb:0e080000:001c:0046:1:9225
+p:Canal Digital Nordic,c:000516,c:010ce2,c:0218df,c:030516
+0afb:0e080000:001c:0046:1:6
 DR Ultra
-p:Canal Digital Nordic,c:000205,c:010290,c:020244,c:030205
-0aff:0e080000:001c:0046:1:9226
+p:Canal Digital Nordic,c:000512,c:010cde,c:0217dd,c:031ff9
+0aff:0e080000:001c:0046:1:7
 DR Ramasjang
-p:Canal Digital Nordic,c:000202,c:010284,c:030202
-426f:0e080000:001c:0046:1:0
+p:Canal Digital Nordic,c:000501,c:010d0d,c:0217dd,c:030501
+0b00:0e080000:001c:0046:1:8
+DR K
+p:Canal Digital Nordic,c:00048a,c:010c46,c:0217dd,c:03048a
+426f:0e080000:001c:0046:1:9
 DR1
-p:Canal Digital Nordic,f:0002,c:000200,c:010280,c:020240,c:030200
-4275:0e080000:001c:0046:1:1
+p:Canal Digital Nordic,f:0002,c:00044c,c:010c17,c:0217f5,c:03044c
+4275:0e080000:001c:0046:1:10
 TV2 Film
-p:Canal Digital Nordic,f:0002,c:000207,c:0102b0,c:020243,c:030207
+p:Canal Digital Nordic,f:0002,c:000516,c:010ce2,c:0218df,c:030516
 040a:0e080000:0044:0046:25:9227
 TV 2 Premier League 1 HD
 p:Canal Digital Nordic,c:000200,c:010281,c:030200
@@ -2267,9 +2288,6 @@ p:Canal Digital Nordic,f:0002,c:000204,c:010291,c:030204
 1a95:0e080000:0044:0046:25:9233
 TV4 News
 p:Canal Digital Nordic,f:0002,c:000203,c:01028c,c:030203
-1a93:0e080000:0044:0046:25:9234
-TV4 News HD
-p:Canal Digital Nordic,c:000203,c:01028c,c:030203
 1a94:0e080000:0044:0046:25:9235
 MTV 3 HD
 p:Canal Digital Nordic,c:000202,c:010288,c:030202
@@ -2525,6 +2543,9 @@ p:,f:0002,c:000c80,c:010c81,c:030c80
 0001:0e08b05c:0000:0000:1:9312
 Fox News
 p:,c:000488,c:010460,c:030488
+0003:0e08b05c:0000:0000:1:0
+TLC Balkans
+p:,f:0002,c:0004ec,c:0104c6,c:0304ec
 0002:0e08b05c:0000:0000:1:9313
 TLC Romania
 p:,c:0004ec,c:0104c4,c:0304ec
@@ -2537,6 +2558,21 @@ p:RCS DigiTV,c:00006e,c:01006f,c:03006e
 0029:0e08b05c:0000:0000:1:9316
 TLC Romania
 p:Focus Sat,c:001040,c:011018,c:031040
+1b58:0e08b05c:0000:0000:1:0
+Slovak Sport 2
+p:Intelsat,c:001b94,c:011b6c,c:031b94
+1b59:0e08b05c:0000:0000:1:1
+Digi Sport 2 Slovakia
+p:Intelsat Fuchsstadt,c:001bf8,c:011bd0,c:031bf8
+1b5a:0e08b05c:0000:0000:1:2
+Digi Liga Majstrov 1
+p:Intelsat Fuchsstadt,c:001c5c,c:011c34,c:031c5c
+1b5b:0e08b05c:0000:0000:1:3
+Digi Liga Majstrov 2
+p:Intelsat Fuchsstadt,c:001cc0,c:011c98,c:031cc0
+1b5c:0e08b05c:0000:0000:1:4
+TV Lux
+p:Intelsat,c:001d24,c:011cfc,c:031d24
 072f:0e080000:0001:0046:1:9317
 TV 2 Zebra
 p:Canal Digital Nordic,c:000202,c:0102a4,c:020240,c:030202
@@ -2567,12 +2603,6 @@ p:Canal Digital Nordic,f:0002,c:000205,c:010288,c:020240,c:030205
 0721:0e08aa39:ffff:ffff:1:9325
 TV 2 Sport 2
 p:Canal Digital Nordic,f:0002,c:000201,c:010284,c:030201
-0736:0e08aa39:ffff:ffff:1:9326
-ESPN Classic Sport Europe
-p:Canal Digital Nordic,c:000209,c:0102b6,c:030209
-0737:0e08aa39:ffff:ffff:1:9327
-ESPN America
-p:Canal Digital Nordic,c:00020a,c:0102ba,c:03020a
 073a:0e08aa39:ffff:ffff:1:9328
 TV 8 Sweden
 p:Canal Digital Nordic,c:000204,c:010294,c:030204
@@ -2591,21 +2621,57 @@ p:Canal Digital Nordic,c:000205,c:0102a4,c:020243,c:030205
 183a:0e08aa39:ffff:ffff:1:9333
 ESPN America
 p:Canal Digital Nordic,c:00020a,c:0102ba,c:03020a
-183d:0e08aa39:ffff:ffff:1:9336
-CDK1
-p:Telenor,f:0002,c:000226,c:0102ee,c:030226
-183e:0e08aa39:ffff:ffff:1:9337
-CDK2
-p:Telenor,f:0002,c:000226,c:0102ee,c:030226
-183f:0e08aa39:ffff:ffff:1:9338
-CDK3
-p:Telenor,f:0002,c:000226,c:0102ee,c:030226
 1840:0e08aa39:ffff:ffff:1:9339
 TV 3 Danmark
 p:Canal Digital Nordic,c:000206,c:0102b0,c:030206
 0063:0e08aa39:ffff:ffff:1:0
 CI+ Test
 p:Canal Digital Nordic,c:000469,c:010c55,c:030469
+00d4:0e080000:0041:0046:1:0
+212
+p:Canal Digital Nordic,c:000509,c:010c3b,c:030509
+0331:0e080000:0041:0046:1:1
+817
+p:Canal Digital Nordic,c:000453,c:010bd7,c:030453
+0356:0e080000:0041:0046:1:2
+854
+p:Canal Digital Nordic,c:00050e,c:010c77,c:0217b0,c:03050e
+0359:0e080000:0041:0046:1:3
+857
+p:Canal Digital Nordic,c:000463,c:010c61,c:030463
+0442:0e080000:0041:0046:1:4
+1090
+p:Canal Digital Nordic,c:00054d,c:010d26,c:0217eb,c:03054d
+0443:0e080000:0041:0046:1:5
+1091
+p:Canal Digital Nordic,c:00054e,c:010d27,c:03054e
+0444:0e080000:0041:0046:1:6
+1092
+p:Canal Digital Nordic,c:00054f,c:010d28,c:021839,c:03054f
+0445:0e080000:0041:0046:1:7
+1093
+p:Canal Digital Nordic,c:000550,c:010d29,c:0217ac,c:030550
+089d:0e080000:0041:0046:1:8
+2205
+p:Canal Digital Nordic,c:000455,c:010c20,c:021783,c:030455
+089e:0e080000:0041:0046:1:9
+2206
+p:Canal Digital Nordic,c:000456,c:010c21,c:021784,c:030456
+45f1:0e080000:0041:0046:1:10
+17905
+p:Canal Digital Nordic,c:000455,c:010c20,c:021783,c:030455
+45fd:0e080000:0041:0046:1:11
+17917
+p:Canal Digital Nordic,c:000453,c:010bd7,c:030453
+4622:0e080000:0041:0046:1:12
+17954
+p:Canal Digital Nordic,c:00050e,c:010c77,c:0217b0,c:03050e
+4646:0e080000:0041:0046:1:13
+17990
+p:Canal Digital Nordic,c:00054d,c:010d26,c:0217eb,c:03054d
+4649:0e080000:0041:0046:1:14
+17993
+p:Canal Digital Nordic,c:000550,c:010d29,c:0217ac,c:030550
 0011:0e080000:0048:0046:25:9340
 YLE TV 1
 p:Canal Digital Nordic,c:0005ec,c:010bf7,c:021791,c:0305ec
@@ -2663,24 +2729,33 @@ p:Canal Digital Nordic,c:0005f5,c:010cbf,c:0217af,c:0305f5
 132b:0e080000:0048:0046:25:9358
 Sub TV Juniori
 p:Canal Digital Nordic,c:0005f6,c:010ccf,c:0305f6
-132c:0e080000:0048:0046:25:9359
-URHO TV
-p:Canal Digital Nordic,c:0005eb,c:010c2a,c:0305eb
 196a:0e080000:0048:0046:25:9360
 MTV 3 Max Sport 2
 p:Canal Digital Nordic,c:0005fa,c:010ca8,c:0217af,c:0305fa
+1b96:0e080000:0048:0046:25:0
+Nelonen Maailma
+p:Canal Digital Nordic,c:00061c,c:010d16,c:0217da,c:03061c
+1b97:0e080000:0048:0046:25:1
+Nelonen Prime
+p:Canal Digital Nordic,c:00061d,c:010d17,c:0217da,c:03061d
+1b98:0e080000:0048:0046:25:0
+Nelonen Nappula
+p:Canal Digital Nordic,c:00061d,c:010d17,c:0217da,c:03061d
 0b75:0e080000:003d:0046:25:9361
 YLE HD
 p:Canal Digital Nordic,c:0005aa,c:010dde,c:021838,c:0305aa
-0a33:0e080000:003d:0046:1:9363
-Slutspelskanalen HD
-p:Canal Digital Nordic,c:000410,c:010cff,c:030410
-0b75:0e080000:003d:0046:1:9364
-YLE HD
-p:Canal Digital Nordic,c:0005aa,c:010dde,c:021838,c:0305aa
-0469:0e080000:003d:0046:1:0
+0469:0e080000:003d:0046:25:0
 TV 2 Fri
 p:Canal Digital Nordic,c:000523,c:010d1e,c:021838,c:030523
+1b94:0e080000:003d:0046:25:0
+C More Fotboll HD
+p:Canal Digital Nordic,c:00056f,c:010d21,c:03056f
+1b95:0e080000:003d:0046:25:1
+Nelonen Pro 2
+p:Canal Digital Nordic,c:00061b,c:010d15,c:03061b
+42a5:0e080000:003d:0046:25:2
+TP2N
+p:Canal Digital Nordic,c:00061b,c:010d15,c:03061b
 0b6c:0e080000:0043:0046:25:9365
 Kanal 5 HD
 p:Canal Digital Nordic,c:000201,c:010284,c:020240,c:030201
@@ -3107,9 +3182,6 @@ p:Focus Sat,c:00015f,c:010168,c:03015f
 7857:0e080000:02c4:0600:1:6
 MGM Eastern Europe
 p:Focus Sat,c:000191,c:01019a,c:0201a4,c:030191
-7858:0e080000:02c4:0600:1:7
-ESPN America
-p:Focus Sat,c:0001c3,c:0101ce,c:0301c3
 7859:0e080000:02c4:0600:1:8
 Etno TV
 p:Focus Sat,c:0001f5,c:010201,c:0301f5
@@ -3134,12 +3206,72 @@ p:Focus Sat,c:000321,c:01032d,c:030321
 7860:0e080000:02c4:0600:1:15
 Sport M
 p:Focus Sat,c:000353,c:01035c,c:020366,c:030353
-2af9:0e082f62:000b:1111:25:9480
+2af9:0e082f62:000b:1111:1:9480
 Mooz Dance HD
 p:Focus Sat,c:0013ed,c:011451,c:0313ed
-2b03:0e082f62:000b:1111:25:9481
+2b03:0e082f62:000b:1111:1:9481
 TV Sonce
-p:Eastern Space Systems,c:0013f7,c:01145b,c:0313f7
+p:Focus Sat,c:0013f7,c:01145b,c:0313f7
+2b02:0e082f62:000b:1111:1:0
+Mynele TV
+p:Focus Sat,c:0013f6,c:01145a,c:0313f6
+2b04:0e082f62:000b:1111:1:0
+Nasa TV (Macedonia)
+p:Focus Sat,c:0013f8,c:01145c,c:030103
+2b05:0e082f62:000b:1111:1:1
+M Sat
+p:Focus Sat,c:0013f9,c:01145d,c:0313f9
+2b06:0e082f62:000b:1111:1:2
+NBT
+p:Focus Sat,c:0013fa,c:01145e,c:0313fa
+2b0e:0e082f62:000b:1111:1:3
+Pro TV Chisinau
+p:Focus Sat,c:001402,c:011466,c:031402
+2b13:0e082f62:000b:1111:1:4
+Jurnal TV Moldova
+p:Focus Sat,c:001407,c:01146b,c:031407
+2b0d:0e082f62:000b:1111:1:0
+Perviy Kanal Moldova
+p:Focus Sat,c:001401,c:011465,c:031401
+2b07:0e082f62:000b:1111:2:0
+Alpha 3
+p:Focus Sat,c:01145f,c:03145f
+2b08:0e082f62:000b:1111:2:1
+Alpha Radio
+p:Focus Sat,c:011460,c:031460
+2b09:0e082f62:000b:1111:2:2
+OMV Romania
+p:Focus Sat,c:011461,c:031461
+2b0f:0e082f62:000b:1111:1:0
+Acasá in Moldova
+p:Focus Sat,c:001403,c:011467,c:031403
+2b10:0e082f62:000b:1111:1:1
+2 Plus
+p:Focus Sat,c:001404,c:011468,c:031404
+2b11:0e082f62:000b:1111:1:2
+TV 7 (Moldova)
+p:Focus Sat,c:001405,c:011469,c:031405
+2b12:0e082f62:000b:1111:1:3
+N4
+p:Focus Sat,c:001406,c:01146a,c:031406
+2b14:0e082f62:000b:1111:1:0
+Dixi TV
+p:Focus Sat,c:001408,c:01146c,c:031408
+2b15:0e082f62:000b:1111:1:1
+TNT Bravo
+p:Focus Sat,c:001409,c:01146d,c:031409
+2b16:0e082f62:000b:1111:1:2
+Moldova 1
+p:Focus Sat,c:00140a,c:01146e,c:03140a
+2aff:0e082f62:000b:1111:1:0
+Mooz Dance
+p:Focus Sat,c:0013f3,c:011457,c:0313f3
+2b00:0e082f62:000b:1111:1:1
+Inedit TV
+p:Focus Sat,c:0013f4,c:011458,c:0313f4
+2b01:0e082f62:000b:1111:1:2
+TVSudEst
+p:Focus Sat,c:0013f5,c:011459,c:0313f5
 7595:0e080000:02bd:0600:1:9482
 HBO Hungary
 p:UPC Direct,c:000065,c:01006e,c:030065
@@ -3227,9 +3359,6 @@ p:Canal Digital Nordic,c:000202,c:010288,c:030202
 03ec:0e080000:0040:0046:1:9510
 Test 2
 p:Canal Digital Nordic,c:0004e2,c:010da5,c:0304e2
-1b93:0e080000:0040:0046:1:0
-Test A09
-p:Canal Digital Nordic,f:0002,c:000549,c:010d2e,c:030549
 03f3:0e080000:0040:0046:1:9511
 Test 1
 p:Canal Digital Nordic,c:0004e3,c:010da6,c:0304e3
@@ -3268,12 +3397,12 @@ Poker Channel
 p:Canal Digital Nordic,c:000205,c:0102b0,c:030205
 07d2:0e080000:0014:0046:1:9522
 DR1 Sydeuropa
-p:Canal Digital Nordic,c:000200,c:010280,c:020240,c:030200
+p:Canal Digital Nordic,c:000439,c:010d1c,c:020240,c:030439
 07d7:0e080000:0014:0046:1:9523
 DR2 Sydeuropa
-p:Canal Digital Nordic,c:000202,c:010288,c:020242,c:030202
+p:Canal Digital Nordic,c:000539,c:010cdf,c:020242,c:030539
 01f6:0e080000:0014:0046:1:9525
-TV Finland
+Telenor Testcard
 p:Canal Digital Nordic,c:000201,c:010284,c:020241,c:030201
 0395:0e080000:0014:0046:2:9526
 Scandinavian Satellite Radio
@@ -3308,51 +3437,21 @@ p:Canal Digital Nordic,c:010297,c:031ff4
 07dc:0e080000:0014:0046:2:9540
 DR P5
 p:Canal Digital Nordic,c:0102ba,c:031ff4
-0407:0e08b0a8:0003:1111:1:9541
-Perviy Kanal Moldova
-p:Focus Sat,c:001bdb,c:011c3f,c:031bdb
-0408:0e08b0a8:0003:1111:1:9542
-Jurnal TV Moldova
-p:Focus Sat,c:001bdc,c:011c40,c:031bdc
-0409:0e08b0a8:0003:1111:1:9543
-EuroTV Chisinau
+0409:0e08b0a8:0003:1111:1:0
+EuTV Chisinau
 p:Focus Sat,c:001bdd,c:011c41,c:031bdd
-040a:0e08b0a8:0003:1111:1:9544
-Moldova 1
-p:Focus Sat,c:001bde,c:011c42,c:031bde
-040b:0e08b0a8:0003:1111:1:9545
-N4
-p:Focus Sat,c:001bdf,c:011c43,c:031bdf
-040d:0e08b0a8:0003:1111:1:9546
-TNT Bravo
-p:Focus Sat,c:001be1,c:011c45,c:031be1
-040f:0e08b0a8:0003:1111:1:9548
-Pro TV Chisinau
-p:Focus Sat,c:001be3,c:011c47,c:031be3
+040e:0e08b0a8:0003:1111:1:0
+A Media
+p:Focus Sat,c:001be2,c:011c46,c:031be2
 0410:0e08b0a8:0003:1111:1:9549
 RTR Planeta
 p:Focus Sat,c:001be4,c:011c48,c:031be4
-0411:0e08b0a8:0003:1111:1:9550
-Dixi TV
-p:Focus Sat,c:001be5,c:011c49,c:031be5
-0412:0e08b0a8:0003:1111:1:9551
-TV 7 (Moldova)
-p:Focus Sat,c:001be6,c:011c4a,c:031be6
 0419:0e08b0a8:0003:1111:2:9552
 Radio Chisinau
 p:Focus Sat,c:011c51,c:031fff
 0416:0e08b0a8:0003:1111:1:9553
 RTV (Romania)
 p:Focus Sat,c:001bea,c:011c4e,c:031bea
-0406:0e08b0a8:0003:1111:1:9555
-Muz TV Moldova
-p:Focus Sat,c:001bda,c:011c3e,c:031bda
-0405:0e08b0a8:0003:1111:1:9556
-Acasá in Moldova
-p:Focus Sat,c:001bd9,c:011c3d,c:031bd9
-0404:0e08b0a8:0003:1111:1:9557
-2 Plus
-p:Focus Sat,c:001bd8,c:011c3c,c:031bd8
 0413:0e08b0a8:0003:1111:1:9558
 Transilvania Look
 p:Focus Sat,c:001be7,c:011c4b,c:031be7
@@ -3362,6 +3461,36 @@ p:Focus Sat,c:001be0,c:011c44,c:031be0
 0415:0e08b0a8:0003:1111:1:9561
 Credo TV
 p:Focus Sat,c:001be9,c:011c4d,c:031be9
+0417:0e08b0a8:0003:1111:1:0
+Bollywood TV
+p:Focus Sat,c:001beb,c:011c4f,c:031beb
+041c:0e08b0a8:0003:1111:1:0
+Muzsika TV
+p:Focus Sat,c:001bf0,c:011c54,c:031bf0
+041d:0e08b0a8:0003:1111:1:1
+Prizma
+p:Focus Sat,c:001bf1,c:011c55,c:031bf1
+041e:0e08b0a8:0003:1111:1:2
+Sorozat +
+p:Focus Sat,c:001bf2,c:011c56,c:031bf2
+0422:0e08b0a8:0003:1111:1:3
+RTL 2 Hungary
+p:Focus Sat,c:001bf6,c:011c5a,c:031bf6
+0429:0e08b0a8:0003:1111:1:4
+CineStar (Romania)
+p:Focus Sat,c:001bfd,c:011c61,c:031bfd
+042a:0e08b0a8:0003:1111:1:5
+CineStar Action and Thriller
+p:Focus Sat,c:001bfe,c:011c62,c:031bfe
+042b:0e08b0a8:0003:1111:1:6
+Fox Life Romania
+p:Focus Sat,c:001bff,c:011c63,c:031bff
+042d:0e08b0a8:0003:1111:1:7
+Nickelodeon Europe
+p:Focus Sat,c:001c01,c:011c65,c:031c01
+042c:0e08b0a8:0003:1111:1:0
+FOX
+p:Focus Sat,f:0002,c:001c00,c:011c64,c:031c00
 0967:0e080000:0002:0046:1:9562
 Boomerang
 p:Canal Digital Nordic,c:000201,c:010284,c:030201
@@ -3385,10 +3514,10 @@ CNN International Europe
 p:Canal Digital Nordic,c:000202,c:010288,c:030202
 025b:0e080000:0002:0046:1:9569
 DK 4
-p:Canal Digital Nordic,c:000205,c:010294,c:030205
+p:Canal Digital Nordic,c:000510,c:010ce0,c:030510
 07d1:0e080000:0002:0046:1:9570
 Dantoto Racing
-p:Canal Digital Nordic,c:000203,c:01028c,c:030203
+p:Canal Digital Nordic,c:000530,c:010d20,c:030530
 0d56:0e080000:0002:0046:1:9571
 TV3 (S)
 p:Canal Digital Nordic,f:0002,c:000204,c:010290,c:020243,c:030204
@@ -3510,14 +3639,8 @@ p:W1 WL DTH,c:00042e,c:010816,c:03042e
 Antenne 50Plus
 p:Neterra,c:010b55,c:030b55
 0386:0e080000:0002:00b8:2:25
-Radio Starline
+Radio Reeperbahn
 p:Neterra,c:010b56,c:030b56
-0389:0e080000:0002:00b8:2:26
-Burn FM
-p:Neterra,c:010b59,c:030b59
-038a:0e080000:0002:00b8:2:27
-Radio Party FM
-p:Neterra,c:010b5a,c:030b5a
 038c:0e080000:0002:00b8:2:28
 Top 20 Radio
 p:Neterra,c:010b5c,c:030b5c
@@ -3527,6 +3650,9 @@ p:W1 WL DTH,c:00042f,c:010817,c:03042f
 0048:0e080000:0002:00b8:25:1
 Test 72
 p:W1 WL DTH,c:000430,c:010818,c:030430
+0388:0e080000:0002:00b8:2:0
+TopStar Radio
+p:Neterra,c:010b58,c:030b58
 041b:0e082ec9:0007:1111:1:9618
 Mooz
 p:Focus Sat,c:001bef,c:011c53,c:031bef
@@ -3584,9 +3710,15 @@ p:Focus Sat,c:001bff,c:011c63,c:031bff
 042c:0e082ec9:0007:1111:1:3
 Fox Crime South East Europe
 p:Focus Sat,c:001c00,c:011c64,c:031c00
-0428:0e082ec9:0007:1111:1:0
-Bollywood TV
-p:Focus Sat,c:001bfc,c:011c60,c:031bfc
+1e16:0e082ec9:0007:1111:1:0
+A Media
+p:Focus Sat,c:001d4e,c:011db2,c:031d4e
+1e17:0e082ec9:0007:1111:1:1
+Ru TV Moldova
+p:Focus Sat,c:001d4f,c:011db3,c:031d4f
+1e15:0e082ec9:0007:1111:1:0
+Rossiya TV
+p:Focus Sat,c:001d4d,c:011db1,c:031d4d
 0c82:0e080000:0020:0046:1:9635
 Vox Norway
 p:Canal Digital Nordic,c:000202,c:010288,c:030202
@@ -3739,7 +3871,7 @@ Animal Planet
 p:Canal Digital Nordic,f:0002,c:0003e8,c:0103e9,c:02012e,c:0303e8
 0fa1:0e08ae8f:0000:0000:1:9684
 Musiq 1
-p:Canal Digital Nordic,c:000204,c:010284,c:030201
+p:Canal Digital Nordic,c:000200,c:010284,c:030201
 1158:0e08ae8f:0000:0000:1:0
 The Player Channel
 p:Telenor,c:000493,c:010c5f,c:030493
@@ -3836,9 +3968,6 @@ p:RCS DigiTV,c:000ff1,c:011009,c:030ff1
 0076:0e080000:0031:0046:2:9715
 P4
 p:Canal Digital Nordic,c:0102b4,c:0302b4
-00cb:0e080000:0031:0046:1:9716
-Travel Channel
-p:Canal Digital Nordic,c:000204,c:010290,c:020244,c:030204
 03e9:0e080000:0031:0046:1:9717
 BBC World News
 p:Canal Digital Nordic,c:000206,c:0102ac,c:030206
@@ -4055,6 +4184,9 @@ p:Canal Digital Nordic,f:0002,c:000209,c:0102a4,c:020240,c:031ff4
 03e9:0e082de3:0005:1111:1:9782
 Kanal D Romania
 p:Focus Sat,c:001bbd,c:011c21,c:031bbd
+03eb:0e082de3:0005:1111:1:0
+TEST
+p:Focus Sat,c:001bbf,c:011c23,c:031bbf
 03f0:0e082de3:0005:1111:1:9783
 Top Shop TV
 p:Focus Sat,c:001bc4,c:011bc5,c:031bc4
@@ -4094,15 +4226,6 @@ p:Focus Sat,c:001bbe,c:011c22,c:031bbe
 0ee7:0e080000:0026:0046:25:9796
 Animal Planet HD
 p:Canal Digital Nordic,c:000202,c:010288,c:031ffc
-0b77:0e080000:0026:0046:25:9797
-ESPN America HD
-p:Canal Digital Nordic,c:000203,c:01028c,c:030203
-0b78:0e080000:0026:0046:25:9798
-ESPN America HD
-p:Canal Digital Nordic,f:0002,c:000203,c:01028c,c:030203
-0ede:0e080000:0026:0046:25:9799
-National Geographic HD UK
-p:Canal Digital Nordic,c:000200,c:010280,c:030200
 0edf:0e080000:0026:0046:25:9800
 Nat Geo HD
 p:Canal Digital Nordic,f:0002,c:000200,c:010280,c:030200
@@ -4121,6 +4244,9 @@ p:Canal Digital Nordic,c:000504,c:010cba,c:030504
 02a2:0e080000:0026:0046:25:1
 Eurosport 2 HD
 p:Canal Digital Nordic,f:0002,c:000504,c:010cba,c:030504
+1b93:0e080000:0026:0046:25:0
+Test_7059
+p:Canal Digital Nordic,c:00049b,c:010d13,c:03049b
 75fa:0e080000:02be:0600:1:9805
 HBO Czechia & Slovakia
 p:UPC Direct,c:000097,c:0100a1,c:030097
@@ -4163,6 +4289,9 @@ p:UPC Direct,c:0002bd,c:0102c6,c:0302bd
 7608:0e080000:02be:0600:1:9818
 Duna World
 p:UPC Direct,c:000353,c:01035c,c:030353
+7609:0e080000:02be:0600:1:0
+FilmBox Extra
+p:UPC Direct,c:000385,c:01038e,c:030385
 7601:0e080000:02be:0600:1:9819
 RTL Klub
 p:UPC Direct,c:0001f5,c:0101fe,c:0301f5
@@ -4274,6 +4403,9 @@ p:UPC Direct,c:0001c3,c:0101ce,c:0301c3
 772d:0e080000:02c1:0600:25:1
 Bloomberg Europe
 p:UPC Direct,c:0001f5,c:010200,c:0301f5
+772a:0e080000:02c1:0600:25:0
+National Geographic HD East Europe
+p:UPC Direct,c:00015f,c:010168,c:03015f
 01f9:0e080000:001b:02c0:1:9869
 Nickelodeon Europe
 p:MTV International,c:0013bb,c:0113bc,c:0313bb
@@ -4372,25 +4504,16 @@ Klan Kosova
 p:AlbanicaSat,c:000601,c:010602,c:030601
 0b71:0e080000:0030:0046:25:9901
 TV2 Film HD
-p:Canal Digital Nordic
+p:Canal Digital Nordic,c:000201,c:010284,c:030201
 12cd:0e080000:0030:0046:25:9902
 Kanal Global HD
 p:Canal Digital Nordic,c:000204,c:010290,c:030204
-0b73:0e080000:0030:0046:25:9903
-TV2 Film HD
-p:Canal Digital Nordic,f:0002,c:000201,c:010284,c:020241,c:030201
 12c1:0e080000:0030:0046:25:9904
 DR 3 HD
-p:Canal Digital Nordic,c:000202,c:010288,c:020242,c:030202
-12c2:0e080000:0030:0046:25:9905
-DR HD
-p:Canal Digital Nordic,f:0002,c:000202,c:010288,c:020242,c:030202
+p:Canal Digital Nordic,c:00046e,c:010d0e,c:020242,c:03046e
 12cb:0e080000:0030:0046:25:9906
 DR 1 HD
-p:Canal Digital Nordic,c:000203,c:01028c,c:020242,c:030203
-12cc:0e080000:0030:0046:25:9907
-DR1 (720p50)
-p:Canal Digital Nordic,f:0002,c:000203,c:01028c,c:020243,c:030203
+p:Canal Digital Nordic,c:000500,c:010daa,c:020242,c:030500
 12ce:0e080000:0030:0046:25:9908
 TV 4 Sport Xtra HD
 p:Canal Digital Nordic,c:000205,c:010294,c:030205
@@ -4605,7 +4728,7 @@ p:RCS DigiTV,c:00022f,c:0102ff,c:03022f
 Nova Sport
 p:RCS DigiTV,c:000264,c:0107d7,c:030264
 0b0e:0e08b163:0006:0001:1:9977
-Òcko
+Slovak Sport
 p:RCS DigiTV,c:000265,c:01034e,c:030265
 0b18:0e08b163:0006:0001:1:9978
 TV Barrandov
@@ -4799,9 +4922,6 @@ p:RCS DigiTV,c:000201,c:010297,c:030201
 03f6:0e083140:0007:0001:1:10041
 Digi 24
 p:RCS DigiTV,c:000203,c:010299,c:030203
-0b9a:0e083140:0007:0001:1:10042
-Echo TV
-p:RCS DigiTV,c:000274,c:01035d,c:030274
 0a0a:0e083113:0005:0001:1:10043
 Disney Channel Hungary & Czechia
 p:RCS DigiTV,c:00024b,c:0107d2,c:03024b
