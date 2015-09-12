@@ -129,9 +129,6 @@ transponders
 00c00000:03f9:0001
 	s 11464000:22000000:0:2:192:2:0:1:2:0:2
 /
-00c00000:03fa:0001
-	s 11479000:22000000:1:2:192:2:0:1:2:0:2
-/
 00c00000:03fb:0001
 	s 11493000:22000000:0:2:192:2:0:1:2:0:2
 /
@@ -264,6 +261,9 @@ transponders
 00c00000:0448:0001
 	s 12324000:29700000:1:4:192:2:0:1:0:0
 /
+00c00000:0449:0001
+	s 12343000:30000000:0:2:192:2:0:1:2:0:2
+/
 00c00000:044a:0001
 	s 12363000:27500000:1:3:192:2:0
 /
@@ -332,9 +332,6 @@ transponders
 /
 00c00000:0460:0001
 	s 12728000:22000000:1:4:192:2:0
-/
-00c00000:0449:0001
-	s 12343000:30000000:0:2:192:2:0:1:2:0:2
 /
 end
 services
@@ -882,8 +879,8 @@ p:Movistar+ (Astra),c:0000a8,c:010070,c:0300a8
 Astra H265 Tests
 p:SES,c:00006e,c:010078,c:03006e
 0002:00c00000:040b:0001:25:0
-Astra Ultra HD Demo
-p:SES ASTRA,c:0000d2,c:0100dc,c:0300d2
+UHD1 by ASTRA / HD+
+p:HD +,c:0000d2,c:0100dc,c:0300d2
 1467:00c00000:040d:0001:25:0
 Test1
 p:SES,c:000101,c:010102,c:030101
@@ -950,6 +947,9 @@ p:CanalSat,c:000137,c:010138,c:030137
 7a4e:00c00000:0410:0001:1:0
 Sexysat 1
 p:Telefonica Servicios Audiovisuales,c:00076d,c:01076e,c:03076d
+7a4f:00c00000:0410:0001:1:0
+Aragón Sat
+p:Telefonica Servicios Audiovisuales,c:000028,c:01002a,c:030028
 7ab1:00c00000:0410:0001:1:0
 LEquipe 21
 p:CanalSat,c:000137,c:010138,c:030137
@@ -982,7 +982,7 @@ Taquilla 6
 p:Movistar+ (Astra),c:0000ab,c:01007c,c:020041,c:0300ab
 7567:00c00000:0412:0001:1:0
 Taquilla 3
-p:Movistar+ (Astra),c:0000a8,c:010070,c:020038,c:0300a8
+p:Movistar+ (Astra),c:0000a8,c:010070,c:0300a8
 7568:00c00000:0412:0001:1:0
 Taquilla X
 p:Movistar+ (Astra),c:0000a3,c:01005c,c:0300a3
@@ -1150,7 +1150,7 @@ Jukebox
 p:Sky Deutschland,c:000aff,c:010b00,c:020020,c:030aff
 0192:00c00000:0009:0085:25:0
 Big Brother 24 Stunden live
-p:Sky Deutschland,c:000bff,c:010c00,c:020020,c:030bff
+p:Sky Deutschland,c:0011ff,c:011200,c:020020,c:0311ff
 10d6:00c00000:0418:0001:1:0
 TRWAM
 p:TV TRWAM,c:000021,c:010e16,c:020111,c:030021
@@ -1499,9 +1499,6 @@ p:HD +,c:0003ff,c:010403,c:020023,c:0303ff
 ef78:00c00000:03f9:0001:25:0
 ProSieben MAXX HD
 p:HD +,c:0004ff,c:010503,c:020024,c:0304ff
-1901:00c00000:03fa:0001:25:0
-Canal+ UHD
-p:CanalSat,c:00006e,c:010079,c:03006e
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
 p:ARD Digital,c:0013ed,c:0113ee,c:0213f0,c:0313ed
@@ -1568,6 +1565,12 @@ p:BetaDigital,c:0009ff,c:010a00,c:0309ff
 1252:00c00000:03fd:0001:1:0
 Lokal TV Portal
 p:BetaDigital,c:0011ff,c:011200,c:0311ff
+1af5:00c00000:03fe:0001:1:0
+Ciné Polar
+p:GLOBECAST,c:000259,c:010281,c:030259
+1af6:00c00000:03fe:0001:1:0
+Ciné FX
+p:GLOBECAST,c:00025a,c:010282,c:03025a
 1af8:00c00000:03fe:0001:1:0
 Russia Today
 p:GlobeCast,c:00025c,c:010270,c:03025c
@@ -1802,6 +1805,9 @@ p:Kabelkiosk,c:0001ff,c:010200,c:020020,c:0301ff
 0204:00c00000:0003:0085:1:0
 Sky Nostalgie Germany
 p:Kabelkiosk,c:0005ff,c:010600,c:020020,c:0305ff
+6fec:00c00000:042a:0001:1:0
+Nickelodeon Turkey
+p:MTV Networks,c:000bcd,c:010bce,c:020bd1,c:031ffe
 6fee:00c00000:042a:0001:1:0
 MTV Hits
 p:Austriasat,c:000be1,c:010be2,c:031ffe
@@ -1823,12 +1829,21 @@ p:Austriasat,c:000c13,c:010c14,c:031ffe
 6ff4:00c00000:042a:0001:1:0
 Nickelodeon Spain
 p:Movistar+ (Astra),c:000c1d,c:010c1e,c:020c25,c:031ffe
+6ff5:00c00000:042a:0001:1:0
+Nick Junior
+p:MTV Networks,c:000c27,c:010c28,c:030c27
+6ff6:00c00000:042a:0001:1:0
+Nick Jr.
+p:MTV Networks,c:000c27,c:010c29,c:030c27
 6ff7:00c00000:042a:0001:1:0
 Game One
 p:CanalSat,c:000bd7,c:010bd8,c:020bdb,c:031ffe
 6ff8:00c00000:042a:0001:1:0
 MTV Hits.
 p:CanalSat,c:000be1,c:010be2,c:031ffe
+6ff9:00c00000:042a:0001:1:0
+Nick Junior Global
+p:MTV Networks,c:000c27,c:010c28,c:030c27
 6ffa:00c00000:042a:0001:1:0
 VH1.
 p:MTV Networks,c:000bf5,c:010bf6,c:031ffe
@@ -1841,18 +1856,6 @@ p:CanalSat,c:000c09,c:010c0a,c:020c0c,c:031ffe
 6ffd:00c00000:042a:0001:1:0
 MTV ROCKS.
 p:CanalSat,c:000c13,c:010c14,c:031ffe
-6fec:00c00000:042a:0001:1:0
-Nickelodeon Turkey
-p:MTV Networks,c:000bcd,c:010bce,c:031ffe
-6ff5:00c00000:042a:0001:1:0
-Nick Junior
-p:MTV Networks,c:000c27,c:010c28,c:030c27
-6ff6:00c00000:042a:0001:1:0
-Nick Jr.
-p:MTV Networks,c:000c27,c:010c29,c:030c27
-6ff9:00c00000:042a:0001:1:0
-Nick Junior Global
-p:MTV Networks,c:000c27,c:010c28,c:030c27
 0013:00c00000:0011:0085:1:0
 Junior|  Daytime
 p:Kabelkiosk,c:0000ff,c:010100,c:020020,c:0300ff
@@ -1982,6 +1985,9 @@ p:CanalSat,c:000262,c:01026d,c:030262
 1f47:00c00000:042e:0001:25:0
 OCS City HD
 p:CanalSat,c:0002c6,c:0102d1,c:0202e5,c:0302c6
+1f48:00c00000:042e:0001:25:0
+Disney Channel HD France
+p:CanalSat,c:00032a,c:010335,c:03032a
 1f49:00c00000:042e:0001:25:0
 D8 HD
 p:CanalSat,c:00038e,c:010399,c:03038e
@@ -2137,7 +2143,7 @@ Disney Channel France
 p:CanalSat,c:0001fe,c:010209,c:02021d,c:0301fe
 1faa:00c00000:0434:0001:1:0
 
-p:CanalSat,c:000262,c:01026d,c:020281,c:030262
+p:,c:000262,c:01026d,c:030262
 1fab:00c00000:0434:0001:1:0
 MCM
 p:CanalSat,c:0002c6,c:0102d1,c:0202e5,c:0302c6
@@ -2538,8 +2544,8 @@ p:RTL World,c:0000a7,c:010088,c:020047,c:0300a7
 RTL Nitro
 p:RTL,c:0000ad,c:010092,c:020054,c:0300ad
 2f30:00c00000:0441:0001:1:0
-Channel 21
-p:RTL World,c:0000a8,c:010089,c:020046,c:0300a8
+CBC01
+p:CBC,c:0000a8,c:010089,c:020046,c:0300a8
 2f3a:00c00000:0441:0001:1:0
 n-tv
 p:RTL World,c:0000a9,c:010049,c:020050,c:0300a9
@@ -2738,6 +2744,9 @@ p:CanalSat,c:00038e,c:010399,c:03038e
 21a2:00c00000:0448:0001:25:0
 RFM TV HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
+07da:00c00000:0449:0001:25:0
+Pearl TV 4K UHD
+p:SES ASTRA,c:000aff,c:010b00,c:030aff
 2391:00c00000:044a:0001:1:0
 C+ A LA DEMANDE
 p:CanalSat,c:0007ff,c:031fff
@@ -2998,7 +3007,7 @@ Qlar TV
 p:BetaDigital,c:000aff,c:010b00,c:030aff
 004d:00c00000:0021:0085:1:0
 HSE24 Trend
-p:BetaDigital,c:000bff,c:010c00,c:020024,c:030bff
+p:BetaDigital,c:000bff,c:010c00,c:020025,c:030bff
 0295:00c00000:0021:0085:1:0
 Astro TV
 p:BetaDigital,c:0009ff,c:010a00,c:0309ff
@@ -3230,6 +3239,9 @@ p:CanalSat,c:0002c6,c:0102d1,c:0302c6
 2588:00c00000:0458:0001:25:0
 BeIN Sport Max 10
 p:CanalSat,c:00032a,c:010335,c:03032a
+2589:00c00000:0458:0001:25:0
+BeIN Sport Max 10
+p:CanalSat,c:00038e,c:010399,c:03038e
 3138:00c00000:0459:0001:1:0
 MEDIA BROADCAST - Test 7
 p:MEDIA BROADCAST,c:000459,c:01045a,c:030459
@@ -3338,15 +3350,15 @@ p:CanalSat,c:000136,c:010141,c:030136
 22c8:00c00000:045a:0001:25:0
 Girondins TV HD
 p:CanalSat,c:00019a,c:0101a5,c:03019a
+22c9:00c00000:045a:0001:25:0
+Disney Channel HD France
+p:CanalSat,c:0001fe,c:010209,c:0301fe
 22ca:00c00000:045a:0001:25:0
 Sport 365 HD
 p:CanalSat,c:000262,c:01026d,c:030262
 22cb:00c00000:045a:0001:25:0
 Trace Urban HD
 p:CanalSat,c:0002c6,c:0102d1,c:0302c6
-22c9:00c00000:045a:0001:25:0
-Disney Channel HD France
-p:CanalSat,c:0001fe,c:010209,c:0301fe
 332d:00c00000:045b:0001:1:0
 ORF III
 p:ORF Digital,c:0003f2,c:0103f3,c:0203f5,c:0303f2
@@ -3578,8 +3590,5 @@ p:CanalSat,c:0000aa,c:010078,c:02003e,c:0300aa
 2654:00c00000:0460:0001:1:0
 Via Stella
 p:CanalSat,c:0000ab,c:01007c,c:020041,c:0300ab
-07da:00c00000:0449:0001:25:0
-Pearl TV 4K UHD
-p:SES ASTRA,c:000aff,c:010b00,c:030aff
 end
-Edited on 05.09.2015 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
+Edited on 11.09.2015 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
