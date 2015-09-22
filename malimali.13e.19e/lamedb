@@ -333,6 +333,9 @@ transponders
 00c00000:0460:0001
 	s 12728000:22000000:1:4:192:2:0
 /
+00c00000:03fa:0001
+	s 11479000:22000000:1:2:192:2:0:1:2:0:2
+/
 00820000:2af8:013e
 	s 10719000:27500000:1:4:130:2:0
 /
@@ -518,9 +521,6 @@ transponders
 /
 00820000:1900:fbff
 	s 11996000:29900000:1:3:130:2:0:1:2:0:2
-/
-00820000:1964:013e
-	s 12015000:27500000:0:3:130:2:0
 /
 00820000:19c8:fbff
 	s 12034000:29900000:1:4:130:2:0
@@ -1175,6 +1175,9 @@ p:HD +,c:0000d2,c:0100dc,c:0300d2
 1467:00c00000:040d:0001:25:0
 Test1
 p:SES,c:000101,c:010102,c:030101
+1468:00c00000:040d:0001:25:0
+Test2
+p:SES,c:000021,c:030021
 76c0:00c00000:040e:0001:1:0
 Canal+ Estrenos
 p:Movistar+ (Astra),c:0000a0,c:010050,c:020020,c:0300a0
@@ -1217,9 +1220,6 @@ p:ARD Digital,c:00152d,c:01152e,c:021530,c:03152d
 7a45:00c00000:0410:0001:1:0
 TV Record
 p:Telefonica Servicios Audiovisuales,c:000021,c:010020,c:030021
-7a46:00c00000:0410:0001:1:0
-Canal Iberalia
-p:Harmonic,c:000025,c:010024,c:030025
 7a48:00c00000:0410:0001:1:0
 Telesur
 p:Telefonica Servicios Audiovisuales,c:000835,c:010836,c:030835
@@ -1346,6 +1346,9 @@ p:Movistar+ (Astra),c:000faf,c:010fb0,c:030faf
 7580:00c00000:0412:0001:1:0
 C+ LIGA 2
 p:Movistar+ (Astra),c:000fb9,c:010fba,c:030fb9
+757b:00c00000:0412:0001:1:0
+TEST B
+p:Movistar+ (Astra),c:000ffa,c:010ffb,c:030ffa
 30d4:00c00000:0413:0001:25:0
 SAT.1 Gold HD
 p:HD +,c:0000ff,c:010103,c:0300ff
@@ -1511,6 +1514,9 @@ p:Movistar+ (Astra),c:0000a5,c:010064,c:020030,c:0300a5
 78c1:00c00000:03ec:0001:25:0
 Comedy Central HD Spain
 p:Movistar+ (Astra),c:0000a5,c:010064,c:020030,c:0300a5
+78b4:00c00000:03ec:0001:25:0
+TEST B HD
+p:Movistar+ (Astra),c:0000a0,c:010050,c:0300a0
 33f5:00c00000:03ed:0001:25:0
 ORF2St HD
 p:Austriasat,c:000bc2,c:010bc3,c:020bbd,c:030bc2
@@ -1578,7 +1584,7 @@ p:Movistar+ (Astra),c:0000a0,c:010050,c:020020,c:0300a0
 Antena Nova
 p:Movistar+ (Astra),c:0000a1,c:010054,c:0300a1
 746a:00c00000:03f0:0001:1:0
-Garage TV
+Canal Iberalia
 p:Movistar+ (Astra),c:0000a4,c:010060,c:0300a4
 746b:00c00000:03f0:0001:1:0
 Disney Junior Spain
@@ -3881,6 +3887,9 @@ p:CanalSat,c:0000aa,c:010078,c:02003e,c:0300aa
 2654:00c00000:0460:0001:1:0
 Via Stella
 p:CanalSat,c:0000ab,c:01007c,c:020041,c:0300ab
+1901:00c00000:03fa:0001:25:0
+Canal+ UHD
+p:,c:00006e,c:010079,c:03006e
 1132:00820000:2af8:013e:1:0
 TVP Sport
 p:NC+,c:0000a1,c:010054,c:0300a1
@@ -4457,9 +4466,6 @@ p:NC+,c:0000a8,c:010070,c:0201f4,c:0300a8
 12e1:00820000:2e7c:013e:1:0
   CANAL+ FILM
 p:NC+,c:0000a1,c:010054,c:0201f4,c:0300a1
-12e2:00820000:2e7c:013e:1:0
-  CANAL+ SERIALE
-p:NC+,c:0000a2,c:010058,c:0300a2
 12e3:00820000:2e7c:013e:1:0
  CANAL+
 p:NC+,c:0000a0,c:010050,c:0201f4,c:0300a0
@@ -4487,15 +4493,9 @@ p:NC+,c:0000a5,c:010064,c:0300a5
 12f9:00820000:2e7c:013e:1:0
 Domo+
 p:NC+,c:0000aa,c:01013c,c:0300aa
-130a:00820000:2e7c:013e:1:0
-DTV CABLE KU
-p:NC+,c:0000a3,c:01005c,c:0300a3
 130b:00820000:2e7c:013e:1:0
 DTV CABLE AL
 p:NC+,c:0000a4,c:010060,c:0201f4,c:0300a4
-130c:00820000:2e7c:013e:1:0
-DTV CABLE TT
-p:NC+,c:0000a5,c:010064,c:0300a5
 3e1d:00820000:2ee0:013e:25:0
 Sundance Channel HD
 p:Cyfrowy Polsat,c:000101,c:010201,c:030101
@@ -4541,6 +4541,9 @@ p:RAI,c:000726,c:010727,c:030726
 4258:00820000:2f44:013e:25:0
 90 Numeri Sat
 p:M-Three satcom,c:0006af,c:0106b0,c:0306af
+4259:00820000:2f44:013e:25:0
+Rai Sport 1 HD
+p:TivùSat,c:00073a,c:01073b,c:03073a
 1cea:00820000:2fa8:013e:1:0
 NourSat
 p:Globecast UK,c:0013ed,c:0113f7,c:0313ed
@@ -5009,9 +5012,6 @@ p:Eutelsat,c:00081c,c:010c04,c:03081c
 12aa:00820000:3458:013e:1:0
 Iran Fun
 p:Eutelsat,c:00081e,c:010c06,c:03081e
-12ab:00820000:3458:013e:1:0
-iPOL TV
-p:Eutelsat,c:00081f,c:010c07,c:03081f
 12ac:00820000:3458:013e:1:0
 Noor TV
 p:Eutelsat,c:000820,c:010c08,c:030820
@@ -5318,6 +5318,9 @@ p:NC+,c:00021c,c:010280,c:03021c
 3bbd:00820000:012c:013e:25:0
 Eurosport 2 HD UPC
 p:VisionTV,c:00021a,c:011508,c:03021a
+3b64:00820000:012c:013e:25:0
+Eleven Sports HD
+p:NC+,c:0000a3,c:01005c,c:0300a3
 32dc:00820000:0190:013e:25:0
 Canal+ HD Polska
 p:NC+,c:000167,c:010178,c:030167
@@ -5405,6 +5408,9 @@ p:Cyfrowy Polsat,c:000bb8,c:010c92,c:030bb8
 332a:00820000:0190:013e:25:0
 
 p:NC+,c:0008a6,c:0108aa,c:0308a6
+32e2:00820000:0190:013e:25:0
+Eleven HD
+p:NC+,c:00016d,c:010190,c:03016d
 0899:00820000:01f4:013e:25:0
 4FUN Hits
 p:,c:0007d1,c:010bb9,c:0307d1
@@ -5696,9 +5702,6 @@ p:Satlink,c:0007f9,c:0107fa,c:0307f9
 0019:0082acce:0578:013e:1:0
 I24 News Arabic
 p:Satlink,c:000803,c:010804,c:030803
-001b:0082acce:0578:013e:1:0
-TV SRI
-p:Satlink,c:000817,c:010818,c:030817
 001d:0082acce:0578:013e:1:0
 Paramount Channel HD Poland
 p:Cyfrowy Polsat,c:000b55,c:010b56,c:030b55
@@ -5796,7 +5799,7 @@ p:TVN,c:00020e,c:0102da,c:03020e
 RTS Un
 p:SSR/SRG,c:0000a1,c:010054,c:020023,c:0300a1
 36b3:00820000:06a4:013e:1:0
-TSI 1
+RSI La 1
 p:SSR/SRG,c:0000a2,c:010058,c:020026,c:0300a2
 36b8:00820000:06a4:013e:1:0
 RTS Deux
@@ -6095,9 +6098,6 @@ p:BSS,c:000501,c:010502,c:030501
 2985:00820000:3d54:013e:1:0
 Iran Fun
 p:BSS,c:00050b,c:01050c,c:03050b
-2989:00820000:3d54:013e:1:0
-iPOL TV
-p:BSS,c:000533,c:010534,c:030533
 298a:00820000:3d54:013e:1:0
 nar elhob
 p:BSS,c:0004f7,c:0104f8,c:0304f7
@@ -6317,9 +6317,6 @@ p:TSA,c:001f91,c:011f92,c:031f91
 35f1:00820000:1388:013e:1:0
 Nejat TV
 p:TSA,c:001fa1,c:011fa2,c:031fa1
-3640:00820000:1388:013e:1:0
-Smile Of A Child
-p:TSA,c:001fb1,c:011fb2,c:031fb1
 251d:00820000:13ef:013e:1:0
 Dubai Al Oula
 p:DU,c:001022,c:011023,c:031022
@@ -6585,7 +6582,7 @@ p:Sky Italia,c:000a13,c:010a11,c:020a1c,c:030a00
 National Geographic Italy
 p:Sky Italia,c:000a24,c:010a25,c:020a27,c:030a24
 0e3f:00820000:16a8:fbff:1:0
-MTV Italia
+MTV8
 p:Sky Italia,c:000a28,c:010a29,c:030a28
 0e47:00820000:16a8:fbff:1:0
 Giallo
@@ -6597,7 +6594,7 @@ p:Sky Italia,c:0009e3,c:0109e4,c:0309e3
 DMAX +1 Italia
 p:Sky Italia,c:0009e6,c:0109e7,c:0209e8,c:0309e6
 0e63:00820000:16a8:fbff:1:0
-Sky Info
+Rai 4
 p:Sky Italia,c:0009ec,c:0109ed,c:0309ec
 2504:00820000:170c:fbff:25:0
 OnBoard Sky HD
@@ -6917,15 +6914,6 @@ p:Sky Italia,c:0000a1,c:010190,c:0202bd,c:0300a1
 2b43:00820000:1900:fbff:25:0
 Sky Arte HD
 p:Sky Italia,c:0000a1,c:010190,c:0202bd,c:0300a1
-01da:00820000:1964:013e:1:0
-Iqraa TV
-p:JMC,c:000208,c:0102da,c:030208
-0226:00820000:1964:013e:1:0
-JMC Promotion Channel
-p:JMC,c:000099,c:010400,c:030099
-0231:00820000:1964:013e:1:0
-Al Hakeka
-p:JMC,c:000377,c:010425,c:030377
 2b5d:00820000:19c8:fbff:1:0
 Sky Cinema 1
 p:Sky Italia,c:0000a0,c:010190,c:0201d6,c:0300a0
@@ -7641,7 +7629,7 @@ p:Sky Italia,c:0000a3,c:010198,c:0300a3
 Sky Cinema Family HD
 p:Sky Italia,c:0000a1,c:010190,c:0202bd,c:0300a1
 1c5c:00820000:206c:fbff:25:0
-MTV Italia HD
+MTV8 HD
 p:Sky Italia,c:0000a7,c:0101a6,c:0300a7
 0bb9:00820000:20d0:013e:1:0
 Al Alam
@@ -7757,9 +7745,6 @@ p:IRIB,c:0004ba,c:0104bb,c:0304ba
 1eea:00820000:21fc:013e:25:0
 iFilm
 p:IRIB,c:000474,c:010475,c:030474
-1eeb:00820000:21fc:013e:25:0
-Press TV HD
-p:IRIB,c:00047e,c:01047f,c:03047e
 1ef1:00820000:21fc:013e:25:0
 Irib Nasim
 p:IRIB,c:0004b0,c:0104b1,c:0304b0
@@ -7781,6 +7766,9 @@ p:IRIB,c:000514,c:010515,c:030514
 1efc:00820000:21fc:013e:25:0
 Hispan TV HD
 p:IRIB,c:000528,c:010529,c:030528
+1efb:00820000:21fc:013e:25:0
+Press TV HD
+p:IRIB,c:00051e,c:01051f,c:03051e
 2d51:00820000:2260:fbff:1:0
 Sky Prima Fila
 p:Sky Italia,c:0000a2,c:010198,c:0202bf,c:0300a2
@@ -7901,9 +7889,6 @@ p:STN Ltd,c:000489,c:01048a,c:031ffe
 2339:00820000:2328:013e:1:0
 Armenia TV
 p:STN LTD,c:000493,c:010494,c:031ffe
-233a:00820000:2328:013e:1:0
-Al Alam
-p:STN Ltd,c:00049d,c:01049e,c:031ffe
 245b:00820000:23f0:013f:1:0
 Canale Italia
 p:Telespazio,c:000091,c:010092,c:030091
@@ -8276,6 +8261,9 @@ p:Sky Italia,c:000a0f,c:010a10,c:020a13,c:030a15
 38fa:00820000:2648:fbff:1:0
 Sky Prima Fila
 p:Sky Italia,c:000a3b,c:010a3c,c:0209da,c:030a3e
+38ca:00820000:2648:fbff:1:0
+La 8
+p:Sky Italia,c:000a00,c:010a01,c:030a00
 019f:00820000:26ac:013f:25:0
 BFM TV
 p:Bis,c:0002ef,c:0102f0,c:0302ef
@@ -8406,4 +8394,4 @@ p:Sky Italia,c:0000a5,c:0101a4,c:0300a5
 AXN HD Italia
 p:Sky Italia,c:0000a7,c:0101ac,c:0300a7
 end
-Edited on 11.09.2015 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
+Edited on 21.09.2015 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
