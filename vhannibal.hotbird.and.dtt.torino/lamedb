@@ -97,7 +97,7 @@ transponders
 	s 11747000:27500000:0:3:130:2:0
 /
 00820000:2ee0:013e
-	s 10910000:27500000:1:3:130:2:0:1:2:0:2
+	s 10911000:27500000:1:3:130:2:0:1:2:0:2
 /
 00820000:2fa8:013e
 	s 10949000:27500000:1:3:130:2:0
@@ -187,9 +187,9 @@ transponders
 	s 12169000:27500000:0:3:130:2:0:1:2:0:2
 /
 00820000:012c:013e
-	s 11258000:27500000:0:3:130:2:0:1:2:0:2
+	s 11258000:27500000:0:3:130:2:0:1:2:2:2
 /
-00820000:001a:0888
+00820000:3c28:013e
 	s 11585000:27500000:1:4:130:2:0:1:2:0:2
 /
 00820000:2bc0:013e
@@ -241,7 +241,7 @@ transponders
 	s 11976000:29900000:0:4:130:2:0
 /
 00820000:20d0:013e
-	s 12380000:27500000:1:3:130:2:0
+	s 12379000:27500000:1:3:130:2:0
 /
 00820000:1e14:fbff
 	s 12245000:29900000:0:4:130:2:0
@@ -262,7 +262,7 @@ transponders
 	s 11508000:27500000:1:3:130:2:0:1:2:2:2
 /
 00820000:03e8:013e
-	s 11393000:27500000:1:3:130:2:0:1:2:0:2
+	s 11393000:27500000:1:3:130:2:0:1:2:2:2
 /
 00820000:2c24:013e
 	s 10775000:27500000:0:4:130:2:0
@@ -1883,6 +1883,9 @@ p:
 3660:00820000:1fa4:013e:1:0
 SHANTTV
 p:TandbergTV
+3674:00820000:1fa4:013e:1:0
+Gala TV
+p:MEDIA BROADCAST
 3678:00820000:1fa4:013e:1:0
 BBC Persian
 p:BBC World Service
@@ -2130,7 +2133,7 @@ p:ARABSAT
 ESC
 p:ARABSAT
 0009:00820000:25e4:02be:1:0
-AL-IRAQIA TV
+TEST
 p:ARABSAT
 0028:00820000:25e4:02be:1:0
 JORDAN TV
@@ -2162,9 +2165,6 @@ p:ARABSAT
 0012:00820000:25e4:02be:2:0
 ESC R1
 p:ARABSAT
-0013:00820000:25e4:02be:2:0
-RADIO BAGHDAD
-p:ARABSAT
 0017:00820000:25e4:02be:2:0
 SAUDI R2
 p:Arabsat
@@ -2176,9 +2176,6 @@ OMAN R2
 p:ARABSAT
 001c:00820000:25e4:02be:2:0
 ESC R2
-p:ARABSAT
-001d:00820000:25e4:02be:2:0
-AL-IRAQIA QURAN
 p:ARABSAT
 0025:00820000:25e4:02be:2:0
 OMAN R3
@@ -2227,46 +2224,46 @@ Bahai Radio
 p:RR media
 0203:00820000:0384:013e:1:0
 24-TV RUS
-p:
+p:iKOMG
 0204:00820000:0384:013e:1:0
 24TV RUS
-p:
+p:iKOMG
 01f5:00820000:0384:013e:1:0
 Kurdsat HD
-p:
+p:iKOMG
 01f6:00820000:0384:013e:1:0
 Kurdsat News SD
-p:
+p:iKOMG
 01f7:00820000:0384:013e:1:0
 ES TV
-p:
+p:iKOMG
 01f8:00820000:0384:013e:1:0
 ORIENT 
-p:
+p:iKOMG
 01f9:00820000:0384:013e:1:0
 24-TV
-p:
+p:iKOMG
 01fa:00820000:0384:013e:1:0
 Baqi TV
-p:
+p:iKOMG
 01fb:00820000:0384:013e:1:0
 NOUR TV
-p:
+p:iKOMG
 01fd:00820000:0384:013e:1:0
 Gali Kurdistan
-p:
+p:iKOMG
 01fe:00820000:0384:013e:1:0
 Freedom TV
-p:
+p:iKOMG
 0200:00820000:0384:013e:2:0
 Rangarang Radio
-p:
+p:iKOMG
 0201:00820000:0384:013e:2:0
 Radio Eviva
-p:
+p:iKOMG
 01fc:00820000:0384:013e:2:0
 RDK Radio
-p:
+p:iKOMG
 2504:00820000:170c:fbff:1:0
 On Board Sky HD
 p:SkyItalia
@@ -2545,7 +2542,7 @@ Made in Italy
 p:RR media
 2fbf:00820000:2db4:013e:1:0
 TV Art Live
-p:RR media,c:050001
+p:RR media
 2fc0:00820000:2db4:013e:1:0
 ALL IN
 p:RR media
@@ -2657,6 +2654,9 @@ p:nc+
 331d:00820000:0190:013e:1:0
 ESP HD test D
 p:nc+
+332a:00820000:0190:013e:1:0
+11278V SID 0x332a
+p:DVB-S2 QPSK 11278V 13.0Â°E
 32dc:00820000:0190:013e:1:0
 CANAL+ HD
 p:nc+
@@ -3165,7 +3165,7 @@ p:SkyItalia
 Cinema +1
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Cinema Collection
+Cinema Hits
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Cinema Comedy
@@ -3300,7 +3300,7 @@ p:M-Three satcom
 Simaye Azadi HD
 p:M-Three satcom
 0e28:00820000:0708:00c8:1:0
-Radio Freccia TV
+Radio Freccia TV HD
 p:M-Three Satcom
 0e29:00820000:0708:00c8:1:0
 HSE24
@@ -3689,6 +3689,9 @@ p:GLOBECAST
 0322:00820000:3bc4:013e:1:0
 Kuwait TV1 HD
 p:GLOBECAST
+0323:00820000:3bc4:013e:1:0
+TRT World HD
+p:GLOBECAST
 0324:00820000:3bc4:013e:2:0
 Kuwait R1
 p:GLOBECAST
@@ -3889,13 +3892,13 @@ Antichita Chiossone
 p:Telespazio
 424a:00820000:3db8:013e:1:0
 TG ARCHITETTURA
-p:Telespazio,c:050001
+p:Telespazio
 424f:00820000:3db8:013e:1:0
 TEF Channel
 p:Telespazio
 4254:00820000:3db8:013e:1:0
 RETECONOMY
-p:Telespazio,c:050001
+p:Telespazio
 425c:00820000:3db8:013e:1:0
 TVA Vicenza
 p:Telespazio
@@ -4179,7 +4182,7 @@ p:NetMed
 novacinema1
 p:NetMed
 013e:00820000:157c:013e:1:0
-NovachristmasHD
+NovastarsHD
 p:NetMed
 013f:00820000:157c:013e:1:0
 MEGA
@@ -4324,7 +4327,7 @@ Rai 5 HD
 p:Rai
 4530:00820000:30d4:013e:1:0
 Rai Gulp HD
-p:Rai,c:050001
+p:Rai
 4531:00820000:30d4:013e:1:0
 Rai YoYo HD
 p:Rai
@@ -4336,7 +4339,7 @@ Rai 4 HD
 p:Rai
 4535:00820000:30d4:013e:1:0
 Rai Premium HD
-p:Rai,c:050001
+p:Rai
 4536:00820000:30d4:013e:1:0
 Rai Movie HD
 p:Rai
@@ -4401,10 +4404,10 @@ p:nc+
 TVP 3
 p:nc+
 113c:00820000:2af8:013e:1:0
-TV PULS
+4412
 p:nc+
 113f:00820000:2af8:013e:1:0
-TVN Turbo
+Polsat
 p:nc+
 1140:00820000:2af8:013e:1:0
 Discovery Channel
@@ -4425,7 +4428,7 @@ p:nc+
 nSport+
 p:nc+
 116e:00820000:2af8:013e:1:0
-TV PULS
+4462
 p:nc+
 1181:00820000:2af8:013e:1:0
 STREFA ABONENTA nc+
@@ -4639,16 +4642,16 @@ Rai 1 HD
 p:Rai,c:050001
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
-p:Rai,c:050001
+p:Rai
 0d4b:00820000:1450:013e:1:0
 Rai 3 HD
-p:Rai,c:050001
+p:Rai
 0d4c:00820000:1450:013e:1:0
 Rai Sport 1 HD
 p:Rai
 0d4d:00820000:1450:013e:1:0
 Rai News 24 HD
-p:Rai,c:050001
+p:Rai
 0d4e:00820000:1450:013e:1:0
 Rai Storia HD
 p:Rai
@@ -4762,7 +4765,7 @@ TVP Kultura
 p:nc+
 3d5a:00820000:2c88:013e:1:0
 CBS Drama
-p:nc+,c:050001
+p:nc+
 3d5b:00820000:2c88:013e:1:0
 CBS Reality
 p:nc+
@@ -4777,7 +4780,7 @@ NATIONAL GEO
 p:nc+
 3d5f:00820000:2c88:013e:1:0
 Orange Sport
-p:nc+,c:050001
+p:nc+
 3d60:00820000:2c88:013e:1:0
 Filmbox Premium
 p:nc+
@@ -5213,13 +5216,13 @@ p:nc+
 3bbd:00820000:012c:013e:1:0
 Eurosport 2 HD UPC
 p:nc+
-0367:00820000:001a:0888:1:0
+0367:00820000:3c28:013e:1:0
 CCTV 4E
 p:CCTV
-0368:00820000:001a:0888:1:0
+0368:00820000:3c28:013e:1:0
 CCTV NEWS
 p:CCTV
-0369:00820000:001a:0888:1:0
+0369:00820000:3c28:013e:1:0
 CCTV 9
 p:CCTV
 4269:00820000:2bc0:013e:1:0
@@ -5382,7 +5385,7 @@ p:SkyItalia
 Cinema Uno HD
 p:SkyItalia
 106c:00820000:2008:fbff:25:0
-Cinema Collection HD
+Cinema Hits HD
 p:SkyItalia
 106e:00820000:2008:fbff:25:0
 Cinema Max HD
@@ -5734,58 +5737,37 @@ Sports Active 3
 p:SkyItalia
 0899:00820000:01f4:013e:1:0
 Ahl E Bait TV Farsi
-p:
+p:iKOMG
 089a:00820000:01f4:013e:1:0
 CBC_Azerbaycan
-p:
+p:iKOMG
 089b:00820000:01f4:013e:1:0
 HAWZA ILMIYYA TV
-p:
+p:iKOMG
 089c:00820000:01f4:013e:1:0
 YEMEN TV
-p:
+p:iKOMG
 08a0:00820000:01f4:013e:1:0
 24-TV
-p:
+p:iKOMG
 08a2:00820000:01f4:013e:1:0
 World Fashion Channel
-p:,c:050001
-08a3:00820000:01f4:013e:1:0
-AzTV Azerbaijan
-p:
-08a4:00820000:01f4:013e:1:0
-Azad_Azerbaycan
-p:
-08a5:00820000:01f4:013e:1:0
-Xezer_TV
-p:
-08a6:00820000:01f4:013e:1:0
-LIDER TV AZERBAI
-p:
+p:iKOMG
 08b6:00820000:01f4:013e:1:0
 24-TV RUS
-p:
+p:iKOMG
 08b7:00820000:01f4:013e:1:0
 24TV RUS
-p:
+p:iKOMG
 08cb:00820000:01f4:013e:1:0
 Lider Jazz Radio
 p:
 07e4:00820000:01f4:013e:1:0
 News Channel
-p:
+p:iKOMG
 060e:00820000:01f4:013e:2:0
 Yemen Radio
-p:
-08cc:00820000:01f4:013e:2:0
-Radio Respublika
-p:
-08cd:00820000:01f4:013e:2:0
-Araz_FM
-p:
-08ce:00820000:01f4:013e:2:0
-FM_106.3
-p:
+p:iKOMG
 3a99:00820000:0514:013e:1:0
 CANAL+ DISCOVERY HD
 p:nc+
@@ -6196,9 +6178,9 @@ Challenger TV
 p:SkyItalia
 0fd6:00820000:1e14:fbff:1:0
 Ceramicanda TG Arch
-p:SkyItalia,c:050001
+p:SkyItalia
 0fd7:00820000:1e14:fbff:1:0
-FoxCrime Classic
+Fox Crime +2
 p:SkyItalia
 0fd8:00820000:1e14:fbff:1:0
 Free Channel
@@ -6339,7 +6321,7 @@ p:SkyItalia
 AB Channel
 p:SkyItalia
 38c4:00820000:2648:fbff:1:0
-TeenNick#musicparty
+Nickelodeon +1
 p:SkyItalia
 38c5:00820000:2648:fbff:1:0
 Comedy +1
@@ -6526,7 +6508,7 @@ Attiva Sky On Demand e Restart
 p:SkyItalia
 0dfa:00820000:1af4:fbff:1:0
 Fashion TV
-p:SkyItalia,c:050001
+p:SkyItalia
 2d03:00820000:1af4:fbff:25:0
 Disney XD HD
 p:SkyItalia
@@ -6591,13 +6573,13 @@ p:TVN SA
 TVN 7 HD_
 p:TVN
 3dec:00820000:0640:013e:1:0
-Food HD_
+Food Network HD_
 p:TVN 
 3dd8:00820000:0640:013e:25:0
-Travel HD
+Travel Channel HD
 p:TVN
 3dd9:00820000:0640:013e:25:0
-Food HD
+Food Network HD
 p:TVN
 10d7:00820000:03e8:013e:1:0
 TVN
@@ -6621,7 +6603,7 @@ p:TVN
 ACTIVE FAMILY
 p:TVN
 10de:00820000:03e8:013e:1:0
-TVN Meteo Active
+HGTV
 p:TVN
 10df:00820000:03e8:013e:1:0
 TVN Turbo
@@ -6663,7 +6645,7 @@ p:TVN
 TVN24 BiS HD
 p:TVN
 10eb:00820000:03e8:013e:25:0
-TVN Meteo Active HD
+HGTV HD
 p:TVN
 05de:00820000:2c24:013e:1:0
 CATV
@@ -6726,7 +6708,7 @@ p:Rai
 Rai Gulp
 p:Rai
 0cea:00820000:1518:013e:1:0
-Rai yoyo
+Rai YoYo
 p:Rai
 0ceb:00820000:1518:013e:1:0
 Rai Scuola
@@ -6766,9 +6748,9 @@ C4K360
 p:
 11fb:00820000:2b5c:013e:1:0
 TravelXP 4K
-p:,c:050006
+p:
 11f9:00820000:2b5c:013e:25:0
-FunBox 4K
+Funbox UHD
 p:SPI
 36c5:00820000:06a4:013e:2:0
 SRF 1
