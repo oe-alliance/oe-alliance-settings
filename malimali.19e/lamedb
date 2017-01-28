@@ -102,6 +102,9 @@ transponders
 00c00000:03ee:0001
 	s 11288000:22000000:1:2:192:2:0:1:2:0:2
 /
+00c00000:03ef:0001
+	s 11302000:22000000:0:2:192:2:0:1:2:0:2
+/
 00c00000:03f0:0001
 	s 11317000:22000000:1:4:192:2:0
 /
@@ -153,9 +156,6 @@ transponders
 00c00000:0404:0001
 	s 11626000:22000000:1:4:192:2:0
 /
-00c00000:0405:0001
-	s 11641000:22000000:0:4:192:2:0
-/
 00c00000:0406:0001
 	s 11656000:22000000:1:2:192:2:0:1:2:0:2
 /
@@ -182,6 +182,9 @@ transponders
 /
 00c00000:044d:0001
 	s 11836000:27500000:0:3:192:2:0
+/
+00c00000:0430:0001
+	s 11856000:29700000:1:4:192:2:0:1:0:0:2
 /
 00c00000:000e:0085
 	s 11875000:27500000:0:3:192:2:0:1:2:0:2
@@ -312,12 +315,6 @@ transponders
 00c00000:0460:0001
 	s 12728000:22000000:1:2:192:2:0:1:2:0:2
 /
-00c00000:0430:0001
-	s 11856000:29700000:1:4:192:2:0:1:0:0:2
-/
-00c00000:03ef:0001
-	s 11302000:22000000:0:2:192:2:0:1:2:0:2
-/
 end
 services
 012d:00c00000:0419:0001:25:0
@@ -325,7 +322,7 @@ HLG Teststream
 p:BBC RD,c:000021,c:010024,c:030021
 012e:00c00000:0419:0001:25:0
 Test technique UHD NRJ
-p:,c:000065,c:030065
+p:NRJTV,c:000078,c:010082,c:030078
 7853:00c00000:041a:0001:25:0
 BEINLALIGA1
 p:Movistar+ (Astra),c:0000a3,c:010062,c:0300a3
@@ -439,7 +436,7 @@ N24 HD Austria
 p:Sky Deutschland,c:0002ff,c:010303,c:020022,c:0302ff
 768e:00c00000:041e:0001:1:0
 Alquiler 1
-p:Movistar+ (Astra),c:0000a8,c:010070,c:0300a8
+p:Movistar+ (Astra),c:0000a8,c:010070,c:020038,c:0300a8
 768f:00c00000:041e:0001:1:0
 Alquiler 2
 p:Movistar+ (Astra),c:0000aa,c:010078,c:02003e,c:0300aa
@@ -524,6 +521,9 @@ p:Sky Deutschland,c:0003ff,c:010403,c:0303ff
 74ff:00c00000:0420:0001:25:0
 Movistar Futbol HD
 p:Movistar+ (Astra),c:0000a1,c:010056,c:0300a1
+7500:00c00000:0420:0001:25:0
+BeIn LaLiga
+p:Movistar+ (Astra),c:0000a7,c:010078,c:0300a7
 7504:00c00000:0420:0001:25:0
 Fox HD Spain & Portugal
 p:Movistar+ (Astra),c:0000a0,c:010050,c:020020,c:0300a0
@@ -537,9 +537,6 @@ p:Movistar+ (Astra),c:0000a4,c:01006a,c:0300a4
 Canal Hollywood HD
 p:Movistar+ (Astra),c:0000a5,c:01006e,c:020030,c:0300a5
 750f:00c00000:0420:0001:25:0
-BeIn LaLiga
-p:Movistar+ (Astra),c:0000a7,c:010078,c:0300a7
-7500:00c00000:0420:0001:25:0
 BeIn LaLiga
 p:Movistar+ (Astra),c:0000a7,c:010078,c:0300a7
 ef10:00c00000:0421:0001:25:0
@@ -625,7 +622,7 @@ TEST_CSD5
 p:Movistar+ (Astra),c:0000a1,c:010054,c:0300a1
 75e3:00c00000:0422:0001:1:0
 
-p:DIGITAL+,c:0000a3,c:0300a3
+p:DIGITAL+,c:0000a3,c:010190,c:0300a3
 75ed:00c00000:0422:0001:1:0
 
 p:DIGITAL+,c:0000a3,c:0100fe,c:0300a3
@@ -662,6 +659,9 @@ p:Movistar+ (Astra),c:0000a7,c:01006c,c:0300a7
 778b:00c00000:0424:0001:1:0
 Playboy TV
 p:Movistar+ (Astra),c:0000ad,c:010084,c:0300ad
+778c:00c00000:0424:0001:1:0
+BeIn LaLiga
+p:Movistar+ (Astra),c:0000a9,c:010074,c:0300a9
 778d:00c00000:0424:0001:1:0
 National Geographic Spain
 p:Movistar+ (Astra),c:0000aa,c:010078,c:0300aa
@@ -684,9 +684,6 @@ p:Movistar+ (Astra),c:0000a4,c:010060,c:0300a4
 SyFy Universal Spain
 p:Movistar+ (Astra),c:0000a2,c:010058,c:020026,c:0300a2
 7797:00c00000:0424:0001:1:0
-BeIn LaLiga
-p:Movistar+ (Astra),c:0000a9,c:010074,c:0300a9
-778c:00c00000:0424:0001:1:0
 BeIn LaLiga
 p:Movistar+ (Astra),c:0000a9,c:010074,c:0300a9
 286e:00c00000:0425:0001:25:0
@@ -734,15 +731,15 @@ p:BetaDigital,c:0000ff,c:010100,c:0300ff
 0023:00c00000:000f:0085:1:0
 Zee One
 p:BetaDigital,c:0001ff,c:010200,c:0301ff
+0025:00c00000:000f:0085:1:0
+Sky Sport News Germany
+p:Sky Deutschland,c:0002ff,c:010300,c:0302ff
 0026:00c00000:000f:0085:1:0
 Romance TV
 p:Sky Deutschland,c:0003ff,c:010400,c:0303ff
 0039:00c00000:000f:0085:1:0
 A&E Germany
 p:Sky Deutschland,c:0007ff,c:010800,c:0307ff
-0025:00c00000:000f:0085:1:0
-Sky Sport News Germany
-p:Sky Deutschland,c:0002ff,c:010300,c:0302ff
 7820:00c00000:0428:0001:25:0
 Nickelodeon HD Spain
 p:Movistar+ (Astra),c:0000a2,c:01005c,c:0300a2
@@ -887,9 +884,6 @@ p:CanalSat,c:000439,c:01043a,c:030439
 7a4d:00c00000:0410:0001:1:0
 L EQUIPE 21
 p:CanalSat,c:000137,c:010138,c:030137
-7a4e:00c00000:0410:0001:1:0
-Sexysat 1
-p:Telefonica Servicios Audiovisuales,c:00076d,c:01076e,c:03076d
 7ab1:00c00000:0410:0001:1:0
 LEquipe 21
 p:CanalSat,c:000137,c:010138,c:030137
@@ -962,6 +956,9 @@ p:Movistar+ (Astra),c:0000b0,c:010090,c:0300b0
 7573:00c00000:0412:0001:1:0
 Multideporte
 p:Movistar+ (Astra),c:000fa0,c:010fa1,c:030fa0
+7574:00c00000:0412:0001:1:0
+
+p:,c:000faa,c:010fac,c:030faa
 7575:00c00000:0412:0001:1:0
 MULTIDEP.4
 p:Movistar+ (Astra),c:000fe6,c:010fe7,c:030fe6
@@ -1001,24 +998,21 @@ p:Movistar+ (Astra),c:000fb9,c:010fba,c:030fb9
 7581:00c00000:0412:0001:1:0
 BEINLALIGA3
 p:Movistar+ (Astra),c:000fcd,c:010fce,c:030fcd
-7574:00c00000:0412:0001:1:0
-
-p:,c:000faa,c:010fac,c:030faa
 30d4:00c00000:0413:0001:25:0
 SAT.1 Gold HD
 p:HD +,c:0000ff,c:010103,c:0300ff
 30d5:00c00000:0413:0001:25:0
 Fashion 4K Preview
 p:SES ASTRA,c:0001ff,c:010203,c:0301ff
+30d6:00c00000:0413:0001:25:0
+Eurosport 1 HD
+p:HD +,c:0002ff,c:010303,c:0302ff
 30de:00c00000:0413:0001:25:0
 Fashion 4K
 p:SES ASTRA,c:000aff,c:010b00,c:030aff
 30e8:00c00000:0413:0001:25:0
 SAT.1 Gold HD Austria
 p:Mobistar,c:0000ff,c:010103,c:020020,c:0300ff
-30d6:00c00000:0413:0001:25:0
-Eurosport 1 HD
-p:HD +,c:0002ff,c:010303,c:0302ff
 7882:00c00000:0414:0001:25:0
 Movistar Series HD
 p:Movistar+ (Astra),c:0000a0,c:010050,c:0300a0
@@ -1120,10 +1114,22 @@ Sky Arts HD Germany
 p:Sky Deutschland,c:0002ff,c:010303,c:020020,c:0302ff
 00a8:00c00000:0009:0085:25:0
 Motorvision
-p:Sky Deutschland,c:0010ff,c:011100,c:020020,c:0310ff
+p:Sky Deutschland,c:0010ff,c:011100,c:0310ff
+0140:00c00000:0009:0085:25:0
+Eurosport360 HD 6
+p:Sky Deutschland,c:000cff,c:010d03,c:030cff
 0191:00c00000:0009:0085:25:0
 Jukebox
-p:Sky Deutschland,c:0011ff,c:011200,c:020020,c:0311ff
+p:Sky Deutschland,c:0011ff,c:011200,c:0311ff
+00a8:00c00000:0009:0085:22:7
+Motorvision TV
+p:SKY,C:1861
+013e:00c00000:0009:0085:25:30
+Sky Sport 8 HD
+p:SKY
+013d:00c00000:0009:0085:25:45
+Sky Sport Bundesliga 7 HD
+p:SKY
 10d6:00c00000:0418:0001:1:0
 TRWAM
 p:SES ASTRA,c:000021,c:010e16,c:020111,c:030021
@@ -1237,7 +1243,7 @@ oe24.TV
 p:ORF Digital,c:000c44,c:030c44
 1072:00c00000:03ee:0001:25:0
 Rai 1 HD
-p:Telespazio,c:000712,c:010713,c:030712
+p:Telespazio,c:0001f5,c:010259,c:0301f5
 1073:00c00000:03ee:0001:25:0
 Rai 2 HD
 p:Telespazio,c:00071c,c:01071d,c:03071c
@@ -1247,6 +1253,21 @@ p:Telespazio,c:000726,c:010727,c:030726
 1078:00c00000:03ee:0001:25:0
 Rai News 24
 p:Harmonic,c:000208,c:0102b2,c:030208
+132f:00c00000:03ef:0001:25:0
+ORF 1 HD
+p:Austriasat,c:000780,c:010781,c:020785,c:030780
+1330:00c00000:03ef:0001:25:0
+ORF 2 HD
+p:Austriasat,c:000b68,c:010b69,c:020b6d,c:030b68
+1331:00c00000:03ef:0001:25:0
+Servus TV HD
+p:Austriasat,c:000dff,c:010e00,c:020e04,c:030dff
+1332:00c00000:03ef:0001:25:0
+Servus TV HD Deutschland
+p:,c:001338,c:011339,c:02133d,c:031338
+1334:00c00000:03ef:0001:25:0
+ORF2N HD
+p:Austriasat,c:000b68,c:010b69,c:020b6d,c:030b68
 7468:00c00000:03f0:0001:1:0
 FOX Life Spain
 p:Movistar+ (Astra),c:0000a0,c:010050,c:020020,c:0300a0
@@ -1298,21 +1319,18 @@ p:Sky Deutschland,c:0000ff,c:010103,c:0300ff
 0133:00c00000:000a:0085:25:0
 Sky Sport Bundesliga 6 HD|  On air during matches
 p:Sky Deutschland,c:0007ff,c:010802,c:020020,c:0307ff
-0134:00c00000:000a:0085:25:0
-Sky Sport 7 HD
-p:Sky Deutschland,c:0008ff,c:010902,c:020020,c:0308ff
 0136:00c00000:000a:0085:25:0
 Eurosport360 HD 5|  Occasional
 p:Sky Deutschland,c:000eff,c:010f03,c:020020,c:030eff
 0152:00c00000:000a:0085:25:0
-Sky Sport 10 HD
+Sky Sport 10 HD Germany|  Occasional
 p:Sky Deutschland,c:000aff,c:010b02,c:020020,c:030aff
 0154:00c00000:000a:0085:25:0
 Eurosport360 HD 8|  Occasional
 p:Sky Deutschland,c:000dff,c:010e03,c:020020,c:030dff
-0151:00c00000:000a:0085:25:4
-Sky Bundesliga HD 9
-p:Sky Deutschland@malimali,f:40
+0151:00c00000:000a:0085:25:47
+Sky Sport Bundesliga 9 HD
+p:SKY
 2b8e:00c00000:03f2:0001:25:0
 3sat HD
 p:ZDF Vision,c:00196e,c:011978,c:021982,c:03196e
@@ -1488,17 +1506,20 @@ p:GlobeCast,c:00025e,c:010272,c:021a2e,c:03025e
 France 24 (in Arabic)
 p:GlobeCast,c:000262,c:010276,c:021a36,c:030262
 1b00:00c00000:03fe:0001:1:0
-CCTV 9 Documentary
+CGTN Documentary
 p:GlobeCast,c:000264,c:010278,c:030264
 1b01:00c00000:03fe:0001:1:0
 CCTV F
 p:GlobeCast,c:000265,c:010279,c:030265
 1b02:00c00000:03fe:0001:1:0
-CCTV News
+CGTN
 p:GlobeCast,c:000266,c:01027a,c:030266
 1b03:00c00000:03fe:0001:1:0
 TV5 Monde Europe
 p:GlobeCast,c:000267,c:01027b,c:020343,c:030267
+1b06:00c00000:03fe:0001:1:0
+TRT World HD
+p:GLOBECAST,c:00026a,c:01027e,c:03026a
 0001:00c00000:03fe:0001:1:0
 SES UHD Demo
 p:Dolby Labs,c:000030,c:010040,c:030030
@@ -1582,67 +1603,67 @@ KBS World
 p:SES,c:0000ff,c:010100,c:0300ff
 11b3:00c00000:0406:0001:25:0
 YTN
-p:SES,c:0001ff,c:010200,c:0301ff
+p:SES,c:00011f,c:010120,c:03011f
 11b4:00c00000:0406:0001:25:0
 KBS World 24
 p:SES,c:00013f,c:010140,c:03013f
 11b7:00c00000:0406:0001:25:0
 MNC International
-p:SES,c:0005ff,c:010600,c:0305ff
+p:SES,c:00019f,c:0101a0,c:03019f
 11b8:00c00000:0406:0001:25:0
 MNC Drama
-p:SES,c:0006ff,c:010700,c:0306ff
+p:SES,c:0001bf,c:0101c0,c:0301bf
 11b9:00c00000:0406:0001:25:0
 MNC Infotainment
-p:SES,c:0007ff,c:010800,c:0307ff
+p:SES,c:0001df,c:0101e0,c:0301df
 11ba:00c00000:0406:0001:25:0
 MNC World News
-p:SES,c:0008ff,c:010900,c:0308ff
+p:SES,c:0001ff,c:010200,c:0301ff
 11c6:00c00000:0406:0001:25:0
 Dragon TV
-p:SES,c:0014ff,c:011500,c:0314ff
+p:SES,c:00023f,c:010240,c:03023f
 11c7:00c00000:0406:0001:25:0
 GDTV (Guang Dong TV)
-p:SES,c:0015ff,c:011600,c:0315ff
+p:SES,c:00025f,c:010260,c:03025f
 11c8:00c00000:0406:0001:25:0
 Dopool Kids
-p:SES,c:0016ff,c:011700,c:0316ff
+p:SES,c:00027f,c:010280,c:03027f
 11c9:00c00000:0406:0001:25:0
 Hunan TV
-p:SES,c:0017ff,c:011800,c:0317ff
+p:SES,c:00029f,c:0102a0,c:03029f
 11ca:00c00000:0406:0001:25:0
 Dopool Drama
-p:SES,c:0018ff,c:011900,c:0318ff
+p:SES,c:0002bf,c:0102c0,c:0302bf
 11da:00c00000:0406:0001:25:0
 Colors
-p:SES,c:00027f,c:010280,c:03027f
+p:SES,c:0002df,c:0102e0,c:0302df
 11db:00c00000:0406:0001:25:0
 Rishtey TV
-p:SES,c:00029f,c:0102a0,c:03029f
+p:SES,c:0002ff,c:010300,c:0302ff
 11dc:00c00000:0406:0001:25:0
 Times Now
-p:SES,c:0002bf,c:0102c0,c:0302bf
+p:SES,c:00031f,c:010320,c:03031f
 11dd:00c00000:0406:0001:25:0
 B4U Movies
-p:SES,c:0002df,c:0102e0,c:0302df
+p:SES,c:00033f,c:010340,c:03033f
 11de:00c00000:0406:0001:25:0
 B4U Music
-p:SES,c:0002ff,c:010300,c:0302ff
+p:SES,c:00035f,c:010360,c:03035f
 11df:00c00000:0406:0001:25:0
 Star Plus UK
-p:SES,c:00033f,c:010340,c:03033f
+p:SES,c:00037f,c:010380,c:03037f
 11e0:00c00000:0406:0001:25:0
 Star Gold
-p:SES,c:00031f,c:010320,c:03031f
+p:SES,c:00039f,c:0103a0,c:03039f
 11e1:00c00000:0406:0001:25:0
 Star Life OK
-p:SES,c:00035f,c:010360,c:03035f
+p:SES,c:0003bf,c:0103c0,c:0303bf
 11e2:00c00000:0406:0001:25:0
 Aaj Tak International
-p:SES,c:00037f,c:010380,c:03037f
+p:SES,c:0003df,c:0103e0,c:0303df
 11e3:00c00000:0406:0001:25:0
 NDTV 24x7
-p:SES,c:00039f,c:0103a0,c:03039f
+p:SES,c:0003ff,c:010400,c:0303ff
 14b4:00c00000:0407:0001:25:0
 Sat 1 HD Austria
 p:Austriasat,c:0000ff,c:010103,c:020020,c:0300ff
@@ -1696,31 +1717,31 @@ Eurosport 2
 p:Movistar+ (Astra),c:0000a7,c:01006c,c:0300a7
 0008:00c00000:0003:0085:25:0
 Sky Cinema Comedy Germany
-p:Kabelkiosk,c:0003ff,c:010400,c:020020,c:0303ff
+p:Kabelkiosk,c:0003ff,c:010400,c:0303ff
 0009:00c00000:0003:0085:25:0
 Sky Cinema Action Germany
-p:Kabelkiosk,c:0002ff,c:010300,c:020020,c:0302ff
+p:Kabelkiosk,c:0002ff,c:010300,c:0302ff
 000b:00c00000:0003:0085:25:0
 Sky Cinema Germany +1
-p:Kabelkiosk,c:0000ff,c:010100,c:020020,c:0300ff
+p:Kabelkiosk,c:0000ff,c:010100,c:0300ff
 0013:00c00000:0003:0085:25:0
 Junior
-p:Kabelkiosk,c:0006ff,c:010700,c:020020,c:0306ff
+p:Kabelkiosk,c:0006ff,c:010700,c:0306ff
 0015:00c00000:0003:0085:25:0
 Beate-Uhse.TV
-p:Kabelkiosk,c:0008ff,c:010900,c:020020,c:0308ff
+p:Kabelkiosk,c:0008ff,c:010900,c:0308ff
 0018:00c00000:0003:0085:25:0
 Classica
-p:Kabelkiosk,c:0007ff,c:010800,c:020020,c:0307ff
+p:Kabelkiosk,c:0007ff,c:010800,c:0307ff
 001a:00c00000:0003:0085:25:0
 Disney Junior Germany
-p:Kabelkiosk,c:0005ff,c:010600,c:020020,c:0305ff
+p:Kabelkiosk,c:0005ff,c:010600,c:0305ff
 001c:00c00000:0003:0085:25:0
 Disney XD Deutschland
-p:Kabelkiosk,c:0004ff,c:010500,c:020020,c:0304ff
+p:Kabelkiosk,c:0004ff,c:010500,c:0304ff
 002b:00c00000:0003:0085:25:0
 Sky Cinema +24 Germany
-p:Kabelkiosk,c:0001ff,c:010200,c:020020,c:0301ff
+p:Kabelkiosk,c:0001ff,c:010200,c:0301ff
 00fb:00c00000:0003:0085:25:0
 Sky Select 1
 p:Sky Deutschland,c:0019ff,c:011a00,c:0319ff
@@ -1775,9 +1796,6 @@ p:Kabelkiosk,c:0017ff,c:011800,c:020020,c:0317ff
 012f:00c00000:0003:0085:25:0
 Sky Sport 7
 p:Sky Deutschland,c:000dff,c:010e00,c:020020,c:030dff
-00fc:00c00000:0003:0085:1:9
-Sky Bundesliga 10
-p:Sky Deutschland,f:40
 6fec:00c00000:042a:0001:1:0
 Nickelodeon Turkey
 p:MTV Networks,c:000bcd,c:010bce,c:020bd1,c:030bcd
@@ -1801,10 +1819,10 @@ Nickelodeon Spain
 p:Movistar+ (Astra),c:000c1d,c:010c1e,c:020c25,c:031fe0
 6ff5:00c00000:042a:0001:1:0
 Nick Junior
-p:Canal Digitaal,c:000c27,c:010c28,c:031ffd
+p:Movistar+ (Astra),c:000c27,c:010c28,c:031ffd
 6ff6:00c00000:042a:0001:1:0
 Nick Jr.
-p:Canal Digitaal,c:000c27,c:010c29,c:031ffd
+p:MTV Networks,c:000c27,c:010c29,c:031ffd
 6ff7:00c00000:042a:0001:1:0
 Nick Jr..
 p:Austriasat,c:000c27,c:010c28,c:031ffd
@@ -1819,34 +1837,34 @@ VH1 Classic.
 p:MTV Networks,c:000bff,c:010c00,c:030bff
 000c:00c00000:0002:0085:25:0
 NatGeo Wild Germany
-p:Kabelkiosk,c:0008ff,c:010900,c:020020,c:0308ff
+p:Kabelkiosk,c:0008ff,c:010900,c:0308ff
 0010:00c00000:0002:0085:25:0
 Fox Serie
-p:Kabelkiosk,c:0002ff,c:010300,c:020020,c:0302ff
+p:Kabelkiosk,c:0002ff,c:010300,c:0302ff
 0016:00c00000:0002:0085:25:0
 Heimatkanal
-p:Kabelkiosk,c:000aff,c:010b00,c:020020,c:030aff
+p:Kabelkiosk,c:000aff,c:010b00,c:030aff
 0019:00c00000:0002:0085:25:0
 Disney Cinemagic Germany
-p:Kabelkiosk,c:000cff,c:010d00,c:020020,c:030cff
+p:Kabelkiosk,c:000cff,c:010d00,c:030cff
 001e:00c00000:0002:0085:25:0
 Sky Sport Austria
-p:Kabelkiosk,c:0007ff,c:010800,c:020020,c:0307ff
+p:Kabelkiosk,c:0007ff,c:010800,c:0307ff
 0024:00c00000:0002:0085:25:0
 SyFy Deutschland
-p:Kabelkiosk,c:0005ff,c:010600,c:020020,c:0305ff
+p:Kabelkiosk,c:0005ff,c:010600,c:0305ff
 0029:00c00000:0002:0085:25:0
 Sky Cinema Hits Germany
-p:Kabelkiosk,c:0000ff,c:010100,c:020020,c:0300ff
+p:Kabelkiosk,c:0000ff,c:010100,c:0300ff
 002a:00c00000:0002:0085:25:0
 13th Street
-p:Kabelkiosk,c:0001ff,c:010200,c:020020,c:0301ff
+p:Kabelkiosk,c:0001ff,c:010200,c:0301ff
 0032:00c00000:0002:0085:25:0
 TNT Serie
-p:Kabelkiosk,c:0003ff,c:010400,c:020020,c:0303ff
+p:Kabelkiosk,c:0003ff,c:010400,c:0303ff
 0034:00c00000:0002:0085:25:0
 Spiegel Geschichte
-p:Kabelkiosk,c:0009ff,c:010a00,c:020020,c:0309ff
+p:Kabelkiosk,c:0009ff,c:010a00,c:0309ff
 00de:00c00000:0002:0085:25:0
 Sky Sport 2 Germany
 p:Kabelkiosk,c:0006ff,c:010700,c:020020,c:0306ff
@@ -1882,16 +1900,22 @@ Sky Select
 p:Sky Deutschland,c:0013ff,c:011400,c:0313ff
 0159:00c00000:0002:0085:25:0
 Blue Movie
-p:Kabelkiosk,c:0017ff,c:011800,c:020020,c:0317ff
+p:Kabelkiosk,c:0017ff,c:011800,c:0317ff
 0163:00c00000:0002:0085:25:0
 Blue Movie
-p:Kabelkiosk,c:0018ff,c:011900,c:020020,c:0318ff
+p:Kabelkiosk,c:0018ff,c:011900,c:0318ff
 016d:00c00000:0002:0085:25:0
 Blue Movie
-p:Kabelkiosk,c:0019ff,c:011a00,c:020020,c:0319ff
+p:Kabelkiosk,c:0019ff,c:011a00,c:0319ff
 0206:00c00000:0002:0085:25:0
 Goldstar TV
-p:Kabelkiosk,c:000bff,c:010c00,c:020020,c:030bff
+p:Kabelkiosk,c:000bff,c:010c00,c:030bff
+00de:00c00000:0002:0085:22:23
+Sky Sport 2
+p:SKY,C:0000
+001e:00c00000:0002:0085:22:34
+Sky Sport Austria
+p:SKY,C:0000
 0090:00c00000:0010:0085:25:0
 Sky Atlantic +1 HD Germany
 p:Kabelkiosk,c:0001ff,c:010203,c:020020,c:0301ff
@@ -1901,6 +1925,12 @@ p:Sky Deutschland,c:0006ff,c:010703,c:0306ff
 0229:00c00000:0010:0085:25:0
 Sky Sport UHD
 p:Sky Deutschland,c:0007ff,c:010803,c:0307ff
+0229:00c00000:0010:0085:31:20
+Sky Sport UHD
+p:SKY
+0228:00c00000:0010:0085:31:37
+Sky Sport Bundesliga UHD
+p:SKY,C:0000
 1f41:00c00000:042e:0001:25:0
 BET HD France
 p:CanalSat,c:00006e,c:010079,c:03006e
@@ -1955,6 +1985,30 @@ p:ARD Digital,c:000259,c:01025a,c:02025c,c:030259
 6dd1:00c00000:044d:0001:1:0
 Südwest Fernsehen Baden-Würtemberg
 p:ARD Digital,c:000321,c:010322,c:020324,c:030321
+2009:00c00000:0430:0001:25:0
+BeIN Sport Max 4
+p:CanalSat,c:00006e,c:010079,c:03006e
+200a:00c00000:0430:0001:25:0
+BeIN Sport Max 5
+p:CanalSat,c:0000d2,c:0100dd,c:0300d2
+200b:00c00000:0430:0001:25:0
+BeIN Sport Max 6
+p:CanalSat,c:000136,c:010141,c:030136
+200c:00c00000:0430:0001:25:0
+NRJ Hits
+p:CanalSat,c:00019a,c:0101a5,c:03019a
+200d:00c00000:0430:0001:25:0
+Sundance TV
+p:CanalSat,c:0001fe,c:010209,c:0301fe
+200e:00c00000:0430:0001:25:0
+M6 Boutique & Co
+p:CanalSat,c:000262,c:01026d,c:030262
+200f:00c00000:0430:0001:25:0
+Viceland
+p:CanalSat,c:0002c6,c:0102d1,c:0302c6
+2010:00c00000:0430:0001:25:0
+Nickelodeon France +1 HD
+p:CanalSat,c:00032a,c:010335,c:03032a
 0065:00c00000:000e:0085:25:0
 Universal HD Germany
 p:Sky Deutschland,c:0005ff,c:010603,c:0305ff
@@ -1976,15 +2030,9 @@ p:Sky Deutschland,c:0008ff,c:010902,c:0308ff
 0104:00c00000:000e:0085:25:0
 Eurosport 360 HD 9
 p:Sky Deutschland,c:000eff,c:010f03,c:020020,c:030eff
-013d:00c00000:000e:0085:25:0
-Sky Bundesliga HD 7
-p:Sky Deutschland,c:0006ff,c:010702,c:0306ff
 013e:00c00000:000e:0085:25:0
 Sky Sport HD 8|  Occasional
 p:Sky Deutschland,c:000bff,c:010c02,c:030bff
-0140:00c00000:000e:0085:25:0
-Eurosport360 HD 6
-p:Sky Deutschland,c:000cff,c:010d03,c:030cff
 0148:00c00000:000e:0085:25:0
 Sky Sport HD 9|  Occasional
 p:Sky Deutschland,c:000aff,c:010b02,c:030aff
@@ -1994,15 +2042,15 @@ p:Sky Deutschland,c:0010ff,c:011100,c:0310ff
 0194:00c00000:000e:0085:25:0
 Cartoon Network Germany
 p:Sky Deutschland,c:0011ff,c:011200,c:0311ff
-0147:00c00000:000e:0085:25:3
-Sky Bundesliga HD 8
-p:Sky Deutschland,f:40
-0101:00c00000:000e:0085:25:5
-Sky Bundesliga HD 10
-p:Sky Deutschland,f:40
-014a:00c00000:000e:0085:25:62
-Eurosport360HD 7
-p:Sky Deutschland,f:40
+014a:00c00000:000e:0085:25:17
+Eurosport360HD 7
+p:SKY
+0147:00c00000:000e:0085:25:46
+Sky Sport Bundesliga 8 HD
+p:SKY
+0101:00c00000:000e:0085:25:48
+Sky Sport Bundesliga 10 HD
+p:SKY
 206d:00c00000:0432:0001:25:0
  BFM TV HD
 p:CanalSat,c:00006e,c:010079,c:03006e
@@ -2030,15 +2078,15 @@ p:CanalSat,c:00038e,c:010399,c:03038e
 2076:00c00000:0432:0001:25:0
 MCS Bien Être HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
-206e:00c00000:0432:0001:25:0
-.
-p:CanalSat,c:0000d2,c:0100dd,c:0300d2
-2077:00c00000:0432:0001:25:0
-.
-p:CanalSat,c:000456,c:010461,c:030456
-2078:00c00000:0432:0001:25:0
-.
-p:CanalSat,c:0004ba,c:0104c5,c:0304ba
+2081:00c00000:0432:0001:25:0
+Arte HD
+p:CanalSat,c:00083e,c:010849,c:02085d,c:03083e
+2082:00c00000:0432:0001:25:0
+France Ô
+p:CanalSat,c:0008a2,c:0108ad,c:0308a2
+2083:00c00000:0432:0001:25:0
+Gulli
+p:CanalSat,c:000906,c:010911,c:030906
 0076:00c00000:0006:0085:25:0
 NatGeo Wild HD Germany
 p:Kabelkiosk,c:0001ff,c:010203,c:020020,c:0301ff
@@ -2065,7 +2113,7 @@ TNT Film
 p:Sky Deutschland,c:0010ff,c:011100,c:0310ff
 0198:00c00000:0006:0085:25:0
 Sky 1 Germany
-p:Kabelkiosk,c:0011ff,c:011200,c:020020,c:0311ff
+p:Kabelkiosk,c:0011ff,c:011200,c:0311ff
 22c5:00c00000:0434:0001:25:0
 E! HD France
 p:CanalSat,c:00006e,c:010079,c:03006e
@@ -2081,9 +2129,6 @@ p:CanalSat,c:00019a,c:0101a5,c:03019a
 22c9:00c00000:0434:0001:25:0
 Game One HD
 p:CanalSat,c:0001fe,c:010209,c:0301fe
-22ca:00c00000:0434:0001:25:0
-.
-p:CanalSat,c:000262,c:01026d,c:030262
 22cb:00c00000:0434:0001:25:0
 Trace Urban HD
 p:CanalSat,c:0002c6,c:0102d1,c:0302c6
@@ -2200,52 +2245,55 @@ iTELE HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
 000a:00c00000:0004:0085:25:0
 Sky Cinema Germany
-p:Kabelkiosk,c:0000ff,c:010100,c:020020,c:0300ff
+p:Kabelkiosk,c:0000ff,c:010100,c:0300ff
 000d:00c00000:0004:0085:25:0
 National Geographic Germany
-p:Kabelkiosk,c:000bff,c:010c00,c:020020,c:030bff
+p:Kabelkiosk,c:000bff,c:010c00,c:030bff
 000e:00c00000:0004:0085:25:0
 Discovery Channel Deutschland
-p:Kabelkiosk,c:000cff,c:010d00,c:020020,c:030cff
+p:Kabelkiosk,c:000cff,c:010d00,c:030cff
 0012:00c00000:0004:0085:25:0
 Sky Select
-p:SKY,c:0009ff,c:010a00,c:020020,c:0309ff
+p:SKY,c:0009ff,c:010a00,c:0309ff
 0014:00c00000:0004:0085:25:0
 Sky Cinema Emotion Germany
-p:Kabelkiosk,c:0001ff,c:010200,c:020020,c:0301ff
+p:Kabelkiosk,c:0001ff,c:010200,c:0301ff
 0017:00c00000:0004:0085:25:0
 Sky Krimi
-p:Kabelkiosk,c:0005ff,c:010600,c:020020,c:0305ff
+p:Kabelkiosk,c:0005ff,c:010600,c:0305ff
 001b:00c00000:0004:0085:25:0
 RTL Crime
-p:Kabelkiosk,c:000dff,c:010e00,c:020020,c:030dff
+p:Kabelkiosk,c:000dff,c:010e00,c:030dff
 001d:00c00000:0004:0085:25:0
 RTL Passion Germany
-p:Kabelkiosk,c:000eff,c:010f00,c:020020,c:030eff
+p:Kabelkiosk,c:000eff,c:010f00,c:030eff
 0022:00c00000:0004:0085:25:0
 Sky Atlantic Germany
-p:Kabelkiosk,c:0003ff,c:010400,c:020020,c:0303ff
+p:Kabelkiosk,c:0003ff,c:010400,c:0303ff
 00dd:00c00000:0004:0085:25:0
 Sky Sport 1 Germany
-p:Kabelkiosk,c:0006ff,c:010700,c:020020,c:0306ff
+p:Kabelkiosk,c:0006ff,c:010700,c:020902,c:0306ff
 00df:00c00000:0004:0085:25:0
 Sky Bundesliga
-p:Kabelkiosk,c:0008ff,c:010900,c:020021,c:0308ff
+p:Kabelkiosk,c:0008ff,c:010900,c:020020,c:0308ff
 0196:00c00000:0004:0085:25:0
 Kinowelt TV
 p:Kabelkiosk,c:0010ff,c:011100,c:0310ff
 0197:00c00000:0004:0085:25:0
 Sky Cinema Family
-p:Kabelkiosk,c:000fff,c:011000,c:020020,c:030fff
+p:Kabelkiosk,c:000fff,c:011000,c:030fff
 0201:00c00000:0004:0085:25:0
 Blue Movie
 p:Kabelkiosk,c:000aff,c:010b00,c:030aff
-0203:00c00000:0004:0085:25:0
-MGM Germany
-p:Kabelkiosk,c:0004ff,c:010500,c:020020,c:0304ff
 0204:00c00000:0004:0085:25:0
 Sky Cinema Nostalgie Germany
-p:Kabelkiosk,c:0002ff,c:010300,c:020020,c:0302ff
+p:Kabelkiosk,c:0002ff,c:010300,c:0302ff
+00dd:00c00000:0004:0085:22:21
+Sky Sport 1
+p:SKY,C:0000
+00df:00c00000:0004:0085:22:38
+Sky Sport Bundesliga 1
+p:SKY,C:0000
 4e21:00c00000:043a:0001:1:0
 ProSieben Schweiz
 p:ProSiebenSat.1,c:000121,c:010122,c:020021,c:030121
@@ -2287,10 +2335,19 @@ Disney Junior HD Germany
 p:Sky Deutschland,c:0004ff,c:010503,c:020020,c:0304ff
 008b:00c00000:0008:0085:25:0
 Sky Cinema Family HD
-p:Kabelkiosk,c:0002ff,c:010303,c:020020,c:0302ff
+p:Kabelkiosk,c:0002ff,c:010303,c:0302ff
 0093:00c00000:0008:0085:25:0
 Sky 1 HD
-p:Kabelkiosk,c:0003ff,c:010403,c:020020,c:0303ff
+p:Kabelkiosk,c:0003ff,c:010403,c:0303ff
+0136:00c00000:0008:0085:25:0
+Eurosport360 HD 5
+p:Sky Deutschland,c:000eff,c:010f03,c:030eff
+0134:00c00000:0008:0085:25:29
+Sky Sport 7 HD
+p:SKY
+0133:00c00000:0008:0085:25:44
+Sky Sport Bundesliga 6 HD
+p:SKY
 24b9:00c00000:043c:0001:25:0
 Disney XD HD France
 p:CanalSat,c:00006e,c:010079,c:03006e
@@ -2309,9 +2366,6 @@ p:CanalSat,c:0001fe,c:010209,c:0301fe
 24be:00c00000:043c:0001:25:0
 Eurosport 2 HD
 p:CanalSat,c:000262,c:01026d,c:030262
-24bf:00c00000:043c:0001:25:0
-Discovery Science HD France
-p:CanalSat,c:0002c6,c:0102d1,c:0302c6
 24c0:00c00000:043c:0001:25:0
 Disney Channel France +1 HD
 p:CanalSat,c:00032a,c:010335,c:03032a
@@ -2360,18 +2414,12 @@ p:ARD Digital,c:000bb9,c:010bba,c:020194,c:0300c9
 6e47:00c00000:0431:0001:1:0
 Südwest Fernsehen Rheinland-Pfalz
 p:ARD Digital,c:000c1d,c:010c1e,c:020c20,c:030c1d
-26ad:00c00000:043e:0001:25:0
-Discovery HD Showcase
-p:CanalSat,c:00006e,c:010079,c:03006e
 26ae:00c00000:043e:0001:25:0
 TCM HD France
 p:CanalSat,c:0000d2,c:0100dd,c:0200f1,c:0300d2
 26af:00c00000:043e:0001:25:0
 Golf+ HD
 p:CanalSat,c:000136,c:010141,c:030136
-26b0:00c00000:043e:0001:25:0
-Brava HDTV
-p:CanalSat,c:00019a,c:0101a5,c:03019a
 26b1:00c00000:043e:0001:25:0
 Téva HD
 p:CanalSat,c:0001fe,c:010209,c:0301fe
@@ -2383,16 +2431,22 @@ Penthouse  HD
 p:CanalSat,c:0002c6,c:0102d1,c:0302c6
 26b4:00c00000:043e:0001:25:0
 Cartoon Network HD France
-p:CanalSat,c:00032a,c:010335,c:020349,c:03032a
+p:CanalSat,c:00032a,c:010335,c:03032a
 26b5:00c00000:043e:0001:25:0
 Onzeo HD
 p:CanalSat,c:00038e,c:010399,c:03038e
 26b6:00c00000:043e:0001:25:0
 TV5 Monde FBS HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
+26b8:00c00000:043e:0001:25:0
+Planète+ A&E HD
+p:CanalSat,c:0004ba,c:0104c5,c:0304ba
+26c1:00c00000:043e:0001:25:0
+Multisports HD
+p:CanalSat,c:00083e,c:010849,c:03083e
 26c2:00c00000:043e:0001:25:0
-
-p:,c:0008a2,c:0108ad,c:0308a2
+Toonami France HD
+p:CanalSat,c:0008a2,c:0108ad,c:0308a2
 0035:00c00000:0007:0085:1:0
 N24 Austria
 p:BetaDigital,c:0000ff,c:010100,c:020020,c:0300ff
@@ -2429,9 +2483,6 @@ p:BetaDigital,c:0002ff,c:010300,c:0302ff
 0307:00c00000:0007:0085:1:0
 MediaShop - Meine Einkaufswelt
 p:BetaDigital,c:0004ff,c:010500,c:0304ff
-2455:00c00000:0440:0001:25:0
-Arte HD
-p:CanalSat,c:00006e,c:010079,c:02008d,c:03006e
 2456:00c00000:0440:0001:25:0
 Cine+ Premier HD
 p:CanalSat,c:0000d2,c:0100dd,c:0300d2
@@ -2525,9 +2576,6 @@ p:CanalSat,c:00038e,c:010399,c:03038e
 2332:00c00000:0442:0001:25:0
 Infosport+ HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
-2333:00c00000:0442:0001:25:0
-Planète+ A&E HD
-p:CanalSat,c:000456,c:010461,c:030456
 2334:00c00000:0442:0001:25:0
 C8 HD
 p:CanalSat,c:0004ba,c:0104c5,c:0304ba
@@ -2579,12 +2627,6 @@ p:CanalSat,c:000262,c:01026d,c:030262
 19cf:00c00000:0444:0001:25:0
 Libido TV HD
 p:CanalSat,c:0002c6,c:0102d1,c:0302c6
-19d0:00c00000:0444:0001:25:0
-France Ô HD
-p:CanalSat,c:00032a,c:010335,c:03032a
-19d1:00c00000:0444:0001:25:0
-Gulli HD
-p:CanalSat,c:00038e,c:010399,c:03038e
 19d2:00c00000:0444:0001:25:0
 Seasons HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
@@ -2594,6 +2636,9 @@ p:CanalSat,c:000456,c:010461,c:030456
 19d4:00c00000:0444:0001:25:0
 Equidia Live HD
 p:CanalSat,c:0004ba,c:0104c5,c:0304ba
+19dd:00c00000:0444:0001:25:0
+Multisports HD
+p:Canal Digitaal,c:00083e,c:010849,c:03083e
 6f46:00c00000:0445:0001:1:0
 SR Südwest Fernsehen
 p:ARD Digital,c:000515,c:010516,c:020518,c:030515
@@ -2632,7 +2677,7 @@ RTL 9 HD
 p:Bis,c:000087,c:01014f,c:02027b,c:030087
 428c:00c00000:0446:0001:25:0
 Chasse et Pêche
-p:Orange,c:000088,c:0100ec,c:02027c,c:030088
+p:CanalSat,c:000088,c:010150,c:02027c,c:030088
 429e:00c00000:0446:0001:25:0
 XXL
 p:CanalSat,c:00007c,c:0100e0,c:03007c
@@ -2645,9 +2690,6 @@ p:Kabelkiosk,c:0002ff,c:010303,c:020020,c:0302ff
 006c:00c00000:000c:0085:25:0
 Sky Sport News HD Germany
 p:Sky Deutschland,c:0003ff,c:010403,c:020020,c:0303ff
-0073:00c00000:000c:0085:25:0
-MGM HD Germany
-p:Kabelkiosk,c:0004ff,c:010503,c:020020,c:0304ff
 007e:00c00000:000c:0085:25:0
 SyFy HD Deutschland
 p:Kabelkiosk,c:0001ff,c:010203,c:020020,c:0301ff
@@ -2660,15 +2702,12 @@ p:Sky Deutschland,c:0008ff,c:010902,c:020020,c:0308ff
 0122:00c00000:000c:0085:25:0
 Eurosport360 HD 3
 p:Sky Deutschland,c:000eff,c:010f03,c:020020,c:030eff
-219a:00c00000:0448:0001:25:0
-MCM HD
-p:CanalSat,c:0000d2,c:0100dd,c:0300d2
 2199:00c00000:0448:0001:25:0
 MCM Top HD
 p:CanalSat,c:00006e,c:010079,c:03006e
-219b:00c00000:0448:0001:25:0
-EVENEMENT 2
-p:CanalSat,c:000136,c:010141,c:030136
+219a:00c00000:0448:0001:25:0
+MCM HD
+p:CanalSat,c:0000d2,c:0100dd,c:0300d2
 07d0:00c00000:0449:0001:25:0
 Insight UHD
 p:SES ASTRA,c:0000ff,c:010100,c:0300ff
@@ -2683,10 +2722,10 @@ Pearl TV 4K UHD
 p:SES ASTRA,c:000aff,c:010b00,c:030aff
 2391:00c00000:044a:0001:1:0
 
-p:CanalSat,c:0007ff,c:031fff
+p:,c:0007ff,c:031fff
 2394:00c00000:044a:0001:1:0
 
-p:CanalSat,c:0007ff,c:031fff
+p:,c:0007ff,c:031fff
 23a3:00c00000:044a:0001:1:0
 CANAL A LA DEMANDE
 p:CanalSat,c:0007ff,c:031fff
@@ -2828,9 +2867,6 @@ p:CanalSat,c:00019a,c:0101a5,c:03019a
 1969:00c00000:044e:0001:25:0
 Série Club HD
 p:CanalSat,c:0001fe,c:010209,c:0301fe
-196a:00c00000:044e:0001:25:0
-OCS Max HD
-p:CanalSat,c:000262,c:01026d,c:030262
 196b:00c00000:044e:0001:25:0
 Man X|  Nights
 p:CanalSat,c:0002c6,c:0102d1,c:0302c6
@@ -2924,12 +2960,21 @@ p:Canal Digitaal,c:000234,c:01005a,c:030234
 0fe1:00c00000:0451:0035:1:0
 Vivid CZ
 p:M7 Group,c:000234,c:01005a,c:030234
+1006:00c00000:0451:0035:1:0
+AB 3
+p:M7 Group,c:00025a,c:01008e,c:03025a
+1009:00c00000:0451:0035:1:0
+Brazzers TV
+p:Austriasat,c:00025d,c:010091,c:03025d
 100a:00c00000:0451:0035:1:0
 Eurosport 2 Germany
 p:Austriasat,c:00025e,c:010092,c:03025e
 100b:00c00000:0451:0035:1:0
 Hustler TV
 p:Austriasat,c:00025f,c:010093,c:03025f
+100d:00c00000:0451:0035:1:0
+Hustler TV CZ
+p:M7 Group,c:00025f,c:010093,c:03025f
 1013:00c00000:0451:0035:1:0
 Planet
 p:Austriasat,c:000267,c:01009b,c:030267
@@ -2942,18 +2987,9 @@ p:Austriasat,c:000270,c:0100a4,c:030270
 101d:00c00000:0451:0035:1:0
 AXN Deutschland
 p:Austriasat,c:000271,c:0100a5,c:030271
-1006:00c00000:0451:0035:1:0
-AB 3
-p:M7 Group,c:00025a,c:01008e,c:031ffe
-100d:00c00000:0451:0035:1:0
-Hustler TV CZ
-p:M7 Group,c:00025f,c:010093,c:030093
-1009:00c00000:0451:0035:1:0
-Brazzers TV
-p:Austriasat,c:00025d,c:010091,c:03025d
 1031:00c00000:0451:0035:1:0
 Brazzers TV CZ
-p:Canal Digitaal,c:00025d,c:010091,c:031ffe
+p:Canal Digitaal,c:00025d,c:010091,c:03025d
 445c:00c00000:0453:0001:1:0
 Sat 1
 p:ProSiebenSat.1,c:0000ff,c:010100,c:020020,c:0300ff
@@ -3086,9 +3122,6 @@ p:MEDIA BROADCAST,c:0000db,c:01013f,c:0300ce
 314c:00c00000:0459:0001:1:0
 123 Damenwahl
 p:MEDIA BROADCAST,c:0000dc,c:010140,c:0300ce
-314d:00c00000:0459:0001:1:0
-TecTime TV
-p:Media Broadcast Satellite,c:0000dd,c:010141,c:03026d
 314e:00c00000:0459:0001:1:0
 Paradise
 p:MEDIA BROADCAST,c:0000de,c:010142,c:0300de
@@ -3172,7 +3205,7 @@ Servus TV
 p:Austriasat,c:00083e,c:01083f,c:020843,c:03083e
 3338:00c00000:045b:0001:1:0
 4News
-p:,c:000848,c:031fff
+p:,c:000848,c:030848
 3339:00c00000:045b:0001:1:0
 L-TV|  Time sharing
 p:-,c:000852,c:010853,c:030852
@@ -3248,12 +3281,6 @@ p:CanalSat,c:00019a,c:0101a5,c:03019a
 2521:00c00000:045e:0001:25:0
 Multisports HD
 p:CanalSat,c:0001fe,c:010209,c:0301fe
-2522:00c00000:045e:0001:25:0
-Multisports HD
-p:CanalSat,c:000262,c:01026d,c:030262
-2523:00c00000:045e:0001:25:0
-Multisports HD
-p:CanalSat,c:0002c6,c:0102d1,c:0302c6
 2524:00c00000:045e:0001:25:0
 Colmax TV
 p:CanalSat,c:00032a,c:010335,c:03032a
@@ -3263,6 +3290,12 @@ p:CanalSat,c:00005a,c:010399,c:03005a
 2526:00c00000:045e:0001:25:0
 OM TV HD
 p:CanalSat,c:0003f2,c:0103fd,c:0303f2
+2531:00c00000:045e:0001:25:0
+Brava HDTV
+p:CanalSat,c:00083e,c:010849,c:03083e
+2532:00c00000:045e:0001:25:0
+OCS Max HD
+p:CanalSat,c:0008a2,c:0108ad,c:0308a2
 2649:00c00000:0460:0001:25:0
 France 3 Caen
 p:CanalSat,c:00006e,c:010079,c:03006e
@@ -3335,47 +3368,5 @@ p:CanalSat,c:000906,c:010911,c:030906
 2660:00c00000:0460:0001:25:0
 France 3 Besançon
 p:CanalSat,c:00096a,c:010975,c:03096a
-2009:00c00000:0430:0001:25:0
-BeIN Sport Max 4
-p:CanalSat,c:00006e,c:010079,c:03006e
-200a:00c00000:0430:0001:25:0
-BeIN Sport Max 5
-p:CanalSat,c:0000d2,c:0100dd,c:0300d2
-200b:00c00000:0430:0001:25:0
-BeIN Sport Max 6
-p:CanalSat,c:000136,c:010141,c:030136
-200c:00c00000:0430:0001:25:0
-NRJ Hits
-p:CanalSat,c:00019a,c:0101a5,c:03019a
-200d:00c00000:0430:0001:25:0
-Sundance TV
-p:CanalSat,c:0001fe,c:010209,c:0301fe
-200e:00c00000:0430:0001:25:0
-M6 Boutique & Co
-p:CanalSat,c:000262,c:01026d,c:030262
-200f:00c00000:0430:0001:25:0
-Viceland
-p:CanalSat,c:0002c6,c:0102d1,c:0302c6
-2010:00c00000:0430:0001:25:0
-Nickelodeon France +1 HD
-p:CanalSat,c:00032a,c:010335,c:03032a
-2023:00c00000:0430:0001:25:0
-EVENEMENT 1
-p:CanalSat,c:0002c6,c:0102d1,c:0302c6
-1332:00c00000:03ef:0001:25:0
-Servus TV HD Deutschland
-p:,c:001338,c:011339,c:02133d,c:031338
-132f:00c00000:03ef:0001:25:0
-ORF 1 HD
-p:Sky Deutschland,c:000780,c:010781,c:020785,c:030780
-1330:00c00000:03ef:0001:25:0
-ORF 2 HD
-p:Sky Deutschland,c:000b68,c:010b69,c:020b6d,c:030b68
-1331:00c00000:03ef:0001:25:0
-Servus TV HD
-p:Sky Deutschland,c:000dff,c:010e00,c:020e04,c:030dff
-1334:00c00000:03ef:0001:25:0
-ORF2N HD
-p:Austriasat,c:000b68,c:010b69,c:020b6d,c:030b68
 end
-Edited on 06.01.2017 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
+Edited on 24.01.2017 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
