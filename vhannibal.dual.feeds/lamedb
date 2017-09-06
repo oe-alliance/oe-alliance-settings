@@ -315,8 +315,17 @@ transponders
 00c00000:0449:0001
 	s 12343000:30000000:0:2:192:2:0:1:2:2:2
 /
+00820000:3070:013e
+	s 10992000:27500000:1:2:130:2:0
+/
 00820000:2f44:013e
 	s 10930000:30000000:0:2:130:2:0:1:2:0:2
+/
+00820000:2198:fbff
+	s 12418000:29900000:1:3:130:2:0:1:2:0:2
+/
+00820000:2774:fbff
+	s 12731000:29900000:0:4:130:2:0
 /
 00820000:1644:fbff
 	s 11861000:29900000:0:4:130:2:0
@@ -335,6 +344,9 @@ transponders
 /
 00820000:1fa4:013e
 	s 12322000:27500000:0:3:130:2:0
+/
+00820000:0384:013e
+	s 11373000:27500000:0:4:130:2:0
 /
 00820000:1a90:fbff
 	s 12072000:29900000:1:4:130:2:0
@@ -361,7 +373,7 @@ transponders
 	s 11240000:27500000:1:3:130:2:0
 /
 00820000:2db4:013e
-	s 10853000:29900000:0:2:130:2:0:1:2:2:2
+	s 10853000:29900000:0:2:130:2:0:1:2:0:2
 /
 00820000:1edc:0071
 	s 12284000:27500000:0:3:130:2:0:1:2:2:2
@@ -370,7 +382,7 @@ transponders
 	s 11278000:27500000:1:3:130:2:0:1:2:2:2
 /
 00820000:2d50:013e
-	s 10834000:27500000:1:3:130:2:0:1:2:2:2
+	s 10834000:27500000:1:3:130:2:0:1:2:0:2
 /
 00820000:1388:013e
 	s 11727000:27500000:1:3:130:2:0
@@ -447,9 +459,6 @@ transponders
 00820000:2af8:013e
 	s 10719000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:3070:013e
-	s 10992000:27500000:1:2:130:2:0
-/
 00820000:16a8:fbff
 	s 11880000:27500000:1:3:130:2:0
 /
@@ -458,9 +467,6 @@ transponders
 /
 00820000:319c:013e
 	s 11054000:27500000:0:4:130:2:0
-/
-00820000:2774:fbff
-	s 12731000:29900000:0:4:130:2:0
 /
 00820000:1450:013e
 	s 11766000:29900000:1:3:130:2:0:1:2:0:2
@@ -488,9 +494,6 @@ transponders
 /
 00820000:3458:013e
 	s 11200000:27500000:1:4:130:2:0
-/
-00820000:012c:013e
-	s 11258000:27500000:0:3:130:2:0:1:2:0:2
 /
 00820000:3c28:013e
 	s 11585000:27500000:1:4:130:2:0:1:2:2:2
@@ -565,7 +568,7 @@ transponders
 	s 11508000:27500000:1:3:130:2:0:1:2:2:2
 /
 00820000:03e8:013e
-	s 11393000:27500000:1:3:130:2:0:1:2:2:2
+	s 11393000:27500000:1:3:130:2:0:1:2:0:2
 /
 00820000:0258:013e
 	s 11317000:27500000:1:3:130:2:0
@@ -578,9 +581,6 @@ transponders
 /
 00820000:1518:013e
 	s 11804000:27500000:1:3:130:2:0
-/
-00820000:0384:013e
-	s 11373000:27500000:0:4:130:2:0
 /
 00820000:2b5c:013e
 	s 10727000:30000000:0:3:130:2:0:1:2:0:2
@@ -599,9 +599,6 @@ transponders
 /
 00820000:300c:013e
 	s 10971000:29700000:0:2:130:2:0:1:2:0:2
-/
-00820000:2198:fbff
-	s 12418000:29900000:1:3:130:2:0:1:2:0:2
 /
 end
 services
@@ -2551,7 +2548,7 @@ p:Movistar+
 p:DVB-S2 QPSK 12324V 19.2Â°E
 219c:00c00000:0448:0001:1:0
 12324V SID 0x219c
-p:DVB-S2 QPSK 12324V 19.2Â°E
+p:DVB-S2 QPSK 12324V 19.2Â°E,c:050006
 2199:00c00000:0448:0001:25:0
 MCM TOP
 p:CSAT
@@ -2963,6 +2960,9 @@ p:ORF
 3402:00c00000:03ed:0001:22:0
 oe24.TV
 p:ORF
+3403:00c00000:03ed:0001:22:0
+QS24
+p:ORS
 33ff:00c00000:03ed:0001:22:0
 Aristo.TV
 p:ORF
@@ -3811,7 +3811,7 @@ BEIN MAX 1
 p:Movistar+
 7863:00c00000:041a:0001:25:0
 LA 1 HD
-p:,c:050001
+p:
 7864:00c00000:041a:0001:25:0
 BEIN MAX 2
 p:Movistar+
@@ -4243,13 +4243,16 @@ Fashion 4K
 p:SES ASTRA
 0001:00c00000:040b:0001:31:0
 SES UHD Demo Channel
-p:SES
+p:SES,c:050006
 0002:00c00000:040b:0001:31:0
 UHD1 by ASTRA / HD+
+p:SES ASTRA,c:050006
+012d:00c00000:0419:0001:31:0
+HDR Test
 p:SES ASTRA
 012e:00c00000:0419:0001:31:0
 HFR Test
-p:SES ASTRA
+p:SES ASTRA,c:050006
 07d0:00c00000:0449:0001:31:0
 INSIGHT TV UHD
 p:SES ASTRA
@@ -4258,10 +4261,46 @@ INSIGHT TV UHD SPAIN
 p:SES ASTRA
 07d5:00c00000:0449:0001:31:0
 INSIGHT UHD Russia
-p:SES ASTRA
+p:SES ASTRA,c:050006
 07da:00c00000:0449:0001:31:0
 PEARL TV 4K UHD
-p:SES ASTRA
+p:SES ASTRA,c:050006
+2135:00820000:3070:013e:1:0
+Rai 3 TGR FVG
+p:RAI
+2136:00820000:3070:013e:1:0
+Rai Movie
+p:RAI
+213f:00820000:3070:013e:1:0
+Rai 1
+p:RAI
+2140:00820000:3070:013e:1:0
+Rai 2
+p:RAI
+2141:00820000:3070:013e:1:0
+Rai 3
+p:RAI
+2142:00820000:3070:013e:1:0
+Rai 4
+p:RAI
+2144:00820000:3070:013e:1:0
+Rai News 24
+p:RAI
+2145:00820000:3070:013e:1:0
+tivùlink
+p:tivù
+2143:00820000:3070:013e:2:0
+Rai Radio Tutta Italiana
+p:RAI
+216a:00820000:3070:013e:2:0
+Radio OM unica
+p:RAI
+216b:00820000:3070:013e:2:0
+Rai Radio2 mono
+p:RAI
+216c:00820000:3070:013e:2:0
+Rai Radio3 mono
+p:RAI
 0033:00820000:2f44:013e:0:0
 Shant Music HD
 p:
@@ -4331,6 +4370,96 @@ p:M7 Group
 06c3:00820000:2f44:013e:25:0
 HSE24 HD
 p:Persidera
+0f46:00820000:2198:fbff:25:0
+Sky Calcio 5 HD
+p:SkyItalia
+0f48:00820000:2198:fbff:25:0
+Sky Calcio 6 HD
+p:SkyItalia
+0f4b:00820000:2198:fbff:25:0
+Real Time HD
+p:SkyItalia
+0f4c:00820000:2198:fbff:25:0
+Primafila 7 HD
+p:SkyItalia
+0f4d:00820000:2198:fbff:25:0
+Sky Calcio 1 HD
+p:SkyItalia
+0f4f:00820000:2198:fbff:25:0
+Eurosport HD
+p:SkyItalia
+0f54:00820000:2198:fbff:25:0
+Onboard Mix HD
+p:SkyItalia
+0f6f:00820000:2198:fbff:25:0
+Sky Calcio 2 HD
+p:SkyItalia
+0f71:00820000:2198:fbff:25:0
+Primafila 5 HD
+p:SkyItalia
+0f72:00820000:2198:fbff:25:0
+Primafila 13 HD
+p:SkyItalia
+1091:00820000:2198:fbff:25:0
+Bike Channel HD
+p:SkyItalia
+10a8:00820000:2198:fbff:25:0
+Roma TV
+p:SkyItalia
+0f5a:00820000:2198:fbff:130:0
+Calcio1Magaz
+p:SkyItalia
+2d48:00820000:2774:fbff:1:0
+TEST 156
+p:SkyItalia
+2d51:00820000:2774:fbff:1:0
+Primafila 17
+p:SkyItalia
+2d53:00820000:2774:fbff:1:0
+Primafila 16
+p:SkyItalia
+2d54:00820000:2774:fbff:1:0
+Primafila 18
+p:SkyItalia
+2d55:00820000:2774:fbff:1:0
+Primafila 19
+p:SkyItalia
+2d56:00820000:2774:fbff:1:0
+Sky Calcio 8
+p:SkyItalia
+2d57:00820000:2774:fbff:1:0
+Primafila 15
+p:SkyItalia
+2d5b:00820000:2774:fbff:1:0
+Sky Sport Plus
+p:SkyItalia
+2d5d:00820000:2774:fbff:1:0
+Sky Calcio 9
+p:SkyItalia
+2d5f:00820000:2774:fbff:1:0
+Sky Calcio 10
+p:SkyItalia
+2d61:00820000:2774:fbff:1:0
+Sky Calcio 11
+p:SkyItalia
+2d62:00820000:2774:fbff:1:0
+Sky Calcio 12
+p:SkyItalia
+2d63:00820000:2774:fbff:1:0
+Sky Calcio 13
+p:SkyItalia
+2d65:00820000:2774:fbff:1:0
+Primafila 1
+p:SkyItalia
+0585:00820000:2774:fbff:1:0
+LEI +1
+p:SkyItalia
+05bd:00820000:2774:fbff:1:0
+Real Time +1
+p:SkyItalia
+2d4d:00820000:2774:fbff:25:0
+AdSmart
+p:SkyItalia
 1100:00820000:1644:fbff:1:0
 Sky TG24 Active
 p:SkyItalia
@@ -4772,6 +4901,30 @@ p:Eutelsat
 3a0f:00820000:1fa4:013e:2:0
 K24 Radio
 p:Kurdistan 24
+0201:00820000:0384:013e:1:0
+
+p:iKOMG
+01f6:00820000:0384:013e:1:0
+Kurdsat SD
+p:iKOMG
+01f7:00820000:0384:013e:1:0
+ES TV
+p:iKOMG
+01fa:00820000:0384:013e:1:0
+WESAL HAQ
+p:iKOMG
+01fb:00820000:0384:013e:1:0
+NOUR TV
+p:iKOMG
+01fd:00820000:0384:013e:1:0
+Gali Kurdistan
+p:iKOMG
+01fe:00820000:0384:013e:1:0
+Freedom TV
+p:iKOMG
+01fc:00820000:0384:013e:2:0
+RDK Radio
+p:iKOMG
 3c01:00820000:1a90:fbff:1:0
 DoveTv
 p:SkyItalia
@@ -4922,9 +5075,6 @@ p:
 000d:0082acce:0578:013e:1:0
 Telefeshinka Caalamiga
 p:
-0017:0082acce:0578:013e:1:0
-Universal Somali TV
-p:iKOMG
 0020:0082acce:0578:013e:1:0
 SNTV_HB
 p:iKOMG
@@ -4936,9 +5086,6 @@ Boomerang
 p:SkyItalia
 2b38:00820000:2260:fbff:1:0
 12465V SID 0x2b38
-p:DVB-S QPSK 12465V 13.0Â°E
-2d4b:00820000:2260:fbff:1:0
-12465V SID 0x2d4b
 p:DVB-S QPSK 12465V 13.0Â°E
 3bc5:00820000:2260:fbff:1:0
 Disney Junior +1
@@ -5517,7 +5664,7 @@ p:Telefonica Spain
 SESTO SENSO TV
 p:Telefonica Spain
 35c8:00820000:1388:013e:1:0
-PASSIONXXX
+PASSIONE TV
 p:Telefonica Spain
 35c9:00820000:1388:013e:1:0
 LIVECHANNEL
@@ -5927,6 +6074,9 @@ p:M-Three satcom
 0523:00820000:3d54:013e:1:0
 Tesory Channel
 p:M3SAT
+0524:00820000:3d54:013e:1:0
+SAT.TV
+p:Eutelsat
 051b:00820000:3d54:013e:25:0
 RTL 102.5 TV HD
 p:M-Three satcom
@@ -6884,42 +7034,6 @@ p:nc+
 118f:00820000:2af8:013e:1:0
 DATA
 p:nc+
-2135:00820000:3070:013e:1:0
-Rai 3 TGR FVG
-p:RAI
-2136:00820000:3070:013e:1:0
-Rai Movie
-p:RAI
-213f:00820000:3070:013e:1:0
-Rai 1
-p:RAI
-2140:00820000:3070:013e:1:0
-Rai 2
-p:RAI
-2141:00820000:3070:013e:1:0
-Rai 3
-p:RAI
-2142:00820000:3070:013e:1:0
-Rai 4
-p:RAI
-2144:00820000:3070:013e:1:0
-Rai News 24
-p:RAI
-2145:00820000:3070:013e:1:0
-tivùlink
-p:tivù
-2143:00820000:3070:013e:2:0
-Rai Radio Tutta Italiana
-p:RAI
-216a:00820000:3070:013e:2:0
-Radio OM unica
-p:RAI
-216b:00820000:3070:013e:2:0
-Rai Radio2 mono
-p:RAI
-216c:00820000:3070:013e:2:0
-Rai Radio3 mono
-p:RAI
 0e39:00820000:16a8:fbff:1:0
 NationalGeo
 p:SkyItalia
@@ -6988,13 +7102,13 @@ MC EU
 p:Media Broadcast Satellite
 1f4b:00820000:319c:013e:1:0
 ZDF
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f54:00820000:319c:013e:1:0
 Gala TV
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f55:00820000:319c:013e:1:0
 Persian Star 2
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f59:00820000:319c:013e:1:0
 PerGeoTV-Test
 p:MB Satellite
@@ -7003,25 +7117,25 @@ KANAL20 - Test
 p:MB Satellite
 1f5e:00820000:319c:013e:1:0
 MEDIA BROADCAST - Test 3
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 025f:00820000:319c:013e:1:0
 DW (English)
 p:Media Broadcast Satellite
 1f5f:00820000:319c:013e:1:0
 MEDIA BROADCAST - Test 8
-p:MEDIA BROADCAST SATELLITE
+p:Media Broadcast Satellite
 1f60:00820000:319c:013e:1:0
 TMTV
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f63:00820000:319c:013e:1:0
 MEDIA BROADCAST - Test 4
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f64:00820000:319c:013e:1:0
 MEDIA BROADCAST - Test 6
-p:MEDIA BROADCAST SATELLITE
+p:Media Broadcast Satellite
 1f67:00820000:319c:013e:1:0
 Payam e Afghan TV
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f6c:00820000:319c:013e:1:0
 MEDIA BROADCAST - Test 5
 p:MB Satellite
@@ -7030,10 +7144,10 @@ Suryoyo Sat
 p:Media Broadcast Satellite
 1f71:00820000:319c:013e:1:0
 Persian Star 1
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 1f7c:00820000:319c:013e:1:0
 bwtv
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 0e06:00820000:319c:013e:2:0
 DW09
 p:Media Broadcast Satellite
@@ -7045,67 +7159,16 @@ DW-Feed1
 p:Media Broadcast Satellite
 1f7d:00820000:319c:013e:2:0
 Radio Andernach
-p:MEDIA BROADCAST
+p:Media Broadcast Satellite
 0dde:00820000:319c:013e:2:0
 DW-FM02
 p:Media Broadcast Satellite
 0dfc:00820000:319c:013e:2:0
 DW08
 p:Media Broadcast Satellite
-2d48:00820000:2774:fbff:1:0
-TEST 156
-p:SkyItalia
-2d51:00820000:2774:fbff:1:0
-Primafila 17
-p:SkyItalia
-2d53:00820000:2774:fbff:1:0
-Primafila 16
-p:SkyItalia
-2d54:00820000:2774:fbff:1:0
-Primafila 18
-p:SkyItalia
-2d55:00820000:2774:fbff:1:0
-Primafila 19
-p:SkyItalia
-2d56:00820000:2774:fbff:1:0
-Sky Calcio 8
-p:SkyItalia
-2d57:00820000:2774:fbff:1:0
-Primafila 15
-p:SkyItalia
-2d5b:00820000:2774:fbff:1:0
-Sky Sport Plus
-p:SkyItalia
-2d5d:00820000:2774:fbff:1:0
-Sky Calcio 9
-p:SkyItalia
-2d5f:00820000:2774:fbff:1:0
-Sky Calcio 10
-p:SkyItalia
-2d61:00820000:2774:fbff:1:0
-Sky Calcio 11
-p:SkyItalia
-2d62:00820000:2774:fbff:1:0
-Sky Calcio 12
-p:SkyItalia
-2d63:00820000:2774:fbff:1:0
-Sky Calcio 13
-p:SkyItalia
-2d65:00820000:2774:fbff:1:0
-Primafila 1
-p:SkyItalia
-0585:00820000:2774:fbff:1:0
-LEI +1
-p:SkyItalia
-05bd:00820000:2774:fbff:1:0
-Real Time +1
-p:SkyItalia
-2d4d:00820000:2774:fbff:25:0
-AdSmart
-p:SkyItalia
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
-p:Rai,c:050001
+p:Rai
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
 p:Rai
@@ -7287,7 +7350,7 @@ p:nc+
 Filmbox Family
 p:nc+
 3d63:00820000:2c88:013e:1:0
-HIP HOP TV
+EskaROCK TV
 p:nc+
 3d65:00820000:2c88:013e:1:0
 Filmbox Action
@@ -7298,9 +7361,15 @@ p:nc+
 3d67:00820000:2c88:013e:1:0
 TVP Historia
 p:nc+
+3d68:00820000:2c88:013e:1:0
+10796V SID 0x3d68
+p:DVB-S2 QPSK 10796V 13.0Â°E
 3d99:00820000:2c88:013e:1:0
 TVP Historia
 p:nc+
+3dae:00820000:2c88:013e:2:0
+10796V SID 0x3dae
+p:DVB-S2 QPSK 10796V 13.0Â°E
 245b:00820000:23f0:013f:1:0
 Canale ITALIA
 p:Telespazio
@@ -7676,42 +7745,6 @@ p:Eutelsat
 12a5:00820000:3458:013e:2:0
 Radio Tondar
 p:Eutelsat
-3b62:00820000:012c:013e:1:0
-TVP HD
-p:nc+
-3b63:00820000:012c:013e:1:0
-Eurosport 2 HD
-p:nc+
-3b65:00820000:012c:013e:1:0
-Nat Geo Wild HD
-p:nc+
-3b66:00820000:012c:013e:1:0
-Animal Planet HD
-p:nc+
-3b67:00820000:012c:013e:1:0
-Cinemax HD
-p:nc+
-3b6a:00820000:012c:013e:1:0
-CANAL+ SPORT 2 HD
-p:nc+
-3b99:00820000:012c:013e:1:0
-Cinemax HD
-p:nc+
-3b9c:00820000:012c:013e:1:0
-CANAL+ SPORT 2 HD
-p:nc+
-3b9f:00820000:012c:013e:1:0
-11258H SID 0x3b9f
-p:DVB-S2 QPSK 11258H 13.0Â°E
-3bb3:00820000:012c:013e:1:0
-Eurosport 2 HD PL-HU-RO
-p:nc+
-3bb5:00820000:012c:013e:1:0
-Nat Geo Wild HD PL
-p:nc+
-3bbd:00820000:012c:013e:1:0
-Eurosport 2 HD UPC
-p:nc+
 0367:00820000:3c28:013e:1:0
 CCTV 4E
 p:CCTV
@@ -8251,7 +8284,13 @@ NOUR TV
 p:iKOMG
 08a1:00820000:01f4:013e:1:0
 Gali Kurdistan
-p:
+p:iKOMG
+08a2:00820000:01f4:013e:1:0
+Rtvi Archive
+p:iKOMG
+08a3:00820000:01f4:013e:1:0
+FASHION un
+p:iKOMG
 08ac:00820000:01f4:013e:1:0
 News Channel
 p:iKOMG
@@ -8263,7 +8302,7 @@ Yemen Radio
 p:iKOMG
 08b2:00820000:01f4:013e:2:0
 Radio Eviva
-p:iKOMG
+p:
 3a99:00820000:0514:013e:1:0
 CANAL+ DISCOVERY HD
 p:nc+
@@ -9155,9 +9194,6 @@ p:
 05e2:00820000:2c24:013e:1:0
 ITN TV
 p:
-05e4:00820000:2c24:013e:1:0
-ICM1 TV
-p:
 05e5:00820000:2c24:013e:1:0
 Beitolabbas TV
 p:MMB
@@ -9183,8 +9219,8 @@ p:
 IRAN INTERNATIONAL
 p:ABS
 05ef:00820000:2c24:013e:1:0
-Now TV
-p:Eutelsat
+NOW TV
+p:
 05f0:00820000:2c24:013e:1:0
 Extreme Sports
 p:
@@ -9359,33 +9395,6 @@ p:Rai
 0cf9:00820000:1518:013e:2:0
 Rai Radio Kids
 p:Rai
-01f6:00820000:0384:013e:1:0
-Kurdsat SD
-p:iKOMG
-01f7:00820000:0384:013e:1:0
-ES TV
-p:iKOMG
-01f8:00820000:0384:013e:1:0
-ORIENT
-p:iKOMG
-01fa:00820000:0384:013e:1:0
-WESAL HAQ
-p:iKOMG
-01fb:00820000:0384:013e:1:0
-NOUR TV
-p:iKOMG
-01fd:00820000:0384:013e:1:0
-Gali Kurdistan
-p:iKOMG
-01fe:00820000:0384:013e:1:0
-Freedom TV
-p:iKOMG
-0201:00820000:0384:013e:2:0
-Radio Eviva
-p:iKOMG
-01fc:00820000:0384:013e:2:0
-RDK Radio
-p:iKOMG
 11fa:00820000:2b5c:013e:1:0
 C4K360
 p:
@@ -9602,44 +9611,5 @@ p:Radio Television Suisse
 4335:00820000:300c:013e:25:0
 Test17205
 p:SRG SSR
-0f46:00820000:2198:fbff:25:0
-Sky Calcio 5 HD
-p:SkyItalia
-0f48:00820000:2198:fbff:25:0
-Sky Calcio 6 HD
-p:SkyItalia
-0f4b:00820000:2198:fbff:25:0
-Real Time HD
-p:SkyItalia
-0f4c:00820000:2198:fbff:25:0
-Primafila 7 HD
-p:SkyItalia
-0f4d:00820000:2198:fbff:25:0
-Sky Calcio 1 HD
-p:SkyItalia
-0f4f:00820000:2198:fbff:25:0
-Eurosport HD
-p:SkyItalia
-0f54:00820000:2198:fbff:25:0
-Onboard Mix HD
-p:SkyItalia
-0f6f:00820000:2198:fbff:25:0
-Sky Calcio 2 HD
-p:SkyItalia
-0f71:00820000:2198:fbff:25:0
-Primafila 5 HD
-p:SkyItalia
-0f72:00820000:2198:fbff:25:0
-Primafila 13 HD
-p:SkyItalia
-1091:00820000:2198:fbff:25:0
-Bike Channel HD
-p:SkyItalia
-10a8:00820000:2198:fbff:25:0
-Roma TV
-p:SkyItalia
-0f5a:00820000:2198:fbff:130:0
-Calcio1Magaz
-p:SkyItalia
 end
 Editor:DreamSet 2.25 - http://mmedit9800.tripod.com
