@@ -49,7 +49,7 @@ transponders
 	s 12284000:27500000:0:3:130:2:0:1:2:2:2
 /
 00820000:0190:013e
-	s 11278000:27500000:1:3:130:2:0:1:2:2:2
+	s 11278000:27500000:1:3:130:2:0:1:2:0:2
 /
 00820000:2d50:013e
 	s 10834000:27500000:1:3:130:2:0:1:2:2:2
@@ -180,9 +180,6 @@ transponders
 00820000:2bc0:013e
 	s 10758000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:2260:fbff
-	s 12465000:29900000:1:4:130:2:0:1:1:0:2
-/
 00820000:044c:013e
 	s 11411000:27500000:0:3:130:2:0:1:2:0:2
 /
@@ -247,7 +244,7 @@ transponders
 	s 11393000:27500000:1:3:130:2:0:1:2:0:2
 /
 00820000:0258:013e
-	s 11317000:27500000:1:3:130:2:0
+	s 11316000:27500000:1:3:130:2:0
 /
 00820000:2c24:013e
 	s 10775000:27500000:0:4:130:2:0
@@ -279,6 +276,9 @@ transponders
 00820000:2198:fbff
 	s 12418000:29900000:1:3:130:2:0:1:2:0:2
 /
+00820000:2260:fbff
+	s 12465000:29900000:1:4:130:2:0:1:1:0:2
+/
 00820000:04b0:0110
 	s 11432000:29900000:1:3:130:2:0:1:2:0:2
 /
@@ -290,6 +290,9 @@ transponders
 /
 end
 services
+0032:00820000:2f44:013e:0:0
+Shant premium HD
+p:
 0033:00820000:2f44:013e:0:0
 Shant Music HD
 p:
@@ -305,9 +308,6 @@ p:MX1
 0021:00820000:2f44:013e:1:0
 Cagnola
 p:M-Three satcom
-0032:00820000:2f44:013e:1:0
-Shant Premium HD
-p:
 0034:00820000:2f44:013e:1:0
 Armenia HD
 p:TV-Provider
@@ -829,7 +829,7 @@ Lubimoe Kino
 p:Eutelsat
 39d5:00820000:1fa4:013e:1:0
 Payam Aramesh
-p:
+p:FFmpeg
 3a0f:00820000:1fa4:013e:2:0
 K24 Radio
 p:Kurdistan 24
@@ -1072,19 +1072,19 @@ Sonlife
 p:ARQIVA LTD
 000a:00820000:02bc:013e:1:0
 RTPi
-p:ARQIVA LTD
+p:MEO - Servicos de Comunicacoes e Multimedia S.A.
 000c:00820000:02bc:013e:1:0
 Daystar
-p:ARQIVA LTD
+p:BSkyB
 0005:00820000:02bc:013e:2:0
 Public Radio of Armenia
 p:ARQIVA LTD
 000f:00820000:02bc:013e:2:0
 RDPI Radio
-p:ARQIVA LTD
+p:MEO - Servicos de Comunicacoes e Multimedia
 0010:00820000:02bc:013e:2:0
 RADIO A1
-p:ARQIVA LTD
+p:MEO - Servicos de Comunicacoes e Multimedia S.A.
 2504:00820000:170c:fbff:1:0
 On Board Sky HD
 p:SkyItalia
@@ -1244,12 +1244,6 @@ p:Scopus
 3674:00820000:00c8:013e:1:0
 Al-Hayat
 p:
-3682:00820000:00c8:013e:1:0
-TV 4
-p:TDA
-3683:00820000:00c8:013e:1:0
-TV 5
-p:TDA
 35e9:00820000:00c8:013e:1:0
 ESP2 Int'l
 p:Eutelsat
@@ -1274,15 +1268,6 @@ p:EUROSPORT
 35ff:00820000:00c8:013e:1:0
 ESP2 Biava
 p:EUROSPORT
-367f:00820000:00c8:013e:2:0
-CHAINE 1
-p:TDA
-3680:00820000:00c8:013e:2:0
-CHAINE 2
-p:TDA
-3681:00820000:00c8:013e:2:0
-CHAINE 3
-p:TDA
 1005:00820000:2db4:013e:1:0
 RolandoSat
 p:MX1
@@ -1779,7 +1764,7 @@ p:SkyItalia
 Cinema +1
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Cinema Hits
+Cinema Oscar
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Cinema Comedy
@@ -1942,9 +1927,6 @@ RADIO ITALIA s.m.i.
 p:M-Three satcom
 0e34:00820000:0708:00c8:2:0
 R.BuonConsiglio
-p:M-Three satcom
-0e35:00820000:0708:00c8:2:0
-Radio Sportiva
 p:M-Three satcom
 0e38:00820000:0708:00c8:2:0
 R.S.F. inBlu
@@ -3313,10 +3295,10 @@ AdSmart
 p:SkyItalia
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
-p:Rai,c:050001
+p:Rai
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
-p:Rai,c:050001
+p:Rai
 0d4b:00820000:1450:013e:1:0
 Rai 3 HD
 p:Rai
@@ -3989,15 +3971,6 @@ p:Cyfrowy Polsat SA
 4294:00820000:2bc0:013e:1:0
 Polsat Music HD
 p:Cyfrowy Polsat SA
-2d6c:00820000:2260:fbff:1:0
-12465V SID 0x2d6c
-p:DVB-S2 QPSK 12465V 13.0Â°E
-2d6f:00820000:2260:fbff:25:0
-CH_TEST_TS88
-p:SkyItalia
-2d69:00820000:2260:fbff:130:0
-ITV_TRIAL_88
-p:SkyItalia
 3779:00820000:044c:013e:1:0
 CANAL+ FILM HD
 p:nc+
@@ -4201,13 +4174,13 @@ Crime + Investigation
 p:Arqiva
 1c9f:00820000:332c:013e:1:0
 NHK World
-p:Arqiva
+p:
 1ca5:00820000:332c:013e:1:0
 GEM TV
 p:Arqiva
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Arqiva
+p:Manoto
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Arqiva
@@ -4385,6 +4358,9 @@ p:iKOMG
 08a2:00820000:01f4:013e:1:0
 Rtvi Archive
 p:iKOMG
+08a3:00820000:01f4:013e:1:0
+Lalish TV
+p:
 08a4:00820000:01f4:013e:1:0
 Kazakh TV
 p:iKOMG
@@ -4563,7 +4539,7 @@ p:AB Sat
 Arte Atelier
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Cinema Hits HD
+Cinema Oscar HD
 p:SkyItalia
 106e:00820000:14b4:fbff:25:0
 Cinema Max HD
@@ -5260,13 +5236,13 @@ Travel Channel HD EMEA
 p:TVN
 44db:00820000:0258:013e:1:0
 Rudaw HD
-p:Arqiva
+p:Eutelsat
 44dd:00820000:0258:013e:1:0
 Russia Today
-p:Arqiva
+p:Eutelsat
 44e0:00820000:0258:013e:1:0
 RT Arab
-p:Arqiva
+p:Eutelsat
 05dd:00820000:2c24:013e:1:0
 Janatol baghie TV
 p:
@@ -5304,7 +5280,7 @@ p:
 MerciTV
 p:FFmpeg
 05ef:00820000:2c24:013e:1:0
-NOW TV
+Now TV
 p:
 05f0:00820000:2c24:013e:1:0
 Extreme Sports
@@ -5728,6 +5704,12 @@ Roma TV
 p:SkyItalia
 0f5a:00820000:2198:fbff:130:0
 Calcio1Magaz
+p:SkyItalia
+2d6f:00820000:2260:fbff:25:0
+CH_TEST_TS88
+p:SkyItalia
+2d69:00820000:2260:fbff:130:0
+ITV_TRIAL_88
 p:SkyItalia
 0079:00820000:04b0:0110:25:0
 Italia 1 HD
