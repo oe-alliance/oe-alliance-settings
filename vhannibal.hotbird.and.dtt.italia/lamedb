@@ -1,16 +1,7 @@
 eDVB services /4/
 transponders
-00820000:3070:013e
-	s 10992000:27500000:1:2:130:2:0
-/
 00820000:2f44:013e
 	s 10930000:30000000:0:2:130:2:0:1:2:0:2
-/
-00820000:2198:fbff
-	s 12418000:29900000:1:3:130:2:0:1:2:0:2
-/
-00820000:2774:fbff
-	s 12731000:29900000:0:4:130:2:0
 /
 00820000:1644:fbff
 	s 11861000:29900000:0:4:130:2:0
@@ -20,6 +11,9 @@ transponders
 /
 00820000:2e18:00b0
 	s 10872000:27500000:1:3:130:2:0:1:2:0:2
+/
+00820000:1964:013e
+	s 12015000:27500000:0:3:130:2:0:1:2:0:2
 /
 0082afc2:0065:0001
 	s 12226000:27500000:1:3:130:2:0
@@ -33,14 +27,11 @@ transponders
 00820000:1a90:fbff
 	s 12072000:29900000:1:4:130:2:0
 /
-00820000:1964:013e
-	s 12015000:27500000:0:3:130:2:0:1:2:0:2
+0082acce:0578:013e
+	s 11470000:27500000:1:4:130:2:0
 /
 00820000:25e4:02be
 	s 12654000:27500000:0:4:130:2:0
-/
-0082acce:0578:013e
-	s 11470000:27500000:1:4:130:2:0
 /
 00820000:02bc:013e
 	s 11334000:27500000:0:3:130:2:0
@@ -141,6 +132,9 @@ transponders
 00820000:2af8:013e
 	s 10719000:27500000:1:3:130:2:0:1:2:0:2
 /
+00820000:3070:013e
+	s 10992000:27500000:1:2:130:2:0
+/
 00820000:16a8:fbff
 	s 11880000:27500000:1:3:130:2:0
 /
@@ -149,6 +143,9 @@ transponders
 /
 00820000:319c:013e
 	s 11054000:27500000:0:4:130:2:0
+/
+00820000:2774:fbff
+	s 12731000:29900000:0:4:130:2:0
 /
 00820000:1450:013e
 	s 11766000:29900000:1:3:130:2:0:1:2:0:2
@@ -187,7 +184,7 @@ transponders
 	s 11411000:27500000:0:3:130:2:0:1:2:0:2
 /
 00820000:1ce8:0071
-	s 12188000:27500000:1:3:130:2:0:1:2:0:2
+	s 12188000:27500000:1:3:130:2:0:1:2:2:2
 /
 00820000:332c:013e
 	s 11137000:27500000:0:3:130:2:0
@@ -275,6 +272,9 @@ transponders
 /
 00820000:300c:013e
 	s 10971000:29700000:0:2:130:2:0:1:2:0:2
+/
+00820000:2198:fbff
+	s 12418000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:2260:fbff
 	s 12465000:29900000:1:4:130:2:0:1:1:0:2
@@ -435,11 +435,41 @@ ffce0000:4fb0:055f
 ffce0000:7788:055f
 	s 12732000:29950000:1:2:-50:2:0:1:2:0:2
 /
-eeee0000:032a:0110
-	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:0004:013e
+	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0005:013e
+	t 626000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0005:013e
+	t 626000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:03ac:0110
 	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0384:0110
 	t 706000000:0:5:5:3:2:4:4:2:0:0:0
@@ -447,29 +477,83 @@ eeee0000:0384:0110
 eeee0000:0385:0110
 	t 722000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:0389:0110
-	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:03a2:0110
-	t 610000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:0107:217c
-	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:03b6:0110
 	t 754000000:0:5:5:3:2:4:4:2:0:0:0
 /
+eeee0000:03a2:0110
+	t 610000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0004:013e
+	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
 eeee0000:7918:217c
 	t 658000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:00c8:00c8
-	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:27fb:0148
-	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:791a:217c
-	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0004:013e
+	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0004:013e
+	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0204:001d
 	t 682000000:0:5:5:3:2:4:4:2:0:0:0
@@ -480,59 +564,533 @@ eeee0000:0200:001d
 eeee0000:0202:001d
 	t 746000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:4800:013e
-	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:0001:013e
-	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:0002:013e
-	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:0004:013e
-	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03a2:0110
+	t 610000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03a2:0110
+	t 610000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03a2:0110
+	t 610000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03a2:0110
+	t 610000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0005:013e
 	t 626000000:0:5:5:3:2:4:4:2:0:0:0
 /
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0004:013e
+	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0004:013e
+	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:791a:217c
+	t 738000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:27fb:0148
+	t 554000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:4800:013e
+	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0002:013e
+	t 546000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0001:013e
+	t 205500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:032a:0110
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0204:001d
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:7918:217c
+	t 658000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0200:001d
+	t 690000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:001d
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:00c8:00c8
+	t 762000000:0:5:5:3:2:4:4:2:0:0:0
+/
 end
 services
-2135:00820000:3070:013e:1:0
-Rai 3 TGR FVG
-p:RAI
-2136:00820000:3070:013e:1:0
-Rai Movie
-p:RAI
-213f:00820000:3070:013e:1:0
-Rai 1
-p:RAI
-2140:00820000:3070:013e:1:0
-Rai 2
-p:RAI
-2141:00820000:3070:013e:1:0
-Rai 3
-p:RAI
-2142:00820000:3070:013e:1:0
-Rai 4
-p:RAI
-2144:00820000:3070:013e:1:0
-Rai News 24
-p:RAI
-2145:00820000:3070:013e:1:0
-tivùlink
-p:tivù
-2143:00820000:3070:013e:2:0
-Rai Radio Tutta Italiana
-p:RAI
-216a:00820000:3070:013e:2:0
-Radio OM unica
-p:RAI
-216b:00820000:3070:013e:2:0
-Rai Radio2 mono
-p:RAI
-216c:00820000:3070:013e:2:0
-Rai Radio3 mono
-p:RAI
 0033:00820000:2f44:013e:0:0
 Shant Music HD
 p:
@@ -605,96 +1163,6 @@ p:M7 Group
 06c3:00820000:2f44:013e:25:0
 HSE24 HD
 p:Persidera
-0f46:00820000:2198:fbff:25:0
-Sky Calcio 5 HD
-p:SkyItalia
-0f48:00820000:2198:fbff:25:0
-Sky Calcio 6 HD
-p:SkyItalia
-0f4b:00820000:2198:fbff:25:0
-Real Time HD
-p:SkyItalia
-0f4c:00820000:2198:fbff:25:0
-Primafila 7 HD
-p:SkyItalia
-0f4d:00820000:2198:fbff:25:0
-Sky Calcio 1 HD
-p:SkyItalia
-0f4f:00820000:2198:fbff:25:0
-Eurosport HD
-p:SkyItalia
-0f54:00820000:2198:fbff:25:0
-Onboard Mix HD
-p:SkyItalia
-0f6f:00820000:2198:fbff:25:0
-Sky Calcio 2 HD
-p:SkyItalia
-0f71:00820000:2198:fbff:25:0
-Primafila 5 HD
-p:SkyItalia
-0f72:00820000:2198:fbff:25:0
-Primafila 13 HD
-p:SkyItalia
-1091:00820000:2198:fbff:25:0
-Bike Channel HD
-p:SkyItalia
-10a8:00820000:2198:fbff:25:0
-Roma TV
-p:SkyItalia
-0f5a:00820000:2198:fbff:130:0
-Calcio1Magaz
-p:SkyItalia
-2d48:00820000:2774:fbff:1:0
-TEST 156
-p:SkyItalia
-2d51:00820000:2774:fbff:1:0
-Primafila 17
-p:SkyItalia
-2d53:00820000:2774:fbff:1:0
-Primafila 16
-p:SkyItalia
-2d54:00820000:2774:fbff:1:0
-Primafila 18
-p:SkyItalia
-2d55:00820000:2774:fbff:1:0
-Primafila 19
-p:SkyItalia
-2d56:00820000:2774:fbff:1:0
-Sky Calcio 8
-p:SkyItalia
-2d57:00820000:2774:fbff:1:0
-Primafila 15
-p:SkyItalia
-2d5b:00820000:2774:fbff:1:0
-Sky Sport Plus
-p:SkyItalia
-2d5d:00820000:2774:fbff:1:0
-Sky Calcio 9
-p:SkyItalia
-2d5f:00820000:2774:fbff:1:0
-Sky Calcio 10
-p:SkyItalia
-2d61:00820000:2774:fbff:1:0
-Sky Calcio 11
-p:SkyItalia
-2d62:00820000:2774:fbff:1:0
-Sky Calcio 12
-p:SkyItalia
-2d63:00820000:2774:fbff:1:0
-Sky Calcio 13
-p:SkyItalia
-2d65:00820000:2774:fbff:1:0
-Primafila 1
-p:SkyItalia
-0585:00820000:2774:fbff:1:0
-LEI +1
-p:SkyItalia
-05bd:00820000:2774:fbff:1:0
-Real Time +1
-p:SkyItalia
-2d4d:00820000:2774:fbff:25:0
-AdSmart
-p:SkyItalia
 1100:00820000:1644:fbff:1:0
 Sky TG24 Active
 p:SkyItalia
@@ -896,6 +1364,75 @@ p:SNRT
 00b3:00820000:2e18:00b0:2:0
 Marrakech
 p:SNRT
+0001:00820000:1964:013e:1:0
+MTV Live HD
+p:Cyfrowy Polsat S.A.
+0002:00820000:1964:013e:1:0
+MTV Music
+p:Cyfrowy Polsat S.A.
+0003:00820000:1964:013e:1:0
+Nick Jr
+p:Cyfrowy Polsat S.A.
+0008:00820000:1964:013e:1:0
+VH1
+p:Cyfrowy Polsat S.A.
+0009:00820000:1964:013e:1:0
+Nickelodeon
+p:Cyfrowy Polsat S.A.
+000c:00820000:1964:013e:1:0
+Comedy Central HD
+p:Cyfrowy Polsat S.A.
+000d:00820000:1964:013e:1:0
+Paramount Channel HD
+p:Cyfrowy Polsat S.A.
+000e:00820000:1964:013e:1:0
+Nicktoons HD
+p:Cyfrowy Polsat S.A.
+000f:00820000:1964:013e:1:0
+MTV Polska HD
+p:Cyfrowy Polsat S.A.
+0010:00820000:1964:013e:1:0
+Comedy Central Family
+p:Cyfrowy Polsat S.A.
+0015:00820000:1964:013e:1:0
+MTV Live HD
+p:Cyfrowy Polsat S.A.
+0020:00820000:1964:013e:1:0
+Comedy Central HD.
+p:Cyfrowy Polsat S.A.
+0021:00820000:1964:013e:1:0
+Paramount Channel HD.
+p:Cyfrowy Polsat S.A.
+0023:00820000:1964:013e:1:0
+MTV Polska HD.
+p:
+003c:00820000:1964:013e:1:0
+Test202
+p:
+003d:00820000:1964:013e:1:0
+Test203
+p:
+003e:00820000:1964:013e:1:0
+Test204
+p:
+003f:00820000:1964:013e:1:0
+Test205
+p:
+0040:00820000:1964:013e:1:0
+Test206
+p:
+0041:00820000:1964:013e:1:0
+Test207
+p:
+0042:00820000:1964:013e:1:0
+Test208
+p:
+0043:00820000:1964:013e:1:0
+Testx1
+p:
+0044:00820000:1964:013e:1:0
+Testx2
+p:
 0001:0082afc2:0065:0001:1:0
 CurrentTime HD
 p:
@@ -1127,6 +1664,9 @@ p:
 0069:00820000:1770:0110:2:0
 Radio 105
 p:
+006a:00820000:1770:0110:2:0
+Radio Orbital
+p:
 0001:00820000:1fa4:013e:1:0
 RIT-TV
 p:RIT
@@ -1220,69 +1760,39 @@ p:SkyItalia
 2bc8:00820000:1a90:fbff:130:0
 ITV_TRIAL_68
 p:SkyItalia
-0002:00820000:1964:013e:1:0
-MTV Music Polska
-p:MTV Networks Europe
-0003:00820000:1964:013e:1:0
-Nick Jr Polska
-p:MTV Networks Europe
-0004:00820000:1964:013e:1:0
-CC Family
-p:MTV Networks Europe
-0006:00820000:1964:013e:1:0
-Nick Jr Polska
-p:MTV Networks Europe
-0008:00820000:1964:013e:1:0
-VH1
-p:MTV Networks Europe
-0009:00820000:1964:013e:1:0
-Nickelodeon
-p:MTV Network Europe
-000a:00820000:1964:013e:1:0
-Comedy Central Polska
-p:MTV Networks Europe
-000b:00820000:1964:013e:1:0
-Nickelodeon
-p:MTV Networks Europe
-000c:00820000:1964:013e:1:0
-Comedy Central Poland HD
-p:MTV Networks Europe
-000d:00820000:1964:013e:1:0
-Paramount Channel HD
-p:MTV Networks Europe
-000e:00820000:1964:013e:1:0
-Nick Toons HD
-p:MTV Networks Europe
-000f:00820000:1964:013e:1:0
-MTV Polska HD
-p:MTV Networks Europe
-0010:00820000:1964:013e:1:0
-CC Family HD
-p:MTV Network  Europe
-0018:00820000:1964:013e:1:0
-CC Family.
-p:MTV Networks Europe
-001e:00820000:1964:013e:1:0
-Comedy Central Polska.
-p:MTV Networks Europe
-0020:00820000:1964:013e:1:0
-Comedy Central Poland HD.
-p:MTV Networks Europe
-0021:00820000:1964:013e:1:0
-Paramount Channel HD.
-p:MTV Networks Europe
-0023:00820000:1964:013e:1:0
-MTV Polska HD.
-p:MTV Network Europe
-0001:00820000:1964:013e:25:0
-MTV Live HD
-p:MTV Networks Europe
-0015:00820000:1964:013e:25:0
-MTV Live HD
-p:MTV Networks Europe
-0002:00820000:25e4:02be:1:0
-Qatar TV
-p:Qatar TV
+0003:0082acce:0578:013e:1:0
+Colombo TV
+p:
+0004:0082acce:0578:013e:1:0
+KALSAN TV
+p:iKOMG
+0005:0082acce:0578:013e:1:0
+Kalemeh TV
+p:
+0006:0082acce:0578:013e:1:0
+Rangarang TV
+p:iKOMG
+0007:0082acce:0578:013e:1:0
+ES TV
+p:iKOMG
+0008:0082acce:0578:013e:1:0
+Medya Haber
+p:iKOMG
+0009:0082acce:0578:013e:1:0
+Somali Cable
+p:iKOMG
+000a:0082acce:0578:013e:1:0
+Telefeshinka Caalamiga HD
+p:
+000d:0082acce:0578:013e:1:0
+Telefeshinka Caalamiga
+p:iKOMG
+000e:0082acce:0578:013e:1:0
+Azadi
+p:
+0020:0082acce:0578:013e:1:0
+SNTV_HB
+p:iKOMG
 0003:00820000:25e4:02be:1:0
 SAUDI1
 p:ARABSAT
@@ -1293,7 +1803,7 @@ p:
 IQRAA
 p:ARABSAT
 0006:00820000:25e4:02be:1:0
-SUDAN TV 
+SUDAN TV
 p:ARABSAT
 0007:00820000:25e4:02be:1:0
 OMAN
@@ -1361,45 +1871,15 @@ p:ARABSAT
 0032:00820000:25e4:02be:2:0
 JORDAN R1
 p:ARABSAT
-0003:0082acce:0578:013e:1:0
-Colombo TV
-p:
-0004:0082acce:0578:013e:1:0
-KALSAN TV
-p:iKOMG
-0005:0082acce:0578:013e:1:0
-Kalemeh TV
-p:
-0006:0082acce:0578:013e:1:0
-Rangarang TV
-p:iKOMG
-0007:0082acce:0578:013e:1:0
-ES TV
-p:iKOMG
-0008:0082acce:0578:013e:1:0
-Medya Haber
-p:iKOMG
-0009:0082acce:0578:013e:1:0
-Somali Cable
-p:iKOMG
-000a:0082acce:0578:013e:1:0
-Telefeshinka Caalamiga HD
-p:
-000d:0082acce:0578:013e:1:0
-Telefeshinka Caalamiga
-p:iKOMG
-000e:0082acce:0578:013e:1:0
-Azadi
-p:
-0020:0082acce:0578:013e:1:0
-SNTV_HB
-p:iKOMG
+0002:00820000:25e4:02be:22:0
+Qatar TV
+p:Qatar TV
 0004:00820000:02bc:013e:1:0
 ARMPUB TV
 p:Arqiva LTD
 0006:00820000:02bc:013e:1:0
 Armenia TV
-p:Arqiva LTD
+p:
 0009:00820000:02bc:013e:1:0
 Sonlife
 p:ARQIVA LTD
@@ -1504,7 +1984,7 @@ ESP Serbia
 p:Eutelsat
 3615:00820000:00c8:013e:1:0
 ESP Turk
-p:Eutelsat
+p:EUROSPORT
 3616:00820000:00c8:013e:1:0
 ESP2 German
 p:Eutelsat
@@ -1513,6 +1993,12 @@ ESP2 Serbia
 p:Eutelsat
 3618:00820000:00c8:013e:1:0
 ESP Biava
+p:Eutelsat
+3619:00820000:00c8:013e:1:0
+France 24 (en Francais)
+p:Eutelsat
+361a:00820000:00c8:013e:1:0
+France 24 (in English)
 p:Eutelsat
 3628:00820000:00c8:013e:1:0
 EUROSPORT2 PL
@@ -1568,9 +2054,6 @@ p:EUROSPORT
 3645:00820000:00c8:013e:1:0
 ESP2 NE Turc
 p:Eutelsat
-3669:00820000:00c8:013e:1:0
-Babylon TV
-p:Babylon
 366a:00820000:00c8:013e:1:0
 NOVIY_MIR
 p:Scopus
@@ -1703,6 +2186,9 @@ p:Cyfrowy Polsat S.A.
 2907:00820000:1edc:0071:1:0
 Nat Geo People HD
 p:Cyfrowy Polsat S.A.
+2908:00820000:1edc:0071:1:0
+test3
+p:Cyfrowy Polsat SA
 290a:00820000:1edc:0071:1:0
 Extreme Sports HD
 p:Cyfrowy Polsat S.A.
@@ -1736,9 +2222,6 @@ p:Cyfrowy Polsat S.A.
 2938:00820000:1edc:0071:1:0
 Disney Junior
 p:Cyfrowy Polsat S.A
-2908:00820000:1edc:0071:1:0
-test3
-p:Cyfrowy Polsat SA
 3305:00820000:0190:013e:1:0
 ESP HD Intl
 p:nc+
@@ -1814,6 +2297,9 @@ p:nc+
 32e0:00820000:0190:013e:1:0
 MiniMini+ HD
 p:nc+
+32e1:00820000:0190:013e:1:0
+EUROSPORT 4 HD
+p:nc+
 32ea:00820000:0190:013e:1:0
 MiniMini+ HD
 p:nc+
@@ -1832,9 +2318,6 @@ p:nc+
 32eb:00820000:0190:013e:2:0
 EUSP PL AUDIO
 p:nc+
-32e1:00820000:0190:013e:1:1
-EUROSPORT 4 HD
-p:nc+
 0e06:00820000:2d50:013e:1:0
 BBC HD
 p:nc+
@@ -1852,6 +2335,9 @@ Kino Polska Muzyka
 p:nc+
 0daf:00820000:2d50:013e:1:0
 Sportklub HD
+p:nc+
+0db0:00820000:2d50:013e:1:0
+EUROSPORT 5 HD
 p:nc+
 0db1:00820000:2d50:013e:1:0
 TVP Sport HD
@@ -1885,9 +2371,6 @@ HBO3 HD
 p:nc+
 0de3:00820000:2d50:013e:1:0
 TVP Sport HD
-p:nc+
-0db0:00820000:2d50:013e:1:2
-EUROSPORT 5 HD
 p:nc+
 3c07:00820000:2580:fbff:1:0
 Boomerang
@@ -2465,12 +2948,12 @@ p:Cyfrowy Polsat S.A.
 0c2f:00820000:1e78:0071:1:0
 History HD
 p:Cyfrowy Polsat S.A.
+0c30:00820000:1e78:0071:1:0
+test4
+p:Cyfrowy Polsat S.A.
 0c37:00820000:1e78:0071:1:0
 Polsat Doku HD
 p:Cyfrowy Polsat SA
-0c30:00820000:1e78:0071:1:1
-test4
-p:Cyfrowy Polsat S.A.
 3e1d:00820000:2ee0:013e:1:0
 Sundance HD
 p:Cyfrowy Polsat S.A.
@@ -2507,15 +2990,15 @@ p:Cyfrowy Polsat S.A.
 3e2e:00820000:2ee0:013e:1:0
 SciFi Universal
 p:Cyfrowy Polsat S.A.
+3e30:00820000:2ee0:013e:1:0
+Test.
+p:
 3e3e:00820000:2ee0:013e:1:0
 TestU1
 p:Cyfrowy Polsat S.A.
 3e44:00820000:2ee0:013e:1:0
 13 Ulica HD
 p:Cyfrowy Polsat S.A.
-3e30:00820000:2ee0:013e:1:2
-PPV HD KSW 42
-p:
 1420:00820000:05dc:013e:1:0
 CANAL+ SPORT 2 HD
 p:nc+
@@ -2523,10 +3006,10 @@ p:nc+
 DOMO+ HD
 p:nc+
 144b:00820000:05dc:013e:1:0
-  
+
 p:nc+
 144e:00820000:05dc:013e:1:0
- 
+
 p:nc+
 13ed:00820000:05dc:013e:1:0
 CANAL+1 HD
@@ -2718,7 +3201,7 @@ p:Telespazio
 Antichita Chiossone
 p:Telespazio
 4246:00820000:3db8:013e:1:0
-Radio Italia Rap
+Radio Italia Rap TV HD
 p:Telespazio
 424a:00820000:3db8:013e:1:0
 MTA2-HD
@@ -2978,9 +3461,6 @@ p:Telespazio
 134d:00820000:33f4:013e:1:0
 Khatereh
 p:Telespazio
-1360:00820000:33f4:013e:1:0
-PRIVATE TV
-p:Telespazio
 1361:00820000:33f4:013e:1:0
 Daring tv! 133
 p:Telespazio
@@ -3234,7 +3714,7 @@ p:Cyfrowy Polsat S.A.
 Polsat News HD
 p:Cyfrowy Polsat S.A.
 339a:00820000:3390:0071:1:0
-Polsat 2 HD 
+Polsat 2 HD
 p:Cyfrowy Polsat S.A.
 339b:00820000:3390:0071:1:0
 Super Polsat
@@ -3243,10 +3723,10 @@ p:Cyfrowy Polsat SA
 Polsat HD
 p:Cyfrowy Polsat S.A.
 33a2:00820000:3390:0071:1:0
-Polsat Play HD 
+Polsat Play HD
 p:Cyfrowy Polsat S.A.
 33a3:00820000:3390:0071:1:0
-TV4 HD 
+TV4 HD
 p:Cyfrowy Polsat S.A.
 33a6:00820000:3390:0071:1:0
 Polsat Cafe HD
@@ -3360,7 +3840,7 @@ p:nc+
 CANAL+ NOW
 p:nc+
 115e:00820000:2af8:013e:1:0
- 
+
 p:nc+
 1168:00820000:2af8:013e:1:0
 Cinemax HD
@@ -3383,6 +3863,42 @@ p:nc+
 118a:00820000:2af8:013e:31:0
 4490
 p:nc+
+2135:00820000:3070:013e:1:0
+Rai 3 TGR FVG
+p:RAI
+2136:00820000:3070:013e:1:0
+Rai Movie
+p:RAI
+213f:00820000:3070:013e:1:0
+Rai 1
+p:RAI
+2140:00820000:3070:013e:1:0
+Rai 2
+p:RAI
+2141:00820000:3070:013e:1:0
+Rai 3
+p:RAI
+2142:00820000:3070:013e:1:0
+Rai 4
+p:RAI
+2144:00820000:3070:013e:1:0
+Rai News 24
+p:RAI
+2145:00820000:3070:013e:1:0
+tivùlink
+p:tivù
+2143:00820000:3070:013e:2:0
+Rai Radio Tutta Italiana
+p:RAI
+216a:00820000:3070:013e:2:0
+Radio OM unica
+p:RAI
+216b:00820000:3070:013e:2:0
+Rai Radio2 mono
+p:RAI
+216c:00820000:3070:013e:2:0
+Rai Radio3 mono
+p:RAI
 0e39:00820000:16a8:fbff:1:0
 NationalGeo
 p:SkyItalia
@@ -3465,7 +3981,7 @@ p:MB Satellite
 VIVID RED HD
 p:MB Satellite
 1f4b:00820000:319c:013e:1:0
-Juwelo TV
+Juwelo/health
 p:MB Satellite
 1f54:00820000:319c:013e:1:0
 Gala TV
@@ -3474,10 +3990,10 @@ p:MB Satellite
 Persian Star 2
 p:MB Satellite
 1f59:00820000:319c:013e:1:0
-PerGeoTV-Test
+MB Sat - Test 10
 p:MB Satellite
 1f5b:00820000:319c:013e:1:0
-KANAL20 - Test
+MB Sat - Test 11
 p:MB Satellite
 1f5e:00820000:319c:013e:1:0
 Al Alam TV
@@ -3486,7 +4002,7 @@ p:MB Satellite
 DW (English)
 p:MB Satellite
 1f5f:00820000:319c:013e:1:0
-Test 2
+MB Sat - Test 2
 p:MB Satellite
 1f60:00820000:319c:013e:1:0
 TMTV
@@ -3495,22 +4011,22 @@ p:MB Satellite
 MB SAT - Test 8
 p:MB Satellite
 1f62:00820000:319c:013e:1:0
-Test 3
+MB Sat - Test 3
 p:MB Satellite
 1f63:00820000:319c:013e:1:0
-Radio Mrap
+MB Sat - Test 9
 p:MB Satellite
 1f64:00820000:319c:013e:1:0
-Test 5
+MB Sat - Test 5
 p:MB Satellite
 1f65:00820000:319c:013e:1:0
-Test 6
+MB Sat - Test 6
 p:MB Satellite
 1f67:00820000:319c:013e:1:0
 Payam e Afghan TV
 p:MB Satellite
 1f6c:00820000:319c:013e:1:0
-Test 7
+MB Sat - Test 7
 p:MB Satellite
 1f6e:00820000:319c:013e:1:0
 Suryoyo Sat
@@ -3539,9 +4055,60 @@ p:MB Satellite
 0dfc:00820000:319c:013e:2:0
 DW08
 p:MB Satellite
+2d48:00820000:2774:fbff:1:0
+TEST 156
+p:SkyItalia
+2d51:00820000:2774:fbff:1:0
+Primafila 17
+p:SkyItalia
+2d53:00820000:2774:fbff:1:0
+Primafila 16
+p:SkyItalia
+2d54:00820000:2774:fbff:1:0
+Primafila 18
+p:SkyItalia
+2d55:00820000:2774:fbff:1:0
+Primafila 19
+p:SkyItalia
+2d56:00820000:2774:fbff:1:0
+Sky Calcio 8
+p:SkyItalia
+2d57:00820000:2774:fbff:1:0
+Primafila 15
+p:SkyItalia
+2d5b:00820000:2774:fbff:1:0
+Sky Sport Plus
+p:SkyItalia
+2d5d:00820000:2774:fbff:1:0
+Sky Calcio 9
+p:SkyItalia
+2d5f:00820000:2774:fbff:1:0
+Sky Calcio 10
+p:SkyItalia
+2d61:00820000:2774:fbff:1:0
+Sky Calcio 11
+p:SkyItalia
+2d62:00820000:2774:fbff:1:0
+Sky Calcio 12
+p:SkyItalia
+2d63:00820000:2774:fbff:1:0
+Sky Calcio 13
+p:SkyItalia
+2d65:00820000:2774:fbff:1:0
+Primafila 1
+p:SkyItalia
+0585:00820000:2774:fbff:1:0
+LEI +1
+p:SkyItalia
+05bd:00820000:2774:fbff:1:0
+Real Time +1
+p:SkyItalia
+2d4d:00820000:2774:fbff:25:0
+AdSmart
+p:SkyItalia
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
-p:Rai
+p:Rai,c:050001
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
 p:Rai
@@ -3663,7 +4230,7 @@ p:SkyItalia
 Country
 p:SkyItalia
 3c1a:00820000:0320:fbff:2:0
-Sanremo Story
+Acoustic
 p:SkyItalia
 3be8:00820000:0320:fbff:2:0
 DeeJay 30 song
@@ -3877,6 +4444,9 @@ Discovery
 p:SkyItalia
 2b73:00820000:19c8:fbff:1:0
 Cinema Passion
+p:SkyItalia
+2b79:00820000:19c8:fbff:1:0
+noiSky
 p:SkyItalia
 2b7c:00820000:19c8:fbff:1:0
 Disney Junior
@@ -4238,6 +4808,9 @@ p:nc+
 377f:00820000:044c:013e:25:0
 Kuchnia+ HD
 p:nc+
+3780:00820000:044c:013e:25:0
+EUROSPORT 3 HD
+p:nc+
 3781:00820000:044c:013e:25:0
 Ale kino+ HD
 p:nc+
@@ -4255,9 +4828,6 @@ Planete+ HD
 p:nc+
 37b1:00820000:044c:013e:25:0
 Kuchnia+ HD
-p:nc+
-3780:00820000:044c:013e:25:0
-EUROSPORT 3 HD
 p:nc+
 1c85:00820000:1ce8:0071:1:0
 Polsat Romans
@@ -4284,8 +4854,8 @@ p:Cyfrowy Polsat S.A
 Disco Polo Music
 p:Cyfrowy Polsat S.A.
 1c8d:00820000:1ce8:0071:1:0
-tvo
-p:
+TV Okazje
+p:Cyfrowy Polsat S.A
 1c8e:00820000:1ce8:0071:1:0
 Disco Polo Music
 p:Cyfrowy Polsat S.A.
@@ -4423,7 +4993,7 @@ NHK World
 p:
 1ca5:00820000:332c:013e:1:0
 GEM TV
-p:Arqiva
+p:
 1cbb:00820000:332c:013e:1:0
 Manoto
 p:Manoto
@@ -5004,7 +5574,7 @@ p:GLOBECAST
 Dimtsi Hafash
 p:GLOBECAST
 0fbd:00820000:1e14:fbff:1:0
-Fox+1
+Fox +1
 p:SkyItalia
 0fc1:00820000:1e14:fbff:1:0
 Fox Crime +1
@@ -5031,7 +5601,7 @@ p:SkyItalia
 Archinews24
 p:SkyItalia
 0fd7:00820000:1e14:fbff:1:0
-Fox Crime En Rose
+FoxCrimeEnRose
 p:SkyItalia
 0fd8:00820000:1e14:fbff:1:0
 Canale Italia 84
@@ -5261,6 +5831,9 @@ p:SkyItalia
 38cd:00820000:2648:fbff:130:0
 Sky Radio
 p:SkyItalia
+38e9:00820000:2648:fbff:1:0
+Amici Animali TV
+p:SkyItalia,f:1
 0dc5:00820000:1af4:fbff:1:0
 Arte Channel
 p:SkyItalia
@@ -5419,7 +5992,7 @@ TVN 7 HD_
 p:TVN
 3dec:00820000:0640:013e:1:0
 Food Network HD_
-p:TVN 
+p:TVN
 3dd8:00820000:0640:013e:25:0
 Travel Channel HD
 p:TVN
@@ -5482,16 +6055,16 @@ Travel Channel HD EMEA
 p:TVN
 44db:00820000:0258:013e:1:0
 Rudaw HD
-p:Eutelsat
+p:
 44dd:00820000:0258:013e:1:0
 Russia Today
-p:Eutelsat
+p:
 44e0:00820000:0258:013e:1:0
 RT Arab
-p:Eutelsat
+p:
 05dd:00820000:2c24:013e:1:0
 Janatol baghie TV
-p:Eutelsat
+p:
 05de:00820000:2c24:013e:1:0
 CATV
 p:none
@@ -5524,7 +6097,7 @@ p:
 p:
 05eb:00820000:2c24:013e:1:0
 MerciTV
-p:FFmpeg
+p:Eutelsat
 05ef:00820000:2c24:013e:1:0
 Now TV
 p:
@@ -5791,7 +6364,7 @@ Swiss Classica
 p:Swiss Satellite Radio
 36e3:00820000:06a4:013e:25:0
 RSI LA 1 HD
-p:Radiotelevisione svizzera
+p:Radiotelevisione svizzera,c:050001
 36e4:00820000:06a4:013e:25:0
 RSI LA 2 HD
 p:Radiotelevisione svizzera
@@ -5912,6 +6485,45 @@ p:Radio Television Suisse
 4335:00820000:300c:013e:25:0
 Test17205
 p:SRG SSR
+0f46:00820000:2198:fbff:25:0
+Sky Calcio 5 HD
+p:SkyItalia
+0f48:00820000:2198:fbff:25:0
+Sky Calcio 6 HD
+p:SkyItalia
+0f4b:00820000:2198:fbff:25:0
+Real Time HD
+p:SkyItalia
+0f4c:00820000:2198:fbff:25:0
+Primafila 7 HD
+p:SkyItalia
+0f4d:00820000:2198:fbff:25:0
+Sky Calcio 1 HD
+p:SkyItalia
+0f4f:00820000:2198:fbff:25:0
+Eurosport HD
+p:SkyItalia
+0f54:00820000:2198:fbff:25:0
+Onboard Mix HD
+p:SkyItalia
+0f6f:00820000:2198:fbff:25:0
+Sky Calcio 2 HD
+p:SkyItalia
+0f71:00820000:2198:fbff:25:0
+Primafila 5 HD
+p:SkyItalia
+0f72:00820000:2198:fbff:25:0
+Primafila 13 HD
+p:SkyItalia
+1091:00820000:2198:fbff:25:0
+Bike Channel HD
+p:SkyItalia
+10a8:00820000:2198:fbff:25:0
+Roma TV
+p:SkyItalia
+0f5a:00820000:2198:fbff:130:0
+Calcio1Magaz
+p:SkyItalia
 2d6f:00820000:2260:fbff:25:0
 CH_TEST_TS88
 p:SkyItalia
@@ -6055,7 +6667,7 @@ FRANCE 3 GRENOBLE
 p:EUTELSAT,c:050001
 1009:ffce0000:5078:055f:1:0
 FRANCE 3 LIMOGES
-p:EUTELSAT
+p:EUTELSAT,c:050001
 1010:ffce0000:5078:055f:1:0
 FRANCE 3 LYON
 p:EUTELSAT,c:050001
@@ -6786,7 +7398,7 @@ p:Eutelsat
 France Bleu Bearn
 p:Eutelsat
 0467:ffce0000:526c:055e:2:0
-France Bleu Belfort Montbeliard 
+France Bleu Belfort Montbeliard
 p:Eutelsat
 0468:ffce0000:526c:055e:2:0
 France Bleu Berry
@@ -6986,6 +7598,9 @@ p:Scopus
 044d:ffce0000:526c:055e:22:0
 VEOA Occasion
 p:Eutelsat,c:050001
+044e:ffce0000:526c:055e:22:0
+LABEL TV
+p:Eutelsat,c:050001
 07d1:ffce2cc0:0003:20fa:2:0
 NRJ IDF
 p:TWC
@@ -7048,7 +7663,7 @@ BFM SPORT
 p:EUTELSAT
 057b:ffce0000:5398:055f:25:0
 BFM PARIS
-p:EUTELSAT
+p:EUTELSAT,c:050001
 057c:ffce0000:5398:055f:25:0
 BFM BUSINESS
 p:EUTELSAT,c:050001
@@ -7117,7 +7732,7 @@ GOLF CHANNEL
 p:EUTELSAT,c:050001
 00ce:ffce0000:4ee8:055f:22:0
 GAME ONE
-p:EUTELSAT
+p:EUTELSAT,c:050001
 00d2:ffce0000:4ee8:055f:22:0
 TOUTE L'HISTOIRE
 p:EUTELSAT,c:050001
@@ -7209,13 +7824,13 @@ p:SMR6
 TMC
 p:SMR6
 0608:ffce0000:0006:20fa:25:0
-NT1
+TFX
 p:SMR6
 0609:ffce0000:0006:20fa:25:0
 LCP
 p:SMR6
 0a01:ffce0000:000a:20fa:25:0
-HD1
+TF1 SERIES FILMS
 p:MHD7
 0a02:ffce0000:000a:20fa:25:0
 L'Equipe 21
@@ -7307,659 +7922,659 @@ p:EUTELSAT,c:050006
 06a8:ffce0000:7788:055f:31:0
 SFR SPORT 4K
 p:EUTELSAT,c:050006
-1fa4:eeee0000:032a:0110:1:0
-105 TV
-p:
-1fa5:eeee0000:032a:0110:1:0
-R101 TV
-p:
-1fa6:eeee0000:032a:0110:2:0
-Radio R101
-p:
-1fa7:eeee0000:032a:0110:2:0
-RADIO 105
-p:
-1fa8:eeee0000:032a:0110:2:0
-VIRGIN RADIO
-p:
-1fa9:eeee0000:032a:0110:25:0
-Canale5 HD
-p:
-1faa:eeee0000:032a:0110:25:0
-Italia1 HD
-p:
-1fc5:eeee0000:032a:0110:25:0
-Premium Crime HD
-p:
-1fd7:eeee0000:032a:0110:25:0
-Premium Action HD
-p:
-1009:eeee0000:03ac:0110:1:0
-Mediaset On Demand
-p:
-1067:eeee0000:03ac:0110:1:0
-Infinity
-p:
-0fa4:eeee0000:03ac:0110:1:0
-Rete4
-p:
-0fa5:eeee0000:03ac:0110:1:0
-Canale5
-p:
-0fa6:eeee0000:03ac:0110:1:0
-Italia1
-p:
-0fad:eeee0000:03ac:0110:1:0
-La 5
-p:
-0fae:eeee0000:03ac:0110:1:0
-TGCOM24
-p:
-0faf:eeee0000:03ac:0110:1:0
-Iris
-p:
-0fcc:eeee0000:03ac:0110:25:0
-Rete4 HD
-p:
-1c0c:eeee0000:0384:0110:1:0
-Zelig243
-p:
-1c16:eeee0000:0384:0110:1:0
-Sportitalia
-p:
-1c17:eeee0000:0384:0110:1:0
-Sportitalia
-p:
-1c18:eeee0000:0384:0110:1:0
-PADRE PIO TV
-p:
-1c1b:eeee0000:0384:0110:1:0
-RADIO ZETA
-p:
-1bcd:eeee0000:0384:0110:25:0
-Premium Cinema HD
-p:
-1bd1:eeee0000:0384:0110:25:0
-Premium Cinema 2 HD
-p:
-1bdc:eeee0000:0384:0110:25:0
-Premium Energy HD
-p:
-0065:eeee0000:0385:0110:1:0
-Premium Sport 2
-p:Mediaset
-0066:eeee0000:0385:0110:1:0
-Premium Calcio 1
-p:Mediaset
-0067:eeee0000:0385:0110:1:0
-Premium Calcio 2
-p:Mediaset
-0068:eeee0000:0385:0110:1:0
-Premium Calcio 3
-p:Mediaset
-0069:eeee0000:0385:0110:1:0
-Premium Calcio 4
-p:Mediaset
-006a:eeee0000:0385:0110:1:0
-Premium Calcio 5
-p:Mediaset
-006b:eeee0000:0385:0110:1:0
-Premium Calcio 6
-p:Mediaset
-0078:eeee0000:0385:0110:1:0
-Premium Sport
-p:Mediaset
-007a:eeee0000:0385:0110:1:0
-Premium Cinema 2 +24
-p:Mediaset
-007b:eeee0000:0385:0110:1:0
-Premium Action +24
-p:Mediaset
-007f:eeee0000:0385:0110:1:0
-Premium Online
-p:
-0080:eeee0000:0385:0110:1:0
-Premium Play
-p:
-0081:eeee0000:0385:0110:1:0
-Premium Menu
-p:Mediaset
-008e:eeee0000:0385:0110:1:0
-Premium Calcio 2 HD
-p:Mediaset
-0091:eeee0000:0385:0110:1:0
-Premium Energy +24
-p:Mediaset
-009d:eeee0000:0385:0110:1:0
-Cartoon Network - Premium
-p:Mediaset
-0191:eeee0000:0385:0110:31:0
-Premium Sport 4K
-p:
-0848:eeee0000:0389:0110:1:0
-Retecapri
-p:
-0864:eeee0000:0389:0110:1:0
-Food Network
-p:
-0865:eeee0000:0389:0110:1:0
-QVC
-p:
-0866:eeee0000:0389:0110:1:0
-TOPcrime
-p:
-0867:eeee0000:0389:0110:1:0
-Mediaset Italia Due
-p:
-0868:eeee0000:0389:0110:1:0
-Mediaset Extra
-p:
-0091:eeee0000:0389:0110:1:0
-Boing
-p:
-0093:eeee0000:0389:0110:1:0
-Cartoonito
-p:
-0c3f:eeee0000:03a2:0110:1:0
-Eurosport 1
-p:
-0c40:eeee0000:03a2:0110:1:0
-Eurosport 2
-p:
-0c4e:eeee0000:03a2:0110:1:0
-Premium Comedy
-p:
-0c43:eeee0000:03a2:0110:25:0
-Premium Sport 2 HD
-p:
-0c44:eeee0000:03a2:0110:25:0
-Premium Sport HD
-p:
-0316:eeee0000:0107:217c:1:0
-LA7 on demand
-p:
-0317:eeee0000:0107:217c:1:0
-LA7d on demand
-p:
-02c7:eeee0000:0107:217c:1:0
-LA7
-p:
-02c8:eeee0000:0107:217c:1:0
-LA7d
-p:
-02d1:eeee0000:0107:217c:1:0
-LA7
-p:
-02d2:eeee0000:0107:217c:1:0
-LA7d
-p:
-02f9:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02fa:eeee0000:0107:217c:1:0
-LA7 Servizi on demand
-p:
-02fb:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02fc:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02fd:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02ef:eeee0000:0107:217c:25:0
-LA7 HD
-p:
-02f0:eeee0000:0107:217c:25:0
-LA7d HD
-p:
-140b:eeee0000:03b6:0110:1:0
-Premium Emotion
-p:
-141a:eeee0000:03b6:0110:1:0
-Investigation Discovery -Premium
-p:
-13f7:eeee0000:03b6:0110:1:0
-Premium Joi
-p:
-13f8:eeee0000:03b6:0110:1:0
-Premium Stories
-p:
-13f9:eeee0000:03b6:0110:1:0
-Studio Universal - Premium
-p:
-13fb:eeee0000:03b6:0110:1:0
-Premium Cinema +24
-p:
-13fc:eeee0000:03b6:0110:1:0
-Premium Crime +24
-p:
-13fe:eeee0000:03b6:0110:1:0
-Premium Joi +24
-p:
-1415:eeee0000:03b6:0110:25:0
-Premium Calcio 1 HD
-p:
-0001:eeee0000:7918:217c:1:0
-NOVE
-p:Persidera
-0002:eeee0000:7918:217c:1:0
-cielo
-p:Persidera
-0003:eeee0000:7918:217c:1:0
-Paramount Channel
-p:Persidera
-0005:eeee0000:7918:217c:1:0
-Sky TG24
-p:Persidera
-0014:eeee0000:7918:217c:1:0
-NOVE
-p:Persidera
-0019:eeee0000:7918:217c:1:0
-FOCUS
-p:Persidera
-001e:eeee0000:7918:217c:1:0
-Cine Sony
-p:Persidera
-0028:eeee0000:7918:217c:1:0
-Deejay TV
-p:Persidera
-0029:eeee0000:7918:217c:1:0
-Deejay TV HD
-p:Persidera
-00a1:eeee0000:7918:217c:1:0
-CANALE 63
-p:Persidera
-000c:eeee0000:7918:217c:2:0
-Radio Maria
-p:Persidera
-0001:eeee0000:00c8:00c8:1:0
-Capri Store
-p:BS
-0801:eeee0000:00c8:00c8:1:0
-ODEON 24
-p:
-0005:eeee0000:00c8:00c8:1:0
-Capri Casino'
-p:,c:050001
-0014:eeee0000:00c8:00c8:1:0
-RETECONOMY
-p:TvMedia
-0052:eeee0000:00c8:00c8:1:0
-RETE 82 PLUS
-p:ptp
-00a3:eeee0000:00c8:00c8:1:0
-Capri Television
-p:
-00a4:eeee0000:00c8:00c8:1:0
-Capri Television HD
-p:BES
-00f7:eeee0000:00c8:00c8:1:0
-Capri Fashion
-p:
-000a:eeee0000:00c8:00c8:2:0
-Radio Capri
-p:Telecapri
-0001:eeee0000:27fb:0148:1:0
-STUDIO1
-p:STUDIO1
-0002:eeee0000:27fb:0148:1:0
-RETE79
-p:STUDIO1
-0003:eeee0000:27fb:0148:1:0
-STUDIO LIVE
-p:STUDIO1
-0004:eeee0000:27fb:0148:1:0
-STUDIO1 HD
-p:STUDIO1
-0005:eeee0000:27fb:0148:1:0
-RETE79 HD
-p:STUDIO1
-0006:eeee0000:27fb:0148:1:0
-TESORY CHANNEL
-p:STUDIO1
-0007:eeee0000:27fb:0148:1:0
-ZETA TV
-p:STUDIO1
-0008:eeee0000:27fb:0148:1:0
-RADIO BRUNO
-p:STUDIO1
-0009:eeee0000:27fb:0148:1:0
-UNO EXTRA
-p:STUDIO1
-000a:eeee0000:27fb:0148:1:0
-UNO MUSIC
-p:STUDIO1
-000b:eeee0000:27fb:0148:1:0
-UNO PLUS
-p:STUDIO1
-000c:eeee0000:27fb:0148:1:0
-UNO SET
-p:STUDIO1
-000d:eeee0000:27fb:0148:1:0
-GALAXY TV2
-p:STUDIO1
-000e:eeee0000:27fb:0148:1:0
-GALAXY TV3
-p:STUDIO1
-000f:eeee0000:27fb:0148:1:0
-GENIUS 240
-p:STUDIO1
-0065:eeee0000:27fb:0148:1:0
-UNO TV
-p:STUDIO1
-0066:eeee0000:27fb:0148:1:0
-QTV
-p:STUDIO1
-0067:eeee0000:27fb:0148:1:0
-RADIO BIRIKINA TV
-p:STUDIO1
-0068:eeee0000:27fb:0148:1:0
-GALAXY TV
-p:STUDIO1
-006a:eeee0000:27fb:0148:1:0
-RETE182
-p:STUDIO1
-006c:eeee0000:27fb:0148:1:0
-DELUXE 139
-p:STUDIO1
-0007:eeee0000:791a:217c:1:0
-ILIKE.TV
-p:Persidera
-0008:eeee0000:791a:217c:1:0
-CANALE 162
-p:Persidera
-000f:eeee0000:791a:217c:1:0
-Juwelo
-p:Persidera
-0017:eeee0000:791a:217c:1:0
-CHANNEL 24
-p:Persidera
-001e:eeee0000:791a:217c:1:0
-VERO
-p:Persidera
-001f:eeee0000:791a:217c:1:0
-RETE ITALIA
-p:Persidera
-0020:eeee0000:791a:217c:1:0
-LA 4 ITALIA
-p:Persidera
-0021:eeee0000:791a:217c:1:0
-GOLD TV ITALIA
-p:Persidera
-0022:eeee0000:791a:217c:1:0
-ITALIA +
-p:Persidera
-0023:eeee0000:791a:217c:1:0
-LINEA ITALIA
-p:Persidera
-0024:eeee0000:791a:217c:1:0
-ORLER TV
-p:Persidera
-0025:eeee0000:791a:217c:1:0
-AIR ITALIA
-p:Persidera
-0026:eeee0000:791a:217c:1:0
-AIR TV
-p:Persidera
-0027:eeee0000:791a:217c:1:0
-FIGHT NETWORK
-p:Persidera
-005f:eeee0000:791a:217c:1:0
-FIRE TV
-p:Persidera
-0060:eeee0000:791a:217c:1:0
-LIFE 120 CHANNEL
-p:Persidera
-0061:eeee0000:791a:217c:1:0
-MONDO CALCIO
-p:Persidera
-006e:eeee0000:791a:217c:1:0
-Mediatext.it
-p:Persidera
-006f:eeee0000:791a:217c:1:0
-Italia Channel
-p:Persidera
-0070:eeee0000:791a:217c:1:0
-Pianeta Tv
-p:Persidera
-0010:eeee0000:0204:001d:1:0
-GIALLO
-p:Persidera
-0015:eeee0000:0204:001d:1:0
-RTL 102.5 TV
-p:Persidera
-0016:eeee0000:0204:001d:1:0
-HSE24
-p:Persidera
-002c:eeee0000:0204:001d:1:0
-Real Time
-p:Persidera
-0032:eeee0000:0204:001d:1:0
-DMAX
-p:Persidera
-005a:eeee0000:0204:001d:1:0
-Entertainment Fact
-p:Persidera
-006a:eeee0000:0204:001d:1:0
-Super!
-p:Persidera
-00da:eeee0000:0204:001d:1:0
-RADIOFRECCIA
-p:Persidera
-00db:eeee0000:0204:001d:1:0
-RTL 102.5 TV HD
-p:Persidera
-00dc:eeee0000:0204:001d:1:0
-RADIOFRECCIA HD
-p:Persidera
-00de:eeee0000:0204:001d:1:0
-ZETA ITALIANA
-p:Persidera
-0009:eeee0000:0204:001d:2:0
-Radio Deejay
-p:Persidera
-000a:eeee0000:0204:001d:2:0
-Radio Capital
-p:Persidera
-000b:eeee0000:0204:001d:2:0
-Radio m2o
-p:Persidera
-00dd:eeee0000:0204:001d:2:0
-RTL 102.5
-p:Persidera
-001e:eeee0000:0200:001d:1:0
-POP
-p:Persidera
-0028:eeee0000:0200:001d:1:0
-SUPERTENNIS
-p:Persidera
-0032:eeee0000:0200:001d:1:0
-Spike
-p:Persidera
-003c:eeee0000:0200:001d:1:0
-RadioItaliaTV
-p:Persidera
-0266:eeee0000:0200:001d:1:0
-TV8
-p:Persidera
-0267:eeee0000:0200:001d:1:0
-TV8
-p:Persidera
-0271:eeee0000:0200:001d:1:0
-TV8 News On Demand
-p:Persidera
-0272:eeee0000:0200:001d:1:0
-TV8 On Demand
-p:Persidera
-0275:eeee0000:0200:001d:1:0
-VH1 On Demand
-p:Persidera
-0276:eeee0000:0200:001d:1:0
-VH1 On Demand
-p:Persidera
-0078:eeee0000:0200:001d:1:0
-VH1
-p:Persidera
-0079:eeee0000:0200:001d:1:0
-VH1
-p:Persidera
-0092:eeee0000:0200:001d:1:0
-frisbee
-p:Persidera
-0096:eeee0000:0200:001d:1:0
-TV8
-p:Persidera
-0097:eeee0000:0200:001d:1:0
-K2
-p:Persidera
-000d:eeee0000:0200:001d:2:0
-R Italia SMI
-p:Persidera
-000e:eeee0000:0200:001d:2:0
-R Italia SMI
-p:Persidera
-0032:eeee0000:0202:001d:1:0
-Alpha
-p:Persidera
-003c:eeee0000:0202:001d:1:0
-ACQUA
-p:Persidera
-0041:eeee0000:0202:001d:1:0
-Play.me
-p:Persidera
-0046:eeee0000:0202:001d:1:0
-ALICE
-p:Persidera
-004b:eeee0000:0202:001d:1:0
-CASEDESIGNSTILI
-p:Persidera
-0050:eeee0000:0202:001d:1:0
-MARCOPOLO
-p:Persidera
-0055:eeee0000:0202:001d:1:0
-MARCOPOLO DIARI
-p:Persidera
-0064:eeee0000:0202:001d:1:0
-TV2000
-p:Persidera
-006e:eeee0000:0202:001d:1:0
-MEDIATEXT.IT
-p:Persidera
-006f:eeee0000:0202:001d:1:0
-ITALIA CHANNEL
-p:Persidera
-0070:eeee0000:0202:001d:1:0
-PIANETA TV
-p:Persidera
-0069:eeee0000:0202:001d:2:0
-RADIO VATICANA ITALIA
-p:Persidera
-0015:eeee0000:0202:001d:25:0
-NOVE HD
-p:Persidera
-0d49:eeee0000:4800:013e:1:0
-Rai 1
-p:Rai
-0d4a:eeee0000:4800:013e:1:0
-Rai 2
-p:Rai
-0d4b:eeee0000:4800:013e:1:0
-Rai 3 TGR
-p:Rai
-0d53:eeee0000:4800:013e:1:0
-Rai News 24
-p:Rai
-0d4c:eeee0000:4800:013e:2:0
-Rai Radio1
-p:Rai
-0d4d:eeee0000:4800:013e:2:0
-Rai Radio2
-p:Rai
-0d4e:eeee0000:4800:013e:2:0
-Rai Radio3
-p:Rai
-0d49:eeee0000:0001:013e:1:0
-Rai 1
-p:Rai
-0d4a:eeee0000:0001:013e:1:0
-Rai 2
-p:Rai
-0d4b:eeee0000:0001:013e:1:0
-Rai 3 TGR
-p:Rai
-0d53:eeee0000:0001:013e:1:0
-Rai News 24
-p:Rai
-0d4c:eeee0000:0001:013e:2:0
-Rai Radio1
-p:Rai
-0d4d:eeee0000:0001:013e:2:0
-Rai Radio2
-p:Rai
-0d4e:eeee0000:0001:013e:2:0
-Rai Radio3
-p:Rai
-2172:eeee0000:0002:013e:1:0
-Rai Sport
-p:Rai
-2175:eeee0000:0002:013e:1:0
-Rai Scuola
-p:Rai
-2180:eeee0000:0002:013e:1:0
-Rai 5
-p:Rai
-2181:eeee0000:0002:013e:1:0
-Rai Storia
-p:Rai
-217a:eeee0000:0002:013e:2:0
-Rai Radio Classica
-p:Rai
-217c:eeee0000:0002:013e:2:0
-Rai GrParlamento
-p:Rai
-217d:eeee0000:0002:013e:2:0
-Rai Isoradio
-p:Rai
-2182:eeee0000:0002:013e:2:0
-Rai Radio Tutta Italiana
-p:Rai
-2183:eeee0000:0002:013e:2:0
-Rai Radio Techetè
-p:Rai
-2184:eeee0000:0002:013e:2:0
-Rai Radio Live
-p:Rai
-218d:eeee0000:0002:013e:2:0
-Rai Radio Kids
-p:Rai
-2185:eeee0000:0004:013e:1:0
-Rai Premium
-p:RAI
-2186:eeee0000:0004:013e:1:0
-Rai YoYo
-p:RAI
-2187:eeee0000:0004:013e:1:0
-Rai 4
-p:RAI
-2188:eeee0000:0004:013e:1:0
-Rai Gulp
-p:RAI
-2189:eeee0000:0004:013e:1:0
-Rai Movie
-p:RAI
 218c:eeee0000:0004:013e:1:0
 Rai 1 HD
-p:Rai
-2190:eeee0000:0005:013e:1:0
+p:Rai,c:050001
+2190:eeee0000:0005:013e:1:1
 Rai 2 HD
 p:Rai
-2191:eeee0000:0005:013e:1:0
+2191:eeee0000:0005:013e:1:2
 Rai 3 HD
 p:Rai
-2197:eeee0000:0005:013e:1:0
+0fcc:eeee0000:03ac:0110:25:3
+Rete4 HD
+p:
+1fa9:eeee0000:032a:0110:25:4
+Canale5 HD
+p:
+1faa:eeee0000:032a:0110:25:5
+Italia1 HD
+p:
+02ef:eeee0000:0107:217c:25:6
+LA7 HD
+p:
+0266:eeee0000:0200:001d:1:7
+TV8
+p:Persidera
+0015:eeee0000:0202:001d:25:8
+NOVE HD
+p:Persidera
+0002:eeee0000:7918:217c:1:9
+cielo
+p:Persidera
+1bcd:eeee0000:0384:0110:25:11
+Premium Cinema HD
+p:
+13fb:eeee0000:03b6:0110:1:12
+Premium Cinema +24
+p:
+1bd1:eeee0000:0384:0110:25:13
+Premium Cinema 2 HD
+p:
+007a:eeee0000:0385:0110:1:14
+Premium Cinema 2 +24
+p:Mediaset
+1bdc:eeee0000:0384:0110:25:15
+Premium Energy HD
+p:
+0091:eeee0000:0385:0110:1:16
+Premium Energy +24
+p:Mediaset
+140b:eeee0000:03b6:0110:1:17
+Premium Emotion
+p:
+0c4e:eeee0000:03a2:0110:1:18
+Premium Comedy
+p:
+13f9:eeee0000:03b6:0110:1:19
+Studio Universal - Premium
+p:
+2189:eeee0000:0004:013e:1:20
+Rai Movie
+p:RAI
+0faf:eeee0000:03ac:0110:1:21
+Iris
+p:
+0003:eeee0000:7918:217c:1:22
+Paramount Channel
+p:Persidera
+001e:eeee0000:7918:217c:1:23
+Cine Sony
+p:Persidera
+1fd7:eeee0000:032a:0110:25:25
+Premium Action HD
+p:
+007b:eeee0000:0385:0110:1:26
+Premium Action +24
+p:Mediaset
+1fc5:eeee0000:032a:0110:25:27
+Premium Crime HD
+p:
+13fc:eeee0000:03b6:0110:1:28
+Premium Crime +24
+p:
+13f8:eeee0000:03b6:0110:1:29
+Premium Stories
+p:
+13f7:eeee0000:03b6:0110:1:30
+Premium Joi
+p:
+13fe:eeee0000:03b6:0110:1:31
+Premium Joi +24
+p:
+2185:eeee0000:0004:013e:1:32
+Rai Premium
+p:RAI
+2187:eeee0000:0004:013e:1:33
+Rai 4
+p:RAI
+2180:eeee0000:0002:013e:1:34
+Rai 5
+p:Rai
+0fad:eeee0000:03ac:0110:1:35
+La 5
+p:
+0867:eeee0000:0389:0110:1:36
+Mediaset Italia Due
+p:
+0868:eeee0000:0389:0110:1:37
+Mediaset Extra
+p:
+1c0c:eeee0000:0384:0110:1:38
+Zelig243
+p:
+0866:eeee0000:0389:0110:1:39
+TOPcrime
+p:
+0010:eeee0000:0204:001d:1:40
+GIALLO
+p:Persidera
+002c:eeee0000:0204:001d:1:41
+Real Time
+p:Persidera
+0032:eeee0000:0204:001d:1:42
+DMAX
+p:Persidera
+0032:eeee0000:0200:001d:1:43
+Spike
+p:Persidera
+0032:eeee0000:0202:001d:1:44
+Alpha
+p:Persidera
+004b:eeee0000:0202:001d:1:45
+CASEDESIGNSTILI
+p:Persidera
+02f0:eeee0000:0107:217c:25:46
+LA7d HD
+p:
+001e:eeee0000:791a:217c:1:47
+VERO
+p:Persidera
+0064:eeee0000:0202:001d:1:48
+TV2000
+p:Persidera
+0848:eeee0000:0389:0110:1:49
+Retecapri
+p:
+0191:eeee0000:0385:0110:31:51
+Premium Sport 4K
+p:
+0c44:eeee0000:03a2:0110:25:52
+Premium Sport HD
+p:
+0078:eeee0000:0385:0110:1:53
+Premium Sport
+p:Mediaset
+0c43:eeee0000:03a2:0110:25:54
+Premium Sport 2 HD
+p:
+0065:eeee0000:0385:0110:1:55
+Premium Sport 2
+p:Mediaset
+1415:eeee0000:03b6:0110:25:56
+Premium Calcio 1 HD
+p:
+0066:eeee0000:0385:0110:1:57
+Premium Calcio 1
+p:Mediaset
+008e:eeee0000:0385:0110:1:58
+Premium Calcio 2 HD
+p:Mediaset
+0067:eeee0000:0385:0110:1:59
+Premium Calcio 2
+p:Mediaset
+0068:eeee0000:0385:0110:1:60
+Premium Calcio 3
+p:Mediaset
+0069:eeee0000:0385:0110:1:61
+Premium Calcio 4
+p:Mediaset
+006a:eeee0000:0385:0110:1:62
+Premium Calcio 5
+p:Mediaset
+006b:eeee0000:0385:0110:1:63
+Premium Calcio 6
+p:Mediaset
+0c3f:eeee0000:03a2:0110:1:64
+Eurosport 1
+p:
+0c40:eeee0000:03a2:0110:1:65
+Eurosport 2
+p:
+2197:eeee0000:0005:013e:1:66
 Rai Sport + HD
 p:Rai
+1c16:eeee0000:0384:0110:1:67
+Sportitalia
+p:
+0061:eeee0000:791a:217c:1:68
+MONDO CALCIO
+p:Persidera
+0028:eeee0000:0200:001d:1:69
+SUPERTENNIS
+p:Persidera
+0027:eeee0000:791a:217c:1:70
+FIGHT NETWORK
+p:Persidera
+141a:eeee0000:03b6:0110:1:72
+Investigation Discovery -Premium
+p:
+0019:eeee0000:7918:217c:1:73
+FOCUS
+p:Persidera
+0046:eeee0000:0202:001d:1:74
+ALICE
+p:Persidera
+0864:eeee0000:0389:0110:1:75
+Food Network
+p:
+0050:eeee0000:0202:001d:1:76
+MARCOPOLO
+p:Persidera
+2181:eeee0000:0002:013e:1:77
+Rai Storia
+p:Rai
+2175:eeee0000:0002:013e:1:78
+Rai Scuola
+p:Rai
+0014:eeee0000:00c8:00c8:1:79
+RETECONOMY
+p:TvMedia
+003c:eeee0000:0202:001d:1:80
+ACQUA
+p:Persidera
+00db:eeee0000:0204:001d:1:82
+RTL 102.5 TV HD
+p:Persidera
+0029:eeee0000:7918:217c:1:83
+Deejay TV HD
+p:Persidera
+0078:eeee0000:0200:001d:1:84
+VH1
+p:Persidera
+00dc:eeee0000:0204:001d:1:85
+RADIOFRECCIA HD
+p:Persidera
+1c1b:eeee0000:0384:0110:1:86
+RADIO ZETA
+p:
+00de:eeee0000:0204:001d:1:87
+ZETA ITALIANA
+p:Persidera
+0041:eeee0000:0202:001d:1:88
+Play.me
+p:Persidera
+1fa5:eeee0000:032a:0110:1:89
+R101 TV
+p:
+0008:eeee0000:27fb:0148:1:90
+RADIO BRUNO
+p:STUDIO1
+0067:eeee0000:27fb:0148:1:91
+RADIO BIRIKINA TV
+p:STUDIO1
+009d:eeee0000:0385:0110:1:93
+Cartoon Network - Premium
+p:Mediaset
+2188:eeee0000:0004:013e:1:94
+Rai Gulp
+p:RAI
+2186:eeee0000:0004:013e:1:95
+Rai YoYo
+p:RAI
+0091:eeee0000:0389:0110:1:96
+Boing
+p:
+0093:eeee0000:0389:0110:1:97
+Cartoonito
+p:
+006a:eeee0000:0204:001d:1:98
+Super!
+p:Persidera
+0097:eeee0000:0200:001d:1:99
+K2
+p:Persidera
+0092:eeee0000:0200:001d:1:100
+frisbee
+p:Persidera
+001e:eeee0000:0200:001d:1:101
+POP
+p:Persidera
+0d53:eeee0000:4800:013e:1:103
+Rai News 24
+p:Rai
+0fae:eeee0000:03ac:0110:1:104
+TGCOM24
+p:
+0005:eeee0000:7918:217c:1:105
+Sky TG24
+p:Persidera
+0865:eeee0000:0389:0110:1:107
+QVC
+p:
+0016:eeee0000:0204:001d:1:108
+HSE24
+p:Persidera
+000f:eeee0000:791a:217c:1:109
+Juwelo
+p:Persidera
+0025:eeee0000:791a:217c:1:110
+AIR ITALIA
+p:Persidera
+0026:eeee0000:791a:217c:1:111
+AIR TV
+p:Persidera
+00a1:eeee0000:7918:217c:1:112
+CANALE 63
+p:Persidera
+0008:eeee0000:791a:217c:1:113
+CANALE 162
+p:Persidera
+0017:eeee0000:791a:217c:1:114
+CHANNEL 24
+p:Persidera
+005f:eeee0000:791a:217c:1:115
+FIRE TV
+p:Persidera
+0021:eeee0000:791a:217c:1:116
+GOLD TV ITALIA
+p:Persidera
+0007:eeee0000:791a:217c:1:117
+ILIKE.TV
+p:Persidera
+006f:eeee0000:791a:217c:1:118
+Italia Channel
+p:Persidera
+0022:eeee0000:791a:217c:1:119
+ITALIA +
+p:Persidera
+0020:eeee0000:791a:217c:1:120
+LA 4 ITALIA
+p:Persidera
+0060:eeee0000:791a:217c:1:121
+LIFE 120 CHANNEL
+p:Persidera
+0023:eeee0000:791a:217c:1:122
+LINEA ITALIA
+p:Persidera
+006e:eeee0000:791a:217c:1:123
+Mediatext.it
+p:Persidera
+0024:eeee0000:791a:217c:1:124
+ORLER TV
+p:Persidera
+0070:eeee0000:791a:217c:1:125
+Pianeta Tv
+p:Persidera
+001f:eeee0000:791a:217c:1:126
+RETE ITALIA
+p:Persidera
+1c18:eeee0000:0384:0110:1:128
+PADRE PIO TV
+p:
+0d49:eeee0000:4800:013e:1:130
+Rai 1
+p:Rai
+0d4a:eeee0000:4800:013e:1:131
+Rai 2
+p:Rai
+0d4b:eeee0000:4800:013e:1:132
+Rai 3 TGR 
+p:Rai
+2172:eeee0000:0002:013e:1:133
+Rai Sport
+p:Rai
+0d49:eeee0000:0001:013e:1:134
+Rai 1
+p:Rai
+0d4a:eeee0000:0001:013e:1:135
+Rai 2
+p:Rai
+0d4b:eeee0000:0001:013e:1:136
+Rai 3 TGR 
+p:Rai
+0d53:eeee0000:0001:013e:1:137
+Rai News 24
+p:Rai
+0fa4:eeee0000:03ac:0110:1:139
+Rete4
+p:
+0fa5:eeee0000:03ac:0110:1:140
+Canale5
+p:
+0fa6:eeee0000:03ac:0110:1:141
+Italia1
+p:
+1fa4:eeee0000:032a:0110:1:142
+105 TV
+p:
+1067:eeee0000:03ac:0110:1:143
+Infinity
+p:
+1009:eeee0000:03ac:0110:1:144
+Mediaset On Demand
+p:
+0081:eeee0000:0385:0110:1:146
+Premium Menu
+p:Mediaset
+007f:eeee0000:0385:0110:1:147
+Premium Online
+p:
+0080:eeee0000:0385:0110:1:148
+Premium Play
+p:
+1c17:eeee0000:0384:0110:1:149
+Sportitalia
+p:
+02c7:eeee0000:0107:217c:1:151
+LA7
+p:
+02d1:eeee0000:0107:217c:1:152
+LA7
+p:
+02c8:eeee0000:0107:217c:1:153
+LA7d
+p:
+02d2:eeee0000:0107:217c:1:154
+LA7d
+p:
+02f9:eeee0000:0107:217c:1:155
+LA7 TEST
+p:
+02fb:eeee0000:0107:217c:1:156
+LA7 TEST
+p:
+02fc:eeee0000:0107:217c:1:157
+LA7 TEST
+p:
+02fd:eeee0000:0107:217c:1:158
+LA7 TEST
+p:
+02fa:eeee0000:0107:217c:1:159
+LA7 Servizi on demand
+p:
+0316:eeee0000:0107:217c:1:160
+LA7 on demand
+p:
+0317:eeee0000:0107:217c:1:161
+LA7d on demand
+p:
+0096:eeee0000:0200:001d:1:163
+TV8
+p:Persidera
+0267:eeee0000:0200:001d:1:164
+TV8
+p:Persidera
+0001:eeee0000:7918:217c:1:165
+NOVE
+p:Persidera
+0014:eeee0000:7918:217c:1:166
+NOVE
+p:Persidera
+0055:eeee0000:0202:001d:1:167
+MARCOPOLO DIARI
+p:Persidera
+003c:eeee0000:0200:001d:1:168
+RadioItaliaTV
+p:Persidera
+0015:eeee0000:0204:001d:1:169
+RTL 102.5 TV
+p:Persidera
+0028:eeee0000:7918:217c:1:170
+Deejay TV
+p:Persidera
+0079:eeee0000:0200:001d:1:171
+VH1
+p:Persidera
+00da:eeee0000:0204:001d:1:172
+RADIOFRECCIA
+p:Persidera
+006e:eeee0000:0202:001d:1:173
+MEDIATEXT.IT
+p:Persidera
+006f:eeee0000:0202:001d:1:174
+ITALIA CHANNEL
+p:Persidera
+0070:eeee0000:0202:001d:1:175
+PIANETA TV
+p:Persidera
+0272:eeee0000:0200:001d:1:176
+TV8 On Demand
+p:Persidera
+0271:eeee0000:0200:001d:1:177
+TV8 News On Demand
+p:Persidera
+0276:eeee0000:0200:001d:1:178
+VH1 On Demand
+p:Persidera
+0275:eeee0000:0200:001d:1:179
+VH1 On Demand
+p:Persidera
+005a:eeee0000:0204:001d:1:180
+Entertainment Fact
+p:Persidera
+00a4:eeee0000:00c8:00c8:1:182
+Capri Television HD
+p:BES
+00a3:eeee0000:00c8:00c8:1:183
+Capri Television
+p:
+00f7:eeee0000:00c8:00c8:1:184
+Capri Fashion
+p:
+0005:eeee0000:00c8:00c8:1:185
+Capri Casino'
+p:,c:050001
+0001:eeee0000:00c8:00c8:1:186
+Capri Store
+p:BS
+0052:eeee0000:00c8:00c8:1:187
+RETE 82 PLUS
+p:ptp
+0801:eeee0000:00c8:00c8:1:188
+ODEON 24
+p:
+0004:eeee0000:27fb:0148:1:190
+STUDIO1 HD
+p:STUDIO1
+0001:eeee0000:27fb:0148:1:191
+STUDIO1
+p:STUDIO1
+0003:eeee0000:27fb:0148:1:192
+STUDIO LIVE
+p:STUDIO1
+0005:eeee0000:27fb:0148:1:193
+RETE79 HD
+p:STUDIO1
+0002:eeee0000:27fb:0148:1:194
+RETE79
+p:STUDIO1
+0006:eeee0000:27fb:0148:1:195
+TESORY CHANNEL
+p:STUDIO1
+006a:eeee0000:27fb:0148:1:196
+RETE182
+p:STUDIO1
+0068:eeee0000:27fb:0148:1:197
+GALAXY TV
+p:STUDIO1
+000d:eeee0000:27fb:0148:1:198
+GALAXY TV2
+p:STUDIO1
+000e:eeee0000:27fb:0148:1:199
+GALAXY TV3
+p:STUDIO1
+006c:eeee0000:27fb:0148:1:200
+DELUXE 139
+p:STUDIO1
+000f:eeee0000:27fb:0148:1:201
+GENIUS 240
+p:STUDIO1
+0066:eeee0000:27fb:0148:1:202
+QTV
+p:STUDIO1
+0065:eeee0000:27fb:0148:1:203
+UNO TV
+p:STUDIO1
+0009:eeee0000:27fb:0148:1:204
+UNO EXTRA
+p:STUDIO1
+000a:eeee0000:27fb:0148:1:205
+UNO MUSIC
+p:STUDIO1
+000b:eeee0000:27fb:0148:1:206
+UNO PLUS
+p:STUDIO1
+000c:eeee0000:27fb:0148:1:207
+UNO SET
+p:STUDIO1
+0007:eeee0000:27fb:0148:1:208
+ZETA TV
+p:STUDIO1
+0d4c:eeee0000:4800:013e:2:210
+Rai Radio1
+p:Rai
+0d4d:eeee0000:4800:013e:2:211
+Rai Radio2
+p:Rai
+0d4e:eeee0000:4800:013e:2:212
+Rai Radio3
+p:Rai
+217a:eeee0000:0002:013e:2:213
+Rai Radio Classica
+p:Rai
+217c:eeee0000:0002:013e:2:214
+Rai GrParlamento
+p:Rai
+217d:eeee0000:0002:013e:2:215
+Rai Isoradio
+p:Rai
+2182:eeee0000:0002:013e:2:216
+Rai Radio Tutta Italiana
+p:Rai
+2183:eeee0000:0002:013e:2:217
+Rai Radio Techetè
+p:Rai
+2184:eeee0000:0002:013e:2:218
+Rai Radio Live
+p:Rai
+218d:eeee0000:0002:013e:2:219
+Rai Radio Kids
+p:Rai
+0d4c:eeee0000:0001:013e:2:220
+Rai Radio1
+p:Rai
+0d4d:eeee0000:0001:013e:2:221
+Rai Radio2
+p:Rai
+0d4e:eeee0000:0001:013e:2:222
+Rai Radio3
+p:Rai
+1fa6:eeee0000:032a:0110:2:223
+Radio R101
+p:
+1fa7:eeee0000:032a:0110:2:224
+RADIO 105
+p:
+1fa8:eeee0000:032a:0110:2:225
+VIRGIN RADIO
+p:
+00dd:eeee0000:0204:001d:2:226
+RTL 102.5
+p:Persidera
+0009:eeee0000:0204:001d:2:227
+Radio Deejay
+p:Persidera
+000a:eeee0000:0204:001d:2:228
+Radio Capital
+p:Persidera
+000b:eeee0000:0204:001d:2:229
+Radio m2o
+p:Persidera
+000c:eeee0000:7918:217c:2:230
+Radio Maria
+p:Persidera
+000d:eeee0000:0200:001d:2:231
+R Italia SMI
+p:Persidera
+000e:eeee0000:0200:001d:2:232
+R Italia SMI
+p:Persidera
+0069:eeee0000:0202:001d:2:233
+RADIO VATICANA ITALIA
+p:Persidera
+000a:eeee0000:00c8:00c8:2:234
+Radio Capri
+p:Telecapri
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
