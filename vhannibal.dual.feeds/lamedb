@@ -102,6 +102,9 @@ transponders
 00c00000:0443:0001
 	s 12226000:27500000:0:3:192:2:0
 /
+00c00000:0446:0001
+	s 12285000:29700000:1:2:192:2:0:1:2:1:2
+/
 00c00000:03ea:0001
 	s 11229000:22000000:1:2:192:2:0:1:2:0:2
 /
@@ -314,6 +317,9 @@ transponders
 /
 00820000:2710:fbff
 	s 12713000:29900000:1:4:130:2:0
+/
+00820000:3200:013e
+	s 11075000:27500000:1:2:130:2:0:1:2:0:2
 /
 00822bfa:0001:0001
 	s 11258000:27500000:0:2:130:2:0:1:2:0:2
@@ -1153,7 +1159,7 @@ LT1-OOE
 p:-
 3338:00c00000:045b:0001:22:0
 4MEDIATHEK
-p:-
+p:-,c:050001
 3355:00c00000:045b:0001:22:0
 BTV
 p:-
@@ -2084,6 +2090,42 @@ p:Globecast
 79fe:00c00000:0443:0001:1:0
 EURONEWS GERMAN SD
 p:Globecast
+4282:00c00000:0446:0001:1:0
+toute L Histoire
+p:AB SAT
+428c:00c00000:0446:0001:1:0
+CHASSE ET PECHE
+p:AB SAT
+427c:00c00000:0446:0001:25:0
+AB MOTEURS
+p:AB SAT
+427d:00c00000:0446:0001:25:0
+AB1
+p:AB SAT
+427e:00c00000:0446:0001:25:0
+ANIMAUX
+p:AB SAT
+427f:00c00000:0446:0001:25:0
+Science et Vie
+p:AB SAT
+4280:00c00000:0446:0001:25:0
+XXL
+p:AB SAT
+4281:00c00000:0446:0001:25:0
+TREK
+p:AB SAT
+4286:00c00000:0446:0001:25:0
+ACTION
+p:AB SAT
+4287:00c00000:0446:0001:25:0
+MANGAS
+p:AB SAT
+428b:00c00000:0446:0001:25:0
+RTL9
+p:AB SAT
+429e:00c00000:0446:0001:25:0
+XXL
+p:AB SAT
 1389:00c00000:03ea:0001:1:0
 BBC World News Europe HD
 p:SES ASTRA
@@ -2966,6 +3008,9 @@ p:M7 Group
 3401:00c00000:03ed:0001:22:0
 SCHWEIZ 5
 p:-
+3403:00c00000:03ed:0001:22:0
+Starparadies A
+p:ORS,c:050001
 3404:00c00000:03ed:0001:22:0
 gotv neu
 p:GoTV
@@ -3123,7 +3168,7 @@ p:SKY
 SYFY
 p:SKY
 0029:00c00000:0002:0085:22:0
-Sky Cinema Comic-Helden
+Sky Cinema Hits
 p:SKY
 002a:00c00000:0002:0085:22:0
 13th Street
@@ -3576,7 +3621,7 @@ p:SKY
 Sky Sport Bundesliga 1 HD
 p:SKY
 006b:00c00000:000c:0085:25:0
-Sky Cinema Comic-Helden HD
+Sky Cinema Hits HD
 p:SKY
 006c:00c00000:000c:0085:25:0
 Sky Sport News HD
@@ -4340,9 +4385,6 @@ p:SES ASTRA
 07da:00c00000:0449:0001:31:0
 PEARL TV 4K UHD
 p:SES ASTRA
-0032:00820000:2f44:013e:0:0
-Shant premium HD
-p:
 0033:00820000:2f44:013e:0:0
 Shant Music HD
 p:
@@ -4358,6 +4400,9 @@ p:Basmedia
 421f:00820000:2f44:013e:1:0
 Penthouse 2
 p:Basmedia
+0032:00820000:2f44:013e:1:0
+Shant Premium HD
+p:
 0034:00820000:2f44:013e:1:0
 Armenia HD
 p:TV-Provider
@@ -4411,7 +4456,7 @@ RTL-TVi HD
 p:M7 Group
 06c3:00820000:2f44:013e:25:0
 HSE24 HD
-p:Persidera,c:050001
+p:Persidera
 1100:00820000:1644:fbff:1:0
 Sky TG24 Active
 p:SkyItalia
@@ -4544,9 +4589,12 @@ p:SkyItalia
 3454:00820000:2710:fbff:130:0
 goal Alert HD
 p:SkyItalia
-0001:00822bfa:0001:0001:1:0
+0001:00820000:3200:013e:1:0
 Rai 4K
 p:,c:050006
+0001:00822bfa:0001:0001:1:0
+Rai 4K
+p:
 0001:00820000:2e18:00b0:1:0
 Al Maghribia HD
 p:SNRT
@@ -5023,9 +5071,6 @@ Rangarang TV
 p:
 0007:0082accf:0578:013e:1:0
 ES TV
-p:
-0008:0082accf:0578:013e:1:0
-Medya Haber
 p:
 0009:0082accf:0578:013e:1:0
 Somali Cable
@@ -5525,9 +5570,15 @@ p:nc+
 3318:00820000:0190:013e:1:0
 EUROSPORT HD PL
 p:nc+
+331b:00820000:0190:013e:1:0
+11278V SID 0x331b
+p:DVB-S2 8PSK 11278V 13.0Â°E
 331d:00820000:0190:013e:1:0
 ESP HD test D
 p:nc+
+332a:00820000:0190:013e:1:0
+11278V SID 0x332a
+p:DVB-S2 8PSK 11278V 13.0Â°E
 32cd:00820000:0190:013e:1:0
 CANAL+ NOW
 p:nc+
@@ -6045,7 +6096,7 @@ p:Cyfrowy Polsat S.A.
 Eurosport 1 HD
 p:Cyfrowy Polsat S.A.
 3e30:00820000:2ee0:013e:1:0
-PPV KSW 45
+Test.
 p:Cyfrowy Polsat S.A.
 3e3e:00820000:2ee0:013e:1:0
 SciFi HD
@@ -6259,7 +6310,7 @@ TEF Channel
 p:Telespazio
 4251:00820000:3db8:013e:1:0
 RDS TV
-p:Telespazio
+p:Telespazio,c:050001
 4254:00820000:3db8:013e:1:0
 RETECONOMY
 p:Telespazio
@@ -6285,7 +6336,7 @@ p:tinity tv
 Hillsong
 p:
 0325:0082b00f:0001:0001:1:0
-JCTV
+Smile of a Child
 p:
 0326:0082b00f:0001:0001:1:0
 Al Horreya
@@ -6671,6 +6722,9 @@ p:NetMed
 013d:00820000:157c:013e:1:0
 novacinema1
 p:NetMed
+013e:00820000:157c:013e:1:0
+Nova New Season 2018-19
+p:NetMed
 013f:00820000:157c:013e:1:0
 MEGA
 p:NetMed
@@ -6700,6 +6754,9 @@ Novacinema4HD
 p:NetMed
 0148:00820000:157c:013e:1:0
 Novasports5HD Cy
+p:NetMed
+0149:00820000:157c:013e:1:0
+PINKO TV
 p:NetMed
 014a:00820000:157c:013e:1:0
 MTV Hits
@@ -6736,12 +6793,6 @@ RR1
 p:NetMed
 0152:00820000:157c:013e:2:0
 Ntsra2
-p:NetMed
-013e:00820000:157c:013e:1:0
-Info Card
-p:NetMed,f:40
-0149:00820000:157c:013e:1:1
-PINKO TV
 p:NetMed
 332d:00820000:3390:0071:1:0
 Polsat
@@ -7183,7 +7234,7 @@ AdSmart
 p:SkyItalia
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
-p:Rai
+p:Rai,c:050001
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
 p:Rai
@@ -8757,7 +8808,7 @@ p:SkyItalia
 Fox Crime +1
 p:SkyItalia
 0fc2:00820000:1e14:fbff:1:0
-Fox Life Ghost
+Fox Life +1
 p:SkyItalia
 0fc5:00820000:1e14:fbff:1:0
 Loveworld
@@ -8781,7 +8832,7 @@ p:SkyItalia
 Archinews24
 p:SkyItalia
 0fd7:00820000:1e14:fbff:1:0
-FoxCrime Paradise
+Fox Crime +2
 p:SkyItalia
 0fd8:00820000:1e14:fbff:1:0
 Canale Italia 84
@@ -9429,7 +9480,7 @@ p:Rai
 Rai Radio Kids
 p:Rai
 0cfa:00820000:1518:013e:2:0
-Rai Radio2 indie
+Rai Radio2 Indie
 p:Rai
 01f8:00820000:0384:013e:1:0
 NASA TV HD
