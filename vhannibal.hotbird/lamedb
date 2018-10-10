@@ -9,6 +9,9 @@ transponders
 00820000:2710:fbff
 	s 12713000:29900000:1:4:130:2:0
 /
+00820000:3200:013e
+	s 11075000:27500000:1:2:130:2:0:1:2:0:2
+/
 00822bfa:0001:0001
 	s 11258000:27500000:0:2:130:2:0:1:2:0:2
 /
@@ -302,9 +305,6 @@ transponders
 /
 end
 services
-0032:00820000:2f44:013e:0:0
-Shant premium HD
-p:
 0033:00820000:2f44:013e:0:0
 Shant Music HD
 p:
@@ -320,6 +320,9 @@ p:Basmedia
 421f:00820000:2f44:013e:1:0
 Penthouse 2
 p:Basmedia
+0032:00820000:2f44:013e:1:0
+Shant Premium HD
+p:
 0034:00820000:2f44:013e:1:0
 Armenia HD
 p:TV-Provider
@@ -373,7 +376,7 @@ RTL-TVi HD
 p:M7 Group
 06c3:00820000:2f44:013e:25:0
 HSE24 HD
-p:Persidera,c:050001
+p:Persidera
 1100:00820000:1644:fbff:1:0
 Sky TG24 Active
 p:SkyItalia
@@ -506,9 +509,12 @@ p:SkyItalia
 3454:00820000:2710:fbff:130:0
 goal Alert HD
 p:SkyItalia
-0001:00822bfa:0001:0001:1:0
+0001:00820000:3200:013e:1:0
 Rai 4K
 p:,c:050006
+0001:00822bfa:0001:0001:1:0
+Rai 4K
+p:
 0001:00820000:2e18:00b0:1:0
 Al Maghribia HD
 p:SNRT
@@ -985,9 +991,6 @@ Rangarang TV
 p:
 0007:0082accf:0578:013e:1:0
 ES TV
-p:
-0008:0082accf:0578:013e:1:0
-Medya Haber
 p:
 0009:0082accf:0578:013e:1:0
 Somali Cable
@@ -1487,9 +1490,15 @@ p:nc+
 3318:00820000:0190:013e:1:0
 EUROSPORT HD PL
 p:nc+
+331b:00820000:0190:013e:1:0
+11278V SID 0x331b
+p:DVB-S2 8PSK 11278V 13.0Â°E
 331d:00820000:0190:013e:1:0
 ESP HD test D
 p:nc+
+332a:00820000:0190:013e:1:0
+11278V SID 0x332a
+p:DVB-S2 8PSK 11278V 13.0Â°E
 32cd:00820000:0190:013e:1:0
 CANAL+ NOW
 p:nc+
@@ -2007,7 +2016,7 @@ p:Cyfrowy Polsat S.A.
 Eurosport 1 HD
 p:Cyfrowy Polsat S.A.
 3e30:00820000:2ee0:013e:1:0
-PPV KSW 45
+Test.
 p:Cyfrowy Polsat S.A.
 3e3e:00820000:2ee0:013e:1:0
 SciFi HD
@@ -2221,7 +2230,7 @@ TEF Channel
 p:Telespazio
 4251:00820000:3db8:013e:1:0
 RDS TV
-p:Telespazio
+p:Telespazio,c:050001
 4254:00820000:3db8:013e:1:0
 RETECONOMY
 p:Telespazio
@@ -2247,7 +2256,7 @@ p:tinity tv
 Hillsong
 p:
 0325:0082b00f:0001:0001:1:0
-JCTV
+Smile of a Child
 p:
 0326:0082b00f:0001:0001:1:0
 Al Horreya
@@ -2633,6 +2642,9 @@ p:NetMed
 013d:00820000:157c:013e:1:0
 novacinema1
 p:NetMed
+013e:00820000:157c:013e:1:0
+Nova New Season 2018-19
+p:NetMed
 013f:00820000:157c:013e:1:0
 MEGA
 p:NetMed
@@ -2662,6 +2674,9 @@ Novacinema4HD
 p:NetMed
 0148:00820000:157c:013e:1:0
 Novasports5HD Cy
+p:NetMed
+0149:00820000:157c:013e:1:0
+PINKO TV
 p:NetMed
 014a:00820000:157c:013e:1:0
 MTV Hits
@@ -2698,12 +2713,6 @@ RR1
 p:NetMed
 0152:00820000:157c:013e:2:0
 Ntsra2
-p:NetMed
-013e:00820000:157c:013e:1:0
-Info Card
-p:NetMed,f:40
-0149:00820000:157c:013e:1:1
-PINKO TV
 p:NetMed
 332d:00820000:3390:0071:1:0
 Polsat
@@ -3145,7 +3154,7 @@ AdSmart
 p:SkyItalia
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
-p:Rai
+p:Rai,c:050001
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
 p:Rai
@@ -4719,7 +4728,7 @@ p:SkyItalia
 Fox Crime +1
 p:SkyItalia
 0fc2:00820000:1e14:fbff:1:0
-Fox Life Ghost
+Fox Life +1
 p:SkyItalia
 0fc5:00820000:1e14:fbff:1:0
 Loveworld
@@ -4743,7 +4752,7 @@ p:SkyItalia
 Archinews24
 p:SkyItalia
 0fd7:00820000:1e14:fbff:1:0
-FoxCrime Paradise
+Fox Crime +2
 p:SkyItalia
 0fd8:00820000:1e14:fbff:1:0
 Canale Italia 84
@@ -5391,7 +5400,7 @@ p:Rai
 Rai Radio Kids
 p:Rai
 0cfa:00820000:1518:013e:2:0
-Rai Radio2 indie
+Rai Radio2 Indie
 p:Rai
 01f8:00820000:0384:013e:1:0
 NASA TV HD
