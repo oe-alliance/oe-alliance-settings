@@ -141,9 +141,6 @@ transponders
 00c00000:0422:0001
 	s 10847000:22000000:1:4:192:2:0
 /
-00c00000:0423:0001
-	s 10862000:23500000:0:2:192:2:0:1:2:0:2
-/
 00c00000:0424:0001
 	s 10876000:22000000:1:4:192:2:0
 /
@@ -158,6 +155,9 @@ transponders
 /
 00c00000:042a:0001
 	s 11739000:27500000:1:3:192:2:0
+/
+00c00000:042c:0001
+	s 11778000:27500000:1:9:192:2:0:1:1:0:2
 /
 00c00000:042e:0001
 	s 11817000:29700000:1:2:192:2:0:1:2:0:2
@@ -362,9 +362,6 @@ transponders
 /
 00820000:06a4:013e
 	s 11526000:29700000:0:2:130:2:0:1:2:0:2
-/
-00820000:1388:013e
-	s 11727000:27500000:1:2:130:2:0:1:2:0:2
 /
 00820000:13ef:013e
 	s 11747000:27500000:0:3:130:2:0:1:2:0:2
@@ -1986,7 +1983,7 @@ p:BetaDigital
 Zee One HD
 p:BetaDigital
 2776:00c00000:0409:0001:25:0
-Sparhandy TV HD
+Handystar TV HD
 p:BetaDigital
 2777:00c00000:0409:0001:25:0
 MTV HD
@@ -2117,11 +2114,8 @@ p:TSA
 7a4d:00c00000:0410:0001:1:0
 TELEMAROC
 p:TSA
-7a4e:00c00000:0410:0001:1:0
-TEST
-p:TSA
-7a4f:00c00000:0410:0001:1:0
-TEST TSA
+7a4e:00c00000:0410:0001:25:0
+Feeds TSA
 p:TSA
 2e87:00c00000:0411:0001:25:0
 RTL HD Austria
@@ -2669,12 +2663,6 @@ p:DVB-S QPSK 10847V 19.2Â°E
 759a:00c00000:0422:0001:2:0
 10847V SID 0x759a
 p:DVB-S QPSK 10847V 19.2Â°E
-1771:00c00000:0423:0001:31:0
-.
-p:SES
-1772:00c00000:0423:0001:31:0
-.
-p:SES
 7789:00c00000:0424:0001:1:0
 M. GOLF
 p:Movistar+
@@ -2795,6 +2783,9 @@ p:MTV Networks Europe
 6ffc:00c00000:042a:0001:1:0
 Nick_Jr.
 p:MTV Networks Europe
+164f:00c00000:042c:0001:1:0
+Asteroid Day
+p:SES ASTRA
 1f41:00c00000:042e:0001:25:0
 BET
 p:CSAT
@@ -4689,7 +4680,7 @@ p:BetaDigital
 Nicer Dicer TV
 p:BetaDigital
 0293:00c00000:0005:0085:1:0
-Sparhandy TV
+Handystar TV
 p:BetaDigital
 0296:00c00000:0005:0085:1:0
 1-2-3.tv
@@ -5025,7 +5016,7 @@ p:BetaDigital
 HSE24
 p:BetaDigital
 002e:00c00000:0021:0085:1:0
-Sparhandy TV 2
+Handystar TV 2
 p:BetaDigital
 0033:00c00000:0021:0085:1:0
 TELE 5
@@ -5635,7 +5626,7 @@ ESP Serbia
 p:Eutelsat
 3615:00820000:00c8:013e:1:0
 ESP Turk
-p:Eutelsat
+p:EUROSPORT
 3616:00820000:00c8:013e:1:0
 ESP2 German
 p:Eutelsat
@@ -6380,9 +6371,6 @@ p:Schweizer Radio und Fernsehen
 36e6:00820000:06a4:013e:25:0
 Test14054
 p:SRG SSR
-07d1:00820000:1388:013e:1:0
-Rai 4K
-p:
 2520:00820000:13ef:013e:1:0
 AL SHARJAH HD
 p:
@@ -6415,9 +6403,6 @@ HRN TV HD
 p:
 2531:00820000:13ef:013e:1:0
 AL SHARJAH RADIO
-p:
-253a:00820000:13ef:013e:1:0
-DIHQA
 p:
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
@@ -6525,7 +6510,7 @@ p:NetMed
 MUX1S7
 p:NetMed
 013e:00820000:157c:013e:1:0
-NovaThronesHD
+NovaRockHD
 p:NetMed
 013f:00820000:157c:013e:1:0
 MUX1S3
@@ -6884,6 +6869,9 @@ p:M-Three satcom
 0e30:00820000:1c20:013e:2:0
 RADIO ITALIA s.m.i.
 p:M.-Three satcom
+0e31:00820000:1c20:013e:2:0
+Radio Cusano Campus
+p:M-Three satcom
 0e35:00820000:1c20:013e:2:0
 Radio Sportiva
 p:M-Three satcom
@@ -7056,8 +7044,8 @@ p:
 Hillsong
 p:overon
 0325:00820000:1f40:013e:1:0
-JCTV
-p:OVERON
+Smile of a Child
+p:overon
 0326:00820000:1f40:013e:1:0
 Al Horreya
 p:Unnamed
@@ -7430,7 +7418,7 @@ p:nc+
 11fa:00820000:2b5c:013e:1:0
 Nasa TV UHD
 p:
-11fb:00820000:2b5c:013e:1:0
+11fb:00820000:2b5c:013e:25:0
 TRAVELXP 4K
 p:
 426c:00820000:2bc0:013e:1:0
@@ -7819,7 +7807,7 @@ Pianeta TV
 p:SkyItalia
 2fbb:00820000:2db4:013e:1:0
 QUORE TV
-p:SkyItalia,c:050001
+p:SkyItalia
 2fbc:00820000:2db4:013e:1:0
 Arteinvestimenti.it
 p:SkyItalia
@@ -7834,7 +7822,7 @@ TV Art Live
 p:SkyItalia
 2fc0:00820000:2db4:013e:1:0
 ALL IN CHANNEL
-p:SkyItalia,c:050001
+p:SkyItalia
 2fc6:00820000:2db4:013e:1:0
 E' TV Emilia R.
 p:SkyItalia
@@ -8377,7 +8365,7 @@ Viva l`Italia Channel
 p:Telespazio
 1384:00820000:33f4:013e:1:0
 All In Channel
-p:Telespazio,c:050001
+p:Telespazio
 1385:00820000:33f4:013e:1:0
 Automoto Tv
 p:Harmonic
@@ -8386,6 +8374,9 @@ MediaSport Channel
 p:Telespazio
 1387:00820000:33f4:013e:1:0
 NSL
+p:Telespazio
+1360:00820000:33f4:013e:1:0
+Canale Italia 2
 p:Telespazio
 125f:00820000:3458:013e:1:0
 Mohabat
@@ -8609,6 +8600,9 @@ p:M-Three satcom
 052b:00820000:3d54:013e:25:0
 RTL 102.5 Radio Doc
 p:M-Three satcom
+421a:00820000:3db8:013e:1:0
+TRM h24
+p:Telespazio
 421d:00820000:3db8:013e:1:0
 Canale Italia
 p:Telespazio
@@ -8625,6 +8619,9 @@ p:Telespazio
 Redlight HD
 p:Telespazio
 4228:00820000:3db8:013e:1:0
+Lombardia SAT
+p:Telespazio
+4229:00820000:3db8:013e:1:0
 La8
 p:Telespazio
 422a:00820000:3db8:013e:1:0
@@ -8683,15 +8680,27 @@ Arte Atelier
 p:Telespazio
 4245:00820000:3db8:013e:1:0
 Antichita Chiossone
-p:Telespazio,c:050001
+p:Telespazio
 4246:00820000:3db8:013e:1:0
 Radio Italia Rap TV HD
 p:Telespazio
 4248:00820000:3db8:013e:1:0
 QUORE TV
-p:Telespazio,c:050001
+p:Telespazio
+4249:00820000:3db8:013e:1:0
+Venus TV
+p:Telespazio
+424a:00820000:3db8:013e:1:0
+Music Life
+p:Telespazio
+424b:00820000:3db8:013e:1:0
+Lazio Channel
+p:Telespazio
 424c:00820000:3db8:013e:1:0
 PIANETA TV
+p:Telespazio
+424d:00820000:3db8:013e:1:0
+Fuego TV
 p:Telespazio
 424f:00820000:3db8:013e:1:0
 TEF Channel
@@ -8746,6 +8755,9 @@ Radio Number One
 p:Telespazio
 4256:00820000:3db8:013e:2:0
 Radio Fra Le Note
+p:Telespazio
+4218:00820000:3db8:013e:1:0
+Emilia Romagna 24
 p:Telespazio
 019f:00820000:26ac:013f:1:0
 BFM TV
@@ -8949,8 +8961,8 @@ p:ARABSAT
 OMAN TV HD
 p:ARABSAT
 3bc4:00820000:0064:fbff:1:0
-Roland Garros 8K
-p:Eutelsat
+Rai 4K
+p:,c:050007
 2b3c:00820000:0320:fbff:1:0
 Sportitalia
 p:SkyItalia
@@ -9087,7 +9099,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Amici animali Collection HD
+Gangster Collection HD
 p:SkyItalia
 106e:00820000:14b4:fbff:25:0
 Sky Cinema Action HD
@@ -9126,7 +9138,7 @@ p:SkyItalia
 Sky Sport NBA HD
 p:SkyItalia
 1e58:00820000:15e0:fbff:25:0
-Sky Sport Golf HD
+Sky Sport US Open HD
 p:SkyItalia
 1e59:00820000:15e0:fbff:25:0
 Sky Cinema Drama HD
@@ -9576,7 +9588,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Amici animali Collection
+Gangster Collection 
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -9588,7 +9600,7 @@ p:SkyItalia
 Sky Cinema
 p:SkyItalia
 2dd2:00820000:1a2c:fbff:1:0
-Sky Sport Golf
+Sky Sport US Open
 p:SkyItalia
 2dd4:00820000:1a2c:fbff:1:0
 Sky Cinema Due +24
@@ -9741,7 +9753,7 @@ p:SkyItalia
 Sky Active 1 HD
 p:SkyItalia
 0fbd:00820000:1e14:fbff:1:0
-Fox How I Met Your Mother
+FoxBigBangTheory
 p:SkyItalia
 0fc1:00820000:1e14:fbff:1:0
 Fox Crime+1
@@ -9790,7 +9802,7 @@ ONE Tv
 p:SkyItalia
 0fe1:00820000:1e14:fbff:1:0
 Partenope Tv
-p:SkyItalia,c:050001
+p:SkyItalia
 0fe3:00820000:1e14:fbff:1:0
 Italian Fishing Tv
 p:SkyItalia
@@ -10014,7 +10026,7 @@ p:SkyItalia
 Primafila HD
 p:SkyItalia
 2c4f:00820000:251c:fbff:1:0
-Boomerang +1
+Tom&Jerry Channel
 p:SkyItalia
 2c5b:00820000:251c:fbff:1:0
 Cartoon +1
@@ -10899,7 +10911,7 @@ p:Rai
 Rai 2
 p:Rai
 0d4b:eeee0000:0001:013e:1:130
-Rai 3 TGR 
+Rai 3 TGR
 p:Rai
 0d53:eeee0000:0001:013e:1:131
 Rai News 24
@@ -11163,7 +11175,7 @@ p:Canale Italia 2
 Serenissima
 p:Canale Italia 2
 001d:eeee0000:0050:217c:1:225
-LDI TV
+Italia 148
 p:Canale Italia 2
 03e8:eeee0000:0050:217c:1:226
 LA242
