@@ -24,6 +24,9 @@ transponders
 00820000:1770:0110
 	s 11919000:29900000:1:4:130:2:0
 /
+00820000:0064:013e
+	s 11219000:29900000:0:3:130:2:0:1:2:0:2
+/
 00820000:00c8:013e
 	s 11240000:27500000:1:3:130:2:0
 /
@@ -64,7 +67,7 @@ transponders
 	s 11526000:29700000:0:2:130:2:0:1:2:0:2
 /
 00820000:1388:013e
-	s 11727000:27500000:1:2:130:2:0:1:2:0:2
+	s 11727000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:13ef:013e
 	s 11747000:27500000:0:3:130:2:0:1:2:0:2
@@ -147,9 +150,6 @@ transponders
 00820000:2d50:013e
 	s 10834000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:2db4:013e
-	s 10853000:29900000:0:2:130:2:0:1:2:0:2
-/
 00820000:2e7c:013e
 	s 10892000:27500000:0:3:130:2:0:1:2:0:2
 /
@@ -218,9 +218,6 @@ transponders
 /
 00820000:25e4:02be
 	s 12654000:27500000:0:4:130:2:0
-/
-00820000:0064:fbff
-	s 11219000:27500000:0:9:130:2:0:1:2:0:2
 /
 00820000:0320:fbff
 	s 11355000:29900000:1:4:130:2:0
@@ -758,6 +755,9 @@ eeee0000:0107:217c
 /
 eeee0000:0107:217c
 	t 778000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0202:0000
+	t 746000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0200:001d
 	t 690000000:0:5:5:3:2:4:4:2:0:0:0
@@ -1765,7 +1765,7 @@ Italia 1 HD
 p:
 007a:00820000:04b0:0110:25:0
 Canale 5 HD
-p:
+p:,c:050001
 007b:00820000:04b0:0110:25:0
 Rete 4 HD
 p:
@@ -1837,6 +1837,9 @@ Radio 105
 p:
 006a:00820000:1770:0110:2:0
 Radio Orbital
+p:
+0835:00820000:0064:013e:1:0
+Rai 4K
 p:
 3604:00820000:00c8:013e:1:0
 ESP1 Croatian
@@ -1949,9 +1952,6 @@ p:EUROSPORT
 3645:00820000:00c8:013e:1:0
 ESP2 NE Turc
 p:Eutelsat
-366a:00820000:00c8:013e:1:0
-NOVIY_MIR
-p:Harmonic
 366b:00820000:00c8:013e:1:0
 Russia Today
 p:Eutelsat
@@ -1979,6 +1979,9 @@ p:EUROSPORT
 35ff:00820000:00c8:013e:1:0
 ESP2 Biava
 p:EUROSPORT
+366a:00820000:00c8:013e:1:0
+NOVIY_MIR
+p:Harmonic,f:40
 076d:00820000:012c:013e:22:0
 MBC 1 EUROPE
 p:Eutelsat
@@ -2142,7 +2145,7 @@ p:Service Provider
 YEMEN TV
 p:iKOMG
 089d:00820000:01f4:013e:1:0
-LIVE TV
+Live TV-RU
 p:iKOMG
 089f:00820000:01f4:013e:1:0
 Kurdsat SD
@@ -2174,14 +2177,14 @@ p:iKOMG
 060e:00820000:01f4:013e:2:0
 Yemen Radio
 p:iKOMG
-08b2:00820000:01f4:013e:2:0
-Radio Eviva
-p:iKOMG
 44e0:00820000:0258:013e:1:0
 RT Arab
 p:
 44e1:00820000:0258:013e:1:0
 Kentron TV International
+p:
+44e2:00820000:0258:013e:1:0
+Kalemeh TV
 p:
 0004:00820000:02bc:013e:1:0
 ARMPUB TV
@@ -2294,21 +2297,6 @@ p:TVN
 10fc:00820000:03e8:013e:1:0
 MANGO 24_
 p:TVN
-10da:00820000:03e8:013e:22:0
-TVN 24
-p:TVN
-10db:00820000:03e8:013e:22:0
-HGTV
-p:TVN
-10de:00820000:03e8:013e:22:0
-TVN Turbo
-p:TVN
-10df:00820000:03e8:013e:22:0
-TVN Style
-p:TVN
-10e0:00820000:03e8:013e:22:0
-TVN24 BiS
-p:TVN
 10e4:00820000:03e8:013e:22:0
 NTL
 p:TVN
@@ -2317,6 +2305,15 @@ POWER TV
 p:TVN
 10e8:00820000:03e8:013e:22:0
 TO!TV
+p:TVN
+10e1:00820000:03e8:013e:25:0
+MotorTrend HD
+p:TVN
+10e2:00820000:03e8:013e:25:0
+Giallo HD
+p:TVN
+10e3:00820000:03e8:013e:25:0
+Nove HD
 p:TVN
 10e9:00820000:03e8:013e:25:0
 ADVENTURE HD
@@ -2332,9 +2329,6 @@ Food Network HD EMEA
 p:TVN
 10ed:00820000:03e8:013e:25:0
 Fine Living HD EMEA
-p:TVN
-10ee:00820000:03e8:013e:25:0
-Travel Channel HD EMEA
 p:TVN
 3779:00820000:044c:013e:1:0
 CANAL+ FILM HD
@@ -2630,9 +2624,18 @@ p:Schweizer Radio und Fernsehen
 36e6:00820000:06a4:013e:25:0
 Test14054
 p:SRG SSR
-07d1:00820000:1388:013e:1:0
-Rai 4K
-p:
+338c:00820000:1388:013e:1:0
+Test GC 1
+p:GLOBECAST
+338d:00820000:1388:013e:1:0
+Test GC 2
+p:GLOBECAST
+338e:00820000:1388:013e:1:0
+Test GC 3
+p:GLOBECAST
+338f:00820000:1388:013e:1:0
+Test GC 4
+p:GLOBECAST
 2520:00820000:13ef:013e:1:0
 AL SHARJAH HD
 p:
@@ -2665,9 +2668,6 @@ HRN TV HD
 p:
 2531:00820000:13ef:013e:1:0
 AL SHARJAH RADIO
-p:
-253a:00820000:13ef:013e:1:0
-DIHQA
 p:
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
@@ -2775,10 +2775,10 @@ p:NetMed
 MUX1S7
 p:NetMed
 013e:00820000:157c:013e:1:0
-NovaThronesHD
+NovaRockHD
 p:NetMed
 013f:00820000:157c:013e:1:0
-MUX1S3
+Insight TV HD
 p:NetMed
 0140:00820000:157c:013e:1:0
 ANT-1
@@ -3029,6 +3029,9 @@ p:Telespazio
 02f5:00820000:1b58:013e:1:0
 Canale Italia 84
 p:Telespazio
+0301:00820000:1b58:013e:2:0
+Radio Radio
+p:Telespazio
 02dc:00820000:1b58:013e:2:0
 Radio Maria
 p:Telespazio
@@ -3049,9 +3052,6 @@ R. Italia S.m.i.
 p:Telespazio
 02e8:00820000:1b58:013e:2:0
 Radio PadrePio
-p:Telespazio
-02e9:00820000:1b58:013e:2:0
-Radio Fra Le Note
 p:Telespazio
 02ed:00820000:1b58:013e:2:0
 R. Eurospin
@@ -3116,9 +3116,6 @@ p:Harmonic
 1c57:00820000:1c20:013e:1:0
 SMTv San Marino Radio
 p:Harmonic
-1c58:00820000:1c20:013e:1:0
-People TV-Rete 7
-p:EricssonTV
 1c59:00820000:1c20:013e:1:0
 CNC-001
 p:Service Provide
@@ -3134,6 +3131,9 @@ p:M-Three satcom
 0e30:00820000:1c20:013e:2:0
 RADIO ITALIA s.m.i.
 p:M.-Three satcom
+0e31:00820000:1c20:013e:2:0
+Radio Cusano Campus
+p:M-Three satcom
 0e35:00820000:1c20:013e:2:0
 Radio Sportiva
 p:M-Three satcom
@@ -3201,7 +3201,7 @@ p:NetMed
 Motorsport TV HD
 p:NetMed
 0169:00820000:1c84:013e:1:0
-Travel Channel
+Travel Channel HD
 p:NetMed
 016a:00820000:1c84:013e:1:0
 Novasummer
@@ -3362,15 +3362,6 @@ p:
 39da:00820000:1fa4:013e:1:0
 IRAN INTERNATIONAL
 p:ABS
-0bbc:00820000:20d0:013e:1:0
-Hidayah-English
-p:GLOBECAST
-0bbf:00820000:20d0:013e:1:0
-Hidayah-French
-p:GLOBECAST
-0bc0:00820000:20d0:013e:1:0
-Hidayah-Spanish
-p:GLOBECAST
 0bc4:00820000:20d0:013e:1:0
 Karbala TV
 p:GLOBECAST
@@ -3385,21 +3376,6 @@ Euronews Hungarian
 p:GLOBECAST
 0bc9:00820000:20d0:013e:1:0
 Saudi-Sunnah
-p:GLOBECAST
-0bca:00820000:20d0:013e:1:0
-Hidayah-German
-p:GLOBECAST
-0bcb:00820000:20d0:013e:1:0
-Hidayah-Russian
-p:GLOBECAST
-0bd1:00820000:20d0:013e:1:0
-Hidayah-Bosnian
-p:GLOBECAST
-0bd2:00820000:20d0:013e:1:0
-Hidayah-Albanian
-p:GLOBECAST
-0bd4:00820000:20d0:013e:1:0
-Hidayah-Persian
 p:GLOBECAST
 060d:00820000:20d0:013e:2:0
 RFI Test
@@ -3518,9 +3494,6 @@ p:STN Ltd
 232e:00820000:2328:013e:1:0
 Alaraby 2 HD
 p:STN plc
-232f:00820000:2328:013e:1:0
-Kentron
-p:STN Ltd
 2330:00820000:2328:013e:1:0
 STERK TV
 p:STN ltd
@@ -3551,15 +3524,15 @@ p:STN PLC
 0c8f:00820000:2328:013e:2:0
 CAPODISTRIA
 p:STN Ltd
-044d:00820000:238c:013e:1:0
-Hot Bird 4K1
-p:
 044e:00820000:238c:013e:1:0
 FTV UHD
 p:
 044f:00820000:238c:013e:1:0
 Love Nature 4K
 p:BCE
+0450:00820000:238c:013e:1:0
+MyZen 4K
+p:
 2482:00820000:23f0:013e:1:0
 HADI TV3
 p:Telespazio
@@ -3569,6 +3542,12 @@ p:Telespazio
 2496:00820000:23f0:013e:1:0
 HODHOD arabic
 p:Telespazio
+0642:00820000:2454:013e:1:0
+Italian Fishing TV
+p:
+0643:00820000:2454:013e:1:0
+Wine TV
+p:
 00b7:00820000:2454:013e:1:0
 Int Table
 p:EUTELSAT
@@ -3680,7 +3659,7 @@ p:nc+
 11fa:00820000:2b5c:013e:1:0
 Nasa TV UHD
 p:
-11fb:00820000:2b5c:013e:1:0
+11fb:00820000:2b5c:013e:25:0
 TRAVELXP 4K
 p:
 426c:00820000:2bc0:013e:1:0
@@ -3953,9 +3932,6 @@ p:MX1
 439c:00820000:2cec:013e:1:0
 Vozrojdenie.tv
 p:RRsat
-439d:00820000:2cec:013e:1:0
-Suryoyo Sat
-p:MX1
 439f:00820000:2cec:013e:1:0
 BVN
 p:RRsat
@@ -4034,75 +4010,6 @@ p:nc+
 0de3:00820000:2d50:013e:1:0
 TVP Sport HD
 p:nc+
-1389:00820000:2db4:013e:1:0
-Canale Italia
-p:SkyItalia
-2fab:00820000:2db4:013e:1:0
-Automoto Tv
-p:SkyItalia
-2fae:00820000:2db4:013e:1:0
-LazioTV
-p:SkyItalia
-2fb0:00820000:2db4:013e:1:0
-Lombardia SAT
-p:SkyItalia
-2fb1:00820000:2db4:013e:1:0
-TRM h24
-p:SkyItalia
-2fb5:00820000:2db4:013e:1:0
-TLC Telecampione
-p:SkyItalia
-2fb6:00820000:2db4:013e:1:0
-Emilia Romagna 24
-p:SkyItalia
-2fb7:00820000:2db4:013e:1:0
-Marcopolo
-p:SkyItalia
-2fb8:00820000:2db4:013e:1:0
-Italia Channel
-p:SkyItalia
-2fb9:00820000:2db4:013e:1:0
-Mediatext.it
-p:SkyItalia
-2fba:00820000:2db4:013e:1:0
-Pianeta TV
-p:SkyItalia
-2fbb:00820000:2db4:013e:1:0
-QUORE TV
-p:SkyItalia,c:050001
-2fbc:00820000:2db4:013e:1:0
-Arteinvestimenti.it
-p:SkyItalia
-2fbd:00820000:2db4:013e:1:0
-Viva l'Italia Channel
-p:SkyItalia
-2fbe:00820000:2db4:013e:1:0
-Made in Italy
-p:SkyItalia
-2fbf:00820000:2db4:013e:1:0
-TV Art Live
-p:SkyItalia
-2fc0:00820000:2db4:013e:1:0
-ALL IN CHANNEL
-p:SkyItalia,c:050001
-2fc6:00820000:2db4:013e:1:0
-E' TV Emilia R.
-p:SkyItalia
-2fc7:00820000:2db4:013e:1:0
-Reality TV
-p:SkyItalia
-2fc8:00820000:2db4:013e:1:0
-Telepiu' Channel
-p:SkyItalia
-2fe6:00820000:2db4:013e:25:0
-Test 10
-p:SkyItalia
-2fee:00820000:2db4:013e:25:0
-Sky Sport Uno HD
-p:SkyItalia
-2fef:00820000:2db4:013e:25:0
-Sky Atlantic HD
-p:SkyItalia
 1315:00820000:2e7c:013e:1:0
 Eurosport 2 HD
 p:nc+
@@ -4253,6 +4160,9 @@ p:M-Three satcom
 4221:00820000:2f44:013e:22:0
 Blue Hustler
 p:M7 Group
+4224:00820000:2f44:013e:22:0
+Penthouse HD
+p:M-Three satcom
 420e:00820000:2f44:013e:25:0
 La Une HD
 p:M7 Group
@@ -4595,9 +4505,9 @@ p:Telespazio
 135e:00820000:33f4:013e:1:0
 ArchiNews24
 p:Telespazio
-1361:00820000:33f4:013e:1:0
-Daring tv! 133
-p:Telespazio
+1360:00820000:33f4:013e:1:0
+Canale Italia 2
+p:Harmonic
 136a:00820000:33f4:013e:1:0
 TLC Telecampione
 p:Telespazio
@@ -4627,7 +4537,7 @@ Viva l`Italia Channel
 p:Telespazio
 1384:00820000:33f4:013e:1:0
 All In Channel
-p:Telespazio,c:050001
+p:Telespazio
 1385:00820000:33f4:013e:1:0
 Automoto Tv
 p:Harmonic
@@ -4859,6 +4769,12 @@ p:M-Three satcom
 052b:00820000:3d54:013e:25:0
 RTL 102.5 Radio Doc
 p:M-Three satcom
+4218:00820000:3db8:013e:1:0
+Emilia Romagna 24
+p:Telespazio
+421a:00820000:3db8:013e:1:0
+TRM h24
+p:Telespazio
 421d:00820000:3db8:013e:1:0
 Canale Italia
 p:Telespazio
@@ -4874,7 +4790,7 @@ p:Telespazio
 4224:00820000:3db8:013e:1:0
 Redlight HD
 p:Telespazio
-4228:00820000:3db8:013e:1:0
+4229:00820000:3db8:013e:1:0
 La8
 p:Telespazio
 422a:00820000:3db8:013e:1:0
@@ -4933,15 +4849,30 @@ Arte Atelier
 p:Telespazio
 4245:00820000:3db8:013e:1:0
 Antichita Chiossone
-p:Telespazio,c:050001
+p:Telespazio
 4246:00820000:3db8:013e:1:0
 Radio Italia Rap TV HD
 p:Telespazio
+4247:00820000:3db8:013e:1:0
+SURYOYO SAT
+p:Telespazio
 4248:00820000:3db8:013e:1:0
 QUORE TV
-p:Telespazio,c:050001
+p:Telespazio
+4249:00820000:3db8:013e:1:0
+Venus TV
+p:Telespazio
+424a:00820000:3db8:013e:1:0
+Music Life
+p:Telespazio
+424b:00820000:3db8:013e:1:0
+Lazio Channel
+p:Telespazio
 424c:00820000:3db8:013e:1:0
 PIANETA TV
+p:Telespazio
+424d:00820000:3db8:013e:1:0
+Fuego TV
 p:Telespazio
 424f:00820000:3db8:013e:1:0
 TEF Channel
@@ -4976,9 +4907,6 @@ p:Telespazio
 4262:00820000:3db8:013e:1:0
 Mediatext it
 p:Telespazio
-4263:00820000:3db8:013e:1:0
-Test TSPZ
-p:Telespazio
 4264:00820000:3db8:013e:1:0
 EURSAT
 p:Telespazio
@@ -4993,9 +4921,6 @@ Vivid Red HD
 p:Telespazio
 4255:00820000:3db8:013e:2:0
 Radio Number One
-p:Telespazio
-4256:00820000:3db8:013e:2:0
-Radio Fra Le Note
 p:Telespazio
 019f:00820000:26ac:013f:1:0
 BFM TV
@@ -5198,9 +5123,6 @@ p:ARABSAT
 0007:00820000:25e4:02be:25:0
 OMAN TV HD
 p:ARABSAT
-3bc4:00820000:0064:fbff:1:0
-Roland Garros 8K
-p:Eutelsat
 2b3c:00820000:0320:fbff:1:0
 Sportitalia
 p:SkyItalia
@@ -5295,7 +5217,7 @@ p:SkyItalia
 Country
 p:SkyItalia
 3c1a:00820000:0320:fbff:2:0
-MICHAEL JACKSON
+BAILA!
 p:SkyItalia
 3be8:00820000:0320:fbff:2:0
 DeeJay 30 song
@@ -5327,9 +5249,6 @@ p:SkyItalia
 3be7:00820000:0320:fbff:130:0
 Sky Music
 p:SkyItalia
-37a2:00820000:14b4:fbff:1:0
-Arte Atelier
-p:SkyItalia
 1018:00820000:14b4:fbff:25:0
 cielo HD
 p:SkyItalia
@@ -5337,7 +5256,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Amici animali Collection HD
+Revenge Collection HD
 p:SkyItalia
 106e:00820000:14b4:fbff:25:0
 Sky Cinema Action HD
@@ -5376,7 +5295,7 @@ p:SkyItalia
 Sky Sport NBA HD
 p:SkyItalia
 1e58:00820000:15e0:fbff:25:0
-Sky Sport Golf HD
+Sky Sport Wimbledon HD
 p:SkyItalia
 1e59:00820000:15e0:fbff:25:0
 Sky Cinema Drama HD
@@ -5573,6 +5492,9 @@ p:SkyItalia
 2ab1:00820000:1838:fbff:1:0
 Sky Sport24
 p:SkyItalia
+2ab4:00820000:1838:fbff:1:0
+11958V SID 0x2ab4
+p:DVB-S QPSK 11958V 13.0Â°E
 2ab8:00820000:1838:fbff:1:0
 Sky Sport24
 p:SkyItalia
@@ -5595,8 +5517,8 @@ p:SkyItalia
 Radio KissKiss
 p:SkyItalia
 2aa7:00820000:1838:fbff:2:0
-Radio Number One
-p:SkyItalia
+11958V SID 0x2aa7
+p:DVB-S QPSK 11958V 13.0Â°E
 2aad:00820000:1838:fbff:2:0
 Radio Ibiza
 p:SkyItalia
@@ -5611,9 +5533,6 @@ Sport Active 1
 p:SkyItalia
 2aac:00820000:1838:fbff:130:0
 Sports Active 2
-p:SkyItalia
-2ab4:00820000:1838:fbff:130:0
-Sky Sport 24
 p:SkyItalia
 2ab6:00820000:1838:fbff:130:0
 Sky Supercalcio
@@ -5729,9 +5648,6 @@ p:SkyItalia
 2fc4:00820000:1900:fbff:25:0
 Gambero Rosso HD
 p:SkyItalia
-2b1c:00820000:1900:fbff:130:0
-Sky Sport 24 HD
-p:SkyItalia
 2b5d:00820000:19c8:fbff:1:0
 Sky Cinema Uno
 p:SkyItalia
@@ -5789,6 +5705,9 @@ p:SkyItalia
 2b74:00820000:19c8:fbff:130:0
 ITV_TRIAL_66
 p:SkyItalia
+2e05:00820000:1a2c:fbff:1:0
+Wimbledon 1
+p:SkyItalia
 2db9:00820000:1a2c:fbff:1:0
 Eurosport
 p:SkyItalia
@@ -5826,7 +5745,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Amici animali Collection
+Revenge Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -5838,7 +5757,7 @@ p:SkyItalia
 Sky Cinema
 p:SkyItalia
 2dd2:00820000:1a2c:fbff:1:0
-Sky Sport Golf
+Sky Sport Wimbledon
 p:SkyItalia
 2dd4:00820000:1a2c:fbff:1:0
 Sky Cinema Due +24
@@ -5866,6 +5785,21 @@ DoveTv
 p:SkyItalia
 3c03:00820000:1a90:fbff:1:0
 LEI
+p:SkyItalia
+2c08:00820000:1a90:fbff:1:0
+Wimbledon 2
+p:SkyItalia
+2c09:00820000:1a90:fbff:1:0
+Wimbledon 3
+p:SkyItalia
+2c0b:00820000:1a90:fbff:1:0
+Wimbledon 5
+p:SkyItalia
+2c0c:00820000:1a90:fbff:1:0
+Wimbledon 6
+p:SkyItalia
+2c0d:00820000:1a90:fbff:1:0
+Wimbledon 4
 p:SkyItalia
 0e2a:00820000:1a90:fbff:1:0
 NOVE
@@ -5912,35 +5846,20 @@ p:SkyItalia
 2bd9:00820000:1a90:fbff:1:0
 Sky Sport
 p:SkyItalia
-2bf2:00820000:1a90:fbff:1:0
-Sky Arte
-p:SkyItalia
 2bc8:00820000:1a90:fbff:130:0
 ITV_TRIAL_68
 p:SkyItalia
 0dc5:00820000:1af4:fbff:1:0
 Arte Channel
 p:SkyItalia
-0dc8:00820000:1af4:fbff:1:0
-CIAO
-p:SkyItalia
 0dcb:00820000:1af4:fbff:1:0
 Sky AdSmart
-p:SkyItalia
-0dd2:00820000:1af4:fbff:1:0
-Napoli Mia
-p:SkyItalia
-0dd3:00820000:1af4:fbff:1:0
-TeleItalia
 p:SkyItalia
 0de6:00820000:1af4:fbff:1:0
 Attiva Sky On Demand e Restart
 p:SkyItalia
 0deb:00820000:1af4:fbff:1:0
 Match Music
-p:SkyItalia
-0dfa:00820000:1af4:fbff:1:0
-Fashion TV
 p:SkyItalia
 37a9:00820000:1af4:fbff:25:0
 Crime + Inv. HD
@@ -5991,13 +5910,13 @@ p:SkyItalia
 Sky Active 1 HD
 p:SkyItalia
 0fbd:00820000:1e14:fbff:1:0
-Fox How I Met Your Mother
+Fox +1
 p:SkyItalia
 0fc1:00820000:1e14:fbff:1:0
 Fox Crime+1
 p:SkyItalia
 0fc2:00820000:1e14:fbff:1:0
-Fox Life +1
+Fox Life+1
 p:SkyItalia
 0fc5:00820000:1e14:fbff:1:0
 Loveworld
@@ -6006,25 +5925,16 @@ p:SkyItalia
 Nick Jr +1
 p:SkyItalia
 0fc9:00820000:1e14:fbff:1:0
-Wine TV
-p:SkyItalia
+12245H SID 0xfc9
+p:DVB-S QPSK 12245H 13.0Â°E
 0fcc:00820000:1e14:fbff:1:0
 Tele Radio Padre Pio
 p:SkyItalia
 0fd0:00820000:1e14:fbff:1:0
 Muzic TV
 p:SkyItalia
-0fd5:00820000:1e14:fbff:1:0
-Canale Italia 83
-p:SkyItalia
-0fd6:00820000:1e14:fbff:1:0
-Archinews24
-p:SkyItalia
 0fd7:00820000:1e14:fbff:1:0
 Fox Crime +2
-p:SkyItalia
-0fd8:00820000:1e14:fbff:1:0
-Canale Italia 84
 p:SkyItalia
 0fd9:00820000:1e14:fbff:1:0
 History +1
@@ -6032,44 +5942,14 @@ p:SkyItalia
 0fda:00820000:1e14:fbff:1:0
 NationalGeo +1
 p:SkyItalia
-0fdc:00820000:1e14:fbff:1:0
-NSL
-p:SkyItalia
-0fdf:00820000:1e14:fbff:1:0
-ONE Tv
-p:SkyItalia
-0fe1:00820000:1e14:fbff:1:0
-Partenope Tv
-p:SkyItalia,c:050001
 0fe3:00820000:1e14:fbff:1:0
-Italian Fishing Tv
-p:SkyItalia
-0fe9:00820000:1e14:fbff:1:0
-EURSAT
-p:SkyItalia
-0fec:00820000:1e14:fbff:1:0
-Fuego TV
-p:SkyItalia
-0fed:00820000:1e14:fbff:1:0
-Lazio Channel
-p:SkyItalia
-0fee:00820000:1e14:fbff:1:0
-Music Life
-p:SkyItalia
-0fef:00820000:1e14:fbff:1:0
-Venus Tv
-p:SkyItalia
+12245H SID 0xfe3
+p:DVB-S QPSK 12245H 13.0Â°E
 0ff0:00820000:1e14:fbff:1:0
 Alpha
 p:SkyItalia
-0ff1:00820000:1e14:fbff:1:0
-Radio Radio TV
-p:SkyItalia
 0ff6:00820000:1e14:fbff:1:0
 Starsat
-p:SkyItalia
-0fe4:00820000:1e14:fbff:2:0
-Radio Radio
 p:SkyItalia
 0fd2:00820000:1e14:fbff:130:0
 Intercat
@@ -6109,6 +5989,12 @@ Sky Atlantic HD
 p:SkyItalia
 379c:00820000:2008:fbff:25:0
 NationalGeo HD
+p:SkyItalia
+10b6:00820000:2008:fbff:25:0
+Wimbledon 4 HD
+p:SkyItalia
+10bc:00820000:2008:fbff:25:0
+Wimbledon 3 HD
 p:SkyItalia
 2d00:00820000:206c:fbff:25:0
 Sky Atlantic +1 HD
@@ -6170,6 +6056,9 @@ p:SkyItalia
 0f54:00820000:2198:fbff:25:0
 Onboard Mix HD
 p:SkyItalia
+0f5b:00820000:2198:fbff:25:0
+Wimbledon 1 HD
+p:SkyItalia
 0f6f:00820000:2198:fbff:25:0
 Sky Sport HD
 p:SkyItalia
@@ -6178,6 +6067,15 @@ Primafila 4 HD
 p:SkyItalia
 0f72:00820000:2198:fbff:25:0
 Primafila 12 HD
+p:SkyItalia
+0f73:00820000:2198:fbff:25:0
+Wimbledon 5 HD
+p:SkyItalia
+0f74:00820000:2198:fbff:25:0
+Wimbledon 6 HD
+p:SkyItalia
+0f7a:00820000:2198:fbff:25:0
+Wimbledon 2 HD
 p:SkyItalia
 1091:00820000:2198:fbff:25:0
 Bike Channel HD
@@ -6252,7 +6150,7 @@ p:SkyItalia
 Discovery +1
 p:SkyItalia
 2c3e:00820000:251c:fbff:1:0
-TEST Sky
+Deejay TV
 p:SkyItalia
 2c43:00820000:251c:fbff:1:0
 News HD
@@ -6333,8 +6231,8 @@ p:SkyItalia
 DMAX+1
 p:SkyItalia
 387b:00820000:2580:fbff:1:0
-Winga TV
-p:SkyItalia
+12635V SID 0x387b
+p:DVB-S QPSK 12635V 13.0Â°E
 2c9a:00820000:2580:fbff:1:0
 -frisbee-
 p:SkyItalia
@@ -6392,27 +6290,15 @@ p:SkyItalia
 38c9:00820000:2648:fbff:1:0
 Primafila 20
 p:SkyItalia
-38ca:00820000:2648:fbff:1:0
-LA 8
-p:SkyItalia
-38cb:00820000:2648:fbff:1:0
-LA 9
-p:SkyItalia
 38cc:00820000:2648:fbff:1:0
 Sky Radio
 p:SkyItalia
 38ce:00820000:2648:fbff:1:0
 Sky Radio
 p:SkyItalia
-38cf:00820000:2648:fbff:1:0
-Parole di Vita
-p:SkyItalia
 38d0:00820000:2648:fbff:1:0
 Fox Business
 p:SkyItalia
-38d6:00820000:2648:fbff:1:0
-12673V SID 0x38d6
-p:DVB-S QPSK 12673V 13.0Â°E
 38de:00820000:2648:fbff:1:0
 Shopping Tv
 p:SkyItalia
@@ -6428,50 +6314,14 @@ p:SkyItalia
 38e7:00820000:2648:fbff:1:0
 Offerte e promozioni
 p:SkyItalia
-38e8:00820000:2648:fbff:1:0
-Mediasport Channel
-p:SkyItalia
-38f1:00820000:2648:fbff:1:0
-Canale Italia 2
-p:SkyItalia
 38fa:00820000:2648:fbff:1:0
 Primafila 21
 p:SkyItalia
 38c7:00820000:2648:fbff:2:0
 Radio Web Italia
 p:SkyItalia
-38d1:00820000:2648:fbff:2:0
-Radio DeeJay
-p:SkyItalia
-38d2:00820000:2648:fbff:2:0
-M2O
-p:SkyItalia
-38d3:00820000:2648:fbff:2:0
-Radio 105
-p:SkyItalia
-38d4:00820000:2648:fbff:2:0
-Virgin Radio
-p:SkyItalia
-38d5:00820000:2648:fbff:2:0
-Radio Capital
-p:SkyItalia
-38d7:00820000:2648:fbff:2:0
-RTL 102.5
-p:SkyItalia
-38d8:00820000:2648:fbff:2:0
-R 101
-p:SkyItalia
 38d9:00820000:2648:fbff:2:0
 Radio Italia
-p:SkyItalia
-38da:00820000:2648:fbff:2:0
-Radio 24
-p:SkyItalia
-38db:00820000:2648:fbff:2:0
-RDS
-p:SkyItalia
-38dc:00820000:2648:fbff:2:0
-Radio Montecarlo
 p:SkyItalia
 38cd:00820000:2648:fbff:130:0
 Sky Radio
@@ -6586,9 +6436,6 @@ AdSmart
 p:SkyItalia
 0003:0082accf:0578:013e:1:0
 WESAL HAQ
-p:
-0005:0082accf:0578:013e:1:0
-Kalemeh TV
 p:
 0007:0082accf:0578:013e:1:0
 ES TV
@@ -6791,10 +6638,10 @@ p:
 218c:eeee0000:0004:013e:1:0
 Rai 1 HD
 p:Rai
-2190:eeee0000:0005:013e:1:1
+2190:eeee0000:0005:013e:25:1
 Rai 2 HD
 p:Rai
-2191:eeee0000:0005:013e:1:2
+2191:eeee0000:0005:013e:25:2
 Rai 3 HD
 p:Rai
 0c20:eeee0000:03a2:0110:25:3
@@ -6944,7 +6791,7 @@ p:
 0061:eeee0000:791a:217c:1:54
 MONDO CALCIO
 p:Persidera
-2197:eeee0000:0005:013e:1:55
+2197:eeee0000:0005:013e:25:55
 Rai Sport + HD
 p:Rai
 0028:eeee0000:0200:001d:1:56
@@ -7247,550 +7094,553 @@ p:
 0317:eeee0000:0107:217c:1:165
 LA7d on demand
 p:
-0096:eeee0000:0200:001d:1:167
+0073:eeee0000:0202:0000:1:167
+Radio Cusano Campus
+p:Persidera
+0096:eeee0000:0200:001d:1:168
 TV8
 p:Persidera
-0267:eeee0000:0200:001d:1:168
+0267:eeee0000:0200:001d:1:169
 TV8
 p:Persidera
-0014:eeee0000:7918:217c:1:169
+0014:eeee0000:7918:217c:1:170
 NOVE
 p:Persidera
-001d:eeee0000:7918:217c:1:170
+001d:eeee0000:7918:217c:1:171
 NOVE
 p:Persidera
-0015:eeee0000:0204:001d:1:171
+0015:eeee0000:0204:001d:1:172
 RTL 102.5
 p:Persidera
-0028:eeee0000:7918:217c:1:172
+0028:eeee0000:7918:217c:1:173
 Deejay TV
 p:Persidera
-0079:eeee0000:0200:001d:1:173
+0079:eeee0000:0200:001d:1:174
 VH1
 p:Persidera
-00da:eeee0000:0204:001d:1:174
+00da:eeee0000:0204:001d:1:175
 RADIOFRECCIA
 p:Persidera
-0271:eeee0000:0200:001d:1:175
+0271:eeee0000:0200:001d:1:176
 TV8 News On Demand
 p:Persidera
-0272:eeee0000:0200:001d:1:176
+0272:eeee0000:0200:001d:1:177
 TV8 On Demand
 p:Persidera
-0276:eeee0000:0200:001d:1:177
+0276:eeee0000:0200:001d:1:178
 VH1 On Demand
 p:Persidera
-0275:eeee0000:0200:001d:1:178
+0275:eeee0000:0200:001d:1:179
 VH1 On Demand
 p:Persidera
-005a:eeee0000:0204:001d:1:179
+005a:eeee0000:0204:001d:1:180
 Entertainment Fact
 p:Persidera
-00a4:eeee0000:0039:217c:1:181
+00a4:eeee0000:0039:217c:1:182
 RETECAPRI HD
 p:BES
-00a3:eeee0000:0039:217c:1:182
+00a3:eeee0000:0039:217c:1:183
 RETECAPRI
 p:
-00f7:eeee0000:0039:217c:1:183
+00f7:eeee0000:0039:217c:1:184
 Capri Fashion
 p:
-0005:eeee0000:0039:217c:1:184
+0005:eeee0000:0039:217c:1:185
 Capri Casino'
 p:
-0001:eeee0000:0039:217c:1:185
+0001:eeee0000:0039:217c:1:186
 Capri Store
 p:BS
-0052:eeee0000:0039:217c:1:186
+0052:eeee0000:0039:217c:1:187
 Svizzera Italiana 82+
 p:ptp
-0801:eeee0000:0039:217c:1:187
+0801:eeee0000:0039:217c:1:188
 ODEON 24
 p:
-0002:eeee0000:0039:217c:1:188
+0002:eeee0000:0039:217c:1:189
 249TV
 p:249
-00e1:eeee0000:0039:217c:1:189
+00e1:eeee0000:0039:217c:1:190
 249TV
 p:249
-0001:eeee0000:0050:217c:1:191
+0001:eeee0000:0050:217c:1:192
 Canale Italia
 p:Canale Italia 2
-0009:eeee0000:0050:217c:1:192
+0009:eeee0000:0050:217c:1:193
 Canale Italia
 p:Canale Italia 2
-0010:eeee0000:0050:217c:1:193
+0010:eeee0000:0050:217c:1:194
 Canale Italia 2
 p:Canale Italia 2
-000d:eeee0000:0050:217c:1:194
+000d:eeee0000:0050:217c:1:195
 Canale Italia 2
 p:Canale Italia 2
-0004:eeee0000:0050:217c:1:195
+0004:eeee0000:0050:217c:1:196
 Canale Italia 4
 p:Canale Italia 2
-0002:eeee0000:0050:217c:1:196
+0002:eeee0000:0050:217c:1:197
 Canale Italia 6
 p:Canale Italia 2
-0008:eeee0000:0050:217c:1:197
+0008:eeee0000:0050:217c:1:198
 Canale Italia 11
 p:Canale Italia 2
-0005:eeee0000:0050:217c:1:198
+0005:eeee0000:0050:217c:1:199
 Canale Italia 11
 p:Canale Italia 2
-0016:eeee0000:47d0:217c:1:199
+0016:eeee0000:47d0:217c:1:200
 CANALE ITALIA 83
 p:Canale Italia
-000e:eeee0000:0050:217c:1:200
+000e:eeee0000:0050:217c:1:201
 Canale Italia 83
 p:Canale Italia 2
-0017:eeee0000:47d0:217c:1:201
+0017:eeee0000:47d0:217c:1:202
 CANALE ITALIA 84
 p:Canale Italia
-0003:eeee0000:0050:217c:1:202
+0003:eeee0000:0050:217c:1:203
 Canale Italia 84
 p:Canale Italia 2
-0020:eeee0000:0050:217c:1:203
+0020:eeee0000:0050:217c:1:204
 Shopping Italia
 p:Canale Italia 2
-0018:eeee0000:47d0:217c:1:204
+0018:eeee0000:47d0:217c:1:205
 ITALIA 53
 p:Canale Italia
-0006:eeee0000:0050:217c:1:205
+0006:eeee0000:0050:217c:1:206
 Italia 53
 p:Canale Italia 2
-000a:eeee0000:0050:217c:1:206
+000a:eeee0000:0050:217c:1:207
 Italia 154
 p:Canale Italia 2
-0007:eeee0000:0050:217c:1:207
+0007:eeee0000:0050:217c:1:208
 Serenissima
 p:Canale Italia 2
-0012:eeee0000:0050:217c:1:208
+0012:eeee0000:0050:217c:1:209
 Italia 155
 p:Canale Italia 2
-0013:eeee0000:0050:217c:1:209
+0013:eeee0000:0050:217c:1:210
 Italia 143
 p:Canale Italia 2
-0010:eeee0000:47d0:217c:1:210
+0010:eeee0000:47d0:217c:1:211
 ITALIA TV 1
 p:Canale Italia
-0005:eeee0000:47d0:217c:1:211
+0005:eeee0000:47d0:217c:1:212
 ITALIA 150
 p:Canale Italia
-0001:eeee0000:47d0:217c:1:212
+0001:eeee0000:47d0:217c:1:213
 CANALE ITALIA 83
 p:Canale Italia
-0002:eeee0000:47d0:217c:1:213
+0002:eeee0000:47d0:217c:1:214
 CANALE ITALIA 84
 p:Canale Italia
-0004:eeee0000:47d0:217c:1:214
+0004:eeee0000:47d0:217c:1:215
 CANTANDO BALLANDO
 p:Canale Italia
-0009:eeee0000:47d0:217c:1:215
+0009:eeee0000:47d0:217c:1:216
 ITALIA TV 2
 p:Canale Italia
-000a:eeee0000:47d0:217c:1:216
+000a:eeee0000:47d0:217c:1:217
 ITALIA TV 3
 p:Canale Italia
-0014:eeee0000:47d0:217c:1:217
+0014:eeee0000:47d0:217c:1:218
 ITALIA 53
 p:Canale Italia
-0006:eeee0000:47d0:217c:1:218
+0006:eeee0000:47d0:217c:1:219
 ITALIA 121
 p:Canale Italia
-000b:eeee0000:47d0:217c:1:219
+000b:eeee0000:47d0:217c:1:220
 ITALIA 126
 p:Canale Italia
-0015:eeee0000:47d0:217c:1:220
+0015:eeee0000:47d0:217c:1:221
 ITALIA 127
 p:Canale Italia
-001f:eeee0000:47d0:217c:1:221
+001f:eeee0000:47d0:217c:1:222
 ITALIA 134
 p:Canale Italia
-000c:eeee0000:47d0:217c:1:222
+000c:eeee0000:47d0:217c:1:223
 ITALIA 135
 p:Canale Italia
-0011:eeee0000:47d0:217c:1:223
+0011:eeee0000:47d0:217c:1:224
 ITALIA 136
 p:Canale Italia
-0003:eeee0000:47d0:217c:1:224
+0003:eeee0000:47d0:217c:1:225
 ITALIA 156
 p:Canale Italia
-000d:eeee0000:47d0:217c:1:225
+000d:eeee0000:47d0:217c:1:226
 ITALIA 159
 p:Canale Italia
-0008:eeee0000:47d0:217c:1:226
+0008:eeee0000:47d0:217c:1:227
 ITALIA 160
 p:Canale Italia
-000e:eeee0000:47d0:217c:1:227
+000e:eeee0000:47d0:217c:1:228
 ITALIA 142
 p:Canale Italia
-0012:eeee0000:47d0:217c:1:228
+0012:eeee0000:47d0:217c:1:229
 ARTE ITALIA 124
 p:Canale Italia
-0013:eeee0000:47d0:217c:1:229
+0013:eeee0000:47d0:217c:1:230
 ARTE ITALIA 125
 p:Canale Italia
-03e9:eeee0000:0050:217c:1:230
+03e9:eeee0000:0050:217c:1:231
 Galaxy Tv 2
 p:Canale Italia 2
-001b:eeee0000:0050:217c:1:231
+001b:eeee0000:0050:217c:1:232
 Show TV
 p:Canale Italia 2
-0011:eeee0000:0050:217c:1:232
+0011:eeee0000:0050:217c:1:233
 Radio Fontel
 p:Canale Italia 2
-0001:eeee0000:6806:217c:1:234
+0001:eeee0000:6806:217c:1:235
 Teleuniverso
 p:Teleuniverso
-0002:eeee0000:6806:217c:1:235
+0002:eeee0000:6806:217c:1:236
 Teleuniverso +1
 p:Teleuniverso
-0003:eeee0000:6806:217c:1:236
+0003:eeee0000:6806:217c:1:237
 TU DAY
 p:Teleuniverso
-0004:eeee0000:6806:217c:1:237
+0004:eeee0000:6806:217c:1:238
 TU Donna
 p:Teleuniverso
-0005:eeee0000:6806:217c:1:238
+0005:eeee0000:6806:217c:1:239
 Lazio TV Latina
 p:Teleuniverso
-0006:eeee0000:6806:217c:1:239
+0006:eeee0000:6806:217c:1:240
 TU Shop
 p:Teleuniverso
-0007:eeee0000:6806:217c:1:240
+0007:eeee0000:6806:217c:1:241
 Lazio TV Frosinone
 p:Teleuniverso
-0008:eeee0000:6806:217c:1:241
+0008:eeee0000:6806:217c:1:242
 RETESOLE
 p:Teteuniverso
-000a:eeee0000:6806:217c:1:242
+000a:eeee0000:6806:217c:1:243
 TU Movie
 p:Teleuniverso
-000c:eeee0000:6806:217c:1:243
+000c:eeee0000:6806:217c:1:244
 TELEMONTEGIOVE
 p:Teleuniverso
-000e:eeee0000:6e69:217c:1:245
+000e:eeee0000:6e69:217c:1:246
 Supernova
 p:Amici Net
-00c1:eeee0000:6e69:217c:1:246
+00c1:eeee0000:6e69:217c:1:247
 SUPERNOVA1
 p:AMICINET
-0073:eeee0000:6e69:217c:1:247
+0073:eeee0000:6e69:217c:1:248
 Supernova5
 p:Amici Net
-004e:eeee0000:6e69:217c:1:248
+004e:eeee0000:6e69:217c:1:249
 TeleAmbiente
 p:TA
-0124:eeee0000:6e69:217c:1:249
+0124:eeee0000:6e69:217c:1:250
 TRAVEL TV
 p:AMICI NET
-0060:eeee0000:6e69:217c:1:250
+0060:eeee0000:6e69:217c:1:251
 EUROPA TV
 p:AMICI NET
-0070:eeee0000:6e69:217c:1:251
+0070:eeee0000:6e69:217c:1:252
 CANALEZERO
 p:AMICI NET
-0072:eeee0000:6e69:217c:1:252
+0072:eeee0000:6e69:217c:1:253
 Canale23Teletuscolo
 p:Amici Net
-0074:eeee0000:6e69:217c:1:253
+0074:eeee0000:6e69:217c:1:254
 gtv intermotori
 p:AMICI NET
-0097:eeee0000:6e69:217c:1:254
+0097:eeee0000:6e69:217c:1:255
 TELEAMICA
 p:LA9
-00a5:eeee0000:6e69:217c:1:255
+00a5:eeee0000:6e69:217c:1:256
 SHOP24
 p:SHOP24
-00a8:eeee0000:6e69:217c:1:256
+00a8:eeee0000:6e69:217c:1:257
 TELEMODA
 p:LA9
-00a9:eeee0000:6e69:217c:1:257
+00a9:eeee0000:6e69:217c:1:258
 TELEDONNA
 p:LA9
-00a3:eeee0000:6e69:217c:1:258
+00a3:eeee0000:6e69:217c:1:259
 Donna Schopping
 p:itc
-00fe:eeee0000:6e69:217c:1:259
+00fe:eeee0000:6e69:217c:1:260
 shop 24
 p:shop 24
-0071:eeee0000:6e69:217c:1:260
+0071:eeee0000:6e69:217c:1:261
 GARI TV
 p:Mainlevel
-00ad:eeee0000:6e69:217c:1:261
+00ad:eeee0000:6e69:217c:1:262
 Amici tv
 p:AMICI NET
-0275:eeee0000:6e69:217c:1:262
+0275:eeee0000:6e69:217c:1:263
 ERNICA TV
 p:ERNICA TV
-027d:eeee0000:6e69:217c:1:263
+027d:eeee0000:6e69:217c:1:264
 TELEPONTINA
 p:AMICI NET
-03e8:eeee0000:6e69:217c:1:264
+03e8:eeee0000:6e69:217c:1:265
 Super tv
 p:Super tv
-00c7:eeee0000:6e69:217c:1:265
+00c7:eeee0000:6e69:217c:1:266
 YOUNG TV
 p:Service Provider
-004c:eeee0000:6e69:217c:1:266
+004c:eeee0000:6e69:217c:1:267
 NUOVO
 p:AMICINET
-00b0:eeee0000:6e69:217c:1:267
+00b0:eeee0000:6e69:217c:1:268
 NUOVO1
 p:AMICINET
-00c4:eeee0000:6e69:217c:1:268
+00c4:eeee0000:6e69:217c:1:269
 AUTOMOTOTV LAZIO
 p:AMICI NET
-00c0:eeee0000:6e69:217c:1:269
+00c0:eeee0000:6e69:217c:1:270
 S3M
 p:AMICI NET
-005b:eeee0000:6e69:217c:1:270
+005b:eeee0000:6e69:217c:1:271
 SL48        
 p:Scopus
-005c:eeee0000:6e69:217c:1:271
+005c:eeee0000:6e69:217c:1:272
 TE
 p:AMICI NET
-00d6:eeee0000:6e69:217c:1:272
+00d6:eeee0000:6e69:217c:1:273
 TP
 p:Amici Net
-0055:eeee0000:6e69:217c:1:273
+0055:eeee0000:6e69:217c:1:274
 TS
 p:Amici Net
-0006:eeee0000:6814:217c:1:275
+0006:eeee0000:6814:217c:1:276
 TELEROMA 56 HD
 p:Teleroma 56
-0004:eeee0000:6814:217c:1:276
+0004:eeee0000:6814:217c:1:277
 TELEROMA 56 ENTERTAINMENT
 p:Teleroma 56
-0005:eeee0000:6814:217c:1:277
+0005:eeee0000:6814:217c:1:278
 TELEROMA 56 DOMUS
 p:Teleroma 56
-0002:eeee0000:6814:217c:1:278
+0002:eeee0000:6814:217c:1:279
 TELEROMA 56 NEWS
 p:Teleroma 56
-0701:eeee0000:6814:217c:1:279
+0701:eeee0000:6814:217c:1:280
 DONNA TV
 p:
-0006:eeee0000:6810:217c:1:281
+0006:eeee0000:6810:217c:1:282
 T9 HD
 p:SIDIS VISION SPA
-0001:eeee0000:6810:217c:1:282
+0001:eeee0000:6810:217c:1:283
 T9
 p:SIDIS VISION SPA
-0002:eeee0000:6810:217c:1:283
+0002:eeee0000:6810:217c:1:284
 T9 SPORT
 p:SIDIS VISION SPA
-0004:eeee0000:6810:217c:1:284
+0004:eeee0000:6810:217c:1:285
 T9 CASA
 p:SIDIS VISION SPA
-0008:eeee0000:6810:217c:1:285
+0008:eeee0000:6810:217c:1:286
 T9 DONNA
 p:SIDIS VISION SPA
-0005:eeee0000:6810:217c:1:286
+0005:eeee0000:6810:217c:1:287
 T9 INFO
 p:SIDIS VISION SPA
-0009:eeee0000:17ff:217c:1:288
+0009:eeee0000:17ff:217c:1:289
 Gold TV HD
 p:Gold TV
-0001:eeee0000:17ff:217c:1:289
+0001:eeee0000:17ff:217c:1:290
 Gold TV
 p:Gold TV
-0008:eeee0000:17ff:217c:1:290
+0008:eeee0000:17ff:217c:1:291
 LAZIO TV HD
 p:Gold TV
-0002:eeee0000:17ff:217c:1:291
+0002:eeee0000:17ff:217c:1:292
 LAZIO TV 
 p:Gold TV
-0003:eeee0000:17ff:217c:1:292
+0003:eeee0000:17ff:217c:1:293
 ROMA CH 71
 p:Gold TV
-0005:eeee0000:17ff:217c:1:293
+0005:eeee0000:17ff:217c:1:294
 Gold TV.
 p:Gold TV
-0006:eeee0000:17ff:217c:1:294
+0006:eeee0000:17ff:217c:1:295
 TV7 Triveneta Net
 p:Gold TV
-0007:eeee0000:17ff:217c:1:295
+0007:eeee0000:17ff:217c:1:296
 RTR99TV ROMA
 p: Gold TV
-000a:eeee0000:17ff:217c:1:296
+000a:eeee0000:17ff:217c:1:297
 Odeon 24
 p:Gold Tv
-000b:eeee0000:17ff:217c:22:297
+000b:eeee0000:17ff:217c:22:298
 NSL
 p:Gold TV
-000e:eeee0000:17ff:217c:1:298
+000e:eeee0000:17ff:217c:1:299
 ONE Television
 p:Gold TV
-000f:eeee0000:17ff:217c:1:299
+000f:eeee0000:17ff:217c:1:300
 Radio Radio TV
 p:Gold TV 
-000c:eeee0000:17ff:217c:1:300
+000c:eeee0000:17ff:217c:1:301
 ONE TV
 p:Gold TV
-000d:eeee0000:17ff:217c:1:301
+000d:eeee0000:17ff:217c:1:302
 CANALE 21
 p:Gold TV
-0004:eeee0000:17ff:217c:1:302
+0004:eeee0000:17ff:217c:1:303
 TELECAMPIONE
 p:Gold TV
-0206:eeee0000:6826:217c:1:304
+0206:eeee0000:6826:217c:1:305
 RETE ORO HD
 p:RETEORO
-0001:eeee0000:6826:217c:1:305
+0001:eeee0000:6826:217c:1:306
 RETE ORO
 p:RETEORO
-0005:eeee0000:6826:217c:1:306
+0005:eeee0000:6826:217c:1:307
 RETE ORO 5
 p:RETEORO
-0003:eeee0000:6826:217c:1:307
+0003:eeee0000:6826:217c:1:308
 RETE ORO SERVIZI
 p:RETEORO
-0004:eeee0000:6826:217c:1:308
+0004:eeee0000:6826:217c:1:309
 RETE ORO MUSIC
 p:RETEORO
-0002:eeee0000:6826:217c:1:309
+0002:eeee0000:6826:217c:1:310
 RETE ORO NEWS
 p:RETEORO
-0008:eeee0000:6826:217c:1:310
+0008:eeee0000:6826:217c:1:311
 T.I. C.SERENA
 p:TELEITALIA
-000a:eeee0000:6826:217c:1:311
+000a:eeee0000:6826:217c:1:312
 TESORY CHANNEL
 p:RETEORO
-0009:eeee0000:6826:217c:1:312
+0009:eeee0000:6826:217c:1:313
 DELUXE 139
 p:RETEORO
-0007:eeee0000:6826:217c:1:313
+0007:eeee0000:6826:217c:1:314
 GENIUS 240
 p:RETEORO
-000c:eeee0000:6826:217c:1:314
+000c:eeee0000:6826:217c:1:315
 ZETA TV
 p:RETEORO
-0032:eeee0000:0202:0000:1:316
+0032:eeee0000:0202:0000:1:317
 746000 SID 0x32
 p:
-003c:eeee0000:0202:0000:1:317
+003c:eeee0000:0202:0000:1:318
 746000 SID 0x3c
 p:
-0041:eeee0000:0202:0000:1:318
+0041:eeee0000:0202:0000:1:319
 746000 SID 0x41
 p:
-0046:eeee0000:0202:0000:1:319
+0046:eeee0000:0202:0000:1:320
 746000 SID 0x46
 p:
-004b:eeee0000:0202:0000:1:320
+004b:eeee0000:0202:0000:1:321
 746000 SID 0x4b
 p:
-0050:eeee0000:0202:0000:1:321
+0050:eeee0000:0202:0000:1:322
 746000 SID 0x50
 p:
-0055:eeee0000:0202:0000:1:322
+0055:eeee0000:0202:0000:1:323
 746000 SID 0x55
 p:
-0064:eeee0000:0202:0000:1:323
+0064:eeee0000:0202:0000:1:324
 746000 SID 0x64
 p:
-006e:eeee0000:0202:0000:1:324
+006e:eeee0000:0202:0000:1:325
 746000 SID 0x6e
 p:
-0d4c:eeee0000:0001:013e:2:326
+0d4c:eeee0000:0001:013e:2:327
 Rai Radio1
 p:RAI
-0d4d:eeee0000:0001:013e:2:327
+0d4d:eeee0000:0001:013e:2:328
 Rai Radio2
 p:RAI
-0d4e:eeee0000:0001:013e:2:328
+0d4e:eeee0000:0001:013e:2:329
 Rai Radio3
 p:RAI
-0d53:eeee0000:0001:013e:1:329
+0d53:eeee0000:0001:013e:1:330
 Rai News 24
 p:Rai
-218e:eeee0000:0002:013e:2:330
+218e:eeee0000:0002:013e:2:331
 Rai Radio1 Sport
 p:Rai
-218f:eeee0000:0002:013e:2:331
+218f:eeee0000:0002:013e:2:332
 Rai Radio2 Indie
 p:Rai
-217a:eeee0000:0002:013e:2:332
+217a:eeee0000:0002:013e:2:333
 Rai Radio Classica
 p:Rai
-217c:eeee0000:0002:013e:2:333
+217c:eeee0000:0002:013e:2:334
 Rai GrParlamento
 p:Rai
-217d:eeee0000:0002:013e:2:334
+217d:eeee0000:0002:013e:2:335
 Rai Isoradio
 p:Rai
-2182:eeee0000:0002:013e:2:335
+2182:eeee0000:0002:013e:2:336
 Rai Radio Tutta Italiana
 p:Rai
-2183:eeee0000:0002:013e:2:336
+2183:eeee0000:0002:013e:2:337
 Rai Radio Techetè
 p:Rai
-2184:eeee0000:0002:013e:2:337
+2184:eeee0000:0002:013e:2:338
 Rai Radio Live
 p:Rai
-218d:eeee0000:0002:013e:2:338
+218d:eeee0000:0002:013e:2:339
 Rai Radio Kids
 p:Rai
-1fa6:eeee0000:032a:0110:2:339
+1fa6:eeee0000:032a:0110:2:340
 Radio R101
 p:
-1fa7:eeee0000:032a:0110:2:340
+1fa7:eeee0000:032a:0110:2:341
 RADIO 105
 p:
-1fa8:eeee0000:032a:0110:2:341
+1fa8:eeee0000:032a:0110:2:342
 VIRGIN RADIO
 p:
-1fa9:eeee0000:032a:0110:2:342
+1fa9:eeee0000:032a:0110:2:343
 Radio Monte Carlo
 p:
-00dd:eeee0000:0204:001d:2:343
+00dd:eeee0000:0204:001d:2:344
 RTL 102.5
 p:Persidera
-00de:eeee0000:0204:001d:2:344
+00de:eeee0000:0204:001d:2:345
 RADIO ZETA
 p:Persidera
-00df:eeee0000:0204:001d:2:345
+00df:eeee0000:0204:001d:2:346
 FRECCIA
 p:Persidera
-000d:eeee0000:0200:001d:2:346
+000d:eeee0000:0200:001d:2:347
 R Italia SMI
 p:Persidera
-000e:eeee0000:0200:001d:2:347
+000e:eeee0000:0200:001d:2:348
 R Italia SMI
 p:Persidera
-0009:eeee0000:0204:001d:2:348
+0009:eeee0000:0204:001d:2:349
 Radio Deejay
 p:Persidera
-000a:eeee0000:0204:001d:2:349
+000a:eeee0000:0204:001d:2:350
 Radio Capital
 p:Persidera
-000b:eeee0000:0204:001d:2:350
+000b:eeee0000:0204:001d:2:351
 Radio m2o
 p:Persidera
-000c:eeee0000:7918:217c:2:351
+000c:eeee0000:7918:217c:2:352
 Radio Maria
 p:Persidera
-000a:eeee0000:0039:217c:2:352
+000a:eeee0000:0039:217c:2:353
 Radio Capri
 p:Telecapri
-000b:eeee0000:0039:217c:2:353
+000b:eeee0000:0039:217c:2:354
 RADIO CAPRI
 p:Telecapri
-000b:eeee0000:0050:217c:2:354
+000b:eeee0000:0050:217c:2:355
 Radio Canale Italia
 p:Canale Italia 2
-000c:eeee0000:0050:217c:2:355
+000c:eeee0000:0050:217c:2:356
 Volami Nel Cuore
 p:Canale Italia 2
-000f:eeee0000:47d0:217c:2:356
+000f:eeee0000:47d0:217c:2:357
 RADIO PADANIA
 p:Canale Italia
-0377:eeee0000:6e69:217c:2:357
+0377:eeee0000:6e69:217c:2:358
 Soloradio
 p:solo radio
-0069:eeee0000:0202:0000:2:358
+0069:eeee0000:0202:0000:2:359
 746000 SID 0x69
 p:
 end
