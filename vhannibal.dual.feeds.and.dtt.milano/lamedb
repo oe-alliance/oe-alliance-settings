@@ -66,9 +66,6 @@ transponders
 00c00000:0460:0001
 	s 12728000:22000000:1:2:192:2:0:1:2:0:2
 /
-00c00000:042c:0001
-	s 11778000:29500000:1:9:192:2:0:1:1:0:2
-/
 00c00000:041a:0001
 	s 10729000:22000000:1:2:192:2:0:1:2:0:2
 /
@@ -176,6 +173,9 @@ transponders
 /
 00c00000:03ef:0001
 	s 11302000:22000000:0:2:192:2:0:1:2:0:2
+/
+00c00000:042c:0001
+	s 11778000:29500000:1:9:192:2:0:1:1:0:2
 /
 00c00000:0434:0001
 	s 11934000:29700000:1:2:192:2:0:1:2:0:2
@@ -333,9 +333,6 @@ transponders
 00820000:251c:fbff
 	s 12616000:29900000:0:4:130:2:0
 /
-00820000:1e14:fbff
-	s 12245000:29900000:0:4:130:2:0
-/
 0082accf:0578:013e
 	s 11471000:27500000:1:3:130:2:0
 /
@@ -375,11 +372,11 @@ transponders
 00820000:32c8:013e
 	s 11117000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:24b8:013e
-	s 12596000:27500000:1:3:130:2:0
-/
 00820000:1b58:013e
 	s 12111000:27500000:1:3:130:2:0
+/
+00820000:24b8:013e
+	s 12596000:27500000:1:3:130:2:0
 /
 00820000:1af4:fbff
 	s 12091000:29900000:0:3:130:2:0:1:2:0:2
@@ -538,7 +535,7 @@ transponders
 	s 11938000:27500000:0:3:130:2:0:1:2:0:2
 /
 00820000:2648:fbff
-	s 12673000:29900000:1:4:130:2:0
+	s 12673000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:20d0:013e
 	s 12379000:27500000:1:3:130:2:0
@@ -590,6 +587,9 @@ transponders
 /
 00820000:23f0:013e
 	s 12558000:27500000:1:4:130:2:0:1:2:0:2
+/
+00820000:1e14:fbff
+	s 12245000:29900000:0:3:130:2:0:1:2:0:2
 /
 eeee0000:0004:013e
 	t 514000000:0:5:5:3:2:4:4:2:0:0:0
@@ -3125,15 +3125,6 @@ p:CSAT
 2660:00c00000:0460:0001:1:0
 F3 FRANCHE COMTE
 p:CSAT
-164f:00c00000:042c:0001:1:0
-Asteroid Day TV
-p:Harmonic
-1646:00c00000:042c:0001:2:0
-VRT Radio 1
-p:SES ASTRA
-1645:00c00000:042c:0001:22:0
-BVN TV
-p:SES ASTRA
 7853:00c00000:041a:0001:1:0
 10729V SID 0x7853
 p:DVB-S2 8PSK 10729V 19.2Â°E
@@ -4238,6 +4229,9 @@ p:SKY
 0136:00c00000:0004:0085:25:0
 Eurosport360HD 5
 p:SKY
+0075:00c00000:0004:0085:25:0
+Sky Serien & Shows HD
+p:SKY
 008c:00c00000:0004:0085:25:0
 TNT Film HD
 p:SKY
@@ -4619,6 +4613,12 @@ p:ServusTV
 1334:00c00000:03ef:0001:25:0
 ORF2N HD
 p:ORF
+1646:00c00000:042c:0001:2:0
+VRT Radio 1
+p:SES ASTRA
+1645:00c00000:042c:0001:22:0
+BVN TV
+p:SES ASTRA
 22c5:00c00000:0434:0001:25:0
 CLIQUE TV
 p:CSAT
@@ -4888,9 +4888,6 @@ p:SKY
 p:SKY
 006c:00c00000:000c:0085:25:0
 Sky Sport News HD
-p:SKY
-0075:00c00000:000c:0085:25:0
-Sky Serien & Shows HD
 p:SKY
 007c:00c00000:000c:0085:25:0
 Fox HD
@@ -5942,9 +5939,6 @@ p:SkyItalia
 2d63:00820000:2774:fbff:1:0
 Sky Sport
 p:SkyItalia
-1fc5:00820000:2774:fbff:1:0
-12731H SID 0x1fc5
-p:DVB-S QPSK 12731H 13.0Â°E
 2d4d:00820000:2774:fbff:25:0
 AdSmart
 p:SkyItalia
@@ -5991,7 +5985,7 @@ p:SkyItalia
 Discovery Sci
 p:SkyItalia
 0fbd:00820000:1644:fbff:1:0
-Fox +1
+Fox Modern Family
 p:SkyItalia
 0fbf:00820000:1644:fbff:1:0
 DeAKids +1
@@ -6583,12 +6577,6 @@ Intrattenim. HD
 p:SkyItalia
 2c77:00820000:251c:fbff:25:0
 Sky Sport HD
-p:SkyItalia
-2c64:00820000:251c:fbff:130:0
-Mosaico Bambini
-p:SkyItalia
-1002:00820000:1e14:fbff:1:0
-IEPG Data
 p:SkyItalia
 0003:0082accf:0578:013e:1:0
 WESAL HAQ
@@ -7248,7 +7236,7 @@ p:SkyItalia
 Country
 p:SkyItalia
 3c1a:00820000:189c:fbff:2:0
-SOLO PIANO
+ENNIO MORRICONE
 p:SkyItalia
 3be8:00820000:189c:fbff:2:0
 DeeJay 30 song
@@ -7279,9 +7267,6 @@ Sky Primafila Active
 p:SkyItalia
 1fd1:00820000:189c:fbff:130:0
 Sky Primafila
-p:SkyItalia
-3be7:00820000:189c:fbff:130:0
-Sky Music
 p:SkyItalia
 4206:00820000:3db8:013e:1:0
 Prive
@@ -7470,7 +7455,7 @@ p:SkyItalia
 Nickelodeon +1
 p:SkyItalia
 0fd9:00820000:1838:fbff:1:0
-History +1
+History Misteri
 p:SkyItalia
 2af7:00820000:1838:fbff:1:0
 IEPG Data
@@ -7511,45 +7496,6 @@ p:Cyfrowy Polsat S.A.
 070f:00820000:32c8:013e:1:0
 PPV HD KSW 53
 p:Cyfrowy Polsat SA
-200b:00820000:24b8:013e:1:0
-BBC Arabic TV
-p:BBC World Service
-200c:00820000:24b8:013e:1:0
-BBC World News
-p:Globecast
-2010:00820000:24b8:013e:1:0
-1TVRUS Europe
-p:Globecast
-2011:00820000:24b8:013e:1:0
-CNNi
-p:Globecast
-2015:00820000:24b8:013e:1:0
-JSTV 1
-p:Globecast
-2016:00820000:24b8:013e:1:0
-JSTV 2
-p:Globecast
-2065:00820000:24b8:013e:1:0
-1TVRUS Europe
-p:Globecast
-2067:00820000:24b8:013e:1:0
-RT Doc
-p:Globecast
-200a:00820000:24b8:013e:2:0
-BBC Horn of Africa
-p:BBC World Service
-200d:00820000:24b8:013e:2:0
-BBC Arabic Radio
-p:BBC World Service
-200e:00820000:24b8:013e:2:0
-BBC English (Europe)
-p:BBC World Service
-200f:00820000:24b8:013e:2:0
-BBC English Mid-East
-p:BBC World Service
-2023:00820000:24b8:013e:2:0
-Service 8227
-p:Globecast
 030c:00820000:1b58:013e:1:0
 QVC Italia
 p:Telespazio
@@ -7580,6 +7526,9 @@ p:Telespazio
 02d7:00820000:1b58:013e:1:0
 El Sharq
 p:Harmonic
+02d8:00820000:1b58:013e:1:0
+AWRAAS TV
+p:Telespazio
 02df:00820000:1b58:013e:1:0
 AL-MAYADEEN
 p:Telespazio
@@ -7625,6 +7574,30 @@ p:Telespazio
 02ff:00820000:1b58:013e:2:0
 DimSuono Soft RM
 p:Telespazio
+200c:00820000:24b8:013e:1:0
+BBC World News
+p:Globecast
+2010:00820000:24b8:013e:1:0
+1TVRUS Europe
+p:Globecast
+2011:00820000:24b8:013e:1:0
+CNNi
+p:Globecast
+2015:00820000:24b8:013e:1:0
+JSTV 1
+p:Globecast
+2016:00820000:24b8:013e:1:0
+JSTV 2
+p:Globecast
+2065:00820000:24b8:013e:1:0
+1TVRUS Europe
+p:Globecast
+2067:00820000:24b8:013e:1:0
+RT Doc
+p:Globecast
+2023:00820000:24b8:013e:2:0
+Service 8227
+p:Globecast
 0e0e:00820000:1af4:fbff:1:0
 IEPG Data
 p:SkyItalia
@@ -7742,6 +7715,9 @@ p:nc+
 0214:00820000:0384:013e:1:0
 Tesory Channel
 p:M-Three satcom
+0216:00820000:0384:013e:1:0
+Iraqia News HD
+p:
 0217:00820000:0384:013e:1:0
 ETV NEWS
 p:
@@ -7762,10 +7738,7 @@ Parole di Vita
 p:M-Three Satcom
 0215:00820000:0384:013e:25:0
 NHK WORLD-JAPAN
-p:
-0216:00820000:0384:013e:25:0
-Iraqia News HD
-p:Nilesat
+p:,c:050001
 01fb:00820000:0384:013e:25:0
 AVA
 p:none
@@ -7812,7 +7785,7 @@ p:SkyItalia
 Fox Crime
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Classic Collection
+Fast & Furious Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -7827,7 +7800,7 @@ p:SkyItalia
 Sky Sport Collection
 p:SkyItalia
 2dd4:00820000:1a2c:fbff:1:0
-Sky Cinema per te 2
+Sky Cinema Due +24
 p:SkyItalia
 0fda:00820000:1a2c:fbff:1:0
 NationalGeo +1
@@ -8084,9 +8057,6 @@ p:GLOBECAST
 0321:00820000:3bc4:013e:1:0
 Euronews English HD
 p:GLOBECAST
-0322:00820000:3bc4:013e:1:0
-Kuwait TV1 HD
-p:GLOBECAST
 0323:00820000:3bc4:013e:1:0
 TRT World HD
 p:GLOBECAST
@@ -8104,12 +8074,6 @@ CNNi HD
 p:GLOBECAST
 032a:00820000:3bc4:013e:1:0
 Radio Belarus International
-p:GLOBECAST
-0324:00820000:3bc4:013e:2:0
-Kuwait Radio1
-p:GLOBECAST
-0325:00820000:3bc4:013e:2:0
-Kuwait HolyQuran
 p:GLOBECAST
 1d20:00820000:2fa8:013e:1:0
 Al Hiwar
@@ -8155,9 +8119,6 @@ AL Arabia HD
 p:
 252c:00820000:13ef:013e:1:0
 Sky News Arabia
-p:
-252e:00820000:13ef:013e:1:0
-Orient News
 p:
 2531:00820000:13ef:013e:1:0
 AL SHARJAH RADIO
@@ -8858,9 +8819,6 @@ p:SkyItalia
 2b43:00820000:1900:fbff:25:0
 Sky Arte HD
 p:SkyItalia
-1079:00820000:1900:fbff:25:0
-Test1
-p:SkyItalia
 107a:00820000:1900:fbff:25:0
 Test2
 p:SkyItalia
@@ -8959,7 +8917,7 @@ MB Sat - Test 6
 p:MB Satellite
 0d49:00820000:1450:013e:1:0
 Rai 1 HD
-p:Rai,c:050001
+p:Rai
 0d4a:00820000:1450:013e:1:0
 Rai 2 HD
 p:Rai
@@ -9000,7 +8958,7 @@ p:SkyItalia
 Sky Cinema Family
 p:SkyItalia
 2b63:00820000:19c8:fbff:1:0
-Sky Cinema per te 1
+Sky Cinema Uno +24
 p:SkyItalia
 2d65:00820000:19c8:fbff:1:0
 Primafila 1
@@ -9266,9 +9224,6 @@ p:Eutelsat
 127c:00820000:3458:013e:2:0
 Radio Mojdeh
 p:Eutelsat
-129c:00820000:3458:013e:2:0
-VOISFARSI
-p:Eutelsat
 1063:00820000:1d4c:fbff:1:0
 IEPG Data
 p:SkyItalia
@@ -9423,7 +9378,7 @@ p:SkyItalia
 Canale di servizio
 p:SkyItalia
 1e63:00820000:15e0:fbff:25:0
-Sky Cinema per te 2 HD
+Sky Cinema Due +24 HD
 p:SkyItalia
 379c:00820000:15e0:fbff:25:0
 NationalGeo HD
@@ -9435,8 +9390,8 @@ p:SkyItalia
 BBC Persian
 p:BBC World Service
 39d3:00820000:1fa4:013e:1:0
-Detskii Mir
-p:ARC/DCM2 TSOIP
+Detskiy Mir - TeleClub
+p:Eutelsat
 39d4:00820000:1fa4:013e:1:0
 Lubimoe Kino
 p:Eutelsat
@@ -9522,7 +9477,7 @@ p:SkyItalia
 Eurosport 2 HD
 p:SkyItalia
 1c38:00820000:206c:fbff:25:0
-Sky Cinema per te 1 HD
+Sky Cinema Uno +24 HD
 p:SkyItalia
 1c3e:00820000:206c:fbff:25:0
 Sky Sport Serie A HD
@@ -9989,9 +9944,6 @@ p:GLOBECAST
 06a7:00820000:3138:013e:1:0
 THT
 p:GLOBECAST
-06a9:00820000:3138:013e:1:0
-2M Monde
-p:GLOBECAST
 06aa:00820000:3138:013e:1:0
 CGTN
 p:GLOBECAST
@@ -10025,26 +9977,23 @@ p:GLOBECAST
 06d7:00820000:3138:013e:2:0
 Chaine 1
 p:GLOBECAST
-06db:00820000:3138:013e:2:0
-Radio 2M
-p:GLOBECAST
 2db3:00820000:2260:fbff:1:0
 IEPG Data
 p:SkyItalia
 2da1:00820000:2260:fbff:25:0
-Premium Cinema HD
+PremiumCinema1 HD
 p:SkyItalia
 2da2:00820000:2260:fbff:25:0
-Premium Cin.+24 HD
+PremiumCin.1 +24 HD
 p:SkyItalia
 2da3:00820000:2260:fbff:25:0
-Premium Energy HD
+PremiumCinema2 HD
 p:SkyItalia
 2da4:00820000:2260:fbff:25:0
 Premium Comedy HD
 p:SkyItalia
 2da5:00820000:2260:fbff:25:0
-Premium Emotion HD
+PremiumCinema3 HD
 p:SkyItalia
 2da7:00820000:2260:fbff:25:0
 Premium Stories HD
@@ -10365,7 +10314,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Classic Collection HD
+Fast & Furious Collection HD
 p:SkyItalia
 106e:00820000:14b4:fbff:25:0
 Sky Cinema Action HD
@@ -10793,9 +10742,6 @@ p:Eutelsat
 0604:00820000:005e:0055:22:0
 Zee TV
 p:XTRA TV
-0410:00820000:005e:0055:22:0
-TV1000
-p:XTRA TV
 0514:00820000:005e:0055:22:0
 Da Vinci
 p:XTRA TV
@@ -10843,6 +10789,9 @@ DORAMA
 p:XTRA TV
 03fc:00820000:005e:0055:22:0
 Star Family
+p:XTRA TV
+0410:00820000:005e:0055:25:0
+TV1000
 p:XTRA TV
 0424:00820000:005e:0055:25:0
 TV1000 Action HD
@@ -10946,6 +10895,9 @@ p:
 04b5:00820000:23f0:013e:25:0
 SAUDI TV HD
 p:
+1002:00820000:1e14:fbff:1:0
+IEPG Data
+p:SkyItalia
 218c:eeee0000:0004:013e:1:0
 Rai 1 HD
 p:Rai
@@ -12102,7 +12054,7 @@ p:
 Salute e Natura
 p:TELECOLOR
 0fd2:eeee0000:272b:217c:1:0
-telePAVIA
+MilanoPaviaTV
 p:TELECOLOR
 0fd4:eeee0000:272b:217c:1:0
 Telecolor
@@ -12147,7 +12099,7 @@ p:TELECOLOR
 ITALIA TV LOMBARDIA
 p:TELECOLOR
 0feb:eeee0000:272b:217c:1:0
-tele PAVIA
+telePAVIA
 p:TELECOLOR
 0ff8:eeee0000:272b:217c:1:0
 TELECAMPIONE
@@ -12435,4 +12387,4 @@ p:RadioItaliaTrend
 NBC 70-80 Hits HQ
 p:
 end
-Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
+Editor:DreamSet 2.4.11 - http://www.dreamset-editor.com
