@@ -10,13 +10,13 @@ transponders
 	s 12418000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:2774:fbff
-	s 12731000:29900000:0:4:130:2:0
+	s 12731000:29900000:0:3:130:2:0:1:2:0:2
 /
 00820000:1644:fbff
 	s 11861000:29900000:0:4:130:2:0
 /
 00820000:2710:fbff
-	s 12713000:29900000:1:4:130:2:0
+	s 12713000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:2e18:00b0
 	s 10873000:27500000:1:3:130:2:0:1:2:0:2
@@ -41,6 +41,9 @@ transponders
 /
 00820000:02bc:013e
 	s 11334000:27500000:0:3:130:2:0
+/
+00820000:01f4:013e
+	s 11296000:27500000:0:4:130:2:0
 /
 00820000:170c:fbff
 	s 11900000:29900000:0:3:130:2:0:1:2:0:2
@@ -127,7 +130,7 @@ transponders
 	s 12635000:29900000:1:4:130:2:0
 /
 00820000:2328:013e
-	s 12520000:27500000:1:2:130:2:0:1:2:0:2
+	s 12520000:27500000:1:8:130:2:0:1:2:0:2
 /
 00820000:3e1c:013f
 	s 11681000:27500000:0:3:130:2:0:1:2:0:2
@@ -215,9 +218,6 @@ transponders
 /
 00820000:1bbc:013e
 	s 12130000:27500000:0:3:130:2:0:1:2:0:2
-/
-00820000:01f4:013e
-	s 11296000:27500000:0:4:130:2:0
 /
 00820000:0514:013e
 	s 11449000:27500000:0:3:130:2:0:1:2:0:2
@@ -933,12 +933,6 @@ eeee0000:0039:217c
 eeee0000:0039:217c
 	t 762000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:0039:217c
-	t 762000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:0039:217c
-	t 762000000:0:5:5:3:2:4:4:2:0:0:0
-/
 eeee0000:0050:217c
 	t 191500000:1:5:5:3:2:4:4:2:0:0:0
 /
@@ -1497,8 +1491,8 @@ eeee0000:272b:217c
 eeee0000:272b:217c
 	t 634000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:231d:217c
-	t 714000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:272b:217c
+	t 634000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:231d:217c
 	t 714000000:0:5:5:3:2:4:4:2:0:0:0
@@ -1554,8 +1548,8 @@ eeee0000:231d:217c
 eeee0000:231d:217c
 	t 714000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:240d:217c
-	t 778000000:0:5:5:3:2:4:4:2:0:0:0
+eeee0000:231d:217c
+	t 714000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:240d:217c
 	t 778000000:0:5:5:3:2:4:4:2:0:0:0
@@ -1882,7 +1876,7 @@ Sky Sport HD
 p:SkyItalia
 0f48:00820000:2198:fbff:25:0
 Sky Sport HD
-p:SkyItalia
+p:SkyItalia,c:050001
 0f4b:00820000:2198:fbff:25:0
 Real Time HD
 p:SkyItalia
@@ -1958,9 +1952,6 @@ p:SkyItalia
 1101:00820000:1644:fbff:1:0
 Doctor's Life
 p:SkyItalia
-1102:00820000:1644:fbff:1:0
-11861H SID 0x1102
-p:DVB-S QPSK 11861H 13.0Â°E
 1104:00820000:1644:fbff:1:0
 Sky Meteo 24 Active
 p:SkyItalia
@@ -1995,7 +1986,7 @@ p:SkyItalia
 Discovery Sci
 p:SkyItalia
 0fbd:00820000:1644:fbff:1:0
-Fox Modern Family
+Fox +1
 p:SkyItalia
 0fbf:00820000:1644:fbff:1:0
 DeAKids +1
@@ -2609,9 +2600,6 @@ p:
 0001:0082accf:0578:013e:2:0
 R Radio
 p:
-0006:0082accf:0578:013e:2:0
-Rangarang Radio
-p:
 0004:00820000:02bc:013e:1:0
 ARMPUB TV
 p:
@@ -2636,6 +2624,63 @@ p:
 0010:00820000:02bc:013e:2:0
 RADIO A1
 p:
+0604:00820000:01f4:013e:1:0
+R Radio
+p:
+060e:00820000:01f4:013e:1:0
+Yemen Radio
+p:iKOMG
+0899:00820000:01f4:013e:1:0
+Freedom TV
+p:iKOMG
+089a:00820000:01f4:013e:1:0
+CBC_Azerbaycan
+p:iKOMG
+089b:00820000:01f4:013e:1:0
+WESAL HAQ
+p:
+089c:00820000:01f4:013e:1:0
+Yemen TV
+p:iKOMG
+089d:00820000:01f4:013e:1:0
+SNTV 1
+p:
+089e:00820000:01f4:013e:1:0
+SNTV 2
+p:
+089f:00820000:01f4:013e:1:0
+Kurdsat SD
+p:iKOMG
+08a0:00820000:01f4:013e:1:0
+NOUR TV
+p:iKOMG
+08a1:00820000:01f4:013e:1:0
+Ictimai TV
+p:iKOMG
+08a2:00820000:01f4:013e:1:0
+Xezer_TV
+p:iKOMG
+08a3:00820000:01f4:013e:1:0
+Lalish TV
+p:iKOMG
+08a5:00820000:01f4:013e:1:0
+AzTV Azerbaijan
+p:iKOMG
+08a6:00820000:01f4:013e:1:0
+Medya Haber
+p:iKOMG
+08a7:00820000:01f4:013e:1:0
+ES TV
+p:
+08a8:00820000:01f4:013e:1:0
+Azadi
+p:
+08a9:00820000:01f4:013e:1:0
+Telefishinka Caalmiga/Universal
+p:
+08b3:00820000:01f4:013e:1:0
+WELAT
+p:iKOMG
 2504:00820000:170c:fbff:1:0
 On Board Sky HD
 p:SkyItalia
@@ -2716,7 +2761,7 @@ ESP Serbia
 p:Eutelsat
 3615:00820000:00c8:013e:1:0
 ESP Turk
-p:Eutelsat
+p:EUROSPORT
 3616:00820000:00c8:013e:1:0
 ESP2 German
 p:Eutelsat
@@ -2783,9 +2828,6 @@ p:Eutelsat
 366a:00820000:00c8:013e:1:0
 NOVIY_MIR
 p:Harmonic
-366b:00820000:00c8:013e:1:0
-Russia Today
-p:Eutelsat
 35e9:00820000:00c8:013e:1:0
 ESP2 Int'l
 p:Eutelsat
@@ -3735,7 +3777,7 @@ p:SkyItalia
 Fox Crime
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Fast & Furious Collection
+Music Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -4009,7 +4051,7 @@ Belarus 24 HD
 p:GLOBECAST
 0321:00820000:3bc4:013e:1:0
 Euronews English HD
-p:GLOBECAST,c:050001
+p:GLOBECAST
 0323:00820000:3bc4:013e:1:0
 TRT World HD
 p:GLOBECAST
@@ -4069,10 +4111,10 @@ AL SHARQIYA HD
 p:
 2529:00820000:13ef:013e:1:0
 AL Arabia HD
-p:,c:050001
+p:
 252c:00820000:13ef:013e:1:0
 Sky News Arabia
-p:,c:050001
+p:
 2531:00820000:13ef:013e:1:0
 AL SHARJAH RADIO
 p:
@@ -4197,10 +4239,10 @@ p:SkyItalia
 Sky Sport
 p:SkyItalia
 1325:00820000:33f4:013e:1:0
-JSTV 1
+JSTV 1 HD
 p:Telespazio
 1326:00820000:33f4:013e:1:0
-JSTV 2
+JSTV 2 HD
 p:Telespazio
 1328:00820000:33f4:013e:1:0
 Al Karma TV-ME
@@ -5526,7 +5568,7 @@ p:SkyItalia
 Sky Supercalcio HD
 p:SkyItalia
 1c85:00820000:1ce8:0071:1:0
-Polsat Romans
+Polsat Seriale
 p:Cyfrowy Polsat S.A.
 1c86:00820000:1ce8:0071:1:0
 AXN White
@@ -5582,6 +5624,9 @@ p:Cyfrowy Polsat S.A.
 1caa:00820000:1ce8:0071:1:0
 Zlote Przeboje
 p:Radio ZET Gold
+1cac:00820000:1ce8:0071:1:0
+Test11
+p:Cyfrowy Polsat S.A.
 1cb5:00820000:1ce8:0071:1:0
 Disney XD
 p:Cyfrowy Polsat S.A.
@@ -5759,66 +5804,6 @@ p:F13
 3c9a:00820000:1bbc:013e:1:0
 Food Network HD
 p:NetMed
-0899:00820000:01f4:013e:1:0
-Freedom TV
-p:iKOMG
-089a:00820000:01f4:013e:1:0
-CBC_Azerbaycan
-p:iKOMG
-089b:00820000:01f4:013e:1:0
-WESAL HAQ
-p:
-089c:00820000:01f4:013e:1:0
-YEMEN TV
-p:iKOMG
-089d:00820000:01f4:013e:1:0
-SNTV 1
-p:
-089e:00820000:01f4:013e:1:0
-SNTV 2
-p:
-089f:00820000:01f4:013e:1:0
-Kurdsat SD
-p:
-08a0:00820000:01f4:013e:1:0
-NOUR TV
-p:iKOMG
-08a1:00820000:01f4:013e:1:0
-Ictimai TV
-p:iKOMG
-08a2:00820000:01f4:013e:1:0
-Xezer_TV
-p:iKOMG
-08a3:00820000:01f4:013e:1:0
-Lalish TV
-p:iKOMG
-08a4:00820000:01f4:013e:1:0
-Kazakh TV
-p:iKOMG
-08a5:00820000:01f4:013e:1:0
-AzTV Azerbaijan
-p:iKOMG
-08a6:00820000:01f4:013e:1:0
-Medya Haber
-p:iKOMG
-08a7:00820000:01f4:013e:1:0
-ES TV
-p:
-08a8:00820000:01f4:013e:1:0
-Azadi
-p:
-08a9:00820000:01f4:013e:1:0
-Telefishinka Caalmiga/ Universal
-p:
-08b3:00820000:01f4:013e:1:0
-WELAT
-p:iKOMG
-0604:00820000:01f4:013e:2:0
-R Radio
-p:
-060e:00820000:01f4:013e:2:0
-Yemen Radio
-p:iKOMG
 3a99:00820000:0514:013e:1:0
 CANAL+ DOKUMENT HD
 p:nc+
@@ -5966,6 +5951,12 @@ p:GLOBECAST
 06a7:00820000:3138:013e:1:0
 THT
 p:GLOBECAST
+06a8:00820000:3138:013e:1:0
+Euronews Hungarian
+p:GLOBECAST
+06a9:00820000:3138:013e:1:0
+Euronews Russian
+p:GLOBECAST
 06aa:00820000:3138:013e:1:0
 CGTN
 p:GLOBECAST
@@ -5998,6 +5989,9 @@ Chaine 3
 p:GLOBECAST
 06d7:00820000:3138:013e:2:0
 Chaine 1
+p:GLOBECAST
+06d8:00820000:3138:013e:2:0
+Bahai Radio
 p:GLOBECAST
 2db3:00820000:2260:fbff:1:0
 IEPG Data
@@ -6336,7 +6330,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Fast & Furious Collection HD
+Music Collection HD
 p:SkyItalia
 106e:00820000:14b4:fbff:25:0
 Sky Cinema Action HD
@@ -6384,7 +6378,7 @@ p:TVN
 POWER TV
 p:TVN
 10e8:00820000:03e8:013e:22:0
-TO!TV
+GOLD TV
 p:TVN
 10e0:00820000:03e8:013e:25:0
 Discovery Life
@@ -6421,9 +6415,6 @@ Kalemeh TV
 p:
 44e3:00820000:0258:013e:1:0
 Payam E Afghan
-p:
-44e4:00820000:0258:013e:1:0
-Kalsan TV
 p:
 44e5:00820000:0258:013e:1:0
 HCTV
@@ -7107,7 +7098,7 @@ p:STUDIO1
 Focus
 p:
 003c:eeee0000:0202:001d:1:0
-ALMA TV - ALICE & MARCOPOLO
+ALMA TV
 p:Persidera
 2181:eeee0000:0002:013e:1:0
 Rai Storia
@@ -7146,7 +7137,7 @@ p:Persidera
 RDS Social TV
 p:Persidera
 0073:eeee0000:0202:001d:1:0
-RADIO CUSANO TV ITALIA
+CUSANO ITALIA TV
 p:Persidera
 0008:eeee0000:27fb:0148:1:0
 RADIO BRUNO
@@ -7541,12 +7532,6 @@ p:BeS
 0801:eeee0000:0039:217c:1:0
 ODEON 24
 p:BeS
-010e:eeee0000:0039:217c:1:0
-TV UNO
-p:BeS
-0002:eeee0000:0039:217c:1:0
-249TV
-p:BeS
 00dd:eeee0000:0039:217c:1:0
 ALICE
 p:BeS
@@ -7791,8 +7776,8 @@ p:Telesolregina
 Italy Tv
 p:Telesolregina
 0007:eeee0000:20d0:217c:1:0
-TELE AMBIENTE
-p:Telesolregina
+Supernova - L1TV
+p:
 0008:eeee0000:20d0:217c:1:0
 ITALIA 8 PRESTIGE
 p:Telesolregina
@@ -8063,23 +8048,26 @@ p:
 2134:eeee0000:2742:217c:1:0
 TeleMilano Tele Tv 3
 p:
+0fde:eeee0000:272b:217c:1:0
+TELECOLOR HD
+p:TELECOLOR
+0fd4:eeee0000:272b:217c:1:0
+Telecolor
+p:TELECOLOR
+0fd7:eeee0000:272b:217c:1:0
+Telereporter HD
+p:TELECOLOR
+0fd5:eeee0000:272b:217c:1:0
+Telereporter
+p:TELECOLOR
 0005:eeee0000:272b:217c:1:0
 Salute e Natura
 p:TELECOLOR
 0fd2:eeee0000:272b:217c:1:0
 MilanoPaviaTV
 p:TELECOLOR
-0fd4:eeee0000:272b:217c:1:0
-Telecolor
-p:TELECOLOR
-0fd5:eeee0000:272b:217c:1:0
-Telereporter
-p:TELECOLOR
 0fd6:eeee0000:272b:217c:1:0
 PRIMARETE
-p:TELECOLOR
-0fd7:eeee0000:272b:217c:1:0
-Telereporter HD
 p:TELECOLOR
 0fd9:eeee0000:272b:217c:1:0
 Primarete
@@ -8095,9 +8083,6 @@ La 8
 p:TELECOLOR
 0fdd:eeee0000:272b:217c:1:0
 italia Tv Lombardia
-p:TELECOLOR
-0fde:eeee0000:272b:217c:1:0
-TELECOLOR HD
 p:TELECOLOR
 0fdf:eeee0000:272b:217c:1:0
 TRS-Evergreen
@@ -8119,6 +8104,9 @@ TELECAMPIONE
 p:TELECOLOR
 11d2:eeee0000:272b:217c:1:0
 TELE MODA
+p:TELECOLOR
+0fe0:eeee0000:272b:217c:1:0
+GALAXY TV 2
 p:TELECOLOR
 0fd2:eeee0000:231d:217c:1:0
 telePAVIA PROVVISORIO
@@ -8206,9 +8194,6 @@ Radio Radio TV
 p:MSP
 0018:eeee0000:240d:217c:1:0
 Babayaga Tv
-p:MSP
-0016:eeee0000:240d:217c:1:0
-96 Lombardia
 p:MSP
 0001:eeee0000:2821:217c:1:0
 SERVIZIO 1
