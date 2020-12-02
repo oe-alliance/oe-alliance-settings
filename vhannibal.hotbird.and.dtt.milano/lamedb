@@ -441,6 +441,9 @@ eeee0000:0144:217c
 eeee0000:791a:217c
 	t 570000000:0:5:5:3:2:4:4:2:0:0:0
 /
+eeee0000:032a:0110
+	t 786000000:0:5:5:3:2:4:4:2:0:0:0
+/
 eeee0000:0384:0110
 	t 602000000:0:5:5:3:2:4:4:2:0:0:0
 /
@@ -953,6 +956,9 @@ eeee0000:0050:217c
 /
 eeee0000:0050:217c
 	t 191500000:1:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:47d0:217c
+	t 730000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:47d0:217c
 	t 730000000:0:5:5:3:2:4:4:2:0:0:0
@@ -1771,7 +1777,7 @@ Rai Radio1 Sport
 p:RAI
 1325:00820000:33f4:013e:1:0
 JSTV 1 HD
-p:Harmonic
+p:Telespazio
 1326:00820000:33f4:013e:1:0
 JSTV 2 HD
 p:Telespazio
@@ -2025,7 +2031,7 @@ p:SkyItalia
 Fox +1
 p:SkyItalia
 0fc1:00820000:1644:fbff:1:0
-FoxCrime Bull
+FoxCrime +1
 p:SkyItalia
 2bcb:00820000:1644:fbff:1:0
 CNN Intl.
@@ -2531,6 +2537,9 @@ p:SkyItalia
 1008:00820000:1e14:fbff:25:0
 TEST5
 p:SkyItalia
+0003:00820000:02bc:013e:1:0
+Kentron TV
+p:iKO Media Group
 0004:00820000:02bc:013e:1:0
 ARMPUB TV
 p:
@@ -2571,8 +2580,8 @@ p:SkyItalia
 Primafila 14
 p:SkyItalia
 2d63:00820000:170c:fbff:1:0
-Sky Sport
-p:SkyItalia
+11900H SID 0x2d63
+p:DVB-S2 QPSK 11900H 13.0Â°E
 38e0:00820000:170c:fbff:1:0
 Primafila 3
 p:SkyItalia
@@ -2893,7 +2902,7 @@ Dorcel TV HD
 p:AB Sat
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM2 TSOIP
+p:ARC/DCM1 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -3365,6 +3374,9 @@ p:SkyItalia
 0e10:00820000:0708:00c8:1:0
 EMPTY SERVICE
 p:M-Three satcom
+0e25:00820000:0708:00c8:1:0
+Super!
+p:Persidera
 0e26:00820000:0708:00c8:1:0
 Simay Azadi SD
 p:M-Three Satcom
@@ -3405,7 +3417,7 @@ p:CANAL+
 CANAL+ SPORT 4 HD
 p:CANAL+
 12c4:00820000:2e7c:013e:1:0
-TVR
+HOME TV
 p:CANAL+
 12c8:00820000:2e7c:013e:1:0
 PLAYBOY TV HD
@@ -3738,7 +3750,7 @@ p:Cyfrowy Polsat S.A.
 Eurosport 1 HD
 p:Cyfrowy Polsat S.A.
 3e30:00820000:2ee0:013e:1:0
-PPV FEN 31
+TestPP
 p:Cyfrowy Polsat S.A.
 3e3e:00820000:2ee0:013e:1:0
 SciFi HD
@@ -3992,17 +4004,11 @@ p:SkyItalia
 2b9e:00820000:19c8:fbff:25:0
 Info2
 p:SkyItalia
-0e2a:00820000:2580:fbff:1:0
-NOVE
-p:SkyItalia
 2c34:00820000:2580:fbff:1:0
 DMAX
 p:SkyItalia
 0e3f:00820000:2580:fbff:1:0
 TV8 provvisorio
-p:SkyItalia
-0e50:00820000:2580:fbff:1:0
-DMAX+1
 p:SkyItalia
 057f:00820000:2580:fbff:1:0
 La7
@@ -4013,12 +4019,6 @@ p:SkyItalia
 2c9d:00820000:2580:fbff:1:0
 Super!
 p:SkyItalia
-05bd:00820000:2580:fbff:1:0
-Real Time +1
-p:SkyItalia
-2cc0:00820000:2580:fbff:1:0
-12635V SID 0x2cc0
-p:DVB-S QPSK 12635V 13.0Â°E
 2cca:00820000:2580:fbff:1:0
 K2
 p:SkyItalia
@@ -4037,6 +4037,18 @@ p:SkyItalia
 2cf3:00820000:2580:fbff:25:0
 Real Time HD
 p:SkyItalia
+2cc0:00820000:2580:fbff:1:0
+12635V SID 0x2cc0
+p:DVB-S QPSK 12635V 13.0Â°E
+05bd:00820000:2580:fbff:1:1
+12635V SID 0x5bd
+p:DVB-S QPSK 12635V 13.0Â°E
+0e2a:00820000:2580:fbff:1:2
+12635V SID 0xe2a
+p:DVB-S QPSK 12635V 13.0Â°E
+0e50:00820000:2580:fbff:1:3
+12635V SID 0xe50
+p:DVB-S QPSK 12635V 13.0Â°E
 2c2a:00820000:251c:fbff:1:0
 ClassTvModa
 p:SkyItalia
@@ -4078,6 +4090,9 @@ CIRA TV
 p:STN
 2335:00820000:2328:013e:1:0
 KICC TV
+p:STN
+2336:00820000:2328:013e:1:0
+PACI CONTEMPORARY CHANNEL
 p:STN
 2338:00820000:2328:013e:1:0
 SLNTV
@@ -4167,7 +4182,7 @@ p:Eutelsat
 MAKEDONIA TV
 p:NetMed
 012e:00820000:157c:013e:1:0
-EPT2
+EPT2 HD
 p:NetMed
 012f:00820000:157c:013e:1:0
 R3
@@ -4203,7 +4218,7 @@ p:NetMed
 M1_TEST3
 p:NetMed
 0142:00820000:157c:013e:1:0
-EPT1
+EPT1 HD
 p:NetMed
 0143:00820000:157c:013e:1:0
 Novasports5HD
@@ -4357,6 +4372,9 @@ RFI Persian
 p:GLOBECAST
 3359:00820000:1388:013e:2:0
 RFI Test
+p:GLOBECAST
+3330:00820000:1388:013e:1:0
+KBS World HD
 p:GLOBECAST
 0830:00820000:22c4:013e:1:0
 Equidia PRO1 HD
@@ -5049,7 +5067,7 @@ p:NetMed
 Nickelodeon
 p:NetMed
 0183:00820000:1c84:013e:1:0
-ÅÑÔ3
+ÅÑÔ3 HD
 p:NetMed
 0184:00820000:1c84:013e:1:0
 M2_TEST8
@@ -5403,8 +5421,8 @@ p:SkyItalia
 BBC Persian
 p:BBC World Service
 39d3:00820000:1fa4:013e:1:0
-Detskii Mir
-p:ARC/DCM2 TSOIP
+Detskiy Mir - TeleClub
+p:Eutelsat
 39d4:00820000:1fa4:013e:1:0
 Lubimoe Kino
 p:Eutelsat
@@ -5423,6 +5441,9 @@ p:STN
 39da:00820000:1fa4:013e:1:0
 IRAN INTERNATIONAL
 p:ABS
+39db:00820000:1fa4:013e:1:0
+Kalemeh TV
+p:iKO Media Group
 39d1:00820000:1fa4:013e:25:0
 BBC Persian HD
 p:BBC World Service
@@ -6257,9 +6278,6 @@ p:Eutelsat
 10dd:00820000:03e8:013e:1:0
 NUTA TV
 p:TVN
-10e4:00820000:03e8:013e:22:0
-NTL
-p:TVN
 10e5:00820000:03e8:013e:22:0
 TOP KIDS
 p:TVN
@@ -6295,6 +6313,9 @@ Food Network HD EMEA
 p:TVN
 10ed:00820000:03e8:013e:25:0
 Fine Living HD EMEA
+p:TVN
+10e4:00820000:03e8:013e:22:0
+TVC
 p:TVN
 44e1:00820000:0258:013e:1:0
 Kentron TV International
@@ -6729,7 +6750,7 @@ p:
 Saudi Ch for Sunnah HD
 p:
 04b3:00820000:23f0:013e:25:0
-Saudi Ch for Quran HD
+Saudi ch for Quran HD
 p:
 04b4:00820000:23f0:013e:25:0
 Al Ekhbaria HD
@@ -6893,6 +6914,9 @@ p:TELELOMBARDIA
 0061:eeee0000:791a:217c:1:0
 MONDO CALCIO
 p:Persidera
+2009:eeee0000:032a:0110:25:0
+SPORTITALIA HD
+p:
 1c17:eeee0000:0384:0110:1:0
 Sportitalia
 p:
@@ -7013,8 +7037,8 @@ p:
 000f:eeee0000:0050:217c:1:0
 France 24
 p:Canale Italia 2
-0007:eeee0000:47d0:217c:1:0
-ITALIA 141
+0010:eeee0000:47d0:217c:1:0
+FRANCE 24
 p:Canale Italia
 1c18:eeee0000:0384:0110:1:0
 PADRE PIO TV
@@ -7435,6 +7459,9 @@ ITALIA 135
 p:Canale Italia
 0011:eeee0000:47d0:217c:1:0
 ITALIA 136
+p:Canale Italia
+0007:eeee0000:47d0:217c:1:0
+ITALIA 141
 p:Canale Italia
 000e:eeee0000:47d0:217c:1:0
 ITALIA 142
