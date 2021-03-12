@@ -1476,9 +1476,6 @@ transponders
 00c00000:0438:0001
 	s 12012000:29700000:1:2:192:2:0:1:2:0:2
 /
-00c00000:000b:0085
-	s 12382000:27500000:0:3:192:2:0:1:2:0:2
-/
 00c00000:03ed:0001
 	s 11273000:22000000:0:2:192:2:0:1:2:0:2
 /
@@ -1496,6 +1493,9 @@ transponders
 /
 00c00000:0009:0085
 	s 11170000:22000000:0:3:192:2:0:1:2:0:2
+/
+00c00000:000b:0085
+	s 12382000:27500000:0:3:192:2:0:1:2:0:2
 /
 00c00000:0420:0001
 	s 10817000:22000000:1:2:192:2:0:1:2:0:2
@@ -1575,6 +1575,9 @@ transponders
 00c00000:0449:0001
 	s 12343000:30000000:0:2:192:2:0:1:2:0:2
 /
+00c00000:0008:0085
+	s 12070000:27500000:0:9:192:2:0:1:1:0:2
+/
 00a0b114:0001:0001
 	s 12564000:3617000:1:3:160:2:0
 /
@@ -1588,7 +1591,7 @@ transponders
 	s 12569000:3702000:0:5:160:2:0
 /
 00a00000:cb2b:016e
-	s 11178000:30000000:1:7:160:2:0:1:2:0:2
+	s 11178000:27500000:1:7:160:2:0:1:2:0:2
 /
 00a0316e:0065:ffff
 	s 12654000:11111000:0:2:160:2:0
@@ -1621,7 +1624,7 @@ transponders
 	s 10762000:30000000:0:7:160:2:0:1:2:0:2
 /
 00a00000:cb2c:016e
-	s 11151000:14375000:1:7:160:2:0:1:2:0:2
+	s 11139000:27500000:1:7:160:2:0:1:2:0:2
 /
 00a00000:5014:016e
 	s 10804000:29950000:0:2:160:2:0:1:2:0:2
@@ -2730,6 +2733,9 @@ transponders
 0de80000:0067:0061
 	s 12297000:45000000:0:2:-40:2:0:1:2:0:2
 /
+0dde0000:2904:055f
+	s 11138000:29950000:1:2:-50:2:0:1:2:0:2
+/
 0dde0000:0001:20fa
 	s 11509000:29500000:0:6:-50:2:0:1:2:0:2:1:50416:1
 /
@@ -2834,9 +2840,6 @@ transponders
 /
 0dde0000:0003:20fa
 	s 12648000:29500000:1:6:-50:2:0:1:2:0:2:3:121212:1
-/
-0dde0000:2904:055f
-	s 11138000:29950000:1:2:-50:2:0:1:2:0:2
 /
 0dde0000:4ee8:055f
 	s 11512000:29950000:1:2:-50:2:0:1:2:0:2
@@ -3207,27 +3210,6 @@ transponders
 0c4e0000:0002:0001
 	s 11605000:989000:0:2:-450:2:0
 /
-eeee0000:0385:0110
-	t 722000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:03ac:0110
-	t 698000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:0384:0110
-	t 706000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:0389:0110
-	t 594000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:03a2:0110
-	t 610000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:0107:217c
-	t 506000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:03b6:0110
-	t 754000000:0:5:5:3:2:4:4:2:0:0:0
-/
 eeee0000:7918:217c
 	t 658000000:0:5:5:3:2:4:4:2:0:0:0
 /
@@ -3273,11 +3255,23 @@ eeee0000:4da8:217c
 eeee0000:791a:217c
 	t 738000000:0:5:5:3:2:4:4:2:0:0:0
 /
+eeee0000:03ac:0110
+	t 698000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0384:0110
+	t 706000000:0:5:5:3:2:4:4:2:0:0:0
+/
 eeee0000:0204:001d
 	t 682000000:0:5:5:3:2:4:4:2:0:0:0
 /
+eeee0000:0107:217c
+	t 506000000:0:5:5:3:2:4:4:2:0:0:0
+/
 eeee0000:d403:20bf
 	t 618000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03b6:0110
+	t 754000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:d405:20bf
 	t 538000000:0:5:5:3:2:4:4:2:0:0:0
@@ -3288,14 +3282,23 @@ eeee0000:0200:001d
 eeee0000:0202:001d
 	t 746000000:0:5:5:3:2:4:4:2:0:0:0
 /
+eeee0000:0389:0110
+	t 594000000:0:5:5:3:2:4:4:2:0:0:0
+/
 eeee0000:4800:013e
 	t 498000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:03a2:0110
+	t 610000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0002:013e
 	t 546000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0004:013e
-	t 514000000:0:5:5:3:2:4:4:2:0:0:0
+	t 513999000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0385:0110
+	t 722000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0005:013e
 	t 626000000:0:5:5:3:2:4:4:2:0:0:0
@@ -20320,7 +20323,7 @@ TOONAMI
 p:CSAT
 2460:00c00000:0440:0001:25:0
 TF1
-p:CSAT
+p:CSAT,c:050001
 2461:00c00000:0440:0001:25:0
 EUROSPORT 1
 p:CSAT
@@ -21767,30 +21770,6 @@ p:SKY
 0093:00c00000:0002:0085:25:0
 Sky One HD
 p:SKY
-0110:00c00000:0002:0085:211:0
-Sky Sport Bundesliga 3
-p:
-0111:00c00000:0002:0085:211:0
-Sky Sport 4
-p:
-011a:00c00000:0002:0085:211:0
-Sky Sport Bundesliga 4
-p:
-011b:00c00000:0002:0085:211:0
-Sky Sport 5
-p:
-014c:00c00000:0002:0085:211:0
-Sky Sport Bundesliga 9
-p:
-014d:00c00000:0002:0085:211:0
-Sky Sport 10
-p:
-0150:00c00000:0002:0085:211:0
-Sky Sport Austria 3
-p:SKY
-0320:00c00000:000c:0085:22:0
-STEST1
-p:SKY
 0321:00c00000:000c:0085:22:0
 STEST2
 p:SKY
@@ -21899,6 +21878,9 @@ p:SKY
 001c:00c00000:0003:0085:22:0
 Boomerang
 p:SKY
+0011:00c00000:0003:0085:25:0
+Sky Sport F1 HD
+p:
 017d:00c00000:0003:0085:25:0
 Sky Sport 12 HD
 p:SKY
@@ -21914,17 +21896,17 @@ p:
 0107:00c00000:0003:0085:211:0
 Sky Sport 3
 p:
-0124:00c00000:0003:0085:211:0
-Sky Sport Bundesliga 5
+0110:00c00000:0003:0085:211:0
+Sky Sport Bundesliga 3
 p:
-0125:00c00000:0003:0085:211:0
-Sky Sport 6
+0111:00c00000:0003:0085:211:0
+Sky Sport 4
 p:
-012e:00c00000:0003:0085:211:0
-Sky Sport Bundesliga 6
+011a:00c00000:0003:0085:211:0
+Sky Sport Bundesliga 4
 p:
-012f:00c00000:0003:0085:211:0
-Sky Sport 7
+011b:00c00000:0003:0085:211:0
+Sky Sport 5
 p:
 0138:00c00000:0003:0085:211:0
 Sky Sport Bundesliga 7
@@ -21932,24 +21914,6 @@ p:
 0139:00c00000:0003:0085:211:0
 Sky Sport 8
 p:
-0142:00c00000:0003:0085:211:0
-Sky Sport Bundesliga 8
-p:
-0143:00c00000:0003:0085:211:0
-Sky Sport 9
-p:
-0145:00c00000:0003:0085:211:0
-Sky Sport Austria 2
-p:SKY
-00fc:00c00000:0003:0085:211:0
-Sky Sport Bundesliga 10
-p:
-00fd:00c00000:0003:0085:211:0
-Sky Sport 11
-p:
-00ff:00c00000:0003:0085:211:0
-Sky Sport Austria 4
-p:SKY
 2261:00c00000:0438:0001:25:0
 CANAL+
 p:CSAT
@@ -21992,57 +21956,6 @@ p:CSAT
 226e:00c00000:0438:0001:25:0
 OCS MAX
 p:CSAT
-0201:00c00000:000b:0085:22:0
-Blue Movie
-p:SKY
-0192:00c00000:000b:0085:22:0
-Crime + Investigation
-p:SKY
-0194:00c00000:000b:0085:22:0
-Cartoon Network
-p:SKY
-00a8:00c00000:000b:0085:22:0
-Motorvision TV
-p:SKY
-0101:00c00000:000b:0085:25:0
-Sky Sport Bundesliga 10 HD
-p:SKY
-0102:00c00000:000b:0085:25:0
-Sky Sport 11 HD
-p:SKY
-0103:00c00000:000b:0085:25:0
-Sky Sport Austria 4 HD
-p:SKY
-0104:00c00000:000b:0085:25:0
-Eurosport360HD 9
-p:SKY
-006d:00c00000:000b:0085:25:0
-Eurosport 2 HD
-p:SKY
-0071:00c00000:000b:0085:25:0
-History HD
-p:SKY
-0080:00c00000:000b:0085:25:0
-E! Entertainm. HD
-p:SKY
-0087:00c00000:000b:0085:25:0
-Sky Cinema Premieren +24 HD
-p:SKY
-0187:00c00000:000b:0085:25:0
-Sky Sport 14 HD
-p:SKY
-0088:00c00000:000b:0085:25:0
-TNT Comedy HD
-p:SKY
-0159:00c00000:000b:0085:211:0
-Blue Movie 1
-p:
-0163:00c00000:000b:0085:211:0
-Blue Movie 2
-p:
-016d:00c00000:000b:0085:211:0
-Blue Movie 3
-p:
 3401:00c00000:03ed:0001:22:0
 krone.tv
 p:-
@@ -22108,18 +22021,6 @@ p:SKY
 p:SKY
 010e:00c00000:0006:0085:25:0
 Eurosport360HD 1
-p:SKY
-0147:00c00000:0006:0085:25:0
-Sky Sport Bundesliga 8 HD
-p:SKY
-0148:00c00000:0006:0085:25:0
-Sky Sport 9 HD
-p:SKY
-0149:00c00000:0006:0085:25:0
-Sky Sport Austria 2 HD
-p:SKY
-014a:00c00000:0006:0085:25:0
-Eurosport360HD 7
 p:SKY
 0076:00c00000:0006:0085:25:0
 Nat Geo Wild HD
@@ -22249,6 +22150,45 @@ p:SKY
 p:SKY
 008f:00c00000:0009:0085:25:0
 Sky Sport Austria 1 HD
+p:SKY
+0192:00c00000:000b:0085:22:0
+Crime + Investigation
+p:SKY
+0194:00c00000:000b:0085:22:0
+Cartoon Network
+p:SKY
+00a8:00c00000:000b:0085:22:0
+Motorvision TV
+p:SKY
+0101:00c00000:000b:0085:25:0
+Sky Sport Bundesliga 10 HD
+p:SKY
+0102:00c00000:000b:0085:25:0
+Sky Sport 11 HD
+p:SKY
+0103:00c00000:000b:0085:25:0
+Sky Sport Austria 4 HD
+p:SKY
+0104:00c00000:000b:0085:25:0
+Eurosport360HD 9
+p:SKY
+006d:00c00000:000b:0085:25:0
+Eurosport 2 HD
+p:SKY
+0071:00c00000:000b:0085:25:0
+History HD
+p:SKY
+0080:00c00000:000b:0085:25:0
+E! Entertainm. HD
+p:SKY
+0087:00c00000:000b:0085:25:0
+Sky Cinema Premieren +24 HD
+p:SKY
+0187:00c00000:000b:0085:25:0
+Sky Sport 14 HD
+p:SKY
+0088:00c00000:000b:0085:25:0
+TNT Comedy HD
 p:SKY
 7504:00c00000:0420:0001:25:0
 FOX HD
@@ -22402,7 +22342,7 @@ M.ESTRENOSHD
 p:Movistar
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD,c:050001
+p:ARD
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -22799,6 +22739,60 @@ p:CSAT
 07da:00c00000:0449:0001:31:0
 QVC ZWEI UHD
 p:SES ASTRA
+00fc:00c00000:0008:0085:211:0
+Sky Sport Bundesliga 10
+p:
+00fd:00c00000:0008:0085:211:1
+Sky Sport 11
+p:
+00ff:00c00000:0008:0085:211:2
+Sky Sport Austria 4
+p:SKY
+0124:00c00000:0008:0085:211:3
+Sky Sport Bundesliga 5
+p:
+0125:00c00000:0008:0085:211:4
+Sky Sport 6
+p:
+012e:00c00000:0008:0085:211:5
+Sky Sport Bundesliga 6
+p:
+012f:00c00000:0008:0085:211:6
+Sky Sport 7
+p:
+0142:00c00000:0008:0085:211:7
+Sky Sport Bundesliga 8
+p:
+0143:00c00000:0008:0085:211:8
+Sky Sport 9
+p:
+0145:00c00000:0008:0085:211:9
+Sky Sport Austria 2
+p:SKY
+0147:00c00000:0008:0085:25:10
+Sky Sport Bundesliga 8 HD
+p:SKY
+0148:00c00000:0008:0085:25:11
+Sky Sport 9 HD
+p:SKY
+0149:00c00000:0008:0085:25:12
+Sky Sport Austria 2 HD
+p:SKY
+014a:00c00000:0008:0085:25:13
+Eurosport360HD 7
+p:SKY
+014c:00c00000:0008:0085:211:14
+Sky Sport Bundesliga 9
+p:
+014d:00c00000:0008:0085:211:15
+Sky Sport 10
+p:
+0150:00c00000:0008:0085:211:16
+Sky Sport Austria 3
+p:SKY
+0320:00c00000:0008:0085:22:17
+STEST1
+p:SKY
 0001:00a0b114:0001:0001:1:0
 Kanal D
 p:DoganMedia
@@ -22840,12 +22834,9 @@ SIC INTERNACIONAL
 p:SIC INTERNACIONAL
 0001:00a00000:cb2b:016e:1:0
 Pink Plus
-p:Pink
+p:Pink,c:050001
 0002:00a00000:cb2b:016e:1:0
 Pink Extra
-p:Pink
-0006:00a00000:cb2b:016e:1:0
-Pink
 p:Pink
 0007:00a00000:cb2b:016e:1:0
 Pink Action
@@ -22858,9 +22849,6 @@ Pink Film
 p:Pink
 000a:00a00000:cb2b:016e:1:0
 Pink Music
-p:Pink
-000b:00a00000:cb2b:016e:1:0
-Vesti
 p:Pink
 000c:00a00000:cb2b:016e:1:0
 Pink Family
@@ -22888,9 +22876,6 @@ Pink Western
 p:Pink
 005b:00a00000:cb2b:016e:1:0
 Pink Classic
-p:Pink
-005c:00a00000:cb2b:016e:1:0
-Pink Style
 p:Pink
 005d:00a00000:cb2b:016e:1:0
 Zadruga Live 4
@@ -23058,7 +23043,7 @@ p:Total TV
 Prva Kick
 p:Total TV
 0308:00a00000:9d08:016e:1:0
-Test T
+TLC HD
 p:Total TV,c:050001
 030a:00a00000:9d08:016e:1:0
 Vavoom
@@ -23104,6 +23089,9 @@ Nat Geographic HD
 p:Total TV
 02fa:00a00000:9d08:016e:1:0
 Fox Movies Slo
+p:Total TV
+02fb:00a00000:9d08:016e:1:0
+Nat Geographic HD
 p:Total TV
 02fc:00a00000:9d08:016e:1:0
 HGTV HD
@@ -23297,9 +23285,12 @@ p:DigitALB
 05dc:00a00000:4f4c:016e:25:0
 Film Aksion HD
 p:DigitALB
+0033:00a00000:cb2c:016e:1:0
+Vesti
+p:pink
 0034:00a00000:cb2c:016e:1:0
 Pink Thriller
-p:pink
+p:pink,c:050001
 0035:00a00000:cb2c:016e:1:0
 Pink Crime&Mystery
 p:pink
@@ -23344,6 +23335,12 @@ Pink Horror
 p:pink
 0044:00a00000:cb2c:016e:1:0
 Pink Folk 2
+p:pink
+0048:00a00000:cb2c:016e:1:0
+Pink
+p:pink
+005c:00a00000:cb2c:016e:1:0
+Pink Style
 p:pink
 0834:00a00000:5014:016e:1:0
 Junior TV
@@ -39071,6 +39068,39 @@ p:SLM
 0006:0de80000:0067:0061:25:0
 OCE HD
 p:SLM
+0727:0dde0000:2904:055f:22:0
+LABEL TV
+p:EUTELSAT
+071c:0dde0000:2904:055f:25:0
+RMC SPORT 1
+p:EUTELSAT
+071d:0dde0000:2904:055f:25:0
+RMC SPORT 4
+p:EUTELSAT
+071e:0dde0000:2904:055f:25:0
+BFM BUSINESS
+p:EUTELSAT
+071f:0dde0000:2904:055f:25:0
+BFM PARIS
+p:EUTELSAT
+0721:0dde0000:2904:055f:25:0
+RMC SPORT 2
+p:EUTELSAT
+0722:0dde0000:2904:055f:25:0
+RMC SPORT 3
+p:EUTELSAT
+0723:0dde0000:2904:055f:25:0
+BFM LYON
+p:EUTELSAT
+0724:0dde0000:2904:055f:25:0
+I24 NEWS
+p:EUTELSAT
+0725:0dde0000:2904:055f:25:0
+01 TV
+p:EUTELSAT
+0728:0dde0000:2904:055f:25:0
+RT FRANCE
+p:EUTELSAT
 0101:0dde0000:0001:20fa:1:0
 France 2
 p:GR1 A
@@ -40136,39 +40166,6 @@ p:CNH
 030a:0dde0000:0003:20fa:25:0
 CANAL+
 p:CNH
-0727:0dde0000:2904:055f:22:0
-LABEL TV
-p:EUTELSAT
-071c:0dde0000:2904:055f:25:0
-RMC SPORT 1
-p:EUTELSAT
-071d:0dde0000:2904:055f:25:0
-RMC SPORT 4
-p:EUTELSAT
-071e:0dde0000:2904:055f:25:0
-BFM BUSINESS
-p:EUTELSAT
-071f:0dde0000:2904:055f:25:0
-BFM PARIS
-p:EUTELSAT
-0721:0dde0000:2904:055f:25:0
-RMC SPORT 2
-p:EUTELSAT
-0722:0dde0000:2904:055f:25:0
-RMC SPORT 3
-p:EUTELSAT
-0723:0dde0000:2904:055f:25:0
-BFM LYON
-p:EUTELSAT
-0724:0dde0000:2904:055f:25:0
-I24 NEWS
-p:EUTELSAT
-0725:0dde0000:2904:055f:25:0
-01 TV
-p:EUTELSAT
-0728:0dde0000:2904:055f:25:0
-RT FRANCE
-p:EUTELSAT
 00ca:0dde0000:4ee8:055f:22:0
 MANGAS
 p:EUTELSAT
@@ -40495,6 +40492,9 @@ Hooosh
 p:ViewMedia
 003a:0dca2a3f:0001:ffff:1:0
 Anointing TV
+p:ViewMedia
+003c:0dca2a3f:0001:ffff:1:0
+Nayanwa Alaan
 p:ViewMedia
 0001:0dca0000:0003:0003:1:0
 Qatar 2
@@ -41234,9 +41234,6 @@ p:EUTELSAT MENA
 0263:0dca0000:0c21:006e:1:0
 ADEN TV
 p:EUTELSAT MENA
-00c9:0dca0000:0c21:006e:1:0
-HALABA TV
-p:EUTELSAT MENA
 00ca:0dca0000:0c21:006e:1:0
 ALOMDAH TV
 p:EUTELSAT MENA
@@ -41246,20 +41243,11 @@ p:EUTELSAT MENA
 00cc:0dca0000:0c21:006e:1:0
 SMTV
 p:EUTELSAT MENA
-00cd:0dca0000:0c21:006e:1:0
-7BESHA
-p:EUTELSAT MENA
-00ce:0dca0000:0c21:006e:1:0
-CIMA ALIBABA
-p:EUTELSAT MENA
 00cf:0dca0000:0c21:006e:1:0
 Shabab TV
 p:EUTELSAT MENA
 00d5:0dca0000:0c21:006e:1:0
 Melody Aflam
-p:EUTELSAT MENA
-00da:0dca0000:0c21:006e:1:0
-TOKTOK CIMA
 p:EUTELSAT MENA
 00dc:0dca0000:0c21:006e:1:0
 STAR CINEMA 3
@@ -45875,267 +45863,6 @@ p:Harmonic
 0034:0c4e0000:0002:0001:1:0
 IS8-20S
 p:Harmonic
-008c:eeee0000:0385:0110:1:0
-Sky Atlantic
-p:
-008d:eeee0000:0385:0110:1:0
-FOX
-p:
-0091:eeee0000:0385:0110:1:0
-Cielo
-p:
-0092:eeee0000:0385:0110:1:0
-Sky TG24
-p:
-0093:eeee0000:0385:0110:1:0
-TV8
-p:
-0094:eeee0000:0385:0110:1:0
-TV8
-p:
-0095:eeee0000:0385:0110:1:0
-TV8
-p:
-0096:eeee0000:0385:0110:1:0
-TV8 On Demand
-p:
-0097:eeee0000:0385:0110:1:0
-TV8 News On Demand
-p:
-00ac:eeee0000:0385:0110:1:0
-Premium Stories
-p:
-00ad:eeee0000:0385:0110:1:0
-Premium Crime
-p:
-00c5:eeee0000:0385:0110:1:0
-Premium Cinema 3
-p:
-00c1:eeee0000:0385:0110:25:0
-Sky Sport Serie A HD
-p:
-1009:eeee0000:03ac:0110:1:0
-Mediaset Play
-p:
-1067:eeee0000:03ac:0110:1:0
-Infinity
-p:
-0fa4:eeee0000:03ac:0110:1:0
-Rete4
-p:
-0fa5:eeee0000:03ac:0110:1:0
-Canale5
-p:
-0fa6:eeee0000:03ac:0110:1:0
-Italia1
-p:
-0fad:eeee0000:03ac:0110:1:0
-La 5
-p:
-0fae:eeee0000:03ac:0110:1:0
-TGCOM24
-p:
-0faf:eeee0000:03ac:0110:1:0
-Iris
-p:
-0fb8:eeee0000:03ac:0110:1:0
-Rete4
-p:
-0fb9:eeee0000:03ac:0110:1:0
-Canale5
-p:
-0fba:eeee0000:03ac:0110:1:0
-Italia1
-p:
-1011:eeee0000:03ac:0110:25:0
-La 5
-p:
-1012:eeee0000:03ac:0110:25:0
-TGCOM24
-p:
-1013:eeee0000:03ac:0110:25:0
-Iris
-p:
-1068:eeee0000:03ac:0110:31:0
-Test HEVC Main10
-p:
-1c0c:eeee0000:0384:0110:1:0
-TV 243
-p:
-1c0d:eeee0000:0384:0110:1:0
-DONNASHOPPING
-p:
-1c16:eeee0000:0384:0110:1:0
-TV 153
-p:
-1c17:eeee0000:0384:0110:1:0
-Sportitalia
-p:
-1c18:eeee0000:0384:0110:1:0
-PADRE PIO TV
-p:
-1bd2:eeee0000:0384:0110:1:0
-Premium Cinema 1
-p:
-1bd3:eeee0000:0384:0110:1:0
-Premium Cinema 2
-p:
-1bbe:eeee0000:0384:0110:2:0
-Radio R101
-p:
-1bbf:eeee0000:0384:0110:2:0
-RADIO 105
-p:
-1bc0:eeee0000:0384:0110:2:0
-VIRGIN RADIO
-p:
-1bc1:eeee0000:0384:0110:2:0
-Radio Monte Carlo
-p:
-1b8b:eeee0000:0384:0110:22:0
-RADIO 105
-p:
-1b8c:eeee0000:0384:0110:22:0
-R101 TV
-p:
-1b8d:eeee0000:0384:0110:22:0
-VIRGIN RADIO
-p:
-1f4f:eeee0000:0384:0110:130:0
-HUMAX DOWNLOAD SVC
-p:
-0848:eeee0000:0389:0110:1:0
-20 Mediaset
-p:
-0864:eeee0000:0389:0110:1:0
-Food Network
-p:
-0865:eeee0000:0389:0110:1:0
-QVC
-p:
-0866:eeee0000:0389:0110:1:0
-TOPcrime
-p:
-0867:eeee0000:0389:0110:1:0
-Focus
-p:
-0868:eeee0000:0389:0110:1:0
-Cine34
-p:
-0091:eeee0000:0389:0110:1:0
-Boing
-p:
-0093:eeee0000:0389:0110:1:0
-Cartoonito
-p:
-07e3:eeee0000:0389:0110:1:0
-20 Mediaset
-p:
-07e4:eeee0000:0389:0110:1:0
-20 Mediaset
-p:
-0849:eeee0000:0389:0110:25:0
-TOPcrime
-p:
-084a:eeee0000:0389:0110:25:0
-Focus
-p:
-084b:eeee0000:0389:0110:25:0
-Cine34
-p:
-0c5e:eeee0000:03a2:0110:1:0
-Mediaset Italia Due
-p:
-0bef:eeee0000:03a2:0110:1:0
-Mediaset Extra
-p:
-0bfa:eeee0000:03a2:0110:1:0
-Mediaset Italia Due
-p:
-0c20:eeee0000:03a2:0110:25:0
-Rete4 HD
-p:
-0c21:eeee0000:03a2:0110:25:0
-Canale5 HD
-p:
-0c22:eeee0000:03a2:0110:25:0
-Italia1 HD
-p:
-0bbc:eeee0000:03a2:0110:25:0
-Rete4 HD
-p:
-0bbd:eeee0000:03a2:0110:25:0
-Canale5 HD
-p:
-0bbe:eeee0000:03a2:0110:25:0
-Italia1 HD
-p:
-0316:eeee0000:0107:217c:1:0
-LA7 on demand
-p:
-0317:eeee0000:0107:217c:1:0
-LA7d on demand
-p:
-02c7:eeee0000:0107:217c:1:0
-LA7
-p:
-02c8:eeee0000:0107:217c:1:0
-LA7d
-p:
-02d1:eeee0000:0107:217c:1:0
-LA7
-p:
-02d2:eeee0000:0107:217c:1:0
-LA7d
-p:
-02f9:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02fa:eeee0000:0107:217c:1:0
-LA7 Servizi on demand
-p:
-02fb:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02fc:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02fd:eeee0000:0107:217c:1:0
-LA7 TEST
-p:
-02ef:eeee0000:0107:217c:25:0
-LA7 HD
-p:
-02f0:eeee0000:0107:217c:25:0
-LA7d HD
-p:
-1419:eeee0000:03b6:0110:1:0
-Sky Sport Serie A
-p:
-141a:eeee0000:03b6:0110:1:0
-Sky Sport
-p:
-141b:eeee0000:03b6:0110:1:0
-Sky Sport
-p:
-141c:eeee0000:03b6:0110:1:0
-Premium Action
-p:
-1436:eeee0000:03b6:0110:1:0
-Sky Sport
-p:
-1439:eeee0000:03b6:0110:1:0
-Sky Sport Uno
-p:
-143b:eeee0000:03b6:0110:1:0
-Sky Sport 24
-p:
-143c:eeee0000:03b6:0110:1:0
-Sky Uno
-p:
-143a:eeee0000:03b6:0110:25:0
-Sky Sport Uno HD
-p:
 0001:eeee0000:7918:217c:1:0
 NOVE
 p:Persidera
@@ -46844,6 +46571,96 @@ p:Persidera
 0070:eeee0000:791a:217c:1:0
 Pianeta Tv
 p:Persidera
+1009:eeee0000:03ac:0110:1:0
+Mediaset Play
+p:
+1067:eeee0000:03ac:0110:1:0
+Infinity
+p:
+0fa4:eeee0000:03ac:0110:1:0
+Rete4
+p:
+0fa5:eeee0000:03ac:0110:1:0
+Canale5
+p:
+0fa6:eeee0000:03ac:0110:1:0
+Italia1
+p:
+0fad:eeee0000:03ac:0110:1:0
+La 5
+p:
+0fae:eeee0000:03ac:0110:1:0
+TGCOM24
+p:
+0faf:eeee0000:03ac:0110:1:0
+Iris
+p:
+0fb8:eeee0000:03ac:0110:1:0
+Rete4
+p:
+0fb9:eeee0000:03ac:0110:1:0
+Canale5
+p:
+0fba:eeee0000:03ac:0110:1:0
+Italia1
+p:
+1011:eeee0000:03ac:0110:25:0
+La 5
+p:
+1012:eeee0000:03ac:0110:25:0
+TGCOM24
+p:
+1013:eeee0000:03ac:0110:25:0
+Iris
+p:
+1068:eeee0000:03ac:0110:31:0
+Test HEVC Main10
+p:
+1c0c:eeee0000:0384:0110:1:0
+TV 243
+p:
+1c0d:eeee0000:0384:0110:1:0
+DONNASHOPPING
+p:
+1c16:eeee0000:0384:0110:1:0
+TV 153
+p:
+1c17:eeee0000:0384:0110:1:0
+Sportitalia
+p:
+1c18:eeee0000:0384:0110:1:0
+PADRE PIO TV
+p:
+1bd2:eeee0000:0384:0110:1:0
+Premium Cinema 1
+p:
+1bd3:eeee0000:0384:0110:1:0
+Premium Cinema 2
+p:
+1bbe:eeee0000:0384:0110:2:0
+Radio R101
+p:
+1bbf:eeee0000:0384:0110:2:0
+RADIO 105
+p:
+1bc0:eeee0000:0384:0110:2:0
+VIRGIN RADIO
+p:
+1bc1:eeee0000:0384:0110:2:0
+Radio Monte Carlo
+p:
+1b8b:eeee0000:0384:0110:22:0
+RADIO 105
+p:
+1b8c:eeee0000:0384:0110:22:0
+R101 TV
+p:
+1b8d:eeee0000:0384:0110:22:0
+VIRGIN RADIO
+p:
+1f4f:eeee0000:0384:0110:130:0
+HUMAX DOWNLOAD SVC
+p:
 0010:eeee0000:0204:001d:1:0
 GIALLO
 p:Persidera
@@ -46895,6 +46712,45 @@ p:Persidera
 00dc:eeee0000:0204:001d:25:0
 RADIOFRECCIA HD
 p:Persidera
+0316:eeee0000:0107:217c:1:0
+LA7 on demand
+p:
+0317:eeee0000:0107:217c:1:0
+LA7d on demand
+p:
+02c7:eeee0000:0107:217c:1:0
+LA7
+p:
+02c8:eeee0000:0107:217c:1:0
+LA7d
+p:
+02d1:eeee0000:0107:217c:1:0
+LA7
+p:
+02d2:eeee0000:0107:217c:1:0
+LA7d
+p:
+02f9:eeee0000:0107:217c:1:0
+LA7 TEST
+p:
+02fa:eeee0000:0107:217c:1:0
+LA7 Servizi on demand
+p:
+02fb:eeee0000:0107:217c:1:0
+LA7 TEST
+p:
+02fc:eeee0000:0107:217c:1:0
+LA7 TEST
+p:
+02fd:eeee0000:0107:217c:1:0
+LA7 TEST
+p:
+02ef:eeee0000:0107:217c:25:0
+LA7 HD
+p:
+02f0:eeee0000:0107:217c:25:0
+LA7d HD
+p:
 1518:eeee0000:d403:20bf:1:0
 Arenasport 1
 p:OIV
@@ -46988,6 +46844,33 @@ p:OIV
 13ee:eeee0000:d403:20bf:1:0
 Laudato TV
 p:OIV
+1419:eeee0000:03b6:0110:1:0
+Sky Sport Serie A
+p:
+141a:eeee0000:03b6:0110:1:0
+Sky Sport
+p:
+141b:eeee0000:03b6:0110:1:0
+Sky Sport
+p:
+141c:eeee0000:03b6:0110:1:0
+Premium Action
+p:
+1436:eeee0000:03b6:0110:1:0
+Sky Sport
+p:
+1439:eeee0000:03b6:0110:1:0
+Sky Sport Uno
+p:
+143b:eeee0000:03b6:0110:1:0
+Sky Sport 24
+p:
+143c:eeee0000:03b6:0110:1:0
+Sky Uno
+p:
+143a:eeee0000:03b6:0110:25:0
+Sky Sport Uno HD
+p:
 0c1c:eeee0000:d405:20bf:1:0
 EVOtv info
 p:OIV
@@ -47159,6 +47042,45 @@ p:Persidera
 0091:eeee0000:0202:001d:25:0
 RDS Social TV
 p:Persidera
+0848:eeee0000:0389:0110:1:0
+20 Mediaset
+p:
+0864:eeee0000:0389:0110:1:0
+Food Network
+p:
+0865:eeee0000:0389:0110:1:0
+QVC
+p:
+0866:eeee0000:0389:0110:1:0
+TOPcrime
+p:
+0867:eeee0000:0389:0110:1:0
+Focus
+p:
+0868:eeee0000:0389:0110:1:0
+Cine34
+p:
+0091:eeee0000:0389:0110:1:0
+Boing
+p:
+0093:eeee0000:0389:0110:1:0
+Cartoonito
+p:
+07e3:eeee0000:0389:0110:1:0
+20 Mediaset
+p:
+07e4:eeee0000:0389:0110:1:0
+20 Mediaset
+p:
+0849:eeee0000:0389:0110:25:0
+TOPcrime
+p:
+084a:eeee0000:0389:0110:25:0
+Focus
+p:
+084b:eeee0000:0389:0110:25:0
+Cine34
+p:
 0d49:eeee0000:4800:013e:1:0
 Rai 1
 p:Rai
@@ -47183,6 +47105,33 @@ p:Rai
 0d52:eeee0000:4800:013e:31:0
 Test HEVC main10
 p:Rai
+0c5e:eeee0000:03a2:0110:1:0
+Mediaset Italia Due
+p:
+0bef:eeee0000:03a2:0110:1:0
+Mediaset Extra
+p:
+0bfa:eeee0000:03a2:0110:1:0
+Mediaset Italia Due
+p:
+0c20:eeee0000:03a2:0110:25:0
+Rete4 HD
+p:
+0c21:eeee0000:03a2:0110:25:0
+Canale5 HD
+p:
+0c22:eeee0000:03a2:0110:25:0
+Italia1 HD
+p:
+0bbc:eeee0000:03a2:0110:25:0
+Rete4 HD
+p:
+0bbd:eeee0000:03a2:0110:25:0
+Canale5 HD
+p:
+0bbe:eeee0000:03a2:0110:25:0
+Italia1 HD
+p:
 2172:eeee0000:0002:013e:1:0
 Rai Sport
 p:Rai
@@ -47239,7 +47188,46 @@ Rai Movie
 p:RAI
 218c:eeee0000:0004:013e:1:0
 Rai 1 HD
-p:Rai
+p:Rai,c:050001
+008c:eeee0000:0385:0110:1:0
+Sky Atlantic
+p:
+008d:eeee0000:0385:0110:1:0
+FOX
+p:
+0091:eeee0000:0385:0110:1:0
+Cielo
+p:
+0092:eeee0000:0385:0110:1:0
+Sky TG24
+p:
+0093:eeee0000:0385:0110:1:0
+TV8
+p:
+0094:eeee0000:0385:0110:1:0
+TV8
+p:
+0095:eeee0000:0385:0110:1:0
+TV8
+p:
+0096:eeee0000:0385:0110:1:0
+TV8 On Demand
+p:
+0097:eeee0000:0385:0110:1:0
+TV8 News On Demand
+p:
+00ac:eeee0000:0385:0110:1:0
+Premium Stories
+p:
+00ad:eeee0000:0385:0110:1:0
+Premium Crime
+p:
+00c5:eeee0000:0385:0110:1:0
+Premium Cinema 3
+p:
+00c1:eeee0000:0385:0110:25:0
+Sky Sport Serie A HD
+p:
 2190:eeee0000:0005:013e:1:0
 Rai 2 HD
 p:Rai
