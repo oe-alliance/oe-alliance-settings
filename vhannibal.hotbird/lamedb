@@ -168,11 +168,11 @@ transponders
 00820000:1c84:013e
 	s 12169000:27500000:0:3:130:2:0:1:2:0:2
 /
-00820000:3264:013e
-	s 11096000:30000000:0:3:130:2:0:1:2:0:2
-/
 00820000:1d4c:fbff
 	s 12206000:29900000:0:4:130:2:0:1:1:0:2
+/
+00820000:3264:013e
+	s 11096000:30000000:0:3:130:2:0:1:2:0:2
 /
 00820000:3c28:013e
 	s 11585000:27500000:1:4:130:2:0:1:2:0:2
@@ -404,9 +404,6 @@ p:SkyItalia
 0f71:00820000:2198:fbff:25:0
 Primafila 4 HD
 p:SkyItalia
-10a8:00820000:2198:fbff:25:0
-Roma TV
-p:SkyItalia
 0f5a:00820000:2198:fbff:130:0
 Calcio1Magaz
 p:SkyItalia
@@ -451,9 +448,6 @@ History +1
 p:SkyItalia
 0fda:00820000:1af4:fbff:1:0
 NationalGeo +1
-p:SkyItalia
-3be3:00820000:1af4:fbff:1:0
-Torino Channel
 p:SkyItalia
 0deb:00820000:1af4:fbff:1:0
 Match Music
@@ -1214,9 +1208,6 @@ p:SkyItalia
 3c07:00820000:1a2c:fbff:1:0
 Boomerang
 p:SkyItalia
-2c08:00820000:1a2c:fbff:1:0
-Wimbledon 2
-p:SkyItalia
 2e17:00820000:1a2c:fbff:1:0
 IEPG Data
 p:SkyItalia
@@ -1261,6 +1252,9 @@ Sky Cinema Comedy
 p:SkyItalia
 2dcf:00820000:1a2c:fbff:1:0
 Sky Cinema Drama
+p:SkyItalia
+2bd1:00820000:1a2c:fbff:1:0
+Sky Sport
 p:SkyItalia
 2dd4:00820000:1a2c:fbff:1:0
 Sky Cinema Due +24
@@ -1378,6 +1372,9 @@ CANAL+ PREMIUM HD
 p:CANAL+
 32f8:00820000:0190:013e:1:0
 11278V SID 0x32f8
+p:DVB-S2 8PSK 11278V 13.0Â°E
+32f9:00820000:0190:013e:1:0
+11278V SID 0x32f9
 p:DVB-S2 8PSK 11278V 13.0Â°E
 32fc:00820000:0190:013e:1:0
 CANAL+ SPORT HD
@@ -1543,7 +1540,7 @@ MTV Lebanon
 p:
 421c:00820000:2f44:013e:22:0
 UATV
-p:COSMONOVA LLC
+p:Cosmonova LLC
 4221:00820000:2f44:013e:22:0
 Blue Hustler
 p:M7 Group
@@ -1808,6 +1805,9 @@ p:Telespazio
 02c4:00820000:1b58:013e:1:0
 Al Jazeera
 p:Telespazio
+02c9:00820000:1b58:013e:1:0
+RTP International
+p:Telespazio
 02d3:00820000:1b58:013e:1:0
 Sender Neu Jerusalem
 p:Telespazio
@@ -1818,13 +1818,19 @@ p:Telespazio
 El Sharq
 p:Telespazio
 02d8:00820000:1b58:013e:1:0
-Al Magharibia TV
+Al Magharibia
 p:Telespazio
 02df:00820000:1b58:013e:1:0
 AL-MAYADEEN
 p:Telespazio
 0300:00820000:1b58:013e:2:0
 Discoradio
+p:Telespazio
+02ca:00820000:1b58:013e:2:0
+RDP Int
+p:Telespazio
+02cb:00820000:1b58:013e:2:0
+Antena1
 p:Telespazio
 02db:00820000:1b58:013e:2:0
 Radio Mariam Armenia
@@ -2013,7 +2019,7 @@ p:ABS
 ER24
 p:M-Three Satcom
 01f7:00820000:0384:013e:1:0
-Well TV
+WellTV
 p:M-Three Satcom
 01f8:00820000:0384:013e:1:0
 NASA TV HD
@@ -2041,13 +2047,13 @@ RADIONORBA TV
 p:Telenorba
 0520:00820000:3d54:013e:1:0
 Yes TV
-p:M-threee Satcom
+p:M-Three Satcom
 0530:00820000:3d54:013e:1:0
 People TV
 p:PEOPLETV-RETE7
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-ThreeSatcom Srl
+p:M-Three Satcom Srl
 0531:00820000:3d54:013e:22:0
 Radio Radio TV
 p:M-Three Satcom Srl
@@ -2077,7 +2083,7 @@ Paramount Network HD
 p:M-Three Satcom Srl
 052d:00820000:3d54:013e:25:0
 Spike HD
-p:M-Three Satcom Srl
+p:M-Three satcom Srl
 052e:00820000:3d54:013e:25:0
 VH1 HD
 p:M-Three Satcom Srl
@@ -2344,6 +2350,12 @@ AL Arabia HD
 p:
 252c:00820000:13ef:013e:1:0
 Sky News Arabia
+p:
+012d:00820000:13ef:013e:1:0
+AD Sport 3 HD
+p:
+012e:00820000:13ef:013e:1:0
+AD Sport 4 HD
 p:
 252f:00820000:13ef:013e:1:0
 Asharq News Channel HD
@@ -3252,7 +3264,7 @@ p:KABELIO.CH
 Kabelio BBC Two HD
 p:KABELIO.CH
 375c:00820000:06a4:013e:1:0
-Kabelio itv one HD
+Kabelio ITV HD
 p:KABELIO.CH
 375d:00820000:06a4:013e:1:0
 Kabelio BBC 4-CBBCs
@@ -3284,6 +3296,15 @@ p:KABELIO.CH
 36e5:00820000:06a4:013e:1:0
 Kabelio INFO
 p:KABELIO.CH
+044c:00820000:238c:013e:1:0
+FashionTV L'Original
+p:
+044d:00820000:238c:013e:1:0
+Fashion TV HD
+p:
+044e:00820000:238c:013e:1:0
+FTV UHD
+p:1
 044f:00820000:238c:013e:1:0
 Love Nature 4K
 p:iKO Media Group
@@ -3317,8 +3338,11 @@ p:SkyItalia
 1c50:00820000:2008:fbff:25:0
 Sky Sport Football HD
 p:SkyItalia
-0f7a:00820000:2008:fbff:25:0
-Wimbledon 2 HD
+1089:00820000:2008:fbff:25:0
+Sky Sport HD
+p:SkyItalia
+108a:00820000:2008:fbff:25:0
+Sky Sport HD
 p:SkyItalia
 108b:00820000:2008:fbff:25:0
 Primafila 8 HD
@@ -3331,9 +3355,6 @@ Sky Serie +1 HD
 p:SkyItalia
 1092:00820000:2008:fbff:25:0
 Calcio Overlay HD
-p:SkyItalia
-10bc:00820000:2008:fbff:25:0
-Wimbledon 3 HD
 p:SkyItalia
 0e56:00820000:16a8:fbff:1:0
 Connessione internet Primafila
@@ -3599,9 +3620,18 @@ p:NETMED
 0189:00820000:1c84:013e:2:0
 Radio2
 p:NETMED
-0063:00820000:3264:013e:1:0
-Kabelio Infokanal.
-p:KABELIO.CH
+1063:00820000:1d4c:fbff:1:0
+IEPG Data
+p:SkyItalia
+1069:00820000:1d4c:fbff:25:0
+Sky Sport Uno HD
+p:SkyItalia
+106b:00820000:1d4c:fbff:25:0
+Sky Sport Football HD
+p:SkyItalia
+109b:00820000:1d4c:fbff:25:0
+Sky Sport HD
+p:SkyItalia
 0064:00820000:3264:013e:1:0
 Kabelio 3+
 p:KABELIO.CH
@@ -3651,25 +3681,25 @@ p:KABELIO.CH
 Kabelio ProSieben CH
 p:KABELIO.CH
 0074:00820000:3264:013e:1:0
-Kabelio Das Erste.
+Kab_OLD_Das Erste.
 p:KABELIO.CH
 0075:00820000:3264:013e:1:0
-Kabelio ZDF.
+Kab_OLD_ZDF.
 p:KABELIO.CH
 0076:00820000:3264:013e:1:0
-Kabelio TF1.
+Kab_OLD_ TF1
 p:KABELIO.CH
 0078:00820000:3264:013e:1:0
-Kabelio M6.
+Kab_OLD_M6
 p:KABELIO.CH
 0079:00820000:3264:013e:1:0
-Kabelio BBC One.
+Kab_OLD_BBC One
 p:KABELIO.CH
 007a:00820000:3264:013e:1:0
-Kabelio BBC Two.
+Kab_OLD_BBC Two
 p:KABELIO.CH
 007b:00820000:3264:013e:1:0
-Kabelio itv.
+Kab_OLD_ITV
 p:KABELIO.CH
 007f:00820000:3264:013e:1:0
 Kabelio KabelEins CH
@@ -3683,18 +3713,6 @@ p:KABELIO.CH
 0085:00820000:3264:013e:1:0
 Kabelio SWISS1
 p:KABELIO.CH
-1063:00820000:1d4c:fbff:1:0
-IEPG Data
-p:SkyItalia
-1069:00820000:1d4c:fbff:25:0
-Sky Sport Uno HD
-p:SkyItalia
-106b:00820000:1d4c:fbff:25:0
-Sky Sport Football HD
-p:SkyItalia
-109b:00820000:1d4c:fbff:25:0
-Sky Sport HD
-p:SkyItalia
 0367:00820000:3c28:013e:1:0
 CCTV 4E
 p:CCTV
@@ -4355,6 +4373,9 @@ p:SkyItalia
 37ba:00820000:14b4:fbff:25:0
 Sky Uno +1 HD
 p:SkyItalia
+04b6:00820000:23f0:013e:1:0
+Abu Dhabi TV
+p:Du
 04b7:00820000:23f0:013e:1:0
 UNITED STATES OF AFRICA Europe TV
 p:
@@ -4365,7 +4386,7 @@ p:
 Saudi Ch for Sunnah HD
 p:
 04b3:00820000:23f0:013e:25:0
-Saudi Ch for Quran HD
+Saudi ch for Quran HD
 p:
 04b4:00820000:23f0:013e:25:0
 Al Ekhbaria HD
@@ -4373,9 +4394,6 @@ p:
 04b5:00820000:23f0:013e:25:0
 SAUDI TV HD
 p:
-04b6:00820000:23f0:013e:25:0
-Abu Dhabi TV
-p:DU
 04b9:00820000:23f0:013e:31:0
 Ultra Nature 4K
 p:Eutelsat
