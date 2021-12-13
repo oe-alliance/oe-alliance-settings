@@ -1881,9 +1881,6 @@ transponders
 00820000:05dc:013e
 	s 11488000:27500000:0:3:130:2:0:1:2:0:2
 /
-00820000:13ef:013e
-	s 11747000:27500000:0:3:130:2:0:1:2:0:2
-/
 00820000:1c20:013e
 	s 12149000:27500000:1:3:130:2:0
 /
@@ -1907,6 +1904,9 @@ transponders
 /
 00820000:22c4:013e
 	s 12475000:29900000:0:3:130:2:0:1:2:0:2
+/
+00820000:13ef:013e
+	s 11747000:27500000:0:3:130:2:0:1:2:0:2
 /
 00820000:3390:0071
 	s 11158000:27500000:1:3:130:2:0:1:2:0:2
@@ -2190,11 +2190,23 @@ transponders
 005a0000:03ac:0110
 	s 12188000:31400000:1:2:90:2:0:1:2:0:2:1:262140:1
 /
+005ab05b:0000:0000
+	s 12379000:31400000:1:3:90:2:0:1:4:0:2:101:262140:1
+/
+005ab081:0000:0000
+	s 12417000:31400000:1:3:90:2:0:1:4:0:2:101:262140:1
+/
 005a0000:a801:217c
 	s 12265000:31400000:1:3:90:2:0:1:4:0:2:11:262140:1
 /
 005ab035:a801:217c
 	s 12341000:31400000:1:3:90:2:0:1:4:0:2:11:262140:1
+/
+005ab05b:a801:217c
+	s 12379000:31400000:1:3:90:2:0:1:4:0:2:11:262140:1
+/
+005ab081:a801:217c
+	s 12417000:31400000:1:3:90:2:0:1:4:0:2:11:262140:1
 /
 005ab035:0107:217c
 	s 12341000:31400000:1:3:90:2:0:1:4:0:2:101:262140:1
@@ -2261,18 +2273,6 @@ transponders
 /
 005a0000:18e1:217c
 	s 12265000:31400000:1:3:90:2:0:1:4:0:2:12:262140:1
-/
-005ab05b:a801:217c
-	s 12379000:31400000:1:3:90:2:0:1:4:0:2:11:262140:1
-/
-005ab081:0000:0000
-	s 12417000:31400000:1:3:90:2:0:1:4:0:2:101:262140:1
-/
-005ab05b:0000:0000
-	s 12379000:31400000:1:3:90:2:0:1:4:0:2:101:262140:1
-/
-005ab081:a801:217c
-	s 12417000:31400000:1:3:90:2:0:1:4:0:2:11:262140:1
 /
 00460000:1000:2000
 	s 11672000:3780000:1:8:70:2:0:1:1:0:2
@@ -3153,14 +3153,14 @@ transponders
 0da20000:0001:000a
 	s 11600000:3600000:0:3:-110:2:0:1:2:0:2
 /
-0d840000:0001:0539
-	s 11487000:2744000:0:3:-140:2:0:1:1:0:2
-/
 0d842cc0:0001:ffff
 	s 11456000:3000000:0:3:-140:2:0
 /
 0d842adf:0001:ffff
 	s 10975000:2962000:0:3:-140:2:0
+/
+0d842b70:0003:0000
+	s 11120000:3590000:0:3:-140:2:0:1:2:0:2
 /
 0d840000:0008:1111
 	s 10955000:1555000:0:3:-140:2:0
@@ -3378,17 +3378,17 @@ eeee0000:0202:001d
 eeee0000:4800:013e
 	t 498000000:0:5:5:3:2:4:4:2:0:0:0
 /
-eeee0000:0003:22c1
-	t 522000000:0:5:5:3:2:4:4:2:0:0:0
-/
-eeee0000:0006:22c1
-	t 570000000:0:5:5:3:2:4:4:2:0:0:0
-/
 eeee0000:d403:20bf
 	t 618000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:d405:20bf
 	t 538000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0003:22c1
+	t 522000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0000:0006:22c1
+	t 570000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0002:217c
 	t 626000000:0:5:5:3:2:4:4:2:0:0:0
@@ -3397,7 +3397,7 @@ eeee0000:0019:20bf
 	t 490000000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:0001:217c
-	t 513999000:0:5:5:3:2:4:4:2:0:0:0
+	t 513998000:0:5:5:3:2:4:4:2:0:0:0
 /
 eeee0000:000a:20bf
 	t 530000000:0:5:5:3:2:4:4:2:0:0:0
@@ -12382,7 +12382,7 @@ Happy Channel HD
 p:GLOBECAST
 2079:013b0000:146c:00a7:1:0
 Erox HD
-p:GLOBECAST,c:050001
+p:GLOBECAST
 207a:013b0000:146c:00a7:1:0
 Aleph Smart SD
 p:GLOBECAST
@@ -12409,7 +12409,7 @@ TVR 2 HD
 p:GLOBECAST
 219a:013b0000:1478:00a7:1:0
 TVR 1 HD
-p:GLOBECAST
+p:GLOBECAST,c:050001
 219b:013b0000:1478:00a7:1:0
 Realitatea Plus
 p:GLOBECAST
@@ -13459,7 +13459,7 @@ d133:011a0000:0832:0002:1:0
 p:BSkyB
 d0fd:011a0000:0832:0002:25:0
 New Media HD
-p:BSkyB,c:050001
+p:BSkyB
 1c26:011a0000:083b:0002:1:0
 4Music
 p:BSkyB
@@ -18088,7 +18088,7 @@ TA3 HD
 p:Towercom
 1329:00eb0000:0ca2:0003:25:0
 Jednotka
-p:Towercom
+p:Towercom,c:050001
 132a:00eb0000:0ca2:0003:25:0
 Dvojka
 p:Towercom
@@ -18427,7 +18427,7 @@ Viasat Nature
 p:Telekom Srbija
 36d9:00eb0000:0c8c:0003:1:0
 GERMAN TOTE TV
-p:MB Satellite,c:050001
+p:MB Satellite
 36e3:00eb0000:0c8c:0003:22:0
 DOCUBOX
 p:M7 Group
@@ -19039,7 +19039,7 @@ Prima +1 HD
 p:M7 Group
 1f4d:00eb0000:0ca1:0003:25:0
 TESTS7
-p:M7 Group
+p:M7 Group,c:050001
 030c:00eb0000:0c94:0003:22:0
 MTV Europe CZ
 p:M7 Group
@@ -19090,10 +19090,10 @@ Spektrum HD
 p:M7 Group
 0316:00eb0000:0c94:0003:25:0
 Vixen HD
-p:M7 Group
+p:M7 Group,c:050001
 0318:00eb0000:0c94:0003:25:0
 Sport 2 HD
-p:M7 Group
+p:M7 Group,c:050001
 031a:00eb0000:0c94:0003:25:0
 Love Nature HD INT
 p:M7 Group
@@ -19129,7 +19129,7 @@ JimJam CZ
 p:M7 Group
 3c38:00eb0000:0c90:0003:22:0
 REBEL
-p:M7 Group
+p:M7 Group,c:050001
 3c39:00eb0000:0c90:0003:22:0
 RELAX
 p:M7 Group
@@ -19183,7 +19183,7 @@ Seznam.cz HD
 p:M7 Group
 3b60:00eb0000:0c8d:0003:22:0
 Nickelodeon Hungary -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b61:00eb0000:0c8d:0003:22:0
 Prime
 p:M7 Group
@@ -19195,7 +19195,7 @@ RTL Gold
 p:M7 Group
 3b65:00eb0000:0c8d:0003:22:0
 Sorozat+ -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b66:00eb0000:0c8d:0003:22:0
 SuperTV2
 p:M7 Group
@@ -19207,7 +19207,7 @@ TV4
 p:M7 Group
 3b69:00eb0000:0c8d:0003:22:0
 Zenebutik -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b6a:00eb0000:0c8d:0003:22:0
 AXN Black
 p:M7 Group
@@ -19225,16 +19225,16 @@ Spektrum Home
 p:M7 Group
 3b70:00eb0000:0c8d:0003:22:0
 Mozi+ -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b71:00eb0000:0c8d:0003:22:0
 Muzsika TV -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b72:00eb0000:0c8d:0003:22:0
 Slager TV -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b73:00eb0000:0c8d:0003:22:0
 Nick Jr Hungary -Hangoljon at
-p:M7 Group
+p:M7 Group,c:050001
 3b74:00eb0000:0c8d:0003:22:0
 Nicktoons CZ
 p:M7 Group
@@ -19252,7 +19252,7 @@ RTL Klub HD
 p:M7 Group
 3b78:00eb0000:0c8d:0003:25:0
 Jednotka HD
-p:M7 Group
+p:M7 Group,c:050001
 3b79:00eb0000:0c8d:0003:25:0
 Dvojka HD
 p:M7 Group
@@ -19261,7 +19261,7 @@ Trojka HD
 p:M7 Group
 3b7b:00eb0000:0c8d:0003:25:0
 RTVS SPORT HD
-p:M7 Group
+p:M7 Group,c:050001
 1b92:00eb0000:0c88:0003:22:0
 RTL Z
 p:M7 Group
@@ -20830,7 +20830,7 @@ TOONAMI
 p:CSAT
 2460:00c00000:0440:0001:25:0
 TF1
-p:CSAT
+p:CSAT,c:050001
 2461:00c00000:0440:0001:25:0
 EUROSPORT 1
 p:CSAT
@@ -21238,7 +21238,7 @@ BBC World News Europe HD
 p:SES ASTRA
 139d:00c00000:03ea:0001:1:0
 NHK WORLD-JPN
-p:SES,c:050001
+p:SES
 1392:00c00000:03ea:0001:25:0
 INSIGHT TV HD
 p:SES ASTRA
@@ -21739,7 +21739,7 @@ a.tv HD .
 p:BMT
 16ac:00c00000:03ff:0001:25:0
 tv.ingolstadt HD
-p:BMT
+p:
 16af:00c00000:03ff:0001:25:0
 NIEDERBAYERN TV HD
 p:BMT
@@ -27196,7 +27196,7 @@ RADIONORBA TV
 p:Telenorba
 0520:00820000:3d54:013e:1:0
 Yes TV
-p:M-threee Satcom
+p:M-Three Satcom
 0530:00820000:3d54:013e:1:0
 People TV
 p:PEOPLETV-RETE7
@@ -27211,7 +27211,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-ThreeSatcom Srl
+p:M-Three Satcom Srl
 051a:00820000:3d54:013e:25:0
 Simay Azadi HD
 p:M-Three Satcom
@@ -27238,7 +27238,7 @@ Paramount Network HD
 p:M-Three Satcom Srl
 052d:00820000:3d54:013e:25:0
 Spike HD
-p:M-Three Satcom Srl
+p:M-Three satcom Srl
 052e:00820000:3d54:013e:25:0
 VH1 HD
 p:M-Three Satcom Srl
@@ -27554,42 +27554,6 @@ p:CANAL+
 142a:00820000:05dc:013e:2:0
 TOK FM
 p:CANAL+
-2520:00820000:13ef:013e:1:0
-AL SHARJAH HD
-p:
-2523:00820000:13ef:013e:1:0
-ABUDHABI TV HD
-p:
-2525:00820000:13ef:013e:1:0
-ZAD TV
-p:
-2526:00820000:13ef:013e:1:0
-AL SHARQIYA HD
-p:
-2529:00820000:13ef:013e:1:0
-AL Arabia HD
-p:
-252c:00820000:13ef:013e:1:0
-Sky News Arabia
-p:
-012d:00820000:13ef:013e:1:0
-AD Sport 3 HD
-p:
-012e:00820000:13ef:013e:1:0
-AD Sport 4 HD
-p:
-012f:00820000:13ef:013e:1:0
-Al Hadath HD
-p:
-252f:00820000:13ef:013e:1:0
-Asharq News Channel HD
-p:
-2530:00820000:13ef:013e:1:0
-LTV
-p:
-2531:00820000:13ef:013e:1:0
-AL SHARJAH RADIO
-p:
 1c22:00820000:1c20:013e:1:0
 Tunisie Nationale
 p:ONT TUNISIA
@@ -28226,6 +28190,42 @@ p:GLOBECAST
 0838:00820000:22c4:013e:2:0
 Radio 2M
 p:GLOBECAST
+2530:00820000:13ef:013e:1:0
+LTV
+p:DU
+2531:00820000:13ef:013e:10:0
+AL SHARJAH RADIO
+p:DU
+2525:00820000:13ef:013e:22:0
+ZAD TV
+p:DU
+2520:00820000:13ef:013e:25:0
+AL SHARJAH HD
+p:DU
+2523:00820000:13ef:013e:25:0
+ABUDHABI TV HD
+p:DU
+2526:00820000:13ef:013e:25:0
+AL SHARQIYA HD
+p:DU
+2529:00820000:13ef:013e:25:0
+AL Arabia HD
+p:DU
+252c:00820000:13ef:013e:25:0
+Sky News Arabia
+p:DU
+012d:00820000:13ef:013e:25:0
+AD Sports 3 HD
+p:DU
+012e:00820000:13ef:013e:25:0
+AD Sports 4 HD
+p:DU
+012f:00820000:13ef:013e:25:0
+Al Hadath HD
+p:DU
+252f:00820000:13ef:013e:25:0
+Asharq News Channel HD
+p:DU
 3333:00820000:3390:0071:1:0
 Polsat News 2
 p:Cyfrowy Polsat S.A.
@@ -29516,9 +29516,6 @@ p:Eutelsat
 08a7:00820000:01f4:013e:1:0
 ES TV
 p:Eutelsat
-08ac:00820000:01f4:013e:1:0
-Service 1
-p:
 08b2:00820000:01f4:013e:1:0
 Radio Novaya Zhizn
 p:Eutelsat
@@ -30085,7 +30082,7 @@ SRF info HD
 p:Schweizer Radio und Fernsehen
 4337:00820000:300c:013e:25:0
 RSI LA 1 HD
-p:Radiotelevisione svizzera,c:050001
+p:Radiotelevisione svizzera
 4338:00820000:300c:013e:25:0
 RSI LA 2 HD
 p:Radiotelevisione svizzera
@@ -30136,7 +30133,7 @@ Rai 1 HD
 p:Rai,c:050001
 0d4a:00820000:1450:013e:25:0
 Rai 2 HD
-p:Rai
+p:Rai,c:050001
 0d4b:00820000:1450:013e:25:0
 Rai 3 HD
 p:Rai
@@ -31925,6 +31922,84 @@ p:
 1068:005a0000:03ac:0110:31:0
 Test HEVC Main10
 p:,c:050007
+26ad:005ab05b:0000:0000:1:0
+Videolina
+p:Service Provider
+26ae:005ab05b:0000:0000:1:0
+Videolina 2
+p:Service Provider
+26af:005ab05b:0000:0000:1:0
+Sardegna Uno
+p:Service Provider
+26b0:005ab05b:0000:0000:1:0
+T.C.S. Tele Costa Smeralda
+p:Service Provider
+26b3:005ab05b:0000:0000:1:0
+Teleregione Live
+p:Teleregione Live
+26b4:005ab05b:0000:0000:1:0
+TeleSardegna
+p:TeleSardegna
+26b5:005ab05b:0000:0000:1:0
+Canale 40
+p:Media-Live
+26b6:005ab05b:0000:0000:1:0
+CatalanTv
+p:Media-Live
+26b7:005ab05b:0000:0000:1:0
+Canale 40Reg
+p:Media-Live,c:050001
+26b8:005ab05b:0000:0000:1:0
+RTS
+p:RTS
+26b9:005ab05b:0000:0000:1:0
+CANALE ITALIA 83
+p:Canale Italia
+26ba:005ab05b:0000:0000:1:0
+CANALE ITALIA 84
+p:Canale Italia,c:050001
+26b2:005ab05b:0000:0000:22:0
+TTS
+p:In Aria!
+26ad:005ab081:0000:0000:1:0
+Videolina
+p:Service Provider
+26ae:005ab081:0000:0000:1:0
+Videolina 2
+p:Service Provider
+26af:005ab081:0000:0000:1:0
+Sardegna Uno
+p:Service Provider
+26b0:005ab081:0000:0000:1:0
+T.C.S. Tele Costa Smeralda
+p:Service Provider
+26b3:005ab081:0000:0000:1:0
+Teleregione Live
+p:Teleregione Live
+26b4:005ab081:0000:0000:1:0
+TeleSardegna
+p:TeleSardegna
+26b5:005ab081:0000:0000:1:0
+Canale 40
+p:Media-Live
+26b6:005ab081:0000:0000:1:0
+CatalanTv
+p:Media-Live
+26b7:005ab081:0000:0000:1:0
+Canale 40Reg
+p:Media-Live,c:050001
+26b8:005ab081:0000:0000:1:0
+RTS
+p:RTS
+26b9:005ab081:0000:0000:1:0
+CANALE ITALIA 83
+p:Canale Italia
+26ba:005ab081:0000:0000:1:0
+CANALE ITALIA 84
+p:Canale Italia,c:050001
+26b2:005ab081:0000:0000:22:0
+TTS
+p:In Aria!
 26ad:005a0000:a801:217c:1:0
 Videolina
 p:Service Provider
@@ -32003,6 +32078,84 @@ p:Canale Italia,c:050001
 26b2:005ab035:a801:217c:22:0
 TTS
 p:In Aria!,c:050001
+26ad:005ab05b:a801:217c:1:0
+Videolina
+p:Service Provider
+26ae:005ab05b:a801:217c:1:0
+Videolina 2
+p:Service Provider
+26af:005ab05b:a801:217c:1:0
+Sardegna Uno
+p:Service Provider
+26b0:005ab05b:a801:217c:1:0
+T.C.S. Tele Costa Smeralda
+p:Service Provider
+26b3:005ab05b:a801:217c:1:0
+Teleregione Live
+p:Teleregione Live
+26b4:005ab05b:a801:217c:1:0
+TeleSardegna
+p:TeleSardegna
+26b5:005ab05b:a801:217c:1:0
+Canale 40
+p:Media-Live
+26b6:005ab05b:a801:217c:1:0
+CatalanTv
+p:Media-Live
+26b7:005ab05b:a801:217c:1:0
+Canale 40Reg
+p:Media-Live,c:050001
+26b8:005ab05b:a801:217c:1:0
+RTS
+p:RTS
+26b9:005ab05b:a801:217c:1:0
+CANALE ITALIA 83
+p:Canale Italia
+26ba:005ab05b:a801:217c:1:0
+CANALE ITALIA 84
+p:Canale Italia,c:050001
+26b2:005ab05b:a801:217c:22:0
+TTS
+p:In Aria!
+26ad:005ab081:a801:217c:1:0
+Videolina
+p:Service Provider
+26ae:005ab081:a801:217c:1:0
+Videolina 2
+p:Service Provider
+26af:005ab081:a801:217c:1:0
+Sardegna Uno
+p:Service Provider
+26b0:005ab081:a801:217c:1:0
+T.C.S. Tele Costa Smeralda
+p:Service Provider
+26b3:005ab081:a801:217c:1:0
+Teleregione Live
+p:Teleregione Live
+26b4:005ab081:a801:217c:1:0
+TeleSardegna
+p:TeleSardegna
+26b5:005ab081:a801:217c:1:0
+Canale 40
+p:Media-Live
+26b6:005ab081:a801:217c:1:0
+CatalanTv
+p:Media-Live
+26b7:005ab081:a801:217c:1:0
+Canale 40Reg
+p:Media-Live,c:050001
+26b8:005ab081:a801:217c:1:0
+RTS
+p:RTS
+26b9:005ab081:a801:217c:1:0
+CANALE ITALIA 83
+p:Canale Italia
+26ba:005ab081:a801:217c:1:0
+CANALE ITALIA 84
+p:Canale Italia,c:050001
+26b2:005ab081:a801:217c:22:0
+TTS
+p:In Aria!
 26ad:005ab035:0107:217c:1:0
 Videolina
 p:Service Provider
@@ -32741,162 +32894,6 @@ p:EIT,c:050001
 0c22:005a0000:18e1:217c:25:0
 Italia1 HD
 p:EIT,c:050001
-26ad:005ab05b:a801:217c:1:0
-Videolina
-p:Service Provider
-26ae:005ab05b:a801:217c:1:1
-Videolina 2
-p:Service Provider
-26af:005ab05b:a801:217c:1:2
-Sardegna Uno
-p:Service Provider
-26b0:005ab05b:a801:217c:1:3
-T.C.S. Tele Costa Smeralda
-p:Service Provider
-26b2:005ab05b:a801:217c:22:4
-TTS
-p:In Aria!
-26b3:005ab05b:a801:217c:1:5
-Teleregione Live
-p:Teleregione Live
-26b4:005ab05b:a801:217c:1:6
-TeleSardegna
-p:TeleSardegna
-26b5:005ab05b:a801:217c:1:7
-Canale 40
-p:Media-Live
-26b6:005ab05b:a801:217c:1:8
-CatalanTv
-p:Media-Live
-26b7:005ab05b:a801:217c:1:9
-Canale 40Reg
-p:Media-Live,c:050001
-26b8:005ab05b:a801:217c:1:10
-RTS
-p:RTS
-26b9:005ab05b:a801:217c:1:11
-CANALE ITALIA 83
-p:Canale Italia
-26ba:005ab05b:a801:217c:1:12
-CANALE ITALIA 84
-p:Canale Italia
-26ad:005ab081:0000:0000:1:0
-Videolina
-p:Service Provider
-26ae:005ab081:0000:0000:1:1
-Videolina 2
-p:Service Provider
-26af:005ab081:0000:0000:1:2
-Sardegna Uno
-p:Service Provider
-26b0:005ab081:0000:0000:1:3
-T.C.S. Tele Costa Smeralda
-p:Service Provider
-26b2:005ab081:0000:0000:22:4
-TTS
-p:In Aria!
-26b3:005ab081:0000:0000:1:5
-Teleregione Live
-p:Teleregione Live
-26b4:005ab081:0000:0000:1:6
-TeleSardegna
-p:TeleSardegna
-26b5:005ab081:0000:0000:1:7
-Canale 40
-p:Media-Live
-26b6:005ab081:0000:0000:1:8
-CatalanTv
-p:Media-Live
-26b7:005ab081:0000:0000:1:9
-Canale 40Reg
-p:Media-Live,c:050001
-26b8:005ab081:0000:0000:1:10
-RTS
-p:RTS
-26b9:005ab081:0000:0000:1:11
-CANALE ITALIA 83
-p:Canale Italia
-26ba:005ab081:0000:0000:1:12
-CANALE ITALIA 84
-p:Canale Italia
-26ad:005ab05b:0000:0000:1:0
-Videolina
-p:Service Provider
-26ae:005ab05b:0000:0000:1:1
-Videolina 2
-p:Service Provider
-26af:005ab05b:0000:0000:1:2
-Sardegna Uno
-p:Service Provider
-26b0:005ab05b:0000:0000:1:3
-T.C.S. Tele Costa Smeralda
-p:Service Provider
-26b2:005ab05b:0000:0000:22:4
-TTS
-p:In Aria!
-26b3:005ab05b:0000:0000:1:5
-Teleregione Live
-p:Teleregione Live
-26b4:005ab05b:0000:0000:1:6
-TeleSardegna
-p:TeleSardegna
-26b5:005ab05b:0000:0000:1:7
-Canale 40
-p:Media-Live
-26b6:005ab05b:0000:0000:1:8
-CatalanTv
-p:Media-Live
-26b7:005ab05b:0000:0000:1:9
-Canale 40Reg
-p:Media-Live,c:050001
-26b8:005ab05b:0000:0000:1:10
-RTS
-p:RTS
-26b9:005ab05b:0000:0000:1:11
-CANALE ITALIA 83
-p:Canale Italia
-26ba:005ab05b:0000:0000:1:12
-CANALE ITALIA 84
-p:Canale Italia
-26ad:005ab081:a801:217c:1:0
-Videolina
-p:Service Provider
-26ae:005ab081:a801:217c:1:1
-Videolina 2
-p:Service Provider
-26af:005ab081:a801:217c:1:2
-Sardegna Uno
-p:Service Provider
-26b0:005ab081:a801:217c:1:3
-T.C.S. Tele Costa Smeralda
-p:Service Provider
-26b2:005ab081:a801:217c:22:4
-TTS
-p:In Aria!
-26b3:005ab081:a801:217c:1:5
-Teleregione Live
-p:Teleregione Live
-26b4:005ab081:a801:217c:1:6
-TeleSardegna
-p:TeleSardegna
-26b5:005ab081:a801:217c:1:7
-Canale 40
-p:Media-Live
-26b6:005ab081:a801:217c:1:8
-CatalanTv
-p:Media-Live
-26b7:005ab081:a801:217c:1:9
-Canale 40Reg
-p:Media-Live,c:050001
-26b8:005ab081:a801:217c:1:10
-RTS
-p:RTS
-26b9:005ab081:a801:217c:1:11
-CANALE ITALIA 83
-p:Canale Italia
-26ba:005ab081:a801:217c:1:12
-CANALE ITALIA 84
-p:Canale Italia
 0001:00460000:1000:2000:1:0
 Kurdistan TV
 p:Harmonic
@@ -34867,6 +34864,9 @@ Viasat Nature HD
 p:
 0a5a:00302c01:0000:0000:25:0
 TV3 HD Danmark
+p:
+0a82:00302c01:0000:0000:22:0
+Nick Jr Nordic
 p:
 0b3b:00302c51:0000:0000:22:0
 SBN
@@ -44645,18 +44645,6 @@ p:,f:1
 0001:0da20000:0001:000a:1:0
 Service 1
 p:Globecast,f:1
-0001:0d840000:0001:0539:1:0
-Service 1
-p:
-0028:0d840000:0001:0539:1:0
-Nairabet Euro
-p:
-0032:0d840000:0001:0539:1:0
-NBD
-p:
-0050:0d840000:0001:0539:1:0
-DeevBet
-p:
 0001:0d842cc0:0001:ffff:1:0
 Al Manar
 p:Al Manar
@@ -44669,6 +44657,9 @@ p:Al Manar
 0002:0d842adf:0001:ffff:2:0
 Al Nour
 p:Al Manar
+0003:0d842b70:0003:0000:1:0
+RT auf Deutsch SD
+p:SynterraMedia
 0001:0d840000:0008:1111:2:0
 Radio CH50
 p:RSCC
@@ -47787,7 +47778,7 @@ p:STUDIO1
 QTV
 p:STUDIO1
 0067:eeee0000:27fb:0148:1:0
-R BIRIKINA Provvisorio
+RBK vai sul can 183
 p:STUDIO1
 0068:eeee0000:27fb:0148:1:0
 RADIO BIRIKINA TV
@@ -48224,42 +48215,6 @@ p:Rai
 0d52:eeee0000:4800:013e:31:0
 Test HEVC main10
 p:Rai
-0004:eeee0000:0003:22c1:22:0
-TELE M
-p:RTV SLOVENIJA,c:050001
-0005:eeee0000:0003:22c1:22:0
-KOPER
-p:RTV SLOVENIJA,c:050001
-0001:eeee0000:0003:22c1:25:0
-SLO1 HD
-p:RTV SLOVENIJA
-0002:eeee0000:0003:22c1:25:0
-SLO2 HD
-p:RTV SLOVENIJA
-0003:eeee0000:0003:22c1:25:0
-SLO3 HD
-p:RTV SLOVENIJA,c:050001
-0006:eeee0000:0006:22c1:22:0
-SLO1
-p:RTV SLOVENIJA
-0007:eeee0000:0006:22c1:22:0
-SLO2
-p:RTV SLOVENIJA
-0008:eeee0000:0006:22c1:22:0
-SLO3
-p:RTV SLOVENIJA
-0017:eeee0000:0006:22c1:22:0
-TV3 MEDIAS
-p:AGENCIJA MEDIAS
-0018:eeee0000:0006:22c1:22:0
-GOLICA TV
-p:GOLICA TV
-001b:eeee0000:0006:22c1:22:0
-NOVA24TV
-p:NTV24.si d.d.
-0021:eeee0000:0006:22c1:22:0
-OBVESTILO C
-p:RTV SLOVENIJA
 1518:eeee0000:d403:20bf:22:0
 Arenasport 1
 p:OIV
@@ -48434,6 +48389,42 @@ p:OIV
 0c81:eeee0000:d405:20bf:25:0
 HBO3 HD
 p:OIV
+0004:eeee0000:0003:22c1:22:0
+TELE M
+p:RTV SLOVENIJA,c:050001
+0005:eeee0000:0003:22c1:22:0
+KOPER
+p:RTV SLOVENIJA,c:050001
+0001:eeee0000:0003:22c1:25:0
+SLO1 HD
+p:RTV SLOVENIJA
+0002:eeee0000:0003:22c1:25:0
+SLO2 HD
+p:RTV SLOVENIJA
+0003:eeee0000:0003:22c1:25:0
+SLO3 HD
+p:RTV SLOVENIJA,c:050001
+0006:eeee0000:0006:22c1:22:0
+SLO1
+p:RTV SLOVENIJA
+0007:eeee0000:0006:22c1:22:0
+SLO2
+p:RTV SLOVENIJA
+0008:eeee0000:0006:22c1:22:0
+SLO3
+p:RTV SLOVENIJA
+0017:eeee0000:0006:22c1:22:0
+TV3 MEDIAS
+p:AGENCIJA MEDIAS
+0018:eeee0000:0006:22c1:22:0
+GOLICA TV
+p:GOLICA TV
+001b:eeee0000:0006:22c1:22:0
+NOVA24TV
+p:NTV24.si d.d.
+0021:eeee0000:0006:22c1:22:0
+OBVESTILO C
+p:RTV SLOVENIJA
 041d:eeee0000:0002:217c:22:0
 Rai Sport
 p:Rai
