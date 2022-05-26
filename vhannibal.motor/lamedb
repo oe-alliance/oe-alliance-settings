@@ -2478,11 +2478,17 @@ transponders
 001e2cbf:0001:ffff
 	s 11455000:1510000:0:3:30:2:0
 /
+001e2d7f:0000:0000
+	s 11647000:1667000:0:4:30:2:0:1:2:0:2
+/
 001e2d7f:0001:ffff
 	s 11647000:1000000:0:4:30:2:0:1:2:0:2
 /
 001e2d86:0001:0001
 	s 11654000:4444000:0:3:30:2:0:1:2:0:2
+/
+001e2d9f:0001:ffff
+	s 11679000:2500000:0:4:30:2:0:1:2:0:2
 /
 001e2daa:0001:ffff
 	s 11690000:2962000:0:4:30:2:0:1:2:0:2
@@ -3491,9 +3497,6 @@ p:ViewMedia
 001e:02ad0000:0004:0001:1:0
 CVV
 p:ViewMedia
-0021:02ad0000:0004:0001:1:0
-Test channel two
-p:ViewMedia
 0062:02ad0000:0004:0001:1:0
 Test channel
 p:ViewMedia
@@ -3859,9 +3862,6 @@ Salvation TV
 p:ViewMedia
 000a:02ad3112:0001:0001:1:0
 ARK TV
-p:ViewMedia
-000b:02ad3112:0001:0001:1:0
-OPM Doctor Jesus
 p:ViewMedia
 000e:02ad3112:0001:0001:1:0
 CMC TV
@@ -17147,21 +17147,24 @@ p:MBC
 0038:01040000:1bc0:02be:2:0
 Riyadh FM Split
 p:MBC
-1bc0:01040000:1e86:02be:1:0
-AIT TV
-p:
 1be0:01040000:1e86:02be:1:0
 RCS DEMO
 p:aCAN Group
 1be1:01040000:1e86:02be:1:0
 SUNNA TV GHANA
 p:aCAN Group
+1be5:01040000:1e86:02be:1:0
+BAINA TV
+p:
 1be8:01040000:1e86:02be:1:0
 CHAMPION TV
 p:RCS
 1beb:01040000:1e86:02be:1:0
 MESSIAH TV
 p:
+1bc6:01040000:1e86:02be:22:0
+ANIDASO TV
+p:RCS Ghana
 1bc8:01040000:1e86:02be:22:0
 Newday TV
 p:RCS Ghana
@@ -17177,15 +17180,6 @@ p:RCS Ghana
 1bd0:01040000:1e86:02be:22:0
 GBC NEWS
 p:RCS Ghana
-1bd7:01040000:1e86:02be:22:0
-VISIONARY TV
-p:RCS Ghana
-1bdd:01040000:1e86:02be:22:0
-TV Africa
-p:RCS Ghana
-1bec:01040000:1e86:02be:22:0
-PEP TV
-p:RCS Ghana
 1bbd:01040000:1e86:02be:25:0
 Gaskia TV
 p:RCS Ghana
@@ -17195,6 +17189,9 @@ p:RCS Ghana
 1bbf:01040000:1e86:02be:25:0
 Jalsa Salana Ghana
 p:RCS Ghana
+1bc0:01040000:1e86:02be:25:0
+AIT TV
+p:OSN
 1bc1:01040000:1e86:02be:25:0
 Joy News
 p:RCS Ghana
@@ -17207,9 +17204,6 @@ p:OSN
 1bc5:01040000:1e86:02be:25:0
 SAHA TV
 p:RCS Ghana
-1bc6:01040000:1e86:02be:25:0
-ANIDASO TV
-p:OSN
 1bc9:01040000:1e86:02be:25:0
 Pan African TV
 p:OSN
@@ -17219,11 +17213,17 @@ p:RCS Ghana
 1bd6:01040000:1e86:02be:25:0
 Quran TV
 p:RCS Ghana
+1bd7:01040000:1e86:02be:25:0
+VISIONARY TV
+p:OSN
+1bdd:01040000:1e86:02be:25:0
+TV Africa
+p:OSN
 1bde:01040000:1e86:02be:25:0
 BIG DREAMS TV
 p:OSN
-1be5:01040000:1e86:02be:25:0
-BAINA TV
+1bec:01040000:1e86:02be:25:0
+PEP TV
 p:OSN
 1fa9:01040000:1e87:02be:1:0
 Africa TV3
@@ -17231,8 +17231,8 @@ p:ERICSSON Television
 1faa:01040000:1e87:02be:1:0
 Africa TV3 Quran
 p:ERICSSON Television,c:050001
-1fa7:01040000:1e87:02be:22:0
-TAMBARA TV
+1fa8:01040000:1e87:02be:22:0
+BONFEREY TV
 p:RCS Ghana
 1fbd:01040000:1e87:02be:22:0
 HIKMAH TV English
@@ -17249,8 +17249,8 @@ p:RCS Ghana
 1fda:01040000:1e87:02be:22:0
 HIKMAH TV HAUSA
 p:RCS Ghana
-1fea:01040000:1e87:02be:22:0
-KATSINA STATE TV
+1fdb:01040000:1e87:02be:22:0
+WONDERLAND TV
 p:RCS Ghana
 1fa5:01040000:1e87:02be:25:0
 Gaskia TV
@@ -17258,8 +17258,8 @@ p:RCS Ghana
 1fa6:01040000:1e87:02be:25:0
 Gaskia Plus TV
 p:RCS Ghana
-1fa8:01040000:1e87:02be:25:0
-BONFEREY TV
+1fa7:01040000:1e87:02be:25:0
+TAMBARA TV
 p:OSN
 1fab:01040000:1e87:02be:25:0
 CANAL 3 NIGER TV
@@ -17270,12 +17270,9 @@ p:RCS Ghana
 1fd1:01040000:1e87:02be:25:0
 MANARA TV
 p:RCS Ghana
-1fdb:01040000:1e87:02be:25:0
-WONDERLAND TV
-p:OSN
 1fdd:01040000:1e87:02be:25:0
 ZAMANI TV
-p:OSN
+p:RCS Ghana
 1fe0:01040000:1e87:02be:25:0
 BATV BAUCHI
 p:OSN
@@ -17290,6 +17287,9 @@ KSMC TV
 p:RCS Ghana
 1fe9:01040000:1e87:02be:25:0
 ARTV
+p:OSN
+1fea:01040000:1e87:02be:25:0
+KATSINA STATE TV
 p:OSN
 0001:01040000:022f:0510:1:0
 Almajd 01
@@ -17725,7 +17725,7 @@ Novi Pazar
 p:Telekom Srbija
 4ed4:00eb0000:0c81:0003:1:0
 Dorcel
-p:Telekom Srbija
+p:Telekom Srbija,c:050001
 4ed5:00eb0000:0c81:0003:1:0
 Brazzers TV
 p:Telekom Srbija
@@ -18492,8 +18492,8 @@ p:M7 Group
 Comedy Central
 p:M7 Group
 36f9:00eb0000:0c8c:0003:22:0
-Spike 24
-p:M7 Group
+Paramount Network NL
+p:M7 Group,c:050001
 36fa:00eb0000:0c8c:0003:22:0
 Nickelodeon
 p:M7 Group
@@ -18812,6 +18812,9 @@ p:M7 Group
 031c:00eb0000:0c94:0003:25:0
 TV Barrandov HD
 p:M7 Group
+3cf9:00eb0000:0c95:0003:22:0
+Filmbox Stars
+p:M7 Group
 3cfa:00eb0000:0c95:0003:22:0
 Mnam TV
 p:M7 Group
@@ -18820,7 +18823,7 @@ Minimax
 p:M7 Group
 3cfc:00eb0000:0c95:0003:22:0
 Leo TV (22-06)
-p:M7 Group,f:1000
+p:M7 Group,c:050001,f:1000
 3cf0:00eb0000:0c95:0003:25:0
 Viasat History HD
 p:M7 Group
@@ -19023,8 +19026,8 @@ p:M7 Group
 Comedy Central NL
 p:M7 Group
 528b:00eb0000:0c99:0003:22:0
-Spike
-p:M7 Group
+Paramount Network
+p:M7 Group,c:050001
 528c:00eb0000:0c99:0003:22:0
 MTV NL
 p:M7 Group
@@ -19214,9 +19217,6 @@ p:Towercom
 1348:00eb0000:0ca2:0003:2:0
 Radio Lumen
 p:Towercom
-134a:00eb0000:0ca2:0003:2:0
-TEST
-p:Towercom
 134b:00eb0000:0ca2:0003:2:0
 ZET
 p:Towercom
@@ -19278,8 +19278,17 @@ p:Towercom
 TA3 HD
 p:Towercom
 132e:00eb0000:0ca2:0003:25:0
-TV Noe HD
+TV NOE HD
 p:Towercom
+1432:00eb0000:0ca2:0003:25:0
+AutoMotorSport HD
+p:BetaDigital,c:050001
+1433:00eb0000:0ca2:0003:25:0
+iConcert
+p:MX1,c:050001
+1434:00eb0000:0ca2:0003:25:0
+Stingray Classica HD
+p:BetaDigital,c:050001
 4e5c:00eb0000:0ca4:0003:1:0
 KCN Svet plus 3
 p:Telekom Srbija
@@ -20347,7 +20356,7 @@ Kabel 1 Doku HD Austria
 p:ProSiebenSat.1
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD,c:050001
+p:ARD
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -21145,7 +21154,7 @@ DAZN 2 HD
 p:Movistar+
 7863:00c00000:041a:0001:25:0
 LA 1 HD
-p:Movisrta+
+p:Movisrta+,c:050001
 7031:00c00000:041b:0001:1:0
 tagesschau24
 p:ARD
@@ -28072,7 +28081,7 @@ A3
 p:GLOBECAST
 0652:00820000:2454:013e:1:0
 RT Arabic HD
-p:iKO Media Group
+p:
 0653:00820000:2454:013e:1:0
 Pop Economy
 p:
@@ -28140,7 +28149,7 @@ p:CANAL+
 Nasa TV UHD
 p:
 11fb:00820000:2b5c:013e:1:0
-TravelXP 4K
+TRAVELXP 4K
 p:
 11fc:00820000:2b5c:013e:1:0
 Museum 4K
@@ -28573,7 +28582,7 @@ RTL-TVi HD
 p:CANAL+
 12d7:00820000:2e7c:013e:1:0
 La Une HD
-p:CANAL+
+p:CANAL+,c:050001
 12d8:00820000:2e7c:013e:1:0
 Tipik
 p:CANAL+
@@ -28669,7 +28678,7 @@ Dorcel TV HD
 p:AB Sat
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM1 TSOIP
+p:ARC/DCM2 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -28693,12 +28702,12 @@ RADA
 p:FFmpeg
 4234:00820000:2f44:013e:1:0
 ByoBlue
-p:M-Three Satcom
+p:M-hree Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat Data 1
+Eutelsat data 1
 p:MIT-xperts GmbH
 4209:00820000:2f44:013e:2:0
 VOICE OF CRO
@@ -32233,7 +32242,7 @@ VIDEONOVARA
 p:COELMEDIA
 03e9:005a0000:10e1:217c:1:0
 TopCalcio24
-p:Mediadiapason,c:050001
+p:mediapason,c:050001
 03ea:005a0000:10e1:217c:1:0
 VIDEOGRUPPO
 p:ITC
@@ -32503,10 +32512,10 @@ RTV38
 p:RTV38,c:050001,c:150835
 138a:005a0000:50e1:217c:1:0
 Toscana TV
-p:
+p:Toscana Tv
 1390:005a0000:50e1:217c:1:0
 TVR Teleitalia 7 Gold
-p:TOSCANA TV
+p:Tvr Teleitalia 7 Gold
 1391:005a0000:50e1:217c:1:0
 50 Canale
 p:50 Canale
@@ -32539,7 +32548,7 @@ TVL
 p:SOKO
 1773:005a0000:60e1:217c:1:0
 e'TV MARCHE
-p:e'TV MARCHE,c:050001
+p:e'TV MARCHE
 1774:005a0000:60e1:217c:1:0
 TVRS
 p:TVRS
@@ -32566,13 +32575,10 @@ Info 2000
 p:Tele 2000
 1771:005a0000:60e1:217c:25:0
 TV CENTRO MARCHE
-p:TV CENTRO MARCHE
+p:TV CENTRO MARCHE,c:050001
 1772:005a0000:60e1:217c:25:0
 VERATV
 p:In Aria!
-000b:005a0000:68e1:217c:1:0
-TEST RL Roma1
-p:,c:050001
 1b59:005a0000:70e1:217c:1:0
 RETE 8
 p:RETE 8,c:050001
@@ -32702,6 +32708,12 @@ p:Teleuropa
 264c:005a0000:98e1:217c:1:0
 Calabria TV
 p:Adn Italia
+264d:005a0000:98e1:217c:1:0
+RTI
+p:Global
+264e:005a0000:98e1:217c:1:0
+ESPERIA TV
+p:ESPERIA TV
 264f:005a0000:98e1:217c:1:0
 Telespazio TV
 p:Adn Italia
@@ -32714,6 +32726,9 @@ p:Global
 2652:005a0000:98e1:217c:1:0
 CANALE ITALIA
 p:Canale Italia
+2653:005a0000:98e1:217c:1:0
+L'altro corriere
+p:Global
 2654:005a0000:98e1:217c:1:0
 TELEMIA
 p:LA TV CROSSMEDIALE
@@ -32735,15 +32750,6 @@ p:Medialooks
 265c:005a0000:98e1:217c:1:0
 7 GOLD
 p:SETTE GOLD
-264d:005a0000:98e1:217c:22:0
-RTI
-p:Global
-264e:005a0000:98e1:217c:22:0
-ESPERIA TV
-p:ESPERIA TV
-2653:005a0000:98e1:217c:22:0
-L'altro corriere
-p:Global
 2656:005a0000:98e1:217c:22:0
 RTC TELECALABRIA
 p:GLOBAL
@@ -34751,9 +34757,12 @@ p:
 0001:001e2cbf:0001:ffff:1:0
 Benghazi office
 p:Total Media Cast
+03e8:001e2d7f:0000:0000:25:0
+Manhaj TV
+p:Service Provider,c:050001
 0064:001e2d7f:0001:ffff:1:0
 test
-p:Service Provider,c:050001
+p:Service Provider
 0065:001e2d86:0001:0001:1:0
 2M National
 p:2M
@@ -34766,6 +34775,9 @@ p:2M,c:050001
 0068:001e2d86:0001:0001:1:0
 Radio 2M
 p:2M
+0001:001e2d9f:0001:ffff:1:0
+IMAM ALI HD
+p:IMAM ALI HD
 0001:001e2daa:0001:ffff:1:0
 Service-1
 p:Service Provider,c:050001
@@ -44101,6 +44113,9 @@ YOUSAT
 p:ViewMedia
 0004:0dc02b58:0008:ffff:1:0
 Al Sahat
+p:ViewMedia
+0005:0dc02b58:0008:ffff:1:0
+Alnbras
 p:ViewMedia
 0006:0dc02b58:0008:ffff:1:0
 ALHAWYAH TV
