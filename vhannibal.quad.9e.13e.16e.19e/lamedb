@@ -451,7 +451,7 @@ transponders
 	s 11432000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:1770:0110
-	s 11919000:29900000:1:4:130:2:0
+	s 11919000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:00c8:013e
 	s 11240000:27500000:1:3:130:2:0
@@ -878,15 +878,15 @@ transponders
 /
 end
 services
-345d:00c00000:03e9:0001:31:0
+345d:00c00000:03e9:0001:1:0
 Service13405
 p:ORS
+3464:00c00000:03e9:0001:1:0
+Service 13412
+p:ORF
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
-3464:00c00000:03e9:0001:31:0
-Service13412
-p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC World News Europe HD
 p:SES ASTRA
@@ -1259,9 +1259,6 @@ p:ARD
 2840:00c00000:03fb:0001:25:0
 SWR RP HD
 p:ARD
-1b60:00c00000:03fc:0001:1:0
-Cubavision Internacional
-p:GLOBECAST
 1b64:00c00000:03fc:0001:1:0
 Arirang HD
 p:GLOBECAST
@@ -2567,6 +2564,12 @@ p:SES ASTRA
 1663:00c00000:042c:0001:22:0
 RADA eng
 p:
+1677:00c00000:042c:0001:22:0
+TVRUS
+p:SES ASTRA
+1681:00c00000:042c:0001:22:0
+Kaufbei.TV
+p:SES
 1644:00c00000:042c:0001:25:0
 DW English HD
 p:Deutsche Welle
@@ -4630,7 +4633,7 @@ PRO X
 p:ProTV,c:050001
 0007:00a00000:01f4:0005:22:0
 PRO 2
-p:ProTV
+p:ProTV,c:050001
 0008:00a00000:01f4:0005:22:0
 PRO CINEMA
 p:ProTV
@@ -4648,7 +4651,7 @@ PRO CINEMA
 p:ProTV
 1db5:00a00000:145c:0005:1:0
 PRO ARENA
-p:ProTV
+p:ProTV,c:050001
 1db6:00a00000:145c:0005:1:0
 TEST 1
 p:ProTV
@@ -5748,7 +5751,7 @@ p:A1 Broadcasting
 Dajto HD
 p:A1 Broadcasting
 07d9:00a00000:9e98:016e:31:0
-Ocko
+Markiza Krimi HD
 p:A1 Broadcasting
 07db:00a00000:9e98:016e:31:0
 Slagr
@@ -6506,7 +6509,7 @@ p:
 000a:00a0b0f9:0001:0001:1:0
 RTV21M
 p:GMDS
-000d:00a0b0f9:0001:0001:1:0
+000b:00a0b0f9:0001:0001:1:0
 ATV
 p:
 000f:00a0b0f9:0001:0001:1:0
@@ -6966,10 +6969,10 @@ p:Cyfrowy Polsat S.A.
 CBS Europa HD
 p:Cyfrowy Polsat S.A.
 290c:00820000:1edc:0071:1:0
-Eurosport 2 HD
+TestE2
 p:Cyfrowy Polsat S.A.
 290d:00820000:1edc:0071:1:0
-Discovery Science HD
+TestDS
 p:Cyfrowy Polsat S.A.
 290e:00820000:1edc:0071:1:0
 HBO HD
@@ -6978,8 +6981,8 @@ p:Cyfrowy Polsat S.A.
 HBO HD
 p:Cyfrowy Polsat S.A.
 2910:00820000:1edc:0071:1:0
-Eurosport 2 HD
-p:Cyfrowy Polsat S.A.
+12284H SID 0x2910
+p:DVB-S2 8PSK 12284H 13.0Â°E
 2911:00820000:1edc:0071:1:0
 Polsat Sport Fight HD
 p:Cyfrowy Polsat S.A.
@@ -6990,8 +6993,8 @@ p:Cyfrowy Polsat S.A.
 Cartoon Network HD
 p:Cyfrowy Polsat S.A.
 292b:00820000:1edc:0071:1:0
-Discovery Science HD
-p:Cyfrowy Polsat S.A.
+12284H SID 0x292b
+p:DVB-S2 8PSK 12284H 13.0Â°E
 292d:00820000:1edc:0071:1:0
 Warner TV
 p:Cyfrowy Polsat S.A.
@@ -7252,7 +7255,7 @@ LA7 HD
 p:
 366a:00820000:00c8:013e:1:0
 NOVIY_MIR
-p:FFmpeg
+p:
 3b64:00820000:012c:013e:22:0
 K2
 p:TVN Discovery Group
@@ -7260,13 +7263,13 @@ p:TVN Discovery Group
 Frisbee
 p:TVN Discovery Group
 3b61:00820000:012c:013e:25:0
-Realtime Italy HD
+Realtime Italy
 p:TVN Discovery Group
 3b62:00820000:012c:013e:25:0
-DMAX Italy HD
+DMAX Italy
 p:TVN Discovery Group
 3b63:00820000:012c:013e:25:0
-Food Network Italy HD
+Food Network Italy
 p:TVN DIscpvery Group
 3b66:00820000:012c:013e:25:0
 Animal Planet Poland HD
@@ -7485,13 +7488,13 @@ p:TVN Discovery Group
 Discovery Life
 p:TVN
 10e1:00820000:03e8:013e:25:0
-MotorTrend HD
+MotorTrend
 p:TVN
 10e2:00820000:03e8:013e:25:0
-Giallo HD
+Giallo
 p:TVN
 10e3:00820000:03e8:013e:25:0
-Nove HD
+Nove
 p:TVN
 10ea:00820000:03e8:013e:25:0
 TVN24 BiS HD
@@ -7503,7 +7506,7 @@ p:TVN
 Food Network HD EMEA
 p:TVN SA Discovery Group
 10ee:00820000:03e8:013e:25:0
-HGTV Italy HD
+HGTV Italy
 p:TVN
 3779:00820000:044c:013e:1:0
 CANAL+ FILM HD
@@ -9035,6 +9038,9 @@ p:CANAL+
 117a:00820000:2af8:013e:1:0
 CANAL+ 4K ULTRA HD
 p:CANAL+
+118a:00820000:2af8:013e:1:0
+10719V SID 0x118a
+p:DVB-S2 8PSK 10719V 13.0Â°E
 118f:00820000:2af8:013e:1:0
 DATA
 p:CANAL+
@@ -9540,7 +9546,7 @@ p:Cyfrowy Polsat S.A.
 SciFi HD
 p:Cyfrowy Polsat S.A.
 3e21:00820000:2ee0:013e:1:0
-TLC HD
+TestTL
 p:Cyfrowy Polsat S.A.
 3e22:00820000:2ee0:013e:1:0
 History 2 HD
@@ -9552,7 +9558,7 @@ p:Cyfrowy Polsat S.A.
 Fightbox HD
 p:Cyfrowy Polsat S.A.
 3e25:00820000:2ee0:013e:1:0
-Eurosport 1 HD
+TestE1
 p:Cyfrowy Polsat S.A.
 3e26:00820000:2ee0:013e:1:0
 13 Ulica HD
@@ -9561,8 +9567,8 @@ p:Cyfrowy Polsat S.A.
 TestL
 p:Cyfrowy Polsat S.A.
 3e2a:00820000:2ee0:013e:1:0
-Eurosport 1 HD
-p:Cyfrowy Polsat S.A.
+10911V SID 0x3e2a
+p:DVB-S2 8PSK 10911V 13.0Â°E
 3e2b:00820000:2ee0:013e:1:0
 Polsat Sport Premium PPV3
 p:Cyfrowy Polsat S.A.
@@ -9576,8 +9582,8 @@ p:Cyfrowy Polsat S.A.
 SciFi HD
 p:Cyfrowy Polsat S.A.
 3e3f:00820000:2ee0:013e:1:0
-TLC HD
-p:Cyfrowy Polsat S.A.
+10911V SID 0x3e3f
+p:DVB-S2 8PSK 10911V 13.0Â°E
 3e44:00820000:2ee0:013e:1:0
 13 Ulica HD
 p:Cyfrowy Polsat S.A.
@@ -9944,9 +9950,6 @@ p:MB Satellite
 1f5b:00820000:319c:013e:1:0
 Can TV HD
 p:MB Satellite
-025f:00820000:319c:013e:1:0
-Deutsches Musik Fernsehen
-p:MB Satellite
 1f5f:00820000:319c:013e:1:0
 Iran e Aryaee TV
 p:MB Satellite
@@ -10145,9 +10148,6 @@ p:GLOBECAST
 031f:00820000:3bc4:013e:1:0
 TRT Arabi HD
 p:GLOBECAST
-0320:00820000:3bc4:013e:1:0
-Belarus 24 HD
-p:GLOBECAST
 0321:00820000:3bc4:013e:1:0
 Euronews English HD
 p:GLOBECAST
@@ -10165,9 +10165,6 @@ France 24 HD (en Francais)
 p:GLOBECAST
 0328:00820000:3bc4:013e:1:0
 France 24 HD (in English)
-p:GLOBECAST
-032a:00820000:3bc4:013e:2:0
-Radio Belarus International
 p:GLOBECAST
 0367:00820000:3c28:013e:1:0
 CCTV 4E
@@ -10201,7 +10198,7 @@ RADIONORBA TV
 p:Telenorba
 0520:00820000:3d54:013e:1:0
 Yes TV
-p:M-threee Satcom
+p:M-Three Satcom
 0530:00820000:3d54:013e:1:0
 People TV
 p:PEOPLETV-RETE7
@@ -10524,7 +10521,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Jurassic World Collection HD
+Animation Collection HD
 p:SkyItalia
 379c:00820000:14b4:fbff:25:0
 NationalGeo HD
@@ -10950,7 +10947,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Jurassic World Collection
+Animation Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -11041,6 +11038,9 @@ TV2000 HD
 p:SkyItalia
 34de:00820000:1af4:fbff:25:0
 Explorer HD Channel
+p:SkyItalia
+0fdc:00820000:1af4:fbff:31:0
+Eurosport 4K
 p:SkyItalia
 0dc4:00820000:1af4:fbff:130:0
 Fake TG 24 HD
@@ -12134,9 +12134,6 @@ p:GLOBECAST
 0165:005a0000:19c8:009e:1:0
 BBC_Entertainment_Europe
 p:GLOBECAST
-0168:005a0000:19c8:009e:1:0
-Karusel Int
-p:GLOBECAST
 00ce:005a0000:19c8:009e:1:0
 MCM TOP
 p:GLOBECAST
@@ -12435,7 +12432,7 @@ p:OTE
 COSMOTECinema1HD
 p:OTE
 03f2:005a0000:0005:00aa:1:0
-TEST 9
+Duck TV
 p:ΟΤΕ
 03f3:005a0000:0005:00aa:1:0
 PPV TST2
@@ -12937,7 +12934,7 @@ VIDEONOVARA
 p:COELMEDIA
 03e9:005a0000:10e1:217c:1:0
 TopCalcio24
-p:mediapason,c:050001
+p:mediapason
 03ea:005a0000:10e1:217c:1:0
 VIDEOGRUPPO
 p:ITC
@@ -13058,6 +13055,9 @@ p:
 07e2:005a0000:20e1:217c:1:0
 TELECLUSONE
 p:COELMEDIA
+07e3:005a0000:20e1:217c:1:0
+DTV1
+p:
 07e4:005a0000:20e1:217c:1:0
 ONE TV
 p:ONE TV
@@ -13073,9 +13073,6 @@ p:EI TOWERS
 07dc:005a0000:20e1:217c:22:0
 TRS 93
 p:TRS 93
-07e3:005a0000:20e1:217c:22:0
-Radio Millenium TV
-p:In Aria!
 0af6:005a0000:28e1:217c:1:0
 ANTENNA TRE VENETO
 p:MEDIANORDEST
@@ -13226,6 +13223,9 @@ p:TSD
 1396:005a0000:50e1:217c:1:0
 ALERT SYSTEM TV
 p:ALERT SYSTEM TV
+1399:005a0000:50e1:217c:1:0
+Antenna 3 RW
+p:An
 139a:005a0000:50e1:217c:1:0
 CANALE ITALIA
 p:Canale Italia
@@ -13234,7 +13234,7 @@ TV9
 p:Global
 138e:005a0000:50e1:217c:22:0
 GRANDUCATO TV
-p:SOKO
+p:Telegranducato
 138f:005a0000:50e1:217c:22:0
 TELETRURIA
 p:TERRA S.p.A.
@@ -13292,12 +13292,24 @@ p:CANALE 10,c:050001
 1a93:005a0000:68e1:217c:1:0
 Teleuniverso HD
 p:Teleuniverso
+1a97:005a0000:68e1:217c:1:0
+TeleRoma 56
+p:TeleRoma
+1a99:005a0000:68e1:217c:1:0
+TeleRoma 56 Sport
+p:TeleRoma
 1a9a:005a0000:68e1:217c:1:0
 TRL
 p:VTS
 1a9c:005a0000:68e1:217c:1:0
 CANALE ITALIA
 p:Canale Italia
+1a9f:005a0000:68e1:217c:1:0
+TELEROMAUNO
+p:TELEROMAUNO
+1aa2:005a0000:68e1:217c:1:0
+EXTRA TV LIVE
+p:Global
 1a92:005a0000:68e1:217c:22:0
 GOLD TV
 p:In Aria!
@@ -13306,24 +13318,30 @@ LAZIO TV
 p:In Aria!
 1a98:005a0000:68e1:217c:22:0
 T9
-p:In Aria!,c:050001
+p:In Aria!
 1a9b:005a0000:68e1:217c:22:0
 ITR RADI0TELEVISIONE
 p:In Aria!
 1aa0:005a0000:68e1:217c:22:0
 ROMA CH71
 p:InAria
+1aa3:005a0000:68e1:217c:22:0
+TELEITALIA 41
+p:In Aria!
+1a9e:005a0000:68e1:217c:25:0
+7 GOLD
+p:SETTE GOLD
 1b59:005a0000:70e1:217c:1:0
 RETE 8
-p:RETE 8
+p:RETE 8,c:050001
 1b5a:005a0000:70e1:217c:1:0
 TELEMOLISE
-p:Telemolise,c:050001
+p:Telemolise
 1b5b:005a0000:70e1:217c:1:0
 Laqtv
 p:Global
 1b5c:005a0000:70e1:217c:1:0
-Tvsei
+TVSEI
 p:Telemolise
 1b5d:005a0000:70e1:217c:1:0
 TELEMAX
@@ -13353,14 +13371,14 @@ p:TELESIRIO
 TLTMOLISE1
 p:TLTMOLISE
 1b68:005a0000:70e1:217c:1:0
-ERRETIESSE TV
-p:NT
+Le Cronache
+p:Le Cronache
 1b6a:005a0000:70e1:217c:1:0
 TRSP
 p:COELMEDIA
 1b6b:005a0000:70e1:217c:1:0
 RADIO PARSIFAL TV
-p:Radio Parsifal,c:050001
+p:Radio Parsifal
 1b60:005a0000:70e1:217c:25:0
 TELEREGIONE
 p:COELMEDIA
@@ -13486,7 +13504,7 @@ p:Medialooks
 p:SETTE GOLD
 2656:005a0000:98e1:217c:22:0
 RTC TELECALABRIA
-p:GLOBAL,c:050001
+p:GLOBAL
 265a:005a0000:98e1:217c:22:0
 Tele Dehon
 p:
