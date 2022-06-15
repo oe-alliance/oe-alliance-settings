@@ -322,7 +322,7 @@ transponders
 	s 11432000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:1770:0110
-	s 11919000:29900000:1:4:130:2:0
+	s 11919000:29900000:1:3:130:2:0:1:2:0:2
 /
 00820000:00c8:013e
 	s 11240000:27500000:1:3:130:2:0
@@ -1421,15 +1421,15 @@ eeee0000:03ac:0110
 /
 end
 services
-345d:00c00000:03e9:0001:31:0
+345d:00c00000:03e9:0001:1:0
 Service13405
 p:ORS
+3464:00c00000:03e9:0001:1:0
+Service 13412
+p:ORF
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
-3464:00c00000:03e9:0001:31:0
-Service13412
-p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC World News Europe HD
 p:SES ASTRA
@@ -1802,9 +1802,6 @@ p:ARD
 2840:00c00000:03fb:0001:25:0
 SWR RP HD
 p:ARD
-1b60:00c00000:03fc:0001:1:0
-Cubavision Internacional
-p:GLOBECAST
 1b64:00c00000:03fc:0001:1:0
 Arirang HD
 p:GLOBECAST
@@ -3110,6 +3107,12 @@ p:SES ASTRA
 1663:00c00000:042c:0001:22:0
 RADA eng
 p:
+1677:00c00000:042c:0001:22:0
+TVRUS
+p:SES ASTRA
+1681:00c00000:042c:0001:22:0
+Kaufbei.TV
+p:SES
 1644:00c00000:042c:0001:25:0
 DW English HD
 p:Deutsche Welle
@@ -5490,10 +5493,10 @@ p:Cyfrowy Polsat S.A.
 CBS Europa HD
 p:Cyfrowy Polsat S.A.
 290c:00820000:1edc:0071:1:0
-Eurosport 2 HD
+TestE2
 p:Cyfrowy Polsat S.A.
 290d:00820000:1edc:0071:1:0
-Discovery Science HD
+TestDS
 p:Cyfrowy Polsat S.A.
 290e:00820000:1edc:0071:1:0
 HBO HD
@@ -5502,8 +5505,8 @@ p:Cyfrowy Polsat S.A.
 HBO HD
 p:Cyfrowy Polsat S.A.
 2910:00820000:1edc:0071:1:0
-Eurosport 2 HD
-p:Cyfrowy Polsat S.A.
+12284H SID 0x2910
+p:DVB-S2 8PSK 12284H 13.0Â°E
 2911:00820000:1edc:0071:1:0
 Polsat Sport Fight HD
 p:Cyfrowy Polsat S.A.
@@ -5514,8 +5517,8 @@ p:Cyfrowy Polsat S.A.
 Cartoon Network HD
 p:Cyfrowy Polsat S.A.
 292b:00820000:1edc:0071:1:0
-Discovery Science HD
-p:Cyfrowy Polsat S.A.
+12284H SID 0x292b
+p:DVB-S2 8PSK 12284H 13.0Â°E
 292d:00820000:1edc:0071:1:0
 Warner TV
 p:Cyfrowy Polsat S.A.
@@ -5776,7 +5779,7 @@ LA7 HD
 p:
 366a:00820000:00c8:013e:1:0
 NOVIY_MIR
-p:FFmpeg
+p:
 3b64:00820000:012c:013e:22:0
 K2
 p:TVN Discovery Group
@@ -5784,13 +5787,13 @@ p:TVN Discovery Group
 Frisbee
 p:TVN Discovery Group
 3b61:00820000:012c:013e:25:0
-Realtime Italy HD
+Realtime Italy
 p:TVN Discovery Group
 3b62:00820000:012c:013e:25:0
-DMAX Italy HD
+DMAX Italy
 p:TVN Discovery Group
 3b63:00820000:012c:013e:25:0
-Food Network Italy HD
+Food Network Italy
 p:TVN DIscpvery Group
 3b66:00820000:012c:013e:25:0
 Animal Planet Poland HD
@@ -6009,13 +6012,13 @@ p:TVN Discovery Group
 Discovery Life
 p:TVN
 10e1:00820000:03e8:013e:25:0
-MotorTrend HD
+MotorTrend
 p:TVN
 10e2:00820000:03e8:013e:25:0
-Giallo HD
+Giallo
 p:TVN
 10e3:00820000:03e8:013e:25:0
-Nove HD
+Nove
 p:TVN
 10ea:00820000:03e8:013e:25:0
 TVN24 BiS HD
@@ -6027,7 +6030,7 @@ p:TVN
 Food Network HD EMEA
 p:TVN SA Discovery Group
 10ee:00820000:03e8:013e:25:0
-HGTV Italy HD
+HGTV Italy
 p:TVN
 3779:00820000:044c:013e:1:0
 CANAL+ FILM HD
@@ -7559,6 +7562,9 @@ p:CANAL+
 117a:00820000:2af8:013e:1:0
 CANAL+ 4K ULTRA HD
 p:CANAL+
+118a:00820000:2af8:013e:1:0
+10719V SID 0x118a
+p:DVB-S2 8PSK 10719V 13.0Â°E
 118f:00820000:2af8:013e:1:0
 DATA
 p:CANAL+
@@ -8064,7 +8070,7 @@ p:Cyfrowy Polsat S.A.
 SciFi HD
 p:Cyfrowy Polsat S.A.
 3e21:00820000:2ee0:013e:1:0
-TLC HD
+TestTL
 p:Cyfrowy Polsat S.A.
 3e22:00820000:2ee0:013e:1:0
 History 2 HD
@@ -8076,7 +8082,7 @@ p:Cyfrowy Polsat S.A.
 Fightbox HD
 p:Cyfrowy Polsat S.A.
 3e25:00820000:2ee0:013e:1:0
-Eurosport 1 HD
+TestE1
 p:Cyfrowy Polsat S.A.
 3e26:00820000:2ee0:013e:1:0
 13 Ulica HD
@@ -8085,8 +8091,8 @@ p:Cyfrowy Polsat S.A.
 TestL
 p:Cyfrowy Polsat S.A.
 3e2a:00820000:2ee0:013e:1:0
-Eurosport 1 HD
-p:Cyfrowy Polsat S.A.
+10911V SID 0x3e2a
+p:DVB-S2 8PSK 10911V 13.0Â°E
 3e2b:00820000:2ee0:013e:1:0
 Polsat Sport Premium PPV3
 p:Cyfrowy Polsat S.A.
@@ -8100,8 +8106,8 @@ p:Cyfrowy Polsat S.A.
 SciFi HD
 p:Cyfrowy Polsat S.A.
 3e3f:00820000:2ee0:013e:1:0
-TLC HD
-p:Cyfrowy Polsat S.A.
+10911V SID 0x3e3f
+p:DVB-S2 8PSK 10911V 13.0Â°E
 3e44:00820000:2ee0:013e:1:0
 13 Ulica HD
 p:Cyfrowy Polsat S.A.
@@ -8468,9 +8474,6 @@ p:MB Satellite
 1f5b:00820000:319c:013e:1:0
 Can TV HD
 p:MB Satellite
-025f:00820000:319c:013e:1:0
-Deutsches Musik Fernsehen
-p:MB Satellite
 1f5f:00820000:319c:013e:1:0
 Iran e Aryaee TV
 p:MB Satellite
@@ -8669,9 +8672,6 @@ p:GLOBECAST
 031f:00820000:3bc4:013e:1:0
 TRT Arabi HD
 p:GLOBECAST
-0320:00820000:3bc4:013e:1:0
-Belarus 24 HD
-p:GLOBECAST
 0321:00820000:3bc4:013e:1:0
 Euronews English HD
 p:GLOBECAST
@@ -8689,9 +8689,6 @@ France 24 HD (en Francais)
 p:GLOBECAST
 0328:00820000:3bc4:013e:1:0
 France 24 HD (in English)
-p:GLOBECAST
-032a:00820000:3bc4:013e:2:0
-Radio Belarus International
 p:GLOBECAST
 0367:00820000:3c28:013e:1:0
 CCTV 4E
@@ -8725,7 +8722,7 @@ RADIONORBA TV
 p:Telenorba
 0520:00820000:3d54:013e:1:0
 Yes TV
-p:M-threee Satcom
+p:M-Three Satcom
 0530:00820000:3d54:013e:1:0
 People TV
 p:PEOPLETV-RETE7
@@ -9048,7 +9045,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Jurassic World Collection HD
+Animation Collection HD
 p:SkyItalia
 379c:00820000:14b4:fbff:25:0
 NationalGeo HD
@@ -9474,7 +9471,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Jurassic World Collection
+Animation Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -9565,6 +9562,9 @@ TV2000 HD
 p:SkyItalia
 34de:00820000:1af4:fbff:25:0
 Explorer HD Channel
+p:SkyItalia
+0fdc:00820000:1af4:fbff:31:0
+Eurosport 4K
 p:SkyItalia
 0dc4:00820000:1af4:fbff:130:0
 Fake TG 24 HD
@@ -9837,7 +9837,7 @@ p:
 TV8 HD
 p:Persidera
 0001:eeee0000:7918:217c:25:8
-NOVE HD
+NOVE
 p:Persidera
 0422:eeee0000:0002:217c:22:9
 RTV San Marino
@@ -9873,25 +9873,25 @@ p:Mediaset
 TOPcrime
 p:Mediaset
 0010:eeee0000:0204:001d:25:22
-GIALLO HD
+GIALLO
 p:Persidera
 0050:eeee0000:0200:001d:22:24
 Cielo
 p:Persidera
 002c:eeee0000:0204:001d:25:25
-Real Time HD
+Real Time
 p:Persidera
 0032:eeee0000:0204:001d:25:26
-DMAX HD
+DMAX
 p:Persidera
 0002:eeee0000:7918:217c:25:27
-Motor Trend HD
+Motor Trend
 p:Persidera
 0019:eeee0000:7918:217c:25:28
-HGTV - Home&Garden HD
+HGTV - Home&Garden
 p:Persidera
 0014:eeee0000:0204:001d:25:29
-Food Network HD
+Food Network
 p:Persidera
 001e:eeee0000:0204:001d:22:30
 ALMA TV
@@ -10404,10 +10404,10 @@ p:Persidera
 TV8 HD
 p:Persidera
 0014:eeee0000:7918:217c:1:213
-NOVE
+NOVE (provvisorio)
 p:Persidera
 001d:eeee0000:7918:217c:1:214
-NOVE
+NOVE (provvisorio)
 p:Persidera
 0050:eeee0000:7918:217c:22:215
 SPORTITALIA
@@ -10427,7 +10427,7 @@ p:Persidera
 0028:eeee0000:7918:217c:25:220
 Deejay TV HD
 p:Persidera
-0079:eeee0000:0200:001d:1:221
+0079:eeee0000:0200:001d:22:221
 VH1
 p:Persidera
 00da:eeee0000:0204:001d:25:222
@@ -10485,7 +10485,7 @@ p:BeS
 Amici per LItalia
 p:BeS
 036d:eeee0000:0039:217c:1:241
-AZZURRA TV
+SHOP24
 p:BeS
 0097:eeee0000:0039:217c:1:242
 DELUX 139
@@ -10565,9 +10565,9 @@ p:
 07e2:eeee0000:20e1:217c:1:268
 TELECLUSONE
 p:COELMEDIA
-07e3:eeee0000:20e1:217c:22:269
-Radio Millenium TV
-p:In Aria!
+07e3:eeee0000:20e1:217c:1:269
+DTV1
+p:
 07e4:eeee0000:20e1:217c:1:270
 ONE TV
 p:ONE TV
