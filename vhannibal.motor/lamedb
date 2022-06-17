@@ -2076,6 +2076,9 @@ transponders
 00820000:2260:fbff
 	s 12465000:29900000:1:4:130:2:0:1:1:0:2
 /
+00822eef:0000:0000
+	s 12015000:27500000:0:3:130:2:0:1:2:0:2
+/
 00640000:0001:0002
 	s 10748000:4000000:1:9:100:2:0:1:2:0:2:171:0:1
 /
@@ -2238,6 +2241,9 @@ transponders
 005a0000:03ac:0110
 	s 12188000:31400000:1:2:90:2:0:1:2:0:2:1:262140:1
 /
+005aaf9c:0000:0000
+	s 12188000:31400000:1:2:90:2:0:1:2:0:2:2:262140:1
+/
 005a0000:0001:04d2
 	s 11760000:14325000:1:4:90:2:0
 /
@@ -2315,9 +2321,6 @@ transponders
 /
 005aaf75:0000:0000
 	s 12149000:31400000:1:2:90:2:0:1:2:0:2:3:262140:1
-/
-005aaf9c:0000:0000
-	s 12188000:31400000:1:2:90:2:0:1:2:0:2:2:262140:1
 /
 00460000:4e20:0064
 	s 10721000:22000000:0:3:70:2:0
@@ -3464,9 +3467,6 @@ p:ViewMedia
 0006:02ad0000:0004:0001:1:0
 TRUTH TV
 p:ViewMedia
-0009:02ad0000:0004:0001:1:0
-Prophetikos TV
-p:ViewMedia
 000a:02ad0000:0004:0001:1:0
 Encounter Jesus TV
 p:ViewMedia
@@ -3650,12 +3650,6 @@ p:SENTECH
 00d4:02ad0000:0005:0049:1:0
 DUNAMIS TV
 p:SENTECH
-00d5:02ad0000:0005:0049:1:0
-Full Life TV
-p:SENTECH
-00d6:02ad0000:0005:0049:1:0
-Oracle TV
-p:SENTECH
 00d7:02ad0000:0005:0049:1:0
 CELEBRATION TV Plus
 p:SENTECH
@@ -3664,9 +3658,6 @@ REMITE TV
 p:Sentech
 00da:02ad0000:0005:0049:1:0
 Charis TV
-p:SENTECH
-00db:02ad0000:0005:0049:1:0
-More Grace TV
 p:SENTECH
 00dc:02ad0000:0005:0049:1:0
 Prophet Mafohla TV
@@ -5116,9 +5107,6 @@ p:2
 p:2
 026b:0208b035:4269:0000:1:0
 Amedia 2
-p:2
-026d:0208b035:4269:0000:1:0
-ТВ-3 International
 p:2
 026e:0208b035:4269:0000:1:0
 Animal Planet
@@ -9392,11 +9380,11 @@ p:
 00cd:01860000:0012:001c:1:0
 Nat Geo Wild
 p:
-00d7:01860000:0012:001c:1:0
-Filmbox
-p:
 00ce:01860000:0012:001c:1:0
 EuroNews 
+p:
+00d7:01860000:0012:001c:1:0
+Filmbox
 p:
 0258:01860000:1470:00a7:25:0
 Animal Planet HD
@@ -20096,15 +20084,15 @@ p:Qbit GmbH
 03e8:00d82d39:0001:0001:2:0
 Program 1000
 p:Qbit GmbH
-345d:00c00000:03e9:0001:1:0
+345d:00c00000:03e9:0001:31:0
 Service13405
 p:ORS
-3464:00c00000:03e9:0001:1:0
-Service 13412
-p:ORF
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
+3464:00c00000:03e9:0001:31:0
+Service13412
+p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC World News Europe HD
 p:SES ASTRA
@@ -20993,14 +20981,14 @@ p:ARD
 7a48:00c00000:0410:0001:1:0
 Telesur SD
 p:TSA
-7a4a:00c00000:0410:0001:1:0
-SENDER NEU JERUSALEM
-p:TSA
 7a4b:00c00000:0410:0001:1:0
 I24 Francis
 p:TSA
 7a4c:00c00000:0410:0001:1:0
 SACHSEN EINS
+p:TSA
+7a4a:00c00000:0410:0001:22:0
+SENDER NEU JERUSALEM
 p:TSA
 7a47:00c00000:0410:0001:25:0
 Promo TSA
@@ -22255,7 +22243,7 @@ USHUAIA TV
 p:CSAT
 245a:00c00000:0440:0001:25:0
 FRANCE 2
-p:CSAT
+p:CSAT,c:050001
 245b:00c00000:0440:0001:25:0
 CINE+ EMOTION
 p:CSAT
@@ -22270,7 +22258,7 @@ TOONAMI
 p:CSAT
 2460:00c00000:0440:0001:25:0
 TF1
-p:CSAT,c:050001
+p:CSAT
 2461:00c00000:0440:0001:25:0
 EUROSPORT 1
 p:CSAT
@@ -26676,7 +26664,7 @@ p:Volant Media
 ER24
 p:M-Three Satcom
 01f7:00820000:0384:013e:1:0
-Well TV
+WellTV
 p:M-Three Satcom
 01f8:00820000:0384:013e:1:0
 NASA TV HD
@@ -30428,6 +30416,84 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
+0001:00822eef:0000:0000:1:0
+MTV Live HD
+p:Cyfrowy Polsat S.A.
+0002:00822eef:0000:0000:1:0
+Nick Music
+p:Cyfrowy Polsat S.A.
+0003:00822eef:0000:0000:1:0
+Nick Jr
+p:Cyfrowy Polsat S.A.
+0008:00822eef:0000:0000:1:0
+MTV 00s
+p:Cyfrowy Polsat S.A.
+0009:00822eef:0000:0000:1:0
+Nickelodeon
+p:Cyfrowy Polsat S.A.
+000c:00822eef:0000:0000:1:0
+Comedy Central HD
+p:Cyfrowy Polsat S.A.
+000d:00822eef:0000:0000:1:0
+Paramount Network Polska
+p:Cyfrowy Polsat S.A.
+000e:00822eef:0000:0000:1:0
+Nicktoons HD
+p:Cyfrowy Polsat S.A.
+000f:00822eef:0000:0000:1:0
+MTV Polska HD
+p:Cyfrowy Polsat S.A.
+0010:00822eef:0000:0000:1:0
+Polsat Comedy Central Extra
+p:Cyfrowy Polsat S.A.
+0011:00822eef:0000:0000:1:0
+Nickelodeon Ukraine Pluto TV
+p:Cyfrowy Polsat S.A
+0015:00822eef:0000:0000:1:0
+12015H SID 0x15
+p:DVB-S2 8PSK 12015H 13.0Â°E
+0019:00822eef:0000:0000:1:0
+MTV Commercial
+p:
+0020:00822eef:0000:0000:1:0
+Comedy Central HD
+p:Cyfrowy Polsat S.A.
+0021:00822eef:0000:0000:1:0
+Paramount Network Polska
+p:Cyfrowy Polsat S.A.
+0023:00822eef:0000:0000:1:0
+12015H SID 0x23
+p:DVB-S2 8PSK 12015H 13.0Â°E
+003c:00822eef:0000:0000:1:0
+VOD 202
+p:Cyfrowy Polsat S.A.,c:050001
+003d:00822eef:0000:0000:1:0
+VOD 203
+p:Cyfrowy Polsat SA
+003e:00822eef:0000:0000:1:0
+VOD 204
+p:Cyfrowy Polsat SA
+003f:00822eef:0000:0000:1:0
+VOD 205
+p:Cyfrowy Polsat S.A.
+0040:00822eef:0000:0000:1:0
+VOD 206
+p:Cyfrowy Polsat S.A.
+0041:00822eef:0000:0000:1:0
+VOD 207
+p:Cyfrowy Polsat S.A.
+0042:00822eef:0000:0000:1:0
+VOD 208
+p:Cyfrowy Polsat S.A.
+0043:00822eef:0000:0000:1:0
+xxxVOD1
+p:Cyfrowy Polsat S.A.
+0044:00822eef:0000:0000:1:0
+xxxVOD2
+p:Cyfrowy Polsat S.A.
+0045:00822eef:0000:0000:1:0
+Nicktoons HD
+p:Cyfrowy Polsat S.A.
 0460:00640000:0001:0002:1:0
 Mod_VSAT_AO:PT
 p:ERICSSON Television,c:050001
@@ -30758,14 +30824,11 @@ p:Persidera
 0276:005a0000:0200:001d:1:0
 VH1 On Demand
 p:Persidera
-0079:005a0000:0200:001d:1:0
-VH1
-p:Persidera
 000d:005a0000:0200:001d:2:0
 R Italia SMI
 p:Persidera
-001e:005a0000:0200:001d:22:0
-Boing Plus (provvisorio)
+0069:005a0000:0200:001d:2:0
+RADIO VATICANA ITALIA
 p:Persidera
 0037:005a0000:0200:001d:22:0
 Super!
@@ -30777,6 +30840,9 @@ p:Persidera
 Sky TG24
 p:Persidera
 0078:005a0000:0200:001d:22:0
+VH1
+p:Persidera
+0079:005a0000:0200:001d:22:0
 VH1
 p:Persidera
 0092:005a0000:0200:001d:22:0
@@ -30806,26 +30872,29 @@ p:Persidera
 0064:005a0000:0200:001d:25:0
 TV2000
 p:Persidera
+006e:005a0000:0200:001d:25:0
+RADIO KISS KISS TV
+p:Persidera
 0064:005a0000:0202:001d:1:0
 TV2000 (provvisorio)
 p:Persidera
 0069:005a0000:0202:001d:2:0
-RADIO VATICANA ITALIA
+RADIO VATICANA ITA (provvisorio)
 p:Persidera
 0001:005a0000:0202:001d:22:0
-GOLD TV ITALIA
+GOLD TV ITALIA (provvisorio)
 p:Persidera
 0002:005a0000:0202:001d:22:0
-LA 4 ITALIA
+LA 4 ITALIA (provvisorio)
 p:Persidera
 0003:005a0000:0202:001d:22:0
-CHANNEL 24
+CHANNEL 24 (provvisorio)
 p:Persidera
 0004:005a0000:0202:001d:22:0
 RETE ITALIA
 p:Persidera
 0005:005a0000:0202:001d:22:0
-LINEAGEM
+LINEAGEM (provvisorio)
 p:Persidera
 0006:005a0000:0202:001d:22:0
 LINEA ITALIA
@@ -30847,7 +30916,7 @@ FIRE TV
 p:Persidera
 000d:005a0000:0202:001d:22:0
 ARTE INVESTIMENTI
-p:Persidera
+p:Persidera,c:050001
 000e:005a0000:0202:001d:22:0
 CANALE 162
 p:Persidera
@@ -30894,13 +30963,13 @@ p:Persidera
 Byoblu
 p:Persidera
 008b:005a0000:0202:001d:22:0
-ITALIA CHANNEL
+ITALIA CHANNEL (provvisorio)
 p:Persidera
 008c:005a0000:0202:001d:22:0
-Mediatext.it
+Mediatext.it (provvisorio)
 p:Persidera
 008d:005a0000:0202:001d:22:0
-PIANETA TV
+PIANETA TV (provvisorio)
 p:Persidera
 03e9:005a0000:0202:001d:22:0
 SoloCalcio
@@ -30959,14 +31028,14 @@ p:Persidera
 0073:005a0000:0202:001d:25:0
 CUSANO ITALIA TV
 p:Persidera
-0078:005a0000:0202:001d:25:0
-RADIO KISS KISS TV
-p:Persidera
 0091:005a0000:0202:001d:25:0
 RDS Social TV
 p:Persidera
 0092:005a0000:0202:001d:25:0
 RDS Social TV
+p:Persidera
+0078:005a0000:0202:001d:25:0
+RADIO KISS KISS TV (provvisorio)
 p:Persidera
 00dd:005a0000:0204:001d:2:0
 RTL 102.5
@@ -30986,11 +31055,17 @@ p:Persidera
 001a:005a0000:0204:001d:22:0
 PROMO SPORT
 p:Persidera
+001b:005a0000:0204:001d:22:0
+GOLD TV ITALIA
+p:Persidera
+001c:005a0000:0204:001d:22:0
+LA 4 ITALIA
+p:Persidera
+001d:005a0000:0204:001d:22:0
+CHANNEL 24
+p:Persidera
 001e:005a0000:0204:001d:22:0
 ALMA TV
-p:Persidera
-00d2:005a0000:0204:001d:22:0
-Juwelo
 p:Persidera
 00fa:005a0000:0204:001d:22:0
 RADIO LIBERTA'
@@ -31000,16 +31075,16 @@ GIALLO
 p:Persidera
 0014:005a0000:0204:001d:25:0
 Food Network
-p:Persidera,c:050001
+p:Persidera
 0015:005a0000:0204:001d:25:0
 RTL 102.5
 p:Persidera
 002c:005a0000:0204:001d:25:0
 Real Time
-p:Persidera,c:050001
+p:Persidera
 0032:005a0000:0204:001d:25:0
 DMAX
-p:Persidera,c:050001
+p:Persidera
 0082:005a0000:0204:001d:25:0
 RADIO ZETA
 p:Persidera
@@ -32101,7 +32176,7 @@ p:Mediaset
 p:Mediaset
 084c:005a0000:0389:0110:22:0
 Boing
-p:Mediaset
+p:Mediaset,c:050001,c:130455
 084d:005a0000:0389:0110:22:0
 Cartoonito
 p:Mediaset
@@ -32171,6 +32246,39 @@ p:
 1068:005a0000:03ac:0110:31:0
 Test HEVC Main10
 p:,c:050007
+0fa5:005aaf9c:0000:0000:1:0
+Canale5 (provvisorio)
+p:
+0fb9:005aaf9c:0000:0000:1:1
+Canale5 (provvisorio)
+p:
+0faf:005aaf9c:0000:0000:1:2
+Iris (provvisorio)
+p:
+0fa6:005aaf9c:0000:0000:1:3
+Italia1 (provvisorio)
+p:
+0fba:005aaf9c:0000:0000:1:4
+Italia1 (provvisorio)
+p:
+0fad:005aaf9c:0000:0000:1:5
+La 5 (provvisorio)
+p:
+0fa4:005aaf9c:0000:0000:1:6
+Rete4 (provvisorio)
+p:
+0fb8:005aaf9c:0000:0000:1:7
+Rete4 (provvisorio)
+p:
+1068:005aaf9c:0000:0000:31:8
+Test HEVC Main10
+p:,c:050007
+1012:005aaf9c:0000:0000:22:9
+TGCOM24
+p:,c:050001
+0fae:005aaf9c:0000:0000:22:10
+TGCOM24
+p:,c:050001
 0001:005a0000:0001:04d2:1:0
 Clasico TV
 p:TELEVISA
@@ -32281,13 +32389,13 @@ VIDEONOVARA
 p:COELMEDIA
 03e9:005a0000:10e1:217c:1:0
 TopCalcio24
-p:mediapason
+p:mediapason,c:050001
 03ea:005a0000:10e1:217c:1:0
 VIDEOGRUPPO
 p:ITC
 03eb:005a0000:10e1:217c:1:0
 Sesta Rete
-p:Sesta Rete,c:050001
+p:Sesta Rete
 03ec:005a0000:10e1:217c:1:0
 TELECUPOLE
 p:TELECUPOLE-TLT
@@ -32327,6 +32435,12 @@ p:In Aria!
 070b:005a0000:18e1:217c:1:0
 CANALE ITALIA
 p:Canale Italia
+070c:005a0000:18e1:217c:1:0
+TELECAMPIONE
+p:TELECAMPIONE
+070d:005a0000:18e1:217c:1:0
+TELEREPORTER
+p:Pubblirose
 070e:005a0000:18e1:217c:1:0
 TELECITY
 p:TELECITY AO
@@ -32351,12 +32465,6 @@ p:In Aria!,c:050001
 070a:005a0000:18e1:217c:22:0
 TV VALLEE
 p:In Aria!
-070c:005a0000:18e1:217c:22:0
-TELECAMPIONE
-p:TELECAMPIONE
-070d:005a0000:18e1:217c:22:0
-TELEREPORTER
-p:TELEREPORTER
 000b:005a0000:18e2:217c:1:0
 TEST RL AO2
 p:,c:050001
@@ -32384,6 +32492,9 @@ p:SUPERTV
 07db:005a0000:20e1:217c:1:0
 PIU VALLI TV
 p:PIU VALLI TV
+07dc:005a0000:20e1:217c:1:0
+TRS 93
+p:TRS 93
 07dd:005a0000:20e1:217c:1:0
 CANALE ITALIA
 p:Canale Italia
@@ -32417,12 +32528,12 @@ p:EI Towers
 07d7:005a0000:20e1:217c:22:0
 TT-TELETUTTO
 p:EI TOWERS
-07dc:005a0000:20e1:217c:22:0
-TRS 93
-p:TRS 93
 0af6:005a0000:28e1:217c:1:0
 ANTENNA TRE VENETO
 p:MEDIANORDEST
+0af7:005a0000:28e1:217c:1:0
+TELEREPORTER
+p:Pubblirose
 0af8:005a0000:28e1:217c:1:0
 TELECHIARA
 p:VIDEOMEDIA-TN
@@ -32435,9 +32546,6 @@ p:Canale Italia
 0af3:005a0000:28e1:217c:22:0
 Telepace Trento
 p:Telepace TN
-0af7:005a0000:28e1:217c:22:0
-TELEREPORTER
-p:TELEREPORTER
 0afa:005a0000:28e1:217c:22:0
 TV7 Triveneta Network
 p:
@@ -32452,10 +32560,10 @@ Telepadova - 7 Gold
 p:Telepadova
 0af5:005a0000:28e1:217c:25:0
 TELENUOVO
-p:TELENUOVO-TN
+p:Telenuovo-VR
 0fa1:005a0000:40e1:217c:1:0
 Primocanale HD
-p:Global
+p:Global,c:050001
 0fa3:005a0000:40e1:217c:1:0
 TELERADIOPACE 1
 p:Telepace
@@ -32464,7 +32572,7 @@ TeleCity
 p:TELECITY LIGURIA
 0fa6:005a0000:40e1:217c:1:0
 TLS TeleLiguriaSud
-p:TLS,c:050001
+p:TLS
 0fa7:005a0000:40e1:217c:1:0
 TelecittÃ 
 p:Global
@@ -32497,7 +32605,7 @@ LTV
 p:In Aria!
 12c1:005a0000:48e1:217c:1:0
 TRC Modena
-p:Trmedia
+p:Trmedia,c:050001
 12c2:005a0000:48e1:217c:1:0
 TRC Bologna
 p:Trmedia
@@ -32512,7 +32620,7 @@ Tvqui
 p:tvqui
 12c6:005a0000:48e1:217c:1:0
 Teleromagna
-p:Pubblisole,c:050001
+p:Pubblisole
 12c7:005a0000:48e1:217c:1:0
 TR24
 p:Via Emilia TV
@@ -32539,7 +32647,7 @@ Icaro Tv
 p:Global
 12cf:005a0000:48e1:217c:1:0
 MEDIANEWS
-p:MEDIANEWS
+p:MEDIANEWS,c:050001
 12d0:005a0000:48e1:217c:1:0
 Giovanni Paolo tv
 p:Global
@@ -32678,6 +32786,12 @@ p:In Aria!
 1a9e:005a0000:68e1:217c:25:0
 7 GOLD
 p:SETTE GOLD
+1a9d:005a0000:68e1:217c:1:0
+Tele In
+p:Tele In
+1aa1:005a0000:68e1:217c:22:0
+RTR
+p:GLOBAL
 1b59:005a0000:70e1:217c:1:0
 RETE 8
 p:RETE 8,c:050001
@@ -32771,9 +32885,21 @@ p:Persidera
 0051:005a0000:7918:217c:22:0
 SPORTITALIA
 p:Persidera
+0052:005a0000:7918:217c:22:0
+LINEAGEM
+p:Persidera
+008b:005a0000:7918:217c:22:0
+ITALIA CHANNEL
+p:Persidera
+008c:005a0000:7918:217c:22:0
+Mediatext.it
+p:Persidera
+008d:005a0000:7918:217c:22:0
+PIANETA TV
+p:Persidera
 0001:005a0000:7918:217c:25:0
 NOVE
-p:Persidera,c:050001
+p:Persidera
 0002:005a0000:7918:217c:25:0
 Motor Trend
 p:Persidera
@@ -33062,39 +33188,6 @@ p:,c:050001
 2009:005aaf75:0000:0000:25:0
 SPORTITALIA HD
 p:,c:050001
-0fa4:005aaf9c:0000:0000:1:0
-Rete4 (provvisorio)
-p:
-0fa5:005aaf9c:0000:0000:1:0
-Canale5 (provvisorio)
-p:
-0fa6:005aaf9c:0000:0000:1:0
-Italia1 (provvisorio)
-p:
-0fad:005aaf9c:0000:0000:1:0
-La 5 (provvisorio)
-p:
-0faf:005aaf9c:0000:0000:1:0
-Iris (provvisorio)
-p:
-0fb8:005aaf9c:0000:0000:1:0
-Rete4 (provvisorio)
-p:
-0fb9:005aaf9c:0000:0000:1:0
-Canale5 (provvisorio)
-p:
-0fba:005aaf9c:0000:0000:1:0
-Italia1 (provvisorio)
-p:
-1012:005aaf9c:0000:0000:22:0
-TGCOM24
-p:,c:050001
-0fae:005aaf9c:0000:0000:22:0
-TGCOM24
-p:,c:050001
-1068:005aaf9c:0000:0000:31:0
-Test HEVC Main10
-p:,c:050007
 0001:00460000:4e20:0064:1:0
 BBC Persian
 p:BBC World Service
