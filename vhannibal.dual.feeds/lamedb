@@ -324,6 +324,9 @@ transponders
 00820000:01f4:013e
 	s 11296000:27500000:0:4:130:2:0
 /
+00820000:02bc:013e
+	s 11334000:27500000:0:3:130:2:0:1:2:0:2
+/
 00820000:0321:013e
 	s 11355000:27500000:1:1:130:2:0:1:1:0:2
 /
@@ -539,9 +542,6 @@ transponders
 /
 00820000:2260:fbff
 	s 12465000:29900000:1:4:130:2:0:1:1:0:2
-/
-00820000:02bc:013e
-	s 11334000:27500000:0:3:130:2:0:1:2:0:2
 /
 end
 services
@@ -916,7 +916,7 @@ kabel eins HD Austria
 p:ProSiebenSat.1
 ef8b:00c00000:03f9:0001:25:0
 sixx HD Austria
-p:ProSiebenSat.1
+p:ProSiebenSat.1,c:050001
 ef8c:00c00000:03f9:0001:25:0
 Pro7 MAXX HD Austria
 p:ProSiebenSat.1
@@ -2245,7 +2245,7 @@ MEZZO LIVE
 p:CSAT
 1f4d:00c00000:042e:0001:25:0
 MULTISPORTS 1
-p:CSAT
+p:CSAT,c:050001
 1f50:00c00000:042e:0001:25:0
 CANAL J
 p:CSAT
@@ -2510,9 +2510,6 @@ p:ZDFvision
 6d71:00c00000:0437:0001:2:0
 Dlf Nova
 p:ZDFvision
-2262:00c00000:0438:0001:1:0
-12012V SID 0x2262
-p:DVB-S2 8PSK 12012V 19.2Â°E
 2270:00c00000:0438:0001:1:0
 F3 CORSEVIASTELLA
 p:CSAT
@@ -4601,14 +4598,35 @@ p:Cyfrowy Polsat S.A.
 33f9:00820000:3390:0071:1:0
 Polsat News HD
 p:Cyfrowy Polsat S.A.
+0001:00820000:2e18:00b0:1:0
+Al Maghribia HD
+p:SNRT
+0002:00820000:2e18:00b0:1:0
+Laayoune TV HD
+p:SNRT
+0003:00820000:2e18:00b0:1:0
+Al Aoula Inter HD
+p:SNRT
+0004:00820000:2e18:00b0:1:0
+Athaqafia HD
+p:SNRT
 0005:00820000:2e18:00b0:1:0
 Al Aoula Inter
+p:SNRT
+0006:00820000:2e18:00b0:1:0
+Assadissa HD
+p:SNRT
+000a:00820000:2e18:00b0:1:0
+Arryadia HD
+p:SNRT
+00f1:00820000:2e18:00b0:1:0
+Tamazight HD
 p:SNRT
 000b:00820000:2e18:00b0:2:0
 Radio Nationale
 p:SNRT
 000c:00820000:2e18:00b0:2:0
-Radio Sud
+Radio sud
 p:SNRT
 000e:00820000:2e18:00b0:2:0
 Radio Inter
@@ -4619,7 +4637,7 @@ p:SNRT
 0010:00820000:2e18:00b0:2:0
 Radio Med VI
 p:SNRT
-2b2a:00820000:2e18:00b0:2:0
+0032:00820000:2e18:00b0:2:0
 Agadir
 p:SNRT
 0035:00820000:2e18:00b0:2:0
@@ -4638,7 +4656,7 @@ p:SNRT
 Meknes
 p:SNRT
 005a:00820000:2e18:00b0:2:0
-Laayoune
+Laâyoune
 p:SNRT
 005b:00820000:2e18:00b0:2:0
 Dakhla
@@ -4651,27 +4669,6 @@ Fes
 p:SNRT
 00b3:00820000:2e18:00b0:2:0
 Marrakech
-p:SNRT
-0001:00820000:2e18:00b0:25:0
-Al Maghribia HD
-p:SNRT
-0002:00820000:2e18:00b0:25:0
-Laayoune TV HD
-p:SNRT
-0003:00820000:2e18:00b0:25:0
-Al Aoula Inter HD
-p:SNRT
-0004:00820000:2e18:00b0:25:0
-Athaqafia HD
-p:SNRT
-0006:00820000:2e18:00b0:25:0
-Assadissa HD
-p:SNRT
-000a:00820000:2e18:00b0:25:0
-Arryadia HD
-p:SNRT
-00f1:00820000:2e18:00b0:25:0
-Tamazight HD
 p:SNRT
 0065:00820000:1770:00be:2:0
 Radio R101
@@ -4973,6 +4970,12 @@ p:Eutelsat
 060e:00820000:01f4:013e:2:0
 Yemen Radio
 p:Eutelsat
+02bd:00820000:02bc:013e:25:0
+Eurosport 1 International HD
+p:Warner Bros. Discovery
+02be:00820000:02bc:013e:25:0
+Eurosport 2 International HD
+p:Warner Bros. Discovery
 05de:00820000:0321:013e:0:0
 Iran International HD
 p:Volant Media
@@ -5093,6 +5096,9 @@ p:DVB-S2 8PSK 11411H 13.0Â°E
 377b:00820000:044c:013e:25:0
 CANAL+ FAMILY HD
 p:CANAL+
+377c:00820000:044c:013e:25:0
+StudioMed TV HD
+p:CANAL+
 377d:00820000:044c:013e:25:0
 teleTOON+ HD
 p:CANAL+
@@ -5110,9 +5116,6 @@ Ale kino+ HD
 p:CANAL+
 3782:00820000:044c:013e:25:0
 CANAL+ SERIALE HD
-p:CANAL+
-3783:00820000:044c:013e:25:0
-NOVELAS+
 p:CANAL+
 3784:00820000:044c:013e:25:0
 TeenNick
@@ -5605,7 +5608,7 @@ Rai Radio Trst A
 p:Rai
 0d49:00820000:1450:013e:25:0
 Rai 1 HD
-p:Rai,c:050001
+p:Rai,c:0001f5,c:010259,c:020237,c:0301f5,c:050001
 0d4a:00820000:1450:013e:25:0
 Rai 2 HD
 p:Rai
@@ -5614,13 +5617,13 @@ Rai 3 HD
 p:Rai
 0d4d:00820000:1450:013e:25:0
 Rai 4 HD
-p:
+p:,C:0000
 0d4e:00820000:1450:013e:25:0
 Rai Movie HD
-p:Rai
+p:Rai,C:0000
 0d4f:00820000:1450:013e:31:0
 Rai 4K
-p:Rai
+p:Rai,C:0000
 0191:00820000:1518:013e:1:0
 MTV 00s
 p:NOVA
@@ -6370,7 +6373,7 @@ Kalemeh TV
 p:iKO Media Group
 39dc:00820000:1fa4:013e:1:0
 Mohabat TV
-p:
+p:M
 39dd:00820000:1fa4:013e:2:0
 Radio Mojdeh
 p:Radio Mojdeh
@@ -7173,7 +7176,7 @@ p:Cyfrowy Polsat S.A.
 Polsat Sport Premium PPV4
 p:Cyfrowy Polsat S.A.
 3e30:00820000:2ee0:013e:1:0
-TestPP
+PPV FAME MMA 16
 p:Cyfrowy Polsat S.A.
 3e3a:00820000:2ee0:013e:1:0
 TestL
@@ -7804,7 +7807,7 @@ RADIONORBA TV
 p:Telenorba
 0520:00820000:3d54:013e:1:0
 Yes TV
-p:M-Three Satcom
+p:M-threee Satcom
 0530:00820000:3d54:013e:1:0
 People TV
 p:PEOPLETV-RETE7
@@ -7822,7 +7825,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-Three Satcom Srl
+p:M-ThreeSatcom Srl
 0534:00820000:3d54:013e:22:0
 GOLD TV
 p:M-Three Satcom
@@ -8813,11 +8816,5 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
-02bd:00820000:02bc:013e:25:0
-Eurosport 1 International HD
-p:Warner Bros. Discovery
-02be:00820000:02bc:013e:25:1
-Eurosport 2 International HD
-p:Warner Bros. Discovery
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
