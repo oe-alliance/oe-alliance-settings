@@ -312,6 +312,9 @@ transponders
 00820000:04b0:0110
 	s 11432000:29900000:1:3:130:2:0:1:2:0:2
 /
+00820000:0064:013e
+	s 11219000:27500000:0:1:130:2:0:1:1:0:2
+/
 00820000:00c8:013e
 	s 11240000:27500000:1:3:130:2:0
 /
@@ -326,9 +329,6 @@ transponders
 /
 00820000:02bc:013e
 	s 11334000:27500000:0:3:130:2:0:1:2:0:2
-/
-00820000:0321:013e
-	s 11355000:27500000:1:1:130:2:0:1:1:0:2
 /
 00820000:0384:013e
 	s 11373000:27500000:0:3:130:2:0:1:2:0:2
@@ -916,7 +916,7 @@ kabel eins HD Austria
 p:ProSiebenSat.1
 ef8b:00c00000:03f9:0001:25:0
 sixx HD Austria
-p:ProSiebenSat.1,c:050001
+p:ProSiebenSat.1
 ef8c:00c00000:03f9:0001:25:0
 Pro7 MAXX HD Austria
 p:ProSiebenSat.1
@@ -2245,7 +2245,7 @@ MEZZO LIVE
 p:CSAT
 1f4d:00c00000:042e:0001:25:0
 MULTISPORTS 1
-p:CSAT,c:050001
+p:CSAT
 1f50:00c00000:042e:0001:25:0
 CANAL J
 p:CSAT
@@ -4748,6 +4748,12 @@ p:Mediaset
 0087:00820000:04b0:0110:25:0
 27Twentyseven HD
 p:Mediaset
+089a:00820000:0064:013e:0:0
+Iran International HD
+p:Volant Media
+0899:00820000:0064:013e:25:0
+BBC Persian HD
+p:BBC World Service,c:050001
 366a:00820000:00c8:013e:1:0
 NOVIY_MIR
 p:FFmpeg
@@ -4976,12 +4982,6 @@ p:Warner Bros. Discovery
 02be:00820000:02bc:013e:25:0
 Eurosport 2 International HD
 p:Warner Bros. Discovery
-05de:00820000:0321:013e:0:0
-Iran International HD
-p:Volant Media
-05dd:00820000:0321:013e:25:0
-BBC Persian HD
-p:BBC World Service
 0216:00820000:0384:013e:1:0
 Iraqia News HD
 p:
@@ -4992,7 +4992,7 @@ p:Volant Media
 ER24
 p:M-Three Satcom
 01f7:00820000:0384:013e:1:0
-Well TV
+WellTV
 p:M-Three Satcom
 01f8:00820000:0384:013e:1:0
 NASA TV HD
@@ -5608,7 +5608,7 @@ Rai Radio Trst A
 p:Rai
 0d49:00820000:1450:013e:25:0
 Rai 1 HD
-p:Rai,c:0001f5,c:010259,c:020237,c:0301f5,c:050001
+p:Rai,c:050001
 0d4a:00820000:1450:013e:25:0
 Rai 2 HD
 p:Rai
@@ -5617,13 +5617,13 @@ Rai 3 HD
 p:Rai
 0d4d:00820000:1450:013e:25:0
 Rai 4 HD
-p:,C:0000
+p:
 0d4e:00820000:1450:013e:25:0
 Rai Movie HD
-p:Rai,C:0000
+p:Rai
 0d4f:00820000:1450:013e:31:0
 Rai 4K
-p:Rai,C:0000
+p:Rai
 0191:00820000:1518:013e:1:0
 MTV 00s
 p:NOVA
@@ -6345,8 +6345,8 @@ p:TSA
 Revival TV
 p:UNITED TELEPORTS
 39d3:00820000:1fa4:013e:1:0
-Detskiy Mir - TeleClub
-p:Eutelsat
+Detskii Mir
+p:ARC/DCM2 TSOIP
 39d4:00820000:1fa4:013e:1:0
 Lubimoe Kino
 p:Eutelsat
@@ -6373,7 +6373,7 @@ Kalemeh TV
 p:iKO Media Group
 39dc:00820000:1fa4:013e:1:0
 Mohabat TV
-p:M
+p:
 39dd:00820000:1fa4:013e:2:0
 Radio Mojdeh
 p:Radio Mojdeh
@@ -7192,7 +7192,7 @@ Dorcel TV HD
 p:AB Sat
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM1 TSOIP
+p:ARC/DCM2 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -7216,12 +7216,12 @@ RADA
 p:FFmpeg
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat Data 1
+Eutelsat data 1
 p:MIT-xperts GmbH
 4209:00820000:2f44:013e:2:0
 VOICE OF CRO
@@ -7681,7 +7681,7 @@ Bravo TV
 p:GMN
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Manoto
+p:
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Arqiva
@@ -7747,9 +7747,6 @@ Radio Margherita
 p:Telespazio
 135e:00820000:33f4:013e:2:0
 Radio Cusano Campus
-p:Telespazio
-1365:00820000:33f4:013e:2:0
-Radio Dimensione Stereo
 p:Telespazio
 031e:00820000:3bc4:013e:1:0
 Qatar TV HD
@@ -8101,7 +8098,7 @@ TF1 SERIES FILMS
 p:Eutelsat
 0141:00820000:3e1c:013f:1:0
 L'EQUIPE
-p:Eutelsat
+p:Eutelsat,c:050001
 0142:00820000:3e1c:013f:1:0
 6TER
 p:Eutelsat
@@ -8133,7 +8130,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Sky Cinema Halloween HD
+Risate all'italiana HD
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -8547,7 +8544,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Sky Cinema Halloween
+Risate all'italiana
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
