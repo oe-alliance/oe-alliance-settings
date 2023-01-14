@@ -1878,9 +1878,6 @@ transponders
 00820000:2af8:013e
 	s 10719000:27500000:1:3:130:2:0:1:2:0:2
 /
-0082abc0:0001:0001
-	s 11200000:34290000:1:0:130:2:0:1:4:0:2
-/
 00820000:2b5c:013e
 	s 10728000:30000000:0:3:130:2:0:1:2:0:2
 /
@@ -2000,6 +1997,9 @@ transponders
 /
 00820000:2260:fbff
 	s 12465000:29900000:1:4:130:2:0:1:1:0:2
+/
+0082abc0:0001:0001
+	s 11200000:34290000:1:0:130:2:0:1:4:0:2
 /
 00640000:0001:0002
 	s 10748000:4000000:1:9:100:2:0:1:2:0:2:171:0:1
@@ -13476,7 +13476,7 @@ p:BSkyB
 Discovery HD
 p:BSkyB
 1792:011a0000:07ed:0002:25:0
-Sky Hits HD
+SkyTwilightHD
 p:BSkyB
 0fa1:011a0000:07ed:0002:25:0
 SkySp NFL HD
@@ -13515,7 +13515,7 @@ p:BSkyB
 Sky Family HD
 p:BSkyB
 1784:011a0000:07ee:0002:25:0
-WizardingWldHD
+SkyFeelGoodHD
 p:BSkyB
 1785:011a0000:07ee:0002:25:0
 SkyPremiereHD
@@ -13530,7 +13530,7 @@ p:BSkyB,c:050001
 Sky Drama HD
 p:BSkyB
 0ee9:011a0000:07ee:0002:25:0
-Sky ScFi/HorHD
+SkyDystopiaHD
 p:BSkyB
 0eeb:011a0000:07ee:0002:25:0
 Sky Comedy HD
@@ -14709,7 +14709,7 @@ d12f:011a0000:0832:0002:1:0
 ARISEPlay
 p:BSkyB
 d133:011a0000:0832:0002:1:0
-53555
+ARY QTV
 p:BSkyB
 d15b:011a0000:0832:0002:25:0
 Create&CraftHD
@@ -27456,8 +27456,8 @@ p:TSA
 Revival TV
 p:UNITED TELEPORTS
 39d3:00820000:1fa4:013e:1:0
-Detskiy Mir - TeleClub
-p:Eutelsat
+Detskii Mir
+p:ARC/DCM2 TSOIP
 39d4:00820000:1fa4:013e:1:0
 Lubimoe Kino
 p:Eutelsat
@@ -27481,7 +27481,7 @@ Kalemeh TV
 p:iKO Media Group
 39dc:00820000:1fa4:013e:1:0
 Mohabat TV
-p:M
+p:
 39df:00820000:1fa4:013e:1:0
 Vidrodjennya German
 p:FFmpeg
@@ -27800,9 +27800,6 @@ p:CANAL+
 118a:00820000:2af8:013e:31:0
 Player
 p:CANAL+
-0001:0082abc0:0001:0001:1:0
-Eutelsat promo
-p:
 11fa:00820000:2b5c:013e:1:0
 Nasa TV UHD
 p:
@@ -28501,7 +28498,7 @@ Bravo TV
 p:GMN
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Manoto
+p:
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Arqiva
@@ -29624,6 +29621,9 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
+0001:0082abc0:0001:0001:1:0
+Eutelsat Promo TV
+p:
 0460:00640000:0001:0002:1:0
 Mod_VSAT_AO:PT
 p:ERICSSON Television
@@ -30100,7 +30100,7 @@ RADIOFRECCIA
 p:Persidera
 0712:005a0000:0001:0064:1:0
 SISAL 1
-p:
+p:,c:050001
 071c:005a0000:0001:0064:1:0
 SISAL 2
 p:Eutelsat
@@ -30199,7 +30199,7 @@ Deluxe Music HD
 p:BASIS 1
 01a3:005a0000:1964:009c:25:0
 Comedy Central HD
-p:BASIS 1
+p:BASIS 1,c:050001
 01a4:005a0000:1964:009c:25:0
 Disney Channel HD
 p:BASIS 1
@@ -30508,7 +30508,7 @@ M5 HD (Europa)
 p:MTVA
 0001:005a0000:19c8:009e:1:0
 RTS1_Pal
-p:GLOBECAST
+p:GLOBECAST,c:050001
 015f:005a0000:19c8:009e:1:0
 HWAZAN
 p:ADTH
@@ -30592,22 +30592,10 @@ TIN - The Israeli Network - new
 p:iKO Media Group
 0363:005a0000:c35a:009e:25:0
 MUSEUM HD
-p:A1 Broadcasting
+p:A1 Broadcasting,c:050001
 0365:005a0000:c35a:009e:25:0
 MyZen TV HD
 p:A1 Broadcasting
-035e:005a0000:c35a:009e:31:0
-EUROBET 11
-p:Eutelsat
-035f:005a0000:c35a:009e:31:0
-EUROBET 12
-p:Eutelsat
-0360:005a0000:c35a:009e:31:0
-EUROBET 13
-p:Eutelsat
-0361:005a0000:c35a:009e:31:0
-EUROBET 14
-p:Eutelsat
 16a8:005a0000:c3aa:009e:22:0
 TLC Pan Regional SD
 p:Warner Bros. Discovery
@@ -31066,10 +31054,10 @@ PRIMA FREE
 p:
 1c03:005a0000:0384:0110:22:0
 UNO TV
-p:,c:050001,c:1407e2
+p:,c:050001
 1c04:005a0000:0384:0110:22:0
 FASCINO TV
-p:
+p:,c:050001
 1c05:005a0000:0384:0110:22:0
 DONNASHOPPING
 p:
@@ -31210,7 +31198,7 @@ Italia1 HD
 p:Mediaset
 0bbc:005a0000:03a2:0110:25:0
 Rete4 HD
-p:Mediaset,f:1000
+p:Mediaset,c:050001,c:130483,f:1000
 0bbd:005a0000:03a2:0110:25:0
 Canale5 HD
 p:Mediaset,f:1000
@@ -39445,6 +39433,9 @@ RADIO BERBERE
 p:
 1f47:0dca0000:0012:006e:25:0
 Tunisia Nat1 HD
+p:
+1f54:0dca0000:0012:006e:1:0
+Shahrazad
 p:
 0001:0dca0000:0014:006e:1:0
 AFAQ TV
