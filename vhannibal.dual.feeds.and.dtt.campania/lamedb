@@ -234,6 +234,9 @@ transponders
 00c00000:045d:0001
 	s 12692000:22000000:0:4:192:2:0
 /
+00c00000:045e:0001
+	s 12699000:23500000:1:3:192:2:0:1:0:0:2
+/
 00c00000:0460:0001
 	s 12728000:23500000:1:0:192:2:0:1:2:0:2
 /
@@ -572,18 +575,18 @@ eeee0000:80e3:217c
 /
 end
 services
+345d:00c00000:03e9:0001:1:0
+Service13405
+p:ORS
+3464:00c00000:03e9:0001:1:0
+Service 13412
+p:ORF
 3459:00c00000:03e9:0001:31:0
 Service 13401
-p:ORS
-345d:00c00000:03e9:0001:31:0
-Service13405
 p:ORS
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
-3464:00c00000:03e9:0001:31:0
-Service13412
-p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC World News Europe HD
 p:SES ASTRA
@@ -624,7 +627,7 @@ p:ATV
 Bibel TV HD
 p:ORS
 33a9:00c00000:03eb:0001:25:0
-Schau TV HD
+KURIER TV
 p:-
 33ab:00c00000:03eb:0001:25:0
 Hope TV
@@ -788,26 +791,14 @@ p:ZDFvision
 2b7a:00c00000:03f3:0001:25:0
 zdf_neo HD
 p:ZDFvision
-18e2:00c00000:03f4:0001:1:0
-TF1 HD
-p:Globecast
-18e3:00c00000:03f4:0001:1:0
-TF1 Series Film HD
-p:Globecast
-18e4:00c00000:03f4:0001:1:0
-TMC HD
-p:Globecast
-18e5:00c00000:03f4:0001:1:0
-TFX HD
-p:Globecast
-18e6:00c00000:03f4:0001:1:0
-LCI HD
-p:Globecast
 18f0:00c00000:03f4:0001:1:0
 EXTREMADURA SAT
 p:GLOBECAST
 18f1:00c00000:03f4:0001:1:0
 TVGA HD EUROPA
+p:GLOBECAST
+18f4:00c00000:03f4:0001:1:0
+EURONEWS GERMAN SD
 p:GLOBECAST
 18f5:00c00000:03f4:0001:1:0
 Rai News 24
@@ -906,13 +897,13 @@ p:CANAL+
 M+ ESTRENOS 2 HD
 p:Movistar+
 74d5:00c00000:03f8:0001:25:0
-Gol Mundial HD
+M+LCAMPEON2
 p:Movistar+
 74d6:00c00000:03f8:0001:25:0
 LigaSmartBankHD
 p:Movistar+
 74d8:00c00000:03f8:0001:25:0
-Gol Mundial HD.
+M+LCampeonesBAR 2 HD
 p:Movistar+
 74db:00c00000:03f8:0001:25:0
 M+LCAMPEON3
@@ -1209,7 +1200,7 @@ p:HOLLYW
 M+DEPORTES3
 p:Digital +
 77c3:00c00000:040a:0001:1:0
-Gol Mundial
+M+LCAMPEON2
 p:Movistar+
 77c4:00c00000:040a:0001:1:0
 M+LCAMPEON5
@@ -1448,14 +1439,14 @@ p:ARD
 2896:00c00000:040f:0001:25:0
 ARD-Test-R
 p:ARD
+7a4a:00c00000:0410:0001:1:0
+SENDER NEU JERUSALEM
+p:TSA
 7a4b:00c00000:0410:0001:1:0
 I24 Francis
 p:TSA
 7a4c:00c00000:0410:0001:1:0
 SACHSEN EINS
-p:TSA
-7a4a:00c00000:0410:0001:22:0
-SENDER NEU JERUSALEM
 p:TSA
 7a47:00c00000:0410:0001:25:0
 Promo TSA
@@ -1545,7 +1536,7 @@ p:CANAL+
 11097V SID 0x7578
 p:DVB-S QPSK 11097V 19.2Â°E
 7579:00c00000:0412:0001:1:0
-Gol Mundial.
+M+LCampeones BAR 2
 p:Movistar+
 757a:00c00000:0412:0001:1:0
 11097V SID 0x757a
@@ -1746,7 +1737,7 @@ p:FOXNWS
 BabyTV
 p:DIGITAL+
 749d:00c00000:041c:0001:1:0
-M+ VACACIONES
+M+ U. Tarantino
 p:Movistar+
 749e:00c00000:041c:0001:1:0
 BOING
@@ -2528,6 +2519,9 @@ p:ZDFvision
 6d71:00c00000:0437:0001:2:0
 Dlf Nova
 p:ZDFvision
+226d:00c00000:0438:0001:1:0
+12012V SID 0x226d
+p:DVB-S2 8PSK 12012V 19.2Â°E
 2270:00c00000:0438:0001:1:0
 F3 CORSEVIASTELLA
 p:CSAT
@@ -2563,9 +2557,6 @@ PIWI+
 p:CSAT
 226c:00c00000:0438:0001:25:0
 MAN X
-p:CSAT
-226d:00c00000:0438:0001:25:0
-OCS CITY
 p:CSAT
 226e:00c00000:0438:0001:25:0
 OCS MAX
@@ -2622,7 +2613,7 @@ p:CSAT
 JACQUIE & MICHEL TV
 p:CSAT
 24bc:00c00000:043c:0001:25:0
-OCS CHOC
+OCS PULP
 p:CSAT
 24be:00c00000:043c:0001:25:0
 EUROSPORT 2
@@ -3524,6 +3515,18 @@ p:ORS
 32d5:00c00000:045d:0001:25:0
 HITRADIO OE3
 p:ORF
+2907:00c00000:045e:0001:1:0
+Deluxe Rock
+p:SES
+2908:00c00000:045e:0001:1:0
+Deluxe Rap
+p:SES
+2909:00c00000:045e:0001:1:0
+Deluxe Dance by Kontor
+p:SES
+290a:00c00000:045e:0001:1:0
+Deluxe Flashback
+p:SES
 2649:00c00000:0460:0001:1:0
 F3 BNORMANDIE
 p:CSAT
@@ -3613,9 +3616,6 @@ Romance TV
 p:SKY
 0009:00c00000:0002:0085:22:0
 Sky Cinema Action
-p:SKY
-0013:00c00000:0002:0085:22:0
-Junior
 p:SKY
 0016:00c00000:0002:0085:22:0
 Heimatkanal
@@ -3736,9 +3736,6 @@ N24 DOKU
 p:BetaDigital
 003e:00c00000:0005:0085:1:0
 EWTN katholisches TV
-p:BetaDigital
-0040:00c00000:0005:0085:1:0
-QVC STYLE
 p:BetaDigital
 0293:00c00000:0005:0085:1:0
 Handystar TV
@@ -3964,9 +3961,6 @@ Sky Sport Bundesliga 10 HD
 p:SKY
 0071:00c00000:000b:0085:25:0
 HISTORY Channel HD
-p:SKY
-0080:00c00000:000b:0085:25:0
-E! Entertainm. HD
 p:SKY
 0087:00c00000:000b:0085:25:0
 Sky Cinema Premieren +24 HD
@@ -4607,35 +4601,14 @@ p:Cyfrowy Polsat S.A.
 33f9:00820000:3390:0071:1:0
 Polsat News HD
 p:Cyfrowy Polsat S.A.
-0001:00820000:2e18:00b0:1:0
-Al Maghribia HD
-p:SNRT
-0002:00820000:2e18:00b0:1:0
-Laayoune TV HD
-p:SNRT
-0003:00820000:2e18:00b0:1:0
-Al Aoula Inter HD
-p:SNRT
-0004:00820000:2e18:00b0:1:0
-Athaqafia HD
-p:SNRT
 0005:00820000:2e18:00b0:1:0
 Al Aoula Inter
-p:SNRT
-0006:00820000:2e18:00b0:1:0
-Assadissa HD
-p:SNRT
-000a:00820000:2e18:00b0:1:0
-Arryadia HD
-p:SNRT
-00f1:00820000:2e18:00b0:1:0
-Tamazight HD
 p:SNRT
 000b:00820000:2e18:00b0:2:0
 Radio Nationale
 p:SNRT
 000c:00820000:2e18:00b0:2:0
-Radio sud
+Radio Sud
 p:SNRT
 000e:00820000:2e18:00b0:2:0
 Radio Inter
@@ -4665,7 +4638,7 @@ p:SNRT
 Meknes
 p:SNRT
 005a:00820000:2e18:00b0:2:0
-Laâyoune
+Laayoune
 p:SNRT
 005b:00820000:2e18:00b0:2:0
 Dakhla
@@ -4678,6 +4651,27 @@ Fes
 p:SNRT
 00b3:00820000:2e18:00b0:2:0
 Marrakech
+p:SNRT
+0001:00820000:2e18:00b0:25:0
+Al Maghribia HD
+p:SNRT
+0002:00820000:2e18:00b0:25:0
+Laayoune TV HD
+p:SNRT
+0003:00820000:2e18:00b0:25:0
+Al Aoula Inter HD
+p:SNRT
+0004:00820000:2e18:00b0:25:0
+Athaqafia HD
+p:SNRT
+0006:00820000:2e18:00b0:25:0
+Assadissa HD
+p:SNRT
+000a:00820000:2e18:00b0:25:0
+Arryadia HD
+p:SNRT
+00f1:00820000:2e18:00b0:25:0
+Tamazight HD
 p:SNRT
 0065:00820000:1770:00be:2:0
 Radio R101
@@ -4900,7 +4894,7 @@ SNTV 1
 p:Eutelsat
 089e:00820000:01f4:013e:1:0
 SNTV 2
-p:Eutelsat
+p:
 089f:00820000:01f4:013e:1:0
 Kurdsat SD
 p:Eutelsat
@@ -5388,7 +5382,7 @@ p:KABELIO.CH
 Kabelio Viaplay Xtra
 p:KABELIO.CH
 3764:00820000:06a4:013e:25:0
-Kabelio ORF Sport+
+Kabelio ITV4
 p:KABELIO.CH
 3765:00820000:06a4:013e:25:0
 Kabelio BBC3/CBBC
@@ -5984,6 +5978,9 @@ p:Telespazio
 02ed:00820000:1b58:013e:2:0
 R. Eurospin
 p:Telespazio
+02f3:00820000:1b58:013e:2:0
+Radio Supersound
+p:Telespazio
 02f9:00820000:1b58:013e:2:0
 Radio RADICALE
 p:Telespazio
@@ -6050,9 +6047,6 @@ p:Nova
 1c22:00820000:1c20:013e:1:0
 Tunisie Nationale
 p:ONT TUNISIA
-1c38:00820000:1c20:013e:1:0
-CCTV-4
-p:Globecast
 1c56:00820000:1c20:013e:1:0
 SMTv San Marino HD
 p:Harmonic
@@ -6300,8 +6294,8 @@ p:TSA
 Revival TV
 p:UNITED TELEPORTS
 39d3:00820000:1fa4:013e:1:0
-Detskiy Mir - TeleClub
-p:Eutelsat
+Detskii Mir
+p:ARC/DCM2 TSOIP
 39d4:00820000:1fa4:013e:1:0
 Lubimoe Kino
 p:Eutelsat
@@ -6325,7 +6319,7 @@ Kalemeh TV
 p:iKO Media Group
 39dc:00820000:1fa4:013e:1:0
 Mohabat TV
-p:M
+p:
 39df:00820000:1fa4:013e:1:0
 Vidrodjennya German
 p:FFmpeg
@@ -7158,7 +7152,7 @@ p:Rai
 Rai Gulp HD
 p:Rai
 4532:00820000:30d4:013e:25:0
-Rai Sport + HD
+Rai Sport HD
 p:Rai
 4534:00820000:30d4:013e:25:0
 Rai 5 HD
@@ -7242,7 +7236,10 @@ p:MB Satellite
 TVP Polonia
 p:MB Satellite
 0075:00820000:3264:013e:1:0
-Kabelio_TP129_n.n.
+Kabelio ORF Sport+
+p:KABELIO.CH
+0087:00820000:3264:013e:1:0
+Kabelio_TP129_n.n1
 p:KABELIO.CH
 0064:00820000:3264:013e:25:0
 Kabelio 3+
@@ -7342,7 +7339,7 @@ Bravo TV
 p:GMN
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Manoto
+p:
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Arqiva
@@ -7462,10 +7459,10 @@ RADIONORBA TV
 p:Telenorba
 0520:00820000:3d54:013e:1:0
 Yes TV
-p:M-Three Satcom
+p:M-threee Satcom
 0530:00820000:3d54:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0533:00820000:3d54:013e:1:0
 The Map Report TV
 p:M-Three satcom
@@ -7483,7 +7480,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-Three Satcom Srl
+p:M-ThreeSatcom Srl
 0534:00820000:3d54:013e:22:0
 GOLD TV
 p:M-Three Satcom
@@ -7514,26 +7511,8 @@ p:M-Three Satcom Srl
 0531:00820000:3d54:013e:25:0
 La C sat
 p:M-Three Satcom
-4206:00820000:3db8:013e:1:0
-Prive
-p:Telespazio
-4208:00820000:3db8:013e:1:0
-Sexto Senso
-p:Telespazio
-4209:00820000:3db8:013e:1:0
-Pinko TV
-p:Telespazio
-420a:00820000:3db8:013e:1:0
-Passion
-p:Telespazio
 421a:00820000:3db8:013e:1:0
 TRM h24
-p:Telespazio
-421e:00820000:3db8:013e:1:0
-SCT
-p:Telespazio
-421f:00820000:3db8:013e:1:0
-Just 89
 p:Telespazio
 4224:00820000:3db8:013e:1:0
 Redlight HD
@@ -7788,7 +7767,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Angelina Jolie Collection HD
+Sky Cinema Collection HD
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -7809,7 +7788,7 @@ p:SkyItalia
 Primafila 5
 p:SkyItalia
 2dd2:00820000:15e0:fbff:1:0
-Sky Sport Action
+Sky Sport Golf
 p:SkyItalia
 38f6:00820000:15e0:fbff:1:0
 
@@ -8202,7 +8181,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Angelina Jolie Collection
+Sky Cinema Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -8406,7 +8385,7 @@ p:SkyItalia
 Onboard Mix HD
 p:SkyItalia
 1e58:00820000:2198:fbff:25:0
-Sky Sport Action HD
+Sky Sport Golf HD
 p:SkyItalia
 0f5a:00820000:2198:fbff:130:0
 Calcio1Magaz
