@@ -69,14 +69,8 @@ transponders
 029430fb:0001:0001
 	s 12539000:2000000:0:4:660:2:0:1:1:0:2
 /
-026c0000:0064:0065
-	s 10979000:6400000:1:4:620:2:0:1:2:0:2
-/
 026c0000:0065:0e26
 	s 11555000:30000000:1:3:620:2:0:1:2:0:2
-/
-026caad5:ffff:ffff
-	s 10965000:7500000:1:3:620:2:0:1:2:0:2
 /
 02250000:0009:0001
 	s 11179000:10000000:0:3:549:2:0:1:2:0:2
@@ -650,6 +644,9 @@ transponders
 /
 01682dae:0001:0001
 	s 11694000:3200000:0:2:360:2:0:1:2:0:2
+/
+01683191:0000:0000
+	s 12689000:2500000:0:3:360:2:0:1:2:0:2
 /
 01683193:0001:0001
 	s 12691000:1110000:0:4:360:2:0:1:2:0:2
@@ -1991,9 +1988,6 @@ transponders
 /
 00642c52:0001:0001
 	s 11346000:27500000:0:3:100:2:0
-/
-0064ab6a:0001:0001
-	s 11114000:2500000:1:3:100:2:0:1:2:0:2
 /
 0064acda:0001:ffff
 	s 11482000:2857000:1:4:100:2:0:1:2:0:2
@@ -3755,18 +3749,6 @@ p:CONNECTO.TV
 019f:029430fb:0001:0001:2:0
 Radio Kniga
 p:CONNECTO.TV
-0079:026c0000:0064:0065:1:0
-JAMEJAM
-p:IRIB
-007e:026c0000:0064:0065:1:0
-SAHAR BALKAN
-p:IRIB
-0083:026c0000:0064:0065:1:0
-PRESS TV
-p:IRIB
-0085:026c0000:0064:0065:1:0
-iFILM
-p:IRIB
 0065:026c0000:0065:0e26:1:0
 IRIB TV1
 p:IRIB
@@ -3901,24 +3883,6 @@ RADIO SABA
 p:IRIB
 00ff:026c0000:0065:0e26:2:0
 RADIO ENGHELAB
-p:IRIB
-027f:026caad5:ffff:ffff:1:0
-ALALAM
-p:IRIB
-0081:026caad5:ffff:ffff:1:0
-ALKAWTHAR
-p:IRIB
-0082:026caad5:ffff:ffff:1:0
-SAHAR KURDISH
-p:IRIB
-008a:026caad5:ffff:ffff:1:0
-iFILM
-p:IRIB
-02bd:026caad5:ffff:ffff:1:0
-ALALAM TV SYRIA
-p:IRIB
-02be:026caad5:ffff:ffff:1:0
-PRESS TV
 p:IRIB
 0001:02250000:0009:0001:1:0
 Test1
@@ -7507,6 +7471,9 @@ TV 2020
 p:TURKSAT
 cf0d:01a40000:7aaa:042e:1:0
 ADA TV
+p:TURKSAT
+cf0e:01a40000:7aaa:042e:1:0
+GENC TV
 p:TURKSAT
 cf0f:01a40000:7aaa:042e:1:0
 KANAL T
@@ -12065,6 +12032,9 @@ p:SYR
 0064:01682dae:0001:0001:1:0
 Tm1 HD
 p:Telemedia
+0001:01683191:0000:0000:1:0
+Service 01
+p:Net 1
 0001:01683193:0001:0001:22:0
 assirat-ch
 p:alsirat
@@ -12825,7 +12795,7 @@ p:BSkyB
 Challenge
 p:BSkyB
 1612:011a0000:07dc:0002:1:0
-Sky Oscars
+Sky Greats
 p:BSkyB
 0f13:011a0000:07dc:0002:1:0
 SkySp Arena
@@ -13542,7 +13512,7 @@ p:BSkyB
 Sky Family HD
 p:BSkyB
 1784:011a0000:07ee:0002:25:0
-Best of 80s HD
+Best of 90s HD
 p:BSkyB,c:050001
 1785:011a0000:07ee:0002:25:0
 SkyPremiereHD
@@ -13551,7 +13521,7 @@ p:BSkyB
 Sky Thriller HD
 p:BSkyB
 0ee7:011a0000:07ee:0002:25:0
-SkyOscarsHD
+Sky Greats HD
 p:BSkyB,c:050001
 0ee8:011a0000:07ee:0002:25:0
 Sky Drama HD
@@ -19640,18 +19610,18 @@ p:Al M,c:050001
 0001:00d7adae:0001:ffff:1:0
 Service-H
 p:Service Provider,c:050001
+345d:00c00000:03e9:0001:1:0
+Service13405
+p:ORS
+3464:00c00000:03e9:0001:1:0
+Service 13412
+p:ORF
 3459:00c00000:03e9:0001:31:0
 Service 13401
-p:ORS
-345d:00c00000:03e9:0001:31:0
-Service13405
 p:ORS
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
-3464:00c00000:03e9:0001:31:0
-Service13412
-p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC World News Europe HD
 p:SES ASTRA
@@ -21364,7 +21334,7 @@ MELODY
 p:CSAT
 2018:00c00000:0430:0001:25:0
 WARNER TV
-p:CSAT
+p:CSAT,c:050001
 6e2d:00c00000:0431:0001:1:0
 rbb Brandenburg
 p:ARD
@@ -23019,7 +22989,7 @@ p:SKY
 Sky Showcase HD
 p:SKY
 001c:00c00000:000c:0085:22:0
-Boomerang
+Cartoonito
 p:SKY
 0321:00c00000:000c:0085:22:0
 STEST2
@@ -23164,9 +23134,6 @@ Baden TV
 p:BetaDigital
 0003:00c0ac8e:0001:0001:1:0
 MM2 Service 3
-p:RR
-0004:00c0ac8e:0001:0001:1:0
-MM2 Service 4
 p:RR
 0005:00a00000:0065:0001:1:0
 CH 5 - Virtuali 2
@@ -23352,7 +23319,7 @@ p:T-HT
 Disney.
 p:T-HT
 0033:00a00000:0001:0040:22:0
-Boomerang TV.
+Cartoonito
 p:T-HT
 0034:00a00000:0001:0040:22:0
 Baby TV.
@@ -27759,7 +27726,7 @@ p:Cyfrowy Polsat SA
 Polsat Music HD
 p:Cyfrowy Polsat SA
 4295:00820000:2bc0:013e:1:0
-Boomerang HD
+Cartoonito
 p:Cyfrowy Polsat S.A.
 4298:00820000:2bc0:013e:1:0
 VOX Music TV
@@ -27937,7 +27904,7 @@ Dorcel TV HD
 p:AB Sat
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM2 TSOIP
+p:ARC/DCM1 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -27958,12 +27925,12 @@ LN24SA
 p:ViewMedia
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat data 1
+Eutelsat Data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -28393,7 +28360,7 @@ Bravo TV
 p:GMN
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Manoto
+p:
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Arqiva
@@ -28818,7 +28785,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Sky Cinema Oscar HD
+Keanu Reeves Collection HD
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -29232,7 +29199,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Sky Cinema Oscar
+Keanu Reeves Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -29669,9 +29636,6 @@ p:MAINDATA
 0004:00642c52:0001:0001:25:0
 AFP1 EU
 p:EBU
-0001:0064ab6a:0001:0001:1:0
-Service 01
-p:Net 1
 0001:0064acda:0001:ffff:1:0
 Service-1
 p:Service Provider,c:050001
@@ -40247,6 +40211,9 @@ p:JMC
 02e2:0dca0000:0007:0800:1:0
 Iraq Now
 p:JMC
+02fe:0dca0000:0007:0800:1:0
+Dijlah TV
+p:JMC
 0316:0dca0000:0007:0800:2:0
 Jordan Radio
 p:
@@ -42149,6 +42116,15 @@ p:
 1d57:0dc00000:004b:0800:1:0
 Test_sdi
 p:Gulfsat
+1d63:0dc00000:004b:0800:1:0
+Bahrain TV
+p:Gulfsat
+1d64:0dc00000:004b:0800:1:0
+Bahrain TV
+p:Gulfsat
+1d65:0dc00000:004b:0800:1:0
+Bahrain International
+p:Gulfsat
 1d4d:0dc00000:004b:0800:25:0
 SHOW TV
 p:Nilesat
@@ -42395,8 +42371,17 @@ p:
 0005:0d840000:012d:0001:1:0
 RT France
 p:
+0602:0d840000:2c24:013e:1:0
+iFILM ARABIC
+p:IRIB
 0603:0d840000:2c24:013e:1:0
 ALALAM HD
+p:IRIB
+060d:0d840000:2c24:013e:1:0
+SAHAR KURDI
+p:IRIB
+05ec:0d840000:2c24:013e:1:0
+ALALAM SIRYA TV
 p:IRIB
 05f1:0d840000:2c24:013e:1:0
 JAMEJAM 1 HD
@@ -42406,6 +42391,9 @@ SAHAR BALKAN
 p:IRIB
 05f7:0d840000:2c24:013e:1:0
 SAHAR AZARI
+p:IRIB
+05f9:0d840000:2c24:013e:1:0
+ALKAWTHAR TV
 p:IRIB
 05fb:0d840000:2c24:013e:1:0
 PRESS TV HD
@@ -44502,7 +44490,7 @@ p:
 Caçavision
 p:
 0073:0ce40000:0065:0053:1:0
-Boomerang
+Cartoonito
 p:
 0076:0ce40000:0065:0053:1:0
 RTP Madeira
