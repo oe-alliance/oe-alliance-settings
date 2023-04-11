@@ -806,18 +806,18 @@ transponders
 /
 end
 services
-345d:00c00000:03e9:0001:1:0
-Service13405
-p:ORS
-3464:00c00000:03e9:0001:1:0
-Service 13412
-p:ORF
 3459:00c00000:03e9:0001:31:0
 Service 13401
+p:ORS
+345d:00c00000:03e9:0001:31:0
+Service13405
 p:ORS
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
+3464:00c00000:03e9:0001:31:0
+Service13412
+p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC News
 p:SES ASTRA
@@ -4143,7 +4143,7 @@ p:SKY
 Sky Atlantic HD
 p:SKY
 006f:00c00000:000d:0085:25:0
-Sky Cinema Special HD
+Sky Cinema Fantasy HD
 p:SKY
 0070:00c00000:000d:0085:25:0
 Sky Documentaries HD
@@ -4264,6 +4264,9 @@ CH 57 - Virtuali 1
 p:TIP HD
 004d:00a00000:0065:0001:1:0
 SNAI TV Audio Unico
+p:
+0028:00a00000:0065:0001:2:0
+EPQ C2
 p:
 0001:00a00000:0065:0001:17:0
 Virtuali 4
@@ -6223,7 +6226,7 @@ RTSH Shkolle HD
 p:RTSH,c:050001
 0001:00a03195:0001:0001:1:0
 EPQ C1
-p:EPQ
+p:EPQ,c:050007
 0002:00a03195:0001:0001:1:0
 Quad SOGEI
 p:AUX C
@@ -6755,14 +6758,35 @@ p:Cyfrowy Polsat S.A.
 33f9:00820000:3390:0071:1:0
 Polsat News HD
 p:Cyfrowy Polsat S.A.
+0001:00820000:2e18:00b0:1:0
+Al Maghribia HD
+p:SNRT
+0002:00820000:2e18:00b0:1:0
+Laayoune TV HD
+p:SNRT
+0003:00820000:2e18:00b0:1:0
+Al Aoula Inter HD
+p:SNRT
+0004:00820000:2e18:00b0:1:0
+Athaqafia HD
+p:SNRT
 0005:00820000:2e18:00b0:1:0
 Al Aoula Inter
+p:SNRT
+0006:00820000:2e18:00b0:1:0
+Assadissa HD
+p:SNRT
+000a:00820000:2e18:00b0:1:0
+Arryadia HD
+p:SNRT
+00f1:00820000:2e18:00b0:1:0
+Tamazight HD
 p:SNRT
 000b:00820000:2e18:00b0:2:0
 Radio Nationale
 p:SNRT
 000c:00820000:2e18:00b0:2:0
-Radio Sud
+Radio sud
 p:SNRT
 000e:00820000:2e18:00b0:2:0
 Radio Inter
@@ -6792,7 +6816,7 @@ p:SNRT
 Meknes
 p:SNRT
 005a:00820000:2e18:00b0:2:0
-Laayoune
+Laâyoune
 p:SNRT
 005b:00820000:2e18:00b0:2:0
 Dakhla
@@ -6805,27 +6829,6 @@ Fes
 p:SNRT
 00b3:00820000:2e18:00b0:2:0
 Marrakech
-p:SNRT
-0001:00820000:2e18:00b0:25:0
-Al Maghribia HD
-p:SNRT
-0002:00820000:2e18:00b0:25:0
-Laayoune TV HD
-p:SNRT
-0003:00820000:2e18:00b0:25:0
-Al Aoula Inter HD
-p:SNRT
-0004:00820000:2e18:00b0:25:0
-Athaqafia HD
-p:SNRT
-0006:00820000:2e18:00b0:25:0
-Assadissa HD
-p:SNRT
-000a:00820000:2e18:00b0:25:0
-Arryadia HD
-p:SNRT
-00f1:00820000:2e18:00b0:25:0
-Tamazight HD
 p:SNRT
 0065:00820000:1770:00be:2:0
 Radio R101
@@ -7146,7 +7149,7 @@ p:CANAL+
 La Trois
 p:CANAL+
 378d:00820000:044c:013e:1:0
-RTL-TVi HD
+RTL TVi HD
 p:CANAL+
 378e:00820000:044c:013e:1:0
 La Une HD
@@ -7155,10 +7158,10 @@ p:CANAL+
 Tipik
 p:CANAL+
 3790:00820000:044c:013e:1:0
-Club-RTL
+RTL Club
 p:CANAL+
 3791:00820000:044c:013e:1:0
-Plug-RTL
+RTL Plug
 p:CANAL+
 37ab:00820000:044c:013e:1:0
 CANAL+ FILM HD
@@ -7204,9 +7207,6 @@ Planete+ HD
 p:CANAL+
 377f:00820000:044c:013e:25:0
 CANAL+ KUCHNIA
-p:CANAL+
-3780:00820000:044c:013e:25:0
-Motowizja HD
 p:CANAL+
 3781:00820000:044c:013e:25:0
 Ale kino+ HD
@@ -7600,9 +7600,6 @@ DW-FEED1
 p:GLOBECAST
 3346:00820000:1388:013e:2:0
 BBC Horn of Africa
-p:GLOBECAST
-3347:00820000:1388:013e:2:0
-BBC Arabic Radio
 p:GLOBECAST
 3348:00820000:1388:013e:2:0
 BBC English (Europe)
@@ -8189,6 +8186,9 @@ p:Nova
 3c9e:00820000:1bbc:013e:1:0
 Viasat Explore HD
 p:Nova
+3c9f:00820000:1bbc:013e:1:0
+BSKTV
+p:Netmed
 1c22:00820000:1c20:013e:1:0
 Tunisie Nationale
 p:ONT TUNISIA
@@ -8314,7 +8314,7 @@ MyZen TV HD
 p:NetMed
 0169:00820000:1c84:013e:1:0
 Novasportsextra1HD
-p:NetMed
+p:NetMed,c:050001
 016a:00820000:1c84:013e:1:0
 The HISTORY Channel HD
 p:NetMed
@@ -8706,7 +8706,7 @@ p:MIT-xperts GmbH
 Al Jazeera HD
 p:EUTELSAT
 200c:00820000:24b8:013e:1:0
-BBC World News
+BBC News
 p:Globecast
 2023:00820000:24b8:013e:2:0
 Service 8227
@@ -9188,9 +9188,6 @@ p:Radiotelevisione svizzera
 4338:00820000:300c:013e:25:0
 RSI LA 2 HD
 p:Radiotelevisione svizzera
-2145:00820000:3070:013e:1:0
-tivùlink
-p:tivù
 2147:00820000:3070:013e:1:0
 Camera Deputati
 p:RAI
@@ -9903,7 +9900,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Alfred Hitchcock Collection HD
+Checco Zalone Collection HD
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -10317,7 +10314,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Alfred Hitchcock Collection
+Checco Zalone Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -10557,7 +10554,7 @@ p:SkyItalia
 Fox Business
 p:SkyItalia
 2d00:00820000:2260:fbff:25:0
-Sky Atlantic +1 HD
+Sky Atlantic Maratone HD
 p:SkyItalia
 2da4:00820000:2260:fbff:25:0
 Sky Serie HD
@@ -10881,7 +10878,7 @@ p:BASIS 1
 VOXup HD
 p:BASIS 1
 00ec:005a0000:1644:009c:22:0
-BBC WORLD
+BBC NEWS
 p:BASIS 1
 00e6:005a0000:1644:009c:25:0
 Kabel Eins HD
@@ -11361,7 +11358,7 @@ p:OTE
 Stingray CMusic
 p:OTE
 041e:005a0000:0001:00aa:1:0
-TEST 17
+Kontra Channel
 p:OTE
 0437:005a0000:0001:00aa:1:0
 Star Κεντρικής Ελλάδας
@@ -11373,7 +11370,7 @@ p:OTE
 CNBC
 p:OTE
 0440:005a0000:0001:00aa:1:0
-BBC World News
+BBC News
 p:OTE
 0449:005a0000:0001:00aa:1:0
 MEZZO LIVE HD
@@ -11461,7 +11458,7 @@ Smile TV
 p:OTE
 0413:005a0000:0004:00aa:1:0
 ALPHA HD
-p:OTE
+p:OTE,c:050001
 0416:005a0000:0004:00aa:1:0
 COSMOTE Series HD
 p:ΟΤΕ
@@ -11488,7 +11485,7 @@ Viasat History HD
 p:OTE
 0402:005a0000:0005:00aa:1:0
 ΕΡΤ1 HD
-p:OTE
+p:OTE,c:050001
 0405:005a0000:0005:00aa:1:0
 OPEN BEYOND HD
 p:OTE
@@ -11545,7 +11542,7 @@ TEAM2 PPV
 p:OTE
 0400:005a0000:0006:00aa:1:0
 MEGA HD
-p:OTE
+p:OTE,c:050001
 0403:005a0000:0006:00aa:1:0
 Disney Junior
 p:OTE
@@ -11722,13 +11719,13 @@ TEST 2 SD
 p:OTE
 0451:005a0000:0009:00aa:1:0
 ΕΡΤ3 HD
-p:ΟΤΕ
+p:ΟΤΕ,c:050001
 0453:005a0000:0009:00aa:1:0
 National Geographic HD
 p:ΟΤΕ
 0458:005a0000:0009:00aa:1:0
 ΕΡΤ2 HD
-p:OTE
+p:OTE,c:050001
 0459:005a0000:0009:00aa:1:0
 Asharq News
 p:OTE
@@ -11740,7 +11737,7 @@ FX Life
 p:OTE
 0470:005a0000:0009:00aa:1:0
 ERT WORLD
-p:OTE
+p:OTE,c:050001
 0472:005a0000:0009:00aa:1:0
 TEST 81
 p:OTE
@@ -12002,9 +11999,6 @@ p:In Aria!
 0fa4:005a0000:0107:217c:1:0
 TELECAMPIONE
 p:In Aria!
-0fa6:005a0000:0107:217c:1:0
-CANALE 165
-p:In Aria!
 0fa7:005a0000:0107:217c:1:0
 AP CHANNEL
 p:In Aria!
@@ -12031,6 +12025,9 @@ CANALE 163
 p:In Aria!
 0fb0:005a0000:0107:217c:1:0
 PROMO SPORT
+p:In Aria!
+0fb1:005a0000:0107:217c:1:0
+CANALE 268
 p:In Aria!
 0bb9:005a0000:0107:217c:1:0
 ITALIA 121
@@ -12091,7 +12088,7 @@ ZONA DAZN
 p:
 02ef:005a0000:0107:217c:25:0
 LA7 HD
-p:,c:050001
+p:
 0408:005a0000:10e1:217c:1:0
 VCO AZZURRA TV
 p:COELMEDIA
@@ -12193,7 +12190,7 @@ TSN
 p:GLOBAL
 07da:005a0000:20e1:217c:1:0
 SUPERTV
-p:SUPERTV,c:050001
+p:SUPERTV
 07db:005a0000:20e1:217c:1:0
 PIU VALLI TV
 p:PIU VALLI TV
@@ -12223,7 +12220,7 @@ ONE TV
 p:ONE TV
 07d1:005a0000:20e1:217c:22:0
 Primanews Lombardia
-p:InAria
+p:InAria,c:050001
 07d5:005a0000:20e1:217c:22:0
 BERGAMO TV
 p:EI Towers
@@ -12235,7 +12232,7 @@ TT-TELETUTTO
 p:EI TOWERS
 07d9:005a0000:20e1:217c:22:0
 70-80.tv
-p:70.80.tv
+p:VTS
 07dc:005a0000:20e1:217c:22:0
 AUTO DEL GIORNO
 p:AUTO DEL GIORNO
@@ -12258,7 +12255,7 @@ p:RTTR OPIM TRENTO
 Telepace Trento
 p:Telepace_Trento
 0af4:005a0000:28e1:217c:25:0
-TELEPADOVA - 7 GOLD
+Telepadova - 7 GOLD
 p:TELEPADOVA
 0af5:005a0000:28e1:217c:25:0
 TELENUOVO
@@ -12271,7 +12268,7 @@ TELECHIARA
 p:VIDEOMEDIA-TN
 0fa1:005a0000:40e1:217c:1:0
 Primocanale HD
-p:Global,c:050001
+p:Global
 0fa2:005a0000:40e1:217c:1:0
 TELENORD HD
 p:TELENORD HD
@@ -12283,7 +12280,7 @@ TeleCity
 p:TELECITY LIGURIA
 0fa5:005a0000:40e1:217c:1:0
 TELEGENOVA
-p:Media Group
+p:Media Group,c:050001
 0fa6:005a0000:40e1:217c:1:0
 TLS TeleLiguriaSud
 p:TLS
@@ -12313,7 +12310,7 @@ ITALIA 7 Liguria
 p:Media Group srl
 12c1:005a0000:48e1:217c:1:0
 TRC Modena
-p:M-Three,c:050001
+p:M-Three
 12c2:005a0000:48e1:217c:1:0
 TRC Bologna
 p:M-Three
@@ -12325,7 +12322,7 @@ p:M-Three
 p:
 12c5:005a0000:48e1:217c:1:0
 TvQui HD
-p:TvQui
+p:TvQui,c:050001
 12c7:005a0000:48e1:217c:1:0
 TR24
 p:Via Emilia TV
@@ -12364,7 +12361,7 @@ Teleromagna HD
 p:Pubblisole
 1389:005a0000:50e1:217c:1:0
 RTV38 HD
-p:RTV38,c:050001
+p:RTV38
 138c:005a0000:50e1:217c:1:0
 TV9
 p:Global
@@ -12400,7 +12397,7 @@ Siena TV
 p:SIENATV
 138a:005a0000:50e1:217c:25:0
 Toscana TV
-p:Toscana Tv
+p:Toscana Tv,c:050001
 138b:005a0000:50e1:217c:25:0
 NOItv
 p:NOITV
@@ -12482,6 +12479,9 @@ p:TeleRoma
 1a99:005a0000:68e1:217c:1:0
 TeleRoma 56 Sport
 p:TeleRoma
+1a9a:005a0000:68e1:217c:1:0
+TRL
+p:EITOWERS
 1a9b:005a0000:68e1:217c:1:0
 RomaTV 82
 p:GOLD TV
@@ -12494,18 +12494,12 @@ p:Tele In
 1aa0:005a0000:68e1:217c:1:0
 TR118
 p:GOLDTV
-1aa1:005a0000:68e1:217c:1:0
-Le Cronache
-p:Le Cronache
 1aa2:005a0000:68e1:217c:1:0
 EXTRA TV LIVE
 p:Global
 1a98:005a0000:68e1:217c:22:0
 T9
 p:In Aria!
-1a9a:005a0000:68e1:217c:22:0
-TRL
-p:EITOWERS
 1aa3:005a0000:68e1:217c:22:0
 TELEITALIA 41
 p:In Aria!
@@ -12514,7 +12508,7 @@ p:In Aria!
 p:SETTE GOLD
 1b59:005a0000:70e1:217c:1:0
 RETE 8
-p:RETE 8
+p:RETE 8,c:050001
 1b5a:005a0000:70e1:217c:1:0
 TELEMOLISE
 p:Telemolise
@@ -12541,7 +12535,7 @@ Canale16 abruzzo e M
 p:Media Group srl
 1b64:005a0000:70e1:217c:1:0
 Antenna 10
-p:SETTE GOLD,c:050001
+p:SETTE GOLD
 1b65:005a0000:70e1:217c:1:0
 RETE 8 SPORT
 p:RETE 8
@@ -12590,6 +12584,9 @@ p:Persidera
 0048:005a0000:7918:217c:22:0
 Italia 150
 p:Persidera
+004d:005a0000:7918:217c:22:0
+CANALE 165
+p:Persidera,c:050001
 004e:005a0000:7918:217c:22:0
 CAMPIONESPORT
 p:Persidera
@@ -12664,7 +12661,7 @@ PIANETA TV
 p:Persidera
 0001:005a0000:7918:217c:25:0
 NOVE
-p:Persidera,c:050001
+p:Persidera
 0002:005a0000:7918:217c:25:0
 Motor Trend
 p:Persidera
@@ -12700,7 +12697,7 @@ RDS Social TV
 p:Persidera
 1f41:005a0000:80e1:217c:1:0
 CANALE 21
-p:CANALE 21
+p:CANALE 21,c:050001
 1f42:005a0000:80e1:217c:1:0
 TELEVOMERO
 p:TELEVOMERO
@@ -12715,7 +12712,7 @@ CANALE 8
 p:CANALE 8
 1f47:005a0000:80e1:217c:1:0
 Otto Channel
-p:Otto Channel,c:050001
+p:Otto Channel
 1f48:005a0000:80e1:217c:1:0
 Primativvù
 p:Primativvù
@@ -12742,7 +12739,7 @@ CANALE ITALIA
 p:Canale Italia
 1f61:005a0000:80e3:217c:1:0
 CANALE 58
-p:CANALE 58
+p:CANALE 58,c:050001
 1f63:005a0000:80e3:217c:1:0
 TDS
 p:TDS
@@ -12767,15 +12764,12 @@ p:In Aria!
 1f6e:005a0000:80e3:217c:22:0
 PARTENOPE TV
 p:In Aria!
-1f6f:005a0000:80e3:217c:22:0
-ABC TV
-p:In Aria!
 1f64:005a0000:80e3:217c:25:0
 TELECAPRI SPORT
 p:In Aria!
 1f68:005a0000:80e3:217c:25:0
 GT CHANNEL
-p:AjV-Ottcast,c:050001
+p:AjV-Ottcast
 1f70:005a0000:80e3:217c:25:0
 Tele Dehon
 p:
@@ -12783,8 +12777,8 @@ p:
 VIDEO CALABRIA
 p:VIDEO CALABRIA
 264a:005a0000:98e1:217c:1:0
-LaC
-p:LaC
+LaC Tv
+p:La C
 264b:005a0000:98e1:217c:1:0
 TEN
 p:Teleuropa
@@ -12801,8 +12795,8 @@ p:ESPERIA TV
 Telespazio TV
 p:Adn Italia
 2650:005a0000:98e1:217c:1:0
-LaC OnAir
-p:LA C,c:050001
+La C Onair
+p:Adn Italia
 2651:005a0000:98e1:217c:1:0
 TELE A1 CORIGLIANO
 p:Global
@@ -12835,10 +12829,10 @@ RTC TELECALABRIA
 p:GLOBAL
 265a:005a0000:98e1:217c:25:0
 Tele Dehon
-p:
+p:,c:050001
 265c:005a0000:98e1:217c:25:0
 7 GOLD
-p:SETTE GOLD,c:050001
+p:SETTE GOLD
 026b:005aaedc:0001:0001:1:0
 CCTV-4
 p:Globecast
