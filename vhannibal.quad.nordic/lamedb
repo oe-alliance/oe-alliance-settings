@@ -525,9 +525,6 @@ transponders
 00820000:2260:fbff
 	s 12466000:29900000:1:4:130:2:0:1:1:0:2
 /
-00300000:0065:0001
-	s 12226000:31428000:0:8:48:2:0:1:1:0:2
-/
 00300000:00c9:0001
 	s 11727000:27500000:0:3:48:2:0
 /
@@ -572,6 +569,9 @@ transponders
 /
 00302eb6:0000:0000
 	s 11958000:27500000:0:4:48:2:0:1:2:0:2
+/
+00302fc2:0065:0001
+	s 12226000:31428000:0:8:48:2:0:1:1:0:2
 /
 00303082:0000:0000
 	s 12418000:27500000:0:3:48:2:0
@@ -1162,7 +1162,7 @@ Kabel 1 Doku HD Austria
 p:ProSiebenSat.1
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD,c:050001
+p:ARD
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -1875,7 +1875,7 @@ p:Movistar+
 M+ #VAMOS
 p:Movistar+
 7736:00c00000:0416:0001:1:0
-M+ PLATINO
+M+Cine Español
 p:Movistar+
 7738:00c00000:0416:0001:1:0
 24 HORAS
@@ -1944,7 +1944,7 @@ p:DIGITAL+
 ENERGY
 p:DIGITAL+
 74a0:00c00000:041c:0001:1:0
-BARÇA TV
+TEST 29856
 p:BARNA
 74a1:00c00000:041c:0001:1:0
 EUROSPORT 1
@@ -2271,7 +2271,7 @@ p:DIGITAL +
 M+ LaLigaTV
 p:Movistar+
 7798:00c00000:0424:0001:1:0
-R. MADRID TV
+TEST 30616
 p:Digital+
 28e1:00c00000:0425:0001:10:0
 hr1
@@ -2465,12 +2465,6 @@ p:CSAT
 200f:00c00000:0430:0001:1:0
 F3 BRETAGNE
 p:CSAT
-2016:00c00000:0430:0001:1:0
-11856V SID 0x2016
-p:DVB-S2 8PSK 11856V 19.2Â°E
-2018:00c00000:0430:0001:1:0
-11856V SID 0x2018
-p:DVB-S2 8PSK 11856V 19.2Â°E
 2009:00c00000:0430:0001:25:0
 BEIN SPORTS MAX 4
 p:CSAT
@@ -2795,9 +2789,6 @@ p:ProSiebenSat.1
 4e2b:00c00000:043a:0001:1:0
 .
 p:ProSiebenSat.1
-24bb:00c00000:043c:0001:1:0
-12090V SID 0x24bb
-p:DVB-S2 8PSK 12090V 19.2Â°E
 24bd:00c00000:043c:0001:1:0
 F3 PROV ALPES
 p:CSAT
@@ -2843,12 +2834,6 @@ p:CSAT
 24c8:00c00000:043c:0001:25:0
 CANAL+SPORT360
 p:CSAT
-245c:00c00000:0440:0001:1:0
-12168V SID 0x245c
-p:DVB-S2 8PSK 12168V 19.2Â°E
-245e:00c00000:0440:0001:1:0
-12168V SID 0x245e
-p:DVB-S2 8PSK 12168V 19.2Â°E
 245f:00c00000:0440:0001:1:0
 BARKER COLLECTIVITES SD4
 p:CSAT
@@ -2878,7 +2863,7 @@ FRANCE 3
 p:CSAT
 2460:00c00000:0440:0001:25:0
 TF1
-p:CSAT
+p:CSAT,c:050001
 2461:00c00000:0440:0001:25:0
 EUROSPORT 1
 p:CSAT
@@ -2927,15 +2912,6 @@ p:RTL Deutschland
 2f3b:00c00000:0441:0001:2:0
 TOGGO Radio
 p:RTL Deutschland
-2329:00c00000:0442:0001:1:0
-12207V SID 0x2329
-p:DVB-S2 8PSK 12207V 19.2Â°E
-232d:00c00000:0442:0001:1:0
-12207V SID 0x232d
-p:DVB-S2 8PSK 12207V 19.2Â°E
-2333:00c00000:0442:0001:1:0
-12207V SID 0x2333
-p:DVB-S2 8PSK 12207V 19.2Â°E
 2338:00c00000:0442:0001:1:0
 F3 AUVERGNE
 p:CSAT
@@ -3373,13 +3349,13 @@ QVC Deutschland
 p:SES ASTRA
 2f5a:00c00000:0454:0001:1:0
 Bibel TV
-p:MTI
+p:SES ASTRA
 2f69:00c00000:0454:0001:1:0
 Canal Algerie
-p:TDA
+p:SES ASTRA
 2f6a:00c00000:0454:0001:1:0
 Algerie 3
-p:TDA
+p:SES ASTRA
 2f6c:00c00000:0454:0001:1:0
 Cherie 25
 p:SES ASTRA
@@ -3394,7 +3370,7 @@ NRJ 12
 p:SES ASTRA
 2f9a:00c00000:0454:0001:1:0
 SBN International
-p:SES
+p:SES ASTRA
 1523:00c00000:0455:0001:22:0
 .
 p:BetaDigital
@@ -3779,6 +3755,9 @@ p:M7 Group
 103f:00c00000:0451:0035:2:0
 NRJ
 p:M7 Group
+1005:00c00000:0451:0035:22:0
+BVN
+p:M7
 1006:00c00000:0451:0035:22:0
 AB3
 p:M7 Group
@@ -5887,7 +5866,7 @@ nova MAD GREEKZ
 p:NOVA
 1bc4:00820000:17d4:013e:1:0
 Novasports News HD
-p:NOVA
+p:NOVA,c:050001
 1bc5:00820000:17d4:013e:1:0
 One Channel HD
 p:NOVA
@@ -6091,61 +6070,61 @@ DimSuono Soft RM
 p:Telespazio
 3c8d:00820000:1bbc:013e:1:0
 Novacinema1HD Cy
-p:Netmed
+p:NOVA
 3c8e:00820000:1bbc:013e:1:0
 M4_TEST2
-p:Netmed
+p:NOVA
 3c8f:00820000:1bbc:013e:1:0
 National Geographic HD
-p:Netmed
+p:NOVA
 3c90:00820000:1bbc:013e:1:0
 Novasports2HD
-p:Netmed
+p:NOVA
 3c91:00820000:1bbc:013e:1:0
 STAR HD
-p:Netmed
+p:NOVA
 3c92:00820000:1bbc:013e:1:0
 TLC
-p:Netmed
+p:NOVA
 3c93:00820000:1bbc:013e:1:0
 Novasports1HD Cy
-p:Netmed
+p:NOVA
 3c94:00820000:1bbc:013e:1:0
 Novasports1HD
-p:Netmed
+p:NOVA
 3c95:00820000:1bbc:013e:1:0
 Novacinema1HD
-p:NetMed
+p:NOVA
 3c96:00820000:1bbc:013e:1:0
 Novasports Prime HD
-p:Syned
+p:NOVA
 3c97:00820000:1bbc:013e:1:0
 E! Entertainment HD
-p:Syned
+p:NOVA
 3c98:00820000:1bbc:013e:1:0
 Eurosport 2 HD
-p:NETMED
+p:NOVA
 3c99:00820000:1bbc:013e:1:0
 Novasports2HD Cy
-p:F13
+p:NOVA
 3c9a:00820000:1bbc:013e:1:0
 Food Network HD
-p:NetMed
+p:NOVA
 3c9b:00820000:1bbc:013e:1:0
 Novasports Prime HD CY
 p:NOVA
 3c9c:00820000:1bbc:013e:1:0
 Euronews Greek
-p:NETMED
+p:NOVA
 3c9d:00820000:1bbc:013e:1:0
 Viasat Nature HD
-p:Nova
+p:NOVA
 3c9e:00820000:1bbc:013e:1:0
 Viasat Explore HD
-p:Nova
+p:NOVA
 3c9f:00820000:1bbc:013e:1:0
 Blue Sky
-p:Netmed
+p:NOVA
 1c22:00820000:1c20:013e:1:0
 Tunisie Nationale
 p:ONT TUNISIA
@@ -6244,127 +6223,127 @@ R Tunisie Internatio
 p:ONT TUNISIA
 015f:00820000:1c84:013e:1:0
 Discovery HD
-p:NetMed
+p:NOVA
 0160:00820000:1c84:013e:1:0
 Naftemporiki HD
-p:NetMed
+p:NOVA
 0161:00820000:1c84:013e:1:0
 ERT World Europe
-p:NetMed
+p:NOVA
 0162:00820000:1c84:013e:1:0
 Novasports4HD
-p:NetMed
+p:NOVA
 0163:00820000:1c84:013e:1:0
 Novasports4HD Cy
-p:NetMed
+p:NOVA
 0164:00820000:1c84:013e:1:0
 NR1 HD
-p:NetMed
+p:NOVA
 0165:00820000:1c84:013e:1:0
 R10
-p:NetMed
+p:NOVA
 0166:00820000:1c84:013e:1:0
 OPEN BEYOND HD
-p:NetMed
+p:NOVA
 0168:00820000:1c84:013e:1:0
 MyZen TV HD
-p:NetMed
+p:NOVA
 0169:00820000:1c84:013e:1:0
 Novasportsextra1HD
-p:NetMed
+p:NOVA
 016a:00820000:1c84:013e:1:0
 The HISTORY Channel HD
-p:NetMed
+p:NOVA
 016b:00820000:1c84:013e:1:0
 Kontra Channel
-p:NetMed
+p:NOVA
 016f:00820000:1c84:013e:1:0
 R16
-p:NetMed
+p:NOVA
 0170:00820000:1c84:013e:1:0
 NOVALIFE HD
-p:NetMed
+p:NOVA
 0171:00820000:1c84:013e:1:0
 NOVALIFE Cy
-p:NetMed
+p:NOVA
 0172:00820000:1c84:013e:1:0
 Da Vinci HD
-p:NetMed
+p:NOVA
 0175:00820000:1c84:013e:1:0
 Action24
-p:NetMed
+p:NOVA
 0178:00820000:1c84:013e:1:0
 M2_TEST6
-p:NetMed
+p:NOVA
 0179:00820000:1c84:013e:1:0
 MAD T.V
-p:NetMed
+p:NOVA
 017a:00820000:1c84:013e:1:0
 MTV
-p:NetMed
+p:NOVA
 017c:00820000:1c84:013e:1:0
 MAD TV
-p:NetMed
+p:NOVA
 017d:00820000:1c84:013e:1:0
 Novasportsextra3HD
-p:NetMed
+p:NOVA
 017f:00820000:1c84:013e:1:0
 M2_TEST7
-p:NetMed
+p:NOVA
 0180:00820000:1c84:013e:1:0
 ÂïõëÞ
-p:NetMed
+p:NOVA
 0182:00820000:1c84:013e:1:0
 Nickelodeon
-p:NetMed
+p:NOVA
 0183:00820000:1c84:013e:1:0
 EPT3 HD
-p:NetMed
+p:NOVA
 0184:00820000:1c84:013e:1:0
 M2_TEST8
-p:NetMed
+p:NOVA
 0185:00820000:1c84:013e:1:0
 MTV 00s
-p:NetMed
+p:NOVA
 0186:00820000:1c84:013e:1:0
 Da Vinci HD UG
-p:NOVA Greece
+p:NOVA
 0187:00820000:1c84:013e:1:0
 History HD UG
-p:NOVA Greece
+p:NOVA
 0188:00820000:1c84:013e:1:0
 Discovery HD UG
-p:NOVA Greece
+p:NOVA
 018a:00820000:1c84:013e:1:0
 M2_TEST9
-p:NetMed
+p:NOVA
 018b:00820000:1c84:013e:1:0
 R17
-p:NetMed
+p:NOVA
 016c:00820000:1c84:013e:2:0
 REAL FM
-p:NetMed
+p:NOVA
 016d:00820000:1c84:013e:2:0
 VOICE OF GREECE
-p:NetMed
+p:NOVA
 016e:00820000:1c84:013e:2:0
 Sport24 Radio
-p:NetMed
+p:NOVA
 0173:00820000:1c84:013e:2:0
 Radio1
-p:NETMED
+p:NOVA
 0174:00820000:1c84:013e:2:0
 ÓÔÏ ÊÏÊÊÉÍÏ 105,5
-p:Netmed
+p:NOVA
 0176:00820000:1c84:013e:2:0
 ÐÁÑÁÐÏËÉÔÉÊÁ FM 90,1
-p:netmed
+p:NOVA
 017b:00820000:1c84:013e:2:0
 SPORT FM 94,6
-p:NetMed
+p:NOVA
 0189:00820000:1c84:013e:2:0
 Radio2
-p:NETMED
+p:NOVA
 0e00:00820000:1f40:013e:2:0
 Radio 5
 p:TSA
@@ -6741,7 +6720,7 @@ p:
 MyZen 4K
 p:
 11fb:00820000:2b5c:013e:31:0
-TravelXP 4K
+TRAVELXP 4K
 p:TravelXP
 4279:00820000:2bc0:013e:1:0
 wPolsce.pl
@@ -6911,6 +6890,9 @@ p:CANAL+
 3dae:00820000:2c88:013e:2:0
 10796V SID 0x3dae
 p:DVB-S2 8PSK 10796V 13.0Â°E
+439f:00820000:2cec:013e:1:0
+MY5 uzbekistan
+p:FFmpeg
 43a0:00820000:2cec:013e:1:0
 GNC
 p:Eutelsat
@@ -7555,7 +7537,7 @@ RADIONORBA TV
 p:Telenorba
 0530:00820000:3d54:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
 p:M-Three Satcom
@@ -7567,7 +7549,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-Three Satcom Srl
+p:M-ThreeSatcom Srl
 0534:00820000:3d54:013e:22:0
 GOLD TV
 p:M-Three Satcom
@@ -7842,7 +7824,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Jason Bourne Collection HD
+Risate all'italiana HD
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -8256,7 +8238,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Jason Bourne Collection
+Risate all'italiana
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -8310,7 +8292,7 @@ p:SkyItalia
 Nickelodeon +1
 p:SkyItalia
 38c5:00820000:1af4:fbff:1:0
-Comedy +1
+Maurizio Battista Channel
 p:SkyItalia
 0dd3:00820000:1af4:fbff:1:0
 BFC
@@ -8430,13 +8412,13 @@ p:SkyItalia
 Sky Cinema Family HD
 p:SkyItalia
 0f58:00820000:206c:fbff:25:0
-Sky Documentaries +1 HD
+Sky Documentaries
 p:SkyItalia
 0f5d:00820000:206c:fbff:25:0
-Sky Investigation HD +1
+Sky Investigation +1 HD
 p:SkyItalia
 0f5e:00820000:206c:fbff:25:0
-Sky Documentaries +1 HD
+Sky Documentaries
 p:SkyItalia
 1c40:00820000:206c:fbff:130:0
 Sky Supercalcio HD
@@ -8519,123 +8501,6 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
-0064:00300000:0065:0001:1:0
-Info Channel
-p:Harmonic,c:050001
-0065:00300000:0065:0001:1:0
-MTN SE HD 101
-p:Harmonic
-0066:00300000:0065:0001:1:0
-MSNBC
-p:Harmonic
-0067:00300000:0065:0001:1:0
-FOX News Channel
-p:Harmonic
-0068:00300000:0065:0001:1:0
-CNBC
-p:Harmonic
-0069:00300000:0065:0001:1:0
-Sky News
-p:Harmonic
-006a:00300000:0065:0001:1:0
-BBC World News
-p:Harmonic
-006b:00300000:0065:0001:1:0
-Prime Journeys
-p:Harmonic
-006c:00300000:0065:0001:1:0
-Sky Sport News
-p:Harmonic
-006d:00300000:0065:0001:1:0
-Sport 24
-p:Harmonic
-006e:00300000:0065:0001:1:0
-Prime One
-p:Harmonic
-006f:00300000:0065:0001:1:0
-Sport 24 Extra
-p:Harmonic
-0070:00300000:0065:0001:1:0
-RTL
-p:Harmonic
-0071:00300000:0065:0001:1:0
-Austraia Channel News
-p:Harmonic
-0072:00300000:0065:0001:1:0
-TV ASIA Comedy
-p:Harmonic,c:050001
-0073:00300000:0065:0001:1:0
-TFC
-p:Harmonic
-0074:00300000:0065:0001:1:0
-Prime Favorites
-p:Harmonic
-0075:00300000:0065:0001:1:0
-BBC Marine HD
-p:Harmonic
-0076:00300000:0065:0001:1:0
-TVE International
-p:Harmonic
-0077:00300000:0065:0001:1:0
-Canal 24 Horas
-p:Harmonic
-0078:00300000:0065:0001:1:0
-Australia Comedy and Drama
-p:Harmonic
-0079:00300000:0065:0001:1:0
-ABC News 24
-p:Harmonic
-007a:00300000:0065:0001:1:0
-T1
-p:Harmonic
-007c:00300000:0065:0001:1:0
-Food Network
-p:Harmonic
-007d:00300000:0065:0001:1:0
-HGTV
-p:Harmonic
-007e:00300000:0065:0001:1:0
-Travel Channel
-p:Harmonic
-0083:00300000:0065:0001:1:0
-France24
-p:Harmonic
-0084:00300000:0065:0001:1:0
-Mediaset Italia
-p:Harmonic
-008c:00300000:0065:0001:1:0
-HUNAN
-p:Harmonic
-008f:00300000:0065:0001:1:0
-CCTV MOVIE
-p:Harmonic,c:050001
-0090:00300000:0065:0001:1:0
-CCTV ENTERTAINMENT
-p:Harmonic
-0091:00300000:0065:0001:1:0
-CCTV-4
-p:Harmonic
-0096:00300000:0065:0001:1:0
-VE1
-p:Harmonic
-0097:00300000:0065:0001:1:0
-VE2
-p:Harmonic
-00a0:00300000:0065:0001:1:0
-Movies Now and Then
-p:Harmonic,c:050001
-00a1:00300000:0065:0001:1:0
-National Geographic
-p:Harmonic
-00a2:00300000:0065:0001:1:0
-Family Channel
-p:Harmonic
-00a3:00300000:0065:0001:1:0
-Temp3
-p:Harmonic
-00c8:00300000:0065:0001:1:0
-MTN SE HD 200
-p:Harmonic
 0005:00300000:00c9:0001:1:0
 Channel_5
 p:SIS Limited
@@ -8821,7 +8686,7 @@ p:VIASAT
 p:VIASAT
 1072:00300000:001a:0044:25:0
 Viasat Kino Megahit
-p:VIASAT
+p:VIASAT,c:050001
 107c:00300000:001a:0044:25:0
 Viasat Kino Comedy
 p:VIASAT
@@ -9251,6 +9116,9 @@ p:ZEONBUD,c:050001
 0013:00300000:0064:2324:22:0
 БІГУДІ
 p:ZEONBUD,c:050001
+0014:00300000:0064:2324:22:0
+Армія ТБ
+p:ZEONBUD
 000c:00300000:0064:2324:25:0
 РАДА
 p:ZEONBUD,c:050001
@@ -9365,6 +9233,123 @@ p:AMB
 28a5:00302eb6:0000:0000:25:0
 TV3 Sport 2 HD
 p:
+0064:00302fc2:0065:0001:1:0
+Info Channel
+p:Harmonic
+0065:00302fc2:0065:0001:1:0
+MTN SE HD 101
+p:Harmonic
+0066:00302fc2:0065:0001:1:0
+MSNBC
+p:Harmonic
+0067:00302fc2:0065:0001:1:0
+FOX News Channel
+p:Harmonic
+0068:00302fc2:0065:0001:1:0
+CNBC
+p:Harmonic
+0069:00302fc2:0065:0001:1:0
+Sky News
+p:Harmonic
+006a:00302fc2:0065:0001:1:0
+BBC World News
+p:Harmonic
+006b:00302fc2:0065:0001:1:0
+Prime Journeys
+p:Harmonic
+006c:00302fc2:0065:0001:1:0
+Sky Sport News
+p:Harmonic
+006d:00302fc2:0065:0001:1:0
+Sport 24
+p:Harmonic
+006e:00302fc2:0065:0001:1:0
+Prime One
+p:Harmonic
+006f:00302fc2:0065:0001:1:0
+PPTV1
+p:
+0070:00302fc2:0065:0001:1:0
+RTL
+p:Harmonic
+0071:00302fc2:0065:0001:1:0
+Austraia Channel News
+p:Harmonic
+0072:00302fc2:0065:0001:1:0
+TV ASIA Comedy
+p:Harmonic
+0073:00302fc2:0065:0001:1:0
+TEST CHANNEL - CISCO 1
+p:
+0074:00302fc2:0065:0001:1:0
+Prime Favorites
+p:Harmonic
+0075:00302fc2:0065:0001:1:0
+BBC Marine HD
+p:Harmonic
+0076:00302fc2:0065:0001:1:0
+TVE International
+p:Harmonic
+0077:00302fc2:0065:0001:1:0
+Canal 24 Horas
+p:Harmonic
+0078:00302fc2:0065:0001:1:0
+Australia Comedy and Drama
+p:Harmonic
+0079:00302fc2:0065:0001:1:0
+ABC News 24
+p:Harmonic
+007a:00302fc2:0065:0001:1:0
+ALPHAMERIC UK - CISCO 1
+p:
+007c:00302fc2:0065:0001:1:0
+ALT VC 122
+p:
+007d:00302fc2:0065:0001:1:0
+HGTV
+p:Harmonic
+007e:00302fc2:0065:0001:1:0
+Travel Channel
+p:Harmonic
+0083:00302fc2:0065:0001:1:0
+France24
+p:Harmonic
+0084:00302fc2:0065:0001:1:0
+Mediaset Italia
+p:Harmonic
+008c:00302fc2:0065:0001:1:0
+HUNAN
+p:Harmonic
+008f:00302fc2:0065:0001:1:0
+CCTV MOVIE
+p:Harmonic
+0090:00302fc2:0065:0001:1:0
+CCTV ENTERTAINMENT
+p:Harmonic
+0091:00302fc2:0065:0001:1:0
+CCTV-4
+p:Harmonic
+0096:00302fc2:0065:0001:1:0
+VE1
+p:Harmonic
+0097:00302fc2:0065:0001:1:0
+VE2
+p:Harmonic
+00a0:00302fc2:0065:0001:1:0
+Movies Now and Then
+p:Harmonic
+00a1:00302fc2:0065:0001:1:0
+National Geographic
+p:Harmonic
+00a2:00302fc2:0065:0001:1:0
+Family Channel
+p:Harmonic
+00a3:00302fc2:0065:0001:1:0
+Temp3
+p:Harmonic
+00c8:00302fc2:0065:0001:1:0
+MCUK Test
+p:
 000b:00303082:0000:0000:1:0
 SIS VISION AUDIO & VBI - CISCO 1
 p:
@@ -9425,20 +9410,8 @@ p:
 026c:00303082:0000:0000:1:0
 CoralTV1
 p:
-006f:00303082:0000:0000:1:0
-PPTV1
-p:
 026f:00303082:0000:0000:1:0
 CoralTV2
-p:
-0073:00303082:0000:0000:1:0
-TEST CHANNEL - CISCO 1
-p:
-007a:00303082:0000:0000:1:0
-ALPHAMERIC UK - CISCO 1
-p:
-007c:00303082:0000:0000:1:0
-ALT VC 122
 p:
 0093:00303082:0000:0000:1:0
 NEW BOYLES SPORTS - CISCO 1
@@ -9475,9 +9448,6 @@ SIS Spanish
 p:
 02bc:00303082:0000:0000:1:0
 Temp SIS TWO
-p:
-00c8:00303082:0000:0000:1:0
-MCUK Test
 p:
 02c8:00303082:0000:0000:1:0
 Temp PPTV2
@@ -10303,7 +10273,7 @@ SVT24 HD
 p:Telenor
 1d7f:0e080000:001b:0046:25:0
 SVT1 HD
-p:Telenor
+p:Telenor,c:050001
 1d80:0e080000:001b:0046:25:0
 SVT2 HD
 p:Telenor
@@ -10473,7 +10443,7 @@ p:Telenor
 HISTORY 2 HD
 p:Telenor
 1f28:0e080000:0029:0046:25:0
-BBC NORDIC HD
+BBC Nordic HD
 p:Telenor
 1c2a:0e080000:0029:0046:25:0
 BBC Earth HD
@@ -10854,7 +10824,7 @@ p:Telenor
 NRK Klassisk
 p:Telenor
 1ecd:0e080000:0046:0046:10:0
-NRK Sápmi
+NRK Sámi Radio
 p:Telenor
 1ece:0e080000:0046:0046:10:0
 NRK mP3
@@ -10997,9 +10967,6 @@ p:Telenor
 32d0:0e080000:004b:0046:22:0
 Test 13008
 p:Telenor
-062f:0e080000:004c:0046:2:0
-BEST FM (Old)
-p:T
 32d5:0e080000:004c:0046:22:0
 Test 13013
 p:Telenor
@@ -11068,7 +11035,7 @@ Prima HD
 p:Slovak Telekom
 03fc:0e080000:0af1:00bb:25:0
 CT 1 HD
-p:Slovak Telekom,c:050001
+p:Slovak Telekom
 07e5:0e080000:0af2:00bb:22:0
 FightBox
 p:Slovak Telekom
@@ -11505,7 +11472,7 @@ p:M7
 TV Paprika
 p:M7
 75a2:0e080000:02bd:0600:1:0
-TV PaprikaSVT
+TV Paprika (SVT)
 p:M7
 75aa:0e080000:02bd:0600:1:0
 Jocky TV
@@ -11542,7 +11509,7 @@ Docubox
 p:M7
 75ac:0e080000:02bd:0600:22:0
 Eroxxx
-p:M7,c:050001
+p:M7
 7600:0e080000:02be:0600:1:0
 Film + CZE
 p:M7
@@ -11612,6 +11579,9 @@ p:M7
 75fa:0e080000:02be:0600:25:0
 Filmbox Premium HD
 p:M7
+7670:0e080000:02bf:0600:1:0
+Sport1 CZE
+p:M7
 765d:0e080000:02bf:0600:22:0
 Sport 5
 p:M7
@@ -11635,6 +11605,24 @@ Prima Cool
 p:M7
 766a:0e080000:02bf:0600:22:0
 Prima Love
+p:M7
+766b:0e080000:02bf:0600:22:0
+Filmbox Stars CZ
+p:M7
+766c:0e080000:02bf:0600:22:0
+Senzi
+p:M7
+766d:0e080000:02bf:0600:22:0
+SLAGER ORIGINAL
+p:M7
+766e:0e080000:02bf:0600:22:0
+TV LUX
+p:M7
+766f:0e080000:02bf:0600:22:0
+Filmbox Stars CZ (SVT)
+p:M7
+7671:0e080000:02bf:0600:22:0
+Senzi (SVT)
 p:M7
 767a:0e080000:02bf:0600:22:0
 Jojko
@@ -11774,6 +11762,12 @@ p:M7
 7730:0e080000:02c1:0600:25:0
 STORY4 HD
 p:M7
+7731:0e080000:02c1:0600:25:0
+JOJ Sport HD
+p:M7
+7732:0e080000:02c1:0600:25:0
+JOJ Sport HD (SVT)
+p:M7
 7739:0e080000:02c1:0600:25:0
 Sport 2 HD (SVT)
 p:M7
@@ -11788,7 +11782,7 @@ History HD
 p:M7
 773e:0e080000:02c1:0600:25:0
 TVR 1 HD
-p:M7,c:050001
+p:M7
 77a7:0e080000:02c2:0600:1:0
 Nick Jr Czech
 p:M7
