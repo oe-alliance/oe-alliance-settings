@@ -777,12 +777,6 @@ transponders
 0e080000:02c8:0600
 	s 11958000:28000000:1:5:-8:2:0
 /
-0e080000:02c9:0600
-	s 12207000:30000000:0:3:-8:2:0:1:2:0:2
-/
-0e080000:02ca:0600
-	s 12284000:30000000:0:3:-8:2:0:1:2:0:2
-/
 0e080000:000b:1111
 	s 12092000:28000000:0:5:-8:2:0
 /
@@ -1246,7 +1240,7 @@ a.tv HD .
 p:BMT
 16ac:00c00000:03ff:0001:25:0
 tv.ingolstadt HD
-p:BMT
+p:
 16af:00c00000:03ff:0001:25:0
 NIEDERBAYERN TV HD
 p:BMT
@@ -1658,11 +1652,14 @@ p:TSA
 7a4c:00c00000:0410:0001:1:0
 SACHSEN EINS
 p:TSA
+7a47:00c00000:0410:0001:22:0
+Die Neue Zeit TV 1
+p:TSA
+7a48:00c00000:0410:0001:22:0
+Die Neue Zeit TV 2
+p:TSA
 7a4a:00c00000:0410:0001:22:0
 SENDER NEU JERUSALEM
-p:TSA
-7a47:00c00000:0410:0001:25:0
-Promo TSA
 p:TSA
 7a49:00c00000:0410:0001:25:0
 Telesur HD
@@ -1904,18 +1901,6 @@ p:SES
 10d1:00c00000:0418:0001:25:0
 ClipMyHorse.TV
 p:SES
-785a:00c00000:041a:0001:1:0
-10729V SID 0x785a
-p:DVB-S2 8PSK 10729V 19.2Â°E
-785e:00c00000:041a:0001:1:0
-10729V SID 0x785e
-p:DVB-S2 8PSK 10729V 19.2Â°E
-7861:00c00000:041a:0001:1:0
-10729V SID 0x7861
-p:DVB-S2 8PSK 10729V 19.2Â°E
-7864:00c00000:041a:0001:1:0
-10729V SID 0x7864
-p:DVB-S2 8PSK 10729V 19.2Â°E
 7853:00c00000:041a:0001:25:0
 M+LaLigaTV2HD
 p:Movistar+
@@ -1950,7 +1935,7 @@ p:FOXNWS
 BabyTV
 p:DIGITAL+
 749d:00c00000:041c:0001:1:0
-M+Superagentes
+M+VACACIONES
 p:Movistar+
 749e:00c00000:041c:0001:1:0
 BOING
@@ -5672,6 +5657,9 @@ p:Rai
 0d7e:00820000:1450:013e:10:0
 Rai Radio Slovenia
 p:Rai
+0d7f:00820000:1450:013e:10:0
+Rai Radio Südtirol
+p:Rai
 0d49:00820000:1450:013e:25:0
 Rai 1 HD
 p:Rai,c:050001
@@ -6812,6 +6800,9 @@ p:Cyfrowy Polsat S.A.
 429e:00820000:2bc0:013e:1:0
 Nowa TV
 p:Cyfrowy Polsat S.A.
+3d56:00820000:2c88:013e:1:0
+Motowizja HD
+p:CANAL+
 3d57:00820000:2c88:013e:1:0
 BIZNES24 HD
 p:CANAL+
@@ -6976,7 +6967,7 @@ DORCEL TV HD NEW
 p:iKO Media Group
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM1 TSOIP
+p:ARC/DCM2 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -6994,12 +6985,12 @@ LN24SA
 p:ViewMedia
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat Data 1
+Eutelsat data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -7553,6 +7544,9 @@ p:PEOPLETV-RETE7
 0535:00820000:3d54:013e:1:0
 ER24
 p:M-Three Satcom
+0537:00820000:3d54:013e:1:0
+WellTV
+p:M-Three Satcom
 0532:00820000:3d54:013e:2:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -7833,7 +7827,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Animation Collection HD
+Sci-Fi Collection HD
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -8247,7 +8241,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Animation Collection
+Sci-Fi Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -8301,8 +8295,8 @@ p:SkyItalia
 Comedy +1
 p:SkyItalia
 0dd3:00820000:1af4:fbff:1:0
-12092H SID 0xdd3
-p:DVB-S2 8PSK 12092H 13.0Â°E
+BFC
+p:SkyItalia
 0fd9:00820000:1af4:fbff:1:0
 History +1
 p:SkyItalia
@@ -8385,7 +8379,7 @@ p:SkyItalia
 Sky Sport HD
 p:SkyItalia
 1090:00820000:2008:fbff:25:0
-Sky Serie +1 HD
+Sky Serie Maratone HD
 p:SkyItalia
 1092:00820000:2008:fbff:25:0
 Calcio Overlay HD
@@ -8484,7 +8478,7 @@ p:SkyItalia
 Fox Business
 p:SkyItalia
 2d00:00820000:2260:fbff:25:0
-Sky Atlantic +1 HD
+Sky Atlantic Maratone HD
 p:SkyItalia
 2da4:00820000:2260:fbff:25:0
 Sky Serie HD
@@ -9611,6 +9605,12 @@ p:,c:050001
 0400:0e080000:0002:0001:1:0
 Film Cafe
 p:DigiTV
+0402:0e080000:0002:0001:1:0
+PRO ARENA
+p:DIGI
+0403:0e080000:0002:0001:1:0
+B1 TV
+p:DIGI
 0404:0e080000:0002:0001:1:0
 Discovery RO
 p:DigiTV
@@ -9627,8 +9627,8 @@ p:DigiTV
 SuperOne
 p:DigiTV
 062c:0e080000:0002:0001:1:0
-TV 1000
-p:DigiTV
+TVR 2
+p:DIGI
 054e:0e080000:0002:0001:1:0
 Viasat History
 p:DigiTV
@@ -9807,8 +9807,8 @@ p:DIGI
 JAZZY
 p:DIGI
 040a:0e080000:0007:0001:1:0
-HISTORY
-p:DigiTV
+Hora TV
+p:DIGI
 0b22:0e080000:0007:0001:1:0
 Eurosport 2 HU
 p:DigiTV
@@ -9842,6 +9842,9 @@ p:DigiTV
 0b9a:0e080000:0007:0001:1:0
 PRO TV INTERNATIONAL
 p:DigiTV
+04ba:0e080000:0007:0001:1:0
+SperantaTV
+p:DIGI
 03ec:0e080000:0007:0001:1:0
 H!T Music RO
 p:DigiTV
@@ -9851,6 +9854,9 @@ p:DigiTV
 03f6:0e080000:0007:0001:1:0
 DIGI 24
 p:DigiTV
+04e2:0e080000:0007:0001:2:0
+Radio Vocea Sperantei
+p:DIGI
 0401:0e080000:000c:0001:1:0
 Music Channel
 p:DigiTV
@@ -9859,7 +9865,7 @@ DIGI Sport 3
 p:DigiTV
 0c30:0e080000:000c:0001:1:0
 Realitatea Plus
-p:
+p:DigiTV
 0d34:0e080000:000c:0001:1:0
 Taraf
 p:DigiTV
@@ -11521,7 +11527,7 @@ Docubox
 p:M7
 75ac:0e080000:02bd:0600:22:0
 Eroxxx
-p:M7,c:050001
+p:M7
 7600:0e080000:02be:0600:1:0
 Film + CZE
 p:M7
@@ -11647,7 +11653,7 @@ Arena4 HD
 p:M7
 7665:0e080000:02bf:0600:25:0
 Vixen HD
-p:M7,c:050001
+p:M7
 7666:0e080000:02bf:0600:25:0
 Nat Geo Wild HD
 p:M7
@@ -11978,9 +11984,6 @@ p:M7
 78b7:0e080000:02c5:0600:1:0
 Extreme Sports Channel
 p:M7
-78b8:0e080000:02c5:0600:1:0
-Viasat Explore
-p:M7
 78b9:0e080000:02c5:0600:1:0
 CBS Reality
 p:M7
@@ -12073,7 +12076,7 @@ TV Paprika CZ/SK
 p:M7
 792a:0e080000:02c6:0600:22:0
 Kanal D2
-p:M7,c:050001
+p:M7
 792b:0e080000:02c6:0600:22:0
 Kanal D2.
 p:M7
@@ -12164,9 +12167,6 @@ p:M7
 7992:0e080000:02c7:0600:1:0
 TV2 Comedy.
 p:M7
-7993:0e080000:02c7:0600:1:0
-Zenebutik.
-p:M7
 7995:0e080000:02c7:0600:1:0
 TV4 (SVT)
 p:M7
@@ -12233,9 +12233,6 @@ p:M7
 79e7:0e080000:02c8:0600:1:0
 Bollywood TV
 p:M7
-79e8:0e080000:02c8:0600:1:0
-TV5MONDE
-p:M7
 79e9:0e080000:02c8:0600:1:0
 Minimax
 p:M7
@@ -12301,93 +12298,6 @@ Viasat History RO.
 p:M7
 79e1:0e080000:02c8:0600:25:0
 Direct One HD
-p:M7
-7a51:0e080000:02c9:0600:22:0
-Prima Krimi_Preladte
-p:M7
-7a45:0e080000:02c9:0600:25:0
-CT 1 HD
-p:M7
-7a46:0e080000:02c9:0600:25:0
-CT 2 HD
-p:M7
-7a47:0e080000:02c9:0600:25:0
-CT 24 HD
-p:M7
-7a49:0e080000:02c9:0600:25:0
-Nova HD
-p:M7
-7a4a:0e080000:02c9:0600:25:0
-Nova Fun HD
-p:M7
-7a4c:0e080000:02c9:0600:25:0
-Nova Gold HD
-p:M7
-7a4d:0e080000:02c9:0600:25:0
-Nova Action HD
-p:M7
-7a4e:0e080000:02c9:0600:25:0
-Nova Sport 2 HD_Preladte
-p:M7
-7a4f:0e080000:02c9:0600:25:0
-Prima HD
-p:M7
-7a50:0e080000:02c9:0600:25:0
-Prima ZOOM HD
-p:M7
-7aab:0e080000:02ca:0600:22:0
-RTVS 24
-p:M7
-7ab3:0e080000:02ca:0600:22:0
-JOJ Family_Preladte
-p:M7
-7ab4:0e080000:02ca:0600:22:0
-Prima MAX
-p:M7
-7ab5:0e080000:02ca:0600:22:0
-Prima PLUS_Preladte
-p:M7
-7ab6:0e080000:02ca:0600:22:0
-Nova International_Preladte
-p:M7
-7ab9:0e080000:02ca:0600:22:0
-Filmbox Stars CZ_Preladte
-p:M7
-7ac8:0e080000:02ca:0600:22:0
-Filmbox Stars CZ (SVT)_Preladte
-p:M7
-7aa9:0e080000:02ca:0600:25:0
-Jednotka HD
-p:M7
-7aaa:0e080000:02ca:0600:25:0
-Dvojka HD
-p:M7
-7aac:0e080000:02ca:0600:25:0
-Markiza HD
-p:M7
-7aad:0e080000:02ca:0600:25:0
-Doma HD
-p:M7
-7aae:0e080000:02ca:0600:25:0
-Dajto HD
-p:M7
-7aaf:0e080000:02ca:0600:25:0
-JOJ HD
-p:M7
-7ab0:0e080000:02ca:0600:25:0
-JOJ Plus HD
-p:M7
-7ab1:0e080000:02ca:0600:25:0
-Wau HD
-p:M7
-7ab2:0e080000:02ca:0600:25:0
-JOJ Cinema HD_Preladte
-p:M7
-7ab7:0e080000:02ca:0600:25:0
-JOJ Sport HD_Preladte
-p:M7
-7ac7:0e080000:02ca:0600:25:0
-JOJ Sport HD (SVT)_Preladte
 p:M7
 2b06:0e080000:000b:1111:1:0
 AXN CE .
