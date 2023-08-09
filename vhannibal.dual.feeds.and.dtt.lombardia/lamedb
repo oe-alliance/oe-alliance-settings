@@ -519,9 +519,6 @@ transponders
 00820000:2260:fbff
 	s 12466000:29900000:1:4:130:2:0:1:1:0:2
 /
-00823095:0000:0000
-	s 12437000:27500000:0:3:130:2:0:1:2:0:2
-/
 eeee0000:0071:217c
 	t 546000000:0:5:5:3:2:4:4:2:0:0:0
 /
@@ -566,18 +563,18 @@ eeee0000:27fc:217c
 /
 end
 services
-345d:00c00000:03e9:0001:1:0
-Service13405
-p:ORS
-3464:00c00000:03e9:0001:1:0
-Service 13412
-p:ORF
 3459:00c00000:03e9:0001:31:0
 Service 13401
+p:ORS
+345d:00c00000:03e9:0001:31:0
+Service13405
 p:ORS
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
+3464:00c00000:03e9:0001:31:0
+Service13412
+p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC News
 p:SES ASTRA
@@ -659,9 +656,6 @@ p:PRISA TV
 3401:00c00000:03ed:0001:22:0
 krone.tv
 p:-
-3403:00c00000:03ed:0001:22:0
-Service 13315
-p:ORS
 3404:00c00000:03ed:0001:22:0
 Stimmungsgarten TV
 p:ORS
@@ -891,10 +885,10 @@ p:Movistar+
 DAZN LALIGA 2 HD
 p:
 74d3:00c00000:03f8:0001:25:0
-M+LCampeones BAR
+BAR
 p:CANAL+
 74d4:00c00000:03f8:0001:25:0
-Movistarl Plus+ HD
+Movistar Plus+ HD
 p:Movistar+
 74d5:00c00000:03f8:0001:25:0
 M+LCAMPEON2
@@ -903,7 +897,7 @@ p:Movistar+
 LALIGA TV HYPERMOTION
 p:Movistar+
 74d8:00c00000:03f8:0001:25:0
-M+LCampeonesBAR 2 HD
+TEST B 2 HD
 p:Movistar+
 74db:00c00000:03f8:0001:25:0
 M+LCAMPEON3
@@ -1203,7 +1197,7 @@ p:Movistar+
 M+DEPORTES5
 p:Digital+
 77c9:00c00000:040a:0001:1:0
-M+LCampeones BAR 3
+TEST B 3
 p:Movistar+
 77d8:00c00000:040a:0001:1:0
 M+LCAMPEON4
@@ -1233,7 +1227,7 @@ p:SES
 Pro7Sat.1 UHD
 p:ProSiebenSat.1
 76c0:00c00000:040e:0001:1:0
-M+ ESTRENOS
+M+ Cine
 p:Movistar+
 76c1:00c00000:040e:0001:1:0
 CLAN TVE
@@ -1524,7 +1518,7 @@ p:CANAL+
 11097V SID 0x7578
 p:DVB-S QPSK 11097V 19.2Â°E
 7579:00c00000:0412:0001:1:0
-M+LCampeones BAR 2
+TEST B 2
 p:Movistar+
 757a:00c00000:0412:0001:1:0
 11097V SID 0x757a
@@ -1569,7 +1563,7 @@ p:DVB-S QPSK 11097V 19.2Â°E
 NEOX
 p:DIGITAL+
 7588:00c00000:0412:0001:1:0
-Movistarl Plus+
+Movistar Plus+
 p:Movistar+
 30d4:00c00000:0413:0001:25:0
 SAT.1 Gold HD
@@ -1725,7 +1719,7 @@ p:FOXNWS
 BabyTV
 p:DIGITAL+
 749d:00c00000:041c:0001:1:0
-M+VACACIONES
+M+CRACKS
 p:Movistar+
 749e:00c00000:041c:0001:1:0
 BOING
@@ -1830,7 +1824,7 @@ p:DVB-S QPSK 10788V 19.2Â°E
 M+ LALIGA TV 2
 p:Movistar+
 769e:00c00000:041e:0001:1:0
-M+LCampeones BAR
+BAR
 p:CANAL+
 769f:00c00000:041e:0001:1:0
 M+LCAMPEON3
@@ -2163,7 +2157,7 @@ p:CANAL+
 LA SEXTA HD
 p:CANAL+
 7539:00c00000:0426:0001:25:0
-M+ESTRENOSHD
+M+ Cine HD
 p:Movistar
 7820:00c00000:0428:0001:25:0
 NICKELODEONHD
@@ -3770,9 +3764,6 @@ p:BetaDigital
 0036:00c00000:0007:0085:22:0
 Genius exklusiv
 p:BetaDigital
-0320:00c00000:0008:0085:22:0
-STEST1
-p:SKY
 0129:00c00000:0008:0085:25:0
 Sky Sport Bundesliga 4 HD
 p:SKY
@@ -3784,6 +3775,9 @@ Sky Sport Austria 2 HD
 p:SKY
 0065:00c00000:0008:0085:25:0
 Universal TV HD
+p:SKY
+007a:00c00000:0008:0085:25:0
+DAZN 2 HD
 p:SKY
 007b:00c00000:0008:0085:25:0
 Warner TV Serie HD
@@ -3914,6 +3908,9 @@ p:BetaDigital
 0037:00c00000:000f:0085:25:0
 .
 p:SES
+0320:00c00000:0010:0085:22:0
+STEST1
+p:SKY
 0151:00c00000:0010:0085:25:0
 Sky Sport Bundesliga 8 HD
 p:SKY
@@ -3923,11 +3920,8 @@ p:SKY
 0156:00c00000:0010:0085:25:0
 Sky Sport Austria 6 HD
 p:SKY
-007a:00c00000:0010:0085:25:0
-DAZN 2 HD
-p:SKY
 0089:00c00000:0010:0085:25:0
-Sky Documentaries HD NEU
+.
 p:SKY
 0228:00c00000:0010:0085:31:0
 Sky Sport Bundesliga UHD
@@ -5734,7 +5728,7 @@ VOD 202
 p:Cyfrowy Polsat S.A.
 003d:00820000:1964:013e:1:0
 VOD 203
-p:Cyfrowy Polsat SA
+p:Cyfrowy Polsat SA,c:050001
 003e:00820000:1964:013e:1:0
 VOD 204
 p:Cyfrowy Polsat SA
@@ -6383,9 +6377,6 @@ p:
 064e:00820000:2454:013e:1:0
 MS CHANNEL
 p:
-0653:00820000:2454:013e:1:0
-Pop Economy
-p:
 0654:00820000:2454:013e:1:0
 Noursat English
 p:ViewMedia
@@ -6395,6 +6386,9 @@ p:MIT-xperts GmbH
 0641:00820000:2454:013e:25:0
 Al Jazeera HD
 p:EUTELSAT
+0653:00820000:2454:013e:1:1
+Pop Economy
+p:,c:050001
 200c:00820000:24b8:013e:1:0
 BBC News
 p:Globecast
@@ -6662,9 +6656,6 @@ p:FFmpeg
 43c0:00820000:2cec:013e:2:0
 The Overcomer
 p:Eutelsat
-43a1:00820000:2cec:013e:25:0
-BBC Persian HD
-p:BBC World Service
 3e1d:00820000:2ee0:013e:1:0
 Sundance HD
 p:Cyfrowy Polsat S.A.
@@ -6728,9 +6719,6 @@ p:M7 Group
 4230:00820000:2f44:013e:1:0
 Giornale Radio
 p:M-Three Satcom
-4231:00820000:2f44:013e:1:0
-LN24SA
-p:ViewMedia
 4234:00820000:2f44:013e:1:0
 ByoBlu
 p:M-Three Satcom
@@ -6776,6 +6764,9 @@ p:M7 Group
 422e:00820000:2f44:013e:25:0
 Horse TV HD
 p:M-Three satcom
+4231:00820000:2f44:013e:25:0
+LN24SA
+p:ViewMedia
 4345:00820000:300c:013e:2:0
 SRF 1
 p:Schweizer Radio und Fernsehen
@@ -7199,6 +7190,9 @@ p:Telespazio
 1364:00820000:33f4:013e:1:0
 Canale Italia
 p:telespazio
+1366:00820000:33f4:013e:1:0
+Canale Italia 2
+p:Telespazio
 136a:00820000:33f4:013e:1:0
 TLC Telecampione
 p:Telespazio
@@ -7210,6 +7204,9 @@ Telecupole
 p:Telespazio
 1384:00820000:33f4:013e:1:0
 Solo Calcio
+p:Telespazio
+1351:00820000:33f4:013e:2:0
+Serie A
 p:Telespazio
 1355:00820000:33f4:013e:2:0
 Radio Radio
@@ -7228,9 +7225,6 @@ Radio Margherita
 p:Telespazio
 135e:00820000:33f4:013e:2:0
 Radio Cusano Campus
-p:Telespazio
-1366:00820000:33f4:013e:10:0
-Canale Italia 2
 p:Telespazio
 031e:00820000:3bc4:013e:1:0
 Qatar TV HD
@@ -7288,7 +7282,7 @@ RADIONORBA TV
 p:Telenorba
 0530:00820000:3d54:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
 p:M-Three Satcom
@@ -7814,6 +7808,9 @@ p:SkyItalia
 1fd2:00820000:189c:fbff:1:0
 Sky Primafila
 p:SkyItalia
+0dd7:00820000:189c:fbff:1:0
+11977H SID 0xdd7
+p:DVB-S2 QPSK 11977H 13.0Â°E
 250f:00820000:189c:fbff:25:0
 Inter TV
 p:SkyItalia
@@ -7825,9 +7822,6 @@ Sky Cinema Due +24 HD
 p:SkyItalia
 0dcf:00820000:189c:fbff:25:0
 ZONA DAZN 2
-p:SkyItalia
-0dd7:00820000:189c:fbff:25:0
-Blaze HD
 p:SkyItalia
 1fd0:00820000:189c:fbff:130:0
 Sky Primafila Active
@@ -8042,9 +8036,6 @@ p:SkyItalia
 38c5:00820000:1af4:fbff:1:0
 Comedy +1
 p:SkyItalia
-0dd3:00820000:1af4:fbff:1:0
-BFC
-p:SkyItalia
 0fd9:00820000:1af4:fbff:1:0
 History +1
 p:SkyItalia
@@ -8078,6 +8069,9 @@ p:SkyItalia
 0dc4:00820000:1af4:fbff:130:0
 Fake TG 24 HD
 p:SkyItalia
+0dd3:00820000:1af4:fbff:1:0
+BFC
+p:SkyItalia,c:050001
 1063:00820000:1d4c:fbff:1:0
 IEPG Data
 p:SkyItalia
@@ -8124,7 +8118,7 @@ p:SkyItalia
 Sky Sport HD
 p:SkyItalia
 1090:00820000:2008:fbff:25:0
-Sky Serie +1 HD
+Sky Serie Maratone HD
 p:SkyItalia
 1092:00820000:2008:fbff:25:0
 Calcio Overlay HD
@@ -8246,81 +8240,6 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
-0001:00823095:0000:0000:1:0
-MTV Live HD
-p:Cyfrowy Polsat S.A.
-0002:00823095:0000:0000:1:0
-Nick Music
-p:Cyfrowy Polsat S.A.
-0003:00823095:0000:0000:1:0
-Nick Jr
-p:Cyfrowy Polsat S.A.
-0008:00823095:0000:0000:1:0
-MTV 00s
-p:Cyfrowy Polsat S.A.
-0009:00823095:0000:0000:1:0
-Nickelodeon
-p:Cyfrowy Polsat S.A.
-000c:00823095:0000:0000:1:0
-Comedy Central HD
-p:Cyfrowy Polsat S.A.
-000d:00823095:0000:0000:1:0
-Paramount Network Polska
-p:Cyfrowy Polsat S.A.
-000e:00823095:0000:0000:1:0
-Nicktoons HD
-p:Cyfrowy Polsat S.A.
-000f:00823095:0000:0000:1:0
-MTV Polska HD
-p:Cyfrowy Polsat S.A.
-0010:00823095:0000:0000:1:0
-Polsat Comedy Central Extra
-p:Cyfrowy Polsat S.A.
-0015:00823095:0000:0000:1:0
-12437H SID 0x15
-p:DVB-S2 8PSK 12437H 13.0Â°E
-0019:00823095:0000:0000:1:0
-MTV Commercial
-p:
-0020:00823095:0000:0000:1:0
-Comedy Central HD
-p:Cyfrowy Polsat S.A.
-0021:00823095:0000:0000:1:0
-Paramount Network Polska
-p:Cyfrowy Polsat S.A.
-0023:00823095:0000:0000:1:0
-12437H SID 0x23
-p:DVB-S2 8PSK 12437H 13.0Â°E
-003c:00823095:0000:0000:1:0
-VOD 202
-p:Cyfrowy Polsat S.A.
-003d:00823095:0000:0000:1:0
-VOD 203
-p:Cyfrowy Polsat SA
-003e:00823095:0000:0000:1:0
-VOD 204
-p:Cyfrowy Polsat SA
-003f:00823095:0000:0000:1:0
-VOD 205
-p:Cyfrowy Polsat S.A.
-0040:00823095:0000:0000:1:0
-VOD 206
-p:Cyfrowy Polsat S.A.
-0041:00823095:0000:0000:1:0
-VOD 207
-p:Cyfrowy Polsat S.A.
-0042:00823095:0000:0000:1:0
-VOD 208
-p:Cyfrowy Polsat S.A.,c:050001
-0043:00823095:0000:0000:1:0
-xxxVOD1
-p:Cyfrowy Polsat S.A.
-0044:00823095:0000:0000:1:0
-xxxVOD2
-p:Cyfrowy Polsat S.A.
-0045:00823095:0000:0000:1:0
-Nicktoons HD
-p:Cyfrowy Polsat S.A.
 044d:eeee0000:0071:217c:25:0
 Rai 1 HD
 p:Rai
@@ -8781,7 +8700,7 @@ p:Rai Way
 TopCalcio24 HD
 p:Rai Way
 0019:eeee0000:2000:217c:1:100
-TELECOLOR.
+TELECOLOR
 p:Rai Way
 001a:eeee0000:2000:217c:22:101
 CREMONA1
@@ -9213,7 +9132,7 @@ p:STUDIO1NW
 CREMONA 1 HD
 p:STUDIO1NW
 00b5:eeee0000:27fc:217c:2:307
-RADIO TEST1
+RTR 99 DAB
 p:STUDIO1NW
 00b6:eeee0000:27fc:217c:2:308
 RADIO TEST2
