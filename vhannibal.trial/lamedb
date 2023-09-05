@@ -229,7 +229,7 @@ transponders
 	s 12692000:22000000:0:4:192:2:0
 /
 00c00000:045e:0001
-	s 12699000:23500000:1:3:192:2:0:1:2:0:2
+	s 12700000:23500000:1:3:192:2:0:1:2:0:2
 /
 00c00000:0460:0001
 	s 12728000:23500000:1:2:192:2:0:1:2:0:2
@@ -608,18 +608,18 @@ transponders
 /
 end
 services
-345d:00c00000:03e9:0001:1:0
-Service13405
-p:ORS
-3464:00c00000:03e9:0001:1:0
-Service 13412
-p:ORF
 3459:00c00000:03e9:0001:31:0
 Service 13401
+p:ORS
+345d:00c00000:03e9:0001:31:0
+Service13405
 p:ORS
 3462:00c00000:03e9:0001:31:0
 RTL UHD Austria
 p:ORS
+3464:00c00000:03e9:0001:31:0
+Service13412
+p:ORF
 1389:00c00000:03ea:0001:1:0
 BBC News
 p:SES ASTRA
@@ -1060,7 +1060,7 @@ a.tv HD .
 p:BMT
 16ac:00c00000:03ff:0001:25:0
 tv.ingolstadt HD
-p:
+p:BMT
 16af:00c00000:03ff:0001:25:0
 NIEDERBAYERN TV HD
 p:BMT
@@ -1425,7 +1425,7 @@ p:ARD SWR
 1LIVE
 p:ARD WDR
 28d4:00c00000:040f:0001:10:0
-WDR 2 Rheinland
+WDR 2
 p:ARD WDR
 28d5:00c00000:040f:0001:10:0
 WDR 3
@@ -2243,9 +2243,6 @@ p:Deutsche Welle
 1647:00c00000:042c:0001:25:0
 Cubavision Internacional
 p:OVERON
-200d:00c00000:0430:0001:1:0
-11856V SID 0x200d
-p:DVB-S2 8PSK 11856V 19.2Â°E
 200f:00c00000:0430:0001:1:0
 F3 BRETAGNE
 p:CSAT
@@ -2260,6 +2257,9 @@ BEIN SPORTS MAX 6
 p:CSAT
 200c:00c00000:0430:0001:25:0
 NRJ HITS
+p:CSAT
+200d:00c00000:0430:0001:25:0
+CANAL+BOX OFFICE
 p:CSAT
 200e:00c00000:0430:0001:25:0
 CINE+ CLUB
@@ -2514,7 +2514,7 @@ p:CSAT
 MEZZO LIVE
 p:CSAT
 2263:00c00000:0438:0001:25:0
-CANAL+CINEMA
+CANAL+CINEMA(S)
 p:CSAT
 2264:00c00000:0438:0001:25:0
 CANAL+SPORT
@@ -2588,8 +2588,8 @@ p:ProSiebenSat.1
 24bd:00c00000:043c:0001:1:0
 F3 PROV ALPES
 p:CSAT
-24b9:00c00000:043c:0001:25:0
-EVENEMENT A LA CARTE
+24c9:00c00000:043c:0001:1:0
+F3 AUVERGNE
 p:CSAT
 24ba:00c00000:043c:0001:25:0
 MOSAIQUE UEFA CHAMPIONS LEAGUE
@@ -2660,6 +2660,9 @@ p:CSAT
 245b:00c00000:0440:0001:25:0
 CINE+ EMOTION
 p:CSAT
+245c:00c00000:0440:0001:25:0
+LCP
+p:CSAT
 245d:00c00000:0440:0001:25:0
 FRANCE 3
 p:CSAT
@@ -2714,14 +2717,8 @@ p:RTL Deutschland
 2f3b:00c00000:0441:0001:2:0
 TOGGO Radio
 p:RTL Deutschland
-2338:00c00000:0442:0001:1:0
-F3 AUVERGNE
-p:CSAT
 232a:00c00000:0442:0001:25:0
 NATIONAL GEO
-p:CSAT
-232b:00c00000:0442:0001:25:0
-TF1 SERIES FILMS
 p:CSAT
 232c:00c00000:0442:0001:25:0
 PARIS PREMIERE
@@ -2750,8 +2747,8 @@ p:CSAT
 2336:00c00000:0442:0001:25:0
 CNEWS
 p:CSAT
-2337:00c00000:0442:0001:25:0
-LCP
+2329:00c00000:0442:0001:31:0
+TEST10
 p:CSAT
 7080:00c00000:0443:0001:1:0
 RTL Austria
@@ -3094,6 +3091,9 @@ FRANCE 4
 p:CSAT
 21fe:00c00000:044c:0001:25:0
 NATIONAL GEOGRAPHIC WILD
+p:CSAT
+21ff:00c00000:044c:0001:25:0
+TF1 SERIES FILMS
 p:CSAT
 6dca:00c00000:044d:0001:1:0
 Das Erste
@@ -3506,6 +3506,9 @@ p:SES
 290b:00c00000:045e:0001:1:0
 Just Cooking
 p:SES
+290c:00c00000:045e:0001:1:0
+Just Fishing
+p:SES
 290f:00c00000:045e:0001:1:0
 Crime Time
 p:SES
@@ -3555,7 +3558,7 @@ p:ARD
 WDR Test A
 p:ARD
 1012:00c00000:0451:0035:2:0
-Nostalgie
+Play Nostalgie
 p:M7 Group
 101a:00c00000:0451:0035:2:0
 VRT Radio1
@@ -3582,7 +3585,7 @@ p:M7 Group
 Bergblick
 p:M7 Group
 101d:00c00000:0451:0035:22:0
-AXN Deutschland
+AXN Black
 p:M7 Group
 1034:00c00000:0451:0035:22:0
 Eleven Sports Pro League 1 FR
@@ -3929,6 +3932,9 @@ p:BetaDigital
 0026:00c00000:000f:0085:1:0
 HGTV
 p:BetaDigital
+0027:00c00000:000f:0085:1:0
+SRGT
+p:BetaDigital
 0038:00c00000:000f:0085:1:0
 .
 p:BetaDigital
@@ -3945,9 +3951,6 @@ p:Beta Digital
 .
 p:BetaDigital
 003a:00c00000:000f:0085:22:0
-.
-p:BetaDigital
-0027:00c00000:000f:0085:25:0
 .
 p:BetaDigital
 0037:00c00000:000f:0085:25:0
@@ -4014,19 +4017,19 @@ p:BetaDigital
 Baden TV
 p:BetaDigital
 0001:00c00000:042e:042e:1:0
-OU Slot 1
+NFL SRT Europe/Asia Testing Sources 1-5
 p:
 0002:00c00000:042e:042e:1:0
-OU Slot 1
+NFL SRT Europe/Asia Testing Sources 1-5
 p:
 0003:00c00000:042e:042e:1:0
-OU Slot 1
+NFL SRT Europe/Asia Testing Sources 1-5
 p:
 0004:00c00000:042e:042e:1:0
-OU Slot 1
+NFL SRT Europe/Asia Testing Sources 1-5
 p:
 0005:00c00000:042e:042e:1:0
-OU Slot 1
+NFL SRT Europe/Asia Testing Sources 1-5
 p:
 0001:00820000:0065:0001:1:0
 Current Time HD ch1
@@ -6192,8 +6195,8 @@ p:TSA
 Revival TV
 p:UNITED TELEPORTS
 39d3:00820000:1fa4:013e:1:0
-Detskiy Mir - TeleClub
-p:Eutelsat
+Detskii Mir
+p:ARC/DCM2 TSOIP
 39d4:00820000:1fa4:013e:1:0
 Lubimoe Kino
 p:Eutelsat
@@ -6203,9 +6206,6 @@ p:STN
 39d6:00820000:1fa4:013e:1:0
 STERK TV
 p:STN
-39d7:00820000:1fa4:013e:1:0
-Velayat TV
-p:iKO Media Group
 39d9:00820000:1fa4:013e:1:0
 Sonlife
 p:ARQIVA LTD
@@ -6247,9 +6247,6 @@ Fashion TV HD
 p:
 0389:00820000:2134:013e:1:0
 Dubai International HD
-p:Etisalat
-038a:00820000:2134:013e:1:0
-Dubai Sports 1 HD
 p:Etisalat
 038b:00820000:2134:013e:1:0
 SUDAN TV
@@ -6402,7 +6399,7 @@ p:STN
 TELERADIOPACE TV
 p:STN
 2340:00820000:2328:013e:1:0
-Jibek Joly
+Silk Way
 p:STN
 2360:00820000:2328:013e:2:0
 Radio Hargeisa
@@ -6766,10 +6763,10 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
 DORCEL TV HD NEW
-p:iKO Media Group
+p:IKO Media Group
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM1 TSOIP
+p:ARC/DCM2 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -6784,12 +6781,12 @@ Giornale Radio
 p:M-Three Satcom
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat Data 1
+Eutelsat data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -7130,6 +7127,9 @@ p:KABELIO.CH
 0088:00820000:3264:013e:1:0
 Kabelio Info
 p:KABELIO.CH
+0096:00820000:3264:013e:1:0
+TEST
+p:
 0064:00820000:3264:013e:25:0
 Kabelio 3+
 p:KABELIO.CH
@@ -7635,7 +7635,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Liam Neeson Collection
+Shrek Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -7809,7 +7809,7 @@ p:SkyItalia
 Sky Uno
 p:SkyItalia
 2b0f:00820000:1838:fbff:25:0
-Sky Sport Summer
+Sky Sport Uno
 p:SkyItalia
 1c29:00820000:1838:fbff:25:0
 Sky Sport Calcio
@@ -8034,7 +8034,7 @@ p:SkyItalia
 Primafila 1
 p:SkyItalia
 2dc0:00820000:1a2c:fbff:1:0
-Sky Sport Action
+Sky Sport Max
 p:SkyItalia
 2dc4:00820000:1a2c:fbff:1:0
 12054H SID 0x2dc4
@@ -8046,7 +8046,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Liam Neeson Collection
+Shrek Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -8172,7 +8172,7 @@ p:SkyItalia
 IEPG Data
 p:SkyItalia
 1c50:00820000:2008:fbff:25:0
-Sky Sport Action
+Sky Sport Max
 p:SkyItalia
 1089:00820000:2008:fbff:25:0
 Sky Sport
@@ -8214,13 +8214,13 @@ p:SkyItalia
 Sky Cinema Family
 p:SkyItalia
 0f58:00820000:206c:fbff:25:0
-Sky Documentaries +1
+Sky Documentaries
 p:SkyItalia
 0f5d:00820000:206c:fbff:25:0
 Sky Investigation +1
 p:SkyItalia
 0f5e:00820000:206c:fbff:25:0
-Sky Documentaries +1
+Sky Documentaries
 p:SkyItalia
 1c40:00820000:206c:fbff:130:0
 Sky Supercalcio HD
@@ -8229,7 +8229,7 @@ p:SkyItalia
 IEPG Data
 p:SkyItalia
 2aa8:00820000:2198:fbff:1:0
-Sky Sport Summer
+Sky Sport Uno
 p:SkyItalia
 0f46:00820000:2198:fbff:25:0
 Sky Sport
@@ -8906,9 +8906,6 @@ p:
 178e:0ce40000:0026:0036:1:0
 MCM POP
 p:
-178f:0ce40000:0026:0036:1:0
-Canção Nova
-p:
 1790:0ce40000:0026:0036:1:0
 PFC
 p:
@@ -8920,9 +8917,6 @@ CNBC Europe
 p:
 1793:0ce40000:0026:0036:1:0
 TV Galicia
-p:
-1794:0ce40000:0026:0036:1:0
-Playboy TV
 p:
 1795:0ce40000:0026:0036:1:0
 AMC Crime
@@ -8998,7 +8992,7 @@ Eleven Sports 3
 p:SID Eleven Sports 3
 0f3f:0ce40000:0027:0036:1:0
 Eleven Sports 6
-p:SID Eleven Sports 6
+p:SID Eleven Sports 6,c:050001
 0f40:0ce40000:0027:0036:1:0
 SIC K
 p:SID SIC K
@@ -9069,8 +9063,8 @@ p:
 Eleven 1 HD
 p:
 13af:0ce40000:0027:0036:1:0
-Eleven 1 HD
-p:
+12398H SID 0x13af
+p:DVB-S2 8PSK 12398H 330.0Â°E,c:050001
 13b0:0ce40000:0027:0036:1:0
 Eleven 4
 p:
@@ -9085,7 +9079,7 @@ Casa e Cozinha
 p:
 17b9:0ce40000:0027:0036:1:0
 Eleven 2 HD
-p:
+p:,c:050001
 17ba:0ce40000:0027:0036:1:0
 Eleven 3
 p:
@@ -9157,7 +9151,7 @@ Discovery Channel
 p:SID Discovery
 033d:0ce40000:002f:0036:1:0
 12437H SID 0x33d
-p:DVB-S2 8PSK 12437H 330.0Â°E
+p:DVB-S2 8PSK 12437H 330.0Â°E,c:050001
 125d:0ce40000:002f:0036:1:0
 Playboy TV
 p:SID Playboy TV
@@ -9406,13 +9400,16 @@ Euronews
 p:Euronews
 12f5:0ce40000:0030:0036:1:0
 OneToro TV
-p:OneToro TV,c:050001
+p:OneToro TV
 00f6:0ce40000:0030:0036:1:0
 France 24 (I)
 p:France 24 (I)
+12f6:0ce40000:0030:0036:1:0
+Canal NOS
+p:Canal NOS
 00f9:0ce40000:0030:0036:1:0
 Hot
-p:Hot
+p:Hot,c:050001
 00fa:0ce40000:0030:0036:1:0
 Disney Junior
 p:Disney Junior
@@ -9478,7 +9475,7 @@ RTP África
 p:
 0065:0ce40000:0065:0053:1:0
 RTP1
-p:
+p:,c:050001
 0066:0ce40000:0065:0053:1:0
 RTP2
 p:
