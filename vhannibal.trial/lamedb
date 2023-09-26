@@ -279,9 +279,6 @@ transponders
 00c00000:0021:0085
 	s 12480000:27500000:1:3:192:2:0
 /
-00c00000:042e:042e
-	s 11817000:31428000:1:8:192:2:0:1:4:0:2
-/
 00820000:0065:0001
 	s 12226000:27500000:1:3:130:2:0
 /
@@ -457,7 +454,7 @@ transponders
 	s 11137000:27500000:0:3:130:2:0
 /
 00820000:33f4:013e
-	s 11179000:27500000:0:3:130:2:0:1:2:0:2
+	s 11179000:27500000:0:2:130:2:0:1:2:0:2
 /
 00820000:3bc4:013e
 	s 11566000:29900000:0:3:130:2:0:1:2:0:2
@@ -982,7 +979,7 @@ Kabel 1 Doku HD Austria
 p:ProSiebenSat.1
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD,c:050001
+p:ARD
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -1756,7 +1753,7 @@ DAZN 2 HD
 p:Movistar+
 7863:00c00000:041a:0001:25:0
 LA 1 HD
-p:Movisrta+
+p:Movisrta+,c:050001
 749a:00c00000:041c:0001:1:0
 DIVINITY
 p:DIGITAL+
@@ -1767,7 +1764,7 @@ p:FOXNWS
 BabyTV
 p:DIGITAL+
 749d:00c00000:041c:0001:1:0
-M+ CRACKS
+M+SanSebastián
 p:Movistar+
 749e:00c00000:041c:0001:1:0
 BOING
@@ -2939,6 +2936,9 @@ p:CSAT
 21aa:00c00000:0448:0001:1:0
 NOA
 p:CSAT
+21ac:00c00000:0448:0001:1:0
+12324V SID 0x21ac
+p:DVB-S2 8PSK 12324V 19.2Â°E
 2199:00c00000:0448:0001:25:0
 NICKELODEON
 p:CSAT
@@ -4019,21 +4019,6 @@ p:BetaDigital
 004c:00c00000:0021:0085:22:0
 Baden TV
 p:BetaDigital
-0001:00c00000:042e:042e:1:0
-SES Video
-p:
-0002:00c00000:042e:042e:1:0
-SES Video
-p:
-0003:00c00000:042e:042e:1:0
-SES Video
-p:
-0004:00c00000:042e:042e:1:0
-SES Video
-p:
-0005:00c00000:042e:042e:1:0
-SES Video
-p:
 0001:00820000:0065:0001:1:0
 Current Time HD ch1
 p:
@@ -4858,7 +4843,7 @@ Iran International HD
 p:Volant Media
 01f6:00820000:0384:013e:1:0
 AIRMONT
-p:VITEC
+p:FFmpeg
 01f8:00820000:0384:013e:1:0
 NASA TV HD
 p:
@@ -5698,7 +5683,7 @@ nova MAD GREEKZ
 p:NOVA
 1bc4:00820000:17d4:013e:1:0
 Novasports News HD
-p:NOVA
+p:NOVA,c:050001
 1bc5:00820000:17d4:013e:1:0
 One Channel HD
 p:NOVA
@@ -6383,6 +6368,9 @@ p:STN
 2338:00820000:2328:013e:1:0
 SLNTV
 p:STN
+2339:00820000:2328:013e:1:0
+Suryoyo SAT
+p:STN
 233a:00820000:2328:013e:1:0
 AL MALAKOOT SAT – THE KINGDOM SAT الملكوت سات
 p:STN
@@ -6765,11 +6753,11 @@ p:Cyfrowy Polsat S.A.
 13 Ulica HD
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
-DORCEL TV HD NEW
-p:IKO Media Group
+DORCEL TV HD
+p:iKO Media Group
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM2 TSOIP
+p:ARC/DCM1 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -6784,12 +6772,12 @@ Giornale Radio
 p:M-Three Satcom
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat data 1
+Eutelsat Data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -7202,18 +7190,6 @@ p:Cyfrowy Polsat S.A.
 070a:00820000:32c8:013e:1:0
 Polsat Sport Premium 2
 p:Cyfrowy Polsat S.A.
-070b:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV3
-p:Cyfrowy Polsat S.A.
-070c:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV4
-p:Cyfrowy Polsat S.A.
-070d:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV5
-p:Cyfrowy Polsat S.A.
-070e:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV6
-p:Cyfrowy Polsat S.A.
 070f:00820000:32c8:013e:1:0
 Eleven Sports 1 4K
 p:Cyfrowy Polsat S.A.
@@ -7231,7 +7207,7 @@ WNS.TEL
 p:GMN
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Manoto
+p:
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Globecast
@@ -7261,7 +7237,7 @@ Canale Italia 84
 p:Telespazio
 1364:00820000:33f4:013e:1:0
 Canale Italia
-p:telespazio
+p:Telespazio
 1366:00820000:33f4:013e:1:0
 Canale Italia 2
 p:Telespazio
@@ -7270,7 +7246,7 @@ TLC Telecampione
 p:Telespazio
 1381:00820000:33f4:013e:1:0
 Arte Investimenti
-p:Harmonic
+p:Telespazio
 1382:00820000:33f4:013e:1:0
 Telecupole
 p:Telespazio
@@ -7354,9 +7330,6 @@ People TV
 p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
-p:M-Three Satcom
-0538:00820000:3d54:013e:1:0
-Value24
 p:M-Three Satcom
 0532:00820000:3d54:013e:2:0
 RVS-Accendi la Speranza
@@ -7638,7 +7611,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Harry Potter Collection
+Batman Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -8049,7 +8022,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Harry Potter Collection
+Batman Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -8941,7 +8914,7 @@ p:DVB-S2 8PSK 12360H 330.0Â°E
 p:DVB-S2 8PSK 12360H 330.0Â°E
 17b5:0ce40000:0026:0036:1:0
 Sport TV 5 HD
-p:
+p:,c:050001
 17b6:0ce40000:0026:0036:1:0
 Sport TV 6 HD
 p:
@@ -8959,7 +8932,7 @@ BTV HD
 p:
 0ed9:0ce40000:0026:0036:1:0
 Sport TV 5 HD
-p:Sport TV 5 HD
+p:Sport TV 5 HD,c:050001
 0eda:0ce40000:0026:0036:1:0
 Sport TV 1 HD
 p:SID Sport TV 1 HD
@@ -8995,7 +8968,7 @@ Eleven Sports 3
 p:SID Eleven Sports 3
 0f3f:0ce40000:0027:0036:1:0
 Eleven Sports 6
-p:SID Eleven Sports 6,c:050001
+p:SID Eleven Sports 6
 0f40:0ce40000:0027:0036:1:0
 SIC K
 p:SID SIC K
@@ -9067,7 +9040,7 @@ Eleven 1 HD
 p:
 13af:0ce40000:0027:0036:1:0
 12398H SID 0x13af
-p:DVB-S2 8PSK 12398H 330.0Â°E,c:050001
+p:DVB-S2 8PSK 12398H 330.0Â°E
 13b0:0ce40000:0027:0036:1:0
 Eleven 4
 p:
@@ -9082,7 +9055,7 @@ Casa e Cozinha
 p:
 17b9:0ce40000:0027:0036:1:0
 Eleven 2 HD
-p:,c:050001
+p:
 17ba:0ce40000:0027:0036:1:0
 Eleven 3
 p:
@@ -9154,10 +9127,10 @@ Discovery Channel
 p:SID Discovery
 033d:0ce40000:002f:0036:1:0
 12437H SID 0x33d
-p:DVB-S2 8PSK 12437H 330.0Â°E,c:050001
+p:DVB-S2 8PSK 12437H 330.0Â°E
 125d:0ce40000:002f:0036:1:0
 Playboy TV
-p:SID Playboy TV
+p:SID Playboy TV,c:050001
 125e:0ce40000:002f:0036:1:0
 National Geographic HD
 p:SID National Geographic HD
@@ -9478,7 +9451,7 @@ RTP África
 p:
 0065:0ce40000:0065:0053:1:0
 RTP1
-p:,c:050001
+p:
 0066:0ce40000:0065:0053:1:0
 RTP2
 p:
@@ -9493,10 +9466,10 @@ RTP3
 p:
 006a:0ce40000:0065:0053:1:0
 RTP Madeira
-p:
+p:,c:050001
 006b:0ce40000:0065:0053:1:0
 RTP Açores
-p:
+p:,c:050001
 006c:0ce40000:0065:0053:1:0
 A Bola TV
 p:
@@ -9523,10 +9496,10 @@ Cartoonito
 p:
 0076:0ce40000:0065:0053:1:0
 RTP Madeira
-p:
+p:,c:050001
 0077:0ce40000:0065:0053:1:0
 RTP Açores
-p:
+p:,c:050001
 0078:0ce40000:0065:0053:1:0
 ARTV
 p:
