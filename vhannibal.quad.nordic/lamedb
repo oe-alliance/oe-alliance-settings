@@ -1,5 +1,8 @@
 eDVB services /4/
 transponders
+00c00000:0003:0001
+	s 11817000:31428000:1:8:192:2:0:1:4:0:2
+/
 00c00000:03e9:0001
 	s 11214000:23500000:0:3:192:2:0:1:2:0:2
 /
@@ -788,6 +791,21 @@ transponders
 /
 end
 services
+0001:00c00000:0003:0001:1:0
+NFL Service 1
+p:
+0002:00c00000:0003:0001:1:0
+NFL Service 2
+p:
+0003:00c00000:0003:0001:1:0
+NFL Service 3
+p:
+0004:00c00000:0003:0001:1:0
+NFL Service 4
+p:
+0005:00c00000:0003:0001:1:0
+NFL Service 5
+p:
 3459:00c00000:03e9:0001:31:0
 Service 13401
 p:ORS
@@ -878,6 +896,9 @@ p:Movistar+
 78c0:00c00000:03ec:0001:25:0
 COMEDYCENTRALHD
 p:PRISA TV
+33ff:00c00000:03ed:0001:1:0
+meinTVshop
+p:
 3401:00c00000:03ed:0001:22:0
 krone.tv
 p:-
@@ -887,9 +908,6 @@ p:ORS
 3405:00c00000:03ed:0001:22:0
 Melodie TV NEU
 p:-
-33ff:00c00000:03ed:0001:22:0
-Aristo.TV
-p:ORF
 3400:00c00000:03ed:0001:25:0
 R9 Oesterreich HD
 p:-
@@ -1162,7 +1180,7 @@ Kabel 1 Doku HD Austria
 p:ProSiebenSat.1
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD
+p:ARD,c:050001
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -1936,7 +1954,7 @@ DAZN 2 HD
 p:Movistar+
 7863:00c00000:041a:0001:25:0
 LA 1 HD
-p:Movisrta+,c:050001
+p:Movisrta+
 749a:00c00000:041c:0001:1:0
 DIVINITY
 p:DIGITAL+
@@ -3539,6 +3557,9 @@ p:ORF
 332e:00c00000:045b:0001:1:0
 NITRO Austria
 p:RTL
+3332:00c00000:045b:0001:1:0
+Shop LC
+p:ORS
 3333:00c00000:045b:0001:1:0
 VISIT-X.tv
 p:-
@@ -3548,6 +3569,9 @@ p:ServusTV
 3337:00c00000:045b:0001:1:0
 ServusTV Oesterreich
 p:ServusTV
+3339:00c00000:045b:0001:1:0
+L-TV
+p:-
 3341:00c00000:045b:0001:2:0
 OE1
 p:ORF
@@ -3596,15 +3620,12 @@ p:-
 3330:00c00000:045b:0001:22:0
 LT1-OOE
 p:-
-3332:00c00000:045b:0001:22:0
-Shop LC
-p:ORS
 3338:00c00000:045b:0001:22:0
 4MEDIATHEK
 p:-
-3339:00c00000:045b:0001:22:0
-L-TV
-p:-
+3356:00c00000:045b:0001:22:0
+Aristo.TV
+p:ORF
 3355:00c00000:045b:0001:25:0
 AstroTV HD
 p:-
@@ -4098,7 +4119,7 @@ p:SKY
 Sky Atlantic HD
 p:SKY
 006f:00c00000:000d:0085:25:0
-Sky Cinema 007 HD
+Sky Cinema Jurassic HD
 p:SKY
 0070:00c00000:000d:0085:25:0
 Sky Documentaries HD
@@ -5866,7 +5887,7 @@ nova MAD GREEKZ
 p:NOVA
 1bc4:00820000:17d4:013e:1:0
 Novasports News HD
-p:NOVA,c:050001
+p:NOVA
 1bc5:00820000:17d4:013e:1:0
 One Channel HD
 p:NOVA
@@ -6096,7 +6117,7 @@ p:NOVA
 E! Entertainment HD
 p:NOVA
 3c98:00820000:1bbc:013e:1:0
-Nova Test
+ATTICA TV
 p:NOVA
 3c99:00820000:1bbc:013e:1:0
 Novasports2HD Cy
@@ -6502,9 +6523,6 @@ BBC Brit
 p:GLOBECAST
 07e1:00820000:22c4:013e:1:0
 Euronews Italian
-p:GLOBECAST
-07e2:00820000:22c4:013e:1:0
-UA WORLD TV
 p:GLOBECAST
 07e3:00820000:22c4:013e:1:0
 BBC CBeebies
@@ -6940,7 +6958,7 @@ DORCEL TV HD
 p:iKO Media Group
 4207:00820000:2f44:013e:1:0
 Brazzers HD
-p:ARC/DCM1 TSOIP
+p:ARC/DCM2 TSOIP
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -7514,6 +7532,9 @@ p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
 p:M-Three Satcom
+0538:00820000:3d54:013e:1:0
+Value24
+p:M-Three Satcom,c:050001
 0532:00820000:3d54:013e:2:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -7794,7 +7815,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Batman Collection
+Jurassic World Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -8205,7 +8226,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Batman Collection
+Jurassic World Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
@@ -8956,7 +8977,7 @@ Trofey
 p:1plus1 Media
 17d4:00300000:000c:0055:22:0
 1+1
-p:1plus1 Media
+p:1plus1 Media,c:050001
 17dc:00300000:000c:0055:22:0
 Kvartal TV
 p:1plus1 Media
@@ -8977,7 +8998,7 @@ p:1plus1 Media
 p:1plus1 Media
 17ed:00300000:000c:0055:22:0
 1+1 International
-p:1plus1 Media
+p:1plus1 Media,c:050001
 17f2:00300000:000c:0055:22:0
 Comedy Central
 p:1plus1 Media
@@ -8995,16 +9016,19 @@ ATR
 p:1plus1 Media
 17d5:00300000:000c:0055:25:0
 1+1 Ukraine
-p:1plus1 Media
+p:1plus1 Media,c:050001
 1a04:00300000:0010:0055:1:0
 UA:Pershyi
+p:
+1a13:00300000:0010:0055:1:0
+Army TV
 p:
 1a18:00300000:0010:0055:1:0
 1+1 Ukraine
 p:
 19d2:00300000:0010:0055:1:0
-Unian TV
-p:
+2+2
+p:1plus1 Media
 19dc:00300000:0010:0055:1:0
 DIM TV
 p:
@@ -9226,7 +9250,7 @@ NOVY CHANNEL HD
 p:SLM
 198c:00300000:107b:0055:25:0
 M1 HD
-p:SLM
+p:SLM,c:050001
 1996:00300000:107b:0055:25:0
 M2 HD
 p:SLM
@@ -9340,7 +9364,7 @@ CCTV MOVIE
 p:MTNTV
 0090:00300000:0004:0064:1:0
 CCTV ENTERTAINMENT
-p:MTNTV
+p:
 0091:00300000:0004:0064:1:0
 CCTV4
 p:MTNTV
@@ -10340,6 +10364,9 @@ p:Telenor
 05f7:0e080000:0022:0046:10:0
 Radio Norge
 p:Telenor
+1c63:0e080000:0022:0046:22:0
+Kanal 10 Sverige
+p:Telenor
 1e64:0e080000:0022:0046:22:0
 Vision Sverige
 p:Telenor
@@ -10816,7 +10843,7 @@ NRK Super / NRK3 HD
 p:Telenor
 465c:0e080000:0046:0046:25:0
 NRK1 lydtekst
-p:Telenor
+p:Telenor,c:050001
 465d:0e080000:0046:0046:25:0
 NRK2 lydtekst
 p:Telenor
@@ -10987,7 +11014,7 @@ Prima HD
 p:Slovak Telekom
 03fc:0e080000:0af1:00bb:25:0
 CT 1 HD
-p:Slovak Telekom
+p:Slovak Telekom,c:050001
 07e5:0e080000:0af2:00bb:22:0
 FightBox
 p:Slovak Telekom
@@ -11046,7 +11073,7 @@ p:Slovak Telekom
 Fashion TV
 p:Slovak Telekom
 0bcc:0e080000:0af3:00bb:22:0
-X-MO
+MEN.TV
 p:Slovak Telekom
 0bc4:0e080000:0af3:00bb:25:0
 Spektrum HD
@@ -12084,7 +12111,7 @@ p:M7
 TV4
 p:M7
 798a:0e080000:02c7:0600:1:0
-TDC
+Dizi TV
 p:M7
 798b:0e080000:02c7:0600:1:0
 Disney ROM
@@ -12236,9 +12263,6 @@ p:M7
 79e1:0e080000:02c8:0600:25:0
 Direct One HD
 p:M7
-2b06:0e080000:000b:1111:1:0
-AXN CE .
-p:SES
 2b07:0e080000:000b:1111:1:0
 AXN White SVK
 p:ESS
@@ -12251,12 +12275,6 @@ p:ESS
 2b0a:0e080000:000b:1111:1:0
 VIASAT 6
 p:ESS
-2b0b:0e080000:000b:1111:1:0
-Viasat 2
-p:ESS
-2b0c:0e080000:000b:1111:1:0
-Viasat Film
-p:ESS
 2b0d:0e080000:000b:1111:1:0
 VIASAT 3 .
 p:SES
@@ -12264,16 +12282,13 @@ p:SES
 VIASAT 6 .
 p:SES
 2b12:0e080000:000b:1111:1:0
-TEST
+Metropola TV
 p:SES
 2afa:0e080000:000b:1111:1:0
 AXN White
 p:ESS
 2afb:0e080000:000b:1111:1:0
 AXN Black
-p:ESS
-2afc:0e080000:000b:1111:1:0
-AXN CE
 p:ESS
 2afd:0e080000:000b:1111:1:0
 AXN Romania
