@@ -1,5 +1,8 @@
 eDVB services /4/
 transponders
+00c00000:0003:0001
+	s 11817000:31428000:1:8:192:2:0:1:4:0:2
+/
 00c00000:03e9:0001
 	s 11214000:23500000:0:3:192:2:0:1:2:0:2
 /
@@ -279,9 +282,6 @@ transponders
 00c00000:0021:0085
 	s 12480000:27500000:1:3:192:2:0
 /
-00c00000:042e:042e
-	s 11817000:31428000:1:8:192:2:0:1:4:0:2
-/
 00820000:0065:0001
 	s 12226000:27500000:1:3:130:2:0
 /
@@ -457,7 +457,7 @@ transponders
 	s 11137000:27500000:0:3:130:2:0
 /
 00820000:33f4:013e
-	s 11179000:27500000:0:3:130:2:0:1:2:0:2
+	s 11179000:27500000:0:2:130:2:0:1:2:0:2
 /
 00820000:3bc4:013e
 	s 11566000:29900000:0:3:130:2:0:1:2:0:2
@@ -572,6 +572,21 @@ eeee0000:80e3:217c
 /
 end
 services
+0001:00c00000:0003:0001:1:0
+NFL Service 1
+p:
+0002:00c00000:0003:0001:1:0
+NFL Service 2
+p:
+0003:00c00000:0003:0001:1:0
+NFL Service 3
+p:
+0004:00c00000:0003:0001:1:0
+NFL Service 4
+p:
+0005:00c00000:0003:0001:1:0
+NFL Service 5
+p:
 3459:00c00000:03e9:0001:31:0
 Service 13401
 p:ORS
@@ -662,6 +677,9 @@ p:Movistar+
 78c0:00c00000:03ec:0001:25:0
 COMEDYCENTRALHD
 p:PRISA TV
+33ff:00c00000:03ed:0001:1:0
+meinTVshop
+p:
 3401:00c00000:03ed:0001:22:0
 krone.tv
 p:-
@@ -671,9 +689,6 @@ p:ORS
 3405:00c00000:03ed:0001:22:0
 Melodie TV NEU
 p:-
-33ff:00c00000:03ed:0001:22:0
-Aristo.TV
-p:ORF
 3400:00c00000:03ed:0001:25:0
 R9 Oesterreich HD
 p:-
@@ -1731,7 +1746,7 @@ p:FOXNWS
 BabyTV
 p:DIGITAL+
 749d:00c00000:041c:0001:1:0
-M+ CRACKS
+M+SanSebastián
 p:Movistar+
 749e:00c00000:041c:0001:1:0
 BOING
@@ -3323,6 +3338,9 @@ p:ORF
 332e:00c00000:045b:0001:1:0
 NITRO Austria
 p:RTL
+3332:00c00000:045b:0001:1:0
+Shop LC
+p:ORS
 3333:00c00000:045b:0001:1:0
 VISIT-X.tv
 p:-
@@ -3332,6 +3350,9 @@ p:ServusTV
 3337:00c00000:045b:0001:1:0
 ServusTV Oesterreich
 p:ServusTV
+3339:00c00000:045b:0001:1:0
+L-TV
+p:-
 3341:00c00000:045b:0001:2:0
 OE1
 p:ORF
@@ -3380,15 +3401,12 @@ p:-
 3330:00c00000:045b:0001:22:0
 LT1-OOE
 p:-
-3332:00c00000:045b:0001:22:0
-Shop LC
-p:ORS
 3338:00c00000:045b:0001:22:0
 4MEDIATHEK
 p:-
-3339:00c00000:045b:0001:22:0
-L-TV
-p:-
+3356:00c00000:045b:0001:22:0
+Aristo.TV
+p:ORF
 3355:00c00000:045b:0001:25:0
 AstroTV HD
 p:-
@@ -3882,7 +3900,7 @@ p:SKY
 Sky Atlantic HD
 p:SKY
 006f:00c00000:000d:0085:25:0
-Sky Cinema 007 HD
+Sky Cinema Jurassic HD
 p:SKY
 0070:00c00000:000d:0085:25:0
 Sky Documentaries HD
@@ -3986,21 +4004,6 @@ p:BetaDigital
 004c:00c00000:0021:0085:22:0
 Baden TV
 p:BetaDigital
-0001:00c00000:042e:042e:1:0
-SES Video
-p:
-0002:00c00000:042e:042e:1:0
-SES Video
-p:
-0003:00c00000:042e:042e:1:0
-SES Video
-p:
-0004:00c00000:042e:042e:1:0
-SES Video
-p:
-0005:00c00000:042e:042e:1:0
-SES Video
-p:
 0001:00820000:0065:0001:1:0
 Current Time HD ch1
 p:
@@ -4825,7 +4828,7 @@ Iran International HD
 p:Volant Media
 01f6:00820000:0384:013e:1:0
 AIRMONT
-p:VITEC
+p:FFmpeg
 01f8:00820000:0384:013e:1:0
 NASA TV HD
 p:
@@ -5895,7 +5898,7 @@ p:NOVA
 E! Entertainment HD
 p:NOVA
 3c98:00820000:1bbc:013e:1:0
-Nova Test
+ATTICA TV
 p:NOVA
 3c99:00820000:1bbc:013e:1:0
 Novasports2HD Cy
@@ -6302,9 +6305,6 @@ p:GLOBECAST
 07e1:00820000:22c4:013e:1:0
 Euronews Italian
 p:GLOBECAST
-07e2:00820000:22c4:013e:1:0
-UA WORLD TV
-p:GLOBECAST
 07e3:00820000:22c4:013e:1:0
 BBC CBeebies
 p:GLOBECAST
@@ -6349,6 +6349,9 @@ NTN
 p:STN
 2338:00820000:2328:013e:1:0
 SLNTV
+p:STN
+2339:00820000:2328:013e:1:0
+Suryoyo SAT
 p:STN
 233a:00820000:2328:013e:1:0
 AL MALAKOOT SAT – THE KINGDOM SAT الملكوت سات
@@ -6732,8 +6735,8 @@ p:Cyfrowy Polsat S.A.
 13 Ulica HD
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
-DORCEL TV HD NEW
-p:IKO Media Group
+DORCEL TV HD
+p:iKO Media Group
 4207:00820000:2f44:013e:1:0
 Brazzers HD
 p:ARC/DCM2 TSOIP
@@ -6751,12 +6754,12 @@ Giornale Radio
 p:M-Three Satcom
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat data 1
+Eutelsat Data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -7169,18 +7172,6 @@ p:Cyfrowy Polsat S.A.
 070a:00820000:32c8:013e:1:0
 Polsat Sport Premium 2
 p:Cyfrowy Polsat S.A.
-070b:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV3
-p:Cyfrowy Polsat S.A.
-070c:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV4
-p:Cyfrowy Polsat S.A.
-070d:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV5
-p:Cyfrowy Polsat S.A.
-070e:00820000:32c8:013e:1:0
-Polsat Sport Premium PPV6
-p:Cyfrowy Polsat S.A.
 070f:00820000:32c8:013e:1:0
 Eleven Sports 1 4K
 p:Cyfrowy Polsat S.A.
@@ -7198,7 +7189,7 @@ WNS.TEL
 p:GMN
 1cbb:00820000:332c:013e:1:0
 Manoto
-p:Manoto
+p:
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Globecast
@@ -7228,7 +7219,7 @@ Canale Italia 84
 p:Telespazio
 1364:00820000:33f4:013e:1:0
 Canale Italia
-p:telespazio
+p:Telespazio
 1366:00820000:33f4:013e:1:0
 Canale Italia 2
 p:Telespazio
@@ -7237,7 +7228,7 @@ TLC Telecampione
 p:Telespazio
 1381:00820000:33f4:013e:1:0
 Arte Investimenti
-p:Harmonic
+p:Telespazio
 1382:00820000:33f4:013e:1:0
 Telecupole
 p:Telespazio
@@ -7324,7 +7315,7 @@ ER24
 p:M-Three Satcom
 0538:00820000:3d54:013e:1:0
 Value24
-p:M-Three Satcom
+p:M-Three Satcom,c:050001
 0532:00820000:3d54:013e:2:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -7605,7 +7596,7 @@ p:SkyItalia
 Classica HD
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Harry Potter Collection
+Jurassic World Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Crime + Inv. HD
@@ -8016,7 +8007,7 @@ p:SkyItalia
 Mosaico Cinema
 p:SkyItalia
 2dcc:00820000:1a2c:fbff:1:0
-Harry Potter Collection
+Jurassic World Collection
 p:SkyItalia
 2dcd:00820000:1a2c:fbff:1:0
 Sky Cinema Comedy
