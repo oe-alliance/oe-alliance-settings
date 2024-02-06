@@ -516,9 +516,6 @@ transponders
 00820000:2260:fbff
 	s 12466000:29900000:1:4:130:2:0:1:1:0:2
 /
-0082abe8:0001:0000
-	s 11240000:27500000:1:4:130:2:0:1:2:0:2
-/
 end
 services
 0001:00c00000:0003:0001:1:0
@@ -668,6 +665,9 @@ p:MX1
 1338:00c00000:03ef:0001:2:0
 OE3.
 p:ORF
+1342:00c00000:03ef:0001:22:0
+RiC
+p:-
 132f:00c00000:03ef:0001:25:0
 ORF1 HD
 p:ORF
@@ -1277,17 +1277,14 @@ p:ARD
 2896:00c00000:040f:0001:25:0
 ARD-Test-R
 p:ARD
-7a4b:00c00000:0410:0001:1:0
-I24 Francis
-p:TSA
+7a4a:00c00000:0410:0001:1:0
+SENDER NEU JERUSALEM
+p:
 7a4c:00c00000:0410:0001:1:0
 SACHSEN EINS
 p:TSA
 7a48:00c00000:0410:0001:22:0
 Die Neue Zeit TV
-p:TSA
-7a4a:00c00000:0410:0001:22:0
-SENDER NEU JERUSALEM
 p:TSA
 7a49:00c00000:0410:0001:25:0
 Telesur HD
@@ -2576,12 +2573,6 @@ p:SES Astra
 79ea:00c00000:0443:0001:1:0
 HSE Extra
 p:SES Astra
-4282:00c00000:0446:0001:1:0
-Toute L Histoire
-p:AB SAT
-428c:00c00000:0446:0001:1:0
-CHASSE ET PECHE
-p:AB SAT
 42cb:00c00000:0446:0001:1:0
 DATASYSTEM
 p:AB SAT
@@ -2693,6 +2684,9 @@ p:AB SAT
 4280:00c00000:0446:0001:25:0
 XXL
 p:AB SAT
+4282:00c00000:0446:0001:25:0
+Toute L Histoire
+p:AB SAT
 4286:00c00000:0446:0001:25:0
 ACTION
 p:AB SAT
@@ -2702,6 +2696,12 @@ p:AB SAT
 428b:00c00000:0446:0001:25:0
 RTL9
 p:AB SAT
+428c:00c00000:0446:0001:25:0
+CHASSE ET PECHE
+p:AB SAT
+429a:00c00000:0446:0001:25:0
+MOSAIQUE LDC
+p:
 429e:00c00000:0446:0001:25:0
 XXL
 p:AB SAT
@@ -3146,6 +3146,9 @@ p:MB Satellite
 315b:00c00000:0459:0001:1:0
 Babestation24
 p:MB Satellite
+315e:00c00000:0459:0001:1:0
+MBS - Test3
+p:MB Satellite
 315f:00c00000:0459:0001:1:0
 EROTIKA TV - NEU!
 p:MB Satellite
@@ -3276,7 +3279,7 @@ p:-
 Shop LC
 p:ORS
 3336:00c00000:045b:0001:22:0
-Genius Plus TV
+Genius TV
 p:-
 3338:00c00000:045b:0001:22:0
 4MEDIATHEK
@@ -3338,9 +3341,6 @@ p:ORF
 32d3:00c00000:045d:0001:1:0
 ORF2 K
 p:ORF
-32d4:00c00000:045d:0001:1:0
-ATV
-p:ATV+
 32d6:00c00000:045d:0001:1:0
 ORF2E
 p:ORF
@@ -3816,7 +3816,7 @@ p:SKY
 Sky Atlantic HD
 p:SKY
 006f:00c00000:000d:0085:25:0
-Sky Cinema Transformers HD
+Sky Cinema Special HD
 p:SKY
 0070:00c00000:000d:0085:25:0
 Sky Documentaries HD
@@ -4107,10 +4107,10 @@ p:Cyfrowy Polsat S.A.
 TV Okazje
 p:Cyfrowy Polsat S.A
 1c8e:00820000:1ce8:0071:1:0
-Disco Polo Music
-p:Cyfrowy Polsat S.A.
+12188V SID 0x1c8e
+p:DVB-S2 8PSK 12188V 13.0Â°E
 1c8f:00820000:1ce8:0071:1:0
-Polsat Rodzina
+Polsat Rodzina HD
 p:Cyfrowy Polsat S.A.
 1c94:00820000:1ce8:0071:1:0
 CNN_Greek
@@ -4161,7 +4161,7 @@ p:Cyfrowy Polsat S.A.
 Vivid Touch SD
 p:Cyfrowy Polsat S.A.
 1cbe:00820000:1ce8:0071:1:0
-Polsat News Polityka
+Polsat News Polityka HD
 p:Cyfrowy Polsat S.A.
 1cbf:00820000:1ce8:0071:1:0
 12188V SID 0x1cbf
@@ -4233,8 +4233,8 @@ p:Cyfrowy Polsat S.A.
 Polsat Sport Extra HD
 p:Cyfrowy Polsat SA
 0c29:00820000:1e78:0071:1:0
-Cinemax 2 HD
-p:Cyfrowy Polsat S.A.
+12265V SID 0xc29
+p:DVB-S2 8PSK 12265V 13.0Â°E
 0c2a:00820000:1e78:0071:1:0
 AXN HD
 p:Cyfrowy Polsat S.A.
@@ -4290,7 +4290,7 @@ p:Cyfrowy Polsat S.A.
 CBS Europa HD
 p:Cyfrowy Polsat S.A.
 290c:00820000:1edc:0071:1:0
-Wydarzenia 24
+Wydarzenia 24 HD
 p:Cyfrowy Polsat S.A.
 290d:00820000:1edc:0071:1:0
 TestDS
@@ -4299,8 +4299,8 @@ p:Cyfrowy Polsat S.A.
 HBO HD
 p:Cyfrowy Polsat S.A.
 290f:00820000:1edc:0071:1:0
-HBO HD
-p:Cyfrowy Polsat S.A.
+12284H SID 0x290f
+p:DVB-S2 8PSK 12284H 13.0Â°E
 2911:00820000:1edc:0071:1:0
 Polsat Sport Fight HD
 p:Cyfrowy Polsat S.A.
@@ -4338,7 +4338,7 @@ p:Cyfrowy Polsat S.A.
 TV4 HD
 p:Cyfrowy Polsat S.A.
 3394:00820000:3390:0071:1:0
-TV6
+TV6 HD
 p:Cyfrowy Polsat S.A.
 3396:00820000:3390:0071:1:0
 Polsat Cafe HD
@@ -4353,7 +4353,7 @@ p:Cyfrowy Polsat S.A.
 Polsat 2 HD
 p:Cyfrowy Polsat S.A.
 339b:00820000:3390:0071:1:0
-Super Polsat
+Super Polsat HD
 p:Cyfrowy Polsat SA
 33a1:00820000:3390:0071:1:0
 Polsat HD
@@ -4714,9 +4714,6 @@ CBC_Azerbaycan
 p:Eutelsat
 089c:00820000:01f4:013e:1:0
 YEMEN TV
-p:Eutelsat
-089f:00820000:01f4:013e:1:0
-Kurdsat SD
 p:Eutelsat
 08a6:00820000:01f4:013e:1:0
 Medya Haber
@@ -6322,13 +6319,13 @@ Italian Fishing TV
 p:
 0646:00820000:2454:013e:1:0
 MS MOTOR TV
-p:,c:050001
+p:
 064d:00820000:2454:013e:1:0
 ACISPORT TV
 p:ACISPORT TV
 064e:00820000:2454:013e:1:0
 MS CHANNEL
-p:,c:050001
+p:
 0654:00820000:2454:013e:1:0
 Noursat English
 p:ViewMedia
@@ -6450,10 +6447,10 @@ p:Cyfrowy Polsat S.A.
 Da Vinci
 p:Cyfrowy Polsat S.A.
 4284:00820000:2bc0:013e:1:0
-Polsat Games
+Polsat Games HD
 p:Cyfrowy Polsat S.A
 4285:00820000:2bc0:013e:1:0
-Polsat Games
+Polsat Games HD
 p:Cyfrowy Polsat S.A
 4287:00820000:2bc0:013e:1:0
 TestM
@@ -6507,7 +6504,7 @@ p:Cyfrowy Polsat S.A.
 Eska TV HD
 p:Cyfrowy Polsat S.A.
 429d:00820000:2bc0:013e:1:0
-Fokus TV
+Fokus TV HD
 p:Cyfrowy Polsat S.A.
 429e:00820000:2bc0:013e:1:0
 Nowa TV
@@ -6663,7 +6660,7 @@ p:Cyfrowy Polsat S.A.
 Polsat Sport Premium PPV4
 p:Cyfrowy Polsat S.A.
 3e30:00820000:2ee0:013e:1:0
-PPV Test
+Dla Abonentow 2
 p:Cyfrowy Polsat S.A.
 3e3a:00820000:2ee0:013e:1:0
 TestL
@@ -6676,7 +6673,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
 DORCEL TV HD
-p:IKO Media Group
+p:iKO Media Group
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -6685,12 +6682,12 @@ Mezzo TV
 p:M7 Group
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat data 1
+Eutelsat Data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -6698,6 +6695,9 @@ p:COSMONOVA LLC
 422d:00820000:2f44:013e:22:0
 Class TV Moda
 p:M-Three Satcom
+4236:00820000:2f44:013e:22:0
+Dim TV
+p:COSMONOVA LLC
 422c:00820000:2f44:013e:25:0
 Brazzers TV
 p:M7 Group
@@ -7040,6 +7040,18 @@ p:MB Satellite
 0e83:00820000:3200:013e:1:0
 TVP Polonia
 p:MB Satellite
+0e88:00820000:3200:013e:1:0
+MC EU
+p:MB Satellite
+0e8d:00820000:3200:013e:1:0
+Jin TV
+p:MB Satellite
+0e92:00820000:3200:013e:1:0
+Can TV HD
+p:MB Satellite
+0e97:00820000:3200:013e:1:0
+Iran e Aryaee
+p:MB Satellite
 0075:00820000:3264:013e:1:0
 Kabelio ServusTV
 p:KABELIO.CH
@@ -7337,18 +7349,6 @@ p:Telespazio
 4247:00820000:3db8:013e:1:0
 SURYOYO SAT
 p:Telespazio
-4249:00820000:3db8:013e:1:0
-Venus TV
-p:Telespazio,c:050001
-424a:00820000:3db8:013e:1:0
-Music Life
-p:Telespazio,c:050001
-424b:00820000:3db8:013e:1:0
-Lazio Channel
-p:Telespazio,c:050001
-424d:00820000:3db8:013e:1:0
-Fuego TV
-p:Telespazio,c:050001
 424f:00820000:3db8:013e:1:0
 RDS Social TV 4K test
 p:Telespazio
@@ -7376,9 +7376,6 @@ p:Telespazio
 4261:00820000:3db8:013e:1:0
 Teleitalia
 p:Telespazio
-4264:00820000:3db8:013e:1:0
-EURSAT
-p:Telespazio,c:050001
 4267:00820000:3db8:013e:1:0
 Vivid Red HD
 p:Telespazio
@@ -7530,7 +7527,7 @@ p:SkyItalia
 Sky Sport Max
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Rambo Collection
+Transformers Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
@@ -7779,7 +7776,7 @@ p:SkyItalia
 Sky Cinema Drama
 p:SkyItalia
 0f5d:00820000:189c:fbff:25:0
-Sky Investigation +1
+Sky Investigation Maratone
 p:SkyItalia
 0f5e:00820000:189c:fbff:25:0
 Sky Documentaries +1
@@ -8028,7 +8025,7 @@ p:SkyItalia
 Sky Sport
 p:SkyItalia
 1090:00820000:2008:fbff:25:0
-Sky Serie Maratone
+Sky Serie +1
 p:SkyItalia
 1092:00820000:2008:fbff:25:0
 Calcio Overlay HD
@@ -8111,8 +8108,5 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
-0001:0082abe8:0001:0000:1:0
-MPEG-4 HD PAL COLORBARS
-p:Elemental LIVE 1
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
