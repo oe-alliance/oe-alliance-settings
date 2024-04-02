@@ -255,6 +255,9 @@ transponders
 00eb0000:0c9d:0003
 	s 12266000:29900000:0:3:235:2:0:1:2:0:2
 /
+00eb0000:0c9e:0003
+	s 12285000:30000000:1:2:235:2:0:1:2:0:2
+/
 00eb0000:0ca1:0003
 	s 12343000:29900000:0:2:235:2:0:1:2:0:2
 /
@@ -264,11 +267,20 @@ transponders
 00eb0000:0ca4:0003
 	s 12402000:30000000:1:3:235:2:0:1:2:0:2
 /
+00eb0000:000a:002c
+	s 12285000:30000000:1:2:235:2:0:1:2:0:2:-1:0:1
+/
+00eb0000:000c:002c
+	s 12285000:30000000:1:2:235:2:0:1:2:0:2:0:0:1
+/
 00eb2d7b:0000:0001
 	s 11643000:7583000:0:3:235:2:0:1:2:0:2
 /
 00eb2d80:0001:0000
 	s 11648000:1000000:0:3:235:2:0:1:2:0:2
+/
+00ebb104:0001:0001
+	s 12548000:1830000:1:3:235:2:0:1:1:0:2
 /
 00ebb160:0001:0001
 	s 12640000:940000:1:1:235:2:0
@@ -813,6 +825,9 @@ transponders
 00820000:2260:fbff
 	s 12466000:29900000:1:4:130:2:0:1:1:0:2
 /
+00822bd3:03e9:0000
+	s 11219000:33000000:0:7:130:2:0:1:2:0:2
+/
 end
 services
 040b:011a0000:07d3:0002:25:0
@@ -850,7 +865,7 @@ PrimeVideo1HD
 p:BSkyB
 0fc0:011a0000:07d3:0002:25:0
 Utsav Gold HD
-p:BSkyB
+p:BSkyB,c:050001
 16e5:011a0000:07d3:0002:25:0
 Cúla4 HD
 p:BSkyB
@@ -1026,7 +1041,7 @@ p:BSkyB
 ETFG
 p:BSkyB
 1133:011a0000:07dc:0002:1:0
-Sky Family
+WizardingWorld
 p:BSkyB
 1134:011a0000:07dc:0002:1:0
 Sky Premiere
@@ -1291,7 +1306,7 @@ SkySpCricket HD
 p:BSkyB
 145c:011a0000:07e4:0002:25:0
 Sky Crime HD
-p:BSkyB
+p:BSkyB,c:050001
 0cc9:011a0000:07e4:0002:25:0
 SkySp Mix HD
 p:BSkyB
@@ -1303,7 +1318,7 @@ SkySp ActionHD
 p:BSkyB
 0efb:011a0000:07e4:0002:25:0
 SkySp F1 HD
-p:BSkyB,c:050001
+p:BSkyB
 0efc:011a0000:07e4:0002:25:0
 SkySp F1 HD
 p:BSkyB
@@ -1710,22 +1725,22 @@ p:BSkyB
 MUTV HD
 p:BSkyB
 1837:011a0000:07ee:0002:25:0
-SkyAnimationHD
+DreamWorksHD
 p:BSkyB
 177e:011a0000:07ee:0002:25:0
 Sky Action HD
 p:BSkyB
 1782:011a0000:07ee:0002:25:0
-Sky Family HD
+WizardingWldHD
 p:BSkyB
 1784:011a0000:07ee:0002:25:0
-BuddyFilmsHD
+EasterEpicsHD
 p:BSkyB
 1785:011a0000:07ee:0002:25:0
 SkyPremiereHD
 p:BSkyB
 1791:011a0000:07ee:0002:25:0
-Sky BHC HD
+BankHolidayHD
 p:BSkyB
 17ae:011a0000:07ee:0002:25:0
 Sky Thriller HD
@@ -1753,7 +1768,7 @@ Sky Intro
 p:BSkyB
 264a:011a0000:07f0:0002:31:0
 SkySpF1 UHD
-p:BSkyB,c:050007
+p:BSkyB
 2654:011a0000:07f0:0002:31:0
 SkySpF1 UHD
 p:BSkyB
@@ -2285,9 +2300,6 @@ p:BSkyB
 c482:011a0000:0811:0002:1:0
 NOW 80s
 p:BSkyB
-cb88:011a0000:0811:0002:1:0
-50326
-p:BSkyB
 c48b:011a0000:0811:0002:1:0
 Zee Cinema
 p:BSkyB
@@ -2296,9 +2308,6 @@ cb8b:011a0000:0811:0002:1:0
 p:BSkyB
 c491:011a0000:0811:0002:1:0
 NOW 70s
-p:BSkyB
-c496:011a0000:0811:0002:1:0
-50236
 p:BSkyB
 c49f:011a0000:0811:0002:1:0
 Sikh Channel
@@ -2413,12 +2422,6 @@ Zee TV HD
 p:BSkyB
 c535:011a0000:0813:0002:25:0
 New Media HD
-p:BSkyB
-cbd9:011a0000:0813:0002:25:0
-50475
-p:BSkyB
-d0fd:011a0000:0813:0002:25:0
-50485
 p:BSkyB
 5302:011a0000:0814:0002:1:0
 4seven
@@ -2742,7 +2745,7 @@ p:BSkyB
 PCNE Chinese HD
 p:BSkyB
 1bbd:011a0000:0835:0002:25:0
-7101
+WION HD
 p:BSkyB
 d322:011a0000:0836:0002:1:0
 babes&brazzers
@@ -2789,16 +2792,22 @@ p:BSkyB
 d332:011a0000:0836:0002:1:0
 revelation
 p:BSkyB
+d818:011a0000:0837:0002:25:0
+50251
+p:BSkyB
 c441:011a0000:0837:0002:25:0
 GB News HD
 p:BSkyB
 c44b:011a0000:0837:0002:25:0
-50251
+Viaplay 1 HD
 p:BSkyB
 c44f:011a0000:0837:0002:25:0
 LoveWorld HD
 p:BSkyB
 c455:011a0000:0837:0002:25:0
+Bloomberg HD
+p:BSkyB
+d860:011a0000:0837:0002:25:0
 50261
 p:BSkyB
 c472:011a0000:0837:0002:25:0
@@ -2809,15 +2818,6 @@ d804:011a0000:0838:0002:25:0
 p:BSkyB
 d809:011a0000:0838:0002:25:0
 DAYSTAR HD
-p:BSkyB
-d80e:011a0000:0838:0002:25:0
-FRANCE 24 HD
-p:BSkyB
-d818:011a0000:0838:0002:25:0
-Viaplay 1 HD
-p:BSkyB
-d860:011a0000:0838:0002:25:0
-Bloomberg HD
 p:BSkyB
 d3c3:011a0000:0839:0002:1:0
 PTC PUNJABI
@@ -2871,7 +2871,7 @@ d3d5:011a0000:0839:0002:1:0
 Aastha
 p:BSkyB
 cf9c:011a0000:083a:0002:1:0
-55276
+53148
 p:BSkyB
 cf9b:011a0000:083a:0002:25:0
 NHK World HD
@@ -2997,7 +2997,7 @@ d052:011a0000:083e:0002:1:0
 53330
 p:BSkyB
 d057:011a0000:083e:0002:1:0
-53335
+GREAT! real
 p:BSkyB
 d05c:011a0000:083e:0002:1:0
 POP
@@ -3027,7 +3027,7 @@ d084:011a0000:083e:0002:1:0
 GREAT! tv+1
 p:BSkyB
 d089:011a0000:083e:0002:1:0
-53385
+GREAT! real+1
 p:BSkyB
 d002:011a0000:083f:0002:1:0
 TNT Sports 8
@@ -3055,6 +3055,9 @@ TNT Sports 4
 p:BSkyB
 cfd0:011a0000:083f:0002:1:0
 TNT Sports 5
+p:BSkyB
+cfd5:011a0000:083f:0002:1:0
+Must have ideas TV
 p:BSkyB
 cfda:011a0000:083f:0002:1:0
 TNT Sports 6
@@ -3709,16 +3712,16 @@ Klasik TV
 p:Telekom Srbija
 4e34:00eb0000:0c85:0003:25:0
 Arena Sport 1 HD
-p:Telekom Srbija
+p:Telekom Srbija,c:050007
 4e35:00eb0000:0c85:0003:25:0
 Arena Sport 2 HD
-p:Telekom Srbija
+p:Telekom Srbija,c:050007
 4e36:00eb0000:0c85:0003:25:0
 Arena Sport 3 HD
-p:Telekom Srbija
+p:Telekom Srbija,c:050007
 4e37:00eb0000:0c85:0003:25:0
 Arena Sport 4 HD
-p:Telekom Srbija
+p:Telekom Srbija,c:050007
 4e38:00eb0000:0c85:0003:25:0
 Arena Sport 5 HD
 p:Telekom Srbija
@@ -3913,7 +3916,7 @@ Prima HD
 p:M7 Group
 3393:00eb0000:0c89:0003:25:0
 Nova Sport 1 HD
-p:M7 Group
+p:M7 Group,c:050001
 3394:00eb0000:0c89:0003:25:0
 Nova Action HD
 p:M7 Group
@@ -4081,7 +4084,7 @@ Arena Sport 9 HD
 p:Telekom Srbija,c:050007
 4e20:00eb0000:0c8b:0003:1:0
 mSAT Info
-p:Telekom Srbija,c:050001
+p:Telekom Srbija
 4e2c:00eb0000:0c8b:0003:1:0
 Superstar 2 TV HD
 p:Telekom Srbija
@@ -4225,7 +4228,7 @@ Prima MAX HD
 p:M7 Group
 36e6:00eb0000:0c8c:0003:25:0
 Nova Sport 3 HD
-p:M7 Group
+p:M7 Group,c:050001
 36e7:00eb0000:0c8c:0003:25:0
 Nova Sport 4 HD
 p:M7 Group
@@ -4318,7 +4321,7 @@ Nova Lady
 p:M7 Group
 371e:00eb0000:0c8e:0003:25:0
 Nova Sport 2 HD
-p:M7 Group
+p:M7 Group,c:050001
 3722:00eb0000:0c8e:0003:25:0
 Nova Fun HD
 p:M7 Group
@@ -4352,9 +4355,6 @@ p:M7 Group
 3736:00eb0000:0c8e:0003:25:0
 CANAL+ Action
 p:M7 Group
-3737:00eb0000:0c8e:0003:25:0
-Canal+ Sport 4 TEST
-p:M7 Group
 3c2a:00eb0000:0c90:0003:22:0
 LALA TV
 p:M7 Group
@@ -4384,7 +4384,7 @@ Retro Music TV
 p:M7 Group
 3c29:00eb0000:0c90:0003:25:0
 Arena Sport 1 HD
-p:M7 Group
+p:M7 Group,c:050001
 3c2b:00eb0000:0c90:0003:25:0
 JOJ Svet HD
 p:M7 Group
@@ -4847,6 +4847,36 @@ p:M7 Group
 33a0:00eb0000:0c9d:0003:25:0
 JOJ 24 HD
 p:M7 Group
+1e41:00eb0000:0c9e:0003:1:0
+DIM TV
+p:
+1e1e:00eb0000:0c9e:0003:2:0
+Ukrayinske Radio
+p:
+1e20:00eb0000:0c9e:0003:2:0
+Radio Promin
+p:
+1e22:00eb0000:0c9e:0003:2:0
+Radio Culture
+p:
+1e24:00eb0000:0c9e:0003:2:0
+RadioTochka
+p:
+1e26:00eb0000:0c9e:0003:2:0
+Voice
+p:
+1e28:00eb0000:0c9e:0003:2:0
+Tysa FM
+p:
+1e2a:00eb0000:0c9e:0003:2:0
+ARMY FM
+p:
+1e2c:00eb0000:0c9e:0003:2:0
+radio nv
+p:TRK ERA
+1e2e:00eb0000:0c9e:0003:2:0
+Golos Kyiva
+p:
 1f73:00eb0000:0ca1:0003:10:0
 CRo RADIOZURNAL
 p:Cesky Rozhlas
@@ -5222,6 +5252,78 @@ p:Telekom Srbija
 4ea0:00eb0000:0ca4:0003:25:0
 Arena Premium_2
 p:Telekom Srbija
+0001:00eb0000:000a:002c:22:0
+ARMY TV
+p:
+0003:00eb0000:000a:002c:22:0
+Sonce UA
+p:
+0005:00eb0000:000a:002c:22:0
+TEST
+p:
+0006:00eb0000:000a:002c:22:0
+Svitlo
+p:
+0007:00eb0000:000a:002c:22:0
+TEST
+p:
+0009:00eb0000:000a:002c:22:0
+Перший
+p:
+000a:00eb0000:000a:002c:22:0
+TEST
+p:,c:050001
+000b:00eb0000:000a:002c:22:0
+TEST
+p:,c:050001
+000c:00eb0000:000a:002c:22:0
+TEST
+p:,c:050001
+0002:00eb0000:000a:002c:25:0
+РАДА
+p:,c:050001
+0004:00eb0000:000a:002c:25:0
+My-Ukraina
+p:,c:050001
+0008:00eb0000:000a:002c:25:0
+Суспільне Культура
+p:,c:050001
+0001:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0002:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0003:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0004:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0005:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0006:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0007:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0008:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+0009:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+000a:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+000b:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
+000c:00eb0000:000c:002c:22:0
+DSNS Informed
+p:BRT
 0802:00eb2d7b:0000:0001:1:0
 2050 Kielce ESKA
 p:
@@ -5287,6 +5389,9 @@ p:
 p:
 0852:00eb2d7b:0000:0001:1:0
 2130 Lublin ESKA
+p:
+1f54:00eb2d7b:0000:0001:1:0
+8020 Emaus
 p:
 055a:00eb2d7b:0000:0001:1:0
 1370 Stalowa-Wola SuperNova
@@ -5456,6 +5561,24 @@ p:DVB-S2 8PSK 11648H 23.5Â°E
 03e8:00eb2d80:0001:0000:2:0
 11648H SID 0x3e8
 p:DVB-S2 8PSK 11648H 23.5Â°E
+1770:00ebb104:0001:0001:2:0
+KTN 600
+p:KRONEHIT KTN
+1388:00ebb104:0001:0001:2:0
+STMK 500
+p:KRONEHIT STMK
+0fa0:00ebb104:0001:0001:2:0
+VBG 400
+p:KRONEHIT VBG
+0bb8:00ebb104:0001:0001:2:0
+T 300
+p:KRONEHIT T
+07d0:00ebb104:0001:0001:2:0
+SBG 200
+p:KRONEHIT SBG
+03e8:00ebb104:0001:0001:2:0
+OOE 100
+p:KRONEHIT OOE
 07d0:00ebb160:0001:0001:2:0
 DLFK USI2
 p:MB Satellite
@@ -5497,7 +5620,7 @@ ORF SPORT+
 p:ORF
 33a6:00c00000:03eb:0001:1:0
 Volksmusik.TV NEU
-p:
+p:-
 33aa:00c00000:03eb:0001:1:0
 Service 13226
 p:-
@@ -5788,7 +5911,7 @@ Kabel 1 Doku HD Austria
 p:ProSiebenSat.1
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD,c:050001
+p:ARD,c:0013ed,c:0113ef,c:0213f0,c:0313ed,c:050001
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -8288,12 +8411,12 @@ p:ORF
 32d6:00c00000:045d:0001:1:0
 ORF2E
 p:ORF
+32da:00c00000:045d:0001:1:0
+Volksmusik.TV ALT
+p:
 32db:00c00000:045d:0001:1:0
 RiC Alt
 p:IP Broadcast
-32da:00c00000:045d:0001:22:0
-Volksmusik.TV ALT
-p:
 32dd:00c00000:045d:0001:22:0
 ntv Austria
 p:RTL
@@ -8763,7 +8886,7 @@ p:SKY
 Sky Atlantic HD
 p:SKY
 006f:00c00000:000d:0085:25:0
-Sky Cinema Action Heroes HD
+Sky Cinema Special HD
 p:SKY
 0070:00c00000:000d:0085:25:0
 Sky Documentaries HD
@@ -11155,7 +11278,7 @@ Nova
 p:NOVA
 012e:00820000:157c:013e:1:0
 EPT2 HD
-p:NOVA
+p:NOVA,c:050001
 012f:00820000:157c:013e:1:0
 R3
 p:NOVA
@@ -11389,9 +11512,6 @@ VOD 207
 p:Cyfrowy Polsat S.A.
 0042:00820000:1964:013e:1:0
 VOD 208
-p:Cyfrowy Polsat S.A.
-0043:00820000:1964:013e:1:0
-xxxVOD1
 p:Cyfrowy Polsat S.A.
 0045:00820000:1964:013e:1:0
 Nicktoons HD
@@ -11771,12 +11891,6 @@ p:TSA
 39d2:00820000:1fa4:013e:1:0
 Revival TV
 p:UNITED TELEPORTS
-39d5:00820000:1fa4:013e:1:0
-Ronahi TV
-p:STN
-39d6:00820000:1fa4:013e:1:0
-STERK TV
-p:STN
 39d9:00820000:1fa4:013e:1:0
 Sonlife
 p:ARQIVA LTD
@@ -11803,7 +11917,7 @@ Insight TV UHD
 p:Amagi
 0bc5:00820000:20d0:013e:32:0
 Love Nature 4K
-p:,C:0000
+p:
 038b:00820000:2134:013e:1:0
 SUDAN TV
 p:Etisalat
@@ -12409,7 +12523,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
 DORCEL TV HD
-p:IKO Media Group
+p:iKO Media Group
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -12418,12 +12532,12 @@ Mezzo TV
 p:M7 Group
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat data 1
+Eutelsat Data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -12902,6 +13016,9 @@ p:Volant Media
 1c8c:00820000:332c:013e:1:0
 ARMPUB TV
 p:
+1c8d:00820000:332c:013e:1:0
+AIRMONT
+p:FFmpeg
 1ca5:00820000:332c:013e:1:0
 WNS.TEL
 p:GMN
@@ -13013,6 +13130,9 @@ p:M-Three Satcom
 0537:00820000:3d54:013e:1:0
 WellTV
 p:M-Three Satcom
+0538:00820000:3d54:013e:1:0
+Value24
+p:M-Three Satcom
 0532:00820000:3d54:013e:2:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -13052,9 +13172,6 @@ p:M-Three Satcom
 0539:00820000:3d54:013e:25:0
 WeDo TV
 p:Amtecco
-0538:00820000:3d54:013e:1:0
-Value24
-p:M-Three Satcom
 421a:00820000:3db8:013e:1:0
 TRM h24
 p:Telespazio
@@ -13281,13 +13398,13 @@ p:SkyItalia
 Sky Sport Max
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-DC Superheroes Collection
+Checco Zalone Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
 p:SkyItalia
 37b2:00820000:14b4:fbff:25:0
-Cartoon Network HD
+Cartoon Network
 p:SkyItalia
 37ba:00820000:14b4:fbff:25:0
 Sky Uno +1
@@ -13862,5 +13979,11 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
+0320:00822bd3:03e9:0000:1:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+03e9:00822bd3:03e9:0000:12:0
+HVS-1 Bck
+p:Telespazio
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
