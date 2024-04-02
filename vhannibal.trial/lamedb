@@ -537,6 +537,9 @@ transponders
 00820000:2260:fbff
 	s 12466000:29900000:1:4:130:2:0:1:1:0:2
 /
+00822bd3:03e9:0000
+	s 11219000:33000000:0:7:130:2:0:1:2:0:2
+/
 0ce40000:ea74:0001
 	s 11222000:30000000:0:3:-300:2:0:1:2:0:2
 /
@@ -551,9 +554,6 @@ transponders
 /
 0ce40000:0006:0006
 	s 10770000:30000000:0:4:-300:2:0:1:2:0:2
-/
-0ce40000:00c8:0022
-	s 11212000:12054000:1:3:-300:2:0:1:1:0:2
 /
 0ce40000:0026:0036
 	s 12360000:27500000:0:3:-300:2:0:1:2:0:2
@@ -649,7 +649,7 @@ ORF SPORT+
 p:ORF
 33a6:00c00000:03eb:0001:1:0
 Volksmusik.TV NEU
-p:
+p:-
 33aa:00c00000:03eb:0001:1:0
 Service 13226
 p:-
@@ -940,7 +940,7 @@ Kabel 1 Doku HD Austria
 p:ProSiebenSat.1
 283d:00c00000:03fb:0001:25:0
 Das Erste HD
-p:ARD,c:050001
+p:ARD,c:0013ed,c:0113ef,c:0213f0,c:0313ed,c:050001
 283e:00c00000:03fb:0001:25:0
 arte HD
 p:ARD
@@ -3440,12 +3440,12 @@ p:ORF
 32d6:00c00000:045d:0001:1:0
 ORF2E
 p:ORF
+32da:00c00000:045d:0001:1:0
+Volksmusik.TV ALT
+p:
 32db:00c00000:045d:0001:1:0
 RiC Alt
 p:IP Broadcast
-32da:00c00000:045d:0001:22:0
-Volksmusik.TV ALT
-p:
 32dd:00c00000:045d:0001:22:0
 ntv Austria
 p:RTL
@@ -3915,7 +3915,7 @@ p:SKY
 Sky Atlantic HD
 p:SKY
 006f:00c00000:000d:0085:25:0
-Sky Cinema Action Heroes HD
+Sky Cinema Special HD
 p:SKY
 0070:00c00000:000d:0085:25:0
 Sky Documentaries HD
@@ -6307,7 +6307,7 @@ Nova
 p:NOVA
 012e:00820000:157c:013e:1:0
 EPT2 HD
-p:NOVA
+p:NOVA,c:050001
 012f:00820000:157c:013e:1:0
 R3
 p:NOVA
@@ -6541,9 +6541,6 @@ VOD 207
 p:Cyfrowy Polsat S.A.
 0042:00820000:1964:013e:1:0
 VOD 208
-p:Cyfrowy Polsat S.A.
-0043:00820000:1964:013e:1:0
-xxxVOD1
 p:Cyfrowy Polsat S.A.
 0045:00820000:1964:013e:1:0
 Nicktoons HD
@@ -6923,12 +6920,6 @@ p:TSA
 39d2:00820000:1fa4:013e:1:0
 Revival TV
 p:UNITED TELEPORTS
-39d5:00820000:1fa4:013e:1:0
-Ronahi TV
-p:STN
-39d6:00820000:1fa4:013e:1:0
-STERK TV
-p:STN
 39d9:00820000:1fa4:013e:1:0
 Sonlife
 p:ARQIVA LTD
@@ -6955,7 +6946,7 @@ Insight TV UHD
 p:Amagi
 0bc5:00820000:20d0:013e:32:0
 Love Nature 4K
-p:,C:0000
+p:
 038b:00820000:2134:013e:1:0
 SUDAN TV
 p:Etisalat
@@ -7561,7 +7552,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
 DORCEL TV HD
-p:IKO Media Group
+p:iKO Media Group
 421d:00820000:2f44:013e:1:0
 Baby TV
 p:MX1
@@ -7570,12 +7561,12 @@ Mezzo TV
 p:M7 Group
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4235:00820000:2f44:013e:1:0
 Espresso TV
 p:
 4267:00820000:2f44:013e:1:0
-Eutelsat data 1
+Eutelsat Data 1
 p:MIT-xperts GmbH
 421c:00820000:2f44:013e:22:0
 UATV
@@ -8054,6 +8045,9 @@ p:Volant Media
 1c8c:00820000:332c:013e:1:0
 ARMPUB TV
 p:
+1c8d:00820000:332c:013e:1:0
+AIRMONT
+p:FFmpeg
 1ca5:00820000:332c:013e:1:0
 WNS.TEL
 p:GMN
@@ -8165,6 +8159,9 @@ p:M-Three Satcom
 0537:00820000:3d54:013e:1:0
 WellTV
 p:M-Three Satcom
+0538:00820000:3d54:013e:1:0
+Value24
+p:M-Three Satcom
 0532:00820000:3d54:013e:2:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -8204,9 +8201,6 @@ p:M-Three Satcom
 0539:00820000:3d54:013e:25:0
 WeDo TV
 p:Amtecco
-0538:00820000:3d54:013e:1:0
-Value24
-p:M-Three Satcom
 421a:00820000:3db8:013e:1:0
 TRM h24
 p:Telespazio
@@ -8433,13 +8427,13 @@ p:SkyItalia
 Sky Sport Max
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-DC Superheroes Collection
+Checco Zalone Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
 p:SkyItalia
 37b2:00820000:14b4:fbff:25:0
-Cartoon Network HD
+Cartoon Network
 p:SkyItalia
 37ba:00820000:14b4:fbff:25:0
 Sky Uno +1
@@ -9014,6 +9008,12 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
+0320:00822bd3:03e9:0000:1:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+03e9:00822bd3:03e9:0000:12:0
+HVS-1 Bck
+p:Telespazio
 012c:0ce40000:ea74:0001:2:0
 R3_NACION_PRADO
 p:RNE
@@ -9156,7 +9156,7 @@ p:RNE
 R5_BILBAO_PRADO
 p:RNE
 046a:0ce40000:ea76:0001:2:0
-R1_SANSEB_TORRE
+R1_SANSEB_PRADO
 p:RNE
 0672:0ce40000:ea76:0001:2:0
 R5_SANSEB_PRADO
@@ -9512,9 +9512,6 @@ p:TSA
 0bb8:0ce40000:0006:0006:25:0
 Feeds 2
 p:TSA
-0001:0ce40000:00c8:0022:31:0
-UHD Spain
-p:Hispasat
 0135:0ce40000:0026:0036:1:0
 Sport TV 4 HD
 p:Sport TV 4 HD
@@ -9612,7 +9609,7 @@ p:
 E! Entertainment
 p:
 178d:0ce40000:0026:0036:1:0
-FTV
+Fashion TV
 p:
 178e:0ce40000:0026:0036:1:0
 MCM POP
@@ -9646,7 +9643,7 @@ p:DVB-S2 8PSK 12360H 330.0Â°E
 p:DVB-S2 8PSK 12360H 330.0Â°E
 17b5:0ce40000:0026:0036:1:0
 Sport TV 5 HD
-p:,c:050001
+p:
 17b6:0ce40000:0026:0036:1:0
 Sport TV 6 HD
 p:
@@ -9664,7 +9661,7 @@ BTV HD
 p:
 0ed9:0ce40000:0026:0036:1:0
 Sport TV 5 HD
-p:Sport TV 5 HD,c:050001
+p:Sport TV 5 HD
 0eda:0ce40000:0026:0036:1:0
 Sport TV 1 HD
 p:SID Sport TV 1 HD
@@ -9691,7 +9688,7 @@ Eleven Sports 5
 p:Eleven Sports 5
 0138:0ce40000:0027:0036:1:0
 Eurosport 1
-p:SID Eurosport 1,c:050001
+p:SID Eurosport 1
 0f3d:0ce40000:0027:0036:1:0
 Eleven Sports 2
 p:SID Eleven Sports 2
@@ -9811,10 +9808,10 @@ p:National Geographic WILD
 p:DVB-S2 8PSK 12398H 330.0Â°E
 0512:0ce40000:002f:0036:1:0
 AMC HD
-p:AMC HD,c:050001
+p:AMC HD
 0519:0ce40000:002f:0036:1:0
 AMC
-p:AMC,c:050001
+p:AMC
 051a:0ce40000:002f:0036:1:0
 Motorvision
 p:SID Motorvision
@@ -9853,7 +9850,7 @@ p:Canal 11 HD
 p:DVB-S2 8PSK 12437H 330.0Â°E
 013d:0ce40000:002f:0036:1:0
 Discovery Channel
-p:SID Discovery,c:050001
+p:SID Discovery
 033d:0ce40000:002f:0036:1:0
 12437H SID 0x33d
 p:DVB-S2 8PSK 12437H 330.0Â°E
@@ -10090,7 +10087,7 @@ CNN
 p:SID CNN
 12f2:0ce40000:0030:0036:1:0
 NOS Studios HD
-p:SID NOS Studios HD,c:050001
+p:SID NOS Studios HD
 00f3:0ce40000:0030:0036:1:0
 Sky News
 p:Sky News
@@ -10192,10 +10189,10 @@ RTP3
 p:
 006a:0ce40000:0065:0053:1:0
 RTP Madeira
-p:,c:050001
+p:
 006b:0ce40000:0065:0053:1:0
 RTP Açores
-p:,c:050001
+p:
 006c:0ce40000:0065:0053:1:0
 A Bola TV
 p:
@@ -10222,10 +10219,10 @@ Cartoonito
 p:
 0076:0ce40000:0065:0053:1:0
 RTP Madeira
-p:,c:050001
+p:
 0077:0ce40000:0065:0053:1:0
 RTP Açores
-p:,c:050001
+p:
 0078:0ce40000:0065:0053:1:0
 ARTV
 p:
@@ -10405,7 +10402,7 @@ RCLM TLV
 p:CMT
 0002:0ce40000:0001:22d4:25:0
 HDCASTILLA-LAMANCHA
-p:CMT
+p:CMT,c:050001
 27b1:0ce40000:03e9:22d4:2:0
 ARAGON RADIO ZARAGOZA
 p:CARTV
