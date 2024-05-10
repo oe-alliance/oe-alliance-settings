@@ -543,6 +543,18 @@ transponders
 00820000:2260:fbff
 	s 12466000:29900000:1:4:130:2:0:1:1:0:2
 /
+008230fb:4321:0000
+	s 12539000:28790000:0:3:130:2:0:1:1:0:2
+/
+0082abba:0010:0000
+	s 11194000:22852000:1:7:130:2:0:1:4:0:2
+/
+0082ad5b:0001:0001
+	s 11611000:9600000:1:3:130:2:0:1:2:0:2
+/
+0082ad6e:00f0:0000
+	s 11630000:2222000:1:0:130:2:0
+/
 00822a17:0000:0000
 	s 10775000:27500000:0:3:130:2:0:1:2:0:2
 /
@@ -551,9 +563,6 @@ transponders
 /
 00822a8c:0000:0000
 	s 10892000:27500000:0:3:130:2:0:1:2:0:2
-/
-0082abb9:0000:0000
-	s 11193000:22850000:1:0:130:2:0:1:4:0:2
 /
 0082abc0:0000:0000
 	s 11200000:27500000:1:3:130:2:0:1:2:0:2
@@ -575,9 +584,6 @@ transponders
 /
 00823048:1450:0000
 	s 12360000:27500000:0:3:130:2:0:1:2:0:2
-/
-008230fb:0000:0000
-	s 12539000:27500000:0:3:130:2:0:1:2:0:2
 /
 end
 services
@@ -988,7 +994,7 @@ a.tv HD .
 p:BMT
 16ac:00c00000:03ff:0001:25:0
 tv.ingolstadt HD
-p:
+p:BMT
 16af:00c00000:03ff:0001:25:0
 NIEDERBAYERN TV HD
 p:BMT
@@ -3881,9 +3887,6 @@ p:SKY
 007b:00c00000:0010:0085:25:0
 Warner TV Serie
 p:SKY
-0089:00c00000:0010:0085:25:0
-.
-p:SKY
 0228:00c00000:0010:0085:31:0
 Sky Sport Bundesliga UHD
 p:SKY
@@ -4421,14 +4424,35 @@ p:Cyfrowy Polsat S.A.
 33f9:00820000:3390:0071:1:0
 Polsat News HD
 p:Cyfrowy Polsat S.A.
+0001:00820000:2e18:00b0:1:0
+Al Maghribia HD
+p:SNRT
+0002:00820000:2e18:00b0:1:0
+Laayoune TV HD
+p:SNRT
+0003:00820000:2e18:00b0:1:0
+Al Aoula Inter HD
+p:SNRT
+0004:00820000:2e18:00b0:1:0
+Athaqafia HD
+p:SNRT
 0005:00820000:2e18:00b0:1:0
 Al Aoula Inter
+p:SNRT
+0006:00820000:2e18:00b0:1:0
+Assadissa HD
+p:SNRT
+000a:00820000:2e18:00b0:1:0
+Arryadia HD
+p:SNRT
+00f1:00820000:2e18:00b0:1:0
+Tamazight HD
 p:SNRT
 000b:00820000:2e18:00b0:2:0
 Radio Nationale
 p:SNRT
 000c:00820000:2e18:00b0:2:0
-Radio Sud
+Radio sud
 p:SNRT
 000e:00820000:2e18:00b0:2:0
 Radio Inter
@@ -4458,7 +4482,7 @@ p:SNRT
 Meknes
 p:SNRT
 005a:00820000:2e18:00b0:2:0
-Laayoune
+Laâyoune
 p:SNRT
 005b:00820000:2e18:00b0:2:0
 Dakhla
@@ -4471,27 +4495,6 @@ Fes
 p:SNRT
 00b3:00820000:2e18:00b0:2:0
 Marrakech
-p:SNRT
-0001:00820000:2e18:00b0:25:0
-Al Maghribia HD
-p:SNRT
-0002:00820000:2e18:00b0:25:0
-Laayoune TV HD
-p:SNRT
-0003:00820000:2e18:00b0:25:0
-Al Aoula Inter HD
-p:SNRT
-0004:00820000:2e18:00b0:25:0
-Athaqafia HD
-p:SNRT
-0006:00820000:2e18:00b0:25:0
-Assadissa HD
-p:SNRT
-000a:00820000:2e18:00b0:25:0
-Arryadia HD
-p:SNRT
-00f1:00820000:2e18:00b0:25:0
-Tamazight HD
 p:SNRT
 0065:00820000:1770:00be:2:0
 Radio R101
@@ -5011,7 +5014,7 @@ Animal Planet
 p:VIVACOM
 00e0:00820000:25e4:00d5:1:0
 HBO 3
-p:VIVACOM,c:050001
+p:VIVACOM
 00e1:00820000:25e4:00d5:1:0
 Pickbox TV
 p:VIVACOM
@@ -5495,7 +5498,7 @@ p:Warner Bros. Discovery
 02f2:00820000:02bc:013e:25:0
 Eurosport 2 Greek HD
 p:Warner Bros. Discovery
-0001:00820000:0321:013e:25:5
+0001:00820000:0321:013e:25:4
 11355V.
 p:,c:050001
 0216:00820000:0384:013e:1:0
@@ -6070,7 +6073,7 @@ Rai Radio Südtirol
 p:Rai
 0d49:00820000:1450:013e:25:0
 Rai 1 HD
-p:Rai,c:050001
+p:Rai
 0d4a:00820000:1450:013e:25:0
 Rai 2 HD
 p:Rai
@@ -7975,7 +7978,7 @@ RADIONORBA TV
 p:Telenorba
 0530:00820000:3d54:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
 p:M-Three Satcom
@@ -7993,7 +7996,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-Three Satcom Srl
+p:M-ThreeSatcom Srl
 0534:00820000:3d54:013e:22:0
 GOLD TV
 p:M-Three Satcom
@@ -8250,7 +8253,7 @@ p:SkyItalia
 Sky Sport Max
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Indiana Jones Collection
+Ritorno al futuro Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
@@ -8317,7 +8320,7 @@ Sky Sport24
 p:SkyItalia
 2b20:00820000:1644:fbff:25:0
 Sky Sport24
-p:SkyItalia
+p:SkyItalia,c:050001
 106e:00820000:1644:fbff:25:0
 Sky Cinema Action
 p:SkyItalia
@@ -8447,24 +8450,6 @@ p:SkyItalia
 2c4f:00820000:189c:fbff:1:0
 Boomerang +1
 p:SkyItalia
-2a96:00820000:189c:fbff:1:0
-Sky Sport24
-p:SkyItalia
-2a9a:00820000:189c:fbff:1:0
-Sky Sport24
-p:SkyItalia
-2a9d:00820000:189c:fbff:1:0
-Sky Sport24
-p:SkyItalia
-2ab1:00820000:189c:fbff:1:0
-Sky Sport24
-p:SkyItalia
-2ab8:00820000:189c:fbff:1:0
-Sky Sport24
-p:SkyItalia
-2aba:00820000:189c:fbff:1:0
-Sky Sport24
-p:SkyItalia
 0fbf:00820000:189c:fbff:1:0
 DeAKids +1
 p:SkyItalia
@@ -8555,18 +8540,6 @@ p:SkyItalia
 2c5b:00820000:19c8:fbff:1:0
 Cartoon +1
 p:SkyItalia
-2b5d:00820000:19c8:fbff:1:0
-Sky Cinema Uno
-p:SkyItalia
-2b61:00820000:19c8:fbff:1:0
-Sky Cinema Family
-p:SkyItalia
-2b63:00820000:19c8:fbff:1:0
-Sky Cinema Uno +24
-p:SkyItalia
-2b6b:00820000:19c8:fbff:1:0
-Sky Cinema Action
-p:SkyItalia
 0594:00820000:19c8:fbff:1:0
 MTV Music
 p:SkyItalia
@@ -8575,9 +8548,6 @@ MTV Music
 p:SkyItalia
 0599:00820000:19c8:fbff:1:0
 Class CNBC
-p:SkyItalia
-2aa2:00820000:19c8:fbff:1:0
-Sky Sport MotoGP
 p:SkyItalia
 1fa7:00820000:19c8:fbff:1:0
 Fox News
@@ -8642,35 +8612,11 @@ p:SkyItalia
 2e17:00820000:1a2c:fbff:1:0
 IEPG Data
 p:SkyItalia
-1c4e:00820000:1a2c:fbff:1:0
-Sky Sport Tennis
-p:SkyItalia
-2d5a:00820000:1a2c:fbff:1:0
-Sky Sport F1
-p:SkyItalia
 0590:00820000:1a2c:fbff:1:0
 Nick Jr
 p:SkyItalia
-2aa8:00820000:1a2c:fbff:1:0
-Sky Sport Uno
-p:SkyItalia
-2dba:00820000:1a2c:fbff:1:0
-Sky Sport
-p:SkyItalia
-2dc0:00820000:1a2c:fbff:1:0
-Sky Sport Max
-p:SkyItalia
-2dc6:00820000:1a2c:fbff:1:0
-Sky Uno
-p:SkyItalia
 2dc9:00820000:1a2c:fbff:1:0
 Mosaico Cinema
-p:SkyItalia
-2bcf:00820000:1a2c:fbff:1:0
-Sky Sport
-p:SkyItalia
-2bd1:00820000:1a2c:fbff:1:0
-Sky Sport
 p:SkyItalia
 110e:00820000:1a2c:fbff:2:0
 Radio Vaticana Europa
@@ -8825,6 +8771,39 @@ p:SkyItalia
 3428:00820000:2260:fbff:130:0
 PRIMAFILA HCZ
 p:SkyItalia
+0001:008230fb:4321:0000:1:0
+Philippa 1A
+p:EBUER
+0001:0082abba:0010:0000:1:0
+11194V SID 0x01
+p:DVB-S2 16APSK 11194V 13.0Â°E
+0002:0082abba:0010:0000:1:0
+11194V SID 0x02
+p:DVB-S2 16APSK 11194V 13.0Â°E
+0003:0082abba:0010:0000:1:0
+11194V SID 0x03
+p:DVB-S2 16APSK 11194V 13.0Â°E
+0004:0082abba:0010:0000:1:0
+11194V SID 0x04
+p:DVB-S2 16APSK 11194V 13.0Â°E
+0005:0082abba:0010:0000:1:0
+11194V SID 0x05
+p:DVB-S2 16APSK 11194V 13.0Â°E
+0006:0082abba:0010:0000:1:0
+11194V SID 0x06
+p:DVB-S2 16APSK 11194V 13.0Â°E
+0001:0082ad5b:0001:0001:1:0
+NLEMG HOL270-1
+p:EMG Connectivity
+000f:0082ad6e:00f0:0000:2:0
+11630V SID 0x0f
+p:DVB-S QPSK 11630V 13.0Â°E
+011d:0082ad6e:00f0:0000:100:0
+11630V SID 0x11d
+p:DVB-S QPSK 11630V 13.0Â°E
+011e:0082ad6e:00f0:0000:100:0
+11630V SID 0x11e
+p:DVB-S QPSK 11630V 13.0Â°E
 0001:00822a17:0000:0000:25:0
 10775H
 p:,c:050001
@@ -8834,32 +8813,26 @@ p:,c:050001
 0001:00822a8c:0000:0000:25:2
 10892H
 p:,c:050001
-0001:0082abb9:0000:0000:25:3
-11193V
-p:,c:050001
-0001:0082abc0:0000:0000:25:4
+0001:0082abc0:0000:0000:25:3
 11200V
 p:,c:050001
-0001:00820000:06a4:013e:25:6
+0001:00820000:06a4:013e:25:5
 11526H
 p:,c:050001
-0001:00822d54:0000:0000:25:7
+0001:00822d54:0000:0000:25:6
 11604H
 p:,c:050001
-0001:0082ad67:0000:0000:25:8
+0001:0082ad67:0000:0000:25:7
 11623V
 p:,c:050001
-0001:00822f3c:0000:0000:25:9
+0001:00822f3c:0000:0000:25:8
 12092H
 p:,c:050001
-0001:00822fd5:0000:0000:25:10
+0001:00822fd5:0000:0000:25:9
 12245H.
 p:,c:050001
-0d49:00823048:1450:0000:1:11
+0d49:00823048:1450:0000:1:10
 12360H SID 0xd49
 p:DVB-S2 8PSK 12360H 13.0Â°E
-0001:008230fb:0000:0000:25:12
-12539H
-p:,c:050001
 end
 Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
