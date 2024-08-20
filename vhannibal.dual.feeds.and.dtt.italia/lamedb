@@ -273,9 +273,6 @@ transponders
 00c00000:0021:0085
 	s 12480000:27500000:1:3:192:2:0
 /
-00c00000:0064:0001
-	s 11697000:2915000:1:3:192:2:0:1:1:0:2
-/
 00c00000:0001:0001
 	s 11407000:26000000:1:4:192:2:0:1:2:0:2
 /
@@ -285,13 +282,16 @@ transponders
 00c0b099:0000:0000
 	s 12441000:27500000:1:4:192:2:0:1:2:0:2
 /
+00c00000:0064:0001
+	s 11697000:2915000:1:3:192:2:0:1:1:0:2
+/
 00820000:0065:0001
 	s 12226000:27500000:1:3:130:2:0
 /
 00820000:03e8:0001
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
 /
-00820000:07d2:0002
+00820000:03ea:0001
 	s 11470000:33000000:1:2:130:2:0:1:3:0:2
 /
 00820000:1ce8:0071
@@ -1018,7 +1018,7 @@ a.tv HD .
 p:BMT
 16ac:00c00000:03ff:0001:25:0
 tv.ingolstadt HD
-p:
+p:BMT
 16af:00c00000:03ff:0001:25:0
 NIEDERBAYERN TV HD
 p:BMT
@@ -1131,7 +1131,7 @@ p:HOLLYW
 M+DEPORTES3
 p:Digital +
 77c3:00c00000:040a:0001:1:0
-M+ChampionsTour
+M+LCAMPEON2
 p:Movistar+
 77c4:00c00000:040a:0001:1:0
 EUROSPORT 4
@@ -1149,7 +1149,7 @@ p:Digital+
 M+DEPORTES8
 p:Movistar+
 77d8:00c00000:040a:0001:1:0
-EUROSPORT 3
+M+LCAMPEON4
 p:CANAL+
 0001:00c00000:040b:0001:31:0
 SES UHD Demo Channel
@@ -1668,10 +1668,10 @@ p:Movistar+
 DAZN LALIGA 2 HD
 p:
 749e:00c00000:041c:0001:25:0
-M+ChampionsTourHD
+M+LCAMPEON2
 p:Movistar+
 749f:00c00000:041c:0001:25:0
-M+ChampionsTour2HD
+M+LCAMPEON3
 p:Movistar+
 74a2:00c00000:041c:0001:25:0
 MEZZO LIVE
@@ -1758,7 +1758,7 @@ p:Movistar+
 LA SEXTA
 p:Digital+
 769f:00c00000:041e:0001:1:0
-M+ChampionsTour2
+M+LCAMPEON3
 p:Movistar+
 76a3:00c00000:041e:0001:1:0
 MULTIDEPORTE
@@ -2089,7 +2089,7 @@ M+COMEDIA HD
 p:Movistar+
 7539:00c00000:0426:0001:25:0
 M+ Cine HD
-p:Movistar,c:050001
+p:Movistar
 7820:00c00000:0428:0001:1:0
 TEST CAMP11
 p:Movistar+
@@ -2188,7 +2188,7 @@ BEIN SPORTS 3
 p:CSAT
 2014:00c00000:0430:0001:25:0
 TFX
-p:CSAT,c:050001
+p:CSAT
 2015:00c00000:0430:0001:25:0
 TMC
 p:CSAT
@@ -3947,6 +3947,15 @@ p:BetaDigital
 004c:00c00000:0021:0085:22:0
 Baden TV
 p:BetaDigital
+0001:00c00000:0001:0001:1:0
+11407V
+p:
+0001:00c02b85:0000:0000:1:1
+11141H.
+p:
+0001:00c0b099:0000:0000:1:2
+12441V.
+p:
 07d0:00c00000:0064:0001:2:0
 Kronehit Kärnten
 p:KRONEHIT
@@ -3965,15 +3974,6 @@ p:KRONEHIT
 1770:00c00000:0064:0001:2:5
 Kronehit Vorarlberg
 p:KRONEHIT
-0001:00c00000:0001:0001:1:0
-11407V
-p:
-0001:00c02b85:0000:0000:1:1
-11141H.
-p:
-0001:00c0b099:0000:0000:1:2
-12441V.
-p:
 0064:00820000:0065:0001:1:0
 VOA EU HD
 p:
@@ -4016,12 +4016,12 @@ p:MyIntProvider
 03e8:00820000:03e8:0001:12:0
 Basic-1 Pry
 p:Telespazio
-0320:00820000:07d2:0002:1:0
+0320:00820000:03ea:0001:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
-07d2:00820000:07d2:0002:12:0
-HVS-2 Bck (SGB6)
-p:MyServiceProvider
+03ea:00820000:03ea:0001:12:0
+HVS-2 Bck
+p:Telespazio
 1c86:00820000:1ce8:0071:1:0
 AXN White
 p:Cyfrowy Polsat S.A.
@@ -5300,6 +5300,15 @@ p:CANAL+
 3308:00820000:0190:013e:1:0
 MiniMini+ HD
 p:CANAL+
+3313:00820000:0190:013e:1:0
+TEST1
+p:CANAL+
+3314:00820000:0190:013e:1:0
+TEST2
+p:CANAL+
+3315:00820000:0190:013e:1:0
+TEST3
+p:CANAL+
 331b:00820000:0190:013e:1:0
 NATIONAL GEO HD
 p:CANAL+
@@ -5321,9 +5330,6 @@ p:
 32cd:00820000:0190:013e:1:0
 CANAL+ NOW
 p:CANAL+
-32ce:00820000:0190:013e:1:0
-ELEVEN SPORTS 4 HD
-p:CANAL+
 32d8:00820000:0190:013e:1:0
 Active Family
 p:CANAL+
@@ -5338,6 +5344,15 @@ NATIONAL GEO HD
 p:CANAL+
 32e0:00820000:0190:013e:1:0
 MiniMini+ HD
+p:CANAL+
+32e1:00820000:0190:013e:1:0
+TEST1
+p:CANAL+
+32e2:00820000:0190:013e:1:0
+TEST2
+p:CANAL+
+32e3:00820000:0190:013e:1:0
+TEST3
 p:CANAL+
 32f0:00820000:0190:013e:1:0
 CANAL+ PREMIUM HD
@@ -5420,18 +5435,6 @@ p:Warner Bros. Discovery
 02f2:00820000:02bc:013e:25:0
 Eurosport 2 Greek HD
 p:Warner Bros. Discovery
-02f3:00820000:02bc:013e:25:0
-Eurosport 3 HD
-p:Warner Bros. Discovery
-02f4:00820000:02bc:013e:25:0
-Eurosport 4 HD
-p:Warner Bros. Discovery
-02f5:00820000:02bc:013e:25:0
-Eurosport 5 HD
-p:Warner Bros. Discovery
-02f6:00820000:02bc:013e:25:0
-Eurosport 6 HD
-p:Warner Bros. Discovery
 0216:00820000:0384:013e:1:0
 Iraqia News HD
 p:
@@ -5459,8 +5462,11 @@ p:PlayBox Neo Suite
 0218:00820000:0384:013e:25:0
 Channel 8 KUR
 p:PlayBox Neo Suite
+01f7:00820000:0384:013e:25:0
+Bayyinat TV
+p:
 01fb:00820000:0384:013e:25:0
-Al Mayadeen HD
+Al Mayadeen
 p:
 10df:00820000:03e8:013e:22:0
 Historia Poland
@@ -5582,6 +5588,9 @@ p:CANAL+
 379f:00820000:044c:013e:25:0
 Ale kino+ HD
 p:CANAL+
+37ad:00820000:044c:013e:25:0
+CANAL+ FAMILY HD
+p:CANAL+
 37af:00820000:044c:013e:25:0
 teleTOON+ HD
 p:CANAL+
@@ -5594,11 +5603,14 @@ p:CANAL+
 37b4:00820000:044c:013e:25:0
 CANAL+ SERIALE HD
 p:CANAL+
+37b7:00820000:044c:013e:25:0
+CANAL+ FAMILY HD
+p:CANAL+
 37bd:00820000:044c:013e:25:0
 Ale kino+ HD
 p:CANAL+
-3a99:00820000:0514:013e:1:0
-CANAL+ DOKUMENT HD
+37c1:00820000:044c:013e:25:0
+CANAL+ FAMILY HD
 p:CANAL+
 3a9a:00820000:0514:013e:1:0
 NOVELAS+
@@ -5635,9 +5647,6 @@ TVP 1 HD
 p:CANAL+
 3abe:00820000:0514:013e:1:0
 Romance TV
-p:CANAL+
-3acb:00820000:0514:013e:1:0
-CANAL+ DOKUMENT HD
 p:CANAL+
 3acc:00820000:0514:013e:1:0
 NOVELAS+
@@ -5711,6 +5720,9 @@ p:CANAL+
 142b:00820000:05dc:013e:1:0
 HBO3 HD
 p:CANAL+
+142d:00820000:05dc:013e:1:0
+TEST 4
+p:CANAL+
 1434:00820000:05dc:013e:1:0
 CANAL+ SPORT 2 HD
 p:CANAL+
@@ -5779,6 +5791,9 @@ HBO3 HD
 p:CANAL+
 13fa:00820000:05dc:013e:1:0
 Eleven Sports 4 HD
+p:CANAL+
+13fb:00820000:05dc:013e:1:0
+TEST 4
 p:CANAL+
 1410:00820000:05dc:013e:2:0
 Radio ZET
@@ -6350,9 +6365,6 @@ p:Telespazio
 02e2:00820000:1b58:013e:2:0
 ANNI 60
 p:Telespazio
-02e3:00820000:1b58:013e:2:0
-Radio Radio
-p:Telespazio
 02e4:00820000:1b58:013e:2:0
 R. Italia S.m.i.
 p:Telespazio
@@ -6727,7 +6739,7 @@ BBC Brit
 p:GLOBECAST
 07d9:00820000:22c4:013e:1:0
 BBC CBeebies
-p:GLOBECAST,c:050001
+p:GLOBECAST
 07db:00820000:22c4:013e:1:0
 BBC Lifestyle HD
 p:GLOBECAST
@@ -7897,7 +7909,7 @@ RADIONORBA TV
 p:Telenorba
 0530:00820000:3d54:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
 p:M-Three Satcom
@@ -7909,7 +7921,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-Three Satcom Srl
+p:M-ThreeSatcom Srl
 0534:00820000:3d54:013e:22:0
 GOLD TV
 p:M-Three Satcom
@@ -8166,7 +8178,7 @@ p:SkyItalia
 Sky Sport Max
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-BarLume Collection
+Bruce Willis Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
@@ -8316,7 +8328,7 @@ p:SkyItalia
 X Factor
 p:SkyItalia
 1e5f:00820000:170c:fbff:25:0
-Eurosport 9
+Sky Sport
 p:SkyItalia
 2ab9:00820000:1838:fbff:1:0
 PPV Bundle
@@ -8376,7 +8388,7 @@ p:SkyItalia
 Sky Cinema Drama
 p:SkyItalia
 0f5d:00820000:189c:fbff:25:0
-Sky Investigation Maratone
+Sky Investigation +1
 p:SkyItalia
 0f5e:00820000:189c:fbff:25:0
 Sky Documentaries +1
@@ -8416,9 +8428,6 @@ Sky Arte
 p:SkyItalia
 0f6f:00820000:1900:fbff:25:0
 Sky Sport
-p:SkyItalia
-1fb0:00820000:1900:fbff:25:0
-Lazio Style HD
 p:SkyItalia
 2fc4:00820000:1900:fbff:25:0
 Gambero Rosso HD
@@ -8478,7 +8487,7 @@ p:SkyItalia
 Dorcel Club
 p:SkyItalia
 2d00:00820000:19c8:fbff:25:0
-Sky Atlantic +1
+Sky Atlantic Maratone
 p:SkyItalia
 2c2b:00820000:19c8:fbff:25:0
 Documentari HD
@@ -8540,9 +8549,6 @@ p:SkyItalia
 0dcf:00820000:1a2c:fbff:25:0
 DAZN 2
 p:SkyItalia
-2da0:00820000:1a2c:fbff:31:0
-Eurosport 4K
-p:SkyItalia
 2db7:00820000:1a2c:fbff:130:0
 Mosaico Cinema
 p:SkyItalia
@@ -8592,10 +8598,10 @@ p:SkyItalia
 Sky Sport
 p:SkyItalia
 108a:00820000:2008:fbff:25:0
-Eurosport 6
+Sky Sport
 p:SkyItalia
 1090:00820000:2008:fbff:25:0
-Sky Serie +1
+Sky Serie Maratone
 p:SkyItalia
 1092:00820000:2008:fbff:25:0
 Calcio Overlay HD
@@ -8616,10 +8622,10 @@ p:SkyItalia
 IEPG Data
 p:SkyItalia
 0f46:00820000:2198:fbff:25:0
-Eurosport 7
+Sky Sport
 p:SkyItalia
 0f48:00820000:2198:fbff:25:0
-Eurosport 8
+Sky Sport
 p:SkyItalia
 0f4d:00820000:2198:fbff:25:0
 Sky Sport
@@ -9205,7 +9211,7 @@ Rai News 24
 p:Rai
 0547:eeee0000:00a3:217c:25:0
 Rai 1 HD
-p:Rai
+p:Rai,c:050001
 0548:eeee0000:00a3:217c:25:0
 Rai 2 HD
 p:Rai
