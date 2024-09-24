@@ -1,7 +1,13 @@
 eDVB services /4/
 transponders
+00c00000:0001:0001
+	s 11407000:26000000:1:4:192:2:0:1:2:0:2
+/
 00c00000:0003:0001
 	s 11817000:31428000:1:8:192:2:0:1:4:0:2
+/
+00c00000:0064:0001
+	s 11697000:2915000:1:3:192:2:0:1:1:0:2
 /
 00c00000:03ea:0001
 	s 11229000:22000000:1:2:192:2:0:1:2:0:2
@@ -273,17 +279,11 @@ transponders
 00c00000:0021:0085
 	s 12480000:27500000:1:3:192:2:0
 /
-00c00000:0001:0001
-	s 11407000:26000000:1:4:192:2:0:1:2:0:2
-/
 00c02b85:0000:0000
 	s 11141000:23500000:0:3:192:2:0:1:2:0:2
 /
 00c0b099:0000:0000
 	s 12441000:27500000:1:4:192:2:0:1:2:0:2
-/
-00c00000:0064:0001
-	s 11697000:2915000:1:3:192:2:0:1:1:0:2
 /
 00820000:03e9:0001
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
@@ -614,6 +614,9 @@ eeee0000:7918:217c
 /
 end
 services
+0001:00c00000:0001:0001:1:0
+11407V
+p:
 0001:00c00000:0003:0001:1:0
 Astra1M Service 1
 p:
@@ -629,6 +632,24 @@ p:
 0005:00c00000:0003:0001:1:0
 Astra1M Service 5
 p:
+1770:00c00000:0064:0001:2:0
+Kronehit Vorarlberg
+p:KRONEHIT
+1388:00c00000:0064:0001:2:0
+Kronehit Tirol
+p:KRONEHIT
+0fa0:00c00000:0064:0001:2:0
+Kronehit Salzburg
+p:KRONEHIT
+0bb8:00c00000:0064:0001:2:0
+Kronehit Oberösterreich
+p:KRONEHIT
+07d0:00c00000:0064:0001:2:0
+Kronehit Kärnten
+p:KRONEHIT
+03e8:00c00000:0064:0001:2:0
+Kronehit Steiermark
+p:KRONEHIT
 1389:00c00000:03ea:0001:1:0
 BBC News
 p:SES ASTRA
@@ -2384,9 +2405,6 @@ p:MTV Networks Europe
 7004:00c00000:0436:0001:1:0
 Comedy Central
 p:MTV Networks Europe
-7005:00c00000:0436:0001:1:0
-Nick_Jr..
-p:MTV Network europe
 7006:00c00000:0436:0001:1:0
 MTV
 p:MTV Networks Europe
@@ -2414,12 +2432,6 @@ p:MTV Networks Europe
 6ffb:00c00000:0436:0001:1:0
 Nick.Jr.
 p:MTV Network europe
-6ffc:00c00000:0436:0001:1:0
-Nick_Jr.
-p:MTV Networks Europe
-6ffd:00c00000:0436:0001:1:0
-Nick_Jr_
-p:MTV Networks Europe
 6fff:00c00000:0436:0001:1:0
 MTV
 p:MTV Networks Europe
@@ -4001,33 +4013,12 @@ p:BetaDigital
 004c:00c00000:0021:0085:22:0
 Baden TV
 p:BetaDigital
-0001:00c00000:0001:0001:1:0
-11407V
-p:
-0001:00c02b85:0000:0000:1:1
+0001:00c02b85:0000:0000:1:0
 11141H.
 p:
-0001:00c0b099:0000:0000:1:2
+0001:00c0b099:0000:0000:1:0
 12441V.
 p:
-07d0:00c00000:0064:0001:2:0
-Kronehit Kärnten
-p:KRONEHIT
-0bb8:00c00000:0064:0001:2:1
-Kronehit Oberösterreich
-p:KRONEHIT
-0fa0:00c00000:0064:0001:2:2
-Kronehit Salzburg
-p:KRONEHIT
-03e8:00c00000:0064:0001:2:3
-Kronehit Steiermark
-p:KRONEHIT
-1388:00c00000:0064:0001:2:4
-Kronehit Tirol
-p:KRONEHIT
-1770:00c00000:0064:0001:2:5
-Kronehit Vorarlberg
-p:KRONEHIT
 0320:00820000:03e9:0001:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
@@ -5203,18 +5194,21 @@ MAX Sport 2 HD
 p:VIVACOM
 0899:00820000:01f4:00fc:1:0
 Freedom TV
-p:STN
+p:iKOMG
 089a:00820000:01f4:00fc:1:0
 CBC_Azerbaijan
-p:IKO
+p:iKOMG
 089b:00820000:01f4:00fc:1:0
 Iran E Aryee
-p:IKOMG
+p:iKOMG
 089c:00820000:01f4:00fc:1:0
 Yemen TV
-p:EUTELSAT
+p:iKOMG
 08a6:00820000:01f4:00fc:1:0
 Medya Haber
+p:iKOMG
+0604:00820000:01f4:00fc:2:0
+R Radio
 p:iKOMG
 060e:00820000:01f4:00fc:2:0
 Yemen Radio
@@ -5224,7 +5218,7 @@ New Life Radio
 p:iKOMG
 08b3:00820000:01f4:00fc:2:0
 WELAT
-p:Eutelsat
+p:iKOMG
 08b4:00820000:01f4:00fc:2:0
 Radio2000
 p:iKOMG
@@ -5245,7 +5239,7 @@ Italia1 HD
 p:Mediaset
 007a:00820000:04b0:0110:25:0
 Canale5 HD
-p:Mediaset,c:050001
+p:Mediaset
 007b:00820000:04b0:0110:25:0
 Rete4 HD
 p:Mediaset
@@ -5487,7 +5481,7 @@ p:PlayBox Neo Suite
 Bayyinat TV
 p:
 01fb:00820000:0384:013e:25:0
-Al Mayadeen
+Al Mayadeen HD
 p:
 10df:00820000:03e8:013e:22:0
 Historia Poland
@@ -6082,7 +6076,7 @@ Rai 4 HD
 p:
 0d4e:00820000:1450:013e:25:0
 Rai Movie HD
-p:
+p:Rai
 0d4f:00820000:1450:013e:31:0
 Rai 4K
 p:Rai
@@ -7120,9 +7114,6 @@ Polsat Music HD
 p:Cyfrowy Polsat SA
 4298:00820000:2bc0:013e:1:0
 VOX Music TV
-p:Cyfrowy Polsat S.A.
-4299:00820000:2bc0:013e:1:0
-Eska Rock
 p:Cyfrowy Polsat S.A.
 429a:00820000:2bc0:013e:1:0
 Polo TV
@@ -8232,7 +8223,7 @@ p:SkyItalia
 Sky Sport America's Cup
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-DC Super Heroes Collection
+Una notte da leoni Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
@@ -8541,7 +8532,7 @@ p:SkyItalia
 Dorcel Club
 p:SkyItalia
 2d00:00820000:19c8:fbff:25:0
-Sky Atlantic Maratone
+Sky Atlantic +1
 p:SkyItalia
 2c2b:00820000:19c8:fbff:25:0
 Documentari HD
@@ -8743,37 +8734,37 @@ PRIMAFILA HCZ
 p:SkyItalia
 0001:00822a17:0000:0000:25:0
 10775H
-p:,c:050001
+p:,c:050001,f:40
 0001:0082aa52:0000:0000:25:1
 10834V
-p:,c:050001
+p:,c:050001,f:40
 0001:00822a8c:0000:0000:25:2
 10892H
-p:,c:050001
+p:,c:050001,f:40
 0001:00820000:319c:013e:25:3
 11054H
-p:,c:050001
+p:,c:050001,f:40
 0001:0082abc0:0000:0000:25:4
 11200V
-p:,c:050001
+p:,c:050001,f:40
 0001:00820000:0259:013e:1:5
 11317V
-p:
+p:,f:40
 0001:00820000:06a4:013e:25:6
 11526H
-p:,c:050001
+p:,c:050001,f:40
 0001:00822d54:0000:0000:25:7
 11604H
-p:,c:050001
+p:,c:050001,f:40
 0001:0082ad67:0000:0000:25:8
 11623V
-p:,c:050001
+p:,c:050001,f:40
 0001:00822f3c:0000:0000:25:9
 12092H
-p:,c:050001
+p:,c:050001,f:40
 0001:00820000:1e14:013e:1:10
 12245H.
-p:
+p:,f:40
 0274:eeee0000:0200:001d:1:0
 TV8 News On Demand
 p:Persidera
@@ -8974,6 +8965,9 @@ SUPERSIX TV
 p:
 1c1e:eeee0000:0384:0110:22:0
 TCI
+p:
+1c1f:eeee0000:0384:0110:22:0
+AP CHANNEL
 p:
 1c13:eeee0000:0384:0110:25:0
 CUSANO NEWS 7
@@ -9537,4 +9531,4 @@ p:Persidera
 RDS Social TV
 p:Persidera
 end
-Editor:DreamSet 2.4.11 - http://www.dreamset-editor.com
+Editor:DreamSet 2.4.12 - http://www.dreamset-editor.com
