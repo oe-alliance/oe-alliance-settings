@@ -1,6 +1,6 @@
 eDVB services /4/
 transponders
-00820000:07d1:0002
+00820000:07d0:0002
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
 /
 00820000:07d2:0002
@@ -296,11 +296,11 @@ transponders
 /
 end
 services
-0320:00820000:07d1:0002:1:0
+0320:00820000:07d0:0002:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
-07d1:00820000:07d1:0002:12:0
-HVS-1 Bck
+07d0:00820000:07d0:0002:12:0
+Basic-1 Bck
 p:MyServiceProvider
 0320:00820000:07d2:0002:1:0
 SERVICE IP/MAC NOTIFICATION
@@ -2185,7 +2185,7 @@ Test GC 3
 p:GLOBECAST
 338f:00820000:1388:013e:1:0
 Test GC 4
-p:GLOBECAST,c:050001
+p:GLOBECAST
 3335:00820000:1388:013e:2:0
 RIK3
 p:GLOBECAST
@@ -2744,14 +2744,8 @@ p:M-Three Satcom
 1c73:00820000:1c20:013e:1:0
 TG NORBA 24
 p:Telenorba
-29cd:00820000:1c20:013e:1:0
-TV Congo
-p:GLOBECAST
 29d1:00820000:1c20:013e:1:0
 EWTN English
-p:GLOBECAST
-2905:00820000:1c20:013e:2:0
-Radio Congo
 p:GLOBECAST
 0e2e:00820000:1c20:013e:2:0
 RADIO FRECCIA
@@ -2804,6 +2798,9 @@ p:M-Three satcom
 1c72:00820000:1c20:013e:2:0
 R.BuonConsiglio
 p:M-Three satcom
+29cd:00820000:1c20:013e:1:0
+TV Congo
+p:GLOBECAST
 015f:00820000:1c84:013e:1:0
 Discovery HD
 p:NOVA
@@ -2990,6 +2987,9 @@ p:
 038b:00820000:2134:013e:1:0
 SUDAN TV
 p:Etisalat
+0392:00820000:2134:013e:1:0
+JORDAN TV
+p:Etisalat
 0398:00820000:2134:013e:1:0
 OMAN TV HD
 p:Etisalat
@@ -3031,9 +3031,6 @@ Dubai International HD
 p:Etisalat
 038e:00820000:2134:013e:25:0
 ESC
-p:Etisalat
-0392:00820000:2134:013e:25:0
-JORDAN TV
 p:Etisalat
 0394:00820000:2134:013e:25:0
 Libya ALWatnieh
@@ -3091,6 +3088,9 @@ ORLER TV
 p:STN
 232e:00820000:2328:013e:1:0
 Revelation TV
+p:STN
+232f:00820000:2328:013e:1:0
+KENTRON TV
 p:STN
 2331:00820000:2328:013e:1:0
 Angel TV Europe
@@ -3317,9 +3317,6 @@ p:CANAL+
 114b:00820000:2af8:013e:25:0
 Private HD Nova
 p:CANAL+
-11fa:00820000:2b5c:013e:1:0
-Nasa TV UHD
-p:
 11fc:00820000:2b5c:013e:1:0
 Museum 4K
 p:
@@ -3507,7 +3504,7 @@ p:KABELIO.CH
 Kabelio Sky News
 p:KABELIO.CH
 0101:00820000:2db4:013e:25:0
-Kabelio Mooz Dance
+Kabelio TV8 Italia
 p:KABELIO.CH
 00c9:00820000:2db4:013e:25:0
 Kabelio Tele Baern
@@ -3626,9 +3623,6 @@ p:Cyfrowy Polsat S.A.
 3e30:00820000:2ee0:013e:1:0
 PPV HD
 p:Cyfrowy Polsat S.A.
-3e3a:00820000:2ee0:013e:1:0
-TestL
-p:Cyfrowy Polsat S.A.
 3e3e:00820000:2ee0:013e:1:0
 SciFi HD
 p:Cyfrowy Polsat S.A.
@@ -3646,7 +3640,7 @@ Salvation TV MENA
 p:ViewMedia
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4267:00820000:2f44:013e:1:0
 Eutelsat Data 1
 p:Eutelsat
@@ -4013,6 +4007,9 @@ p:KABELIO.CH
 0088:00820000:3264:013e:1:0
 Kabelio Info
 p:KABELIO.CH
+008b:00820000:3264:013e:1:0
+Kabelio Spare
+p:KABELIO.CH
 0064:00820000:3264:013e:25:0
 Kabelio 3+
 p:KABELIO.CH
@@ -4109,9 +4106,6 @@ p:mk
 1ca5:00820000:332c:013e:1:0
 WNS.TEL
 p:GMN
-1c90:00820000:332c:013e:2:0
-The Overcomer
-p:SES
 1c8a:00820000:332c:013e:25:0
 Al Jazeera English HD
 p:Globecast
@@ -4207,9 +4201,12 @@ RADIONORBA TV
 p:Telenorba
 0530:00820000:3d54:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0535:00820000:3d54:013e:1:0
 ER24
+p:M-Three Satcom
+0537:00820000:3d54:013e:1:0
+WellTV
 p:M-Three Satcom
 053b:00820000:3d54:013e:1:0
 Baby TV
@@ -4219,7 +4216,7 @@ RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 052f:00820000:3d54:013e:22:0
 Super!
-p:M-Three Satcom Srl
+p:M-ThreeSatcom Srl
 0534:00820000:3d54:013e:22:0
 GOLD TV
 p:M-Three Satcom
@@ -4307,20 +4304,11 @@ p:Telespazio
 4253:00820000:3db8:013e:1:0
 QVC HD
 p:Telespazio
-4257:00820000:3db8:013e:1:0
-CIAO
-p:Telespazio
-425a:00820000:3db8:013e:1:0
-Napoli Mia
-p:Telespazio
 425c:00820000:3db8:013e:1:0
 TVA Vicenza
 p:Telespazio
 4260:00820000:3db8:013e:1:0
 VIDEOLINA
-p:Telespazio
-4261:00820000:3db8:013e:1:0
-Teleitalia
 p:Telespazio
 4267:00820000:3db8:013e:1:0
 Vivid Red HD
@@ -4476,7 +4464,7 @@ p:SkyItalia
 Sky Sport America's Cup
 p:SkyItalia
 106c:00820000:14b4:fbff:25:0
-Shrek Collection
+Star Trek Collection
 p:SkyItalia
 37a9:00820000:14b4:fbff:25:0
 Sky Crime
@@ -4686,7 +4674,7 @@ p:SkyItalia
 Sky Cinema Drama
 p:SkyItalia
 0f5d:00820000:189c:fbff:25:0
-Sky Investigation +1
+Sky Investigation Maratone
 p:SkyItalia
 0f5e:00820000:189c:fbff:25:0
 Sky Documentaries +1
@@ -4826,6 +4814,9 @@ p:SkyItalia
 0590:00820000:1a2c:fbff:1:0
 Nick Jr
 p:SkyItalia
+2da0:00820000:1a2c:fbff:1:0
+12054H SID 0x2da0
+p:DVB-S2 QPSK 12054H 13.0Â°E
 2dc9:00820000:1a2c:fbff:1:0
 Mosaico Cinema
 p:SkyItalia
@@ -4881,7 +4872,7 @@ p:SkyItalia
 Sky Sport
 p:SkyItalia
 38c5:00820000:2008:fbff:1:0
-Stand Up Channel
+Comedy +1
 p:SkyItalia
 10ca:00820000:2008:fbff:1:0
 IEPG Data
@@ -4891,6 +4882,9 @@ History +1
 p:SkyItalia
 0def:00820000:2008:fbff:1:0
 History +1
+p:SkyItalia
+0df0:00820000:2008:fbff:1:0
+Super!
 p:SkyItalia
 1c38:00820000:2008:fbff:25:0
 Sky Cinema Uno +24
