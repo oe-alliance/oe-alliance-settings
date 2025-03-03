@@ -1,16 +1,16 @@
 eDVB services /4/
 transponders
-00820000:03ea:0001
-	s 11470000:33000000:1:0:130:2:0:1:2:0:2
-/
 00820000:03eb:0001
 	s 11526000:33000000:0:2:130:2:0:1:4:0:2
 /
 00820000:0c07:0001
 	s 10892000:27500000:0:2:130:2:0:1:1:0:2
 /
-00820000:07d0:0002
+00820000:07d1:0002
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
+/
+00820000:07d2:0002
+	s 11470000:33000000:1:0:130:2:0:1:2:0:2
 /
 00820000:1ce8:0071
 	s 12188000:27500000:1:3:130:2:0:1:2:0:2
@@ -299,12 +299,6 @@ transponders
 /
 end
 services
-0320:00820000:03ea:0001:1:0
-SERVICE IP/MAC NOTIFICATION
-p:MyIntProvider
-03ea:00820000:03ea:0001:12:0
-HVS-2 Pry
-p:Telespazio
 0320:00820000:03eb:0001:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
@@ -317,11 +311,17 @@ p:Eutelsat
 00c8:00820000:0c07:0001:12:0
 SmartLNB
 p:EUTELSAT
-0320:00820000:07d0:0002:1:0
+0320:00820000:07d1:0002:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
-07d0:00820000:07d0:0002:12:0
-Basic-1 Pry
+07d1:00820000:07d1:0002:12:0
+HVS-1 Bck
+p:MyServiceProvider
+0320:00820000:07d2:0002:1:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+07d2:00820000:07d2:0002:12:0
+HVS-2 Bck (SGB6)
 p:MyServiceProvider
 1c86:00820000:1ce8:0071:1:0
 AXN White
@@ -2357,6 +2357,9 @@ p:NOVA
 0197:00820000:1518:013e:1:0
 Novasports1HD
 p:NOVA
+0198:00820000:1518:013e:1:0
+Novasportsextra2HD
+p:NOVA
 0199:00820000:1518:013e:1:0
 Novasports6HD
 p:NOVA
@@ -2378,6 +2381,9 @@ p:NOVA
 019f:00820000:1518:013e:1:0
 Novasports Premier League
 p:NOVA
+01a0:00820000:1518:013e:1:0
+Novasports5HD
+p:NOVA
 01a1:00820000:1518:013e:1:0
 Disney Channel
 p:NOVA
@@ -2392,6 +2398,12 @@ Novasports Prime HD
 p:NOVA
 01a5:00820000:1518:013e:1:0
 Novasports Prime HD CY
+p:NOVA
+01a6:00820000:1518:013e:1:0
+Novasports5HD Cy
+p:NOVA
+01a7:00820000:1518:013e:1:0
+SMILE TV
 p:NOVA
 012f:00820000:157c:013e:1:0
 COSMOTESport1HD
@@ -2532,7 +2544,7 @@ p:NOVA
 Cartoonito HD
 p:NOVA
 1bd3:00820000:17d4:013e:1:0
-N TEST 1
+COSMOTESport2HD
 p:NOVA
 1bd4:00820000:17d4:013e:1:0
 Adult Pack Info
@@ -2706,22 +2718,22 @@ p:NOVA
 Food Network HD
 p:NOVA
 3c9b:00820000:1bbc:013e:1:0
-15515
+Novasports3HD Cy
 p:NOVA
 3c9c:00820000:1bbc:013e:1:0
 Euronews Greek
 p:NOVA
 3c9d:00820000:1bbc:013e:1:0
-15517
+COSMOTESport1HD
 p:NOVA
 3c9e:00820000:1bbc:013e:1:0
-15518
+ALPHA HD
 p:NOVA
 3c9f:00820000:1bbc:013e:1:0
 Blue Sky
 p:NOVA
 3ca0:00820000:1bbc:013e:1:0
-15520
+Novasports3HD
 p:NOVA
 1c22:00820000:1c20:013e:1:0
 Tunisie Nationale
@@ -2986,7 +2998,7 @@ Insight TV UHD
 p:Amagi
 0bc5:00820000:20d0:013e:32:0
 Love Nature 4K
-p:
+p:,C:0000
 038b:00820000:2134:013e:1:0
 SUDAN TV
 p:Etisalat
@@ -3631,7 +3643,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
 DORCEL TV HD
-p:IKO Media Group
+p:iKO Media Group
 422b:00820000:2f44:013e:1:0
 Mezzo TV
 p:M7 Group
@@ -3640,7 +3652,7 @@ Salvation TV MENA
 p:ViewMedia
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4267:00820000:2f44:013e:1:0
 Eutelsat Data 1
 p:Eutelsat
@@ -4440,7 +4452,7 @@ p:Eutelsat
 Arte HD
 p:Eutelsat
 0134:00820000:3e1c:013f:1:0
-C8
+Arret C8
 p:Eutelsat
 0135:00820000:3e1c:013f:1:0
 W9
@@ -4452,7 +4464,7 @@ p:Eutelsat
 TFX
 p:Eutelsat
 0138:00820000:3e1c:013f:1:0
-NRJ12
+Arret NRJ12
 p:Eutelsat
 0139:00820000:3e1c:013f:1:0
 LCP
@@ -4743,7 +4755,7 @@ p:SkyItalia
 Dorcel Club
 p:SkyItalia
 2d00:00820000:19c8:fbff:25:0
-Sky Atlantic Maratone
+Sky Atlantic +1
 p:SkyItalia
 2c2b:00820000:19c8:fbff:25:0
 Documentari HD
@@ -4962,7 +4974,7 @@ p:SkyItalia
 MTV HD
 p:SkyItalia
 106c:00820000:2260:fbff:25:0
-Risate all'italiana
+Dwayne Johnson Collection
 p:SkyItalia
 37a9:00820000:2260:fbff:25:0
 Sky Crime
