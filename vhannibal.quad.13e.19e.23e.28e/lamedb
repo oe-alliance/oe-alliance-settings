@@ -27,9 +27,6 @@ transponders
 00820000:03e8:013e
 	s 11393000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:03ea:0001
-	s 11470000:33000000:1:0:130:2:0:1:2:0:2
-/
 00820000:03eb:0001
 	s 11526000:33000000:0:2:130:2:0:1:4:0:2
 /
@@ -48,8 +45,11 @@ transponders
 00820000:0640:013e
 	s 11508000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:07d0:0002
+00820000:07d1:0002
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
+/
+00820000:07d2:0002
+	s 11470000:33000000:1:0:130:2:0:1:2:0:2
 /
 00820000:0c07:0001
 	s 10892000:27500000:0:2:130:2:0:1:1:0:2
@@ -1109,12 +1109,6 @@ p:TVN WBD
 10ee:00820000:03e8:013e:25:0:0
 HGTV Italy HD
 p:Discovery
-0320:00820000:03ea:0001:1:0:0
-SERVICE IP/MAC NOTIFICATION
-p:MyIntProvider
-03ea:00820000:03ea:0001:12:0:0
-HVS-2 Pry
-p:Telespazio
 0320:00820000:03eb:0001:1:0:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
@@ -1532,11 +1526,17 @@ p:TVN WBD
 3ded:00820000:0640:013e:25:0:0
 TVN 24 HD_
 p:TVN WBD
-0320:00820000:07d0:0002:1:0:0
+0320:00820000:07d1:0002:1:0:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
-07d0:00820000:07d0:0002:12:0:0
-Basic-1 Pry
+07d1:00820000:07d1:0002:12:0:0
+HVS-1 Bck
+p:MyServiceProvider
+0320:00820000:07d2:0002:1:0:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+07d2:00820000:07d2:0002:12:0:0
+HVS-2 Bck (SGB6)
 p:MyServiceProvider
 00c8:00820000:0c07:0001:12:0:0
 SmartLNB
@@ -1718,6 +1718,9 @@ p:NOVA
 0197:00820000:1518:013e:1:0:0
 Novasports1HD
 p:NOVA
+0198:00820000:1518:013e:1:0:0
+Novasportsextra2HD
+p:NOVA
 0199:00820000:1518:013e:1:0:0
 Novasports6HD
 p:NOVA
@@ -1739,6 +1742,9 @@ p:NOVA
 019f:00820000:1518:013e:1:0:0
 Novasports Premier League
 p:NOVA
+01a0:00820000:1518:013e:1:0:0
+Novasports5HD
+p:NOVA
 01a1:00820000:1518:013e:1:0:0
 Disney Channel
 p:NOVA
@@ -1753,6 +1759,12 @@ Novasports Prime HD
 p:NOVA
 01a5:00820000:1518:013e:1:0:0
 Novasports Prime HD CY
+p:NOVA
+01a6:00820000:1518:013e:1:0:0
+Novasports5HD Cy
+p:NOVA
+01a7:00820000:1518:013e:1:0:0
+SMILE TV
 p:NOVA
 012f:00820000:157c:013e:1:0:0
 COSMOTESport1HD
@@ -2013,7 +2025,7 @@ p:NOVA
 Cartoonito HD
 p:NOVA
 1bd3:00820000:17d4:013e:1:0:0
-N TEST 1
+COSMOTESport2HD
 p:NOVA
 1bd4:00820000:17d4:013e:1:0:0
 Adult Pack Info
@@ -2280,7 +2292,7 @@ p:SkyItalia
 DeAKids
 p:SkyItalia
 2d00:00820000:19c8:fbff:25:0:0
-Sky Atlantic Maratone
+Sky Atlantic +1
 p:SkyItalia
 37b5:00820000:19c8:fbff:25:0:0
 Milan TV
@@ -2454,22 +2466,22 @@ p:NOVA
 Food Network HD
 p:NOVA
 3c9b:00820000:1bbc:013e:1:0:0
-15515
+Novasports3HD Cy
 p:NOVA
 3c9c:00820000:1bbc:013e:1:0:0
 Euronews Greek
 p:NOVA
 3c9d:00820000:1bbc:013e:1:0:0
-15517
+COSMOTESport1HD
 p:NOVA
 3c9e:00820000:1bbc:013e:1:0:0
-15518
+ALPHA HD
 p:NOVA
 3c9f:00820000:1bbc:013e:1:0:0
 Blue Sky
 p:NOVA
 3ca0:00820000:1bbc:013e:1:0:0
-15520
+Novasports3HD
 p:NOVA
 0e2e:00820000:1c20:013e:2:0:0
 RADIO FRECCIA
@@ -2986,7 +2998,7 @@ FashionTV L'Original
 p:Nimbus
 0bc5:00820000:20d0:013e:32:0:0
 Love Nature 4K
-p:
+p:,C:0
 0bea:00820000:20d0:013e:17:0:0
 Insight TV UHD
 p:Amagi
@@ -3099,7 +3111,7 @@ p:SkyItalia
 Sky Crime
 p:SkyItalia
 106c:00820000:2260:fbff:25:0:0
-Risate all'italiana
+Dwayne Johnson Collection
 p:SkyItalia
 10e1:00820000:2260:fbff:1:0:0
 Sky Meteo24
@@ -4621,7 +4633,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0:0
 DORCEL TV HD
-p:IKO Media Group
+p:iKO Media Group
 421c:00820000:2f44:013e:25:0:0
 UATV
 p:COSMONOVA BROADCAST LLC
@@ -4648,7 +4660,7 @@ Dla Ciebie TV
 p:1plus1 Media
 4234:00820000:2f44:013e:1:0:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4236:00820000:2f44:013e:22:0:0
 Dim TV
 p:COSMONOVA LLC
@@ -5478,7 +5490,7 @@ p:Eutelsat
 Arte HD
 p:Eutelsat
 0134:00820000:3e1c:013f:1:0:0
-C8
+Arret C8
 p:Eutelsat
 0135:00820000:3e1c:013f:1:0:0
 W9
@@ -5490,7 +5502,7 @@ p:Eutelsat
 TFX
 p:Eutelsat
 0138:00820000:3e1c:013f:1:0:0
-NRJ12
+Arret NRJ12
 p:Eutelsat
 0139:00820000:3e1c:013f:1:0:0
 LCP
@@ -7049,9 +7061,6 @@ p:Movistar+
 749b:00c00000:041c:0001:25:0:0
 LALIGA TV HYPERMOTION
 p:Movistar+
-749c:00c00000:041c:0001:1:0:0
-10758V SID 0x749c
-p:DVB-S2 8PSK 10758V 19.2Â°E
 749d:00c00000:041c:0001:25:0:0
 DAZN LALIGA 2 HD
 p:
@@ -7064,24 +7073,12 @@ p:Movistar+
 74a0:00c00000:041c:0001:1:0:0
 TEST DZ5.
 p:BARNA
-74a1:00c00000:041c:0001:1:0:0
-10758V SID 0x74a1
-p:DVB-S2 8PSK 10758V 19.2Â°E
 74a2:00c00000:041c:0001:25:0:0
 MEZZO LIVE
 p:DIGITAL+
 74a3:00c00000:041c:0001:25:0:0
 M+ LALIGA TV 3 HD
 p:Movistar+
-74a4:00c00000:041c:0001:1:0:0
-10758V SID 0x74a4
-p:DVB-S2 8PSK 10758V 19.2Â°E
-74a6:00c00000:041c:0001:1:0:0
-10758V SID 0x74a6
-p:DVB-S2 8PSK 10758V 19.2Â°E
-74a7:00c00000:041c:0001:1:0:0
-10758V SID 0x74a7
-p:DVB-S2 8PSK 10758V 19.2Â°E
 74a8:00c00000:041c:0001:25:0:0
 Movistar Plus+2 HD
 p:Movistar+
@@ -7135,6 +7132,9 @@ MULTIDEPORTE
 p:DIGITAL+
 7693:00c00000:041e:0001:1:0:0
 10788V SID 0x7693
+p:DVB-S QPSK 10788V 19.2Â°E
+7694:00c00000:041e:0001:1:0:0
+10788V SID 0x7694
 p:DVB-S QPSK 10788V 19.2Â°E
 7695:00c00000:041e:0001:1:0:0
 ALQUILER XY
@@ -8365,7 +8365,7 @@ DOKUSAT
 p:
 6dcb:00c00000:044d:0001:1:0:0
 TELEGOLD
-p:
+p:Bayerische Medien Technik GmbH
 6dcc:00c00000:044d:0001:1:0:0
 Zwei Music Television
 p:FOLX.TV
@@ -8482,12 +8482,6 @@ Cherie 25
 p:SES ASTRA
 2f6d:00c00000:0454:0001:1:0:0
 Cherie 25
-p:SES ASTRA
-2f71:00c00000:0454:0001:1:0:0
-NRJ 12
-p:SES ASTRA
-2f72:00c00000:0454:0001:1:0:0
-NRJ 12
 p:SES ASTRA
 2f9a:00c00000:0454:0001:1:0:0
 SBN International
@@ -8655,7 +8649,7 @@ p:MB Satellite
 TeleSex TV
 p:MB Satellite
 3162:00c00000:0459:0001:1:0:0
-MEGARADIOmix
+Time of Change.TV
 p:MB Satellite
 316e:00c00000:0459:0001:2:0:0
 ffn
@@ -8890,8 +8884,8 @@ Astra 1 Service 5
 p:MX1
 0001:00c0afd6:0000:ffff:1:0:0
 SVC-1
-p:RR
-0002:00c0afd6:0000:ffff:0:0:0
+p:MX-1
+0002:00c0afd6:0000:ffff:1:0:0
 SVC-2
 p:SES
 0003:00c0afd6:0000:ffff:1:0:0
@@ -9700,7 +9694,7 @@ VRT 1
 p:M7 Group
 5225:00eb0000:0c99:0003:25:0:0
 NPO1 HD
-p:M7 Group
+p:M7 Group,c:050001
 5226:00eb0000:0c99:0003:25:0:0
 VRT Canvas HD
 p:M7 Group
@@ -9871,7 +9865,7 @@ Suspilne Kultura
 p:
 1e46:00eb0000:0c9e:0003:25:0:0
 Espreso TV HD
-p:,c:050001
+p:
 1e50:00eb0000:0c9e:0003:25:0:0
 Inter HD
 p:
@@ -9895,7 +9889,7 @@ SONCE
 p:
 1f41:00eb0000:0ca1:0003:25:0:0
 CT 1 PHA HD
-p:CESKA TELEVIZE
+p:CESKA TELEVIZE,c:050001
 1f42:00eb0000:0ca1:0003:25:0:0
 CT 2 HD
 p:CESKA TELEVIZE
@@ -10305,7 +10299,7 @@ p:Telekom Srbija
 Hustler
 p:Telekom Srbija
 4ede:00eb0000:0ca5:0003:1:0:0
-TV Belle Amie
+Zona Plus
 p:Telekom Srbija
 4ee0:00eb0000:0ca5:0003:1:0:0
 Panon TV
@@ -10841,17 +10835,11 @@ p:BSkyB
 0e2e:011a0000:07d8:0002:25:0:0
 SkySpMainEvHD
 p:BSkyB
-0edc:011a0000:07d8:0002:25:0:0
-Eurosport 1 HD
-p:BSkyB
 0f12:011a0000:07d8:0002:25:0:0
 SkySp+ HD
 p:BSkyB
 0f24:011a0000:07d8:0002:25:0:0
 E4 HD
-p:BSkyB
-0f4e:011a0000:07d8:0002:25:0:0
-Eurosport 2 HD
 p:BSkyB
 0f64:011a0000:07d8:0002:25:0:0
 SkySp+ HD
@@ -10899,7 +10887,7 @@ p:BSkyB
 SkySpMainEv
 p:BSkyB
 10ce:011a0000:07dc:0002:1:0:0
-Sky Action
+Sky Fast
 p:BSkyB
 1133:011a0000:07dc:0002:1:0:0
 Sky Family
@@ -10944,7 +10932,7 @@ p:BSkyB
 Greyhounds
 p:BSkyB
 1612:011a0000:07dc:0002:1:0:0
-Sky Greats
+AwardWinners
 p:BSkyB
 1884:011a0000:07dc:0002:1:0:0
 Sky Showcase
@@ -11043,7 +11031,7 @@ p:BSkyB
 Update Email Address
 p:BSkyB
 2330:011a0000:07e0:0002:25:0:0
-H1test
+Book2ScreenHD
 p:BSkyB
 041e:011a0000:07e4:0002:1:0:0
 ETFG
@@ -11066,17 +11054,11 @@ p:BSkyB
 1525:011a0000:07e4:0002:1:0:0
 Sky Atlantic+1
 p:BSkyB
-165e:011a0000:07e4:0002:1:0:0
-Eurosport 1
-p:BSkyB
 16ae:011a0000:07e4:0002:1:0:0
 Nat Geo
 p:BSkyB
 16be:011a0000:07e4:0002:1:0:0
 Nat Geo+1
-p:BSkyB
-16d1:011a0000:07e4:0002:1:0:0
-Eurosport 2
 p:BSkyB
 1802:011a0000:07e4:0002:1:0:0
 Sky Comedy
@@ -11547,7 +11529,7 @@ p:BSkyB
 U&Dave HD
 p:BSkyB
 0ee7:011a0000:07ee:0002:25:0:0
-Sky Greats HD
+AwdWinnersHD
 p:BSkyB
 0ee8:011a0000:07ee:0002:25:0:0
 Sky Drama HD
@@ -11559,13 +11541,13 @@ p:BSkyB
 Sky Comedy HD
 p:BSkyB
 177e:011a0000:07ee:0002:25:0:0
-Sky Action HD
+Sky Fast HD
 p:BSkyB
 1782:011a0000:07ee:0002:25:0:0
 Sky Family HD
 p:BSkyB
 1784:011a0000:07ee:0002:25:0:0
-AwardsSeasonHD
+UltActionHD
 p:BSkyB
 1785:011a0000:07ee:0002:25:0:0
 SkyPremiereHD
@@ -11574,7 +11556,7 @@ p:BSkyB
 Sky Hits HD
 p:BSkyB
 17ae:011a0000:07ee:0002:25:0:0
-SkyAssassinsHD
+AssassinsHD
 p:BSkyB
 1837:011a0000:07ee:0002:25:0:0
 SkyAnimationHD
@@ -12002,6 +11984,12 @@ p:BSkyB
 c4dc:011a0000:0811:0002:1:0:0
 50396
 p:BSkyB
+c521:011a0000:0813:0002:25:0:0
+50465
+p:BSkyB
+c526:011a0000:0813:0002:25:0:0
+50470
+p:BSkyB
 c527:011a0000:0813:0002:25:0:0
 SkySp Racing HD
 p:BSkyB
@@ -12024,7 +12012,7 @@ c789:011a0000:0815:0002:1:0:0
 Nick Jr.
 p:BSkyB
 c78a:011a0000:0815:0002:1:0:0
-Nicktoons
+NickSpongeBob
 p:BSkyB
 c78b:011a0000:0815:0002:1:0:0
 ComedyCent+1
@@ -12048,7 +12036,7 @@ c793:011a0000:0815:0002:1:0:0
 Nickelodeon
 p:BSkyB
 c794:011a0000:0815:0002:1:0:0
-Nick Jr. Too
+NickJrPeppa
 p:BSkyB
 c795:011a0000:0815:0002:1:0:0
 ComedyCentral
@@ -12414,7 +12402,7 @@ p:BSkyB
 ComedyXtra
 p:BSkyB
 1a4d:011a0000:0834:0002:1:0:0
-Nicktoons
+NickSpongeBob
 p:BSkyB
 1bbc:011a0000:0835:0002:25:0:0
 PCNE Chinese HD
@@ -12504,7 +12492,7 @@ d81d:011a0000:0838:0002:1:0:0
 TNTSports9 HD
 p:BSkyB
 d822:011a0000:0838:0002:25:0:0
-55330
+Ramazan TV HD
 p:BSkyB
 d3c2:011a0000:0839:0002:1:0:0
 Arise News
@@ -12654,7 +12642,7 @@ p:BSkyB
 5ACTION
 p:BSkyB
 083e:011a0000:083d:0002:1:0:0
-Nick Jr. Too
+NickJrPeppa
 p:BSkyB
 083f:011a0000:083d:0002:1:0:0
 Nickelodeon
@@ -12879,5 +12867,5 @@ p:BSkyB
 TRP 1
 p:
 end
-# 273 transponders and 4019 services.
+# 273 transponders and 4015 services.
 # Created by E-Channelizer v24.0.0.926 - https://www.echannelizer.com
