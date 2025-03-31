@@ -24,11 +24,11 @@ transponders
 00820000:0384:013e
 	s 11373000:27500000:0:3:130:2:0:1:2:0:2
 /
-00820000:03e8:0001
-	s 11219000:33000000:0:7:130:2:0:1:2:0:2
-/
 00820000:03e8:013e
 	s 11393000:27500000:1:3:130:2:0:1:2:0:2
+/
+00820000:03e9:0001
+	s 11219000:33000000:0:7:130:2:0:1:2:0:2
 /
 00820000:03ea:0001
 	s 11470000:33000000:1:0:130:2:0:1:2:0:2
@@ -1097,12 +1097,6 @@ p:PlayBox Neo Suite
 0219:00820000:0384:013e:1:0:0
 Jek TV
 p:IPVideoTrans.com
-0320:00820000:03e8:0001:1:0:0
-SERVICE IP/MAC NOTIFICATION
-p:MyIntProvider
-03e8:00820000:03e8:0001:12:0:0
-Basic-1 Bck
-p:Telespazio
 10dd:00820000:03e8:013e:25:0:0
 Discovery Poland HD
 p:TVN WBD
@@ -1139,6 +1133,12 @@ p:TVN WBD
 10ee:00820000:03e8:013e:25:0:0
 HGTV Italy HD
 p:Discovery
+0320:00820000:03e9:0001:1:0:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+03e9:00820000:03e9:0001:12:0:0
+HVS-1 Bck
+p:Telespazio
 0320:00820000:03ea:0001:1:0:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
@@ -1931,6 +1931,12 @@ p:SkyItalia
 0dea:00820000:1644:fbff:25:0:0
 Sky Sport Business 2
 p:SkyItalia
+0ded:00820000:1644:fbff:25:0:0
+Sky Sport Business 3
+p:SkyItalia
+0df8:00820000:1644:fbff:25:0:0
+Sky Sport Business 4
+p:SkyItalia
 106e:00820000:1644:fbff:25:0:0
 Sky Cinema Action
 p:SkyItalia
@@ -2286,7 +2292,7 @@ p:SkyItalia
 BIKE
 p:SkyItalia
 1090:00820000:19c8:fbff:25:0:0
-Sky Serie Maratone
+Sky Serie +1
 p:SkyItalia
 1fa7:00820000:19c8:fbff:1:0:0
 Fox News
@@ -3038,10 +3044,13 @@ p:SkyItalia
 2da4:00820000:2008:fbff:25:0:0
 Sky Serie
 p:SkyItalia
-05dd:00820000:206c:013e:1:0:0
+0001:00820000:206c:013e:1:18:0
+12360H
+p:
+05dd:00820000:20d0:013e:1:0:0
 dvb-nip-vv
 p:
-05de:00820000:206c:013e:25:0:0
+05de:00820000:20d0:013e:25:0:0
 legacy-pr
 p:
 0bc2:00820000:20d0:013e:1:0:0
@@ -3159,7 +3168,7 @@ p:SkyItalia
 Sky Crime
 p:SkyItalia
 106c:00820000:2260:fbff:25:0:0
-Liam Neeson Collection
+Una notte da leoni Collection
 p:SkyItalia
 10e1:00820000:2260:fbff:1:0:0
 Sky Meteo24
@@ -3954,7 +3963,7 @@ p:VIVACOM
 RING HD
 p:VIVACOM
 0144:00820000:2648:00d5:1:0:0
-CTC Int.
+
 p:VIVACOM
 0145:00820000:2648:00d5:25:0:0
 Diema Sport 3 HD
@@ -4479,7 +4488,7 @@ p:KABELIO.CH
 Kabelio TVO
 p:KABELIO.CH
 00cd:00820000:2db4:013e:25:0:0
-Kabelio TV Suedost
+Kabelio TV SuedOst
 p:KABELIO.CH
 00ce:00820000:2db4:013e:25:0:0
 Kabelio Tele M1
@@ -4497,21 +4506,21 @@ p:KABELIO.CH
 Kabelio Auftanken.TV
 p:KABELIO.CH
 00d5:00820000:2db4:013e:25:0:0
-Kabelio blue Zoom
+Kabelio Blue Zoom DE
 p:KABELIO.CH
 00dd:00820000:2db4:013e:25:0:0
-Kabelio BBC1 London
+Kabelio BBC One Lon
 p:KABELIO.CH
 00de:00820000:2db4:013e:25:0:0
-Kabelio BBC2
+Kabelio BBC Two
 p:KABELIO.CH
 00df:00820000:2db4:013e:25:0:0
 Kabelio BBC3/CBBC
 p:KABELIO.CH
 00e0:00820000:2db4:013e:25:0:0
-Kabelio BBC4/CBBCs
+Kabelio BBC4/CBBies
 p:KABELIO.CH
-00e1:00820000:2db4:013e:25:0:0
+00e1:00820000:2db4:013e:1:0:0
 Kabelio ITV1 London
 p:KABELIO.CH
 00e2:00820000:2db4:013e:25:0:0
@@ -4527,13 +4536,13 @@ p:KABELIO.CH
 Kabelio Channel 4
 p:KABELIO.CH
 00e6:00820000:2db4:013e:25:0:0
-Kabelio Channel 5
+Kabelio 5 UK
 p:KABELIO.CH
 00e7:00820000:2db4:013e:25:0:0
 Kabelio Film 4
 p:KABELIO.CH
 00f1:00820000:2db4:013e:25:0:0
-Kabelio TF1
+Kabelio TF1 CH
 p:KABELIO.CH
 00f2:00820000:2db4:013e:25:0:0
 Kabelio M6 Music
@@ -4559,9 +4568,6 @@ p:KABELIO.CH
 0101:00820000:2db4:013e:25:0:0
 Kabelio TV8 Italia
 p:KABELIO.CH
-0a01:00820000:2db4:013e:1:0:0
-VirtualChannelTest
-p:TEST
 0001:00820000:2e18:00b0:25:0:0
 Al Maghribia HD
 p:SNRT
@@ -4661,6 +4667,12 @@ p:Cyfrowy Polsat S.A.
 3e26:00820000:2ee0:013e:1:0:0
 13 Ulica HD
 p:Cyfrowy Polsat S.A.
+3e27:00820000:2ee0:013e:25:0:0
+test 15911
+p:Cyfrowy Polsat S.A.
+3e28:00820000:2ee0:013e:25:0:0
+test 15912
+p:Cyfrowy Polsat S.A.
 3e2b:00820000:2ee0:013e:1:0:0
 Polsat Sport Premium PPV3
 p:Cyfrowy Polsat S.A.
@@ -4678,10 +4690,10 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0:0
 DORCEL TV HD
-p:IKO Media Group
-421c:00820000:2f44:013e:25:0:0
+p:iKO Media Group
+421c:00820000:2f44:013e:22:0:0
 UATV
-p:COSMONOVA BROADCAST LLC
+p:COSMONOVA LLC
 422b:00820000:2f44:013e:1:0:0
 Mezzo TV
 p:M7 Group
@@ -4705,10 +4717,13 @@ Dla Ciebie TV
 p:1plus1 Media
 4234:00820000:2f44:013e:1:0:0
 ByoBlu
-p:M-hree Satcom
+p:M-Three Satcom
 4236:00820000:2f44:013e:22:0:0
 Dim TV
 p:COSMONOVA LLC
+4237:00820000:2f44:013e:0:0:0
+Juwelo TV
+p:SCP2100
 4267:00820000:2f44:013e:1:0:0
 Eutelsat Data 1
 p:Eutelsat
@@ -5090,7 +5105,7 @@ p:KABELIO.CH
 0066:00820000:3264:013e:25:0:0
 Kabelio 5+
 p:KABELIO.CH
-0067:00820000:3264:013e:25:0:0
+0067:00820000:3264:013e:1:0:0
 Kabelio TV24
 p:KABELIO.CH
 0068:00820000:3264:013e:25:0:0
@@ -5100,13 +5115,13 @@ p:KABELIO.CH
 Kabelio 6+
 p:KABELIO.CH
 006b:00820000:3264:013e:25:0:0
-Kabelio TeleZueri
+Kabelio Tele Zueri
 p:KABELIO.CH
 006c:00820000:3264:013e:25:0:0
 Kabelio Puls acht
 p:KABELIO.CH
 006d:00820000:3264:013e:25:0:0
-Kabelio ORF 1
+Kabelio ORF eins
 p:KABELIO.CH
 006e:00820000:3264:013e:25:0:0
 Kabelio ORF 2 Tirol
@@ -5115,7 +5130,7 @@ p:KABELIO.CH
 Kabelio RTL CH
 p:KABELIO.CH
 0070:00820000:3264:013e:25:0:0
-Kabelio RTLZWEI CH
+Kabelio RTLzwei CH
 p:KABELIO.CH
 0071:00820000:3264:013e:25:0:0
 Kabelio VOX CH
@@ -5126,20 +5141,20 @@ p:KABELIO.CH
 0073:00820000:3264:013e:25:0:0
 Kabelio ProSieben CH
 p:KABELIO.CH
-0074:00820000:3264:013e:25:0:0
+0074:00820000:3264:013e:1:0:0
 Kabelio ORF III
 p:KABELIO.CH
-0075:00820000:3264:013e:1:0:0
+0075:00820000:3264:013e:25:0:0
 Kabelio ServusTV
 p:KABELIO.CH
 0076:00820000:3264:013e:1:0:0
 Kabelio ORF Sport+
 p:KABELIO.CH
 007f:00820000:3264:013e:25:0:0
-Kabelio KabelEins CH
+Kabelio Kabel 1 CH
 p:KABELIO.CH
 0082:00820000:3264:013e:25:0:0
-Kabelio RTL Super CH
+Kabelio SuperRTL CH
 p:KABELIO.CH
 0084:00820000:3264:013e:25:0:0
 Kabelio Das Erste
@@ -5147,14 +5162,14 @@ p:KABELIO.CH
 0085:00820000:3264:013e:25:0:0
 Kabelio ZDF
 p:KABELIO.CH
-0087:00820000:3264:013e:1:0:0
-Kabelio n-tv
+0087:00820000:3264:013e:25:0:0
+Kabelio n-tv CH
 p:KABELIO.CH
-0088:00820000:3264:013e:1:0:0
-Kabelio Info
+0088:00820000:3264:013e:25:0:0
+Kabelio INFO
 p:KABELIO.CH
-008b:00820000:3264:013e:1:0:0
-Kabelio Spare
+008b:00820000:3264:013e:25:0:0
+Kabelio SPARE
 p:KABELIO.CH
 0709:00820000:32c8:013e:1:0:0
 Polsat Sport Premium 1
@@ -5419,7 +5434,7 @@ RTL 102.5 CALIENTE
 p:M-Three satcom
 0530:00820000:3d54:013e:1:0:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0532:00820000:3d54:013e:2:0:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -6969,7 +6984,7 @@ p:Movistar+
 11097V SID 0x7583
 p:DVB-S QPSK 11097V 19.2Â°E
 7584:00c00000:0412:0001:1:0:0
-FUT M+ Copa del Rey
+M+ Copa del Rey
 p:Movistar+
 7585:00c00000:0412:0001:1:0:0
 11097V SID 0x7585
@@ -7212,7 +7227,7 @@ p:DVB-S QPSK 10788V 19.2Â°E
 ALQUILER XY
 p:TXY
 7696:00c00000:041e:0001:1:0:0
-M+DE EPOCA
+M+MUSICALES
 p:Movistar+
 7697:00c00000:041e:0001:1:0:0
 NICK JR
@@ -7281,7 +7296,7 @@ p:BetaDigital
 LALIGA TV BAR HD
 p:Movistar+
 7504:00c00000:0420:0001:25:0:0
-FUT M+ Copa del Rey HD
+M+ Copa del Rey HD
 p:Movistar+
 7508:00c00000:0420:0001:25:0:0
 M+ VAMOSHD
@@ -8311,7 +8326,7 @@ SES Astra 1
 p:SES ASTRA
 238e:00c00000:044a:0001:2:0:0
 AUDIO PRIMO
-p:CSAT
+p:CSAT,C:0
 2390:00c00000:044a:0001:201:0:0
 MES VIDEOS
 p:CSAT
@@ -8467,16 +8482,16 @@ Hustler TV CZ
 p:M7 Group
 1012:00c00000:0451:0035:2:0:0
 Play Nostalgie
-p:M7 Group
+p:M7 Group,C:0
 1013:00c00000:0451:0035:22:0:0
 Bergblick
 p:M7 Group
 101a:00c00000:0451:0035:2:0:0
 VRT Radio1
-p:M7 Group
+p:M7 Group,C:0
 101b:00c00000:0451:0035:2:0:0
 VRT Radio2
-p:M7 Group
+p:M7 Group,C:0
 101c:00c00000:0451:0035:25:0:0
 CANAL+ Action
 p:M7 Group
@@ -8945,12 +8960,12 @@ p:MX1
 0005:00c0ae29:0000:0001:25:0:0
 Astra 1 Service 5
 p:MX1
-0001:00c0afd6:0000:ffff:1:0:0
+0001:00c0afd6:0000:ffff:0:0:0
 SVC-1
 p:SES
 0002:00c0afd6:0000:ffff:25:1:0
 SVC-2
-p:RR,c:050001
+p:SES USA ENC 19
 0003:00c0afd6:0000:ffff:1:2:0
 SVC-3
 p:SES
@@ -9070,7 +9085,7 @@ TVV Infokanaal
 p:M7 Group
 17e2:00eb0000:0c82:0003:25:0:0
 Vixen HD
-p:M7 Group,c:050001
+p:M7 Group
 17e3:00eb0000:0c82:0003:22:0:0
 HirTV
 p:M7 Group
@@ -9163,7 +9178,7 @@ Penthouse Gold
 p:M7 Group
 1bff:00eb0000:0c88:0003:25:0:0
 Penthouse Reality TV
-p:M7 Group,c:050001
+p:M7 Group
 1c0c:00eb0000:0c88:0003:25:0:0
 Penthouse Gold CZ
 p:M7 Group
@@ -9187,7 +9202,7 @@ mSAT Info
 p:Telekom Srbija
 4e21:00eb0000:0c8b:0003:25:0:0
 RTS 1 HD
-p:Telekom Srbija
+p:Telekom Srbija,c:050001
 4e22:00eb0000:0c8b:0003:25:0:0
 RTS 2 HD
 p:Telekom Srbija
@@ -9639,7 +9654,7 @@ p:M7 Group
 Ziggo Sport 6
 p:M7 Group
 51d1:00eb0000:0c96:0003:25:0:0
-Viaplay TV
+SBS9
 p:M7 Group
 51d5:00eb0000:0c96:0003:22:0:0
 Ment Pop
@@ -9667,7 +9682,7 @@ Ketnet
 p:M7 Group
 527c:00eb0000:0c96:0003:22:0:0
 VTM Life
-p:M7 Group,c:050001
+p:M7 Group
 5280:00eb0000:0c96:0003:22:0:0
 VTM 3
 p:M7 Group
@@ -10060,7 +10075,7 @@ CRo ZLIN
 p:Cesky Rozhlas
 1328:00eb0000:0ca2:0003:25:0:0
 TA3 HD
-p:Towercom
+p:Towercom,c:050001
 1339:00eb0000:0ca2:0003:2:0:0
 Slovensko
 p:Towercom
@@ -10191,7 +10206,7 @@ p:Telekom Srbija
 Star Crime HD
 p:Telekom Srbija
 4e8f:00eb0000:0ca4:0003:1:0:0
-ATV HD
+ATV
 p:Telekom Srbija
 4e97:00eb0000:0ca4:0003:1:0:0
 RTRS Plus
@@ -10201,9 +10216,6 @@ Discovery Channel
 p:Telekom Srbija
 4e99:00eb0000:0ca4:0003:1:0:0
 BBC Earth
-p:Telekom Srbija
-4e9a:00eb0000:0ca4:0003:1:0:0
-Animal Planet
 p:Telekom Srbija
 4e9b:00eb0000:0ca4:0003:1:0:0
 National Geographic
@@ -10237,7 +10249,7 @@ Arena Premium_1
 p:Telekom Srbija
 4eac:00eb0000:0ca4:0003:1:0:0
 24Kitchen
-p:Telekom Srbija
+p:Telekom Srbija,c:050001
 4ead:00eb0000:0ca4:0003:1:0:0
 EuroCinema 3
 p:Telekom Srbija
@@ -10491,10 +10503,10 @@ p:Telekom Srbija,c:050001
 Tring Tring
 p:Telekom Srbija,c:050001
 4ea8:00eb0000:0ca6:0003:1:0:0
-Vision plus
+TV Klan
 p:Telekom Srbija,c:050001
 4eaa:00eb0000:0ca6:0003:1:0:0
-Summertime
+Top Channel
 p:Telekom Srbija,c:050001
 4eab:00eb0000:0ca6:0003:1:0:0
 Tring Action
@@ -10678,7 +10690,7 @@ Disney
 p:Telekom Srbija
 4e47:00eb0000:0ca7:0003:1:0:0
 LFCTV
-p:Telekom Srbija,c:050001
+p:Telekom Srbija
 4e48:00eb0000:0ca7:0003:1:0:0
 HRT 1
 p:Telekom Srbija
@@ -10816,7 +10828,7 @@ TV Vijesti
 p:Telekom Srbija
 4e8d:00eb0000:0ca8:0003:1:0:0
 TV Prva (Crna Gora)
-p:Telekom Srbija
+p:Telekom Srbija,c:050001
 4e8e:00eb0000:0ca8:0003:1:0:0
 TV Pink M
 p:Telekom Srbija
@@ -10938,7 +10950,7 @@ p:BSkyB
 SkySpMainEv
 p:BSkyB
 10ce:011a0000:07dc:0002:1:0:0
-SkyMenInBlack
+Sky Action
 p:BSkyB
 1133:011a0000:07dc:0002:1:0:0
 Sky Family
@@ -11083,7 +11095,7 @@ Update Email Address
 p:BSkyB
 2330:011a0000:07e0:0002:25:0:0
 H1Test
-p:BSkyB,c:050001
+p:BSkyB
 041e:011a0000:07e4:0002:1:0:0
 ETFG
 p:BSkyB
@@ -11595,7 +11607,7 @@ p:BSkyB
 Sky Comedy HD
 p:BSkyB
 177e:011a0000:07ee:0002:25:0:0
-MenInBlackHD
+Sky Action HD
 p:BSkyB
 1782:011a0000:07ee:0002:25:0:0
 Sky Family HD
@@ -11610,7 +11622,7 @@ p:BSkyB
 Sky Hits HD
 p:BSkyB
 17ae:011a0000:07ee:0002:25:0:0
-Sky Thriller HD
+SkyGangstersHD
 p:BSkyB
 1837:011a0000:07ee:0002:25:0:0
 SkyAnimationHD
@@ -12036,7 +12048,13 @@ c4db:011a0000:0811:0002:1:0:0
 GEO News
 p:BSkyB
 c4dc:011a0000:0811:0002:1:0:0
-BLAZE
+50396
+p:BSkyB
+c521:011a0000:0813:0002:25:0:0
+50465
+p:BSkyB
+c526:011a0000:0813:0002:25:0:0
+50470
 p:BSkyB
 c527:011a0000:0813:0002:25:0:0
 SkySp Racing HD
@@ -12128,6 +12146,12 @@ p:BSkyB
 d7eb:011a0000:082c:0002:25:0:0
 Al Jazeera HD
 p:BSkyB
+d7ec:011a0000:082c:0002:1:0:0
+iON TV
+p:BSkyB
+d7ee:011a0000:082c:0002:1:0:0
+ATN
+p:BSkyB
 1db0:011a0000:082d:0002:25:0:0
 U&W HD
 p:BSkyB
@@ -12136,9 +12160,6 @@ U&Alibi HD
 p:BSkyB
 1db2:011a0000:082d:0002:25:0:0
 U&Dave HD
-p:BSkyB
-1db3:011a0000:082d:0002:1:0:0
-ATN
 p:BSkyB
 1db4:011a0000:082d:0002:1:0:0
 Ahlebait TV
@@ -12154,9 +12175,6 @@ Word Network
 p:BSkyB
 1db9:011a0000:082d:0002:1:0:0
 Ayozat TV
-p:BSkyB
-1dbb:011a0000:082d:0002:1:0:0
-iON TV
 p:BSkyB
 1dbd:011a0000:082d:0002:2:0:0
 WRN Europe
@@ -12663,7 +12681,7 @@ cbaa:011a0000:083c:0002:1:0:0
 Akaal Channel
 p:BSkyB
 0835:011a0000:083d:0002:1:0:0
-Channel 5
+5
 p:BSkyB
 0836:011a0000:083d:0002:1:0:0
 5 USA
@@ -12681,10 +12699,10 @@ p:BSkyB
 5STAR+1
 p:BSkyB
 083b:011a0000:083d:0002:1:0:0
-Channel 5+1
+5+1
 p:BSkyB
 083c:011a0000:083d:0002:25:0:0
-Channel 5 HD
+5 HD
 p:BSkyB
 083d:011a0000:083d:0002:1:0:0
 5ACTION
@@ -12915,5 +12933,5 @@ p:BSkyB
 TRP 1
 p:
 end
-# 275 transponders and 4029 services.
+# 275 transponders and 4035 services.
 # Created by E-Channelizer v24.0.0.926 - https://www.echannelizer.com
