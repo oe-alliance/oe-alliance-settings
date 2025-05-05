@@ -87,9 +87,6 @@ transponders
 00820000:03e9:0001
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
 /
-00820000:03eb:0001
-	s 11526000:33000000:0:2:130:2:0:1:4:0:2
-/
 00820000:044c:013e
 	s 11411000:27500000:0:4:130:2:0:1:2:0:2
 /
@@ -338,6 +335,9 @@ transponders
 /
 00822a8c:0c07:0001
 	s 10892000:27500000:0:2:130:2:0:1:1:0:2
+/
+00822d06:03eb:0001
+	s 11526000:33000000:0:2:130:2:0:1:4:0:2
 /
 00822d54:0000:0000
 	s 11604000:27500000:0:3:130:2:0:1:2:0:2
@@ -635,6 +635,9 @@ transponders
 /
 00c02b85:0000:0000
 	s 11141000:23500000:0:3:192:2:0:1:2:0:2
+/
+00c0ad89:0001:ffff
+	s 11657000:7202000:1:3:192:2:0:1:2:0:2
 /
 00c0adae:0001:0001
 	s 11694000:940000:1:1:192:2:0:1:1:0:2
@@ -1015,7 +1018,7 @@ p:BRT,c:050001
 p:1plus1 Media
 17d5:00300000:000c:0055:22:0:0
 1+1 Ukraine
-p:1plus1 Media,c:050001
+p:1plus1 Media
 17dc:00300000:000c:0055:22:0:0
 Kvartal TV
 p:1plus1 Media
@@ -1294,7 +1297,7 @@ DW English HD
 p:Deutsche Welle
 1dc9:00300000:002b:0055:25:0:0
 Channel 5 (Ukraine) HD
-p:SES ASTRA
+p:SES ASTRA,c:050001
 1dd8:00300000:002b:0055:25:0:0
 GALYCHYNA HD
 p:SLM
@@ -1308,8 +1311,8 @@ p:SLM
 English Club HD
 p:SES ASTRA
 1ee1:00300000:002e:0055:25:0:0
-KANAL 5
-p:
+Channel 5 (Ukraine) HD
+p:,c:050001
 1ee7:00300000:002e:0055:25:0:0
 Inter HD
 p:
@@ -1405,7 +1408,7 @@ SISTwo BTC
 p:SIS
 00a0:00300000:00c9:0001:1:0:0
 Betfred1
-p:SIS Limited,c:050001
+p:SIS Limited
 00a2:00300000:00c9:0001:1:0:0
 Betfred2
 p:SIS Limited
@@ -1543,16 +1546,16 @@ Test3
 p:SES
 1d74:00300000:107b:0055:25:0:0
 GALYCHYNA HD
-p:SLM
+p:SLM,c:050001
 1d88:00300000:107b:0055:22:0:0
 New Christian
-p:
+p:SLM
 1d92:00300000:107b:0055:22:0:0
 Televsesvit
 p:SLM
 1d9c:00300000:107b:0055:25:0:0
 Espreso TV HD
-p:
+p:,c:050001
 1da6:00300000:107b:0055:22:0:0
 KYIV24
 p:
@@ -1931,7 +1934,7 @@ p:CANAL+
 0604:00820000:01f4:00fc:2:0:0
 R Radio
 p:iKOMG
-060e:00820000:01f4:00fc:22:0:0
+060e:00820000:01f4:00fc:10:0:0
 Yemen Radio
 p:iKOMG
 0899:00820000:01f4:00fc:25:0:0
@@ -2095,12 +2098,6 @@ SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
 03e9:00820000:03e9:0001:12:0:0
 HVS-1 Bck
-p:Telespazio
-0320:00820000:03eb:0001:1:0:0
-SERVICE IP/MAC NOTIFICATION
-p:MyIntProvider
-03eb:00820000:03eb:0001:12:0:0
-HVS-3 Bck
 p:Telespazio
 3779:00820000:044c:013e:1:0:0
 CANAL+ FILM HD
@@ -2521,12 +2518,18 @@ SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
 07d2:00820000:07d6:0002:12:0:0
 HVS-2 Pri (SGP6)
-p:MyServiceProvider
+p:MyServiceProvider,c:031fff
 332d:00820000:1388:013e:1:0:0
 DW English HD
 p:Globecast
 332e:00820000:1388:013e:25:0:0
 BBC Arabic HD
+p:Globecast
+332f:00820000:1388:013e:25:0:0
+BBC Persian HD
+p:Globecast
+3330:00820000:1388:013e:1:0:0
+BBC News Europe
 p:Globecast
 3331:00820000:1388:013e:1:0:0
 TV5MONDE EUROPE
@@ -2608,13 +2611,13 @@ Test GC1
 p:Globecast
 338d:00820000:1388:013e:1:0:0
 Test GC2
-p:
+p:Globecast
 338e:00820000:1388:013e:1:0:0
 Test GC3
-p:
+p:Globecast
 338f:00820000:1388:013e:1:0:0
 Test GC4
-p:
+p:Globecast
 2520:00820000:13ef:013e:25:0:0
 AL SHARJAH HD
 p:DU
@@ -2653,7 +2656,7 @@ Rai 2 HD
 p:Rai
 0d4b:00820000:1450:013e:25:0:0
 Rai 3 HD
-p:Rai
+p:
 0d4d:00820000:1450:013e:25:0:0
 Rai 4 HD
 p:
@@ -2707,6 +2710,9 @@ AWE
 p:MuxIP
 02c7:00820000:14b4:013e:1:0:0
 WildTV
+p:MuxIP
+02c8:00820000:14b4:013e:1:0:0
+World Fishing Network
 p:MuxIP
 0001:00820000:14b4:fbff:1:14:0
 11785H
@@ -3105,10 +3111,10 @@ p:SkyItalia
 DeAKids +1
 p:SkyItalia
 101c:00820000:189c:fbff:25:0:0
-Sky Crime +1
+Crimini Italiani
 p:SkyItalia
 101d:00820000:189c:fbff:25:0:0
-Sky Crime +1
+Crimini Italiani
 p:SkyItalia
 104a:00820000:189c:fbff:25:0:0
 Sky Classica
@@ -3258,7 +3264,7 @@ p:SkyItalia
 BIKE
 p:SkyItalia
 1090:00820000:19c8:fbff:25:0:0
-Sky Serie Maratone
+Sky Serie +1
 p:SkyItalia
 1c38:00820000:19c8:fbff:25:0:0
 Sky Cinema Uno +24
@@ -4134,13 +4140,13 @@ p:SkyItalia
 Sky Nature
 p:SkyItalia
 0def:00820000:2260:fbff:1:0:0
-HISTORY WW2
+History +1
 p:SkyItalia
 0fc6:00820000:2260:fbff:1:0:0
 Nick Jr. +1
 p:SkyItalia
 0fd9:00820000:2260:fbff:1:0:0
-HISTORY WW2
+History +1
 p:SkyItalia
 1015:00820000:2260:fbff:25:0:0
 Discovery
@@ -4149,7 +4155,7 @@ p:SkyItalia
 Sky Crime
 p:SkyItalia
 106c:00820000:2260:fbff:25:0:0
-Ben Affleck Collection
+Harry Potter Collection
 p:SkyItalia
 10e1:00820000:2260:fbff:1:0:0
 Sky Meteo24
@@ -4271,9 +4277,6 @@ p:STN
 2334:00820000:2328:013e:1:0:0
 CIRA TV
 p:STN
-2335:00820000:2328:013e:22:0:0
-KICC TV
-p:STN
 2336:00820000:2328:013e:1:0:0
 GO-TV CHANNEL
 p:STN
@@ -4288,12 +4291,6 @@ Anewz
 p:
 233c:00820000:2328:013e:22:0:0
 TBN
-p:STN
-233d:00820000:2328:013e:22:0:0
-Firstlight
-p:STN
-233e:00820000:2328:013e:1:0:0
-AMAZING FACTS
 p:STN
 2340:00820000:2328:013e:1:0:0
 Silk Way
@@ -5671,7 +5668,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0:0
 DORCEL TV HD
-p:iKO Media Group
+p:IKO Media Group
 421c:00820000:2f44:013e:22:0:0
 UATV
 p:COSMONOVA LLC
@@ -5701,7 +5698,7 @@ Dla Ciebie TV
 p:1plus1 Media
 4234:00820000:2f44:013e:1:0:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4236:00820000:2f44:013e:22:0:0
 Dim TV
 p:COSMONOVA LLC
@@ -6415,7 +6412,7 @@ RTL 102.5 CALIENTE
 p:M-Three satcom
 0530:00820000:3d54:013e:1:0:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0532:00820000:3d54:013e:2:0:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -6584,6 +6581,12 @@ p:,c:050001
 0001:00822a8c:0c07:0001:1:8:0
 10892V
 p:,c:050001
+0320:00822d06:03eb:0001:1:0:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+03eb:00822d06:03eb:0001:12:1:0
+HVS-3 Bck
+p:Telespazio,f:40
 0001:00822d54:0000:0000:25:12:0
 11604H
 p:,c:050001
@@ -6754,7 +6757,7 @@ p:SKY
 p:BetaDigital
 0036:00c00000:0007:0085:22:0:0
 Genius Exklusiv
-p:BetaDigital,c:050001
+p:BetaDigital
 003c:00c00000:0007:0085:1:0:0
 .
 p:.
@@ -7024,7 +7027,7 @@ BBC News
 p:Globecast
 139d:00c00000:03ea:0001:25:0:0
 NHK WORLD-JPN
-p:,c:050001
+p:
 13a7:00c00000:03ea:0001:25:0:0
 Al Jazeera English HD
 p:Al Jazeera
@@ -7965,7 +7968,7 @@ p:Movistar+
 11097V SID 0x7583
 p:DVB-S QPSK 11097V 19.2Â°E
 7584:00c00000:0412:0001:1:0:0
-M+ Copa del Rey
+TEST TXP42
 p:Movistar+
 7585:00c00000:0412:0001:1:0:0
 11097V SID 0x7585
@@ -8265,7 +8268,7 @@ p:BetaDigital
 LALIGA TV BAR HD
 p:Movistar+
 7504:00c00000:0420:0001:25:0:0
-M+ Copa del Rey HD
+TEST TXP56
 p:Movistar+
 7508:00c00000:0420:0001:25:0:0
 M+ VAMOSHD
@@ -9830,6 +9833,9 @@ p:
 0001:00c02b85:0000:0000:1:0:0
 11141H
 p:
+0001:00c0ad89:0001:ffff:1:0:0
+SR D-551 Enc I
+p:Service Provider
 03e8:00c0adae:0001:0001:2:0:0
 DLF USI1
 p:MB Satellite
@@ -9886,6 +9892,15 @@ Test 17001
 p:Telenor
 426a:0e080000:0001:0046:25:0:0
 Test 17002
+p:Telenor
+426b:0e080000:0001:0046:25:0:0
+Test 17003
+p:Telenor
+426c:0e080000:0001:0046:25:0:0
+Test 17004
+p:Telenor
+426d:0e080000:0001:0046:25:0:0
+Test 17005
 p:Telenor
 4298:0e080000:0001:0046:22:0:0
 TV4 Fakta - Text
@@ -10194,7 +10209,7 @@ p:DIGI HU
 Travel Channel
 p:DIGI HU
 0a8c:0e080000:0005:0001:1:0:0
-M2/Petofi TV
+M2/Petőfi TV
 p:DIGI HU
 0b77:0e080000:0005:0001:1:0:0
 Spektrum Home
@@ -10273,7 +10288,7 @@ DIGI Animal World
 p:DigiTV
 1c55:0e080000:000a:0046:22:0:0
 DW English
-p:Telenor,c:050001
+p:Telenor
 1c57:0e080000:000a:0046:22:0:0
 CNBC
 p:Telenor
@@ -10883,25 +10898,25 @@ p:Telenor
 4296:0e080000:003e:0046:25:0:0
 TV6 HD (S)
 p:Telenor
-125d:0e080000:003f:0046:22:0:0
+125d:0e080000:003f:0046:25:0:0
 TV 2 / Nord
 p:Telenor
-125e:0e080000:003f:0046:22:0:0
+125e:0e080000:003f:0046:25:0:0
 TV 2 / Midt-Vest
 p:Telenor
-125f:0e080000:003f:0046:22:0:0
+125f:0e080000:003f:0046:25:0:0
 TV 2 / Østjylland
 p:Telenor
-1260:0e080000:003f:0046:22:0:0
+1260:0e080000:003f:0046:25:0:0
 TV 2 / Syd
 p:Telenor
-1261:0e080000:003f:0046:22:0:0
+1261:0e080000:003f:0046:25:0:0
 TV 2 / Fyn
 p:Telenor
-1262:0e080000:003f:0046:22:0:0
+1262:0e080000:003f:0046:25:0:0
 TV 2 / Øst
 p:Telenor
-1263:0e080000:003f:0046:22:0:0
+1263:0e080000:003f:0046:25:0:0
 TV 2 / Bornholm
 p:Telenor
 1325:0e080000:003f:0046:25:0:0
@@ -11255,12 +11270,6 @@ p:Telenor
 fffa:0e080000:004f:0046:1:0:0
 12437H SID 0xfffa
 p:DVB-S2 8PSK 12437H 359.2Â°E
-fffd:0e080000:004f:0046:1:0:0
-12437H SID 0xfffd
-p:DVB-S2 8PSK 12437H 359.2Â°E
-fffe:0e080000:004f:0046:1:0:0
-12437H SID 0xfffe
-p:DVB-S2 8PSK 12437H 359.2Â°E
 1cc4:0e080000:0050:0046:25:0:0
 liv HD
 p:Telenor
@@ -11400,7 +11409,7 @@ p:M7
 Kanal D2..
 p:M7
 75f9:0e080000:02be:0600:1:0:0
-Filmbox Family
+FilmBox Family
 p:M7
 75fb:0e080000:02be:0600:1:0:0
 Film+
@@ -11415,7 +11424,7 @@ p:M7
 Film Cafe
 p:M7
 75ff:0e080000:02be:0600:1:0:0
-ATV Spirit
+ATV Extra
 p:M7
 7600:0e080000:02be:0600:1:0:0
 Film + CZE
@@ -11583,7 +11592,7 @@ p:M7
 RTL HD
 p:M7
 772b:0e080000:02c1:0600:22:0:0
-Filmbox Premium
+FilmBox Premium
 p:M7
 772f:0e080000:02c1:0600:25:0:0
 TV2 HD
@@ -11817,7 +11826,7 @@ p:M7
 PRO TV
 p:M7
 78bf:0e080000:02c5:0600:1:0:0
-Filmbox Basic
+FilmBox Basic
 p:M7
 78c0:0e080000:02c5:0600:1:0:0
 Prime
@@ -11916,7 +11925,7 @@ p:M7
 AMC CE
 p:M7
 7984:0e080000:02c7:0600:1:0:0
-AXN CE
+Test 1
 p:M7
 7985:0e080000:02c7:0600:1:0:0
 CBS Reality ROM
@@ -11925,10 +11934,10 @@ p:M7
 Mozi+
 p:M7
 7987:0e080000:02c7:0600:1:0:0
-AXN White
+Test 2
 p:M7
 7988:0e080000:02c7:0600:1:0:0
-AXN Black
+Test 3
 p:M7
 7989:0e080000:02c7:0600:1:0:0
 TV4
@@ -11995,6 +12004,15 @@ M5 (SVT)
 p:M7
 79a2:0e080000:02c7:0600:1:0:0
 TV2 Sef (SVT)
+p:M7
+79a3:0e080000:02c7:0600:1:0:0
+Test 1.
+p:M7
+79a4:0e080000:02c7:0600:1:0:0
+Test 2.
+p:M7
+79a5:0e080000:02c7:0600:1:0:0
+Test 3.
 p:M7
 79e2:0e080000:02c8:0600:1:0:0
 Direct One
@@ -12176,9 +12194,6 @@ p:M7
 7a61:0e080000:02cb:0600:22:0:0
 Mezzo
 p:M7
-7a62:0e080000:02cb:0600:22:0:0
-Extreme Sports Channel
-p:M7
 7a63:0e080000:02cb:0600:25:0:0
 Test
 p:M7
@@ -12207,7 +12222,7 @@ p:M7
 Fashion TV
 p:M7
 7ab1:0e080000:02cc:0600:25:0:0
-Arena 4 HD.
+Arena 4 HD
 p:M7
 7ab2:0e080000:02cc:0600:25:0:0
 CT: D/Art HD
@@ -12577,7 +12592,7 @@ Prima LOVE HD
 p:Slovak Telekom
 2341:0e080000:0af9:00bb:25:0:0
 Test service
-p:Slovak Telekom,c:050001
+p:Slovak Telekom
 2342:0e080000:0af9:00bb:22:0:0
 TV RiK
 p:Slovak Telekom
@@ -12684,5 +12699,5 @@ p:DigiTV
 Radio Maria RO
 p:DigiTV
 end
-# 278 transponders and 3949 services.
+# 279 transponders and 3953 services.
 # Created by E-Channelizer v24.0.0.926 - https://www.echannelizer.com
