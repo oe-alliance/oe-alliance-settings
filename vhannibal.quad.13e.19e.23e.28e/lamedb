@@ -30,9 +30,6 @@ transponders
 00820000:03e9:0001
 	s 11219000:33000000:0:7:130:2:0:1:2:0:2
 /
-00820000:03eb:0001
-	s 11526000:33000000:0:2:130:2:0:1:4:0:2
-/
 00820000:044c:013e
 	s 11411000:27500000:0:4:130:2:0:1:2:0:2
 /
@@ -281,6 +278,9 @@ transponders
 /
 00822a8c:0c07:0001
 	s 10892000:27500000:0:2:130:2:0:1:1:0:2
+/
+00822d06:03eb:0001
+	s 11526000:33000000:0:2:130:2:0:1:4:0:2
 /
 00822d54:0000:0000
 	s 11604000:27500000:0:3:130:2:0:1:2:0:2
@@ -578,6 +578,9 @@ transponders
 /
 00c02b85:0000:0000
 	s 11141000:23500000:0:3:192:2:0:1:2:0:2
+/
+00c0ad89:0001:ffff
+	s 11657000:7202000:1:3:192:2:0:1:2:0:2
 /
 00c0adae:0001:0001
 	s 11694000:940000:1:1:192:2:0:1:1:0:2
@@ -971,7 +974,7 @@ p:CANAL+
 0604:00820000:01f4:00fc:2:0:0
 R Radio
 p:iKOMG
-060e:00820000:01f4:00fc:22:0:0
+060e:00820000:01f4:00fc:10:0:0
 Yemen Radio
 p:iKOMG
 0899:00820000:01f4:00fc:25:0:0
@@ -1135,12 +1138,6 @@ SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
 03e9:00820000:03e9:0001:12:0:0
 HVS-1 Bck
-p:Telespazio
-0320:00820000:03eb:0001:1:0:0
-SERVICE IP/MAC NOTIFICATION
-p:MyIntProvider
-03eb:00820000:03eb:0001:12:0:0
-HVS-3 Bck
 p:Telespazio
 3779:00820000:044c:013e:1:0:0
 CANAL+ FILM HD
@@ -1561,12 +1558,18 @@ SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
 07d2:00820000:07d6:0002:12:0:0
 HVS-2 Pri (SGP6)
-p:MyServiceProvider
+p:MyServiceProvider,c:031fff
 332d:00820000:1388:013e:1:0:0
 DW English HD
 p:Globecast
 332e:00820000:1388:013e:25:0:0
 BBC Arabic HD
+p:Globecast
+332f:00820000:1388:013e:25:0:0
+BBC Persian HD
+p:Globecast
+3330:00820000:1388:013e:1:0:0
+BBC News Europe
 p:Globecast
 3331:00820000:1388:013e:1:0:0
 TV5MONDE EUROPE
@@ -1648,13 +1651,13 @@ Test GC1
 p:Globecast
 338d:00820000:1388:013e:1:0:0
 Test GC2
-p:
+p:Globecast
 338e:00820000:1388:013e:1:0:0
 Test GC3
-p:
+p:Globecast
 338f:00820000:1388:013e:1:0:0
 Test GC4
-p:
+p:Globecast
 2520:00820000:13ef:013e:25:0:0
 AL SHARJAH HD
 p:DU
@@ -1693,7 +1696,7 @@ Rai 2 HD
 p:Rai
 0d4b:00820000:1450:013e:25:0:0
 Rai 3 HD
-p:Rai
+p:
 0d4d:00820000:1450:013e:25:0:0
 Rai 4 HD
 p:
@@ -1747,6 +1750,9 @@ AWE
 p:MuxIP
 02c7:00820000:14b4:013e:1:0:0
 WildTV
+p:MuxIP
+02c8:00820000:14b4:013e:1:0:0
+World Fishing Network
 p:MuxIP
 0001:00820000:14b4:fbff:1:14:0
 11785H
@@ -2145,10 +2151,10 @@ p:SkyItalia
 DeAKids +1
 p:SkyItalia
 101c:00820000:189c:fbff:25:0:0
-Sky Crime +1
+Crimini Italiani
 p:SkyItalia
 101d:00820000:189c:fbff:25:0:0
-Sky Crime +1
+Crimini Italiani
 p:SkyItalia
 104a:00820000:189c:fbff:25:0:0
 Sky Classica
@@ -2298,7 +2304,7 @@ p:SkyItalia
 BIKE
 p:SkyItalia
 1090:00820000:19c8:fbff:25:0:0
-Sky Serie Maratone
+Sky Serie +1
 p:SkyItalia
 1c38:00820000:19c8:fbff:25:0:0
 Sky Cinema Uno +24
@@ -3174,13 +3180,13 @@ p:SkyItalia
 Sky Nature
 p:SkyItalia
 0def:00820000:2260:fbff:1:0:0
-HISTORY WW2
+History +1
 p:SkyItalia
 0fc6:00820000:2260:fbff:1:0:0
 Nick Jr. +1
 p:SkyItalia
 0fd9:00820000:2260:fbff:1:0:0
-HISTORY WW2
+History +1
 p:SkyItalia
 1015:00820000:2260:fbff:25:0:0
 Discovery
@@ -3189,7 +3195,7 @@ p:SkyItalia
 Sky Crime
 p:SkyItalia
 106c:00820000:2260:fbff:25:0:0
-Ben Affleck Collection
+Harry Potter Collection
 p:SkyItalia
 10e1:00820000:2260:fbff:1:0:0
 Sky Meteo24
@@ -3311,9 +3317,6 @@ p:STN
 2334:00820000:2328:013e:1:0:0
 CIRA TV
 p:STN
-2335:00820000:2328:013e:22:0:0
-KICC TV
-p:STN
 2336:00820000:2328:013e:1:0:0
 GO-TV CHANNEL
 p:STN
@@ -3328,12 +3331,6 @@ Anewz
 p:
 233c:00820000:2328:013e:22:0:0
 TBN
-p:STN
-233d:00820000:2328:013e:22:0:0
-Firstlight
-p:STN
-233e:00820000:2328:013e:1:0:0
-AMAZING FACTS
 p:STN
 2340:00820000:2328:013e:1:0:0
 Silk Way
@@ -4711,7 +4708,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0:0
 DORCEL TV HD
-p:iKO Media Group
+p:IKO Media Group
 421c:00820000:2f44:013e:22:0:0
 UATV
 p:COSMONOVA LLC
@@ -4741,7 +4738,7 @@ Dla Ciebie TV
 p:1plus1 Media
 4234:00820000:2f44:013e:1:0:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4236:00820000:2f44:013e:22:0:0
 Dim TV
 p:COSMONOVA LLC
@@ -5455,7 +5452,7 @@ RTL 102.5 CALIENTE
 p:M-Three satcom
 0530:00820000:3d54:013e:1:0:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 0532:00820000:3d54:013e:2:0:0
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
@@ -5624,6 +5621,12 @@ p:,c:050001
 0001:00822a8c:0c07:0001:1:8:0
 10892V
 p:,c:050001
+0320:00822d06:03eb:0001:1:0:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+03eb:00822d06:03eb:0001:12:1:0
+HVS-3 Bck
+p:Telespazio,f:40
 0001:00822d54:0000:0000:25:12:0
 11604H
 p:,c:050001
@@ -5794,7 +5797,7 @@ p:SKY
 p:BetaDigital
 0036:00c00000:0007:0085:22:0:0
 Genius Exklusiv
-p:BetaDigital,c:050001
+p:BetaDigital
 003c:00c00000:0007:0085:1:0:0
 .
 p:.
@@ -6064,7 +6067,7 @@ BBC News
 p:Globecast
 139d:00c00000:03ea:0001:25:0:0
 NHK WORLD-JPN
-p:,c:050001
+p:
 13a7:00c00000:03ea:0001:25:0:0
 Al Jazeera English HD
 p:Al Jazeera
@@ -7005,7 +7008,7 @@ p:Movistar+
 11097V SID 0x7583
 p:DVB-S QPSK 11097V 19.2Â°E
 7584:00c00000:0412:0001:1:0:0
-M+ Copa del Rey
+TEST TXP42
 p:Movistar+
 7585:00c00000:0412:0001:1:0:0
 11097V SID 0x7585
@@ -7305,7 +7308,7 @@ p:BetaDigital
 LALIGA TV BAR HD
 p:Movistar+
 7504:00c00000:0420:0001:25:0:0
-M+ Copa del Rey HD
+TEST TXP56
 p:Movistar+
 7508:00c00000:0420:0001:25:0:0
 M+ VAMOSHD
@@ -8870,6 +8873,9 @@ p:
 0001:00c02b85:0000:0000:1:0:0
 11141H
 p:
+0001:00c0ad89:0001:ffff:1:0:0
+SR D-551 Enc I
+p:Service Provider
 03e8:00c0adae:0001:0001:2:0:0
 DLF USI1
 p:MB Satellite
@@ -9133,7 +9139,7 @@ mSAT Info
 p:Telekom Srbija
 4e21:00eb0000:0c8b:0003:25:0:0
 RTS 1 HD
-p:Telekom Srbija,c:050001
+p:Telekom Srbija
 4e22:00eb0000:0c8b:0003:25:0:0
 RTS 2 HD
 p:Telekom Srbija
@@ -9883,7 +9889,7 @@ ICTV
 p:
 1e65:00eb0000:0c9e:0003:22:0:0
 STB
-p:
+p:,c:050001
 1e66:00eb0000:0c9e:0003:22:0:0
 NOVY CHANNEL
 p:
@@ -9892,7 +9898,7 @@ SONCE
 p:
 1f41:00eb0000:0ca1:0003:25:0:0
 CT 1 PHA HD
-p:CESKA TELEVIZE
+p:CESKA TELEVIZE,c:050001
 1f42:00eb0000:0ca1:0003:25:0:0
 CT 2 HD
 p:CESKA TELEVIZE
@@ -10872,10 +10878,10 @@ p:BSkyB
 SkySpMainEv
 p:BSkyB
 10ce:011a0000:07dc:0002:1:0:0
-Sky Action
+Sky Heroes
 p:BSkyB
 1133:011a0000:07dc:0002:1:0:0
-The Hobbit
+Sky Family
 p:BSkyB
 1134:011a0000:07dc:0002:1:0:0
 Sky Premiere
@@ -11300,6 +11306,9 @@ p:BSkyB
 178e:011a0000:07e8:0002:25:0:0
 Boomerang HD
 p:BSkyB
+1aaf:011a0000:07e8:0002:25:0:0
+Sky Mix HD
+p:BSkyB
 0f0d:011a0000:07e9:0002:25:0:0
 Sky Atlantic HD
 p:BSkyB
@@ -11511,32 +11520,32 @@ p:BSkyB
 Sky Drama HD
 p:BSkyB
 0ee9:011a0000:07ee:0002:25:0:0
-Sky Horror HD
+Sky SciFi/HorHD
 p:BSkyB
 0eeb:011a0000:07ee:0002:25:0:0
 Sky Comedy HD
 p:BSkyB
 177e:011a0000:07ee:0002:25:0:0
-Sky Action HD
+SkyHeroesHD
 p:BSkyB
 1782:011a0000:07ee:0002:25:0:0
-The Hobbit HD
+Sky Family HD
 p:BSkyB
 1784:011a0000:07ee:0002:25:0:0
-ApocalypticHD
+Favourites HD
 p:BSkyB
 1785:011a0000:07ee:0002:25:0:0
 SkyPremiereHD
 p:BSkyB
 1791:011a0000:07ee:0002:25:0:0
-IndianaJonesHD
+Sky Hits HD
 p:BSkyB
 17ae:011a0000:07ee:0002:25:0:0
 Sky Thriller HD
 p:BSkyB
 1837:011a0000:07ee:0002:25:0:0
 SkyAnimationHD
-p:BSkyB
+p:BSkyB,c:050001
 03ea:011a0000:07f0:0002:25:0:0
 Sky Intro
 p:BSkyB
@@ -11919,8 +11928,8 @@ c4b3:011a0000:0811:0002:1:0:0
 50355
 p:BSkyB
 c4b5:011a0000:0811:0002:1:0:0
-50357
-p:BSkyB,c:050001
+NOW 90s & 00s
+p:BSkyB
 c4b8:011a0000:0811:0002:1:0:0
 Zee TV
 p:BSkyB
@@ -12212,9 +12221,6 @@ p:BSkyB
 d387:011a0000:0830:0002:1:0:0
 That's Dance
 p:BSkyB
-d390:011a0000:0830:0002:1:0:0
-NOW 90s & 00s
-p:BSkyB
 d395:011a0000:0830:0002:1:0:0
 AAJ TAK
 p:BSkyB
@@ -12343,6 +12349,9 @@ TNT Sports 3
 p:BSkyB
 d87c:011a0000:0833:0002:1:0:0
 BT Sport Mosaic
+p:BSkyB
+d87d:011a0000:0833:0002:1:0:0
+55421
 p:BSkyB
 d881:011a0000:0833:0002:1:0:0
 55265
@@ -12837,5 +12846,5 @@ p:BSkyB
 TRP 1
 p:
 end
-# 275 transponders and 4003 services.
+# 276 transponders and 4005 services.
 # Created by E-Channelizer v24.0.0.926 - https://www.echannelizer.com
