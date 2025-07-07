@@ -6,7 +6,7 @@ transponders
 00820000:03ea:0001
 	s 11470000:33000000:1:0:130:2:0:1:2:0:2
 /
-00820000:03eb:0001
+00820000:07d3:0002
 	s 11526000:33000000:0:2:130:2:0:1:4:0:2
 /
 00820000:0072:0061
@@ -282,9 +282,6 @@ transponders
 0082ad67:0000:0000
 	s 11623000:27500000:1:4:130:2:0:1:2:0:2
 /
-00820000:14b4:fbff
-	s 11785000:29900000:0:3:130:2:0:1:1:0:2
-/
 00820000:170c:fbff
 	s 11900000:29900000:0:4:130:2:0:1:1:0:2
 /
@@ -314,12 +311,12 @@ p:MyIntProvider
 03ea:00820000:03ea:0001:12:0
 HVS-2 Bck
 p:Telespazio
-0320:00820000:03eb:0001:1:0
+0320:00820000:07d3:0002:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
-03eb:00820000:03eb:0001:12:0
-HVS-3 Bck
-p:Telespazio
+07d3:00820000:07d3:0002:12:0
+HVS-3 Pry
+p:MyServiceProvider
 0001:00820000:0072:0061:1:0
 Service 01
 p:OU
@@ -1436,17 +1433,11 @@ p:VIVACOM
 089b:00820000:01f4:00fc:1:0
 Iran E Aryee
 p:iKOMG
-089c:00820000:01f4:00fc:1:0
-Yemen TV
-p:iKOMG
 089d:00820000:01f4:00fc:1:0
 AMAZING FACTS
 p:iKOMG
 08a0:00820000:01f4:00fc:1:0
 TELERADIOPACE TV
-p:iKOMG
-08a6:00820000:01f4:00fc:1:0
-Medya Haber
 p:iKOMG
 0604:00820000:01f4:00fc:2:0
 R Radio
@@ -1459,9 +1450,6 @@ WELAT
 p:iKOMG
 08b4:00820000:01f4:00fc:2:0
 Radio2000
-p:iKOMG
-060e:00820000:01f4:00fc:10:0
-Yemen Radio
 p:iKOMG
 089a:00820000:01f4:00fc:22:0
 CBC Azerbaijan
@@ -1477,6 +1465,9 @@ KTV
 p:iKOMG
 0899:00820000:01f4:00fc:25:0
 Freedom TV
+p:iKOMG
+08a6:00820000:01f4:00fc:25:0
+Medya Haber
 p:iKOMG
 08b5:00820000:01f4:00fc:32:0
 Love Nature 4K
@@ -2316,7 +2307,7 @@ p:MuxIP
 Cricket Gold
 p:MuxIP
 02c0:00820000:14b4:013e:1:0
-Triton Poker Series
+Ayozat TV
 p:MuxIP
 02c1:00820000:14b4:013e:1:0
 One America News
@@ -2726,9 +2717,6 @@ p:NOVA
 3ca0:00820000:1bbc:013e:1:0
 Novasports3HD
 p:NOVA
-2905:00820000:1c20:013e:1:0
-RADIO CONGO
-p:GLOBECAST
 1c22:00820000:1c20:013e:1:0
 Tunisie Nationale
 p:
@@ -2744,12 +2732,12 @@ p:M-Three Satcom
 1c73:00820000:1c20:013e:1:0
 TG NORBA 24
 p:Telenorba
-29cd:00820000:1c20:013e:1:0
-TELE CONGO
-p:GLOBECAST
 29d1:00820000:1c20:013e:1:0
 EWTN ENGLISH
 p:GLOBECAST
+07f0:00820000:1c20:013e:1:0
+AL24 News test
+p:TDA
 0e2e:00820000:1c20:013e:2:0
 RADIO FRECCIA
 p:MTHREE SATCOM
@@ -3101,9 +3089,6 @@ p:STN
 233c:00820000:2328:013e:22:0
 TBN
 p:STN
-2330:00820000:2328:013e:25:0
-JEK TV
-p:STN
 04b9:00820000:23f0:013e:1:0
 HotBird 4K1
 p:
@@ -3131,6 +3116,9 @@ p:ViewMedia
 0655:00820000:2454:013e:1:0
 SRS - TV
 p:
+0656:00820000:2454:013e:1:0
+GNC HD
+p:Encoder
 069a:00820000:2454:013e:1:0
 Eutelsat Data 1
 p:Eutelsat
@@ -3598,7 +3586,7 @@ p:Cyfrowy Polsat S.A.
 p:Cyfrowy Polsat S.A.
 4206:00820000:2f44:013e:1:0
 DORCEL TV HD
-p:iKO Media Group
+p:IKO Media Group
 422b:00820000:2f44:013e:1:0
 Mezzo TV
 p:M7 Group
@@ -3607,7 +3595,7 @@ Salvation TV MENA
 p:ViewMedia
 4234:00820000:2f44:013e:1:0
 ByoBlu
-p:M-Three Satcom
+p:M-hree Satcom
 4237:00820000:2f44:013e:1:0
 Juwelo TV
 p:SCP2100
@@ -4108,7 +4096,7 @@ ARMPUB TV
 p:
 1c8e:00820000:332c:013e:1:0
 GNC
-p:Harmonic
+p:
 1c8f:00820000:332c:013e:1:0
 TBN Russia
 p:
@@ -4129,9 +4117,9 @@ Al Karma TV-ME
 p:Telespazio
 132a:00820000:33f4:013e:1:0
 RIKSat
-p:Telespazio
+p:
 132e:00820000:33f4:013e:1:0
-Sender Neu Jerusalem
+Sender New Jerusalem
 p:Telespazio
 1361:00820000:33f4:013e:1:0
 Canale Italia 83
@@ -4160,14 +4148,14 @@ p:Telespazio
 135b:00820000:33f4:013e:2:0
 Radio Gamma Stereo
 p:Telespazio
-135c:00820000:33f4:013e:2:0
-RIK 3
-p:Telespazio
 135d:00820000:33f4:013e:2:0
 Radio Margherita
 p:Telespazio
 135e:00820000:33f4:013e:2:0
 Radio Cusano Campus
+p:Telespazio
+135c:00820000:33f4:013e:10:0
+RIK 3
 p:Telespazio
 031e:00820000:3bc4:013e:1:0
 Qatar TV HD
@@ -4219,7 +4207,7 @@ RADIONORBA TV
 p:Telenorba
 0530:00820000:3d54:013e:1:0
 People TV
-p:M-Three Satcom
+p:PEOPLETV-RETE7
 0538:00820000:3d54:013e:1:0
 GEB TV
 p:
@@ -4233,7 +4221,7 @@ p:SES
 RVS-Accendi la Speranza
 p:M-Three Satcom Srl
 0534:00820000:3d54:013e:22:0
-GOLD TV
+MARCOPOLO TRAVEL TV
 p:M-Three Satcom
 051b:00820000:3d54:013e:25:0
 RTL 102.5 HD
@@ -4479,7 +4467,7 @@ p:SkyItalia
 SuperTennis HD
 p:SkyItalia
 1e54:00820000:15e0:fbff:25:0
-Sky Sport NBA
+Sky Sport Basket
 p:SkyItalia
 1e5f:00820000:15e0:fbff:25:0
 Sky Sport
@@ -4508,14 +4496,44 @@ p:SkyItalia
 0dee:00820000:15e0:fbff:25:0
 DAZN 1
 p:SkyItalia
+0e00:00820000:1644:fbff:1:0
+K2
+p:SkyItalia
+0e01:00820000:1644:fbff:1:0
+-frisbee-
+p:SkyItalia
 110c:00820000:1644:fbff:1:0
 POKERItalia24
 p:SkyItalia
 112e:00820000:1644:fbff:1:0
 IEPG Data
 p:SkyItalia
+0e02:00820000:1644:fbff:25:0
+Motor Trend HD
+p:SkyItalia
+0e03:00820000:1644:fbff:25:0
+GIALLO HD
+p:SkyItalia
+0e04:00820000:1644:fbff:25:0
+NOVE HD
+p:SkyItalia
+0e05:00820000:1644:fbff:25:0
+HGTV HD
+p:SkyItalia
 0ded:00820000:1644:fbff:25:0
 Sky Sport Business 3
+p:SkyItalia
+0dfb:00820000:1644:fbff:25:0
+Sky Sport Mix
+p:SkyItalia
+0dfd:00820000:1644:fbff:25:0
+Real Time HD
+p:SkyItalia
+0dfe:00820000:1644:fbff:25:0
+DMAX HD
+p:SkyItalia
+0dff:00820000:1644:fbff:25:0
+Food Network HD
 p:SkyItalia
 10e2:00820000:1644:fbff:130:0
 Interact
@@ -4592,9 +4610,6 @@ p:SkyItalia
 2006:00820000:189c:fbff:1:0
 IEPG Data
 p:SkyItalia
-2c3a:00820000:189c:fbff:1:0
-Discovery +1
-p:SkyItalia
 2c4f:00820000:189c:fbff:1:0
 Boomerang +1
 p:SkyItalia
@@ -4628,20 +4643,20 @@ p:SkyItalia
 1c50:00820000:189c:fbff:25:0
 Sky Sport Max
 p:SkyItalia
-0f58:00820000:189c:fbff:25:0
-Sky Documentaries +1
-p:SkyItalia
 1e59:00820000:189c:fbff:25:0
 Sky Cinema Drama
 p:SkyItalia
 0f5d:00820000:189c:fbff:25:0
 Sky Investigation Maratone
 p:SkyItalia
-0f5e:00820000:189c:fbff:25:0
-Sky Documentaries +1
-p:SkyItalia
 1e63:00820000:189c:fbff:25:0
 Sky Cinema Due +24
+p:SkyItalia
+0f79:00820000:189c:fbff:25:0
+Sky Adventure
+p:SkyItalia
+0f7a:00820000:189c:fbff:25:0
+Sky Adventure
 p:SkyItalia
 37b2:00820000:189c:fbff:25:0
 Cartoon Network
@@ -4817,14 +4832,8 @@ p:SkyItalia
 1019:00820000:1a90:fbff:25:0
 cielo
 p:SkyItalia
-1036:00820000:1a90:fbff:25:0
-Eurosport 2
-p:SkyItalia
 0f4d:00820000:1a90:fbff:25:0
-Sky Sport
-p:SkyItalia
-0f4f:00820000:1a90:fbff:25:0
-Eurosport 1
+Wimbledon 1
 p:SkyItalia
 1c5c:00820000:1a90:fbff:25:0
 TV8 HD
@@ -4833,10 +4842,10 @@ p:SkyItalia
 TV8 HD
 p:SkyItalia
 1089:00820000:1a90:fbff:25:0
-Sky Sport
+Wimbledon 3
 p:SkyItalia
 108a:00820000:1a90:fbff:25:0
-Sky Sport
+Wimbledon 4
 p:SkyItalia
 0db9:00820000:1a90:fbff:25:0
 History
@@ -4884,13 +4893,16 @@ p:SkyItalia
 Sky Cinema Action
 p:SkyItalia
 0f6f:00820000:2198:fbff:25:0
-Sky Sport
+Wimbledon 2
 p:SkyItalia
 2daf:00820000:2198:fbff:25:0
 Sky Nature
 p:SkyItalia
 2dbe:00820000:2198:fbff:25:0
 Sky Nature
+p:SkyItalia
+0dfa:00820000:2198:fbff:25:0
+Sky Sport Legend
 p:SkyItalia
 0f5a:00820000:2198:fbff:130:0
 Calcio1Magaz
@@ -4934,9 +4946,6 @@ p:SkyItalia
 10fe:00820000:2260:fbff:1:0
 Caccia e PESCA
 p:SkyItalia
-1015:00820000:2260:fbff:25:0
-Discovery
-p:SkyItalia
 1020:00820000:2260:fbff:25:0
 Sky Crime
 p:SkyItalia
@@ -4944,7 +4953,7 @@ p:SkyItalia
 MTV HD
 p:SkyItalia
 106c:00820000:2260:fbff:25:0
-Jurassic World Collection
+DC Superheroes Collection
 p:SkyItalia
 37a9:00820000:2260:fbff:25:0
 Sky Crime
@@ -4991,22 +5000,19 @@ p:,c:050001
 0001:0082ad67:0000:0000:1:8
 11623V
 p:,c:050001
-0001:00820000:14b4:fbff:1:9
-11785H
-p:
-0001:00820000:170c:fbff:1:10
+0001:00820000:170c:fbff:1:9
 11900H
 p:
-0001:00822f3c:0000:0000:25:11
+0001:00822f3c:0000:0000:25:10
 12092H
 p:,c:050001
-0001:00820000:1db0:013e:1:12
+0001:00820000:1db0:013e:1:11
 12226V
 p:
-0001:00820000:1e14:013e:1:13
+0001:00820000:1e14:013e:1:12
 12245H
 p:
-0001:00820000:206c:013e:1:14
+0001:00820000:206c:013e:1:13
 12360H
 p:
 end
