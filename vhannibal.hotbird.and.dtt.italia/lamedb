@@ -1,16 +1,16 @@
 eDVB services /4/
 transponders
-00820000:03eb:0001
-	s 11526000:33000000:0:2:130:2:0:1:4:0:2
+00820000:03e8:0001
+	s 11219000:33000000:0:7:130:2:0:1:2:0:2
 /
 00820000:0c07:0001
 	s 11355000:27500000:1:3:130:2:0:1:2:0:2
 /
-00820000:03e9:0002
-	s 11219000:33000000:0:7:130:2:0:1:2:0:2
-/
 00820000:03ea:0002
 	s 11470000:33000000:1:2:130:2:0:1:4:0:2
+/
+00820000:03eb:0002
+	s 11526000:33000000:0:2:130:2:0:1:4:0:2
 /
 00820000:0072:0061
 	s 12437000:27500000:0:3:130:2:0:1:0:0:2
@@ -344,11 +344,11 @@ eeee0000:7918:217c
 /
 end
 services
-0320:00820000:03eb:0001:1:0
+0320:00820000:03e8:0001:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
-03eb:00820000:03eb:0001:12:0
-HVS-3 Bck
+03e8:00820000:03e8:0001:12:0
+Basic-1 Bck
 p:Telespazio
 0320:00820000:0c07:0001:1:0
 INT_OS_PLATFORM
@@ -356,17 +356,17 @@ p:Eutelsat
 00c8:00820000:0c07:0001:12:0
 SmartLNB
 p:EUTELSAT
-0320:00820000:03e9:0002:1:0
-SERVICE IP/MAC NOTIFICATION
-p:MyIntProvider
-07d1:00820000:03e9:0002:12:0
-HVS-1 DN2 Pri
-p:MyServiceProvider
 0320:00820000:03ea:0002:1:0
 SERVICE IP/MAC NOTIFICATION
 p:MyIntProvider
 07d2:00820000:03ea:0002:12:0
 HVS-2 DN2 Pri (SGP6)
+p:MyServiceProvider,c:031fff
+0320:00820000:03eb:0002:1:0
+SERVICE IP/MAC NOTIFICATION
+p:MyIntProvider
+07d3:00820000:03eb:0002:12:0
+HVS-3 DN2 Pri
 p:MyServiceProvider
 0001:00820000:0072:0061:1:0
 12437H.
@@ -811,6 +811,9 @@ LA7 CINEMA
 p:
 004f:00820000:1770:00be:25:0
 LA7 HD
+p:,c:050001
+0050:00820000:1770:00be:25:0
+TELESARDEGNA
 p:
 005b:00820000:1770:00be:25:0
 TV2000
@@ -891,10 +894,10 @@ p:VIVACOM
 Perets Int.
 p:VIVACOM
 0093:00820000:251c:00d5:22:0
-CineStar TV
+CineStar 1
 p:VIVACOM
 0094:00820000:251c:00d5:22:0
-CineStar TV A&T
+CineStar A&T
 p:VIVACOM
 0095:00820000:251c:00d5:22:0
 Super Toons
@@ -1546,7 +1549,7 @@ VIRGIN RADIO
 p:Mediaset
 0077:00820000:04b0:0110:25:0
 RADIO MONTE CARLO
-p:Mediaset
+p:Mediaset,c:050001
 0078:00820000:04b0:0110:25:0
 20Mediaset HD
 p:Mediaset
@@ -1558,7 +1561,7 @@ Canale5 HD
 p:Mediaset
 007b:00820000:04b0:0110:25:0
 Rete4 HD
-p:Mediaset
+p:Mediaset,c:050001
 007c:00820000:04b0:0110:25:0
 Iris HD
 p:Mediaset
@@ -1756,16 +1759,13 @@ Vilayet TV
 p:mws
 0201:00820000:0384:013e:1:0
 RADIONORBA TV
-p:Telenorba
+p:Telenorba,c:050001
 0206:00820000:0384:013e:1:0
 People TV
-p:PEOPLETV-RETE7
+p:M-Three Satcom
 01f5:00820000:0384:013e:1:0
 Iran International HD
 p:Volant Media
-01f7:00820000:0384:013e:1:0
-Bayyinat TV
-p:Encoder device
 01f9:00820000:0384:013e:1:0
 MC EU
 p:Itep Pictures
@@ -1792,6 +1792,9 @@ RTL 102.5 CALIENTE
 p:M-Three satcom
 0215:00820000:0384:013e:25:0
 NHK WORLD-JAPAN
+p:
+01f7:00820000:0384:013e:25:0
+Bayyinat TV
 p:
 01fa:00820000:0384:013e:25:0
 RUDAW HD
@@ -2745,7 +2748,7 @@ p:NOVA
 COSMOTESport1HD
 p:NOVA
 3c9e:00820000:1bbc:013e:1:0
-M4_SID15518
+Marquee TV HD
 p:NOVA
 3c9f:00820000:1bbc:013e:1:0
 Blue Sky
@@ -2768,9 +2771,6 @@ p:Harmonic
 1c71:00820000:1c20:013e:1:0
 Simaye Azadi SD
 p:M-Three Satcom
-1c73:00820000:1c20:013e:1:0
-TG NORBA 24
-p:Telenorba
 29cd:00820000:1c20:013e:1:0
 TELE CONGO
 p:GLOBECAST
@@ -2935,7 +2935,7 @@ p:NOVA
 p:
 4526:00820000:1db0:013e:12:0
 DVB-NIP IBC
-p:Eutelsat
+p:Eutelsat,c:031fff
 0001:00820000:1e14:013e:1:0
 12245H
 p:
@@ -3085,7 +3085,7 @@ Med Music
 p:STN
 232d:00820000:2328:013e:1:0
 ORLER TV
-p:STN
+p:STN,c:050001
 232f:00820000:2328:013e:1:0
 KENTRON TV
 p:STN
@@ -3103,7 +3103,7 @@ CIRA TV
 p:STN
 2336:00820000:2328:013e:1:0
 GO-TV CHANNEL
-p:STN
+p:STN,c:050001
 2338:00820000:2328:013e:1:0
 SLNTV
 p:STN
@@ -3318,7 +3318,7 @@ p:BSkyB
 Simay Azadi HD
 p:M-Three Satcom
 11fb:00820000:2b5c:013e:31:0
-TRAVELXP 4K
+TravelXP 4K
 p:TravelXP
 4279:00820000:2bc0:013e:1:0
 wPolsce24
@@ -3650,9 +3650,12 @@ p:M7 Group
 4231:00820000:2f44:013e:1:0
 Salvation TV MENA
 p:ViewMedia
+4234:00820000:2f44:013e:1:0
+Value 24
+p:M-Three Satcom
 4237:00820000:2f44:013e:1:0
 Juwelo TV
-p:SCP2100
+p:SCP2100,c:050001
 4267:00820000:2f44:013e:1:0
 Eutelsat Data 1
 p:Eutelsat
@@ -4189,16 +4192,16 @@ HADI TV 3
 p:Telespazio
 1361:00820000:33f4:013e:1:0
 Canale Italia 83
-p:Telespazio
+p:Telespazio,c:050001
 1362:00820000:33f4:013e:1:0
 Canale Italia 84
-p:Telespazio
+p:Telespazio,c:050001
 1364:00820000:33f4:013e:1:0
 Canale Italia
-p:Telespazio
+p:Telespazio,c:050001
 1366:00820000:33f4:013e:1:0
 Canale Italia 2
-p:Telespazio
+p:Telespazio,c:050001
 1381:00820000:33f4:013e:1:0
 Arte Investimenti
 p:Telespazio
@@ -4321,7 +4324,7 @@ RDS Social TV
 p:Telespazio
 4253:00820000:3db8:013e:1:0
 QVC HD
-p:Telespazio
+p:Telespazio,c:050001
 425c:00820000:3db8:013e:1:0
 TVA Vicenza
 p:Telespazio
@@ -4641,7 +4644,7 @@ p:SkyItalia
 Sky Sport Business 2
 p:SkyItalia
 0dec:00820000:15e0:fbff:25:0
-Sky Cinema Due
+Sky Cinema Stories
 p:SkyItalia
 0dee:00820000:15e0:fbff:25:0
 DAZN 1
@@ -4760,9 +4763,6 @@ p:SkyItalia
 1e59:00820000:189c:fbff:25:0
 Sky Cinema Drama
 p:SkyItalia
-1e63:00820000:189c:fbff:25:0
-Sky Cinema Due +24
-p:SkyItalia
 0f79:00820000:189c:fbff:25:0
 Sky Adventure
 p:SkyItalia
@@ -4871,14 +4871,14 @@ p:SkyItalia
 0597:00820000:19c8:fbff:25:0
 Sky Collection
 p:SkyItalia
+0598:00820000:19c8:fbff:25:0
+Sky Uno +
+p:SkyItalia
 2b9e:00820000:19c8:fbff:25:0
 Info2
 p:SkyItalia
 37b5:00820000:19c8:fbff:25:0
 Milan TV
-p:SkyItalia
-37ba:00820000:19c8:fbff:25:0
-Sky Uno +1
 p:SkyItalia
 2e17:00820000:1a2c:fbff:1:0
 IEPG Data
@@ -5033,9 +5033,6 @@ p:SkyItalia
 0dfd:00820000:2260:fbff:25:0
 Disney Jr.
 p:SkyItalia
-3428:00820000:2260:fbff:130:0
-PRIMAFILA HCZ
-p:SkyItalia
 0001:00822d54:0000:0000:25:0
 11604H
 p:,c:050001
@@ -5057,9 +5054,9 @@ p:,c:050001
 0001:0082b133:0001:ffff:1:0
 12595V
 p:
-7531:0082b13b:0001:ff00:1:0
-GCUK Enc 1
-p:GlobeCast UK
+0001:0082b13b:0001:ff00:1:0
+12603V
+p:
 0001:0082b140:0001:ffff:1:0
 12608V
 p:,c:050001
@@ -5236,7 +5233,7 @@ Discovery
 p:Persidera
 002c:eeee0000:0204:001d:25:0
 Real Time
-p:Persidera
+p:Persidera,c:050001
 0032:eeee0000:0204:001d:25:0
 DMAX
 p:Persidera
